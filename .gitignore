@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+*.log
+.private/
+private-deliverables/
+node_modules/
+.playwright/
+build/_tmp/
+build/_tmp_txt/
+*.zip.tmp
+.idea/
+.vscode/
