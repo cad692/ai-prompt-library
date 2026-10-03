@@ -40,6 +40,17 @@
       
     </ul>
 
+    <section class="fill-panel" aria-labelledby="fill-heading">
+      <h2 id="fill-heading" style="font-size:1.15rem;margin:0 0 0.35rem">Fill in your details</h2>
+      <p class="muted" style="margin-top:0">We ask only for the parts in square brackets. Your answers are inserted into the prompt below.</p>
+      <form id="fill-form" class="fill-form" onsubmit="return false;"></form>
+      <div class="fill-actions">
+        <button type="button" class="btn btn-secondary" id="reset-fill-btn">Clear answers</button>
+      </div>
+      <p class="fill-status" id="fill-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">Your filled prompt (preview)</h2>
     <div class="prompt-box">
       <div class="prompt-text" id="prompt-text">Create rigorous annotated source cards for <span class="ph">[RESEARCH_TOPIC]</span> using only <span class="ph">[UPLOADED_SOURCES_OR_PASTED_TEXT]</span>.
 
@@ -75,10 +86,8 @@ Keep summary and evaluation in separate labelled paragraphs. If the source is co
 
 After all cards, group sources into conversation clusters: agreement, tension, extension, and context. Identify duplicated evidence where several sources rely on the same dataset. Finish with a verification queue of incomplete citations and claims I must inspect in the originals. The annotations must support my own reading and writing, not replace them.
 </pre>
-      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy filled prompt</button>
     </div>
-
-    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
 
     <div class="tip-box">
       <div><strong>Pro tip:</strong> Add page numbers while reading; locating evidence later is harder than recording it now.</div>

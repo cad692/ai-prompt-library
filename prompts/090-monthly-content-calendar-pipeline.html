@@ -38,6 +38,17 @@
       
     </ul>
 
+    <section class="fill-panel" aria-labelledby="fill-heading">
+      <h2 id="fill-heading" style="font-size:1.15rem;margin:0 0 0.35rem">Fill in your details</h2>
+      <p class="muted" style="margin-top:0">We ask only for the parts in square brackets. Your answers are inserted into the prompt below.</p>
+      <form id="fill-form" class="fill-form" onsubmit="return false;"></form>
+      <div class="fill-actions">
+        <button type="button" class="btn btn-secondary" id="reset-fill-btn">Clear answers</button>
+      </div>
+      <p class="fill-status" id="fill-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">Your filled prompt (preview)</h2>
     <div class="prompt-box">
       <div class="prompt-text" id="prompt-text">Goal: Engineer a content-calendar pipeline for <span class="ph">[BRAND]</span> that produces <span class="ph">[CHANNELS]</span> content for <span class="ph">[AUDIENCE]</span> during <span class="ph">[MONTH]</span>.
 
@@ -59,10 +70,8 @@ Recommend a balanced content mix rather than repeating one format. For each stag
 
 End with five useful performance signals and a monthly learning loop showing how results influence the next calendar without chasing vanity metrics.
 </pre>
-      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy filled prompt</button>
     </div>
-
-    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
 
     <div class="tip-box">
       <div><strong>Pro tip:</strong> Separate factual review from style approval so neither becomes a quick checkbox.</div>

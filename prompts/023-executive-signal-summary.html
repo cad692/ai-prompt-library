@@ -40,6 +40,17 @@
       
     </ul>
 
+    <section class="fill-panel" aria-labelledby="fill-heading">
+      <h2 id="fill-heading" style="font-size:1.15rem;margin:0 0 0.35rem">Fill in your details</h2>
+      <p class="muted" style="margin-top:0">We ask only for the parts in square brackets. Your answers are inserted into the prompt below.</p>
+      <form id="fill-form" class="fill-form" onsubmit="return false;"></form>
+      <div class="fill-actions">
+        <button type="button" class="btn btn-secondary" id="reset-fill-btn">Clear answers</button>
+      </div>
+      <p class="fill-status" id="fill-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">Your filled prompt (preview)</h2>
     <div class="prompt-box">
       <div class="prompt-text" id="prompt-text">Distil <span class="ph">[REPORT_TITLE_OR_UPLOAD]</span> into an executive summary for <span class="ph">[AUDIENCE]</span> deciding <span class="ph">[DECISION]</span>.
 
@@ -75,10 +86,8 @@ Include a small number dashboard containing only the six most consequential figu
 
 End with three questions an executive should ask before acting and a 30-second spoken brief. Do not smooth away uncertainty or convert recommendations into established facts.
 </pre>
-      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy filled prompt</button>
     </div>
-
-    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
 
     <div class="tip-box">
       <div><strong>Pro tip:</strong> Tell the model which decision the summary must support; relevance changes with audience.</div>

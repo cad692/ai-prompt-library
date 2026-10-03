@@ -40,6 +40,17 @@
       
     </ul>
 
+    <section class="fill-panel" aria-labelledby="fill-heading">
+      <h2 id="fill-heading" style="font-size:1.15rem;margin:0 0 0.35rem">Fill in your details</h2>
+      <p class="muted" style="margin-top:0">We ask only for the parts in square brackets. Your answers are inserted into the prompt below.</p>
+      <form id="fill-form" class="fill-form" onsubmit="return false;"></form>
+      <div class="fill-actions">
+        <button type="button" class="btn btn-secondary" id="reset-fill-btn">Clear answers</button>
+      </div>
+      <p class="fill-status" id="fill-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">Your filled prompt (preview)</h2>
     <div class="prompt-box">
       <div class="prompt-text" id="prompt-text">Create a two-stage clarification-gate prompt for <span class="ph">[TASK]</span> so the model cannot rush into an answer.
 
@@ -65,10 +76,8 @@ Stage Two should restate the agreed requirements as a compact brief, invite one 
 
 Test the resulting prompt against two cases: a complete request that needs no questions and a vague request missing three essentials. Show expected model behaviour, not the task answer. Finish with one escape hatch for users who want a quick draft and a warning label for high-stakes use.
 </pre>
-      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy filled prompt</button>
     </div>
-
-    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
 
     <div class="tip-box">
       <div><strong>Pro tip:</strong> Tell the model to ask only decision-changing questions, or the intake can become tedious.</div>

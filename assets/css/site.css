@@ -612,6 +612,71 @@ h3 {
   margin: 1rem 0;
 }
 
+.fill-panel {
+  margin: 1.5rem 0 1rem;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.fill-form {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 0.85rem;
+}
+
+.fill-field label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.fill-q {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.fill-key {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-family: ui-monospace, Consolas, monospace;
+}
+
+.fill-field input,
+.fill-field textarea {
+  width: 100%;
+  min-height: var(--tap);
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--surface2);
+  color: var(--ink);
+  padding: 0.7rem 0.85rem;
+  font: inherit;
+}
+
+.fill-field textarea {
+  min-height: 88px;
+  resize: vertical;
+}
+
+.fill-field input:focus,
+.fill-field textarea:focus {
+  outline: 2px solid var(--primary);
+  border-color: var(--primary);
+}
+
+.fill-actions {
+  margin-top: 0.85rem;
+}
+
+.fill-status {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 1.25rem 0 2rem;

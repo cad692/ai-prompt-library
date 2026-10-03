@@ -40,6 +40,17 @@
       
     </ul>
 
+    <section class="fill-panel" aria-labelledby="fill-heading">
+      <h2 id="fill-heading" style="font-size:1.15rem;margin:0 0 0.35rem">Fill in your details</h2>
+      <p class="muted" style="margin-top:0">We ask only for the parts in square brackets. Your answers are inserted into the prompt below.</p>
+      <form id="fill-form" class="fill-form" onsubmit="return false;"></form>
+      <div class="fill-actions">
+        <button type="button" class="btn btn-secondary" id="reset-fill-btn">Clear answers</button>
+      </div>
+      <p class="fill-status" id="fill-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">Your filled prompt (preview)</h2>
     <div class="prompt-box">
       <div class="prompt-text" id="prompt-text">Act as a patient instructional designer preparing a visual mini-lesson, not a textbook chapter.
 
@@ -77,10 +88,8 @@ For every slide, write a learner-facing title, no more than 30 words of visible 
 
 Add one diagnostic question before the lesson and one exit question after it. Supply the expected answers and a brief explanation of what each wrong answer may reveal. End with one optional extension for fast learners and one support adjustment for learners who need more scaffolding.
 </pre>
-      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy filled prompt</button>
     </div>
-
-    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
 
     <div class="tip-box">
       <div><strong>Pro tip:</strong> Test the misconception question before presenting; it reveals where the explanation needs work.</div>

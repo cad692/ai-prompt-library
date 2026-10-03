@@ -40,6 +40,17 @@
       
     </ul>
 
+    <section class="fill-panel" aria-labelledby="fill-heading">
+      <h2 id="fill-heading" style="font-size:1.15rem;margin:0 0 0.35rem">Fill in your details</h2>
+      <p class="muted" style="margin-top:0">We ask only for the parts in square brackets. Your answers are inserted into the prompt below.</p>
+      <form id="fill-form" class="fill-form" onsubmit="return false;"></form>
+      <div class="fill-actions">
+        <button type="button" class="btn btn-secondary" id="reset-fill-btn">Clear answers</button>
+      </div>
+      <p class="fill-status" id="fill-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">Your filled prompt (preview)</h2>
     <div class="prompt-box">
       <div class="prompt-text" id="prompt-text">Act as an evidence-gap analyst for the literature collection <span class="ph">[CORPUS_OR_SOURCE_LIST]</span> on <span class="ph">[TOPIC]</span>.
 
@@ -61,10 +72,8 @@ For each apparent gap, perform an adversarial check: propose two search strings,
 
 Rank the surviving gaps by significance, originality within scope, feasibility, ethical access, and value for Pakistan or [TARGET_CONTEXT]. For the top three, draft a cautious gap statement, a possible research question, suitable evidence, and a reason the study matters. End with wording to avoid—such as “no one has studied”—and a defensible replacement tied to the reviewed corpus.
 </pre>
-      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy filled prompt</button>
     </div>
-
-    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
 
     <div class="tip-box">
       <div><strong>Pro tip:</strong> Describe a bounded gap in a searched corpus, never an absolute absence across all research.</div>
