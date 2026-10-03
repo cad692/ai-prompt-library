@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>025 · Document Action Harvester · AI Prompt Library</title>
+  <meta name="description" content="Use this to extract clear tasks, owners, deadlines, and dependencies from text.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=025">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/025-document-action-harvester.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">025</span>
+      <span class="pill pill-cat">Documents &amp; PDFs</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Document Action Harvester</h1>
+    <p class="muted">Use this to extract clear tasks, owners, deadlines, and dependencies from text.</p>
+    
+    <p><strong>Use case:</strong> A project team can convert minutes, emails, proposals, or reports into an accountable action register.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>ChatGPT</strong> — Extracts structured tasks from common document formats and rewrites them clearly.</li>
+      
+      <li><strong>Microsoft Copilot</strong> — Useful when source documents and task workflows sit inside Microsoft 365.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Extract an accountable action register from <span class="ph">[DOCUMENT_OR_PASTED_TEXT]</span> without inventing commitments.
+
+The project is <span class="ph">[PROJECT]</span>, today is <span class="ph">[DATE]</span>, and our naming convention is <span class="ph">[TEAM_ROLES_OR_NAMES]</span>. Scan for explicit actions, promises, approvals, follow-ups, decisions that create work, and unresolved requests. Preserve source page, paragraph, timestamp, or message reference.
+
+Build a register with: action stated as a verb, named owner, due date, priority, dependency, completion evidence, and source location. If the text says “we,” leaves the owner unclear, or gives a relative date such as “next Friday,” mark [CONFIRM OWNER] or [CONFIRM DATE]; do not guess.
+
+Separate the result into Confirmed Actions, Implied Actions Requiring Approval, and Open Questions. Detect duplicate tasks expressed in different wording and merge them while retaining all source references.
+
+Next, identify sequencing conflicts: deadlines before dependencies, one person overloaded, missing approval, or incompatible instructions. Draft a short clarification message covering only the highest-impact uncertainties.
+
+Conclude with a “next 48 hours” view containing actions actually due or blocking others. Do not assign work merely because someone was mentioned. Where dates are calculable, show both the original wording and the interpreted calendar date for human confirmation.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Extract an accountable action register from [DOCUMENT_OR_PASTED_TEXT] without inventing commitments.
+
+The project is [PROJECT], today is [DATE], and our naming convention is [TEAM_ROLES_OR_NAMES]. Scan for explicit actions, promises, approvals, follow-ups, decisions that create work, and unresolved requests. Preserve source page, paragraph, timestamp, or message reference.
+
+Build a register with: action stated as a verb, named owner, due date, priority, dependency, completion evidence, and source location. If the text says “we,” leaves the owner unclear, or gives a relative date such as “next Friday,” mark [CONFIRM OWNER] or [CONFIRM DATE]; do not guess.
+
+Separate the result into Confirmed Actions, Implied Actions Requiring Approval, and Open Questions. Detect duplicate tasks expressed in different wording and merge them while retaining all source references.
+
+Next, identify sequencing conflicts: deadlines before dependencies, one person overloaded, missing approval, or incompatible instructions. Draft a short clarification message covering only the highest-impact uncertainties.
+
+Conclude with a “next 48 hours” view containing actions actually due or blocking others. Do not assign work merely because someone was mentioned. Where dates are calculable, show both the original wording and the interpreted calendar date for human confirmation.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Treat implied tasks as proposals until a human confirms the owner and deadline.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A traceable action register with owners, dates, dependencies, and ambiguities.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="024-dual-pdf-comparator.html">← Previous · 024</a>
+      
+      
+      <a href="026-thesis-chapter-reading-companion.html">026 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

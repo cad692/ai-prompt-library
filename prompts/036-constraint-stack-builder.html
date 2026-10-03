@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>036 · Constraint Stack Builder · AI Prompt Library</title>
+  <meta name="description" content="Use this to organise multiple prompt constraints without creating contradictions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=036">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/036-constraint-stack-builder.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">036</span>
+      <span class="pill pill-cat">Prompt Engineering</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>Constraint Stack Builder</h1>
+    <p class="muted">Use this to organise multiple prompt constraints without creating contradictions.</p>
+    
+    <p><strong>Use case:</strong> A communications, teaching, or operations team can create reliable instructions involving length, tone, content, and compliance limits.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>ChatGPT</strong> — Organises detailed constraints and detects conflicts through interactive refinement.</li>
+      
+      <li><strong>Gemini</strong> — Handles structured instruction design and offers alternative constraint resolutions.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Act as a constraint engineer for the task <span class="ph">[TASK]</span>, turning my requirements into a coherent prompt.
+
+Raw requirements: <span class="ph">[REQUIREMENTS]</span>. Intended audience: <span class="ph">[AUDIENCE]</span>. Required output: <span class="ph">[OUTPUT]</span>. First sort every requirement into four layers: safety and truthfulness, task essentials, format limits, and style preferences. Assign each item Hard, Strong Preference, or Optional.
+
+Search for collisions such as “comprehensive but 100 words,” “friendly but legally exact,” incompatible formats, or missing data required by a hard rule. For each collision, show the competing instructions and offer two resolutions. Ask me to decide whenever the choice changes the goal; do not silently pick.
+
+Build the final prompt with the constraints placed near the action they govern. Add a precedence rule stating what wins if requirements conflict. Translate fuzzy terms—professional, concise, engaging, detailed—into observable boundaries using <span class="ph">[EXAMPLES_OR_METRICS]</span>.
+
+Include a compact compliance checklist the model can complete after drafting. It should report pass, fail, or not applicable, then revise once only for failed hard constraints. Ensure the check does not invite fabricated facts merely to satisfy format.
+
+Return: the sorted stack, unresolved choices, final prompt, and one edge-case test. End by identifying the first constraint to relax if the requested output proves impossible, with a reason tied to the stated priorities.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Act as a constraint engineer for the task [TASK], turning my requirements into a coherent prompt.
+
+Raw requirements: [REQUIREMENTS]. Intended audience: [AUDIENCE]. Required output: [OUTPUT]. First sort every requirement into four layers: safety and truthfulness, task essentials, format limits, and style preferences. Assign each item Hard, Strong Preference, or Optional.
+
+Search for collisions such as “comprehensive but 100 words,” “friendly but legally exact,” incompatible formats, or missing data required by a hard rule. For each collision, show the competing instructions and offer two resolutions. Ask me to decide whenever the choice changes the goal; do not silently pick.
+
+Build the final prompt with the constraints placed near the action they govern. Add a precedence rule stating what wins if requirements conflict. Translate fuzzy terms—professional, concise, engaging, detailed—into observable boundaries using [EXAMPLES_OR_METRICS].
+
+Include a compact compliance checklist the model can complete after drafting. It should report pass, fail, or not applicable, then revise once only for failed hard constraints. Ensure the check does not invite fabricated facts merely to satisfy format.
+
+Return: the sorted stack, unresolved choices, final prompt, and one edge-case test. End by identifying the first constraint to relax if the requested output proves impossible, with a reason tied to the stated priorities.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Rank hard constraints above preferences so the model knows what may flex.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A prioritized constraint stack, conflict analysis, and executable prompt.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="035-critique-revision-engine.html">← Previous · 035</a>
+      
+      
+      <a href="037-few-shot-pattern-crafter.html">037 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

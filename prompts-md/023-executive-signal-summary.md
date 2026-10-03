@@ -1,0 +1,37 @@
+# 023 — Executive Signal Summary
+
+**Category:** documents · **Difficulty:** Intermediate
+
+**Usage:** Use this to compress a long report into decisions, evidence, and implications.
+
+**Expected output:** A one-page executive summary with findings, implications, and source locations.
+
+**Tip:** Tell the model which decision the summary must support; relevance changes with audience.
+
+## Best tools
+- **Claude**: Maintains coherence and detail across very long documents.
+- **NotebookLM**: Grounds report summaries in uploaded source passages and citations.
+
+## Prompt
+
+```text
+Distil [REPORT_TITLE_OR_UPLOAD] into an executive summary for [AUDIENCE] deciding [DECISION].
+
+The reader has [READING_TIME] minutes and cares most about [PRIORITIES]. Work only from the report. Preserve the difference between reported evidence, author interpretation, and your synthesis. Every material number must retain its unit, period, population, and page or section reference.
+
+Open with a decision signal: one sentence stating why this report matters now. Follow with:
+- Purpose and scope in three lines;
+- five findings ranked by decision relevance, not document order;
+- implications for [ORGANISATION_OR_CONTEXT];
+- risks, limitations, and excluded populations;
+- decisions or actions the report explicitly supports.
+
+Use a “So what / Evidence / Caveat” pattern for each major finding. If recommendations are your inference rather than the authors’, label them “Analyst implication.”
+
+Include a small number dashboard containing only the six most consequential figures. Check each against the source twice and show its location. Name any conflict between the executive summary and body of the report.
+
+End with three questions an executive should ask before acting and a 30-second spoken brief. Do not smooth away uncertainty or convert recommendations into established facts.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

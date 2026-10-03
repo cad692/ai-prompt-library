@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>067 · Plain Language Pricing Explainer · AI Prompt Library</title>
+  <meta name="description" content="Use to explain pricing structure clearly without hidden qualifiers or legal claims.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=067">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/067-plain-language-pricing-explainer.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">067</span>
+      <span class="pill pill-cat">Work &amp; Business</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Plain Language Pricing Explainer</h1>
+    <p class="muted">Use to explain pricing structure clearly without hidden qualifiers or legal claims.</p>
+    
+    <p><strong>Use case:</strong> Turns a pricing model into customer-friendly language and examples. It highlights assumptions, exclusions, and questions for review.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Claude</strong> — Handles nuanced commercial explanations while maintaining internal consistency.</li>
+      
+      <li><strong>ChatGPT</strong> — Creates plain-language versions and worked examples from supplied figures.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Act as a plain-language commercial writer explaining how a price works, without drafting legal terms.
+
+Product or service: <span class="ph">[OFFER]</span>
+Currency and market: <span class="ph">[CURRENCY_MARKET]</span>
+Pricing components: <span class="ph">[COMPONENTS]</span>
+Included usage or scope: <span class="ph">[INCLUSIONS]</span>
+Exclusions and add-ons: <span class="ph">[EXCLUSIONS]</span>
+Billing timing: <span class="ph">[BILLING]</span>
+Taxes or discounts already confirmed: <span class="ph">[CONFIRMED_RULES]</span>
+
+Start with a two-sentence overview answering “what will I usually pay and what changes that amount?” Then explain each component using consistent names and units. Create three worked examples—light, typical, and higher use—using only supplied rates. Show the arithmetic line by line and label every assumption.
+
+Add a “what is included / what may cost extra” comparison, followed by five questions a buyer should ask before agreeing. If taxes, exchange rates, renewals, refunds, or discount eligibility are uncertain, mark them <span class="ph">[CONFIRM]</span> rather than filling gaps. Do not use “free,” “unlimited,” “guaranteed,” or “no hidden fees” unless the provided facts fully support the claim.
+
+Finish with a 60-word sales-conversation version and a FAQ of four realistic questions. State that the explanation is informational and must be checked against the approved quote, contract, and applicable requirements; it is not legal, tax, or financial advice.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Act as a plain-language commercial writer explaining how a price works, without drafting legal terms.
+
+Product or service: [OFFER]
+Currency and market: [CURRENCY_MARKET]
+Pricing components: [COMPONENTS]
+Included usage or scope: [INCLUSIONS]
+Exclusions and add-ons: [EXCLUSIONS]
+Billing timing: [BILLING]
+Taxes or discounts already confirmed: [CONFIRMED_RULES]
+
+Start with a two-sentence overview answering “what will I usually pay and what changes that amount?” Then explain each component using consistent names and units. Create three worked examples—light, typical, and higher use—using only supplied rates. Show the arithmetic line by line and label every assumption.
+
+Add a “what is included / what may cost extra” comparison, followed by five questions a buyer should ask before agreeing. If taxes, exchange rates, renewals, refunds, or discount eligibility are uncertain, mark them [CONFIRM] rather than filling gaps. Do not use “free,” “unlimited,” “guaranteed,” or “no hidden fees” unless the provided facts fully support the claim.
+
+Finish with a 60-word sales-conversation version and a FAQ of four realistic questions. State that the explanation is informational and must be checked against the approved quote, contract, and applicable requirements; it is not legal, tax, or financial advice.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Test every example with a calculator and have an authorized person verify taxes and terms.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A transparent pricing explanation with examples and review flags.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="066-service-complaint-recovery-reply.html">← Previous · 066</a>
+      
+      
+      <a href="068-mutual-value-partnership-outreach.html">068 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

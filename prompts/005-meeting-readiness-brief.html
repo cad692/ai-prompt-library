@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>005 · Meeting Readiness Brief · AI Prompt Library</title>
+  <meta name="description" content="Use this to enter a meeting with clear outcomes, questions, and fallback positions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=005">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/005-meeting-readiness-brief.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">005</span>
+      <span class="pill pill-cat">AI Assistants</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>Meeting Readiness Brief</h1>
+    <p class="muted">Use this to enter a meeting with clear outcomes, questions, and fallback positions.</p>
+    
+    <p><strong>Use case:</strong> A project team member can prepare for a client, supervisor, faculty, or internal meeting when time and attention are limited.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Claude</strong> — Synthesizes lengthy background notes into a coherent preparation brief.</li>
+      
+      <li><strong>ChatGPT</strong> — Supports agenda design and realistic rehearsal of likely questions.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Act as my meeting strategist and prepare a concise briefing for <span class="ph">[MEETING_NAME]</span> on <span class="ph">[DATE]</span>.
+
+Context: <span class="ph">[BACKGROUND]</span>
+Participants and roles: <span class="ph">[PARTICIPANTS]</span>
+My desired outcome: <span class="ph">[IDEAL_OUTCOME]</span>
+Minimum acceptable outcome: <span class="ph">[MINIMUM_OUTCOME]</span>
+Sensitive points: <span class="ph">[SENSITIVE_POINTS]</span>
+Evidence or documents available: <span class="ph">[MATERIALS]</span>
+Duration: <span class="ph">[MINUTES]</span>
+
+Build a one-page readiness brief. Open with a two-sentence purpose statement I can say aloud. Arrange an agenda that fits the stated duration, including explicit minutes for decisions and questions. Add a stakeholder read: what each participant may care about, labelled as either known or inferred.
+
+Create five high-value questions, ordered from exploratory to decision-focused. Anticipate three difficult questions I may receive and draft honest, compact responses that do not fabricate missing data. For each sensitive point, suggest neutral wording and a phrase for redirecting discussion if it becomes unproductive.
+
+Add a mini decision log with columns for decision, owner, deadline, and evidence needed. Finish with a 30-second closing summary and a follow-up email skeleton. If the meeting goal is too broad for <span class="ph">[MINUTES]</span>, explicitly recommend what to defer.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Act as my meeting strategist and prepare a concise briefing for [MEETING_NAME] on [DATE].
+
+Context: [BACKGROUND]
+Participants and roles: [PARTICIPANTS]
+My desired outcome: [IDEAL_OUTCOME]
+Minimum acceptable outcome: [MINIMUM_OUTCOME]
+Sensitive points: [SENSITIVE_POINTS]
+Evidence or documents available: [MATERIALS]
+Duration: [MINUTES]
+
+Build a one-page readiness brief. Open with a two-sentence purpose statement I can say aloud. Arrange an agenda that fits the stated duration, including explicit minutes for decisions and questions. Add a stakeholder read: what each participant may care about, labelled as either known or inferred.
+
+Create five high-value questions, ordered from exploratory to decision-focused. Anticipate three difficult questions I may receive and draft honest, compact responses that do not fabricate missing data. For each sensitive point, suggest neutral wording and a phrase for redirecting discussion if it becomes unproductive.
+
+Add a mini decision log with columns for decision, owner, deadline, and evidence needed. Finish with a 30-second closing summary and a follow-up email skeleton. If the meeting goal is too broad for [MINUTES], explicitly recommend what to defer.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Define one minimum acceptable outcome so the meeting remains useful even if time runs short.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A one-page meeting brief with agenda, questions, risks, and follow-up language.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="004-tone-safe-email-rewriter.html">← Previous · 004</a>
+      
+      
+      <a href="006-constraint-led-idea-lab.html">006 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

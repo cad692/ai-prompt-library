@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>079 · Spreadsheet Error Check Formulas · AI Prompt Library</title>
+  <meta name="description" content="Use to design formula-based checks that flag likely spreadsheet errors.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=079">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/079-spreadsheet-error-check-formulas.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">079</span>
+      <span class="pill pill-cat">Data &amp; Productivity</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Spreadsheet Error Check Formulas</h1>
+    <p class="muted">Use to design formula-based checks that flag likely spreadsheet errors.</p>
+    
+    <p><strong>Use case:</strong> Suggests review formulas for Excel or Google Sheets without overwriting source values. It emphasizes explainable flags and testing.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Excel/Sheets</strong> — Supports transparent formulas, validation rules, and conditional formatting.</li>
+      
+      <li><strong>ChatGPT</strong> — Drafts formula patterns from a supplied schema and business rules.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Work as a spreadsheet quality reviewer proposing checks that flag anomalies without silently changing data.
+
+Tool and version: <span class="ph">[EXCEL_OR_SHEETS]</span>
+Column letters/names: <span class="ph">[SCHEMA]</span>
+Sample rows: <span class="ph">[SAMPLES]</span>
+Business rules: <span class="ph">[RULES]</span>
+Known errors: <span class="ph">[KNOWN_ERRORS]</span>
+Locale separators: <span class="ph">[LOCALE]</span>
+
+Design a set of helper-column checks for required blanks, duplicate keys, invalid categories, text where numbers are expected, impossible date order, out-of-range values, inconsistent units, cross-column mismatch, formula errors, and broken totals. Include only checks relevant to the supplied schema.
+
+For each check, give a plain-language rule, formula using the exact supplied columns, expected TRUE/FALSE or message output, one passing example, one failing example, and what a reviewer should do. Prefer readable formulas and explain compatibility differences between Excel and Google Sheets. Where a formula depends on modern functions, offer a simpler fallback.
+
+Add a summary section that counts each error type and highlights rows through conditional formatting without hiding source values. Distinguish hard errors from warnings. Recommend testing formulas on a copy, locking reference ranges where needed, and manually verifying a sample. If schema details are missing, provide formula pseudocode with <span class="ph">[COLUMN]</span> placeholders instead of guessing.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Work as a spreadsheet quality reviewer proposing checks that flag anomalies without silently changing data.
+
+Tool and version: [EXCEL_OR_SHEETS]
+Column letters/names: [SCHEMA]
+Sample rows: [SAMPLES]
+Business rules: [RULES]
+Known errors: [KNOWN_ERRORS]
+Locale separators: [LOCALE]
+
+Design a set of helper-column checks for required blanks, duplicate keys, invalid categories, text where numbers are expected, impossible date order, out-of-range values, inconsistent units, cross-column mismatch, formula errors, and broken totals. Include only checks relevant to the supplied schema.
+
+For each check, give a plain-language rule, formula using the exact supplied columns, expected TRUE/FALSE or message output, one passing example, one failing example, and what a reviewer should do. Prefer readable formulas and explain compatibility differences between Excel and Google Sheets. Where a formula depends on modern functions, offer a simpler fallback.
+
+Add a summary section that counts each error type and highlights rows through conditional formatting without hiding source values. Distinguish hard errors from warnings. Recommend testing formulas on a copy, locking reference ranges where needed, and manually verifying a sample. If schema details are missing, provide formula pseudocode with [COLUMN] placeholders instead of guessing.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Keep every flag column visible during testing and investigate false positives.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A formula check library with test cases and review guidance.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="078-unbiased-survey-designer.html">← Previous · 078</a>
+      
+      
+      <a href="080-personal-knowledge-base-architecture.html">080 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

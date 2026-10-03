@@ -1,0 +1,37 @@
+# 037 — Few-Shot Pattern Crafter
+
+**Category:** prompting · **Difficulty:** Advanced
+
+**Usage:** Use this to build examples that teach a model the desired output pattern.
+
+**Expected output:** A diverse few-shot set with labels, edge cases, and a leakage check.
+
+**Tip:** Include edge cases and near-misses, not three examples that all demonstrate the easy case.
+
+## Best tools
+- **Claude**: Follows complex patterns demonstrated across several long examples.
+- **ChatGPT**: Generates, critiques, and tests few-shot examples for structured tasks.
+
+## Prompt
+
+```text
+Design a few-shot example set that teaches an AI to perform [TASK] consistently.
+
+Desired input form: [INPUT_SCHEMA]. Desired output form: [OUTPUT_SCHEMA]. Rules: [RULES]. Realistic domain: [DOMAIN]. Sensitive or prohibited content: [EXCLUSIONS].
+
+Begin by expressing the underlying pattern in plain language. Then identify the dimensions that examples must vary: length, wording, class, ambiguity, missing data, and edge conditions. Create [NUMBER] examples that cover those dimensions without copying private or copyrighted material.
+
+Each example must use:
+Input: a realistic synthetic case.
+Output: the exact target response.
+Teaching point: a note for me that will be removed from the production prompt.
+
+Include at least one typical case, one boundary case, one case requiring abstention or [UNKNOWN], and one tempting near-miss. Keep labels balanced when the task is classification. Avoid accidental clues such as one class always having longer inputs.
+
+Next, perform a leakage and consistency audit: check whether outputs reveal hidden answers, examples contradict a rule, or superficial wording predicts the label. Repair issues you find.
+
+Assemble a production prompt containing instructions, clean examples without teaching notes, and a final [NEW_INPUT] slot. Finish with two challenge inputs and expected grading criteria, but keep their answers separate so they can test the prompt honestly.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

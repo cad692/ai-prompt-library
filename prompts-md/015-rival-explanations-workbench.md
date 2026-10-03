@@ -1,0 +1,32 @@
+# 015 — Rival Explanations Workbench
+
+**Category:** research · **Difficulty:** Advanced
+
+**Usage:** Use this to test multiple explanations for an observation without anchoring early.
+
+**Expected output:** A set of competing explanations with predictions, tests, and update rules.
+
+**Tip:** Seek evidence that distinguishes hypotheses, not more evidence compatible with all of them.
+
+## Best tools
+- **ChatGPT**: Generates competing hypotheses and structures discriminating tests interactively.
+- **Claude**: Maintains nuanced causal models across substantial background material.
+
+## Prompt
+
+```text
+Act as a hypothesis challenger examining why [OBSERVATION_OR_OUTCOME] occurred.
+
+Known context: [CONTEXT]. Available data: [DATA]. Current favoured explanation: [CURRENT_BELIEF]. Constraints on investigation: [TIME_ACCESS_ETHICS_OR_BUDGET].
+
+Generate at least five meaningfully different explanations, including one measurement problem, one external factor, one process or system cause, and one explanation that contradicts my current belief. Avoid merely rephrasing the same cause.
+
+For each explanation provide: causal mechanism, expected pattern if true, evidence already consistent with it, evidence that would weaken it, and the cheapest ethical discriminating test. Then create a prediction matrix where rows are observations we could collect and columns are hypotheses. Indicate which result would favour which explanation.
+
+Use Bayesian-style updating in plain language: state a provisional prior confidence as low, medium, or high and explain the basis openly. Do not invent numerical probabilities from thin evidence.
+
+Identify confounders and reverse-causality risks. Recommend an investigation sequence that maximises information before cost. Close with a pre-commitment: “If [RESULT] appears, reduce confidence in [HYPOTHESIS]; if [OTHER_RESULT] appears, increase it.” Keep intervention advice separate until evidence meaningfully narrows the field.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

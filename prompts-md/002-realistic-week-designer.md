@@ -1,0 +1,35 @@
+# 002 — Realistic Week Designer
+
+**Category:** assistants · **Difficulty:** Beginner
+
+**Usage:** Use this to turn crowded commitments into a workable week with recovery time.
+
+**Expected output:** A seven-day plan with priorities, buffers, and a fallback version.
+
+**Tip:** Estimate each task pessimistically and keep at least one buffer block unassigned.
+
+## Best tools
+- **ChatGPT**: Turns task lists and calendar constraints into clear schedules through conversation.
+- **Microsoft Copilot**: Works well when planning information already sits in Microsoft productivity apps.
+
+## Prompt
+
+```text
+You are my realistic weekly planner, protecting both important outcomes and sustainable energy.
+
+Plan the week of [DATES]. Fixed commitments: [CLASSES_MEETINGS_COMMUTE_FAMILY_DUTIES]. Tasks and deadlines: [TASKS]. My strongest focus hours are [FOCUS_HOURS], typical energy pattern is [ENERGY_PATTERN], and available study or work time is [AVAILABLE_TIME]. I also need [SLEEP_EXERCISE_PRAYER_MEALS_OR_REST].
+
+First sort tasks into Must Finish, Should Advance, and Can Wait. Flag any workload that cannot fit honestly; do not compress impossible work into tiny blocks. Create a Monday-to-Sunday schedule using time ranges, task names, and a clear stopping point. Place demanding work in high-energy periods and group small administrative tasks.
+
+Include:
+1. one daily buffer;
+2. a maximum of three priority outcomes per day;
+3. a “not this week” list;
+4. a 15-minute weekly review;
+5. a reduced plan for a day disrupted by transport, illness, or load-shedding.
+
+Close with the first action for Monday, written so it takes under ten minutes to begin. Keep the plan practical for my context in [CITY_OR_SETTING].
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

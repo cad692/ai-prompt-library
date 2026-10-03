@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ p.id }} · {{ p.title }} · AI Prompt Library</title>
+  <meta name="description" content="{{ p.usage }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p={{ p.id }}">← Back to index</a>
+      <a href="{{ repo_url }}/blob/main/prompts-md/{{ p.id }}-{{ p.slug }}.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">{{ p.id }}</span>
+      <span class="pill pill-cat">{{ cats[p.category].name }}</span>
+      <span class="badge badge-{{ p.difficulty|lower }}">{{ p.difficulty }}</span>
+    </div>
+    <h1>{{ p.title }}</h1>
+    <p class="muted">{{ p.usage }}</p>
+    {% if p.use_case %}
+    <p><strong>Use case:</strong> {{ p.use_case }}</p>
+    {% endif %}
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      {% for t in p.best_tools %}
+      <li><strong>{{ t.tool }}</strong> — {{ t.reason }}</li>
+      {% endfor %}
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">{{ highlighted|safe }}</div>
+      <pre id="prompt-source" class="visually-hidden">{{ p.prompt }}</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> {{ p.tip }}</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> {{ p.expected_output }}</div>
+    </div>
+
+    {% if p._chain_next %}
+    <p><strong>Next in chain:</strong> <a href="{{ p._chain_next.id }}-{{ p._chain_next.slug }}.html">{{ p._chain_next.id }} — {{ p._chain_next.title }}</a></p>
+    {% endif %}
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      {% if p._prev %}
+      <a href="{{ p._prev.id }}-{{ p._prev.slug }}.html">← Previous · {{ p._prev.id }}</a>
+      {% else %}<span></span>{% endif %}
+      {% if p._next %}
+      <a href="{{ p._next.id }}-{{ p._next.slug }}.html">{{ p._next.id }} · Next →</a>
+      {% endif %}
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>{{ cfg.workshop.org }}</div>
+      <div>Last updated: {{ cfg.meta.last_updated }}. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

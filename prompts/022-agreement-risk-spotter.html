@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>022 · Agreement Risk Spotter · AI Prompt Library</title>
+  <meta name="description" content="Use this to spot contract clauses worth discussing with a qualified lawyer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=022">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/022-agreement-risk-spotter.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">022</span>
+      <span class="pill pill-cat">Documents &amp; PDFs</span>
+      <span class="badge badge-advanced">Advanced</span>
+    </div>
+    <h1>Agreement Risk Spotter</h1>
+    <p class="muted">Use this to spot contract clauses worth discussing with a qualified lawyer.</p>
+    
+    <p><strong>Use case:</strong> A freelancer, employee, tenant, or small organisation can prepare informed questions before signing an agreement in Pakistan.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Claude</strong> — Reviews lengthy agreements and tracks definitions across clauses.</li>
+      
+      <li><strong>ChatGPT</strong> — Explains dense provisions in plain language and organises follow-up questions.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Review <span class="ph">[UPLOADED_AGREEMENT]</span> as a plain-language issue spotter, not as a lawyer or substitute for legal advice.
+
+I am the <span class="ph">[PARTY_ROLE]</span>, the agreement concerns <span class="ph">[PURPOSE]</span>, and the relevant jurisdiction appears to be <span class="ph">[JURISDICTION]</span>. My priorities are <span class="ph">[PRIORITIES]</span>. State clearly that enforceability and legal rights require advice from a qualified lawyer familiar with the applicable law.
+
+Start with a deal snapshot: parties, term, payment, renewal, termination, and main obligations, each linked to clause or page numbers. Then create a red-flag register using severity—urgent, important, or monitor—for:
+liability and indemnity; unilateral changes; intellectual property; confidentiality; data use; non-compete or exclusivity; payment and penalties; termination; dispute resolution; governing law; warranties; and missing schedules.
+
+For every flag, quote only the minimum relevant wording, explain the practical effect in neutral language, identify who bears the risk, and draft one clarification or negotiation question. Do not declare a clause illegal or enforceable.
+
+Add a cross-reference check for inconsistent definitions, dates, amounts, and annexures. List obligations due in the first 30 days. Finish with “Questions for a Pakistani lawyer” tailored to <span class="ph">[JURISDICTION]</span> and a missing-information list. Mask CNIC numbers, bank details, signatures, and personal addresses in your output.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Review [UPLOADED_AGREEMENT] as a plain-language issue spotter, not as a lawyer or substitute for legal advice.
+
+I am the [PARTY_ROLE], the agreement concerns [PURPOSE], and the relevant jurisdiction appears to be [JURISDICTION]. My priorities are [PRIORITIES]. State clearly that enforceability and legal rights require advice from a qualified lawyer familiar with the applicable law.
+
+Start with a deal snapshot: parties, term, payment, renewal, termination, and main obligations, each linked to clause or page numbers. Then create a red-flag register using severity—urgent, important, or monitor—for:
+liability and indemnity; unilateral changes; intellectual property; confidentiality; data use; non-compete or exclusivity; payment and penalties; termination; dispute resolution; governing law; warranties; and missing schedules.
+
+For every flag, quote only the minimum relevant wording, explain the practical effect in neutral language, identify who bears the risk, and draft one clarification or negotiation question. Do not declare a clause illegal or enforceable.
+
+Add a cross-reference check for inconsistent definitions, dates, amounts, and annexures. List obligations due in the first 30 days. Finish with “Questions for a Pakistani lawyer” tailored to [JURISDICTION] and a missing-information list. Mask CNIC numbers, bank details, signatures, and personal addresses in your output.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Upload every schedule and annexure; key obligations are often outside the main document.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A non-legal risk summary with clause references and lawyer questions.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="021-pdf-active-study-notes.html">← Previous · 021</a>
+      
+      
+      <a href="023-executive-signal-summary.html">023 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

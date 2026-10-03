@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>037 · Few-Shot Pattern Crafter · AI Prompt Library</title>
+  <meta name="description" content="Use this to build examples that teach a model the desired output pattern.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=037">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/037-few-shot-pattern-crafter.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">037</span>
+      <span class="pill pill-cat">Prompt Engineering</span>
+      <span class="badge badge-advanced">Advanced</span>
+    </div>
+    <h1>Few-Shot Pattern Crafter</h1>
+    <p class="muted">Use this to build examples that teach a model the desired output pattern.</p>
+    
+    <p><strong>Use case:</strong> A team can improve consistency for classification, rewriting, extraction, or formatting tasks through carefully varied examples.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Claude</strong> — Follows complex patterns demonstrated across several long examples.</li>
+      
+      <li><strong>ChatGPT</strong> — Generates, critiques, and tests few-shot examples for structured tasks.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Design a few-shot example set that teaches an AI to perform <span class="ph">[TASK]</span> consistently.
+
+Desired input form: <span class="ph">[INPUT_SCHEMA]</span>. Desired output form: <span class="ph">[OUTPUT_SCHEMA]</span>. Rules: <span class="ph">[RULES]</span>. Realistic domain: <span class="ph">[DOMAIN]</span>. Sensitive or prohibited content: <span class="ph">[EXCLUSIONS]</span>.
+
+Begin by expressing the underlying pattern in plain language. Then identify the dimensions that examples must vary: length, wording, class, ambiguity, missing data, and edge conditions. Create <span class="ph">[NUMBER]</span> examples that cover those dimensions without copying private or copyrighted material.
+
+Each example must use:
+Input: a realistic synthetic case.
+Output: the exact target response.
+Teaching point: a note for me that will be removed from the production prompt.
+
+Include at least one typical case, one boundary case, one case requiring abstention or <span class="ph">[UNKNOWN]</span>, and one tempting near-miss. Keep labels balanced when the task is classification. Avoid accidental clues such as one class always having longer inputs.
+
+Next, perform a leakage and consistency audit: check whether outputs reveal hidden answers, examples contradict a rule, or superficial wording predicts the label. Repair issues you find.
+
+Assemble a production prompt containing instructions, clean examples without teaching notes, and a final <span class="ph">[NEW_INPUT]</span> slot. Finish with two challenge inputs and expected grading criteria, but keep their answers separate so they can test the prompt honestly.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Design a few-shot example set that teaches an AI to perform [TASK] consistently.
+
+Desired input form: [INPUT_SCHEMA]. Desired output form: [OUTPUT_SCHEMA]. Rules: [RULES]. Realistic domain: [DOMAIN]. Sensitive or prohibited content: [EXCLUSIONS].
+
+Begin by expressing the underlying pattern in plain language. Then identify the dimensions that examples must vary: length, wording, class, ambiguity, missing data, and edge conditions. Create [NUMBER] examples that cover those dimensions without copying private or copyrighted material.
+
+Each example must use:
+Input: a realistic synthetic case.
+Output: the exact target response.
+Teaching point: a note for me that will be removed from the production prompt.
+
+Include at least one typical case, one boundary case, one case requiring abstention or [UNKNOWN], and one tempting near-miss. Keep labels balanced when the task is classification. Avoid accidental clues such as one class always having longer inputs.
+
+Next, perform a leakage and consistency audit: check whether outputs reveal hidden answers, examples contradict a rule, or superficial wording predicts the label. Repair issues you find.
+
+Assemble a production prompt containing instructions, clean examples without teaching notes, and a final [NEW_INPUT] slot. Finish with two challenge inputs and expected grading criteria, but keep their answers separate so they can test the prompt honestly.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Include edge cases and near-misses, not three examples that all demonstrate the easy case.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A diverse few-shot set with labels, edge cases, and a leakage check.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="036-constraint-stack-builder.html">← Previous · 036</a>
+      
+      
+      <a href="038-task-tool-routing-prompt.html">038 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

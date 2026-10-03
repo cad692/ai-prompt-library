@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>083 · Gmail Context-Aware Draft · AI Prompt Library</title>
+  <meta name="description" content="Draft a clear Gmail reply grounded in the thread and the sender&#39;s actual request.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=083">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/083-gmail-context-aware-draft.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">083</span>
+      <span class="pill pill-cat">AI Add-ins</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Gmail Context-Aware Draft</h1>
+    <p class="muted">Draft a clear Gmail reply grounded in the thread and the sender&#39;s actual request.</p>
+    
+    <p><strong>Use case:</strong> Use Gemini in Gmail to prepare a reply while keeping commitments and sensitive details under human control.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Gemini in Gmail</strong> — Uses the open email thread as context for drafting and summarising.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Role: Serve as my Gmail correspondence assistant; produce a reply that resolves the thread's real question without inventing context.
+
+Read <span class="ph">[EMAIL_THREAD]</span> and identify the sender's request, any deadline, unanswered questions, and commitments already made. My intended outcome is <span class="ph">[DESIRED_OUTCOME]</span>. Draft in <span class="ph">[TONE]</span> for <span class="ph">[RELATIONSHIP]</span>, using <span class="ph">[LANGUAGE_VARIANT]</span>. Keep the email between <span class="ph">[LENGTH]</span> and avoid repeating the entire history.
+
+Structure the message naturally: acknowledge the relevant point, give the direct answer, list actions or decisions, and close with the next expected step. Where information is missing, insert a visible marker such as [CONFIRM DATE] rather than guessing. Do not promise an attachment unless <span class="ph">[ATTACHMENT_STATUS]</span> confirms it exists.
+
+After the draft, add a private pre-send panel containing:
+- facts to verify;
+- names, dates, links, or attachments mentioned;
+- commitments I would be making;
+- whether Reply or Reply all seems appropriate, with a reason.
+
+Do not expose that panel in the email itself. Keep courtesy genuine and avoid filler such as “I hope this finds you well” unless requested.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Role: Serve as my Gmail correspondence assistant; produce a reply that resolves the thread&#39;s real question without inventing context.
+
+Read [EMAIL_THREAD] and identify the sender&#39;s request, any deadline, unanswered questions, and commitments already made. My intended outcome is [DESIRED_OUTCOME]. Draft in [TONE] for [RELATIONSHIP], using [LANGUAGE_VARIANT]. Keep the email between [LENGTH] and avoid repeating the entire history.
+
+Structure the message naturally: acknowledge the relevant point, give the direct answer, list actions or decisions, and close with the next expected step. Where information is missing, insert a visible marker such as [CONFIRM DATE] rather than guessing. Do not promise an attachment unless [ATTACHMENT_STATUS] confirms it exists.
+
+After the draft, add a private pre-send panel containing:
+- facts to verify;
+- names, dates, links, or attachments mentioned;
+- commitments I would be making;
+- whether Reply or Reply all seems appropriate, with a reason.
+
+Do not expose that panel in the email itself. Keep courtesy genuine and avoid filler such as “I hope this finds you well” unless requested.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Recheck recipients, attachments, dates, and promises before pressing Send.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A concise email draft with subject, action, and verification flags.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="082-excel-analysis-question-designer.html">← Previous · 082</a>
+      
+      
+      <a href="084-grammarly-human-tone-review.html">084 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

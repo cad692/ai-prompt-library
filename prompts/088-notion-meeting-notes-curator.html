@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>088 · Notion Meeting Notes Curator · AI Prompt Library</title>
+  <meta name="description" content="Convert rough Notion meeting notes into decisions, actions, questions, and a concise record.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=088">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/088-notion-meeting-notes-curator.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">088</span>
+      <span class="pill pill-cat">AI Add-ins</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Notion Meeting Notes Curator</h1>
+    <p class="muted">Convert rough Notion meeting notes into decisions, actions, questions, and a concise record.</p>
+    
+    <p><strong>Use case:</strong> Clean up fragmented notes without turning uncertain discussion into confirmed decisions.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Notion AI</strong> — Can restructure notes directly within a shared Notion workspace page.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Goal: Curate <span class="ph">[RAW_MEETING_NOTES]</span> into a reliable Notion meeting record that distinguishes what happened from what remains uncertain.
+
+Use the meeting name <span class="ph">[MEETING_NAME]</span>, date <span class="ph">[DATE]</span>, and participant list <span class="ph">[PARTICIPANTS]</span>. Begin with a three-line overview covering purpose, main outcome, and current status. Then sort the notes into: decisions confirmed, action items, open questions, discussion highlights, and parking-lot topics.
+
+Format each action as a Notion-friendly checklist containing one deliverable, one owner, and one deadline. If any element is missing, use “unassigned” or “date not agreed”; never infer responsibility from who spoke. Mark contradictory notes with a ⚠ review label and quote both versions briefly.
+
+Create a compact decision log with the decision, rationale stated in the notes, decision-maker if known, and reconsideration trigger. Remove filler and duplicate fragments, but retain dissent, risks, and important context.
+
+Conclude with a follow-up message that can be pasted to participants, asking them to confirm corrections by <span class="ph">[CONFIRMATION_DATE]</span>. Do not add absent commitments or portray proposals as approvals.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Goal: Curate [RAW_MEETING_NOTES] into a reliable Notion meeting record that distinguishes what happened from what remains uncertain.
+
+Use the meeting name [MEETING_NAME], date [DATE], and participant list [PARTICIPANTS]. Begin with a three-line overview covering purpose, main outcome, and current status. Then sort the notes into: decisions confirmed, action items, open questions, discussion highlights, and parking-lot topics.
+
+Format each action as a Notion-friendly checklist containing one deliverable, one owner, and one deadline. If any element is missing, use “unassigned” or “date not agreed”; never infer responsibility from who spoke. Mark contradictory notes with a ⚠ review label and quote both versions briefly.
+
+Create a compact decision log with the decision, rationale stated in the notes, decision-maker if known, and reconsideration trigger. Remove filler and duplicate fragments, but retain dissent, risks, and important context.
+
+Conclude with a follow-up message that can be pasted to participants, asking them to confirm corrections by [CONFIRMATION_DATE]. Do not add absent commitments or portray proposals as approvals.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Ask participants to confirm owners and deadlines after the cleanup.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A structured meeting record with traceable actions and unresolved items.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="087-cursor-cross-file-refactor-brief.html">← Previous · 087</a>
+      
+      
+      <a href="089-study-pack-production-pipeline.html">089 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

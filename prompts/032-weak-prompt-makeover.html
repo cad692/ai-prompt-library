@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>032 · Weak Prompt Makeover · AI Prompt Library</title>
+  <meta name="description" content="Use this to see exactly how a vague prompt becomes specific and testable.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=032">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/032-weak-prompt-makeover.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">032</span>
+      <span class="pill pill-cat">Prompt Engineering</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Weak Prompt Makeover</h1>
+    <p class="muted">Use this to see exactly how a vague prompt becomes specific and testable.</p>
+    
+    <p><strong>Use case:</strong> A beginner can compare a weak instruction with stronger revisions and learn which changes improve output.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>ChatGPT</strong> — Provides clear prompt rewrites and demonstrates their likely output differences.</li>
+      
+      <li><strong>Gemini</strong> — Generates varied reformulations and explains practical prompt improvements.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Diagnose and improve this weak prompt as a practical prompt-writing teacher: <span class="ph">[WEAK_PROMPT]</span>.
+
+The intended outcome is <span class="ph">[OUTCOME]</span>, the user is <span class="ph">[USER]</span>, and the output will be used for <span class="ph">[USE]</span>. Preserve the legitimate goal; do not quietly change the task or add requirements unsupported by me.
+
+Start by marking the original prompt with inline labels for five possible weaknesses: vague action, missing context, undefined audience, absent output format, and untestable quality words. If a category is already strong, say so.
+
+Create three successive rewrites:
+Version 1 — Minimal Repair: change as little as possible.
+Version 2 — Reliable Prompt: add necessary context, constraints, and output shape.
+Version 3 — Reusable Template: replace variable details with <span class="ph">[PLACEHOLDERS]</span>.
+
+Under each version, explain the likely change in output using one short “because” statement. Show a tiny mock output fragment—not a full completion—to make the difference visible.
+
+Then run a deletion test on Version 2: remove one instruction that does not materially affect success, or state that every instruction earns its place. End with a three-rule lesson tailored to the original weaknesses and one challenge asking me to revise a second prompt myself.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Diagnose and improve this weak prompt as a practical prompt-writing teacher: [WEAK_PROMPT].
+
+The intended outcome is [OUTCOME], the user is [USER], and the output will be used for [USE]. Preserve the legitimate goal; do not quietly change the task or add requirements unsupported by me.
+
+Start by marking the original prompt with inline labels for five possible weaknesses: vague action, missing context, undefined audience, absent output format, and untestable quality words. If a category is already strong, say so.
+
+Create three successive rewrites:
+Version 1 — Minimal Repair: change as little as possible.
+Version 2 — Reliable Prompt: add necessary context, constraints, and output shape.
+Version 3 — Reusable Template: replace variable details with [PLACEHOLDERS].
+
+Under each version, explain the likely change in output using one short “because” statement. Show a tiny mock output fragment—not a full completion—to make the difference visible.
+
+Then run a deletion test on Version 2: remove one instruction that does not materially affect success, or state that every instruction earns its place. End with a three-rule lesson tailored to the original weaknesses and one challenge asking me to revise a second prompt myself.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Improve the missing information that affects success; extra words alone do not improve a prompt.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> An annotated before-and-after prompt with a reusable lesson.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="031-rtcfce-prompt-architect.html">← Previous · 031</a>
+      
+      
+      <a href="033-grounded-answer-guardrails.html">033 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

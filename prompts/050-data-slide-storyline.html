@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>050 · Data Slide Storyline · AI Prompt Library</title>
+  <meta name="description" content="Use to turn a chart or dataset into an honest decision narrative.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=050">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/050-data-slide-storyline.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">050</span>
+      <span class="pill pill-cat">Presentations &amp; Design</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Data Slide Storyline</h1>
+    <p class="muted">Use to turn a chart or dataset into an honest decision narrative.</p>
+    
+    <p><strong>Use case:</strong> Builds a slide story around what data supports, what it cannot prove, and what action follows. Useful for management or research briefings.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Excel/Sheets</strong> — Supports transparent chart creation and source-data checking.</li>
+      
+      <li><strong>PowerPoint+Copilot</strong> — Helps present chart takeaways within a decision deck.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Take the role of a data-story editor who refuses to make the chart claim more than the evidence supports.
+
+Data or chart description: <span class="ph">[DATA]</span>
+Decision audience: <span class="ph">[AUDIENCE]</span>
+Decision at stake: <span class="ph">[DECISION]</span>
+Time period and units: <span class="ph">[TIME_AND_UNITS]</span>
+Known caveats: <span class="ph">[CAVEATS]</span>
+
+Begin by naming the single comparison that matters most for the decision. Recommend the chart form that makes that comparison easiest, and explain why two plausible alternatives would be weaker. Specify axes, sorting, baseline, labels, and any reference line. Never suggest a truncated axis without clearly disclosing its effect.
+
+Write a message headline containing the supported takeaway, followed by a subtitle that states scope. Identify up to three chart annotations tied to exact values or periods. Then provide a spoken narrative in this order: context, pattern, exception, limitation, and decision implication. Distinguish correlation from causation and flag small samples, missing denominators, changing definitions, or cherry-picked dates.
+
+Add a “reasonable alternative reading” of the same data and say what additional evidence would resolve the ambiguity. Close with a slide footnote template for source, refresh date, metric definition, and caveat. If raw data is incomplete, request what is missing rather than estimating it.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Take the role of a data-story editor who refuses to make the chart claim more than the evidence supports.
+
+Data or chart description: [DATA]
+Decision audience: [AUDIENCE]
+Decision at stake: [DECISION]
+Time period and units: [TIME_AND_UNITS]
+Known caveats: [CAVEATS]
+
+Begin by naming the single comparison that matters most for the decision. Recommend the chart form that makes that comparison easiest, and explain why two plausible alternatives would be weaker. Specify axes, sorting, baseline, labels, and any reference line. Never suggest a truncated axis without clearly disclosing its effect.
+
+Write a message headline containing the supported takeaway, followed by a subtitle that states scope. Identify up to three chart annotations tied to exact values or periods. Then provide a spoken narrative in this order: context, pattern, exception, limitation, and decision implication. Distinguish correlation from causation and flag small samples, missing denominators, changing definitions, or cherry-picked dates.
+
+Add a “reasonable alternative reading” of the same data and say what additional evidence would resolve the ambiguity. Close with a slide footnote template for source, refresh date, metric definition, and caveat. If raw data is incomplete, request what is missing rather than estimating it.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> State the denominator and time period wherever a percentage appears.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A chart recommendation, message headline, annotations, and spoken interpretation.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="049-workshop-agenda-slide-builder.html">← Previous · 049</a>
+      
+      
+      <a href="051-studio-product-photo-director.html">051 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

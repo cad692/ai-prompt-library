@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>110 · Chain Step 2 - Evidence Notes · AI Prompt Library</title>
+  <meta name="description" content="Convert the approved research brief into traceable, source-level evidence notes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=110">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/110-chain-evidence-notes.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">110</span>
+      <span class="pill pill-cat">Workflow Chains</span>
+      <span class="badge badge-advanced">Advanced</span>
+    </div>
+    <h1>Chain Step 2 - Evidence Notes</h1>
+    <p class="muted">Convert the approved research brief into traceable, source-level evidence notes.</p>
+    
+    <p><strong>Use case:</strong> Collect relevant claims and limitations before interpretation begins.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Perplexity</strong> — Supports source discovery with links that can be checked against originals.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Goal: Act as the evidence analyst for step two; complete evidence notes from the research brief in <span class="ph">[PREVIOUS_OUTPUT]</span>.
+
+If that input lacks scope, audience, research questions, or source standards, state what is missing and reconstruct a provisional brief from <span class="ph">[TOPIC]</span> before proceeding. For each supplied or discovered source <span class="ph">[SOURCES]</span>, record author or organisation, title, date, URL or document identifier, source type, and access date.
+
+Build notes around the brief's subordinate questions. Each note must contain one claim, a short exact quotation or precise location, relevant figures with units and period, the source's method or basis, limitations, and a relevance label. Distinguish primary evidence, analysis, opinion, and promotional content. Record contradictory findings side by side instead of forcing agreement.
+
+Do not invent citations or imply that an inaccessible source was read. Mark weak coverage, stale evidence, and claims needing corroboration. Include a coverage matrix linking questions to sources.
+
+Finish with “HANDOFF TO STEP 3”: a clean evidence ledger, unresolved gaps, and a list of claims safe—or unsafe—to synthesise. This handoff must stand alone when reused as <span class="ph">[PREVIOUS_OUTPUT]</span>.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Goal: Act as the evidence analyst for step two; complete evidence notes from the research brief in [PREVIOUS_OUTPUT].
+
+If that input lacks scope, audience, research questions, or source standards, state what is missing and reconstruct a provisional brief from [TOPIC] before proceeding. For each supplied or discovered source [SOURCES], record author or organisation, title, date, URL or document identifier, source type, and access date.
+
+Build notes around the brief&#39;s subordinate questions. Each note must contain one claim, a short exact quotation or precise location, relevant figures with units and period, the source&#39;s method or basis, limitations, and a relevance label. Distinguish primary evidence, analysis, opinion, and promotional content. Record contradictory findings side by side instead of forcing agreement.
+
+Do not invent citations or imply that an inaccessible source was read. Mark weak coverage, stale evidence, and claims needing corroboration. Include a coverage matrix linking questions to sources.
+
+Finish with “HANDOFF TO STEP 3”: a clean evidence ledger, unresolved gaps, and a list of claims safe—or unsafe—to synthesise. This handoff must stand alone when reused as [PREVIOUS_OUTPUT].
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Save quotations with page numbers or section locations at capture time.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> An evidence ledger mapped to the brief&#39;s research questions.</div>
+    </div>
+
+    
+    <p><strong>Next in chain:</strong> <a href="111-chain-evidence-synthesis.html">111 — Chain Step 3 - Evidence Synthesis</a></p>
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="109-chain-research-brief.html">← Previous · 109</a>
+      
+      
+      <a href="111-chain-evidence-synthesis.html">111 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>074 · Notion Database System Designer · AI Prompt Library</title>
+  <meta name="description" content="Use to design a practical Notion database before building views and automations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=074">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/074-notion-database-system-designer.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">074</span>
+      <span class="pill pill-cat">Data &amp; Productivity</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Notion Database System Designer</h1>
+    <p class="muted">Use to design a practical Notion database before building views and automations.</p>
+    
+    <p><strong>Use case:</strong> Maps a workflow into properties, relations, templates, and views. It avoids turning Notion into an overcomplicated software project.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Notion</strong> — Supports linked databases, templates, filtered views, and team workflows.</li>
+      
+      <li><strong>ChatGPT</strong> — Translates workflow requirements into a clear database specification.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Take the role of a Notion systems designer building the smallest database structure that supports the real workflow.
+
+What is being tracked: <span class="ph">[ITEMS]</span>
+Users and roles: <span class="ph">[USERS]</span>
+Workflow stages: <span class="ph">[STAGES]</span>
+Questions users need answered: <span class="ph">[QUESTIONS]</span>
+Existing databases: <span class="ph">[EXISTING]</span>
+Reporting or automation needs: <span class="ph">[NEEDS]</span>
+
+Start by identifying the primary record and its unique naming rule. Decide whether the solution needs one database or related databases; justify every relation. Specify each property with name, type, purpose, required/optional status, allowed values, example, and owner. Avoid redundant properties that can be derived or rolled up.
+
+Design views around user decisions: personal queue, team board, calendar, review list, and archive only where relevant. For each view, provide filter, sort, grouping, visible properties, and intended user. Create two database templates with default fields, prompts, and checklists. Add formulas only as plain-language logic unless <span class="ph">[FORMULA_SYNTAX]</span> is requested.
+
+Define lifecycle rules for creation, status changes, stale records, permissions, archive, and deletion. Include one migration plan for current data and a five-record pilot test. Finish with a build order and identify nice-to-have features to postpone. Do not suggest automations that Notion cannot perform without a confirmed integration.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Take the role of a Notion systems designer building the smallest database structure that supports the real workflow.
+
+What is being tracked: [ITEMS]
+Users and roles: [USERS]
+Workflow stages: [STAGES]
+Questions users need answered: [QUESTIONS]
+Existing databases: [EXISTING]
+Reporting or automation needs: [NEEDS]
+
+Start by identifying the primary record and its unique naming rule. Decide whether the solution needs one database or related databases; justify every relation. Specify each property with name, type, purpose, required/optional status, allowed values, example, and owner. Avoid redundant properties that can be derived or rolled up.
+
+Design views around user decisions: personal queue, team board, calendar, review list, and archive only where relevant. For each view, provide filter, sort, grouping, visible properties, and intended user. Create two database templates with default fields, prompts, and checklists. Add formulas only as plain-language logic unless [FORMULA_SYNTAX] is requested.
+
+Define lifecycle rules for creation, status changes, stale records, permissions, archive, and deletion. Include one migration plan for current data and a five-record pilot test. Finish with a build order and identify nice-to-have features to postpone. Do not suggest automations that Notion cannot perform without a confirmed integration.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Start with one source-of-truth database and add relations only for repeated entities.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A build-ready Notion schema with views, templates, and governance.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="073-assumptions-first-analysis.html">← Previous · 073</a>
+      
+      
+      <a href="075-meeting-notes-to-accountable-actions.html">075 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

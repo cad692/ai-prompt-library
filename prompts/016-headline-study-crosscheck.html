@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>016 · Headline Study Crosscheck · AI Prompt Library</title>
+  <meta name="description" content="Use this to compare news coverage with the study or data it describes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=016">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/016-headline-study-crosscheck.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">016</span>
+      <span class="pill pill-cat">Research &amp; Search</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>Headline Study Crosscheck</h1>
+    <p class="muted">Use this to compare news coverage with the study or data it describes.</p>
+    
+    <p><strong>Use case:</strong> A reader can check whether a viral headline accurately represents research findings, limitations, and relevance to their own context.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Perplexity</strong> — Can locate both current coverage and the linked original research.</li>
+      
+      <li><strong>NotebookLM</strong> — Grounds comparison in uploaded news and study documents with source references.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Compare the news story <span class="ph">[NEWS_URL_OR_TEXT]</span> with the original study or dataset <span class="ph">[STUDY_URL_OR_FILE]</span> as a media-literacy analyst.
+
+First confirm that the story actually refers to this study. Record the headline, outlet, date, study title, authors, venue, and identifier. If the original cannot be accessed, state that limitation and avoid a definitive verdict.
+
+Use a side-by-side format covering: population and sample size, research design, measured outcome, timeframe, effect size, uncertainty, funding or conflicts, and limitations. Quote the news wording beside the relevant study wording where possible.
+
+Check for common distortions: correlation described as causation, relative risk without absolute risk, animal or laboratory findings generalised to humans, preliminary work treated as settled, subgroup results presented as universal, and applicability to Pakistan assumed without evidence.
+
+Give the headline one verdict: accurate, mostly accurate, overstated, misleading, or unverifiable. Justify it with three concise evidence points. Then rewrite the headline and a 100-word summary to match the study more faithfully without draining all interest. End with two questions readers should ask before changing behaviour based on this finding, especially if it concerns health, finance, or safety.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Compare the news story [NEWS_URL_OR_TEXT] with the original study or dataset [STUDY_URL_OR_FILE] as a media-literacy analyst.
+
+First confirm that the story actually refers to this study. Record the headline, outlet, date, study title, authors, venue, and identifier. If the original cannot be accessed, state that limitation and avoid a definitive verdict.
+
+Use a side-by-side format covering: population and sample size, research design, measured outcome, timeframe, effect size, uncertainty, funding or conflicts, and limitations. Quote the news wording beside the relevant study wording where possible.
+
+Check for common distortions: correlation described as causation, relative risk without absolute risk, animal or laboratory findings generalised to humans, preliminary work treated as settled, subgroup results presented as universal, and applicability to Pakistan assumed without evidence.
+
+Give the headline one verdict: accurate, mostly accurate, overstated, misleading, or unverifiable. Justify it with three concise evidence points. Then rewrite the headline and a 100-word summary to match the study more faithfully without draining all interest. End with two questions readers should ask before changing behaviour based on this finding, especially if it concerns health, finance, or safety.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Read the study&#39;s methods and limitations before deciding whether the headline is fair.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A side-by-side verdict on headline accuracy, study quality, and applicability.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="015-rival-explanations-workbench.html">← Previous · 015</a>
+      
+      
+      <a href="017-research-question-sharpener.html">017 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

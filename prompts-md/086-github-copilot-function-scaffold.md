@@ -1,0 +1,34 @@
+# 086 — GitHub Copilot Function Scaffold
+
+**Category:** addins · **Difficulty:** Intermediate
+
+**Usage:** Generate a function stub with explicit contracts, edge cases, and test placeholders.
+
+**Expected output:** A typed function skeleton, documentation, validation, and test cases.
+
+**Tip:** Keep the TODOs until each assumption has a matching test or documented decision.
+
+## Best tools
+- **GitHub Copilot**: Uses nearby code, types, and conventions to propose an in-editor scaffold.
+
+## Prompt
+
+```text
+Goal: Scaffold a [LANGUAGE] function named [FUNCTION_NAME] that fits this repository without pretending the implementation is complete.
+
+Inputs are [INPUTS], the return contract is [RETURN_TYPE], and the function must satisfy [BEHAVIOUR]. Follow conventions visible in [REFERENCE_FILE_OR_SNIPPET], including naming, error handling, logging, and asynchronous style. If the repository context does not establish a convention, mark the choice as an assumption.
+
+Write:
+1. a concise doc comment describing purpose, parameters, return value, and thrown errors;
+2. the full signature with useful types;
+3. guard clauses for invalid, empty, boundary, and permission-related inputs where applicable;
+4. a readable control-flow skeleton containing targeted TODO comments;
+5. no invented API calls, package imports, or database fields.
+
+Beneath the stub, propose tests for the happy path, malformed input, boundary values, dependency failure, and one domain-specific edge case from [EDGE_CASE]. Clearly separate unit tests from integration tests.
+
+Keep security-sensitive values out of logs. Prefer explicit failure over silent fallback, and explain any ambiguity that a maintainer must resolve before implementation.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

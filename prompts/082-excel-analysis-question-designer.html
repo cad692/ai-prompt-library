@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>082 · Excel Analysis Question Designer · AI Prompt Library</title>
+  <meta name="description" content="Ask Copilot in Excel for a focused, auditable analysis of a selected table.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=082">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/082-excel-analysis-question-designer.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">082</span>
+      <span class="pill pill-cat">AI Add-ins</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>Excel Analysis Question Designer</h1>
+    <p class="muted">Ask Copilot in Excel for a focused, auditable analysis of a selected table.</p>
+    
+    <p><strong>Use case:</strong> Turn a vague business question into a precise Excel analysis request with checks and visible assumptions.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Microsoft Copilot</strong> — Can analyze structured workbook tables and suggest formulas or summaries in context.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Goal: Act as an Excel analysis partner and answer <span class="ph">[BUSINESS_QUESTION]</span> using only the table named <span class="ph">[TABLE_NAME]</span>.
+
+Begin by mapping the relevant columns: <span class="ph">[COLUMN_DESCRIPTIONS]</span>. State which field represents time, category, value, and any unique identifier. Inspect for blanks, duplicated records, inconsistent labels, impossible values, and mixed units before interpreting patterns. If the question cannot be answered from these columns, say exactly what is missing.
+
+Propose the smallest useful analysis: formulas, a PivotTable, or a chart—not all three unless each adds a distinct insight. Show formulas with structured references and explain where they should be placed. Separate observed results from possible explanations; correlation is not proof of cause.
+
+Present the response as:
+1. data-quality findings;
+2. recommended analysis steps;
+3. key results in plain language;
+4. one suitable visual with axis definitions;
+5. two manual cross-checks using totals or sample rows.
+
+Use <span class="ph">[DATE_RANGE]</span> and <span class="ph">[SEGMENTS]</span> as filters. Never overwrite source data, and label any estimated or excluded values.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Goal: Act as an Excel analysis partner and answer [BUSINESS_QUESTION] using only the table named [TABLE_NAME].
+
+Begin by mapping the relevant columns: [COLUMN_DESCRIPTIONS]. State which field represents time, category, value, and any unique identifier. Inspect for blanks, duplicated records, inconsistent labels, impossible values, and mixed units before interpreting patterns. If the question cannot be answered from these columns, say exactly what is missing.
+
+Propose the smallest useful analysis: formulas, a PivotTable, or a chart—not all three unless each adds a distinct insight. Show formulas with structured references and explain where they should be placed. Separate observed results from possible explanations; correlation is not proof of cause.
+
+Present the response as:
+1. data-quality findings;
+2. recommended analysis steps;
+3. key results in plain language;
+4. one suitable visual with axis definitions;
+5. two manual cross-checks using totals or sample rows.
+
+Use [DATE_RANGE] and [SEGMENTS] as filters. Never overwrite source data, and label any estimated or excluded values.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Convert the range to a named table and define each column before asking.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> An analysis plan, formulas or pivots, findings, and validation checks.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="081-word-rewrite-with-guardrails.html">← Previous · 081</a>
+      
+      
+      <a href="083-gmail-context-aware-draft.html">083 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

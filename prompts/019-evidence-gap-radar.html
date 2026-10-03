@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>019 · Evidence Gap Radar · AI Prompt Library</title>
+  <meta name="description" content="Use this to identify defensible research gaps without claiming that nothing exists.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=019">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/019-evidence-gap-radar.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">019</span>
+      <span class="pill pill-cat">Research &amp; Search</span>
+      <span class="badge badge-advanced">Advanced</span>
+    </div>
+    <h1>Evidence Gap Radar</h1>
+    <p class="muted">Use this to identify defensible research gaps without claiming that nothing exists.</p>
+    
+    <p><strong>Use case:</strong> A thesis writer or programme team can find neglected populations, methods, contexts, or contradictions worth investigating.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>NotebookLM</strong> — Compares patterns and omissions across a supplied body of literature.</li>
+      
+      <li><strong>Perplexity</strong> — Helps test whether an apparent gap persists in recent discoverable research.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Act as an evidence-gap analyst for the literature collection <span class="ph">[CORPUS_OR_SOURCE_LIST]</span> on <span class="ph">[TOPIC]</span>.
+
+My scope is <span class="ph">[YEARS]</span>, <span class="ph">[GEOGRAPHY]</span>, <span class="ph">[POPULATION]</span>, and <span class="ph">[DISCIPLINE]</span>. Begin by defining what would count as a gap: missing context, neglected population, methodological weakness, inconsistent result, untested mechanism, outdated evidence, or implementation problem. Do not equate “few papers I saw” with “no research exists.”
+
+Build a coverage grid crossing major themes with populations, locations, methods, and time periods. Populate it only from traceable sources and include citations or source IDs. Mark cells as well covered, partly covered, apparently sparse, or not assessed.
+
+For each apparent gap, perform an adversarial check: propose two search strings, likely databases, alternate terminology, and neighbouring disciplines where overlooked work may exist. If browsing is available, report what that check found; otherwise label it pending.
+
+Rank the surviving gaps by significance, originality within scope, feasibility, ethical access, and value for Pakistan or <span class="ph">[TARGET_CONTEXT]</span>. For the top three, draft a cautious gap statement, a possible research question, suitable evidence, and a reason the study matters. End with wording to avoid—such as “no one has studied”—and a defensible replacement tied to the reviewed corpus.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Act as an evidence-gap analyst for the literature collection [CORPUS_OR_SOURCE_LIST] on [TOPIC].
+
+My scope is [YEARS], [GEOGRAPHY], [POPULATION], and [DISCIPLINE]. Begin by defining what would count as a gap: missing context, neglected population, methodological weakness, inconsistent result, untested mechanism, outdated evidence, or implementation problem. Do not equate “few papers I saw” with “no research exists.”
+
+Build a coverage grid crossing major themes with populations, locations, methods, and time periods. Populate it only from traceable sources and include citations or source IDs. Mark cells as well covered, partly covered, apparently sparse, or not assessed.
+
+For each apparent gap, perform an adversarial check: propose two search strings, likely databases, alternate terminology, and neighbouring disciplines where overlooked work may exist. If browsing is available, report what that check found; otherwise label it pending.
+
+Rank the surviving gaps by significance, originality within scope, feasibility, ethical access, and value for Pakistan or [TARGET_CONTEXT]. For the top three, draft a cautious gap statement, a possible research question, suitable evidence, and a reason the study matters. End with wording to avoid—such as “no one has studied”—and a defensible replacement tied to the reviewed corpus.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Describe a bounded gap in a searched corpus, never an absolute absence across all research.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A ranked gap map with evidence, search checks, and viable study directions.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="018-annotated-source-cards.html">← Previous · 018</a>
+      
+      
+      <a href="020-portable-fact-check-plan.html">020 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

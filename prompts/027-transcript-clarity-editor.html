@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>027 · Transcript Clarity Editor · AI Prompt Library</title>
+  <meta name="description" content="Use this to clean a meeting transcript while preserving meaning and accountability.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=027">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/027-transcript-clarity-editor.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">027</span>
+      <span class="pill pill-cat">Documents &amp; PDFs</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>Transcript Clarity Editor</h1>
+    <p class="muted">Use this to clean a meeting transcript while preserving meaning and accountability.</p>
+    
+    <p><strong>Use case:</strong> A team can turn a rough automated transcript into readable minutes without silently changing decisions or speaker intent.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Claude</strong> — Handles long transcripts and preserves context across speaker turns.</li>
+      
+      <li><strong>Microsoft Copilot</strong> — Fits meeting workflows involving Teams transcripts and Microsoft documents.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Clean <span class="ph">[MEETING_TRANSCRIPT]</span> into a readable record without changing what participants meant.
+
+Meeting title and date: <span class="ph">[MEETING_DETAILS]</span>. Known speakers: <span class="ph">[SPEAKER_LIST]</span>. Desired output: <span class="ph">[CLEAN_TRANSCRIPT_OR_MINUTES]</span>. Treat the original as the authority. Do not invent names, fix factual disagreements, or turn tentative suggestions into decisions.
+
+For the cleaned transcript, standardise speaker labels, punctuation, and paragraph breaks. Remove filler only when meaning and tone remain intact. Retain meaningful hesitation, disagreement, conditions, and uncertainty. Replace inaudible or doubtful segments with [UNCLEAR at TIMESTAMP] and include the nearest safe context.
+
+Keep timestamps at <span class="ph">[INTERVAL_OR_TOPIC_CHANGES]</span>. Mark any proposed correction to a number, name, or technical term in braces as {VERIFY: ...}; never silently substitute it.
+
+After the transcript, provide:
+- decisions explicitly made;
+- action items with owner, deadline, and timestamp;
+- proposals not yet approved;
+- unresolved questions;
+- an uncertainty log for every <span class="ph">[UNCLEAR]</span> or {VERIFY} marker.
+
+Finish with a five-sentence meeting summary that distinguishes discussion from commitment. If speakers shared personal, client, or confidential data, flag passages for redaction before circulation. Do not infer emotion from voice or wording unless it was explicitly stated.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Clean [MEETING_TRANSCRIPT] into a readable record without changing what participants meant.
+
+Meeting title and date: [MEETING_DETAILS]. Known speakers: [SPEAKER_LIST]. Desired output: [CLEAN_TRANSCRIPT_OR_MINUTES]. Treat the original as the authority. Do not invent names, fix factual disagreements, or turn tentative suggestions into decisions.
+
+For the cleaned transcript, standardise speaker labels, punctuation, and paragraph breaks. Remove filler only when meaning and tone remain intact. Retain meaningful hesitation, disagreement, conditions, and uncertainty. Replace inaudible or doubtful segments with [UNCLEAR at TIMESTAMP] and include the nearest safe context.
+
+Keep timestamps at [INTERVAL_OR_TOPIC_CHANGES]. Mark any proposed correction to a number, name, or technical term in braces as {VERIFY: ...}; never silently substitute it.
+
+After the transcript, provide:
+- decisions explicitly made;
+- action items with owner, deadline, and timestamp;
+- proposals not yet approved;
+- unresolved questions;
+- an uncertainty log for every [UNCLEAR] or {VERIFY} marker.
+
+Finish with a five-sentence meeting summary that distinguishes discussion from commitment. If speakers shared personal, client, or confidential data, flag passages for redaction before circulation. Do not infer emotion from voice or wording unless it was explicitly stated.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Keep the raw transcript unchanged alongside the edited version for auditability.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A cleaned transcript, uncertainty log, decisions, and verified action items.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="026-thesis-chapter-reading-companion.html">← Previous · 026</a>
+      
+      
+      <a href="028-policy-plain-language-translator.html">028 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

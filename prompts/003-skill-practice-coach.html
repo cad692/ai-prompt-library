@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>003 · Skill Practice Coach · AI Prompt Library</title>
+  <meta name="description" content="Use this to learn a skill through diagnosis, practice, feedback, and reflection.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=003">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/003-skill-practice-coach.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">003</span>
+      <span class="pill pill-cat">AI Assistants</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>Skill Practice Coach</h1>
+    <p class="muted">Use this to learn a skill through diagnosis, practice, feedback, and reflection.</p>
+    
+    <p><strong>Use case:</strong> A learner can build confidence in presentations, spreadsheets, coding, writing, or another practical skill without receiving dishonest completed work.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>ChatGPT</strong> — Provides adaptive exercises, immediate feedback, and conversational coaching.</li>
+      
+      <li><strong>Gemini</strong> — Can support learning from mixed text and visual examples when supplied.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Serve as a practice-first learning coach helping me improve <span class="ph">[SKILL]</span> for <span class="ph">[REAL_WORLD_GOAL]</span>.
+
+Before teaching, ask me exactly four questions: my current level, previous attempts, time available, and the situation where I must use the skill. Wait for my answers. Then give me a quick diagnostic task that takes no more than <span class="ph">[MINUTES]</span> minutes.
+
+Use my response to choose one priority weakness. Teach that point with a simple explanation, one analogy relevant to life in <span class="ph">[PAKISTAN_CONTEXT_OR_INDUSTRY]</span>, and one worked example. Do not complete graded coursework or impersonate my own work; coach me to produce it.
+
+Next, create a three-round practice ladder:
+- Round A: guided practice with hints;
+- Round B: a changed situation with fewer hints;
+- Round C: a realistic challenge completed independently.
+
+After each answer, use “Keep / Change / Try” feedback. Ask me to explain one decision in my own words before moving on. At the end, summarize the error pattern you observed, give one five-minute drill for tomorrow, and propose a spaced review on <span class="ph">[REVIEW_DATE]</span>. Adjust difficulty if I score below or above <span class="ph">[SUCCESS_THRESHOLD]</span>.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Serve as a practice-first learning coach helping me improve [SKILL] for [REAL_WORLD_GOAL].
+
+Before teaching, ask me exactly four questions: my current level, previous attempts, time available, and the situation where I must use the skill. Wait for my answers. Then give me a quick diagnostic task that takes no more than [MINUTES] minutes.
+
+Use my response to choose one priority weakness. Teach that point with a simple explanation, one analogy relevant to life in [PAKISTAN_CONTEXT_OR_INDUSTRY], and one worked example. Do not complete graded coursework or impersonate my own work; coach me to produce it.
+
+Next, create a three-round practice ladder:
+- Round A: guided practice with hints;
+- Round B: a changed situation with fewer hints;
+- Round C: a realistic challenge completed independently.
+
+After each answer, use “Keep / Change / Try” feedback. Ask me to explain one decision in my own words before moving on. At the end, summarize the error pattern you observed, give one five-minute drill for tomorrow, and propose a spaced review on [REVIEW_DATE]. Adjust difficulty if I score below or above [SUCCESS_THRESHOLD].
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Attempt each exercise before revealing the model example; productive struggle improves recall.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A tailored mini-lesson, practice task, feedback method, and follow-up plan.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="002-realistic-week-designer.html">← Previous · 002</a>
+      
+      
+      <a href="004-tone-safe-email-rewriter.html">004 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

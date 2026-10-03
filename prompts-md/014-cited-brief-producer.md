@@ -1,0 +1,35 @@
+# 014 — Cited Brief Producer
+
+**Category:** research · **Difficulty:** Intermediate
+
+**Usage:** Use this to create a current web brief whose citations can be checked.
+
+**Expected output:** A concise, citation-rich brief with verified links and uncertainty labels.
+
+**Tip:** Open every citation and confirm that it supports the exact sentence attached to it.
+
+## Best tools
+- **Perplexity**: Specializes in current web research with inline source links.
+- **Microsoft Copilot**: Can produce web-grounded summaries with linked sources for verification.
+
+## Prompt
+
+```text
+Produce a decision-ready cited brief on [TOPIC] for [AUDIENCE] as of [CUT_OFF_DATE].
+
+Answer this central question: [QUESTION]. Prioritise primary documents, official statistics, peer-reviewed research, and reputable reporting. Search across viewpoints and include Pakistan-specific evidence where relevant. Do not cite search-result snippets, AI summaries, or inaccessible references as if checked.
+
+Structure the brief in this order:
+1. Bottom line in 80 words or fewer.
+2. Five key findings, each followed by an inline link that directly supports it.
+3. “What changed recently,” with dates.
+4. Stakeholder implications for [STAKEHOLDERS].
+5. Two unresolved questions.
+
+Beside every finding, label evidence as primary, secondary, or commentary. Where sources disagree, present both positions and identify the likely reason without forcing false balance. Quote sparingly and never alter quoted meaning.
+
+Add a source ledger listing title, publisher, publication date, access date, URL, and one-line relevance. Test each URL if your tools allow it. If a claim lacks adequate support, mark [EVIDENCE NOT FOUND] and revise the bottom line accordingly. End with three verification actions the reader should take before using the brief for a high-stakes decision.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

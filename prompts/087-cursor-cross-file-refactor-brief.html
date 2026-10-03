@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>087 · Cursor Multi-File Refactor Brief · AI Prompt Library</title>
+  <meta name="description" content="Ask Cursor to refactor several files while preserving public behavior and limiting scope.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=087">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/087-cursor-cross-file-refactor-brief.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">087</span>
+      <span class="pill pill-cat">AI Add-ins</span>
+      <span class="badge badge-advanced">Advanced</span>
+    </div>
+    <h1>Cursor Multi-File Refactor Brief</h1>
+    <p class="muted">Ask Cursor to refactor several files while preserving public behavior and limiting scope.</p>
+    
+    <p><strong>Use case:</strong> Frame a repository-aware refactor with boundaries, checkpoints, and verification requirements.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Cursor</strong> — Can inspect related files and apply coordinated edits across a codebase.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Role: Act as a repository maintainer performing a bounded refactor; preserve observable behaviour while improving <span class="ph">[REFACTOR_GOAL]</span>.
+
+Inspect <span class="ph">[ENTRY_FILES]</span> and trace only the imports, tests, and configuration needed to understand the change. Before editing, summarise the current design, list files you expect to touch, and identify public APIs or persisted formats that must remain compatible. Do not modify generated files, lockfiles, unrelated formatting, or <span class="ph">[EXCLUDED_PATHS]</span>.
+
+Implement the smallest coherent change. Use existing abstractions where they genuinely fit; do not introduce a new framework for convenience. If a proposed rename crosses package boundaries, update references and tests together. Pause and report if the code contradicts <span class="ph">[EXPECTED_BEHAVIOUR]</span> or if migration would be required.
+
+Verification must include <span class="ph">[TEST_COMMAND]</span>, relevant static checks, and a search for stale identifiers. Report:
+- files changed and why;
+- behaviour intentionally unchanged;
+- tests run with results;
+- risks or unverified paths;
+- any follow-up work kept outside scope.
+
+Never claim a check passed unless it ran. Preserve user changes already present in the working tree.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Role: Act as a repository maintainer performing a bounded refactor; preserve observable behaviour while improving [REFACTOR_GOAL].
+
+Inspect [ENTRY_FILES] and trace only the imports, tests, and configuration needed to understand the change. Before editing, summarise the current design, list files you expect to touch, and identify public APIs or persisted formats that must remain compatible. Do not modify generated files, lockfiles, unrelated formatting, or [EXCLUDED_PATHS].
+
+Implement the smallest coherent change. Use existing abstractions where they genuinely fit; do not introduce a new framework for convenience. If a proposed rename crosses package boundaries, update references and tests together. Pause and report if the code contradicts [EXPECTED_BEHAVIOUR] or if migration would be required.
+
+Verification must include [TEST_COMMAND], relevant static checks, and a search for stale identifiers. Report:
+- files changed and why;
+- behaviour intentionally unchanged;
+- tests run with results;
+- risks or unverified paths;
+- any follow-up work kept outside scope.
+
+Never claim a check passed unless it ran. Preserve user changes already present in the working tree.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Name the permitted files and verification command before authorising edits.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A scoped refactor, affected-file summary, and test evidence.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="086-github-copilot-function-scaffold.html">← Previous · 086</a>
+      
+      
+      <a href="088-notion-meeting-notes-curator.html">088 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

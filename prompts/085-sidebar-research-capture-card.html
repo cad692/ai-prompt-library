@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>085 · Browser Sidebar Research Capture Card · AI Prompt Library</title>
+  <meta name="description" content="Capture a web source into reusable evidence notes without confusing claims with conclusions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=085">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/085-sidebar-research-capture-card.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">085</span>
+      <span class="pill pill-cat">AI Add-ins</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>Browser Sidebar Research Capture Card</h1>
+    <p class="muted">Capture a web source into reusable evidence notes without confusing claims with conclusions.</p>
+    
+    <p><strong>Use case:</strong> Use a browser AI sidebar to turn the current page into a traceable research card.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Browser AI sidebar</strong> — Can summarise the open page while keeping its URL and visible context nearby.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Role: You are an evidence-capture librarian working from the currently open webpage; create a source card, not a generic summary.
+
+Record the page title, publisher, author if visible, publication or update date, URL <span class="ph">[PAGE_URL]</span>, and access date <span class="ph">[ACCESS_DATE]</span>. Identify the source type—report, news article, company page, opinion, dataset, or other—and note who appears responsible for the content.
+
+Extract three to seven claims relevant to <span class="ph">[RESEARCH_QUESTION]</span>. For every claim, include a short supporting quotation or precise page location, plus a label: direct evidence, author interpretation, or promotional assertion. Preserve numbers with their units, geography, sample, and time period. If these details are absent, write “not stated.”
+
+Add:
+- a two-sentence relevance note;
+- likely limitations or conflicts of interest;
+- terms worth searching independently;
+- one claim that needs corroboration;
+- a suggested filename using <span class="ph">[PROJECT_NAME]</span>.
+
+Do not infer facts hidden behind links or paywalls. Never fabricate a quotation. End with a reliability note based on transparent criteria, not a definitive truth score.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Role: You are an evidence-capture librarian working from the currently open webpage; create a source card, not a generic summary.
+
+Record the page title, publisher, author if visible, publication or update date, URL [PAGE_URL], and access date [ACCESS_DATE]. Identify the source type—report, news article, company page, opinion, dataset, or other—and note who appears responsible for the content.
+
+Extract three to seven claims relevant to [RESEARCH_QUESTION]. For every claim, include a short supporting quotation or precise page location, plus a label: direct evidence, author interpretation, or promotional assertion. Preserve numbers with their units, geography, sample, and time period. If these details are absent, write “not stated.”
+
+Add:
+- a two-sentence relevance note;
+- likely limitations or conflicts of interest;
+- terms worth searching independently;
+- one claim that needs corroboration;
+- a suggested filename using [PROJECT_NAME].
+
+Do not infer facts hidden behind links or paywalls. Never fabricate a quotation. End with a reliability note based on transparent criteria, not a definitive truth score.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Open the original source and verify quotations instead of trusting the sidebar summary.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A source card with claims, quotes, limitations, and follow-up questions.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="084-grammarly-human-tone-review.html">← Previous · 084</a>
+      
+      
+      <a href="086-github-copilot-function-scaffold.html">086 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>073 · Assumptions First Analysis · AI Prompt Library</title>
+  <meta name="description" content="Use before quantitative analysis to expose definitions, assumptions, and decision thresholds.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=073">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/073-assumptions-first-analysis.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">073</span>
+      <span class="pill pill-cat">Data &amp; Productivity</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Assumptions First Analysis</h1>
+    <p class="muted">Use before quantitative analysis to expose definitions, assumptions, and decision thresholds.</p>
+    
+    <p><strong>Use case:</strong> Frames an analysis so hidden choices become reviewable before calculations begin. It reduces confident answers to the wrong question.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Claude</strong> — Handles complex analytical context and tracks assumptions across a long brief.</li>
+      
+      <li><strong>ChatGPT</strong> — Structures decision questions, sensitivity tests, and evidence gaps.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Act as an analytical reviewer who pauses calculation until the question and assumptions are explicit.
+
+Decision to be made: <span class="ph">[DECISION]</span>
+Available data: <span class="ph">[DATA]</span>
+Proposed method: <span class="ph">[METHOD]</span>
+Stakeholders: <span class="ph">[STAKEHOLDERS]</span>
+Constraints: <span class="ph">[CONSTRAINTS]</span>
+Deadline: <span class="ph">[DEADLINE]</span>
+
+Produce an “analysis contract.” Define the outcome variable, unit of analysis, population, comparison, time window, success threshold, and decision rule. Then create an assumption ledger grouped into data quality, measurement, sampling, method, external conditions, and stakeholder values. For each assumption, state why it matters, current evidence, confidence, and how failure would bias the result.
+
+Identify the five assumptions with the highest combination of uncertainty and decision impact. Design a sensitivity test or validation check for each. Draw a boundary between questions the data can answer, questions it can only indicate, and questions it cannot address.
+
+Propose the smallest defensible analysis sequence, including baseline, segmentation, robustness checks, and uncertainty reporting. Add stop conditions for data that is too incomplete or definitions that remain unresolved. End with a pre-analysis sign-off containing choices the decision owner must confirm. Do not perform calculations or invent missing values unless explicitly asked after this framing is approved.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Act as an analytical reviewer who pauses calculation until the question and assumptions are explicit.
+
+Decision to be made: [DECISION]
+Available data: [DATA]
+Proposed method: [METHOD]
+Stakeholders: [STAKEHOLDERS]
+Constraints: [CONSTRAINTS]
+Deadline: [DEADLINE]
+
+Produce an “analysis contract.” Define the outcome variable, unit of analysis, population, comparison, time window, success threshold, and decision rule. Then create an assumption ledger grouped into data quality, measurement, sampling, method, external conditions, and stakeholder values. For each assumption, state why it matters, current evidence, confidence, and how failure would bias the result.
+
+Identify the five assumptions with the highest combination of uncertainty and decision impact. Design a sensitivity test or validation check for each. Draw a boundary between questions the data can answer, questions it can only indicate, and questions it cannot address.
+
+Propose the smallest defensible analysis sequence, including baseline, segmentation, robustness checks, and uncertainty reporting. Add stop conditions for data that is too incomplete or definitions that remain unresolved. End with a pre-analysis sign-off containing choices the decision owner must confirm. Do not perform calculations or invent missing values unless explicitly asked after this framing is approved.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Ask the decision owner to approve definitions before calculating results.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> An analysis contract with assumptions, tests, and stop conditions.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="072-chart-to-decision-narrative.html">← Previous · 072</a>
+      
+      
+      <a href="074-notion-database-system-designer.html">074 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

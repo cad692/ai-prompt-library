@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>021 · PDF Active Study Notes · AI Prompt Library</title>
+  <meta name="description" content="Use this to transform an uploaded reading into notes that support active recall.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=021">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/021-pdf-active-study-notes.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">021</span>
+      <span class="pill pill-cat">Documents &amp; PDFs</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>PDF Active Study Notes</h1>
+    <p class="muted">Use this to transform an uploaded reading into notes that support active recall.</p>
+    
+    <p><strong>Use case:</strong> A student can study a chapter or paper efficiently while keeping summaries connected to exact pages.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>NotebookLM</strong> — Answers from uploaded sources with grounding and source-location support.</li>
+      
+      <li><strong>Claude</strong> — Handles long PDFs and produces well-structured learning materials.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Turn the uploaded <span class="ph">[PDF_TITLE]</span> into active study notes for <span class="ph">[COURSE_OR_EXAM]</span>, grounded only in the document.
+
+My current level is <span class="ph">[LEVEL]</span>, the assessed topics are <span class="ph">[TOPICS]</span>, and I have <span class="ph">[STUDY_TIME]</span>. Read the document’s headings, figures, tables, and conclusion. If pages are missing, scanned illegibly, or inaccessible, identify them rather than guessing.
+
+Build the notes in learning order, which may differ from page order. For each concept include: a plain-language explanation, essential terminology, one concrete example from the PDF, and page references. Mark definitions exactly quoted from the document with quotation marks; paraphrase everything else.
+
+Then create an Active Recall Pack:
+- eight short-answer questions;
+- three application questions;
+- two “spot the misconception” items;
+- a compact answer key with page pointers.
+
+Add a visual text map connecting the chapter’s main ideas with arrows and relationship labels. Identify any formula, framework, or process that requires memorisation, and devise one mnemonic without distorting the meaning.
+
+Close with a <span class="ph">[NUMBER_OF_DAYS]</span>-day review schedule using spaced practice. Include a “return to the PDF” list for claims, diagrams, or examples that need closer reading. Do not write assignment answers or conceal AI assistance; these notes must help me learn the source.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Turn the uploaded [PDF_TITLE] into active study notes for [COURSE_OR_EXAM], grounded only in the document.
+
+My current level is [LEVEL], the assessed topics are [TOPICS], and I have [STUDY_TIME]. Read the document’s headings, figures, tables, and conclusion. If pages are missing, scanned illegibly, or inaccessible, identify them rather than guessing.
+
+Build the notes in learning order, which may differ from page order. For each concept include: a plain-language explanation, essential terminology, one concrete example from the PDF, and page references. Mark definitions exactly quoted from the document with quotation marks; paraphrase everything else.
+
+Then create an Active Recall Pack:
+- eight short-answer questions;
+- three application questions;
+- two “spot the misconception” items;
+- a compact answer key with page pointers.
+
+Add a visual text map connecting the chapter’s main ideas with arrows and relationship labels. Identify any formula, framework, or process that requires memorisation, and devise one mnemonic without distorting the meaning.
+
+Close with a [NUMBER_OF_DAYS]-day review schedule using spaced practice. Include a “return to the PDF” list for claims, diagrams, or examples that need closer reading. Do not write assignment answers or conceal AI assistance; these notes must help me learn the source.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Try the recall questions before reopening the PDF or reading the answer key.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> Page-linked study notes, recall questions, misconceptions, and a review plan.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="020-portable-fact-check-plan.html">← Previous · 020</a>
+      
+      
+      <a href="022-agreement-risk-spotter.html">022 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,584 @@
+# Tool profiles for the AI Tool Selection Guide
+# Last verified: 3 October 2026
+# FX: 1 USD ≈ 278 PKR (Pakistan open-market selling ~278.3; interbank ~277.07). Approx PKR = USD × 278, rounded to nearest 50.
+# Status values: verified | partially_verified | unverified
+
+meta:
+  last_verified: "3 October 2026"
+  usd_to_pkr: 278
+  fx_note: "Open-market selling ~PKR 278.3 on 3 Oct 2026 (Pakistan Observer / Daily Pakistan). Interbank ~277.07."
+  disclaimer: "Prices and limits change quickly. Confirm on the vendor site before you pay. This is not financial, legal, or tax advice."
+
+tools:
+  - id: chatgpt
+    name: ChatGPT
+    category: assistants
+    status: verified
+    best_for: Everyday writing, brainstorming, coding help, file analysis, images on paid tiers
+    avoid_when: You need guaranteed peer-reviewed citations only, or must keep data fully off third-party servers
+    free_tier: Unlimited everyday text chats subject to abuse limits; limited uploads, images, voice, deep research, memory. Ads may appear on Free/Go in some markets.
+    paid_usd: "Go $8/mo; Plus $20/mo; Pro $200/mo (US list)"
+    paid_pkr_approx: "Go ~PKR 2,200; Plus ~PKR 5,550; Pro ~PKR 55,600 /mo"
+    pakistan_access: "Widely usable. Billing usually USD card; Go is the budget paid option for students."
+    privacy: "Consumer chats may be used to improve models unless you opt out in settings. Never paste passwords, CNIC, bank details, or client secrets."
+    learning_curve: Beginner
+    sources:
+      - "https://openai.com/chatgpt/pricing"
+      - "https://openai.com/index/introducing-chatgpt-go/"
+      - "https://help.openai.com/en/articles/11989085-what-is-chatgpt-go"
+
+  - id: gemini
+    name: Gemini (Google)
+    category: assistants
+    status: partially_verified
+    best_for: Google ecosystem work, multimodal tasks, Deep Research, studying with Drive/Docs
+    avoid_when: You need a tool that stays outside Google's account ecosystem
+    free_tier: Free Gemini app with usage caps; solid for daily Q&A and light multimodal work
+    paid_usd: "Google AI Plus / Pro / Ultra. Exact US stickers often shown at checkout; secondary 2026 figures: Plus ~$4.99/mo, Pro ~$19.99/mo, Ultra $99.99 or $199.99/mo. CONFIRM AT CHECKOUT."
+    paid_pkr_approx: "If secondary figures hold: Plus ~PKR 1,400; Pro ~PKR 5,550; Ultra 5x ~PKR 27,800 /mo"
+    pakistan_access: "Free Gemini widely used. Paid Google AI plan availability and student 'Pro free for 1 year' offer vary by country — verify Pakistan eligibility."
+    privacy: "Tied to Google Account policies. Prefer Workspace/enterprise settings for school or work data."
+    learning_curve: Beginner
+    unverified_items:
+      - "Exact Google AI Plus/Pro price shown to Pakistan accounts"
+      - "Student Pro free year availability in Pakistan"
+    sources:
+      - "https://one.google.com/about/google-ai-plans/"
+      - "https://gemini.google/subscriptions/"
+
+  - id: claude
+    name: Claude
+    category: assistants
+    status: verified
+    best_for: Long documents, careful writing, analysis, coding (Claude Code on paid)
+    avoid_when: You need the absolute cheapest unlimited chat or heavy real-time web/social search
+    free_tier: Web/desktop/mobile chat, web search, artifacts, code/file tools, limited Projects (up to 5), usage caps on rolling ~5-hour windows
+    paid_usd: "Pro $20/mo or $17/mo annual ($200/yr); Max from $100/mo; Team Standard $25/mo ($20 annual); Premium seats $125/mo ($100 annual)"
+    paid_pkr_approx: "Pro ~PKR 5,550/mo; Max from ~PKR 27,800/mo"
+    pakistan_access: "Available where Anthropic supports service; USD card typical."
+    privacy: "Consumer opt-out of training available; Team/Enterprise no training on content by default."
+    learning_curve: Beginner
+    sources:
+      - "https://claude.com/pricing"
+
+  - id: copilot-microsoft
+    name: Microsoft Copilot
+    category: assistants
+    status: verified
+    best_for: Working inside Word, Excel, PowerPoint, Outlook, Teams, Windows
+    avoid_when: You only need a standalone chat and do not use Microsoft 365
+    free_tier: Copilot Chat (web-grounded) with a Microsoft account; limited vs full Copilot inside desktop apps
+    paid_usd: "Individuals: Copilot included with Microsoft 365 Personal $9.99/mo, Family $12.99/mo, Premium $19.99/mo (US). Business/Enterprise Copilot add-ons commonly ~$21–30/user/mo depending on SKU and promo."
+    paid_pkr_approx: "Personal ~PKR 2,800; Premium ~PKR 5,550 /mo"
+    pakistan_access: "Microsoft 365 sold locally; confirm which Copilot app features are enabled for your SKU in Pakistan."
+    privacy: "Enterprise Copilot has stronger data protections than consumer chat — use the right SKU for work data."
+    learning_curve: Beginner
+    sources:
+      - "https://www.microsoft.com/en-us/microsoft-365/try-copilot/individuals"
+      - "https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/enterprise"
+
+  - id: grok
+    name: Grok (xAI)
+    category: assistants
+    status: verified
+    best_for: Real-time web/X-flavoured answers, casual exploration, image/video on higher tiers
+    avoid_when: You need formal academic citations or strict enterprise data controls on the free tier
+    free_tier: Free plan with generous limits; real-time web + X search (limited vs paid)
+    paid_usd: "SuperGrok $30/mo; SuperGrok Plus $100/mo (x.ai/pricing). Lite/Heavy tiers appear in some comparisons — confirm on site. X Premium/Premium+ may raise limits or bundle access."
+    paid_pkr_approx: "SuperGrok ~PKR 8,350; Plus ~PKR 27,800 /mo"
+    pakistan_access: "Usable via web/app where not restricted; USD payment friction applies."
+    privacy: "SOC 2 claimed on pricing page for listed plans; still avoid sensitive personal data on consumer chat."
+    learning_curve: Beginner
+    sources:
+      - "https://x.ai/pricing"
+
+  - id: deepseek
+    name: DeepSeek
+    category: assistants
+    status: verified
+    best_for: Free capable chat for study/coding; very cheap API for builders
+    avoid_when: Handling regulated, client-confidential, or government-sensitive data
+    free_tier: Consumer web/app chat free; may throttle under load. No consumer Plus subscription found as of mid/late 2026 reporting.
+    paid_usd: "API only (per 1M tokens). Example from api-docs.deepseek.com: deepseek-flash and deepseek-v4-pro with peak/off-peak rates (e.g. flash cache-miss input ~$0.15–$0.30 / 1M; output ~$0.60–$1.20)."
+    paid_pkr_approx: "Chat free; API cost scales with tokens (often much cheaper than frontier US APIs)"
+    pakistan_access: "Popular with students; chat usually reachable. Prefer for non-sensitive work."
+    privacy: "Provider based in China; do not paste CNIC, banking, client files, or unpublished research."
+    learning_curve: Beginner
+    sources:
+      - "https://api-docs.deepseek.com/quick_start/pricing"
+      - "https://api-docs.deepseek.com/"
+
+  - id: meta-ai
+    name: Meta AI
+    category: assistants
+    status: verified
+    best_for: Quick help inside WhatsApp, Instagram, Facebook — high relevance in Pakistan
+    avoid_when: Confidential work, graded take-home exams, or anything you would not post on social platforms
+    free_tier: Free consumer Meta AI; no paid consumer tier found
+    paid_usd: "N/A for consumers"
+    paid_pkr_approx: "PKR 0"
+    pakistan_access: "Excellent reach via WhatsApp. Feature set can differ by app and region."
+    privacy: "Operates inside Meta apps — assume low confidentiality."
+    learning_curve: Beginner
+    sources:
+      - "Product availability observed via Meta apps; confirm in-app"
+
+  - id: perplexity
+    name: Perplexity
+    category: research
+    status: verified
+    best_for: Fast web answers with citations; quick market and news orientation
+    avoid_when: You need systematic literature review depth (prefer Elicit/Consensus) or you will not open the cited links
+    free_tier: Practically unlimited basic searches; about 3 Pro Searches/day; limited Research (Help Center, 2026)
+    paid_usd: "Pro ~$20/mo or ~$17/mo annual; Max ~$200/mo / ~$167 annual. Education discounts via SheerID in some cases."
+    paid_pkr_approx: "Pro ~PKR 5,550/mo"
+    pakistan_access: "Usable with USD payment for Pro."
+    privacy: "Queries go to Perplexity; do not paste private documents you cannot share."
+    learning_curve: Beginner
+    sources:
+      - "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you"
+      - "https://www.perplexity.ai/pro"
+
+  - id: notebooklm
+    name: NotebookLM
+    category: research
+    status: verified
+    best_for: Studying YOUR uploaded sources — notes, PDFs, lecture packs; audio overviews
+    avoid_when: You need live web search without your own source set (use Perplexity/Gemini)
+    free_tier: Strong free tier for source-grounded Q&A
+    paid_usd: "Higher limits via Google AI plans (Plus/Pro/Ultra)"
+    paid_pkr_approx: "Free-first; paid via Google AI plan pricing"
+    pakistan_access: "Highly recommended for students; respect copyright on uploads."
+    privacy: "Sources live in Google account — good for personal study materials, not for others' confidential data without permission."
+    learning_curve: Beginner
+    sources:
+      - "https://one.google.com/about/google-ai-plans/"
+
+  - id: consensus
+    name: Consensus
+    category: research
+    status: partially_verified
+    best_for: Questions answered from peer-reviewed literature
+    avoid_when: Non-academic current-events questions
+    free_tier: Free plan available
+    paid_usd: "Pro about $20/mo or $144/yr (secondary 2026 sources — confirm on consensus.app)"
+    paid_pkr_approx: "Pro ~PKR 5,550/mo or ~PKR 40,000/yr"
+    pakistan_access: "Web access; USD billing for Pro"
+    privacy: "Standard SaaS research tool — avoid uploading identifiable patient/student data"
+    learning_curve: Intermediate
+    unverified_items:
+      - "Exact current Pro entitlements on consensus.app"
+    sources:
+      - "Secondary: omidsaffari.com/blog/best-ai-research-tools (2026)"
+
+  - id: elicit
+    name: Elicit
+    category: research
+    status: partially_verified
+    best_for: Structured literature review, paper screening, data extraction
+    avoid_when: Casual web Q&A (overkill)
+    free_tier: Basic free (search/summaries; limited automated reports)
+    paid_usd: "Plus ~$12/mo; Pro ~$49/mo (secondary 2026 — confirm on elicit.com)"
+    paid_pkr_approx: "Plus ~PKR 3,350; Pro ~PKR 13,600 /mo"
+    pakistan_access: "Web access; USD billing"
+    privacy: "Do not upload restricted datasets"
+    learning_curve: Intermediate
+    unverified_items:
+      - "Exact current plan table on elicit.com"
+    sources:
+      - "Secondary research comparisons 2026"
+
+  - id: gamma
+    name: Gamma
+    category: presentations
+    status: verified
+    best_for: Fast AI-first decks, docs, simple sites from a prompt
+    avoid_when: You need pixel-perfect brand kits already living in Canva/PowerPoint
+    free_tier: Free plan with AI credits; export to PDF/PPTX/PNG/Google Slides (confirm current credit allotment)
+    paid_usd: "Plus ~$9/seat/mo annual; Pro ~$18; Ultra ~$90; Team/Business higher (gamma.app/pricing)"
+    paid_pkr_approx: "Plus ~PKR 2,500; Pro ~PKR 5,000; Ultra ~PKR 25,000 /mo"
+    pakistan_access: "Free tier friendly; paid needs international card"
+    privacy: "Do not put confidential client strategy into free public-share links"
+    learning_curve: Beginner
+    sources:
+      - "https://gamma.app/pricing"
+
+  - id: canva-ai
+    name: Canva AI
+    category: presentations
+    status: partially_verified
+    best_for: Social graphics, posters, simple presentations, brand kits for small businesses
+    avoid_when: You only need long report writing (use a chat assistant)
+    free_tier: Permanent free tier with limited AI uses
+    paid_usd: "Pro commonly ~$15–18/mo depending on region/billing (confirm canva.com/pricing)"
+    paid_pkr_approx: "Pro roughly PKR 4,200–5,000/mo — confirm local checkout"
+    pakistan_access: "Very popular locally; templates suit WhatsApp/Instagram marketing"
+    privacy: "Standard Canva account policies"
+    learning_curve: Beginner
+    unverified_items:
+      - "Exact Pakistan Pro price today"
+    sources:
+      - "Secondary comparisons 2026; confirm canva.com"
+
+  - id: beautiful-ai
+    name: Beautiful.ai
+    category: presentations
+    status: verified
+    best_for: Consistent smart-slide decks with less manual formatting
+    avoid_when: You need a true free forever plan (trial-first)
+    free_tier: 14-day trial (card often required) — not a permanent free plan
+    paid_usd: "Pro about $12–14.50/mo billed annually; Teams about $40/user/mo annual (beautiful.ai/pricing)"
+    paid_pkr_approx: "Pro ~PKR 3,350–4,050/mo; Teams ~PKR 11,100/user/mo"
+    pakistan_access: "USD card; student offers sometimes via .edu — Pakistani emails may not qualify"
+    privacy: "Business content — use team plans for shared org decks"
+    learning_curve: Beginner
+    sources:
+      - "https://www.beautiful.ai/pricing"
+
+  - id: midjourney
+    name: Midjourney
+    category: images-video
+    status: verified
+    best_for: High-aesthetic still images (and video on higher plans)
+    avoid_when: You need a free starter or strict private gens on the cheapest plan
+    free_tier: No free plan (as of Midjourney docs comparison)
+    paid_usd: "Basic $10; Standard $30; Pro $60; Mega $120 /mo. Annual ~20% off."
+    paid_pkr_approx: "Basic ~PKR 2,800; Standard ~PKR 8,350; Pro ~PKR 16,700 /mo"
+    pakistan_access: "Discord/web; USD billing. Gallery visibility until Stealth (Pro+)."
+    privacy: "Default generations may be visible on lower plans"
+    learning_curve: Intermediate
+    sources:
+      - "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"
+
+  - id: chatgpt-images
+    name: ChatGPT Images
+    category: images-video
+    status: verified
+    best_for: Convenient image generation inside the same chat you already use
+    avoid_when: You need Midjourney-level style control or Stealth gallery privacy
+    free_tier: Limited image creation on Free
+    paid_usd: "Higher limits on Go/Plus/Pro"
+    paid_pkr_approx: "Bundled with ChatGPT plans"
+    pakistan_access: "Same as ChatGPT"
+    privacy: "Same as ChatGPT consumer settings"
+    learning_curve: Beginner
+    sources:
+      - "https://chatgpt.com/pricing/"
+
+  - id: gemini-imagen
+    name: Gemini / Imagen
+    category: images-video
+    status: partially_verified
+    best_for: Image generation for Google users; integrated editing features on paid plans
+    avoid_when: You need Midjourney-specific aesthetics
+    free_tier: Limited free generation
+    paid_usd: "Expanded via Google AI plans"
+    paid_pkr_approx: "Via Google AI plan"
+    pakistan_access: "Generally available in Gemini where image gen is enabled"
+    privacy: "Google account policies"
+    learning_curve: Beginner
+    sources:
+      - "https://one.google.com/about/google-ai-plans/"
+
+  - id: ideogram
+    name: Ideogram
+    category: images-video
+    status: unverified
+    best_for: Images that need readable text inside the graphic
+    avoid_when: You cannot verify current free/paid limits before recommending a paid plan
+    free_tier: Historically offered free credits — CONFIRM current
+    paid_usd: "Unverified — check ideogram.ai/pricing before workshop print"
+    paid_pkr_approx: "Unverified"
+    pakistan_access: "Web; USD billing likely"
+    privacy: "Standard consumer image tool"
+    learning_curve: Beginner
+    unverified_items:
+      - "Current plan prices and credit amounts"
+    sources: []
+
+  - id: adobe-firefly
+    name: Adobe Firefly
+    category: images-video
+    status: partially_verified
+    best_for: Creators already in Adobe; clearer commercial-use positioning for many Adobe customers
+    avoid_when: You only need occasional free images (try Gemini/ChatGPT first)
+    free_tier: Limited free generative credits historically
+    paid_usd: "Via Firefly / Creative Cloud plans — confirm adobe.com"
+    paid_pkr_approx: "Unverified exact SKU — confirm local Adobe pricing"
+    pakistan_access: "Adobe sold in region; student discounts sometimes available"
+    privacy: "Adobe account terms; enterprise options exist"
+    learning_curve: Intermediate
+    unverified_items:
+      - "Exact Firefly-only price vs Creative Cloud bundle in PK"
+    sources:
+      - "adobe.com (confirm at build time)"
+
+  - id: leonardo
+    name: Leonardo AI
+    category: images-video
+    status: unverified
+    best_for: Game assets, stylized images, iterative canvas workflows
+    avoid_when: Recommending a paid tier without checking today's credit table
+    free_tier: Historically free daily credits — CONFIRM
+    paid_usd: "Unverified — check leonardo.ai"
+    paid_pkr_approx: "Unverified"
+    pakistan_access: "Web; USD billing"
+    privacy: "Consumer SaaS"
+    learning_curve: Intermediate
+    unverified_items:
+      - "Current pricing table"
+    sources: []
+
+  - id: runway
+    name: Runway
+    category: images-video
+    status: partially_verified
+    best_for: Short generative video clips with camera/motion control
+    avoid_when: You need long-form editing on a PKR-0 budget (use CapCut)
+    free_tier: Limited one-time credits commonly reported (~125) — confirm
+    paid_usd: "Standard ~$12–15/mo; Pro ~$28–35; Unlimited/Max ~$76–95 (annual vs monthly differ across 2026 sources)"
+    paid_pkr_approx: "Standard ~PKR 3,350–4,200; Pro ~PKR 7,800–9,750 /mo"
+    pakistan_access: "USD card; credit burn can surprise beginners"
+    privacy: "Avoid uploading faces/brand assets without rights"
+    learning_curve: Intermediate
+    unverified_items:
+      - "Exact credit costs per second on current Gen model"
+    sources:
+      - "Secondary pricing roundups Aug 2026; confirm runwayml.com/pricing"
+
+  - id: veo
+    name: Google Veo
+    category: images-video
+    status: partially_verified
+    best_for: Video generation inside Google AI / Flow for subscribers
+    avoid_when: You are on free-only Google tools and need lots of video
+    free_tier: Not a strong free standalone for students
+    paid_usd: "Access via Google AI Pro/Ultra (limits vary)"
+    paid_pkr_approx: "Bundled with Google AI plans"
+    pakistan_access: "Depends on Google AI plan availability"
+    privacy: "Google policies"
+    learning_curve: Intermediate
+    sources:
+      - "https://one.google.com/about/google-ai-plans/"
+
+  - id: sora
+    name: Sora (OpenAI)
+    category: images-video
+    status: partially_verified
+    best_for: ChatGPT subscribers who want OpenAI video generation
+    avoid_when: You need a free video tool
+    free_tier: No meaningful free standalone access found
+    paid_usd: "Included with limits on ChatGPT paid tiers (Plus/Pro differ)"
+    paid_pkr_approx: "Bundled with ChatGPT plans"
+    pakistan_access: "Same as ChatGPT availability"
+    privacy: "OpenAI consumer terms"
+    learning_curve: Intermediate
+    unverified_items:
+      - "Exact seconds/resolution by tier on 3 Oct 2026"
+    sources:
+      - "Secondary 2026 video-tool roundups; confirm in ChatGPT account"
+
+  - id: heygen
+    name: HeyGen
+    category: images-video
+    status: partially_verified
+    best_for: Talking-avatar videos, multilingual lip-sync explainers
+    avoid_when: You need cinematic B-roll (use Runway) or free watermark-free volume (CapCut)
+    free_tier: About 3 videos/month with limits/watermark (commonly reported)
+    paid_usd: "Creator about $24/mo annual / ~$29 monthly (secondary)"
+    paid_pkr_approx: "Creator ~PKR 6,700–8,050 /mo"
+    pakistan_access: "USD billing; good for Urdu/English explainer experiments if voice/language supported"
+    privacy: "Avatar likeness and scripts — do not clone voices without rights"
+    learning_curve: Intermediate
+    sources:
+      - "Secondary HeyGen/blog comparisons 2026; confirm heygen.com/pricing"
+
+  - id: elevenlabs
+    name: ElevenLabs
+    category: images-video
+    status: verified
+    best_for: Voiceovers, cloning (with rights), dubbing, podcast audio
+    avoid_when: You only need silent CapCut captions
+    free_tier: $0 with 10,000 credits/month
+    paid_usd: "Starter $6; Creator $22 (first month promo often $11); Pro $99; Scale $299; Business $990 /mo. Annual ≈ 10 months price."
+    paid_pkr_approx: "Starter ~PKR 1,650; Creator ~PKR 6,100; Pro ~PKR 27,500 /mo"
+    pakistan_access: "USD card; free tier useful for short Urdu/English tests — verify language quality"
+    privacy: "Voice cloning consent/rights required; commercial license from Starter+"
+    learning_curve: Intermediate
+    sources:
+      - "https://elevenlabs.io/pricing"
+
+  - id: capcut
+    name: CapCut AI
+    category: images-video
+    status: partially_verified
+    best_for: Short-form editing, captions, TikTok/Reels/YouTube Shorts — best free-first video stack
+    avoid_when: You need enterprise avatar compliance workflows
+    free_tier: Strong free editor; many AI features available with limits
+    paid_usd: "Pro commonly ~$7.99/mo annual-equivalent in 2026 roundups — confirm regional price"
+    paid_pkr_approx: "Pro ~PKR 2,200/mo if $7.99 holds"
+    pakistan_access: "Very accessible for students/creators"
+    privacy: "Avoid uploading private client footage to cloud if policy-sensitive"
+    learning_curve: Beginner
+    unverified_items:
+      - "Exact CapCut Pro PK price today"
+    sources:
+      - "Secondary 2026 pricing comparisons"
+
+  - id: descript
+    name: Descript
+    category: images-video
+    status: partially_verified
+    best_for: Editing podcasts/videos by editing a transcript
+    avoid_when: You only cut vertical social clips (CapCut is simpler)
+    free_tier: Limited free minutes commonly reported — confirm
+    paid_usd: "Creator/Pro paid tiers (secondary lists ~$16–24/mo range — confirm descript.com)"
+    paid_pkr_approx: "Roughly PKR 4,450–6,700/mo if secondary holds"
+    pakistan_access: "USD billing"
+    privacy: "Meeting/podcast audio may be sensitive"
+    learning_curve: Intermediate
+    unverified_items:
+      - "Exact current plan prices"
+    sources:
+      - "Secondary 2026 roundups"
+
+  - id: notion-ai
+    name: Notion AI
+    category: data-productivity
+    status: partially_verified
+    best_for: Notes, wikis, SOPs with AI drafting inside Notion
+    avoid_when: You only need a chat assistant and do not live in Notion
+    free_tier: Free Notion exists; full AI mainly on Business (limited trial on lower plans)
+    paid_usd: "Plus ~$12/user/mo ($10 annual); Business ~$24/user/mo ($20 annual) with full Notion AI (secondary verified against Notion pricing narratives 2026)"
+    paid_pkr_approx: "Plus ~PKR 3,350; Business ~PKR 5,550 /user/mo"
+    pakistan_access: "Popular with freelancers; USD billing"
+    privacy: "Workspace content — careful with client data on Free"
+    learning_curve: Beginner
+    sources:
+      - "Secondary Notion pricing checks 2026; confirm notion.com/pricing"
+
+  - id: zapier
+    name: Zapier
+    category: data-productivity
+    status: partially_verified
+    best_for: No-code automations between apps
+    avoid_when: You only need one-off AI writing
+    free_tier: About 100 tasks/month, two-step Zaps (commonly listed)
+    paid_usd: "Professional from roughly $20–30/mo depending on annual vs monthly (confirm zapier.com/pricing)"
+    paid_pkr_approx: "From ~PKR 5,550–8,350/mo"
+    pakistan_access: "USD billing; powerful for freelancers connecting forms → Sheets → WhatsApp tools"
+    privacy: "Automations can leak data across apps — map data flows carefully"
+    learning_curve: Intermediate
+    sources:
+      - "Secondary 2026; confirm zapier.com/pricing"
+
+  - id: make
+    name: Make
+    category: data-productivity
+    status: unverified
+    best_for: Visual automations; often cost-effective vs Zapier for complex scenarios
+    avoid_when: Recommending without checking current free operations quota
+    free_tier: Free tier exists historically — CONFIRM operations/month
+    paid_usd: "Unverified exact 3 Oct 2026 table — check make.com/pricing"
+    paid_pkr_approx: "Unverified"
+    pakistan_access: "USD billing"
+    privacy: "Same automation caution as Zapier"
+    learning_curve: Intermediate
+    unverified_items:
+      - "Current pricing"
+    sources: []
+
+  - id: grammarly
+    name: Grammarly
+    category: addins
+    status: partially_verified
+    best_for: Grammar/clarity polish in browser and docs
+    avoid_when: You need deep reasoning or research (use assistants)
+    free_tier: Basic grammar/spelling
+    paid_usd: "Pro roughly ~$12/mo annual (secondary); Business ~$15/user/mo"
+    paid_pkr_approx: "Pro ~PKR 3,350/mo"
+    pakistan_access: "Works in browser; good for students polishing English"
+    privacy: "Text is processed by Grammarly — avoid confidential pastes"
+    learning_curve: Beginner
+    sources:
+      - "Secondary 2026; confirm grammarly.com"
+
+  - id: cursor
+    name: Cursor
+    category: addins
+    status: verified
+    best_for: AI-native coding in an editor (agents, multi-file edits)
+    avoid_when: You only write emails (overkill)
+    free_tier: Hobby free tier
+    paid_usd: "Pro $20/mo; Pro Plus $60/mo; Ultra $200/mo. Teams Standard $40/user/mo ($32 annual); Premium $120 ($96 annual). India Start plan ₹649/mo (Cursor Models pool only)."
+    paid_pkr_approx: "Pro ~PKR 5,550/mo; India Start ₹649 if eligible"
+    pakistan_access: "Usable; Start plan is India-only. Pakistan users typically Hobby/Pro with USD card."
+    privacy: "Enable privacy mode for sensitive repos; never commit secrets"
+    learning_curve: Intermediate
+    sources:
+      - "https://cursor.com/docs/account/pricing"
+
+  - id: github-copilot
+    name: GitHub Copilot
+    category: addins
+    status: partially_verified
+    best_for: Inline coding help in VS Code and other IDEs; GitHub workflow
+    avoid_when: You want a full agentic multi-file IDE experience (consider Cursor)
+    free_tier: Free tier with limits (completions/chat caps — confirm current)
+    paid_usd: "Pro about $10/mo; Business about $19/user/mo; higher tiers exist (secondary 2026 — confirm github.com)"
+    paid_pkr_approx: "Pro ~PKR 2,800/mo"
+    pakistan_access: "Student packs sometimes free via GitHub Education — worth checking"
+    privacy: "Code suggestions may send context to cloud — review org policies"
+    learning_curve: Beginner
+    unverified_items:
+      - "Exact free-tier caps on 3 Oct 2026"
+    sources:
+      - "Secondary Tembo comparison 2026; confirm github.com/features/copilot"
+
+  - id: replit
+    name: Replit
+    category: addins
+    status: unverified
+    best_for: Browser-based coding and quick app prototypes
+    avoid_when: Offline-only work on weak internet without paying for always-on
+    free_tier: Free tier exists
+    paid_usd: "Core/paid tiers — CONFIRM current price on replit.com"
+    paid_pkr_approx: "Unverified"
+    pakistan_access: "Browser-based helps when local setup is hard; needs decent internet"
+    privacy: "Public repls are public — keep secrets in env vars"
+    learning_curve: Beginner
+    unverified_items:
+      - "Current Core pricing"
+    sources: []
+
+  - id: otter
+    name: Otter.ai
+    category: data-productivity
+    status: unverified
+    best_for: Meeting transcription
+    avoid_when: Highly confidential meetings without org approval
+    free_tier: Limited minutes — CONFIRM
+    paid_usd: "Unverified exact table — check otter.ai/pricing"
+    paid_pkr_approx: "Unverified"
+    pakistan_access: "USD billing"
+    privacy: "Recording consent laws/norms — ask participants"
+    learning_curve: Beginner
+    unverified_items:
+      - "Current free minutes and paid prices"
+    sources: []
+
+  - id: fireflies
+    name: Fireflies.ai
+    category: data-productivity
+    status: unverified
+    best_for: Meeting notes and CRM-style call summaries
+    avoid_when: Same confidentiality constraints as Otter
+    free_tier: Limited free — CONFIRM
+    paid_usd: "Unverified — check fireflies.ai"
+    paid_pkr_approx: "Unverified"
+    pakistan_access: "USD billing"
+    privacy: "Meeting consent required"
+    learning_curve: Beginner
+    unverified_items:
+      - "Current pricing"
+    sources: []

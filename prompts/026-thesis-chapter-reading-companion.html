@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>026 · Thesis Chapter Reading Companion · AI Prompt Library</title>
+  <meta name="description" content="Use this to take analytical notes on a thesis chapter without rewriting it.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=026">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/026-thesis-chapter-reading-companion.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">026</span>
+      <span class="pill pill-cat">Documents &amp; PDFs</span>
+      <span class="badge badge-advanced">Advanced</span>
+    </div>
+    <h1>Thesis Chapter Reading Companion</h1>
+    <p class="muted">Use this to take analytical notes on a thesis chapter without rewriting it.</p>
+    
+    <p><strong>Use case:</strong> A postgraduate student can understand argument structure, evidence, gaps, and revision priorities while retaining authorship of the thesis.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Claude</strong> — Tracks argument structure and consistency across long academic chapters.</li>
+      
+      <li><strong>NotebookLM</strong> — Grounds analytical notes in uploaded chapter and reference materials.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Act as a thesis reading companion for <span class="ph">[CHAPTER_TITLE]</span>, helping me diagnose the draft while preserving my authorship.
+
+Degree and discipline: <span class="ph">[PROGRAMME]</span>. Research question: <span class="ph">[QUESTION]</span>. Chapter purpose: <span class="ph">[PURPOSE]</span>. Institutional guidance: <span class="ph">[GUIDANCE]</span>. Read the uploaded chapter and refer to paragraph, heading, or page locations. Do not write replacement passages unless I later request limited examples, and never generate fabricated data or references.
+
+Produce four analytical layers:
+1. Argument spine: one line per major claim, showing how each supports the chapter purpose.
+2. Evidence anchors: data or citations attached to each claim, including unsupported transitions.
+3. Reader journey: points where definitions arrive late, logic jumps, or signposting fails.
+4. Boundary check: material that belongs in another chapter or exceeds the research question.
+
+Then act as two reviewers. Reviewer One is a supportive supervisor seeking coherence; Reviewer Two is a rigorous examiner testing contribution, method alignment, and overclaiming. Give each reviewer five comments grounded in locations.
+
+Ask me to choose the three comments I accept. Only then create a revision sequence ordered by dependency and effort, expressed as tasks rather than ghostwritten prose. End with an academic-integrity check covering citation verification, source reading, disclosure rules, and my responsibility for every final claim.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Act as a thesis reading companion for [CHAPTER_TITLE], helping me diagnose the draft while preserving my authorship.
+
+Degree and discipline: [PROGRAMME]. Research question: [QUESTION]. Chapter purpose: [PURPOSE]. Institutional guidance: [GUIDANCE]. Read the uploaded chapter and refer to paragraph, heading, or page locations. Do not write replacement passages unless I later request limited examples, and never generate fabricated data or references.
+
+Produce four analytical layers:
+1. Argument spine: one line per major claim, showing how each supports the chapter purpose.
+2. Evidence anchors: data or citations attached to each claim, including unsupported transitions.
+3. Reader journey: points where definitions arrive late, logic jumps, or signposting fails.
+4. Boundary check: material that belongs in another chapter or exceeds the research question.
+
+Then act as two reviewers. Reviewer One is a supportive supervisor seeking coherence; Reviewer Two is a rigorous examiner testing contribution, method alignment, and overclaiming. Give each reviewer five comments grounded in locations.
+
+Ask me to choose the three comments I accept. Only then create a revision sequence ordered by dependency and effort, expressed as tasks rather than ghostwritten prose. End with an academic-integrity check covering citation verification, source reading, disclosure rules, and my responsibility for every final claim.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Ask for diagnosis before suggested wording so you remain the author of revisions.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> An argument map, evidence audit, and ethical revision checklist for one chapter.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="025-document-action-harvester.html">← Previous · 025</a>
+      
+      
+      <a href="027-transcript-clarity-editor.html">027 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

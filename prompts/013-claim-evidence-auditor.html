@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>013 · Claim Evidence Auditor · AI Prompt Library</title>
+  <meta name="description" content="Use this to separate claims, evidence, assumptions, and overstatement in a text.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=013">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/013-claim-evidence-auditor.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">013</span>
+      <span class="pill pill-cat">Research &amp; Search</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>Claim Evidence Auditor</h1>
+    <p class="muted">Use this to separate claims, evidence, assumptions, and overstatement in a text.</p>
+    
+    <p><strong>Use case:</strong> A learner reviewing an article, report, or draft can see exactly which statements are well supported and which need qualification.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Claude</strong> — Handles long passages and nuanced distinctions between claims and support.</li>
+      
+      <li><strong>ChatGPT</strong> — Extracts structured claim-evidence relationships from pasted material.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Audit <span class="ph">[PASTED_TEXT_OR_DOCUMENT]</span> as a critical reader, separating what is asserted from what is demonstrated.
+
+The intended audience is <span class="ph">[AUDIENCE]</span>, and the standard of evidence is <span class="ph">[ACADEMIC_POLICY_BUSINESS_OR_OTHER]</span>. Work only from the supplied text and references unless I explicitly enable research. Do not fill evidence gaps from memory.
+
+Create a table with these columns: exact or shortened claim, claim type, cited evidence, evidence-to-claim fit, hidden assumption, severity, and recommended repair. Classify claim type as factual, causal, predictive, normative, or interpretive. Rate fit as direct, partial, indirect, absent, or cannot verify.
+
+Pay special attention to absolute language, causal conclusions from correlation, tiny or unrepresentative samples, old data presented as current, and references that support a nearby but different point. Preserve paragraph or page locations so I can find each issue.
+
+After the table, select the three highest-risk claims. For each, give a constraint-based rewrite that is accurate without becoming evasive: retain the core meaning, add only justified qualifiers, and stay within <span class="ph">[MAX_WORDS]</span> words. Finish with a short evidence shopping list naming the source type—not a fabricated citation—needed to strengthen each unresolved claim.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Audit [PASTED_TEXT_OR_DOCUMENT] as a critical reader, separating what is asserted from what is demonstrated.
+
+The intended audience is [AUDIENCE], and the standard of evidence is [ACADEMIC_POLICY_BUSINESS_OR_OTHER]. Work only from the supplied text and references unless I explicitly enable research. Do not fill evidence gaps from memory.
+
+Create a table with these columns: exact or shortened claim, claim type, cited evidence, evidence-to-claim fit, hidden assumption, severity, and recommended repair. Classify claim type as factual, causal, predictive, normative, or interpretive. Rate fit as direct, partial, indirect, absent, or cannot verify.
+
+Pay special attention to absolute language, causal conclusions from correlation, tiny or unrepresentative samples, old data presented as current, and references that support a nearby but different point. Preserve paragraph or page locations so I can find each issue.
+
+After the table, select the three highest-risk claims. For each, give a constraint-based rewrite that is accurate without becoming evasive: retain the core meaning, add only justified qualifiers, and stay within [MAX_WORDS] words. Finish with a short evidence shopping list naming the source type—not a fabricated citation—needed to strengthen each unresolved claim.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Audit one section at a time so evidence links remain precise and traceable.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A claim-versus-evidence table with support ratings and revision advice.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="012-literature-landscape-mapper.html">← Previous · 012</a>
+      
+      
+      <a href="014-cited-brief-producer.html">014 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

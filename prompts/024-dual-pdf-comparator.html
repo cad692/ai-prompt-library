@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>024 · Dual PDF Comparator · AI Prompt Library</title>
+  <meta name="description" content="Use this to compare two documents on matching criteria with traceable evidence.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=024">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/024-dual-pdf-comparator.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">024</span>
+      <span class="pill pill-cat">Documents &amp; PDFs</span>
+      <span class="badge badge-advanced">Advanced</span>
+    </div>
+    <h1>Dual PDF Comparator</h1>
+    <p class="muted">Use this to compare two documents on matching criteria with traceable evidence.</p>
+    
+    <p><strong>Use case:</strong> A learner or professional can compare policies, proposals, studies, specifications, or reports without relying on vague overall impressions.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>NotebookLM</strong> — Compares uploaded sources while grounding statements in their respective documents.</li>
+      
+      <li><strong>Claude</strong> — Handles long-document comparison and follows detailed comparison criteria.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Compare <span class="ph">[PDF_A]</span> and <span class="ph">[PDF_B]</span> as two separate evidence sources, never blending their claims.
+
+My comparison purpose is <span class="ph">[PURPOSE]</span>. Use these criteria: <span class="ph">[CRITERIA]</span>. If no criteria are supplied, propose a set and ask for approval before proceeding. Identify each document’s title, author, date, version, intended audience, and scope. Flag if editions or time periods make direct comparison unfair.
+
+Create a comparison matrix. For every criterion provide Document A’s position with page reference, Document B’s position with page reference, the relationship—agreement, partial overlap, conflict, or silence—and a concise interpretation. Use [NOT STATED] when a document does not address something.
+
+Add separate sections for:
+- terminology that looks similar but is defined differently;
+- evidence quality and methodology;
+- changes in numbers, requirements, or recommendations;
+- unique contributions from each document;
+- unresolved contradictions.
+
+Run a role-play critique: first argue which document better serves <span class="ph">[PURPOSE]</span>, then act as a sceptical reviewer and challenge that conclusion using the strongest counterevidence. Revise the conclusion if the critique succeeds.
+
+Finish with a bounded recommendation and confidence level. Do not infer author intent or claim that newer automatically means better. Provide a five-item reading list of pages requiring human review before any consequential decision.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Compare [PDF_A] and [PDF_B] as two separate evidence sources, never blending their claims.
+
+My comparison purpose is [PURPOSE]. Use these criteria: [CRITERIA]. If no criteria are supplied, propose a set and ask for approval before proceeding. Identify each document’s title, author, date, version, intended audience, and scope. Flag if editions or time periods make direct comparison unfair.
+
+Create a comparison matrix. For every criterion provide Document A’s position with page reference, Document B’s position with page reference, the relationship—agreement, partial overlap, conflict, or silence—and a concise interpretation. Use [NOT STATED] when a document does not address something.
+
+Add separate sections for:
+- terminology that looks similar but is defined differently;
+- evidence quality and methodology;
+- changes in numbers, requirements, or recommendations;
+- unique contributions from each document;
+- unresolved contradictions.
+
+Run a role-play critique: first argue which document better serves [PURPOSE], then act as a sceptical reviewer and challenge that conclusion using the strongest counterevidence. Revise the conclusion if the critique succeeds.
+
+Finish with a bounded recommendation and confidence level. Do not infer author intent or claim that newer automatically means better. Provide a five-item reading list of pages requiring human review before any consequential decision.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Define comparison criteria before reading conclusions to reduce confirmation bias.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A criterion-by-criterion comparison with page evidence, conflicts, and gaps.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="023-executive-signal-summary.html">← Previous · 023</a>
+      
+      
+      <a href="025-document-action-harvester.html">025 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

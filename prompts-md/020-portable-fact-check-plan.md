@@ -1,0 +1,36 @@
+# 020 — Portable Fact-Check Plan
+
+**Category:** research · **Difficulty:** Beginner
+
+**Usage:** Use this to verify a claim systematically before sharing or acting on it.
+
+**Expected output:** A reusable verification checklist and a transparent verdict for one claim.
+
+**Tip:** Search the exact claim and also search for the strongest plausible contradiction.
+
+## Best tools
+- **Perplexity**: Locates current sources and provides links that users can inspect directly.
+- **Gemini**: Supports web-grounded checking and can analyse supplied images or text.
+
+## Prompt
+
+```text
+Act as a fact-checking guide and help me verify [CLAIM_OR_CONTENT] before I share or use it.
+
+The content came from [SOURCE_OR_PLATFORM] on [DATE_SEEN], and the relevant location is [LOCATION]. The decision or risk attached to it is [WHY_IT_MATTERS]. If an image or video is involved, I will provide [FILE_OR_LINK].
+
+Walk through this checklist and show concise visible reasoning at each step:
+1. Rewrite the claim into independently testable parts.
+2. Identify the earliest traceable source, not merely the latest repost.
+3. Check date, location, creator, and original context.
+4. Seek primary evidence and two independent credible confirmations.
+5. Search for corrections, retractions, satire labels, or manipulated media.
+6. Compare exact numbers, units, and quotations.
+
+For each step, state found, not found, or cannot access, with links where available. Never invent a browsing result. Classify the final status as true, mostly true, missing context, unsupported, false, or unresolved, and separate confidence from verdict.
+
+End with a two-sentence share-safe summary, a list of remaining checks, and the date of verification. If the claim could create immediate health, financial, legal, or safety harm, advise pausing action and consulting a qualified or official source.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

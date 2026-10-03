@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>015 · Rival Explanations Workbench · AI Prompt Library</title>
+  <meta name="description" content="Use this to test multiple explanations for an observation without anchoring early.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=015">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/015-rival-explanations-workbench.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">015</span>
+      <span class="pill pill-cat">Research &amp; Search</span>
+      <span class="badge badge-advanced">Advanced</span>
+    </div>
+    <h1>Rival Explanations Workbench</h1>
+    <p class="muted">Use this to test multiple explanations for an observation without anchoring early.</p>
+    
+    <p><strong>Use case:</strong> A researcher or manager can investigate falling performance, changing behaviour, or unexpected results before choosing an intervention.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>ChatGPT</strong> — Generates competing hypotheses and structures discriminating tests interactively.</li>
+      
+      <li><strong>Claude</strong> — Maintains nuanced causal models across substantial background material.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Act as a hypothesis challenger examining why <span class="ph">[OBSERVATION_OR_OUTCOME]</span> occurred.
+
+Known context: <span class="ph">[CONTEXT]</span>. Available data: <span class="ph">[DATA]</span>. Current favoured explanation: <span class="ph">[CURRENT_BELIEF]</span>. Constraints on investigation: <span class="ph">[TIME_ACCESS_ETHICS_OR_BUDGET]</span>.
+
+Generate at least five meaningfully different explanations, including one measurement problem, one external factor, one process or system cause, and one explanation that contradicts my current belief. Avoid merely rephrasing the same cause.
+
+For each explanation provide: causal mechanism, expected pattern if true, evidence already consistent with it, evidence that would weaken it, and the cheapest ethical discriminating test. Then create a prediction matrix where rows are observations we could collect and columns are hypotheses. Indicate which result would favour which explanation.
+
+Use Bayesian-style updating in plain language: state a provisional prior confidence as low, medium, or high and explain the basis openly. Do not invent numerical probabilities from thin evidence.
+
+Identify confounders and reverse-causality risks. Recommend an investigation sequence that maximises information before cost. Close with a pre-commitment: “If <span class="ph">[RESULT]</span> appears, reduce confidence in <span class="ph">[HYPOTHESIS]</span>; if <span class="ph">[OTHER_RESULT]</span> appears, increase it.” Keep intervention advice separate until evidence meaningfully narrows the field.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Act as a hypothesis challenger examining why [OBSERVATION_OR_OUTCOME] occurred.
+
+Known context: [CONTEXT]. Available data: [DATA]. Current favoured explanation: [CURRENT_BELIEF]. Constraints on investigation: [TIME_ACCESS_ETHICS_OR_BUDGET].
+
+Generate at least five meaningfully different explanations, including one measurement problem, one external factor, one process or system cause, and one explanation that contradicts my current belief. Avoid merely rephrasing the same cause.
+
+For each explanation provide: causal mechanism, expected pattern if true, evidence already consistent with it, evidence that would weaken it, and the cheapest ethical discriminating test. Then create a prediction matrix where rows are observations we could collect and columns are hypotheses. Indicate which result would favour which explanation.
+
+Use Bayesian-style updating in plain language: state a provisional prior confidence as low, medium, or high and explain the basis openly. Do not invent numerical probabilities from thin evidence.
+
+Identify confounders and reverse-causality risks. Recommend an investigation sequence that maximises information before cost. Close with a pre-commitment: “If [RESULT] appears, reduce confidence in [HYPOTHESIS]; if [OTHER_RESULT] appears, increase it.” Keep intervention advice separate until evidence meaningfully narrows the field.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Seek evidence that distinguishes hypotheses, not more evidence compatible with all of them.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A set of competing explanations with predictions, tests, and update rules.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="014-cited-brief-producer.html">← Previous · 014</a>
+      
+      
+      <a href="016-headline-study-crosscheck.html">016 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

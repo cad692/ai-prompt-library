@@ -1,0 +1,37 @@
+# 048 — Stakeholder Update Deck
+
+**Category:** presentations · **Difficulty:** Beginner
+
+**Usage:** Use for a concise project update that foregrounds decisions and risks.
+
+**Expected output:** A seven-slide decision-focused update with owners and next steps.
+
+**Tip:** Lead with what changed since the last update, not a full project history.
+
+## Best tools
+- **Beautiful.ai**: Keeps recurring business update layouts consistent and readable.
+- **PowerPoint+Copilot**: Fits common stakeholder review and collaboration workflows.
+
+## Prompt
+
+```text
+Operate as a project communications lead preparing an update for people who need clarity, not activity theatre.
+
+Project: [PROJECT]
+Reporting period: [PERIOD]
+Stakeholders and concerns: [STAKEHOLDERS]
+Outcomes achieved: [OUTCOMES]
+Metrics: [METRICS]
+Risks or blockers: [RISKS]
+Decisions required: [DECISIONS]
+Next-period commitments: [COMMITMENTS]
+
+Build a maximum seven-slide update. Open with a one-slide executive signal: overall status, what changed, and what needs attention. Follow with outcome progress, metric movement, milestones, risks, decisions, and next steps. Activity belongs only where it explains an outcome.
+
+On every slide, use a message headline and label information as fact, forecast, or request. For each metric, show baseline, current value, target, period, and source if supplied; write “not provided” where needed. For risks, state probability, impact, mitigation, owner, and trigger for escalation. For decisions, frame the options, recommendation, deadline, and consequence of delay without manipulating the audience.
+
+Add a 60-second opening script and an appendix list for detail that should not crowd the main deck. Finish with a pre-send accuracy check covering dates, owners, metric definitions, and confidentiality.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

@@ -1,0 +1,30 @@
+# 017 — Research Question Sharpener
+
+**Category:** research · **Difficulty:** Beginner
+
+**Usage:** Use this to turn a broad topic into a feasible and ethical research question.
+
+**Expected output:** Several refined questions with feasibility checks and a recommended final version.
+
+**Tip:** A narrower question answered well is stronger than a broad question answered vaguely.
+
+## Best tools
+- **ChatGPT**: Supports iterative questioning and refinement across research designs.
+- **Gemini**: Generates alternative framings and identifies variables or scope boundaries.
+
+## Prompt
+
+```text
+Guide me from the broad topic [TOPIC] to a researchable question appropriate for [LEVEL_OR_PROGRAMME].
+
+Ask me questions first and wait for my response. Ask no more than six, covering: what puzzles me, intended population, setting, timeframe, data access, and ethical or practical limits. Do not propose final questions until I answer.
+
+After my reply, extract the key phenomenon, relationship or experience, unit of analysis, and boundary conditions. Offer four distinct question forms: descriptive, comparative, explanatory, and exploratory. Each must be answerable rather than merely discussing a theme.
+
+Evaluate each candidate using FINER-style criteria: feasible, interesting, novel enough for the context, ethical, and relevant. Also identify the likely evidence and method—without pretending the method is already fixed. Flag questions that imply causation when the available design can show only association.
+
+Recommend one question and explain why it best fits [TIME_AVAILABLE], [WORD_LIMIT], and [ACCESS]. Provide a tighter version and a broader backup version. Then list three key terms with synonyms for an initial literature search. Finish by naming one tempting but unmanageable direction to exclude, and one supervisor question I should ask before committing.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

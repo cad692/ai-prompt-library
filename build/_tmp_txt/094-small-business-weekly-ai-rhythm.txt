@@ -1,0 +1,9 @@
+Goal: Build a weekly AI operating rhythm for [BUSINESS_TYPE] serving [CUSTOMERS] with a team of [TEAM_SIZE].
+
+Use our recurring responsibilities [WEEKLY_TASKS], approved tools [TOOLS], and constraints [CONSTRAINTS]. Assign one theme to each working day: planning and demand review, customer communication, marketing production, operations improvement, and finance or performance reflection. Adapt the pattern if [WORKING_DAYS] differs.
+
+For each activity, show the source information, AI-assisted action, human owner, output, and approval rule. Include low-risk uses such as summarising non-sensitive feedback and drafting alternatives, while blocking entry of CNICs, payment details, passwords, private employee records, or confidential client material into unapproved systems.
+
+Add a reusable prompt log and a simple “keep, change, stop” review. Flag tasks requiring professional judgement or current official information. Prevent automation from sending customer messages or changing records without confirmation.
+
+Conclude with three measures: turnaround time, error or rework rate, and customer outcome. Recommend only [MAX_EXPERIMENTS] experiments for the first month so the routine remains manageable.

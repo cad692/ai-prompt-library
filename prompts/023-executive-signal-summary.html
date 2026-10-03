@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>023 · Executive Signal Summary · AI Prompt Library</title>
+  <meta name="description" content="Use this to compress a long report into decisions, evidence, and implications.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=023">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/023-executive-signal-summary.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">023</span>
+      <span class="pill pill-cat">Documents &amp; PDFs</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>Executive Signal Summary</h1>
+    <p class="muted">Use this to compress a long report into decisions, evidence, and implications.</p>
+    
+    <p><strong>Use case:</strong> A manager or project lead can understand a lengthy evaluation, market, policy, or technical report before a short briefing.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Claude</strong> — Maintains coherence and detail across very long documents.</li>
+      
+      <li><strong>NotebookLM</strong> — Grounds report summaries in uploaded source passages and citations.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Distil <span class="ph">[REPORT_TITLE_OR_UPLOAD]</span> into an executive summary for <span class="ph">[AUDIENCE]</span> deciding <span class="ph">[DECISION]</span>.
+
+The reader has <span class="ph">[READING_TIME]</span> minutes and cares most about <span class="ph">[PRIORITIES]</span>. Work only from the report. Preserve the difference between reported evidence, author interpretation, and your synthesis. Every material number must retain its unit, period, population, and page or section reference.
+
+Open with a decision signal: one sentence stating why this report matters now. Follow with:
+- Purpose and scope in three lines;
+- five findings ranked by decision relevance, not document order;
+- implications for <span class="ph">[ORGANISATION_OR_CONTEXT]</span>;
+- risks, limitations, and excluded populations;
+- decisions or actions the report explicitly supports.
+
+Use a “So what / Evidence / Caveat” pattern for each major finding. If recommendations are your inference rather than the authors’, label them “Analyst implication.”
+
+Include a small number dashboard containing only the six most consequential figures. Check each against the source twice and show its location. Name any conflict between the executive summary and body of the report.
+
+End with three questions an executive should ask before acting and a 30-second spoken brief. Do not smooth away uncertainty or convert recommendations into established facts.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Distil [REPORT_TITLE_OR_UPLOAD] into an executive summary for [AUDIENCE] deciding [DECISION].
+
+The reader has [READING_TIME] minutes and cares most about [PRIORITIES]. Work only from the report. Preserve the difference between reported evidence, author interpretation, and your synthesis. Every material number must retain its unit, period, population, and page or section reference.
+
+Open with a decision signal: one sentence stating why this report matters now. Follow with:
+- Purpose and scope in three lines;
+- five findings ranked by decision relevance, not document order;
+- implications for [ORGANISATION_OR_CONTEXT];
+- risks, limitations, and excluded populations;
+- decisions or actions the report explicitly supports.
+
+Use a “So what / Evidence / Caveat” pattern for each major finding. If recommendations are your inference rather than the authors’, label them “Analyst implication.”
+
+Include a small number dashboard containing only the six most consequential figures. Check each against the source twice and show its location. Name any conflict between the executive summary and body of the report.
+
+End with three questions an executive should ask before acting and a 30-second spoken brief. Do not smooth away uncertainty or convert recommendations into established facts.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Tell the model which decision the summary must support; relevance changes with audience.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A one-page executive summary with findings, implications, and source locations.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="022-agreement-risk-spotter.html">← Previous · 022</a>
+      
+      
+      <a href="024-dual-pdf-comparator.html">024 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

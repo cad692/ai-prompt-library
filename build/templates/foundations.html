@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prompt Engineering Foundations · AI Prompt Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <header class="site-header"><div class="wrap"><a href="../index.html">← Back to library</a></div></header>
+  <main class="wrap prompt-article">
+    <p class="eyebrow">Guide</p>
+    <h1>Prompt Engineering Foundations</h1>
+    <p class="muted">A reusable way to get better answers from any major assistant.</p>
+
+    <h2>The RTCFCE framework</h2>
+    <ol>
+      <li><strong>Role</strong> — who should the AI act as?</li>
+      <li><strong>Task</strong> — what exact job should it do?</li>
+      <li><strong>Context</strong> — audience, constraints, background.</li>
+      <li><strong>Format</strong> — bullets, table, email, slides outline.</li>
+      <li><strong>Constraints</strong> — length, tone, what to avoid.</li>
+      <li><strong>Examples</strong> — one short sample of the style you want.</li>
+    </ol>
+
+    <h2>Before / after</h2>
+    <div class="tip-box">
+      <p><strong>Weak:</strong> “Write about climate change.”</p>
+      <p><strong>Stronger:</strong> “Act as a secondary-school science teacher. Explain climate change causes for 14-year-olds in Pakistan in 8 short bullets, then give 3 local everyday examples, and end with 3 quiz questions. Avoid jargon.”</p>
+    </div>
+
+    <h2>Iterate</h2>
+    <ul>
+      <li>Ask for a critique of the first draft, then a revised version.</li>
+      <li>Say what to keep and what to change.</li>
+      <li>Request: “Ask me up to 5 clarifying questions before you answer.”</li>
+    </ul>
+
+    <h2>Reduce hallucinations</h2>
+    <ul>
+      <li>Tell it to label assumptions.</li>
+      <li>Ask for sources you can open, then open them yourself.</li>
+      <li>For study notes, prefer NotebookLM on your own uploaded files.</li>
+      <li>Never invent citations — require “I don’t know” when evidence is missing.</li>
+    </ul>
+  </main>
+  <footer class="site-footer"><div class="wrap">{{ cfg.workshop.org }} · Last updated: {{ cfg.meta.last_updated }}</div></footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>029 · Pasted Reference Normalizer · AI Prompt Library</title>
+  <meta name="description" content="Use this to clean a pasted reference list without inventing missing details.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=029">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/029-pasted-reference-normalizer.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">029</span>
+      <span class="pill pill-cat">Documents &amp; PDFs</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Pasted Reference Normalizer</h1>
+    <p class="muted">Use this to clean a pasted reference list without inventing missing details.</p>
+    
+    <p><strong>Use case:</strong> A student or report writer can standardise inconsistent citations and identify records that need manual verification.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>ChatGPT</strong> — Parses messy reference text and applies common citation-style patterns.</li>
+      
+      <li><strong>Claude</strong> — Maintains consistency across large, irregular reference lists.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Normalize my pasted references into <span class="ph">[CITATION_STYLE_AND_EDITION]</span> without fabricating any bibliographic information.
+
+References: <span class="ph">[PASTE_REFERENCES]</span>
+Required ordering: <span class="ph">[ALPHABETICAL_NUMERICAL_OR_CUSTOM]</span>
+Source language rules: <span class="ph">[LANGUAGE_RULES]</span>
+
+First parse each entry into available fields: author, year, title, container, volume, issue, pages, publisher, DOI, URL, and access date. Preserve original text in a numbered source column so every output can be traced back.
+
+Format entries only from supplied fields. Insert visible markers such as [MISSING YEAR], [VERIFY AUTHOR ORDER], or [INCOMPLETE URL] where necessary. Do not search for or infer missing metadata unless I explicitly request a separate verification phase.
+
+Detect likely duplicates, including DOI matches and small title variations. Present them for confirmation rather than deleting them. Separate records by source type—journal article, book, chapter, webpage, report, thesis, or unknown—and flag any type whose formatting is uncertain.
+
+Return three blocks: Clean Reference List, Verification Queue, and Duplicate Candidates. Then run a consistency pass for capitalization, italics indicators, punctuation, date form, and DOI format. Count input entries and output entries; explain any mismatch. End with a reminder that citation software and original source records should be checked before academic submission.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Normalize my pasted references into [CITATION_STYLE_AND_EDITION] without fabricating any bibliographic information.
+
+References: [PASTE_REFERENCES]
+Required ordering: [ALPHABETICAL_NUMERICAL_OR_CUSTOM]
+Source language rules: [LANGUAGE_RULES]
+
+First parse each entry into available fields: author, year, title, container, volume, issue, pages, publisher, DOI, URL, and access date. Preserve original text in a numbered source column so every output can be traced back.
+
+Format entries only from supplied fields. Insert visible markers such as [MISSING YEAR], [VERIFY AUTHOR ORDER], or [INCOMPLETE URL] where necessary. Do not search for or infer missing metadata unless I explicitly request a separate verification phase.
+
+Detect likely duplicates, including DOI matches and small title variations. Present them for confirmation rather than deleting them. Separate records by source type—journal article, book, chapter, webpage, report, thesis, or unknown—and flag any type whose formatting is uncertain.
+
+Return three blocks: Clean Reference List, Verification Queue, and Duplicate Candidates. Then run a consistency pass for capitalization, italics indicators, punctuation, date form, and DOI format. Count input entries and output entries; explain any mismatch. End with a reminder that citation software and original source records should be checked before academic submission.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Verify metadata against the source or DOI record before submitting the final list.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A formatted reference list plus duplicate, missing-field, and verification reports.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="028-policy-plain-language-translator.html">← Previous · 028</a>
+      
+      
+      <a href="030-notes-grounded-qa-maker.html">030 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>095 · Data-to-Decision Operating Workflow · AI Prompt Library</title>
+  <meta name="description" content="Turn operational data into a documented recommendation with validation and accountability.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=095">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/095-data-to-decision-operating-workflow.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">095</span>
+      <span class="pill pill-cat">AI Workflows</span>
+      <span class="badge badge-advanced">Advanced</span>
+    </div>
+    <h1>Data-to-Decision Operating Workflow</h1>
+    <p class="muted">Turn operational data into a documented recommendation with validation and accountability.</p>
+    
+    <p><strong>Use case:</strong> Coordinate cleaning, analysis, interpretation, challenge, and decision logging across tools.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Microsoft Copilot</strong> — Works across spreadsheet analysis, written summaries, and presentation preparation.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Role: Act as an analytics process designer; map how <span class="ph">[DATASET]</span> should inform <span class="ph">[DECISION]</span> without overstating certainty.
+
+Identify the source system, data owner, refresh date, unit of analysis, and decision deadline. Lay out a sequence using <span class="ph">[DATA_TOOL]</span> for cleaning, <span class="ph">[ANALYSIS_TOOL]</span> for calculation, <span class="ph">[WRITING_TOOL]</span> for the decision memo, and <span class="ph">[PRESENTATION_TOOL]</span> only if stakeholders need it. Every handoff must retain dataset version and filter definitions.
+
+Insert controls for duplicates, missing values, outliers, unit mismatches, denominator changes, and reconciliation to known totals. Distinguish descriptive findings, forecasts, and causal claims. Require sensitivity checks for <span class="ph">[KEY_ASSUMPTIONS]</span> and segment results where averages could hide material differences.
+
+The workflow should produce an analysis notebook or formula record, a chart pack, a finding log, and a recommendation with options. Assign a challenger to test alternative explanations before approval.
+
+Finish with a decision register capturing owner, date, evidence used, assumptions, chosen option, rejected alternatives, review trigger, and later outcome. Include a route to say “insufficient evidence” rather than manufacturing confidence.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Role: Act as an analytics process designer; map how [DATASET] should inform [DECISION] without overstating certainty.
+
+Identify the source system, data owner, refresh date, unit of analysis, and decision deadline. Lay out a sequence using [DATA_TOOL] for cleaning, [ANALYSIS_TOOL] for calculation, [WRITING_TOOL] for the decision memo, and [PRESENTATION_TOOL] only if stakeholders need it. Every handoff must retain dataset version and filter definitions.
+
+Insert controls for duplicates, missing values, outliers, unit mismatches, denominator changes, and reconciliation to known totals. Distinguish descriptive findings, forecasts, and causal claims. Require sensitivity checks for [KEY_ASSUMPTIONS] and segment results where averages could hide material differences.
+
+The workflow should produce an analysis notebook or formula record, a chart pack, a finding log, and a recommendation with options. Assign a challenger to test alternative explanations before approval.
+
+Finish with a decision register capturing owner, date, evidence used, assumptions, chosen option, rejected alternatives, review trigger, and later outcome. Include a route to say “insufficient evidence” rather than manufacturing confidence.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Reconcile totals to the source system before discussing trends.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A controlled analytical workflow ending in a decision record.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="094-small-business-weekly-ai-rhythm.html">← Previous · 094</a>
+      
+      
+      <a href="096-teacher-preparation-workflow.html">096 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

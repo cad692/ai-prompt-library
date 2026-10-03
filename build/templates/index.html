@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Prompt Library · {{ cfg.workshop.org }}</title>
+  <meta name="description" content="100+ practical AI prompts for students and professionals. Tap Open, preview, copy into your AI tool.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap brand-row">
+      <div class="logo-ph" aria-hidden="true">Thrive<br>logo</div>
+      <div>
+        <div class="brand-name">{{ cfg.workshop.org }}</div>
+        <div class="muted" style="font-size:0.85rem">{{ cfg.workshop.name }}</div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero">
+      <p class="eyebrow">{{ cfg.workshop.name }} workshop</p>
+      <h1>AI Prompt Library</h1>
+      <p class="tagline">{{ cfg.workshop.tagline }}</p>
+      <p class="muted">Tap a prompt to preview it. Open the full page to copy. Works best on a phone.</p>
+      <nav class="static-pages" aria-label="Guides" style="margin-top:1rem">
+        <a href="pages/foundations.html">Foundations</a>
+        <a href="pages/responsible.html">Responsible AI use</a>
+        <a href="pages/cheat-sheet.html">Cheat sheet</a>
+        <a href="downloads/offline-prompts.zip">Offline ZIP</a>
+        <a href="downloads/prompts.csv">CSV</a>
+        <a href="downloads/AI-Prompt-Library-Index.pdf">Index PDF</a>
+      </nav>
+    </section>
+
+    <section class="how-box" aria-label="How to use">
+      <strong>How to use</strong>
+      <ol>
+        <li>Find a prompt below and tap Open.</li>
+        <li>Read the preview.</li>
+        <li>Tap Copy (or Open full prompt) and paste it into your AI tool.</li>
+      </ol>
+    </section>
+
+    <section class="toolbar" aria-label="Search and filters">
+      <label class="visually-hidden" for="search">Search prompts</label>
+      <input class="search" id="search" type="search" placeholder="Search by keyword, title, or tag…" autocomplete="off">
+      <div class="filters">
+        <label class="visually-hidden" for="filter-category">Category</label>
+        <select class="chip" id="filter-category" aria-label="Filter by category">
+          <option value="">All categories</option>
+          {% for c in cfg.categories %}
+          <option value="{{ c.id }}">{{ c.name }}</option>
+          {% endfor %}
+        </select>
+        <label class="visually-hidden" for="filter-difficulty">Difficulty</label>
+        <select class="chip" id="filter-difficulty" aria-label="Filter by difficulty">
+          <option value="">All levels</option>
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+        </select>
+      </div>
+      <div class="results-meta" id="result-count">Loading…</div>
+    </section>
+
+    <div id="prompt-list" aria-live="polite"></div>
+    <div id="empty-state" class="empty" hidden>No prompts match. Clear filters or try another keyword.</div>
+
+    <noscript>
+      <div class="noscript-list">
+        <h2>All prompts (JavaScript off)</h2>
+        <p class="muted">Open any link for the full copyable prompt.</p>
+        {% for cat_id in cat_order %}
+          {% set items = grouped[cat_id] %}
+          {% if items %}
+          <h3>{{ cats[cat_id].name }}</h3>
+          {% for p in items %}
+          <a href="prompts/{{ p.id }}-{{ p.slug }}.html">{{ p.id }} — {{ p.title }}</a>
+          {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </noscript>
+
+    <!-- Static fallback also available to crawlers -->
+    <div class="noscript-list" id="static-fallback">
+      <h2 class="visually-hidden">Static prompt list</h2>
+      {% for cat_id in cat_order %}
+        {% set items = grouped[cat_id] %}
+        {% if items %}
+        <details>
+          <summary>{{ cats[cat_id].name }} ({{ items|length }})</summary>
+          {% for p in items %}
+          <a href="prompts/{{ p.id }}-{{ p.slug }}.html">{{ p.id }} — {{ p.title }} · {{ p.usage }}</a>
+          {% endfor %}
+        </details>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </main>
+
+  <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
+  <div class="sheet" id="preview-sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" aria-hidden="true">
+    <div class="sheet-header">
+      <div>
+        <div class="meta-row" id="sheet-meta"></div>
+        <h2 id="sheet-title" style="font-size:1.35rem;margin:0">Title</h2>
+      </div>
+      <button type="button" class="close-x" id="btn-close-sheet" aria-label="Close preview">×</button>
+    </div>
+    <div class="sheet-body">
+      <p class="muted" id="sheet-usage"></p>
+      <div class="preview-box" id="sheet-preview"></div>
+      <div class="sheet-actions">
+        <a class="btn btn-primary btn-block" id="btn-open-full" href="#">Open full prompt</a>
+        <button type="button" class="btn btn-secondary btn-block" id="btn-copy">Copy prompt</button>
+        <a class="btn btn-ghost btn-block" id="btn-github" href="#" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+    <div class="sheet-nav">
+      <button type="button" class="btn btn-ghost" id="btn-prev">← Previous</button>
+      <button type="button" class="btn btn-ghost" id="btn-next">Next →</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>{{ cfg.workshop.org }}</div>
+      <div>Last updated: {{ cfg.meta.last_updated }}. Tool details change quickly — verify before high-stakes use.</div>
+      <div>Website needs internet. Use the offline ZIP/CSV when you are offline.</div>
+    </div>
+  </footer>
+
+  <script>
+    window.BASE_URL = {{ base_url|tojson }};
+    window.GITHUB_REPO_URL = {{ repo_url|tojson }};
+    window.PROMPT_CAT_NAMES = {{ cat_names_json|safe }};
+  </script>
+  <script src="assets/js/app.js" defer></script>
+  <script>
+    // unhide backdrop element (kept in DOM)
+    document.getElementById('sheet-backdrop').hidden = false;
+  </script>
+</body>
+</html>

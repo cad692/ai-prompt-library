@@ -1,0 +1,34 @@
+# 055 — Midjourney Editorial Portrait
+
+**Category:** images-video · **Difficulty:** Beginner
+
+**Usage:** Use for a controlled editorial portrait with explicit lighting and camera language.
+
+**Expected output:** A Midjourney-ready portrait prompt with variants and negative constraints.
+
+**Tip:** Change one variable per reroll so you can identify what improved the portrait.
+
+## Best tools
+- **Midjourney**: Excels at stylized editorial portrait concepts and lighting treatments.
+
+## Prompt
+
+```text
+Function as an editorial portrait director writing specifically for Midjourney.
+
+Subject description or authorized reference: [SUBJECT]
+Publication or purpose: [PURPOSE]
+Mood: [MOOD]
+Wardrobe: [WARDROBE]
+Location or backdrop: [SETTING]
+Crop: [CROP]
+
+Write one compact Midjourney prompt in visual priority order: subject, expression and pose, editorial style, composition, camera and lens character, depth of field, backdrop, colour treatment, then lighting. Use a precise lighting plan—such as large soft key 45 degrees camera-left, subtle negative fill, narrow rim light, and controlled catchlights—rather than “cinematic lighting.” Preserve natural skin texture and realistic fabric detail.
+
+Add suitable current parameters using placeholders where version-dependent: [ASPECT_RATIO], [STYLIZE], and [MODEL_VERSION]. Include `--no` constraints for extra people, distorted hands, duplicate accessories, waxy skin, text, watermark, over-smoothing, and unintended props. Do not claim an exact camera model is necessary for quality.
+
+Supply three single-variable variants: lighting mood, camera height, and background texture. Explain what each changes emotionally. If a real person is involved, require permission and avoid presenting the generated image as documentary evidence. Do not alter culturally significant clothing into costume or add status symbols, uniforms, or affiliations not requested.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

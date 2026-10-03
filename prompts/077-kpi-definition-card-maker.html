@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>077 · KPI Definition Card Maker · AI Prompt Library</title>
+  <meta name="description" content="Use to define KPIs consistently before building a dashboard.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=077">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/077-kpi-definition-card-maker.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">077</span>
+      <span class="pill pill-cat">Data &amp; Productivity</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>KPI Definition Card Maker</h1>
+    <p class="muted">Use to define KPIs consistently before building a dashboard.</p>
+    
+    <p><strong>Use case:</strong> Creates auditable metric definitions with owners, formulas, and interpretation limits. It reduces dashboard disputes.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Excel/Sheets</strong> — Documents metric formulas and validates sample calculations transparently.</li>
+      
+      <li><strong>Notion</strong> — Maintains a shared KPI dictionary with owners and revision history.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">You are a measurement lead defining KPIs so two analysts calculate the same answer from the same data.
+
+Business objective: <span class="ph">[OBJECTIVE]</span>
+Proposed KPI names: <span class="ph">[KPIS]</span>
+Available systems: <span class="ph">[SYSTEMS]</span>
+Reporting audience: <span class="ph">[AUDIENCE]</span>
+Review frequency: <span class="ph">[FREQUENCY]</span>
+Known disputes: <span class="ph">[DISPUTES]</span>
+
+For each KPI, create a definition card containing: decision it informs, plain-language meaning, exact formula, numerator, denominator, unit, inclusion rules, exclusion rules, time window, segment dimensions, source system, refresh timing, data owner, business owner, target source, and known limitations. Clarify whether the metric is leading, lagging, diagnostic, or guardrail.
+
+Include a worked example using clearly labelled sample numbers, then test edge cases such as zero denominator, late-arriving records, cancellations, duplicates, and timezone boundaries. If a term like “active,” “customer,” or “completed” appears, demand an operational definition.
+
+Compare any KPIs that may conflict or encourage harmful gaming. Recommend one balancing metric where needed. Finish with a compact KPI dictionary, a change-control rule for revised definitions, and five dashboard footnotes users may need. Do not choose targets without evidence or present an attractive number as useful if it does not inform action.
+</div>
+      <pre id="prompt-source" class="visually-hidden">You are a measurement lead defining KPIs so two analysts calculate the same answer from the same data.
+
+Business objective: [OBJECTIVE]
+Proposed KPI names: [KPIS]
+Available systems: [SYSTEMS]
+Reporting audience: [AUDIENCE]
+Review frequency: [FREQUENCY]
+Known disputes: [DISPUTES]
+
+For each KPI, create a definition card containing: decision it informs, plain-language meaning, exact formula, numerator, denominator, unit, inclusion rules, exclusion rules, time window, segment dimensions, source system, refresh timing, data owner, business owner, target source, and known limitations. Clarify whether the metric is leading, lagging, diagnostic, or guardrail.
+
+Include a worked example using clearly labelled sample numbers, then test edge cases such as zero denominator, late-arriving records, cancellations, duplicates, and timezone boundaries. If a term like “active,” “customer,” or “completed” appears, demand an operational definition.
+
+Compare any KPIs that may conflict or encourage harmful gaming. Recommend one balancing metric where needed. Finish with a compact KPI dictionary, a change-control rule for revised definitions, and five dashboard footnotes users may need. Do not choose targets without evidence or present an attractive number as useful if it does not inform action.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Calculate one example by hand with the metric owner before publishing.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> Standard KPI cards and a metric governance checklist.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="076-zapier-make-workflow-sketch.html">← Previous · 076</a>
+      
+      
+      <a href="078-unbiased-survey-designer.html">078 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

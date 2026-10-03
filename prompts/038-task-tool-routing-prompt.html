@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>038 · Task Tool Routing Prompt · AI Prompt Library</title>
+  <meta name="description" content="Use this to choose an appropriate AI tool based on task capabilities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=038">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/038-task-tool-routing-prompt.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">038</span>
+      <span class="pill pill-cat">Prompt Engineering</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Task Tool Routing Prompt</h1>
+    <p class="muted">Use this to choose an appropriate AI tool based on task capabilities.</p>
+    
+    <p><strong>Use case:</strong> A workshop participant can compare available tools for research, documents, writing, studying, or office workflows without relying on hype.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>ChatGPT</strong> — Can elicit requirements and compare tools across common general-purpose capabilities.</li>
+      
+      <li><strong>Perplexity</strong> — Useful when tool selection depends on current, source-linked capability information.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Help me choose the most suitable AI tool for <span class="ph">[TASK]</span> based on capabilities, access, and risk—not popularity.
+
+My inputs are <span class="ph">[TEXT_FILES_IMAGES_LINKS_OR_OTHER]</span>, expected output is <span class="ph">[OUTPUT]</span>, workflow is <span class="ph">[WORKFLOW]</span>, data sensitivity is <span class="ph">[PUBLIC_INTERNAL_CONFIDENTIAL]</span>, and devices or accounts available are <span class="ph">[ACCESS]</span>. I prefer <span class="ph">[PREFERENCES]</span>, but they are not hard requirements.
+
+Ask up to five clarifying questions if any decisive requirement is missing. Then create a capability checklist covering current web access, citations, file type and length, multimodal input, office integration, collaboration, privacy controls, and required human verification.
+
+Compare only tools you can describe accurately from current knowledge or verifiable official information. Candidate tools may include ChatGPT, Gemini, Claude, Perplexity, NotebookLM, DeepSeek, Meta AI, and Microsoft Copilot; omit irrelevant ones. Do not discuss prices unless I explicitly ask, and do not claim a feature exists without confidence.
+
+Recommend one primary tool and up to two alternatives. For each, state task fit, key limitation, and the condition that would change the choice. If a simple non-AI tool is safer or sufficient, say so.
+
+End with a ten-minute test task using non-sensitive sample data and a scorecard for accuracy, effort, traceability, and fit. Remind me to verify availability and organisational policy before uploading data.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Help me choose the most suitable AI tool for [TASK] based on capabilities, access, and risk—not popularity.
+
+My inputs are [TEXT_FILES_IMAGES_LINKS_OR_OTHER], expected output is [OUTPUT], workflow is [WORKFLOW], data sensitivity is [PUBLIC_INTERNAL_CONFIDENTIAL], and devices or accounts available are [ACCESS]. I prefer [PREFERENCES], but they are not hard requirements.
+
+Ask up to five clarifying questions if any decisive requirement is missing. Then create a capability checklist covering current web access, citations, file type and length, multimodal input, office integration, collaboration, privacy controls, and required human verification.
+
+Compare only tools you can describe accurately from current knowledge or verifiable official information. Candidate tools may include ChatGPT, Gemini, Claude, Perplexity, NotebookLM, DeepSeek, Meta AI, and Microsoft Copilot; omit irrelevant ones. Do not discuss prices unless I explicitly ask, and do not claim a feature exists without confidence.
+
+Recommend one primary tool and up to two alternatives. For each, state task fit, key limitation, and the condition that would change the choice. If a simple non-AI tool is safer or sufficient, say so.
+
+End with a ten-minute test task using non-sensitive sample data and a scorecard for accuracy, effort, traceability, and fit. Remind me to verify availability and organisational policy before uploading data.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Choose by required capability and data sensitivity before considering familiarity.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A capability-based recommendation with alternatives, limitations, and a test task.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="037-few-shot-pattern-crafter.html">← Previous · 037</a>
+      
+      
+      <a href="039-socratic-learning-dialogue.html">039 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

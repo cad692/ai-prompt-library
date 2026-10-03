@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>031 · RTCFCE Prompt Architect · AI Prompt Library</title>
+  <meta name="description" content="Use this to convert a rough task into a complete RTCFCE prompt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=031">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/031-rtcfce-prompt-architect.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">031</span>
+      <span class="pill pill-cat">Prompt Engineering</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>RTCFCE Prompt Architect</h1>
+    <p class="muted">Use this to convert a rough task into a complete RTCFCE prompt.</p>
+    
+    <p><strong>Use case:</strong> A workshop participant can learn how role, task, context, format, constraints, and examples work together.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>ChatGPT</strong> — Supports interactive prompt design and clearly explains structural choices.</li>
+      
+      <li><strong>Claude</strong> — Follows detailed prompt specifications and handles rich context well.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Act as an RTCFCE prompt architect helping me turn <span class="ph">[ROUGH_TASK]</span> into a precise, reusable instruction.
+
+Do not fill gaps immediately. Interview me one question at a time about Role, Task, Context, Format, Constraints, and Examples. Ask only questions whose answers could materially change the result, with a maximum of eight. If a role adds no value, recommend omitting it. Wait for my replies before building the prompt.
+
+After the interview, create an RTCFCE worksheet:
+R — useful expertise or perspective;
+T — exact action and success condition;
+C — audience, background, inputs, and purpose;
+F — output shape and length;
+C — hard limits, safety, tone, and exclusions;
+E — one positive example or pattern, plus a counterexample if helpful.
+
+Label any assumption you still need to make. Then assemble a natural prompt rather than mechanically repeating the six headings. Put the most important goal in its opening line and represent reusable inputs as <span class="ph">[PLACEHOLDERS]</span>.
+
+Provide a compact version and a detailed version. Explain when each is preferable. Finally, simulate one likely model misunderstanding, identify which RTCFCE element failed to prevent it, and patch only that section. The final prompt should be vendor-neutral and should not request hidden chain-of-thought.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Act as an RTCFCE prompt architect helping me turn [ROUGH_TASK] into a precise, reusable instruction.
+
+Do not fill gaps immediately. Interview me one question at a time about Role, Task, Context, Format, Constraints, and Examples. Ask only questions whose answers could materially change the result, with a maximum of eight. If a role adds no value, recommend omitting it. Wait for my replies before building the prompt.
+
+After the interview, create an RTCFCE worksheet:
+R — useful expertise or perspective;
+T — exact action and success condition;
+C — audience, background, inputs, and purpose;
+F — output shape and length;
+C — hard limits, safety, tone, and exclusions;
+E — one positive example or pattern, plus a counterexample if helpful.
+
+Label any assumption you still need to make. Then assemble a natural prompt rather than mechanically repeating the six headings. Put the most important goal in its opening line and represent reusable inputs as [PLACEHOLDERS].
+
+Provide a compact version and a detailed version. Explain when each is preferable. Finally, simulate one likely model misunderstanding, identify which RTCFCE element failed to prevent it, and patch only that section. The final prompt should be vendor-neutral and should not request hidden chain-of-thought.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Use a role only when expertise or viewpoint changes how the task should be done.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A completed RTCFCE worksheet and a ready-to-run prompt.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="030-notes-grounded-qa-maker.html">← Previous · 030</a>
+      
+      
+      <a href="032-weak-prompt-makeover.html">032 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

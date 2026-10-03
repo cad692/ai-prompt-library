@@ -1,0 +1,30 @@
+# 013 — Claim Evidence Auditor
+
+**Category:** research · **Difficulty:** Intermediate
+
+**Usage:** Use this to separate claims, evidence, assumptions, and overstatement in a text.
+
+**Expected output:** A claim-versus-evidence table with support ratings and revision advice.
+
+**Tip:** Audit one section at a time so evidence links remain precise and traceable.
+
+## Best tools
+- **Claude**: Handles long passages and nuanced distinctions between claims and support.
+- **ChatGPT**: Extracts structured claim-evidence relationships from pasted material.
+
+## Prompt
+
+```text
+Audit [PASTED_TEXT_OR_DOCUMENT] as a critical reader, separating what is asserted from what is demonstrated.
+
+The intended audience is [AUDIENCE], and the standard of evidence is [ACADEMIC_POLICY_BUSINESS_OR_OTHER]. Work only from the supplied text and references unless I explicitly enable research. Do not fill evidence gaps from memory.
+
+Create a table with these columns: exact or shortened claim, claim type, cited evidence, evidence-to-claim fit, hidden assumption, severity, and recommended repair. Classify claim type as factual, causal, predictive, normative, or interpretive. Rate fit as direct, partial, indirect, absent, or cannot verify.
+
+Pay special attention to absolute language, causal conclusions from correlation, tiny or unrepresentative samples, old data presented as current, and references that support a nearby but different point. Preserve paragraph or page locations so I can find each issue.
+
+After the table, select the three highest-risk claims. For each, give a constraint-based rewrite that is accurate without becoming evasive: retain the core meaning, add only justified qualifiers, and stay within [MAX_WORDS] words. Finish with a short evidence shopping list naming the source type—not a fabricated citation—needed to strengthen each unresolved claim.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

@@ -1,0 +1,35 @@
+# 054 — Urdu Calligraphy Safe Poster
+
+**Category:** images-video · **Difficulty:** Beginner
+
+**Usage:** Use to create a culturally respectful poster while preserving accurate Urdu text.
+
+**Expected output:** A text-free art prompt and a safe manual Urdu typesetting plan.
+
+**Tip:** Ask a fluent Urdu reader to proof the final joined letters, punctuation, and meaning.
+
+## Best tools
+- **Adobe Firefly**: Generates the text-free poster artwork from precise art direction.
+- **Canva**: Supports manual placement of verified text over the generated background.
+
+## Prompt
+
+```text
+You are directing an Urdu poster workflow that treats the script as designed language, not generated decoration.
+
+Exact approved Urdu text: [URDU_TEXT]
+Roman/English meaning: [MEANING]
+Occasion and audience: [OCCASION]
+Visual tradition or mood: [MOOD]
+Size and placement: [OUTPUT_SIZE]
+Sponsor marks: [LOGOS]
+
+Do not ask the image model to render the Urdu text. Create a text-free background prompt with [ART_STYLE] style, a balanced vertical composition, a calm focal ornament, intentional central or upper negative space for calligraphy, a culturally appropriate colour palette, layered paper/ink or architectural texture, and soft directional lighting that preserves readability. Avoid pseudo-Arabic marks, sacred text used as texture, inaccurate landmarks, and ornamental clutter behind the future lettering.
+
+Then provide a separate typesetting map: exact approved wording copied unchanged, line breaks, alignment, approximate text-block proportions, contrast treatment, and space for translation or event details. Recommend using a verified Urdu-capable font or artwork from a calligrapher; do not name a font unless the user has confirmed access and licensing.
+
+Include a proof checklist for joining forms, diacritics if required, punctuation direction, spelling, translation, logo clear space, and print bleed. Require review by a fluent reader before publishing. If the supplied Urdu appears uncertain, preserve it and flag it rather than silently correcting it.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

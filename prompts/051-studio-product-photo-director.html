@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>051 · Studio Product Photo Director · AI Prompt Library</title>
+  <meta name="description" content="Use to create a production-ready product image prompt without false features.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=051">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/051-studio-product-photo-director.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">051</span>
+      <span class="pill pill-cat">Images &amp; Video</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Studio Product Photo Director</h1>
+    <p class="muted">Use to create a production-ready product image prompt without false features.</p>
+    
+    <p><strong>Use case:</strong> Directs an AI product visual for e-commerce or campaigns. The prompt preserves product identity and specifies a controlled studio setup.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Adobe Firefly</strong> — Creates controlled commercial-style imagery with detailed visual direction.</li>
+      
+      <li><strong>Leonardo</strong> — Supports polished product concepts and consistent art direction.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">You are a commercial product photographer translating a real item into a precise generation brief.
+
+Product and verified features: <span class="ph">[PRODUCT]</span>
+Reference image available: <span class="ph">[YES_OR_NO]</span>
+Audience and use: <span class="ph">[AUDIENCE_AND_USE]</span>
+Brand character: <span class="ph">[BRAND_CHARACTER]</span>
+Required aspect ratio: <span class="ph">[ASPECT_RATIO]</span>
+Features that must not change: <span class="ph">[LOCKED_FEATURES]</span>
+
+Compose one hero-photo prompt with the product as the unmistakable focal point. Specify visual style, camera angle, lens feel, framing, surface and background, prop placement, colour palette, lighting setup with key/fill/rim direction, shadow softness, material texture, and depth of field. Reserve clean negative space for <span class="ph">[COPY_POSITION]</span> while keeping the pack label unobstructed.
+
+Then write two controlled variations: an overhead detail composition and an in-context lifestyle setup. The lifestyle scene must be plausible for the product and should not imply an unsupported medical, environmental, or performance claim.
+
+Add a negative prompt preventing warped packaging, duplicate objects, illegible invented labels, changed logos, floating props, plastic-looking textures, harsh reflections, extra fingers where hands appear, and watermarks. If accurate brand text is essential, direct the user to composite the original label after generation rather than trusting generated typography. Mention that final output must be checked against the real item.
+</div>
+      <pre id="prompt-source" class="visually-hidden">You are a commercial product photographer translating a real item into a precise generation brief.
+
+Product and verified features: [PRODUCT]
+Reference image available: [YES_OR_NO]
+Audience and use: [AUDIENCE_AND_USE]
+Brand character: [BRAND_CHARACTER]
+Required aspect ratio: [ASPECT_RATIO]
+Features that must not change: [LOCKED_FEATURES]
+
+Compose one hero-photo prompt with the product as the unmistakable focal point. Specify visual style, camera angle, lens feel, framing, surface and background, prop placement, colour palette, lighting setup with key/fill/rim direction, shadow softness, material texture, and depth of field. Reserve clean negative space for [COPY_POSITION] while keeping the pack label unobstructed.
+
+Then write two controlled variations: an overhead detail composition and an in-context lifestyle setup. The lifestyle scene must be plausible for the product and should not imply an unsupported medical, environmental, or performance claim.
+
+Add a negative prompt preventing warped packaging, duplicate objects, illegible invented labels, changed logos, floating props, plastic-looking textures, harsh reflections, extra fingers where hands appear, and watermarks. If accurate brand text is essential, direct the user to composite the original label after generation rather than trusting generated typography. Mention that final output must be checked against the real item.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Attach a clean reference image and list features the model must not alter.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A tool-ready product photo prompt plus negative constraints.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="050-data-slide-storyline.html">← Previous · 050</a>
+      
+      
+      <a href="052-educational-explainer-still.html">052 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

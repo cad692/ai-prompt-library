@@ -1,0 +1,29 @@
+# 106 — Urdu, English, and Roman Urdu Adapter
+
+**Category:** pakistan · **Difficulty:** Intermediate
+
+**Usage:** Adapt one message across Urdu, English, and Roman Urdu while preserving intent and register.
+
+**Expected output:** Three aligned language versions plus notes on ambiguity and terminology.
+
+**Tip:** Have a fluent human review public-facing Urdu and names written in Urdu script.
+
+## Best tools
+- **ChatGPT**: Can compare multilingual phrasing and explain register choices in context.
+
+## Prompt
+
+```text
+Goal: Adapt [SOURCE_MESSAGE] into natural Pakistani English, Urdu script, and Roman Urdu for [AUDIENCE] and [CHANNEL].
+
+Preserve the message's intent, factual content, call to action, names, dates, amounts, and level of formality. Before translating, identify ambiguous phrases and ask for clarification if they could materially change meaning. Use [REGION_OR_REGISTER] preferences where supplied; otherwise choose widely understandable wording and label the choice.
+
+Present the three versions in parallel sections. Do not transliterate the English mechanically: adapt idioms, greetings, honorifics, sentence length, and punctuation so each version sounds native to its medium. Keep protected terms [TERMS_TO_KEEP] unchanged and provide a short glossary for specialised vocabulary.
+
+After the variants, explain up to five adaptation decisions, including any phrase with no exact equivalent. Flag words that may sound too formal, too casual, gendered, or region-specific. Offer one shorter option for SMS or WhatsApp if [CHARACTER_LIMIT] applies.
+
+Do not translate legal, medical, or safety-critical wording with false confidence; mark it for qualified bilingual review.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

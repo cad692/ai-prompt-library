@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>011 · Three-Source Triangulator · AI Prompt Library</title>
+  <meta name="description" content="Use this to compare independent sources before trusting a consequential claim.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=011">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/011-three-source-triangulator.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">011</span>
+      <span class="pill pill-cat">Research &amp; Search</span>
+      <span class="badge badge-advanced">Advanced</span>
+    </div>
+    <h1>Three-Source Triangulator</h1>
+    <p class="muted">Use this to compare independent sources before trusting a consequential claim.</p>
+    
+    <p><strong>Use case:</strong> A researcher or professional can test a policy, health, market, or education claim against varied evidence instead of one repeated story.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Perplexity</strong> — Finds current web sources and exposes citations for direct inspection.</li>
+      
+      <li><strong>Gemini</strong> — Can compare web-grounded material and organise disagreements across sources.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Act as an evidence triangulator investigating the claim <span class="ph">[CLAIM]</span> for <span class="ph">[DECISION_OR_PROJECT]</span>.
+
+Scope the claim by geography <span class="ph">[LOCATION]</span>, period <span class="ph">[DATE_RANGE]</span>, population <span class="ph">[POPULATION]</span>, and key terms <span class="ph">[DEFINITIONS]</span>. If you have web access, locate at least three genuinely independent source types: one primary source or dataset, one scholarly or technical analysis, and one credible reporting or institutional source. If browsing is unavailable, stop after giving me a search plan; never invent citations.
+
+For every candidate source, record title, author or institution, date, direct link or identifier, source type, and who produced the underlying evidence. Trace syndicated stories, summaries, and press releases back to their origin.
+
+Build a triangulation matrix with rows for the claim’s major components and columns for each source. Use “supports,” “qualifies,” “contradicts,” or “not addressed,” followed by a short quoted or precisely paraphrased basis. Explain visible reasoning steps used to judge independence, relevance, and methodological strength.
+
+Highlight conflicts caused by different definitions, samples, dates, or incentives. Assign confidence—high, medium, low, or unresolved—to each component, with a one-sentence justification. Conclude with what can responsibly be said now, what cannot, and the next source most likely to change the assessment.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Act as an evidence triangulator investigating the claim [CLAIM] for [DECISION_OR_PROJECT].
+
+Scope the claim by geography [LOCATION], period [DATE_RANGE], population [POPULATION], and key terms [DEFINITIONS]. If you have web access, locate at least three genuinely independent source types: one primary source or dataset, one scholarly or technical analysis, and one credible reporting or institutional source. If browsing is unavailable, stop after giving me a search plan; never invent citations.
+
+For every candidate source, record title, author or institution, date, direct link or identifier, source type, and who produced the underlying evidence. Trace syndicated stories, summaries, and press releases back to their origin.
+
+Build a triangulation matrix with rows for the claim’s major components and columns for each source. Use “supports,” “qualifies,” “contradicts,” or “not addressed,” followed by a short quoted or precisely paraphrased basis. Explain visible reasoning steps used to judge independence, relevance, and methodological strength.
+
+Highlight conflicts caused by different definitions, samples, dates, or incentives. Assign confidence—high, medium, low, or unresolved—to each component, with a one-sentence justification. Conclude with what can responsibly be said now, what cannot, and the next source most likely to change the assessment.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Independence matters more than quantity; three articles repeating one press release count as one source.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A triangulation matrix showing agreement, conflict, provenance, and confidence.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="010-respectful-conflict-message.html">← Previous · 010</a>
+      
+      
+      <a href="012-literature-landscape-mapper.html">012 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

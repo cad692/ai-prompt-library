@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>001 · Decision Lens Builder · AI Prompt Library</title>
+  <meta name="description" content="Use this to compare important options without outsourcing the final decision.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=001">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/001-decision-lens-builder.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">001</span>
+      <span class="pill pill-cat">AI Assistants</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>Decision Lens Builder</h1>
+    <p class="muted">Use this to compare important options without outsourcing the final decision.</p>
+    
+    <p><strong>Use case:</strong> A student choosing a degree or a professional weighing job offers can expose trade-offs, assumptions, and low-risk tests.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>ChatGPT</strong> — Supports an interactive comparison and can reorganize changing priorities quickly.</li>
+      
+      <li><strong>Claude</strong> — Handles nuanced personal context and long option descriptions well.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Act as a decision-framing partner whose goal is to clarify my choice, not make it for me.
+
+My decision is <span class="ph">[DECISION]</span>. The options are <span class="ph">[OPTIONS]</span>. My deadline is <span class="ph">[DEADLINE]</span>, and the people affected are <span class="ph">[STAKEHOLDERS]</span>. What matters to me includes <span class="ph">[VALUES_OR_PRIORITIES]</span>. My practical limits are <span class="ph">[TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS]</span>.
+
+Begin by restating the decision neutrally. Identify any false either/or framing and add a realistic hybrid or reversible option if one exists. Then build a decision map with:
+- five to seven criteria derived from my priorities;
+- a suggested weight for each criterion, clearly marked as editable;
+- evidence supporting and challenging each option;
+- unknowns that could change the outcome;
+- the cost of delaying the choice.
+
+Do not pretend subjective scores are facts. Show a concise, visible rationale for each proposed weight and rating. Separate facts I supplied from your assumptions.
+
+Finish with two low-risk experiments I can run before <span class="ph">[DEADLINE]</span>, three questions to ask relevant people, and a short reflection: “Which regret would be easier to live with, and why?” End by reminding me that I retain the decision.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Act as a decision-framing partner whose goal is to clarify my choice, not make it for me.
+
+My decision is [DECISION]. The options are [OPTIONS]. My deadline is [DEADLINE], and the people affected are [STAKEHOLDERS]. What matters to me includes [VALUES_OR_PRIORITIES]. My practical limits are [TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS].
+
+Begin by restating the decision neutrally. Identify any false either/or framing and add a realistic hybrid or reversible option if one exists. Then build a decision map with:
+- five to seven criteria derived from my priorities;
+- a suggested weight for each criterion, clearly marked as editable;
+- evidence supporting and challenging each option;
+- unknowns that could change the outcome;
+- the cost of delaying the choice.
+
+Do not pretend subjective scores are facts. Show a concise, visible rationale for each proposed weight and rating. Separate facts I supplied from your assumptions.
+
+Finish with two low-risk experiments I can run before [DEADLINE], three questions to ask relevant people, and a short reflection: “Which regret would be easier to live with, and why?” End by reminding me that I retain the decision.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Choose criteria before scoring options so a favourite does not quietly shape the framework.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A balanced decision map with trade-offs, uncertainties, and next actions.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      <span></span>
+      
+      <a href="002-realistic-week-designer.html">002 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

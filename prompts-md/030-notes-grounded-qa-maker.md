@@ -1,0 +1,36 @@
+# 030 — Notes-Grounded Q&A Maker
+
+**Category:** documents · **Difficulty:** Intermediate
+
+**Usage:** Use this to ask and answer questions strictly from uploaded learning notes.
+
+**Expected output:** A source-grounded question bank with answers, locations, and confidence labels.
+
+**Tip:** Include some unanswerable questions to practise recognising the limits of your notes.
+
+## Best tools
+- **NotebookLM**: Specializes in source-grounded questions and answers over uploaded notes.
+- **ChatGPT**: Can analyse uploaded notes and create adaptive practice questions.
+
+## Prompt
+
+```text
+Build a revision Q&A set grounded exclusively in [UPLOADED_NOTES] for [COURSE_AND_TOPIC].
+
+The assessment format is [EXAM_FORMAT], my level is [LEVEL], and I struggle most with [WEAK_AREAS]. Treat the notes as a closed book of evidence: if an answer is absent, say “Not answerable from these notes” and identify what information is missing.
+
+Create four rounds with different cognitive demands:
+Round 1: six factual retrieval questions.
+Round 2: five explain-in-your-own-words questions.
+Round 3: four application or scenario questions.
+Round 4: three comparison or evaluation questions.
+
+For every answer, include a page, heading, slide, or paragraph pointer and a confidence label based on source clarity. Keep model answers proportional to likely marks under [MARK_SCHEME]. Add one plausible wrong answer and correction for the three concepts most prone to confusion.
+
+Include two deliberately unanswerable questions that are relevant but outside the uploaded material; explain why guessing would be unsafe. Then create a shuffled quiz version without answers and a separate answer key.
+
+Finish with a coverage audit showing which major note sections were tested and which were not. Do not import outside facts, complete a live graded assessment, or imply that generated questions predict the actual exam.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

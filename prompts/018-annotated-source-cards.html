@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>018 · Annotated Source Cards · AI Prompt Library</title>
+  <meta name="description" content="Use this to create evaluative annotations from sources you have actually read.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=018">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/018-annotated-source-cards.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">018</span>
+      <span class="pill pill-cat">Research &amp; Search</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>Annotated Source Cards</h1>
+    <p class="muted">Use this to create evaluative annotations from sources you have actually read.</p>
+    
+    <p><strong>Use case:</strong> A learner can organise readings for an assignment while keeping summaries, evaluations, and relevance notes distinct.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>NotebookLM</strong> — Creates source-grounded notes from an uploaded collection and links responses to evidence.</li>
+      
+      <li><strong>Claude</strong> — Processes long papers and produces nuanced structured annotations.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Create rigorous annotated source cards for <span class="ph">[RESEARCH_TOPIC]</span> using only <span class="ph">[UPLOADED_SOURCES_OR_PASTED_TEXT]</span>.
+
+Citation style: <span class="ph">[APA_MLA_CHICAGO_OR_OTHER]</span>. Target annotation length: <span class="ph">[WORDS]</span> words. My research question is <span class="ph">[QUESTION]</span>, and my intended argument or inquiry is <span class="ph">[DIRECTION]</span>. Never fabricate missing bibliographic fields, page numbers, quotations, DOIs, or findings; mark missing data as <span class="ph">[VERIFY]</span>.
+
+For each source, produce a card containing:
+- a formatted citation;
+- the source’s purpose and central claim;
+- method, sample, or evidence base;
+- two major findings with page locations when available;
+- one strength and one limitation;
+- relevance to my question;
+- relationship to another source in the set.
+
+Keep summary and evaluation in separate labelled paragraphs. If the source is commentary rather than research, adapt the method field honestly. Add three keywords not already obvious from the title.
+
+After all cards, group sources into conversation clusters: agreement, tension, extension, and context. Identify duplicated evidence where several sources rely on the same dataset. Finish with a verification queue of incomplete citations and claims I must inspect in the originals. The annotations must support my own reading and writing, not replace them.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Create rigorous annotated source cards for [RESEARCH_TOPIC] using only [UPLOADED_SOURCES_OR_PASTED_TEXT].
+
+Citation style: [APA_MLA_CHICAGO_OR_OTHER]. Target annotation length: [WORDS] words. My research question is [QUESTION], and my intended argument or inquiry is [DIRECTION]. Never fabricate missing bibliographic fields, page numbers, quotations, DOIs, or findings; mark missing data as [VERIFY].
+
+For each source, produce a card containing:
+- a formatted citation;
+- the source’s purpose and central claim;
+- method, sample, or evidence base;
+- two major findings with page locations when available;
+- one strength and one limitation;
+- relevance to my question;
+- relationship to another source in the set.
+
+Keep summary and evaluation in separate labelled paragraphs. If the source is commentary rather than research, adapt the method field honestly. Add three keywords not already obvious from the title.
+
+After all cards, group sources into conversation clusters: agreement, tension, extension, and context. Identify duplicated evidence where several sources rely on the same dataset. Finish with a verification queue of incomplete citations and claims I must inspect in the originals. The annotations must support my own reading and writing, not replace them.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Add page numbers while reading; locating evidence later is harder than recording it now.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> Consistent annotated bibliography cards with summary, evaluation, and relevance.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="017-research-question-sharpener.html">← Previous · 017</a>
+      
+      
+      <a href="019-evidence-gap-radar.html">019 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

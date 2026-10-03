@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>071 · Spreadsheet Cleaning Blueprint · AI Prompt Library</title>
+  <meta name="description" content="Use to plan safe cleaning before changing a messy spreadsheet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=071">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/071-spreadsheet-cleaning-blueprint.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">071</span>
+      <span class="pill pill-cat">Data &amp; Productivity</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Spreadsheet Cleaning Blueprint</h1>
+    <p class="muted">Use to plan safe cleaning before changing a messy spreadsheet.</p>
+    
+    <p><strong>Use case:</strong> Creates a reversible, auditable cleaning plan for Excel or Google Sheets. It preserves raw data and defines validation checks.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Excel/Sheets</strong> — Provides filters, formulas, validation, and reproducible cleaning steps.</li>
+      
+      <li><strong>ChatGPT</strong> — Helps diagnose column issues and draft transformation logic.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Work as a cautious data steward planning a spreadsheet cleanup that can be audited and reversed.
+
+File purpose: <span class="ph">[PURPOSE]</span>
+Columns and sample rows: <span class="ph">[SCHEMA_SAMPLE]</span>
+Known problems: <span class="ph">[PROBLEMS]</span>
+Intended analysis: <span class="ph">[ANALYSIS]</span>
+Tool: <span class="ph">[EXCEL_OR_SHEETS]</span>
+Locale, date, and number conventions: <span class="ph">[LOCALE]</span>
+
+Do not clean values immediately. First profile each column by expected type, missingness, uniqueness, range, pattern, and likely business rule. Build an issue register covering duplicate rows, inconsistent categories, whitespace, casing, dates, decimal separators, units, impossible values, broken formulas, and personally identifying data.
+
+Propose a staged workflow: preserve raw import, create a working copy, standardize formats, map categories, handle missing values, resolve duplicates, validate relationships, and publish a clean table. For every transformation, state the rule, example before/after, formula or menu approach appropriate to the named tool, and rollback method. Never recommend deleting an outlier solely because it looks unusual.
+
+Define reconciliation checks: row count, unique key count, totals before/after, unmatched mappings, formula error count, and spot-check sample. Mark decisions that require a domain owner. Finish with a data dictionary template and a cleaning log containing date, operator, rule, affected rows, and approval.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Work as a cautious data steward planning a spreadsheet cleanup that can be audited and reversed.
+
+File purpose: [PURPOSE]
+Columns and sample rows: [SCHEMA_SAMPLE]
+Known problems: [PROBLEMS]
+Intended analysis: [ANALYSIS]
+Tool: [EXCEL_OR_SHEETS]
+Locale, date, and number conventions: [LOCALE]
+
+Do not clean values immediately. First profile each column by expected type, missingness, uniqueness, range, pattern, and likely business rule. Build an issue register covering duplicate rows, inconsistent categories, whitespace, casing, dates, decimal separators, units, impossible values, broken formulas, and personally identifying data.
+
+Propose a staged workflow: preserve raw import, create a working copy, standardize formats, map categories, handle missing values, resolve duplicates, validate relationships, and publish a clean table. For every transformation, state the rule, example before/after, formula or menu approach appropriate to the named tool, and rollback method. Never recommend deleting an outlier solely because it looks unusual.
+
+Define reconciliation checks: row count, unique key count, totals before/after, unmatched mappings, formula error count, and spot-check sample. Mark decisions that require a domain owner. Finish with a data dictionary template and a cleaning log containing date, operator, rule, affected rows, and approval.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Never clean the only copy; preserve a read-only raw tab with an import date.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A staged cleaning plan with rules, checks, and rollback safeguards.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="070-local-shop-campaign-angle-lab.html">← Previous · 070</a>
+      
+      
+      <a href="072-chart-to-decision-narrative.html">072 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

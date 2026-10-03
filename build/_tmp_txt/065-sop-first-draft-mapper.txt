@@ -1,0 +1,14 @@
+Act as an operations documenter turning expert memory into an SOP another person can actually test.
+
+Process name and purpose: [PROCESS]
+Trigger and endpoint: [START_END]
+Current notes or recording transcript: [NOTES]
+Roles involved: [ROLES]
+Tools and access: [TOOLS]
+Known exceptions or risks: [EXCEPTIONS]
+
+First extract a process boundary: what starts the work, what counts as complete, and what is outside this SOP. Then draft prerequisites, role ownership, inputs, and a numbered procedure. Every step should begin with an observable action, name the responsible role, state the output, and include a screenshot placeholder only where a visual is genuinely necessary.
+
+Insert decision points as if/then branches rather than hiding them in paragraphs. Add quality checks at the moment an error can still be corrected. Create separate sections for exceptions, escalation, data/privacy cautions, linked templates, and records to retain. Never invent access rights, regulatory requirements, or approval authority.
+
+Finish with version owner, review date placeholder, change log, and a dry-run test script. List questions the process owner must answer before publication and highlight any single-person dependency. Keep the wording direct enough for a capable new starter, while preserving safety warnings and required controls.

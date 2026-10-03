@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>014 · Cited Brief Producer · AI Prompt Library</title>
+  <meta name="description" content="Use this to create a current web brief whose citations can be checked.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=014">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/014-cited-brief-producer.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">014</span>
+      <span class="pill pill-cat">Research &amp; Search</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>Cited Brief Producer</h1>
+    <p class="muted">Use this to create a current web brief whose citations can be checked.</p>
+    
+    <p><strong>Use case:</strong> A professional can rapidly understand an emerging issue before a meeting while retaining a clear route back to original sources.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Perplexity</strong> — Specializes in current web research with inline source links.</li>
+      
+      <li><strong>Microsoft Copilot</strong> — Can produce web-grounded summaries with linked sources for verification.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Produce a decision-ready cited brief on <span class="ph">[TOPIC]</span> for <span class="ph">[AUDIENCE]</span> as of <span class="ph">[CUT_OFF_DATE]</span>.
+
+Answer this central question: <span class="ph">[QUESTION]</span>. Prioritise primary documents, official statistics, peer-reviewed research, and reputable reporting. Search across viewpoints and include Pakistan-specific evidence where relevant. Do not cite search-result snippets, AI summaries, or inaccessible references as if checked.
+
+Structure the brief in this order:
+1. Bottom line in 80 words or fewer.
+2. Five key findings, each followed by an inline link that directly supports it.
+3. “What changed recently,” with dates.
+4. Stakeholder implications for <span class="ph">[STAKEHOLDERS]</span>.
+5. Two unresolved questions.
+
+Beside every finding, label evidence as primary, secondary, or commentary. Where sources disagree, present both positions and identify the likely reason without forcing false balance. Quote sparingly and never alter quoted meaning.
+
+Add a source ledger listing title, publisher, publication date, access date, URL, and one-line relevance. Test each URL if your tools allow it. If a claim lacks adequate support, mark [EVIDENCE NOT FOUND] and revise the bottom line accordingly. End with three verification actions the reader should take before using the brief for a high-stakes decision.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Produce a decision-ready cited brief on [TOPIC] for [AUDIENCE] as of [CUT_OFF_DATE].
+
+Answer this central question: [QUESTION]. Prioritise primary documents, official statistics, peer-reviewed research, and reputable reporting. Search across viewpoints and include Pakistan-specific evidence where relevant. Do not cite search-result snippets, AI summaries, or inaccessible references as if checked.
+
+Structure the brief in this order:
+1. Bottom line in 80 words or fewer.
+2. Five key findings, each followed by an inline link that directly supports it.
+3. “What changed recently,” with dates.
+4. Stakeholder implications for [STAKEHOLDERS].
+5. Two unresolved questions.
+
+Beside every finding, label evidence as primary, secondary, or commentary. Where sources disagree, present both positions and identify the likely reason without forcing false balance. Quote sparingly and never alter quoted meaning.
+
+Add a source ledger listing title, publisher, publication date, access date, URL, and one-line relevance. Test each URL if your tools allow it. If a claim lacks adequate support, mark [EVIDENCE NOT FOUND] and revise the bottom line accordingly. End with three verification actions the reader should take before using the brief for a high-stakes decision.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Open every citation and confirm that it supports the exact sentence attached to it.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A concise, citation-rich brief with verified links and uncertainty labels.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="013-claim-evidence-auditor.html">← Previous · 013</a>
+      
+      
+      <a href="015-rival-explanations-workbench.html">015 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

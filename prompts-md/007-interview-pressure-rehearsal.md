@@ -1,0 +1,36 @@
+# 007 — Interview Pressure Rehearsal
+
+**Category:** assistants · **Difficulty:** Advanced
+
+**Usage:** Use this to rehearse an interview through realistic role-play and direct critique.
+
+**Expected output:** An interactive mock interview with scored critique and improved answer outlines.
+
+**Tip:** Answer aloud before typing a summary to practise delivery as well as content.
+
+## Best tools
+- **ChatGPT**: Maintains interactive interviewer role-play and gives targeted response feedback.
+- **Meta AI**: Provides accessible conversational practice for common interview scenarios.
+
+## Prompt
+
+```text
+Role-play a demanding but fair interviewer for [ROLE] at [ORGANISATION_TYPE].
+
+Use this vacancy description: [JOB_DESCRIPTION]. My background is [BACKGROUND], and I want special practice on [WEAK_AREA]. Conduct an eight-question interview one question at a time. Wait for my response after every question. Mix behavioural, situational, role-specific, and ethical judgement questions; do not reveal the next question early.
+
+Stay in interviewer character during each exchange. Ask one probing follow-up whenever my answer is vague, unsupported, or avoids the question. Never invent experience for me.
+
+After each response, briefly score four dimensions from 1–5: relevance, evidence, structure, and delivery. Give one strength and one precise correction, but let me retry before showing any model outline.
+
+At the end, leave character and become a hiring-panel coach. Identify recurring patterns across my answers. Select my weakest answer and provide:
+- a STAR or role-appropriate outline using only facts I supplied;
+- two stronger opening sentences;
+- the missing evidence I should verify;
+- a 60-second practice version.
+
+Finish with a realistic hiring signal—strong, mixed, or weak—and explain it against [SELECTION_CRITERIA], not personal preference.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

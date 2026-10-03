@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>075 · Meeting Notes to Accountable Actions · AI Prompt Library</title>
+  <meta name="description" content="Use to convert messy meeting notes into decisions, tasks, and open questions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=075">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/075-meeting-notes-to-accountable-actions.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">075</span>
+      <span class="pill pill-cat">Data &amp; Productivity</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Meeting Notes to Accountable Actions</h1>
+    <p class="muted">Use to convert messy meeting notes into decisions, tasks, and open questions.</p>
+    
+    <p><strong>Use case:</strong> Extracts accountable actions without inventing owners or deadlines. It preserves uncertainty for confirmation.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Notion</strong> — Stores meeting records and links actions to team workflows.</li>
+      
+      <li><strong>ChatGPT</strong> — Separates decisions, actions, and unresolved issues from raw notes.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Act as a precise meeting secretary turning rough notes into accountable follow-through without filling gaps from imagination.
+
+Meeting notes or transcript: <span class="ph">[NOTES]</span>
+Meeting purpose: <span class="ph">[PURPOSE]</span>
+Participant names and roles: <span class="ph">[PARTICIPANTS]</span>
+Project context: <span class="ph">[CONTEXT]</span>
+
+Separate the material into five buckets: decisions made, action items, open questions, risks or blockers, and contextual discussion. A decision must state what was agreed and, if present, why. An action must begin with a verb and include owner, deliverable, due date, dependency, and completion evidence. If any field was not explicitly agreed, write <span class="ph">[CONFIRM]</span> rather than assigning it.
+
+Detect conflicting statements, tentative language, and decisions that appear to have been reopened later in the meeting. Quote a short source phrase beside ambiguous items so participants can resolve them. Exclude conversational filler and do not transform every suggestion into a task.
+
+Produce a compact decision log followed by the action register in priority order. Add an “awaiting confirmation” section and a parking-lot list. Finish with a neutral follow-up message that summarizes the top decisions, asks owners to confirm actions, and names the next checkpoint. Preserve sensitive material only if it is necessary for execution.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Act as a precise meeting secretary turning rough notes into accountable follow-through without filling gaps from imagination.
+
+Meeting notes or transcript: [NOTES]
+Meeting purpose: [PURPOSE]
+Participant names and roles: [PARTICIPANTS]
+Project context: [CONTEXT]
+
+Separate the material into five buckets: decisions made, action items, open questions, risks or blockers, and contextual discussion. A decision must state what was agreed and, if present, why. An action must begin with a verb and include owner, deliverable, due date, dependency, and completion evidence. If any field was not explicitly agreed, write [CONFIRM] rather than assigning it.
+
+Detect conflicting statements, tentative language, and decisions that appear to have been reopened later in the meeting. Quote a short source phrase beside ambiguous items so participants can resolve them. Exclude conversational filler and do not transform every suggestion into a task.
+
+Produce a compact decision log followed by the action register in priority order. Add an “awaiting confirmation” section and a parking-lot list. Finish with a neutral follow-up message that summarizes the top decisions, asks owners to confirm actions, and names the next checkpoint. Preserve sensitive material only if it is necessary for execution.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Send the action list within the same day while context is fresh.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A decision log, action register, and concise follow-up message.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="074-notion-database-system-designer.html">← Previous · 074</a>
+      
+      
+      <a href="076-zapier-make-workflow-sketch.html">076 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+# 083 — Gmail Context-Aware Draft
+
+**Category:** addins · **Difficulty:** Beginner
+
+**Usage:** Draft a clear Gmail reply grounded in the thread and the sender's actual request.
+
+**Expected output:** A concise email draft with subject, action, and verification flags.
+
+**Tip:** Recheck recipients, attachments, dates, and promises before pressing Send.
+
+## Best tools
+- **Gemini in Gmail**: Uses the open email thread as context for drafting and summarising.
+
+## Prompt
+
+```text
+Role: Serve as my Gmail correspondence assistant; produce a reply that resolves the thread's real question without inventing context.
+
+Read [EMAIL_THREAD] and identify the sender's request, any deadline, unanswered questions, and commitments already made. My intended outcome is [DESIRED_OUTCOME]. Draft in [TONE] for [RELATIONSHIP], using [LANGUAGE_VARIANT]. Keep the email between [LENGTH] and avoid repeating the entire history.
+
+Structure the message naturally: acknowledge the relevant point, give the direct answer, list actions or decisions, and close with the next expected step. Where information is missing, insert a visible marker such as [CONFIRM DATE] rather than guessing. Do not promise an attachment unless [ATTACHMENT_STATUS] confirms it exists.
+
+After the draft, add a private pre-send panel containing:
+- facts to verify;
+- names, dates, links, or attachments mentioned;
+- commitments I would be making;
+- whether Reply or Reply all seems appropriate, with a reason.
+
+Do not expose that panel in the email itself. Keep courtesy genuine and avoid filler such as “I hope this finds you well” unless requested.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

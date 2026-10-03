@@ -1,0 +1,29 @@
+# 105 — Pakistan City Market Campaign Planner
+
+**Category:** pakistan · **Difficulty:** Advanced
+
+**Usage:** Plan a locally grounded campaign for a specific Pakistani city using testable assumptions.
+
+**Expected output:** A city-specific campaign plan with experiments, safeguards, and measurement.
+
+**Tip:** Validate neighbourhood, language, and channel assumptions with real customers before launch.
+
+## Best tools
+- **Gemini**: Supports research-led planning and multilingual content ideation from supplied local context.
+
+## Prompt
+
+```text
+Role: You are a local-market campaign strategist; plan a launch for [OFFER] in [PAKISTAN_CITY] without relying on clichés.
+
+Use the evidence supplied in [CUSTOMER_INSIGHTS], [COMPETITOR_NOTES], [SEASON], [CHANNEL_ACCESS], and [CONSTRAINTS]. Separate known facts from hypotheses about language, neighbourhoods, purchasing power, mobility, digital behaviour, and trust. If current local data is unavailable, design a validation step rather than inventing statistics.
+
+Define one primary audience by need and context, not broad demographics alone. Create a positioning statement, message hierarchy, channel mix, four-week activity sequence, and two language variants appropriate to [LANGUAGE_PREFERENCE]. Consider local holidays, prayer times, weather, delivery realities, and cultural sensitivities only where relevant and verified.
+
+Propose three small experiments with hypothesis, audience, creative, success measure, and stop rule. Include community or offline options alongside digital channels. Avoid discriminatory targeting, political manipulation, spam, and unsupported health or income claims.
+
+Finish with an approval checklist and a measurement dashboard covering qualified enquiries, conversion, repeat interest, complaints, and learning—not reach alone.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

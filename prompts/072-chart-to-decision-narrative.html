@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>072 · Chart to Decision Narrative · AI Prompt Library</title>
+  <meta name="description" content="Use to explain a chart in plain language without overstating it.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=072">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/072-chart-to-decision-narrative.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">072</span>
+      <span class="pill pill-cat">Data &amp; Productivity</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Chart to Decision Narrative</h1>
+    <p class="muted">Use to explain a chart in plain language without overstating it.</p>
+    
+    <p><strong>Use case:</strong> Converts chart evidence into a concise narrative for reports or meetings. It surfaces alternative explanations and action limits.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>ChatGPT</strong> — Synthesizes supplied chart details into an audience-aware narrative.</li>
+      
+      <li><strong>Excel/Sheets</strong> — Allows direct verification of values, labels, and chart construction.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">You are a data interpreter writing the honest story of a chart for a non-specialist decision-maker.
+
+Chart or data: <span class="ph">[CHART_DATA]</span>
+Metric definition: <span class="ph">[METRIC]</span>
+Audience and decision: <span class="ph">[AUDIENCE_DECISION]</span>
+Comparison period: <span class="ph">[PERIOD]</span>
+Source and caveats: <span class="ph">[SOURCE_CAVEATS]</span>
+
+Inspect the evidence in four passes. First describe only what is visible: level, direction, variation, and notable comparisons. Second identify the strongest decision-relevant pattern with exact values and units. Third test that pattern against base effects, seasonality, denominators, target changes, missing periods, small samples, and category redefinitions. Fourth consider at least one plausible alternative explanation.
+
+Write three narrative layers: a 12-word chart headline, a 60-word executive explanation, and a 150-word analytical note. Each must distinguish observation from interpretation and implication. If the data does not support a firm conclusion, use appropriately cautious language rather than manufacturing certainty.
+
+Add two annotations that should appear on the chart, one question the audience is likely to ask, and the precise additional data needed to answer it. Conclude with a decision statement formatted as “This evidence supports <span class="ph">[ACTION]</span> within <span class="ph">[BOUNDARY]</span>, while we monitor <span class="ph">[UNCERTAINTY]</span>.” Do not infer causation from timing alone.
+</div>
+      <pre id="prompt-source" class="visually-hidden">You are a data interpreter writing the honest story of a chart for a non-specialist decision-maker.
+
+Chart or data: [CHART_DATA]
+Metric definition: [METRIC]
+Audience and decision: [AUDIENCE_DECISION]
+Comparison period: [PERIOD]
+Source and caveats: [SOURCE_CAVEATS]
+
+Inspect the evidence in four passes. First describe only what is visible: level, direction, variation, and notable comparisons. Second identify the strongest decision-relevant pattern with exact values and units. Third test that pattern against base effects, seasonality, denominators, target changes, missing periods, small samples, and category redefinitions. Fourth consider at least one plausible alternative explanation.
+
+Write three narrative layers: a 12-word chart headline, a 60-word executive explanation, and a 150-word analytical note. Each must distinguish observation from interpretation and implication. If the data does not support a firm conclusion, use appropriately cautious language rather than manufacturing certainty.
+
+Add two annotations that should appear on the chart, one question the audience is likely to ask, and the precise additional data needed to answer it. Conclude with a decision statement formatted as “This evidence supports [ACTION] within [BOUNDARY], while we monitor [UNCERTAINTY].” Do not infer causation from timing alone.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Read the narrative beside the chart and verify every directional claim.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A chart narrative with takeaway, caveats, and decision implications.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="071-spreadsheet-cleaning-blueprint.html">← Previous · 071</a>
+      
+      
+      <a href="073-assumptions-first-analysis.html">073 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+# Single source of truth for URLs and workshop metadata.
+# Change BASE_URL and GITHUB_REPO_URL here, then rebuild.
+
+BASE_URL: "https://cad692.github.io/ai-prompt-library"
+GITHUB_REPO_URL: "https://github.com/cad692/ai-prompt-library"
+
+workshop:
+  name: "Mastering Modern AI Tools"
+  tagline: "Learn the Right Tools. Use Them Effectively. Work Smarter."
+  org: "Thrive Wellness & Development"
+  date: "Saturday, 10 October 2026"
+  time: "7:00 PM – 10:00 PM PKT"
+
+meta:
+  last_updated: "3 October 2026"
+
+design:
+  # Dark theme matching approved mockups
+  colors:
+    bg: "#121212"
+    surface: "#1A1A1A"
+    surface2: "#222222"
+    primary: "#2B6DEF"
+    primary_dim: "#1E4FBF"
+    ink: "#FFFFFF"
+    muted: "#A0A0A0"
+    line: "#2A2A2A"
+    beginner: "#3DDC97"
+    intermediate: "#F0A500"
+    advanced: "#FF5C5C"
+    assistants: "#2B6DEF"
+    research: "#7B61FF"
+    documents: "#4A90D9"
+    prompting: "#9B59B6"
+    presentations: "#E67E22"
+    images-video: "#E74C3C"
+    work-business: "#27AE60"
+    data-productivity: "#3498DB"
+    addins: "#D35400"
+    workflows: "#5D6D7E"
+    pakistan: "#1ABC9C"
+    chains: "#2B6DEF"
+  fonts:
+    heading: "Source Sans 3"
+    body: "Source Sans 3"
+
+categories:
+  - id: assistants
+    name: AI Assistants
+    short: Assistants
+  - id: research
+    name: Research & Search
+    short: Research
+  - id: documents
+    name: Documents & PDFs
+    short: Documents
+  - id: prompting
+    name: Prompt Engineering
+    short: Prompting
+  - id: presentations
+    name: Presentations & Design
+    short: Slides
+  - id: images-video
+    name: Images & Video
+    short: Images
+  - id: work-business
+    name: Work & Business
+    short: Work
+  - id: data-productivity
+    name: Data & Productivity
+    short: Data
+  - id: addins
+    name: AI Add-ins
+    short: Add-ins
+  - id: workflows
+    name: AI Workflows
+    short: Workflows
+  - id: pakistan
+    name: Pakistan Pack
+    short: Pakistan
+  - id: chains
+    name: Workflow Chains
+    short: Chains

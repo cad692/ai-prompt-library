@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>040 · Output Rubric Designer · AI Prompt Library</title>
+  <meta name="description" content="Use this to define measurable criteria for evaluating an AI-generated output.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=040">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/040-output-rubric-designer.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">040</span>
+      <span class="pill pill-cat">Prompt Engineering</span>
+      <span class="badge badge-advanced">Advanced</span>
+    </div>
+    <h1>Output Rubric Designer</h1>
+    <p class="muted">Use this to define measurable criteria for evaluating an AI-generated output.</p>
+    
+    <p><strong>Use case:</strong> A trainer, team, or individual can judge drafts consistently and compare prompt versions using the same standard.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>ChatGPT</strong> — Builds task-specific rubrics and applies them iteratively to sample outputs.</li>
+      
+      <li><strong>Claude</strong> — Provides nuanced criterion definitions and evidence-based evaluations of long outputs.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Design an evaluation rubric for AI-generated <span class="ph">[OUTPUT_TYPE]</span> used by <span class="ph">[AUDIENCE]</span> for <span class="ph">[PURPOSE]</span>.
+
+Success requirements are <span class="ph">[REQUIREMENTS]</span>, likely risks are <span class="ph">[RISKS]</span>, and sample outputs if available are <span class="ph">[SAMPLES]</span>. Begin by separating threshold requirements from quality dimensions. A threshold is pass/fail—such as no invented citations—while a quality dimension can improve by degree.
+
+Propose five to eight non-overlapping criteria. For each provide: definition, weight, evidence the evaluator should inspect, and anchors for scores 1, 3, and 5. Ensure weights total 100. Include accuracy, source grounding, or safety where relevant; do not allow fluency to compensate for dangerous or materially false content.
+
+Add automatic failure gates for <span class="ph">[CRITICAL_FAILURES]</span>. Define how “not applicable” changes the denominator. Write instructions for two evaluators to resolve disagreements by pointing to output evidence rather than personal taste.
+
+Calibrate the rubric on <span class="ph">[SAMPLE_A]</span> and <span class="ph">[SAMPLE_B]</span>, if supplied. Show criterion scores with short justifications, identify any criterion that both samples expose as ambiguous, and revise its wording once. If no samples are supplied, create two tiny synthetic fragments solely for calibration.
+
+Finish with a compact evaluator form and interpretation bands—unusable, needs revision, usable with checks, strong—tied to both score and failure gates. State what the rubric cannot measure and when a subject-matter expert must override the numeric result.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Design an evaluation rubric for AI-generated [OUTPUT_TYPE] used by [AUDIENCE] for [PURPOSE].
+
+Success requirements are [REQUIREMENTS], likely risks are [RISKS], and sample outputs if available are [SAMPLES]. Begin by separating threshold requirements from quality dimensions. A threshold is pass/fail—such as no invented citations—while a quality dimension can improve by degree.
+
+Propose five to eight non-overlapping criteria. For each provide: definition, weight, evidence the evaluator should inspect, and anchors for scores 1, 3, and 5. Ensure weights total 100. Include accuracy, source grounding, or safety where relevant; do not allow fluency to compensate for dangerous or materially false content.
+
+Add automatic failure gates for [CRITICAL_FAILURES]. Define how “not applicable” changes the denominator. Write instructions for two evaluators to resolve disagreements by pointing to output evidence rather than personal taste.
+
+Calibrate the rubric on [SAMPLE_A] and [SAMPLE_B], if supplied. Show criterion scores with short justifications, identify any criterion that both samples expose as ambiguous, and revise its wording once. If no samples are supplied, create two tiny synthetic fragments solely for calibration.
+
+Finish with a compact evaluator form and interpretation bands—unusable, needs revision, usable with checks, strong—tied to both score and failure gates. State what the rubric cannot measure and when a subject-matter expert must override the numeric result.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Weight factuality and safety separately from style so polished errors cannot score highly.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A weighted rubric with anchors, failure gates, and a calibration exercise.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="039-socratic-learning-dialogue.html">← Previous · 039</a>
+      
+      
+      <a href="041-investor-pitch-deck-architect.html">041 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

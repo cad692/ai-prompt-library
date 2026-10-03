@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>035 · Critique Revision Engine · AI Prompt Library</title>
+  <meta name="description" content="Use this to build a prompt that critiques an output before revising it.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=035">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/035-critique-revision-engine.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">035</span>
+      <span class="pill pill-cat">Prompt Engineering</span>
+      <span class="badge badge-advanced">Advanced</span>
+    </div>
+    <h1>Critique Revision Engine</h1>
+    <p class="muted">Use this to build a prompt that critiques an output before revising it.</p>
+    
+    <p><strong>Use case:</strong> A writer or analyst can improve a draft through explicit criteria rather than accepting the first generated answer.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Claude</strong> — Performs nuanced long-form critique and revision while preserving intent.</li>
+      
+      <li><strong>ChatGPT</strong> — Supports rubric-based iteration and transparent change summaries.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Build a critique-then-revise loop for improving <span class="ph">[DRAFT_TYPE]</span> against <span class="ph">[GOAL]</span>.
+
+The draft will be supplied as <span class="ph">[DRAFT]</span>. The audience is <span class="ph">[AUDIENCE]</span>, constraints are <span class="ph">[CONSTRAINTS]</span>, and non-negotiable content is <span class="ph">[MUST_PRESERVE]</span>. Create a rubric with four to six criteria tailored to this task, each having a concrete pass condition. Avoid vague labels such as “good” without observable evidence.
+
+The loop must run in distinct passes:
+Pass A — Diagnose: quote or locate each issue and score the rubric.
+Pass B — Plan: rank no more than five changes by impact.
+Pass C — Revise: edit only what the plan justifies.
+Pass D — Verify: rescore and check facts, constraints, and preserved meaning.
+
+Instruct the model to show concise rationale and checkable evidence, not private hidden chain-of-thought. Require a change log that maps every major edit to one diagnosed issue. If revision would need missing facts, insert [NEEDS INPUT] instead of inventing them.
+
+Set a stop rule: finish when all critical criteria pass or after <span class="ph">[MAX_ROUNDS]</span> rounds, whichever comes first. If the score does not improve, preserve the strongest version and explain the blockage. Return the complete reusable prompt, followed by one miniature demonstration using <span class="ph">[SHORT_SAMPLE]</span> and a note on when human review remains essential.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Build a critique-then-revise loop for improving [DRAFT_TYPE] against [GOAL].
+
+The draft will be supplied as [DRAFT]. The audience is [AUDIENCE], constraints are [CONSTRAINTS], and non-negotiable content is [MUST_PRESERVE]. Create a rubric with four to six criteria tailored to this task, each having a concrete pass condition. Avoid vague labels such as “good” without observable evidence.
+
+The loop must run in distinct passes:
+Pass A — Diagnose: quote or locate each issue and score the rubric.
+Pass B — Plan: rank no more than five changes by impact.
+Pass C — Revise: edit only what the plan justifies.
+Pass D — Verify: rescore and check facts, constraints, and preserved meaning.
+
+Instruct the model to show concise rationale and checkable evidence, not private hidden chain-of-thought. Require a change log that maps every major edit to one diagnosed issue. If revision would need missing facts, insert [NEEDS INPUT] instead of inventing them.
+
+Set a stop rule: finish when all critical criteria pass or after [MAX_ROUNDS] rounds, whichever comes first. If the score does not improve, preserve the strongest version and explain the blockage. Return the complete reusable prompt, followed by one miniature demonstration using [SHORT_SAMPLE] and a note on when human review remains essential.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Make the critique cite exact draft locations so revision does not become a total rewrite.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A reusable critique-then-revise prompt with stop conditions and change tracking.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="034-clarification-gate-designer.html">← Previous · 034</a>
+      
+      
+      <a href="036-constraint-stack-builder.html">036 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

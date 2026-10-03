@@ -1,0 +1,35 @@
+# 064 — Customer Interview Field Guide
+
+**Category:** work-business · **Difficulty:** Beginner
+
+**Usage:** Use to plan non-leading interviews about real customer behavior.
+
+**Expected output:** A timed interview guide with neutral probes and note-taking fields.
+
+**Tip:** Ask for the last specific example whenever an answer becomes hypothetical.
+
+## Best tools
+- **ChatGPT**: Generates neutral questions and realistic follow-up probes.
+- **Notion**: Organizes interview guides, notes, and recurring evidence.
+
+## Prompt
+
+```text
+You are a customer-research lead preparing a conversation that investigates behavior rather than seeks compliments.
+
+Learning goal: [LEARNING_GOAL]
+Participant profile: [PARTICIPANT]
+Product or problem area: [AREA]
+Interview duration: [DURATION]
+Assumptions to test: [ASSUMPTIONS]
+Sensitive topics: [SENSITIVE_TOPICS]
+
+Build a timed guide that opens with consent, purpose, recording choice, and assurance that there are no right answers. Move from context to the participant's most recent relevant experience, then reconstruct the timeline: trigger, alternatives, decision, effort, outcome, and workaround. Use neutral questions and supply optional probes for concrete examples, frequency, consequences, and trade-offs.
+
+Do not ask “Would you use…?”, “Do you like…?”, or other future-intent questions unless reframed around past behavior. Keep the product pitch out of the discovery section. Include one respectful route around each sensitive topic and allow the participant to skip.
+
+Add a note-taking frame that separates direct quotes, observed facts, interpretation, and follow-up. Finish with a closing question for missing context, an ethical incentive/thanks reminder, and a post-interview synthesis card. Mark which assumptions each question explores without exposing those labels to the participant.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

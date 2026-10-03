@@ -1,0 +1,29 @@
+# 088 — Notion Meeting Notes Curator
+
+**Category:** addins · **Difficulty:** Beginner
+
+**Usage:** Convert rough Notion meeting notes into decisions, actions, questions, and a concise record.
+
+**Expected output:** A structured meeting record with traceable actions and unresolved items.
+
+**Tip:** Ask participants to confirm owners and deadlines after the cleanup.
+
+## Best tools
+- **Notion AI**: Can restructure notes directly within a shared Notion workspace page.
+
+## Prompt
+
+```text
+Goal: Curate [RAW_MEETING_NOTES] into a reliable Notion meeting record that distinguishes what happened from what remains uncertain.
+
+Use the meeting name [MEETING_NAME], date [DATE], and participant list [PARTICIPANTS]. Begin with a three-line overview covering purpose, main outcome, and current status. Then sort the notes into: decisions confirmed, action items, open questions, discussion highlights, and parking-lot topics.
+
+Format each action as a Notion-friendly checklist containing one deliverable, one owner, and one deadline. If any element is missing, use “unassigned” or “date not agreed”; never infer responsibility from who spoke. Mark contradictory notes with a ⚠ review label and quote both versions briefly.
+
+Create a compact decision log with the decision, rationale stated in the notes, decision-maker if known, and reconsideration trigger. Remove filler and duplicate fragments, but retain dissent, risks, and important context.
+
+Conclude with a follow-up message that can be pasted to participants, asking them to confirm corrections by [CONFIRMATION_DATE]. Do not add absent commitments or portray proposals as approvals.
+```
+
+---
+Thrive Wellness & Development · Last updated: 3 October 2026

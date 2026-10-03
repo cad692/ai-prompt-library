@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>076 · Zapier or Make Workflow Sketch · AI Prompt Library</title>
+  <meta name="description" content="Use to map an automation before connecting live accounts or customer data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=076">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/076-zapier-make-workflow-sketch.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">076</span>
+      <span class="pill pill-cat">Data &amp; Productivity</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Zapier or Make Workflow Sketch</h1>
+    <p class="muted">Use to map an automation before connecting live accounts or customer data.</p>
+    
+    <p><strong>Use case:</strong> Designs a tool-neutral workflow with triggers, transformations, failures, and human review. It can then be implemented in Zapier or Make.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Zapier/Make</strong> — Connects supported apps through triggers, actions, filters, and branching.</li>
+      
+      <li><strong>Notion</strong> — Documents the automation specification, test cases, and ownership.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Work as an automation architect sketching the logic before anyone connects production systems.
+
+Desired outcome: <span class="ph">[OUTCOME]</span>
+Triggering app and event: <span class="ph">[TRIGGER]</span>
+Source fields: <span class="ph">[SOURCE_FIELDS]</span>
+Destination apps and actions: <span class="ph">[DESTINATIONS]</span>
+Conditions or approvals: <span class="ph">[CONDITIONS]</span>
+Expected volume and urgency: <span class="ph">[VOLUME]</span>
+Sensitive data: <span class="ph">[SENSITIVE_DATA]</span>
+
+Map the workflow as numbered nodes: trigger, validation, lookup, transformation, filter, branch, action, confirmation, and logging. Use only the node types actually required. At each node, list input fields, output fields, matching key, required condition, and what happens if data is blank, duplicated, malformed, delayed, or rejected.
+
+Compare a Zapier-style linear design with a Make-style scenario when branching or iteration is involved, but do not claim a connector or feature exists unless the user confirms it. Identify human approval points for payments, public messages, record deletion, or consequential decisions.
+
+Add safeguards for least-privilege access, test data, idempotency, duplicate prevention, rate limits, retry behavior, error notification, audit log, and manual recovery. Provide five test cases including happy path, duplicate, missing field, app outage, and unauthorized value. Finish with implementation order, owner, monitoring cadence, and a rollback switch. Never place passwords or API keys in the specification.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Work as an automation architect sketching the logic before anyone connects production systems.
+
+Desired outcome: [OUTCOME]
+Triggering app and event: [TRIGGER]
+Source fields: [SOURCE_FIELDS]
+Destination apps and actions: [DESTINATIONS]
+Conditions or approvals: [CONDITIONS]
+Expected volume and urgency: [VOLUME]
+Sensitive data: [SENSITIVE_DATA]
+
+Map the workflow as numbered nodes: trigger, validation, lookup, transformation, filter, branch, action, confirmation, and logging. Use only the node types actually required. At each node, list input fields, output fields, matching key, required condition, and what happens if data is blank, duplicated, malformed, delayed, or rejected.
+
+Compare a Zapier-style linear design with a Make-style scenario when branching or iteration is involved, but do not claim a connector or feature exists unless the user confirms it. Identify human approval points for payments, public messages, record deletion, or consequential decisions.
+
+Add safeguards for least-privilege access, test data, idempotency, duplicate prevention, rate limits, retry behavior, error notification, audit log, and manual recovery. Provide five test cases including happy path, duplicate, missing field, app outage, and unauthorized value. Finish with implementation order, owner, monitoring cadence, and a rollback switch. Never place passwords or API keys in the specification.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Test with fake records before granting access to production accounts.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A workflow map with fields, branches, safeguards, and test cases.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="075-meeting-notes-to-accountable-actions.html">← Previous · 075</a>
+      
+      
+      <a href="077-kpi-definition-card-maker.html">077 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

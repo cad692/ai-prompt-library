@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>086 · GitHub Copilot Function Scaffold · AI Prompt Library</title>
+  <meta name="description" content="Generate a function stub with explicit contracts, edge cases, and test placeholders.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=086">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/086-github-copilot-function-scaffold.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">086</span>
+      <span class="pill pill-cat">AI Add-ins</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>GitHub Copilot Function Scaffold</h1>
+    <p class="muted">Generate a function stub with explicit contracts, edge cases, and test placeholders.</p>
+    
+    <p><strong>Use case:</strong> Create a reviewable starting point in the editor before implementing business logic.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>GitHub Copilot</strong> — Uses nearby code, types, and conventions to propose an in-editor scaffold.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Goal: Scaffold a <span class="ph">[LANGUAGE]</span> function named <span class="ph">[FUNCTION_NAME]</span> that fits this repository without pretending the implementation is complete.
+
+Inputs are <span class="ph">[INPUTS]</span>, the return contract is <span class="ph">[RETURN_TYPE]</span>, and the function must satisfy <span class="ph">[BEHAVIOUR]</span>. Follow conventions visible in <span class="ph">[REFERENCE_FILE_OR_SNIPPET]</span>, including naming, error handling, logging, and asynchronous style. If the repository context does not establish a convention, mark the choice as an assumption.
+
+Write:
+1. a concise doc comment describing purpose, parameters, return value, and thrown errors;
+2. the full signature with useful types;
+3. guard clauses for invalid, empty, boundary, and permission-related inputs where applicable;
+4. a readable control-flow skeleton containing targeted TODO comments;
+5. no invented API calls, package imports, or database fields.
+
+Beneath the stub, propose tests for the happy path, malformed input, boundary values, dependency failure, and one domain-specific edge case from <span class="ph">[EDGE_CASE]</span>. Clearly separate unit tests from integration tests.
+
+Keep security-sensitive values out of logs. Prefer explicit failure over silent fallback, and explain any ambiguity that a maintainer must resolve before implementation.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Goal: Scaffold a [LANGUAGE] function named [FUNCTION_NAME] that fits this repository without pretending the implementation is complete.
+
+Inputs are [INPUTS], the return contract is [RETURN_TYPE], and the function must satisfy [BEHAVIOUR]. Follow conventions visible in [REFERENCE_FILE_OR_SNIPPET], including naming, error handling, logging, and asynchronous style. If the repository context does not establish a convention, mark the choice as an assumption.
+
+Write:
+1. a concise doc comment describing purpose, parameters, return value, and thrown errors;
+2. the full signature with useful types;
+3. guard clauses for invalid, empty, boundary, and permission-related inputs where applicable;
+4. a readable control-flow skeleton containing targeted TODO comments;
+5. no invented API calls, package imports, or database fields.
+
+Beneath the stub, propose tests for the happy path, malformed input, boundary values, dependency failure, and one domain-specific edge case from [EDGE_CASE]. Clearly separate unit tests from integration tests.
+
+Keep security-sensitive values out of logs. Prefer explicit failure over silent fallback, and explain any ambiguity that a maintainer must resolve before implementation.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Keep the TODOs until each assumption has a matching test or documented decision.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A typed function skeleton, documentation, validation, and test cases.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="085-sidebar-research-capture-card.html">← Previous · 085</a>
+      
+      
+      <a href="087-cursor-cross-file-refactor-brief.html">087 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

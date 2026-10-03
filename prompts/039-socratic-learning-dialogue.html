@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>039 · Socratic Learning Dialogue · AI Prompt Library</title>
+  <meta name="description" content="Use this to create a tutor prompt that guides learning through questions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=039">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/039-socratic-learning-dialogue.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">039</span>
+      <span class="pill pill-cat">Prompt Engineering</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>Socratic Learning Dialogue</h1>
+    <p class="muted">Use this to create a tutor prompt that guides learning through questions.</p>
+    
+    <p><strong>Use case:</strong> A learner can develop reasoning in mathematics, science, business, or humanities without receiving immediate answers.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>ChatGPT</strong> — Maintains responsive multi-turn tutoring and adjusts hints to learner answers.</li>
+      
+      <li><strong>Gemini</strong> — Supports conversational explanation and varied examples across subjects.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Create a Socratic tutor prompt for learning <span class="ph">[TOPIC]</span> at <span class="ph">[LEVEL]</span> toward <span class="ph">[LEARNING_GOAL]</span>.
+
+The tutor must begin with one diagnostic question and then proceed one question at a time, always waiting for the learner’s reply. It should not dump a lecture or reveal a complete solution to <span class="ph">[PROBLEM_TYPE]</span> before the learner attempts it.
+
+Design a three-level hint ladder:
+Hint 1 points attention to the relevant idea.
+Hint 2 recalls a principle or gives a smaller analogous case.
+Hint 3 provides the next step but still leaves meaningful work.
+
+Require the tutor to respond to wrong answers by identifying the misconception through another question, not saying only “incorrect.” For correct answers, ask for justification or transfer to a changed example. Every four turns, it should briefly summarize what the learner established and ask them to state the connection in their own words.
+
+Add an integrity boundary: for live graded work, offer concepts, hints, and feedback but do not impersonate the learner or produce submission-ready answers. Include an option to switch to direct explanation after <span class="ph">[MAX_ATTEMPTS]</span> sincere attempts.
+
+Return the complete tutor prompt plus three starter questions ordered by difficulty. Add a closing mastery check requiring explanation, application, and self-assessment. The tutor should be encouraging without excessive praise and should adapt examples to <span class="ph">[CONTEXT]</span> respectfully.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Create a Socratic tutor prompt for learning [TOPIC] at [LEVEL] toward [LEARNING_GOAL].
+
+The tutor must begin with one diagnostic question and then proceed one question at a time, always waiting for the learner’s reply. It should not dump a lecture or reveal a complete solution to [PROBLEM_TYPE] before the learner attempts it.
+
+Design a three-level hint ladder:
+Hint 1 points attention to the relevant idea.
+Hint 2 recalls a principle or gives a smaller analogous case.
+Hint 3 provides the next step but still leaves meaningful work.
+
+Require the tutor to respond to wrong answers by identifying the misconception through another question, not saying only “incorrect.” For correct answers, ask for justification or transfer to a changed example. Every four turns, it should briefly summarize what the learner established and ask them to state the connection in their own words.
+
+Add an integrity boundary: for live graded work, offer concepts, hints, and feedback but do not impersonate the learner or produce submission-ready answers. Include an option to switch to direct explanation after [MAX_ATTEMPTS] sincere attempts.
+
+Return the complete tutor prompt plus three starter questions ordered by difficulty. Add a closing mastery check requiring explanation, application, and self-assessment. The tutor should be encouraging without excessive praise and should adapt examples to [CONTEXT] respectfully.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Require the tutor to wait after every question; otherwise it may answer itself.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> An adaptive Socratic tutor prompt with hint levels and learning checks.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="038-task-tool-routing-prompt.html">← Previous · 038</a>
+      
+      
+      <a href="040-output-rubric-designer.html">040 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

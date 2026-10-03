@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>030 · Notes-Grounded Q&amp;A Maker · AI Prompt Library</title>
+  <meta name="description" content="Use this to ask and answer questions strictly from uploaded learning notes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=030">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/030-notes-grounded-qa-maker.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">030</span>
+      <span class="pill pill-cat">Documents &amp; PDFs</span>
+      <span class="badge badge-intermediate">Intermediate</span>
+    </div>
+    <h1>Notes-Grounded Q&amp;A Maker</h1>
+    <p class="muted">Use this to ask and answer questions strictly from uploaded learning notes.</p>
+    
+    <p><strong>Use case:</strong> A student can revise from lecture notes or course packs while seeing where every answer came from.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>NotebookLM</strong> — Specializes in source-grounded questions and answers over uploaded notes.</li>
+      
+      <li><strong>ChatGPT</strong> — Can analyse uploaded notes and create adaptive practice questions.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Build a revision Q&amp;A set grounded exclusively in <span class="ph">[UPLOADED_NOTES]</span> for <span class="ph">[COURSE_AND_TOPIC]</span>.
+
+The assessment format is <span class="ph">[EXAM_FORMAT]</span>, my level is <span class="ph">[LEVEL]</span>, and I struggle most with <span class="ph">[WEAK_AREAS]</span>. Treat the notes as a closed book of evidence: if an answer is absent, say “Not answerable from these notes” and identify what information is missing.
+
+Create four rounds with different cognitive demands:
+Round 1: six factual retrieval questions.
+Round 2: five explain-in-your-own-words questions.
+Round 3: four application or scenario questions.
+Round 4: three comparison or evaluation questions.
+
+For every answer, include a page, heading, slide, or paragraph pointer and a confidence label based on source clarity. Keep model answers proportional to likely marks under <span class="ph">[MARK_SCHEME]</span>. Add one plausible wrong answer and correction for the three concepts most prone to confusion.
+
+Include two deliberately unanswerable questions that are relevant but outside the uploaded material; explain why guessing would be unsafe. Then create a shuffled quiz version without answers and a separate answer key.
+
+Finish with a coverage audit showing which major note sections were tested and which were not. Do not import outside facts, complete a live graded assessment, or imply that generated questions predict the actual exam.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Build a revision Q&amp;A set grounded exclusively in [UPLOADED_NOTES] for [COURSE_AND_TOPIC].
+
+The assessment format is [EXAM_FORMAT], my level is [LEVEL], and I struggle most with [WEAK_AREAS]. Treat the notes as a closed book of evidence: if an answer is absent, say “Not answerable from these notes” and identify what information is missing.
+
+Create four rounds with different cognitive demands:
+Round 1: six factual retrieval questions.
+Round 2: five explain-in-your-own-words questions.
+Round 3: four application or scenario questions.
+Round 4: three comparison or evaluation questions.
+
+For every answer, include a page, heading, slide, or paragraph pointer and a confidence label based on source clarity. Keep model answers proportional to likely marks under [MARK_SCHEME]. Add one plausible wrong answer and correction for the three concepts most prone to confusion.
+
+Include two deliberately unanswerable questions that are relevant but outside the uploaded material; explain why guessing would be unsafe. Then create a shuffled quiz version without answers and a separate answer key.
+
+Finish with a coverage audit showing which major note sections were tested and which were not. Do not import outside facts, complete a live graded assessment, or imply that generated questions predict the actual exam.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Include some unanswerable questions to practise recognising the limits of your notes.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A source-grounded question bank with answers, locations, and confidence labels.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="029-pasted-reference-normalizer.html">← Previous · 029</a>
+      
+      
+      <a href="031-rtcfce-prompt-architect.html">031 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

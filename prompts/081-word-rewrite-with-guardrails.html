@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>081 · Word Rewrite With Guardrails · AI Prompt Library</title>
+  <meta name="description" content="Rewrite a Word document while preserving meaning, facts, and the writer&#39;s natural voice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=081">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/081-word-rewrite-with-guardrails.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">081</span>
+      <span class="pill pill-cat">AI Add-ins</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Word Rewrite With Guardrails</h1>
+    <p class="muted">Rewrite a Word document while preserving meaning, facts, and the writer&#39;s natural voice.</p>
+    
+    <p><strong>Use case:</strong> Use Copilot inside Word to improve a draft without surrendering editorial control.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>Microsoft Copilot</strong> — Works directly with selected text and surrounding Word document context.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Role: You are my careful in-document editor; your goal is to improve this Word draft without changing its facts or personality.
+
+Work only from <span class="ph">[SELECTED_TEXT]</span> and, where relevant, <span class="ph">[DOCUMENT_CONTEXT]</span>. The intended reader is <span class="ph">[AUDIENCE]</span>, the purpose is <span class="ph">[PURPOSE]</span>, and the desired tone is <span class="ph">[TONE]</span>. Keep names, dates, figures, commitments, citations, and technical terms exactly as supplied unless you flag a likely error instead of silently correcting it.
+
+Rewrite in two passes. First, remove repetition, vague phrasing, and unnecessarily long sentences. Second, check flow between paragraphs and strengthen headings or transitions where needed. Preserve deliberate cultural references and Pakistani English usage unless <span class="ph">[LANGUAGE_PREFERENCE]</span> says otherwise.
+
+Return:
+- the revised text, ready to paste;
+- five or fewer notable edits with short reasons;
+- a “Check manually” list for claims, quotations, or ambiguous wording.
+
+Do not invent evidence or make the prose sound generically corporate. If an instruction conflicts with the original meaning, retain the meaning and note the conflict.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Role: You are my careful in-document editor; your goal is to improve this Word draft without changing its facts or personality.
+
+Work only from [SELECTED_TEXT] and, where relevant, [DOCUMENT_CONTEXT]. The intended reader is [AUDIENCE], the purpose is [PURPOSE], and the desired tone is [TONE]. Keep names, dates, figures, commitments, citations, and technical terms exactly as supplied unless you flag a likely error instead of silently correcting it.
+
+Rewrite in two passes. First, remove repetition, vague phrasing, and unnecessarily long sentences. Second, check flow between paragraphs and strengthen headings or transitions where needed. Preserve deliberate cultural references and Pakistani English usage unless [LANGUAGE_PREFERENCE] says otherwise.
+
+Return:
+- the revised text, ready to paste;
+- five or fewer notable edits with short reasons;
+- a “Check manually” list for claims, quotations, or ambiguous wording.
+
+Do not invent evidence or make the prose sound generically corporate. If an instruction conflicts with the original meaning, retain the meaning and note the conflict.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Save the original as a separate version before accepting broad changes.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> A polished rewrite plus a concise change log for human review.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="080-personal-knowledge-base-architecture.html">← Previous · 080</a>
+      
+      
+      <a href="082-excel-analysis-question-designer.html">082 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>

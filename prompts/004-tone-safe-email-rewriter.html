@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>004 · Tone-Safe Email Rewriter · AI Prompt Library</title>
+  <meta name="description" content="Use this to improve an email while preserving facts, intent, and your voice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap page-nav">
+      <a href="../index.html?p=004">← Back to index</a>
+      <a href="https://github.com/cad692/ai-prompt-library/blob/main/prompts-md/004-tone-safe-email-rewriter.md" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </header>
+
+  <main id="main" class="wrap prompt-article">
+    <div class="meta-row">
+      <span class="pill">004</span>
+      <span class="pill pill-cat">AI Assistants</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>Tone-Safe Email Rewriter</h1>
+    <p class="muted">Use this to improve an email while preserving facts, intent, and your voice.</p>
+    
+    <p><strong>Use case:</strong> A student contacting faculty or an employee writing to a manager can sound clear and respectful without becoming stiff or vague.</p>
+    
+
+    <h2 style="font-size:1.05rem;margin-top:1.25rem">Best tools</h2>
+    <ul class="tool-list">
+      
+      <li><strong>ChatGPT</strong> — Quickly rewrites short messages across professional tones while following constraints.</li>
+      
+      <li><strong>Claude</strong> — Useful for preserving nuance and intent in sensitive correspondence.</li>
+      
+    </ul>
+
+    <div class="prompt-box">
+      <div class="prompt-text" id="prompt-text">Rewrite my email as a careful communications editor while preserving every verified fact and my intended request.
+
+Draft: <span class="ph">[PASTE_EMAIL]</span>
+Recipient and relationship: <span class="ph">[RECIPIENT_CONTEXT]</span>
+Desired outcome: <span class="ph">[OUTCOME]</span>
+Tone: <span class="ph">[WARM_DIRECT_FORMAL_DIPLOMATIC]</span>
+Cultural or workplace considerations: <span class="ph">[CONSIDERATIONS]</span>
+Maximum length: <span class="ph">[WORD_LIMIT]</span>
+
+Apply these non-negotiable constraints: do not invent dates, promises, attachments, titles, or reasons; do not add exaggerated praise; retain any necessary Urdu terms; and keep the request easy to answer. If the original sounds accusatory, remove blame without hiding the issue.
+
+Produce Version A as the safest professional rewrite. Produce Version B as a slightly warmer alternative. For each, provide a subject line and complete email. Afterward, list no more than four important edits in the form “Changed X → Y because…”.
+
+Check names, dates, pronouns, and the requested action against my draft. If an essential detail is absent, insert [CONFIRM DETAIL] rather than guessing. End with a one-line recommendation naming which version better suits <span class="ph">[RECIPIENT_CONTEXT]</span>. Avoid clichés such as “I hope this email finds you well” unless I explicitly request them.
+</div>
+      <pre id="prompt-source" class="visually-hidden">Rewrite my email as a careful communications editor while preserving every verified fact and my intended request.
+
+Draft: [PASTE_EMAIL]
+Recipient and relationship: [RECIPIENT_CONTEXT]
+Desired outcome: [OUTCOME]
+Tone: [WARM_DIRECT_FORMAL_DIPLOMATIC]
+Cultural or workplace considerations: [CONSIDERATIONS]
+Maximum length: [WORD_LIMIT]
+
+Apply these non-negotiable constraints: do not invent dates, promises, attachments, titles, or reasons; do not add exaggerated praise; retain any necessary Urdu terms; and keep the request easy to answer. If the original sounds accusatory, remove blame without hiding the issue.
+
+Produce Version A as the safest professional rewrite. Produce Version B as a slightly warmer alternative. For each, provide a subject line and complete email. Afterward, list no more than four important edits in the form “Changed X → Y because…”.
+
+Check names, dates, pronouns, and the requested action against my draft. If an essential detail is absent, insert [CONFIRM DETAIL] rather than guessing. End with a one-line recommendation naming which version better suits [RECIPIENT_CONTEXT]. Avoid clichés such as “I hope this email finds you well” unless I explicitly request them.
+</pre>
+      <button type="button" class="btn btn-primary btn-block" id="copy-prompt-btn">Copy prompt</button>
+    </div>
+
+    <p class="muted"><strong>Customize the [PLACEHOLDERS]:</strong> replace every bracketed field with your real details before you run the prompt.</p>
+
+    <div class="tip-box">
+      <div><strong>Pro tip:</strong> Name the relationship and desired response; tone depends more on context than vocabulary.</div>
+      <div style="margin-top:0.5rem"><strong>Expected output:</strong> Two polished email versions plus a brief explanation of tone choices.</div>
+    </div>
+
+    
+
+    <div class="page-nav" style="margin-top:1.5rem">
+      
+      <a href="003-skill-practice-coach.html">← Previous · 003</a>
+      
+      
+      <a href="005-meeting-readiness-brief.html">005 · Next →</a>
+      
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>Thrive Wellness &amp; Development</div>
+      <div>Last updated: 3 October 2026. Tool details change quickly.</div>
+    </div>
+  </footer>
+  <script src="../assets/js/copy.js" defer></script>
+</body>
+</html>
