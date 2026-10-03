@@ -151,7 +151,13 @@ def build_index_pdf(prompts, cfg) -> Path:
 
     story = []
     # --- Cover ---
-    story.append(Paragraph("Thrive logo placeholder", styles["muted"]))
+    logo_path = ROOT / "assets" / "img" / "thrive-logo.jpg"
+    if logo_path.exists():
+        logo = RLImage(str(logo_path), width=55 * mm, height=14 * mm, kind="proportional")
+        story.append(logo)
+    else:
+        story.append(Paragraph("Thrive logo placeholder", styles["muted"]))
+    story.append(Spacer(1, 2 * mm))
     story.append(Paragraph(cfg["workshop"]["org"], styles["body"]))
     story.append(Spacer(1, 5 * mm))
     story.append(Paragraph(f'{cfg["workshop"]["name"]} workshop', styles["eyebrow"]))
