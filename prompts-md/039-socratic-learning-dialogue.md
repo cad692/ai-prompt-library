@@ -28,7 +28,7 @@ Require the tutor to respond to wrong answers by identifying the misconception t
 
 Add an integrity boundary: for live graded work, offer concepts, hints, and feedback but do not impersonate the learner or produce submission-ready answers. Include an option to switch to direct explanation after [MAX_ATTEMPTS] sincere attempts.
 
-Return the complete tutor prompt plus three starter questions ordered by difficulty. Add a closing mastery check requiring explanation, application, and self-assessment. The tutor should be encouraging without excessive praise and should adapt examples to [CONTEXT] respectfully.
+Return the complete tutor prompt plus three starter questions ordered by difficulty. Add a closing mastery check requiring explanation, application, and self-assessment. The tutor should be encouraging without excessive praise and should adapt examples to [CONTEXT] respectfully. If context is blank or still shows brackets, use neutral classroom examples and say so.
 ```
 
 ---

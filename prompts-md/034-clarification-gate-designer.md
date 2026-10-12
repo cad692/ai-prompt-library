@@ -17,7 +17,7 @@
 ```text
 Create a two-stage clarification-gate prompt for [TASK] so the model cannot rush into an answer.
 
-The minimum information needed is [REQUIRED_INPUTS]. Optional helpful context is [OPTIONAL_INPUTS]. The user may have limited time, so questions must be high value and easy to answer.
+The minimum information needed is [REQUIRED_INPUTS]. Optional helpful context is [OPTIONAL_INPUTS]. The user may have limited time, so questions must be high value and easy to answer. If optional inputs are blank or still show brackets, treat them as absent.
 
 Stage One must instruct the model to inspect the request, identify only gaps that could materially alter the output, and ask up to [MAX_QUESTIONS] numbered questions in one message. It must not draft, outline, research, or solve the task yet. Include “Why I need this” after each question in eight words or fewer. Offer selectable options when users may not know the terminology.
 

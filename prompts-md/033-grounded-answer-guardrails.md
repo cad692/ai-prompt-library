@@ -17,7 +17,7 @@
 ```text
 Design a grounded-answer prompt for [TASK] where unsupported claims would create [RISK].
 
-Allowed evidence is [APPROVED_SOURCES]. The user’s question will appear as [QUESTION]. Build instructions that force a clean boundary between supplied evidence, general background knowledge if allowed, and inference. Use the exact abstention phrase “[NOT SUPPORTED BY PROVIDED SOURCES]” whenever the evidence is insufficient.
+Allowed evidence is [APPROVED_SOURCES]. The user’s question will appear as [QUESTION]. Build instructions that force a clean boundary between supplied evidence, general background knowledge if allowed, and inference. Require the exact abstention phrase NOT SUPPORTED BY PROVIDED SOURCES (plain text, not a fill-in field) whenever the evidence is insufficient.
 
 The resulting prompt must require:
 - a source location beside each material claim;

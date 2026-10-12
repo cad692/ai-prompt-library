@@ -1701,11 +1701,13 @@ prompts:
   title: RTCFCE Prompt Architect
   category: prompting
   difficulty: Intermediate
-  usage: Use this to convert a rough task into a complete RTCFCE prompt (Role, Task, Context, Format, Constraints, and Examples).
-  use_case: A workshop participant can learn how role, task, context, format, constraints, and examples
-    work together.
-  preview: Act as an RTCFCE prompt architect helping me turn [ROUGH_TASK] into a precise, reusable instruction.
-    Do not fill gaps immediately. Interview me one question at a time about Role, Task, Context...
+  usage: Use this to convert a rough task into a complete RTCFCE prompt (Role, Task, Context, 
+    Format, Constraints, and Examples).
+  use_case: A workshop participant can learn how role, task, context, format, constraints, and 
+    examples work together.
+  preview: Act as an RTCFCE prompt architect helping me turn [ROUGH_TASK] into a precise, reusable 
+    instruction. Do not fill gaps immediately. Interview me one question at a time about Role, Task,
+    Context...
   best_tools:
   - tool: ChatGPT
     reason: Supports interactive prompt design and clearly explains structural choices.
@@ -1718,14 +1720,14 @@ prompts:
   - prompt-design
   - framework
   - workshop
-  next_id: null
+  next_id:
   prompt: 'Act as an RTCFCE prompt architect helping me turn [ROUGH_TASK] into a precise, reusable instruction.
 
 
     Do not fill gaps immediately. Interview me one question at a time about Role, Task, Context, Format,
     Constraints, and Examples. Ask only questions whose answers could materially change the result, with
     a maximum of eight. If a role adds no value, recommend omitting it. Wait for my replies before building
-    the prompt.
+    the prompt. Do not invent task details I have not confirmed.
 
 
     After the interview, create an RTCFCE worksheet:
@@ -1745,7 +1747,8 @@ prompts:
 
     Label any assumption you still need to make. Then assemble a natural prompt rather than mechanically
     repeating the six headings. Put the most important goal in its opening line and represent reusable
-    inputs as [PLACEHOLDERS].
+    inputs as bracketed tokens drawn from [PLACEHOLDERS]. If that list is blank or still shows brackets,
+    invent only clearly named placeholders and list them.
 
 
     Provide a compact version and a detailed version. Explain when each is preferable. Finally, simulate
@@ -1759,8 +1762,8 @@ prompts:
   category: prompting
   difficulty: Beginner
   usage: Use this to see exactly how a vague prompt becomes specific and testable.
-  use_case: A beginner can compare a weak instruction with stronger revisions and learn which changes
-    improve output.
+  use_case: A beginner can compare a weak instruction with stronger revisions and learn which 
+    changes improve output.
   preview: 'Diagnose and improve this weak prompt as a practical prompt-writing teacher: [WEAK_PROMPT].
     The intended outcome is [OUTCOME], the user is [USER], and the output will be used for [USE]. Preserve
     the...'
@@ -1769,14 +1772,15 @@ prompts:
     reason: Provides clear prompt rewrites and demonstrates their likely output differences.
   - tool: Gemini
     reason: Generates varied reformulations and explains practical prompt improvements.
-  tip: Improve the missing information that affects success; extra words alone do not improve a prompt.
+  tip: Improve the missing information that affects success; extra words alone do not improve a 
+    prompt.
   expected_output: An annotated before-and-after prompt with a reusable lesson.
   tags:
   - prompt-rewrite
   - before-after
   - clarity
   - beginners
-  next_id: null
+  next_id:
   prompt: 'Diagnose and improve this weak prompt as a practical prompt-writing teacher: [WEAK_PROMPT].
 
 
@@ -1795,7 +1799,8 @@ prompts:
 
     Version 2 — Reliable Prompt: add necessary context, constraints, and output shape.
 
-    Version 3 — Reusable Template: replace variable details with [PLACEHOLDERS].
+    Version 3 — Reusable Template: replace variable details with bracketed tokens from [PLACEHOLDERS].
+    If that list is blank, propose sensible placeholder names.
 
 
     Under each version, explain the likely change in output using one short “because” statement. Show
@@ -1813,31 +1818,32 @@ prompts:
   category: prompting
   difficulty: Advanced
   usage: Use this to design prompts that reduce unsupported claims and invented details.
-  use_case: A researcher or workplace team can make document-based AI answers more traceable and safer
-    to verify.
-  preview: Design a grounded-answer prompt for [TASK] where unsupported claims would create [RISK]. Allowed
-    evidence is [APPROVED_SOURCES]. The user’s question will appear as [QUESTION]. Build instructions
-    that...
+  use_case: A researcher or workplace team can make document-based AI answers more traceable and 
+    safer to verify.
+  preview: Design a grounded-answer prompt for [TASK] where unsupported claims would create [RISK]. 
+    Allowed evidence is [APPROVED_SOURCES]. The user’s question will appear as [QUESTION]. Build 
+    instructions that...
   best_tools:
   - tool: NotebookLM
     reason: Grounds responses in user-provided sources and exposes supporting source locations.
   - tool: Claude
     reason: Follows detailed evidence constraints across long source material.
-  tip: Require an abstention phrase and source locations, then test the prompt with an unanswerable question.
+  tip: Require an abstention phrase and source locations, then test the prompt with an unanswerable 
+    question.
   expected_output: A hallucination-resistant prompt with evidence rules and adversarial tests.
   tags:
   - hallucination
   - grounding
   - verification
   - prompt-safety
-  next_id: null
+  next_id:
   prompt: 'Design a grounded-answer prompt for [TASK] where unsupported claims would create [RISK].
 
 
     Allowed evidence is [APPROVED_SOURCES]. The user’s question will appear as [QUESTION]. Build instructions
     that force a clean boundary between supplied evidence, general background knowledge if allowed, and
-    inference. Use the exact abstention phrase “[NOT SUPPORTED BY PROVIDED SOURCES]” whenever the evidence
-    is insufficient.
+    inference. Require the exact abstention phrase NOT SUPPORTED BY PROVIDED SOURCES (plain text, not
+    a fill-in field) whenever the evidence is insufficient.
 
 
     The resulting prompt must require:
@@ -1875,10 +1881,11 @@ prompts:
   category: prompting
   difficulty: Intermediate
   usage: Use this to make an AI ask important questions before attempting the task.
-  use_case: A user can prevent premature answers when audience, inputs, constraints, or success criteria
-    are still unclear.
-  preview: Create a two-stage clarification-gate prompt for [TASK] so the model cannot rush into an answer.
-    The minimum information needed is [REQUIRED_INPUTS]. Optional helpful context is [OPTIONAL_INPUTS]...
+  use_case: A user can prevent premature answers when audience, inputs, constraints, or success 
+    criteria are still unclear.
+  preview: Create a two-stage clarification-gate prompt for [TASK] so the model cannot rush into an 
+    answer. The minimum information needed is [REQUIRED_INPUTS]. Optional helpful context is 
+    [OPTIONAL_INPUTS]...
   best_tools:
   - tool: ChatGPT
     reason: Handles multi-turn clarification and adapts later output to user responses.
@@ -1891,12 +1898,13 @@ prompts:
   - intake
   - prompt-flow
   - requirements
-  next_id: null
+  next_id:
   prompt: 'Create a two-stage clarification-gate prompt for [TASK] so the model cannot rush into an answer.
 
 
     The minimum information needed is [REQUIRED_INPUTS]. Optional helpful context is [OPTIONAL_INPUTS].
-    The user may have limited time, so questions must be high value and easy to answer.
+    The user may have limited time, so questions must be high value and easy to answer. If optional inputs
+    are blank or still show brackets, treat them as absent.
 
 
     Stage One must instruct the model to inspect the request, identify only gaps that could materially
@@ -1925,10 +1933,11 @@ prompts:
   category: prompting
   difficulty: Advanced
   usage: Use this to build a prompt that critiques an output before revising it.
-  use_case: A writer or analyst can improve a draft through explicit criteria rather than accepting the
-    first generated answer.
-  preview: Build a critique-then-revise loop for improving [DRAFT_TYPE] against [GOAL]. The draft will
-    be supplied as [DRAFT]. The audience is [AUDIENCE], constraints are [CONSTRAINTS], and non-negotiable...
+  use_case: A writer or analyst can improve a draft through explicit criteria rather than accepting 
+    the first generated answer.
+  preview: Build a critique-then-revise loop for improving [DRAFT_TYPE] against [GOAL]. The draft 
+    will be supplied as [DRAFT]. The audience is [AUDIENCE], constraints are [CONSTRAINTS], and 
+    non-negotiable...
   best_tools:
   - tool: Claude
     reason: Performs nuanced long-form critique and revision while preserving intent.
@@ -1941,7 +1950,7 @@ prompts:
   - revision
   - self-review
   - iteration
-  next_id: null
+  next_id:
   prompt: 'Build a critique-then-revise loop for improving [DRAFT_TYPE] against [GOAL].
 
 
@@ -1964,13 +1973,14 @@ prompts:
 
     Instruct the model to show concise rationale and checkable evidence, not private hidden chain-of-thought.
     Require a change log that maps every major edit to one diagnosed issue. If revision would need missing
-    facts, insert [NEEDS INPUT] instead of inventing them.
+    facts, insert the plain label NEEDS INPUT instead of inventing them.
 
 
     Set a stop rule: finish when all critical criteria pass or after [MAX_ROUNDS] rounds, whichever comes
     first. If the score does not improve, preserve the strongest version and explain the blockage. Return
-    the complete reusable prompt, followed by one miniature demonstration using [SHORT_SAMPLE] and a note
-    on when human review remains essential.
+    the complete reusable prompt, followed by one miniature demonstration using [SHORT_SAMPLE] when supplied;
+    if that sample is blank or still shows brackets, skip the demo and note that. Add a note on when human
+    review remains essential.
 
     '
 - id: '036'
@@ -1979,8 +1989,8 @@ prompts:
   category: prompting
   difficulty: Intermediate
   usage: Use this to organise multiple prompt constraints without creating contradictions.
-  use_case: A communications, teaching, or operations team can create reliable instructions involving
-    length, tone, content, and compliance limits.
+  use_case: A communications, teaching, or operations team can create reliable instructions 
+    involving length, tone, content, and compliance limits.
   preview: 'Act as a constraint engineer for the task [TASK], turning my requirements into a coherent
     prompt. Raw requirements: [REQUIREMENTS]. Intended audience: [AUDIENCE]. Required output: [OUTPUT].
     First...'
@@ -1996,7 +2006,7 @@ prompts:
   - prompt-design
   - priorities
   - compliance
-  next_id: null
+  next_id:
   prompt: 'Act as a constraint engineer for the task [TASK], turning my requirements into a coherent prompt.
 
 
@@ -2013,7 +2023,8 @@ prompts:
 
     Build the final prompt with the constraints placed near the action they govern. Add a precedence rule
     stating what wins if requirements conflict. Translate fuzzy terms—professional, concise, engaging,
-    detailed—into observable boundaries using [EXAMPLES_OR_METRICS].
+    detailed—into observable boundaries using [EXAMPLES_OR_METRICS]. If that field is blank or still shows
+    brackets, propose measurable defaults and label them as assumptions.
 
 
     Include a compact compliance checklist the model can complete after drafting. It should report pass,
@@ -2032,8 +2043,8 @@ prompts:
   category: prompting
   difficulty: Advanced
   usage: Use this to build examples that teach a model the desired output pattern.
-  use_case: A team can improve consistency for classification, rewriting, extraction, or formatting tasks
-    through carefully varied examples.
+  use_case: A team can improve consistency for classification, rewriting, extraction, or formatting 
+    tasks through carefully varied examples.
   preview: 'Design a few-shot example set that teaches an AI to perform [TASK] consistently. Desired input
     form: [INPUT_SCHEMA]. Desired output form: [OUTPUT_SCHEMA]. Rules: [RULES]. Realistic domain: [DOMAIN]...'
   best_tools:
@@ -2048,7 +2059,7 @@ prompts:
   - examples
   - prompting
   - consistency
-  next_id: null
+  next_id:
   prompt: 'Design a few-shot example set that teaches an AI to perform [TASK] consistently.
 
 
@@ -2058,7 +2069,8 @@ prompts:
 
     Begin by expressing the underlying pattern in plain language. Then identify the dimensions that examples
     must vary: length, wording, class, ambiguity, missing data, and edge conditions. Create [NUMBER] examples
-    that cover those dimensions without copying private or copyrighted material.
+    that cover those dimensions without copying private or copyrighted material. If exclusions are blank,
+    still avoid inventing personal data.
 
 
     Each example must use:
@@ -2070,7 +2082,7 @@ prompts:
     Teaching point: a note for me that will be removed from the production prompt.
 
 
-    Include at least one typical case, one boundary case, one case requiring abstention or [UNKNOWN],
+    Include at least one typical case, one boundary case, one case requiring abstention or the label [UNKNOWN],
     and one tempting near-miss. Keep labels balanced when the task is classification. Avoid accidental
     clues such as one class always having longer inputs.
 
@@ -2080,41 +2092,43 @@ prompts:
 
 
     Assemble a production prompt containing instructions, clean examples without teaching notes, and a
-    final [NEW_INPUT] slot. Finish with two challenge inputs and expected grading criteria, but keep their
-    answers separate so they can test the prompt honestly.
+    final [[NEW_INPUT]] slot that uses the placeholder name I supplied. Finish with two challenge inputs
+    and expected grading criteria, but keep their answers separate so they can test the prompt honestly.
 
     '
-- id: 038
+- id: '038'
   slug: task-tool-routing-prompt
   title: Task Tool Routing Prompt
   category: prompting
   difficulty: Beginner
   usage: Use this to choose an appropriate AI tool based on task capabilities.
-  use_case: A workshop participant can compare available tools for research, documents, writing, studying,
-    or office workflows without relying on hype.
-  preview: Help me choose the most suitable AI tool for [TASK] based on capabilities, access, and risk—not
-    popularity. My inputs are [TEXT_FILES_IMAGES_LINKS_OR_OTHER], expected output is [OUTPUT], workflow
-    is...
+  use_case: A workshop participant can compare available tools for research, documents, writing, 
+    studying, or office workflows without relying on hype.
+  preview: Help me choose the most suitable AI tool for [TASK] based on capabilities, access, and 
+    risk—not popularity. My inputs are [TEXT_FILES_IMAGES_LINKS_OR_OTHER], expected output is 
+    [OUTPUT], workflow is...
   best_tools:
   - tool: ChatGPT
     reason: Can elicit requirements and compare tools across common general-purpose capabilities.
   - tool: Perplexity
     reason: Useful when tool selection depends on current, source-linked capability information.
   tip: Choose by required capability and data sensitivity before considering familiarity.
-  expected_output: A capability-based recommendation with alternatives, limitations, and a test task.
+  expected_output: A capability-based recommendation with alternatives, limitations, and a test 
+    task.
   tags:
   - tool-selection
   - capabilities
   - workflow
   - prompting
-  next_id: null
+  next_id:
   prompt: 'Help me choose the most suitable AI tool for [TASK] based on capabilities, access, and risk—not
     popularity.
 
 
     My inputs are [TEXT_FILES_IMAGES_LINKS_OR_OTHER], expected output is [OUTPUT], workflow is [WORKFLOW],
     data sensitivity is [PUBLIC_INTERNAL_CONFIDENTIAL], and devices or accounts available are [ACCESS].
-    I prefer [PREFERENCES], but they are not hard requirements.
+    I prefer [PREFERENCES], but they are not hard requirements. If preferences are blank or still show
+    brackets, optimise for accuracy and data safety first.
 
 
     Ask up to five clarifying questions if any decisive requirement is missing. Then create a capability
@@ -2125,7 +2139,7 @@ prompts:
     Compare only tools you can describe accurately from current knowledge or verifiable official information.
     Candidate tools may include ChatGPT, Gemini, Claude, Perplexity, NotebookLM, DeepSeek, Meta AI, and
     Microsoft Copilot; omit irrelevant ones. Do not discuss prices unless I explicitly ask, and do not
-    claim a feature exists without confidence.
+    claim a feature exists without confidence. Mark uncertainty rather than inventing product capabilities.
 
 
     Recommend one primary tool and up to two alternatives. For each, state task fit, key limitation, and
@@ -2137,17 +2151,17 @@ prompts:
     data.
 
     '
-- id: 039
+- id: '039'
   slug: socratic-learning-dialogue
   title: Socratic Learning Dialogue
   category: prompting
   difficulty: Intermediate
   usage: Use this to create a tutor prompt that guides learning through questions.
-  use_case: A learner can develop reasoning in mathematics, science, business, or humanities without receiving
-    immediate answers.
-  preview: Create a Socratic tutor prompt for learning [TOPIC] at [LEVEL] toward [LEARNING_GOAL]. The
-    tutor must begin with one diagnostic question and then proceed one question at a time, always waiting
-    for...
+  use_case: A learner can develop reasoning in mathematics, science, business, or humanities without
+    receiving immediate answers.
+  preview: Create a Socratic tutor prompt for learning [TOPIC] at [LEVEL] toward [LEARNING_GOAL]. 
+    The tutor must begin with one diagnostic question and then proceed one question at a time, 
+    always waiting for...
   best_tools:
   - tool: ChatGPT
     reason: Maintains responsive multi-turn tutoring and adjusts hints to learner answers.
@@ -2160,7 +2174,7 @@ prompts:
   - tutoring
   - learning
   - questions
-  next_id: null
+  next_id:
   prompt: 'Create a Socratic tutor prompt for learning [TOPIC] at [LEVEL] toward [LEARNING_GOAL].
 
 
@@ -2191,7 +2205,8 @@ prompts:
 
     Return the complete tutor prompt plus three starter questions ordered by difficulty. Add a closing
     mastery check requiring explanation, application, and self-assessment. The tutor should be encouraging
-    without excessive praise and should adapt examples to [CONTEXT] respectfully.
+    without excessive praise and should adapt examples to [CONTEXT] respectfully. If context is blank
+    or still shows brackets, use neutral classroom examples and say so.
 
     '
 - id: '040'
@@ -2200,11 +2215,11 @@ prompts:
   category: prompting
   difficulty: Advanced
   usage: Use this to define measurable criteria for evaluating an AI-generated output.
-  use_case: A trainer, team, or individual can judge drafts consistently and compare prompt versions using
-    the same standard.
-  preview: Design an evaluation rubric for AI-generated [OUTPUT_TYPE] used by [AUDIENCE] for [PURPOSE].
-    Success requirements are [REQUIREMENTS], likely risks are [RISKS], and sample outputs if available
-    are...
+  use_case: A trainer, team, or individual can judge drafts consistently and compare prompt versions
+    using the same standard.
+  preview: Design an evaluation rubric for AI-generated [OUTPUT_TYPE] used by [AUDIENCE] for 
+    [PURPOSE]. Success requirements are [REQUIREMENTS], likely risks are [RISKS], and any overview 
+    of available samples...
   best_tools:
   - tool: ChatGPT
     reason: Builds task-specific rubrics and applies them iteratively to sample outputs.
@@ -2217,13 +2232,13 @@ prompts:
   - evaluation
   - quality
   - prompt-testing
-  next_id: null
+  next_id:
   prompt: 'Design an evaluation rubric for AI-generated [OUTPUT_TYPE] used by [AUDIENCE] for [PURPOSE].
 
 
-    Success requirements are [REQUIREMENTS], likely risks are [RISKS], and sample outputs if available
-    are [SAMPLES]. Begin by separating threshold requirements from quality dimensions. A threshold is
-    pass/fail—such as no invented citations—while a quality dimension can improve by degree.
+    Success requirements are [REQUIREMENTS], likely risks are [RISKS], and any overview of available samples
+    is [SAMPLES]. Begin by separating threshold requirements from quality dimensions. A threshold is pass/fail—such
+    as no invented citations—while a quality dimension can improve by degree.
 
 
     Propose five to eight non-overlapping criteria. For each provide: definition, weight, evidence the
@@ -2237,9 +2252,10 @@ prompts:
     than personal taste.
 
 
-    Calibrate the rubric on [SAMPLE_A] and [SAMPLE_B], if supplied. Show criterion scores with short justifications,
-    identify any criterion that both samples expose as ambiguous, and revise its wording once. If no samples
-    are supplied, create two tiny synthetic fragments solely for calibration.
+    Calibrate the rubric on [SAMPLE_A] and [SAMPLE_B], if supplied. If either sample is blank or still
+    shows brackets, create two tiny synthetic fragments solely for calibration and label them as synthetic.
+    Show criterion scores with short justifications, identify any criterion that both samples expose as
+    ambiguous, and revise its wording once.
 
 
     Finish with a compact evaluator form and interpretation bands—unusable, needs revision, usable with

@@ -15,11 +15,10 @@
 ## Batch plan
 | Batch | IDs | Status |
 |------:|-----|--------|
-| 1 | 001–010 | **complete** (commit 546ced1) |
-| 2 | 011–020 | **complete** (commit 4a83ec9, pushed + Pages built) |
-| 3 | 021–030 | **complete** (pending commit/push) |
-| 3 | 021–030 | pending |
-| 4 | 031–040 | pending |
+| 1 | 001–010 | **complete** (546ced1, pushed + Pages built) |
+| 2 | 011–020 | **complete** (4a83ec9, pushed + Pages built) |
+| 3 | 021–030 | **complete** (bcaa0e1, pushed + Pages built) |
+| 4 | 031–040 | **complete** (pending commit/push/Pages) |
 | 5 | 041–050 | pending |
 | 6 | 051–060 | pending |
 | 7 | 061–070 | pending |
@@ -33,11 +32,11 @@
 An earlier session marked 115/115 reviewed with **0 prompt template improvements**. This run re-reviews every active prompt. Do not push until the full library is done.
 
 ## Progress counters
-- Prompts reviewed: 30/115
-- Prompt templates substantively improved: 30
+- Prompts reviewed: 40/115
+- Prompt templates substantively improved: 40
 - Prompt templates reviewed, left unchanged: 0
-- Question sets reviewed: 30
-- Question fields improved / added / removed / made optional: ~190 improved / 0 added / 0 removed / several newly optional in batch 3 (024 CRITERIA, 026 GUIDANCE, 027 SPEAKER_LIST/UNCLEAR, 028 CONTEXT, 029 LANGUAGE_RULES, 030 MARK_SCHEME)
+- Question sets reviewed: 40
+- Question fields improved / added / removed / made optional: ~250 improved / 0 added / 0 removed / more optionals in batches 3–4
 
 ## Batch 1 (001–010) outcomes
 
@@ -102,8 +101,19 @@ Representative clarity fixes:
 ## Batch 3 (021–030) outcomes
 Templates + questions improved for all ten; sentinel brackets with fill-token risk rewritten to plain labels where needed; optional blanks handled; questions clarified (study time, jurisdiction, marking scheme, etc.).
 
+## Batch 4 (031–040) outcomes
+All ten prompting-engineering templates + questions improved (RTCFCE through rubrics); optional blanks handled; sentinel phrase collisions reduced; clearer tool/sensitivity/attempt questions.
+
 ## Remaining
-031–115 (batches 4–12)
+041–115 (batches 5–12)
+
+## Commits / push / Pages (verified)
+| Batch | Commit | Push | Pages |
+|------:|--------|------|-------|
+| 1 | `546ced1` | `main` | built |
+| 2 | `4a83ec9` | `main` | built |
+| 3 | `bcaa0e1` | `main` | built |
+| 4 | _(this commit)_ | pending | pending |
 
 ## Next action
-After Batch 3 commit + push + Pages verify: continue Batch 4 (031–040) with the same verify→push→Pages cycle.
+Commit + push Batch 4, verify Pages, then Batch 5 (041–050).

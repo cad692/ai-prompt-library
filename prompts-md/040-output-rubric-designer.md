@@ -17,13 +17,13 @@
 ```text
 Design an evaluation rubric for AI-generated [OUTPUT_TYPE] used by [AUDIENCE] for [PURPOSE].
 
-Success requirements are [REQUIREMENTS], likely risks are [RISKS], and sample outputs if available are [SAMPLES]. Begin by separating threshold requirements from quality dimensions. A threshold is pass/fail—such as no invented citations—while a quality dimension can improve by degree.
+Success requirements are [REQUIREMENTS], likely risks are [RISKS], and any overview of available samples is [SAMPLES]. Begin by separating threshold requirements from quality dimensions. A threshold is pass/fail—such as no invented citations—while a quality dimension can improve by degree.
 
 Propose five to eight non-overlapping criteria. For each provide: definition, weight, evidence the evaluator should inspect, and anchors for scores 1, 3, and 5. Ensure weights total 100. Include accuracy, source grounding, or safety where relevant; do not allow fluency to compensate for dangerous or materially false content.
 
 Add automatic failure gates for [CRITICAL_FAILURES]. Define how “not applicable” changes the denominator. Write instructions for two evaluators to resolve disagreements by pointing to output evidence rather than personal taste.
 
-Calibrate the rubric on [SAMPLE_A] and [SAMPLE_B], if supplied. Show criterion scores with short justifications, identify any criterion that both samples expose as ambiguous, and revise its wording once. If no samples are supplied, create two tiny synthetic fragments solely for calibration.
+Calibrate the rubric on [SAMPLE_A] and [SAMPLE_B], if supplied. If either sample is blank or still shows brackets, create two tiny synthetic fragments solely for calibration and label them as synthetic. Show criterion scores with short justifications, identify any criterion that both samples expose as ambiguous, and revise its wording once.
 
 Finish with a compact evaluator form and interpretation bands—unusable, needs revision, usable with checks, strong—tied to both score and failure gates. State what the rubric cannot measure and when a subject-matter expert must override the numeric result.
 ```

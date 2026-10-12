@@ -21,7 +21,7 @@ Raw requirements: [REQUIREMENTS]. Intended audience: [AUDIENCE]. Required output
 
 Search for collisions such as “comprehensive but 100 words,” “friendly but legally exact,” incompatible formats, or missing data required by a hard rule. For each collision, show the competing instructions and offer two resolutions. Ask me to decide whenever the choice changes the goal; do not silently pick.
 
-Build the final prompt with the constraints placed near the action they govern. Add a precedence rule stating what wins if requirements conflict. Translate fuzzy terms—professional, concise, engaging, detailed—into observable boundaries using [EXAMPLES_OR_METRICS].
+Build the final prompt with the constraints placed near the action they govern. Add a precedence rule stating what wins if requirements conflict. Translate fuzzy terms—professional, concise, engaging, detailed—into observable boundaries using [EXAMPLES_OR_METRICS]. If that field is blank or still shows brackets, propose measurable defaults and label them as assumptions.
 
 Include a compact compliance checklist the model can complete after drafting. It should report pass, fail, or not applicable, then revise once only for failed hard constraints. Ensure the check does not invite fabricated facts merely to satisfy format.
 

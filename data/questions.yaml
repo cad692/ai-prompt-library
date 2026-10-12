@@ -603,200 +603,211 @@
     optional: true
 "031":
   ROUGH_TASK:
-    q: "What task do you want to structure?"
-    ex: "Write a policy summary prompt"
+    q: What rough task should the RTCFCE prompt cover?
+    ex: Summarise a policy PDF for student leaders
   PLACEHOLDERS:
-    q: "Which placeholders should be reused?"
-    ex: "TASK, AUDIENCE, CONTEXT"
+    q: Which reusable placeholder names should appear?
+    ex: TASK, AUDIENCE, CONTEXT, WORD_LIMIT
+    optional: true
 "032":
   WEAK_PROMPT:
-    q: "Paste the weak prompt to improve"
-    ex: "Summarise this article in simple words"
+    q: Paste the weak prompt you want improved.
+    ex: Summarise this article in simple words
   OUTCOME:
-    q: "What should the better prompt achieve?"
-    ex: "A clear, actionable summary"
+    q: What should a successful rewritten prompt achieve?
+    ex: A clear summary a first-year can present
   USER:
-    q: "Who is the prompt for?"
-    ex: "A new student user"
+    q: Who will use the improved prompt?
+    ex: A new undergraduate student
   USE:
-    q: "How will the output be used?"
-    ex: "For a class presentation"
+    q: How will the model output be used afterward?
+    ex: As speaker notes for a 3-minute class talk
   PLACEHOLDERS:
-    q: "Which placeholders should be kept?"
-    ex: "TOPIC, AUDIENCE, PURPOSE"
+    q: Which placeholder names should Version 3 keep?
+    ex: ARTICLE, AUDIENCE, PURPOSE
+    optional: true
 "033":
   TASK:
-    q: "What task needs grounded answers?"
-    ex: "Summarise the evidence report"
+    q: What grounded-answer task must the prompt support?
+    ex: Answer committee questions from one uploaded report
   RISK:
-    q: "What risk would unsupported claims create?"
-    ex: "Wrong policy advice"
+    q: What harm could unsupported claims cause?
+    ex: Incorrect policy recommendation to leadership
   APPROVED_SOURCES:
-    q: "What sources are allowed?"
-    ex: "Only the uploaded report"
+    q: Which sources is the model allowed to use?
+    ex: Only the uploaded evaluation PDF
   QUESTION:
-    q: "What question will the user ask?"
-    ex: "What caused the change in rates?"
+    q: What sample user question should the prompt expect?
+    ex: What caused the change in reported rates?
   AUDIENCE:
-    q: "Who will read the final answer?"
-    ex: "A project committee"
+    q: Who will read the grounded final answer?
+    ex: Project steering committee
 "034":
   TASK:
-    q: "What task needs clarification?"
-    ex: "Write a briefing for a donor"
+    q: What task should wait behind the clarification gate?
+    ex: Write a one-page donor briefing
   REQUIRED_INPUTS:
-    q: "What information is essential first?"
-    ex: "Audience, goal, and deadline"
+    q: Which details are essential before answering?
+    ex: Audience, goal, deadline, and tone
   OPTIONAL_INPUTS:
-    q: "What extra context may help?"
-    ex: "Past notes and examples"
+    q: Which optional details may improve the answer?
+    ex: Past brief and preferred examples
+    optional: true
   MAX_QUESTIONS:
-    q: "How many questions should be asked?"
-    ex: "Three"
+    q: What is the maximum clarification questions allowed?
+    ex: '3'
   OUTPUT_FORMAT:
-    q: "What output format do you need?"
-    ex: "A one-page brief"
+    q: What output format should Stage Two produce?
+    ex: One-page brief with three bullets
   CONSTRAINTS:
-    q: "What constraints should apply?"
-    ex: "Short, clear, and factual"
+    q: What hard constraints must Stage Two respect?
+    ex: No invented statistics; under 400 words
 "035":
   DRAFT_TYPE:
-    q: "What kind of draft is this?"
-    ex: "A summary paragraph"
+    q: What kind of draft will be critiqued?
+    ex: Literature-review paragraph
   GOAL:
-    q: "What are you trying to improve?"
-    ex: "Clarity and evidence"
+    q: What improvement goal should the loop pursue?
+    ex: Clearer claims and stronger evidence links
   DRAFT:
-    q: "Paste the draft you want reviewed"
-    ex: "A rough first draft"
+    q: Paste the draft text to critique and revise.
+    ex: Full draft section or paragraph
   AUDIENCE:
-    q: "Who will read it?"
-    ex: "A research supervisor"
+    q: Who is the intended reader of this draft?
+    ex: Thesis supervisor
   CONSTRAINTS:
-    q: "What must the revision respect?"
-    ex: "No new invented facts"
+    q: What revision constraints must be respected?
+    ex: No new facts; keep citations unchanged
   MUST_PRESERVE:
-    q: "What must not change?"
-    ex: "The core argument and evidence"
+    q: What content must remain unchanged?
+    ex: Core thesis claim and cited sources
   MAX_ROUNDS:
-    q: "How many revision rounds should happen?"
-    ex: "Three"
+    q: How many critique-revise rounds are allowed?
+    ex: '3'
   SHORT_SAMPLE:
-    q: "Do you want a short demonstration sample?"
-    ex: "A two-sentence example"
+    q: Optional short sample for a miniature demo?
+    ex: Two sentences showing the same weakness
+    optional: true
 "036":
   TASK:
-    q: "What task needs constraints?"
-    ex: "Draft a policy memo"
+    q: What task needs a coherent constraint stack?
+    ex: Draft an internal policy memo
   REQUIREMENTS:
-    q: "What requirements must be handled?"
-    ex: "Length, tone, and evidence"
+    q: List the requirements and limits to organise.
+    ex: Under 500 words; formal; cite only supplied policy
   AUDIENCE:
-    q: "Who is the audience?"
-    ex: "A student committee"
+    q: Who will read the constrained output?
+    ex: Student society executive committee
   OUTPUT:
-    q: "What final output do you need?"
-    ex: "A one-page brief"
+    q: What final deliverable should the prompt produce?
+    ex: One-page memo with decision options
   EXAMPLES_OR_METRICS:
-    q: "What metrics or examples guide quality?"
-    ex: "Clear structure and concise wording"
+    q: What examples or metrics define quality here?
+    ex: Each claim has a source; no jargon without definition
+    optional: true
 "037":
   TASK:
-    q: "What task should the examples teach?"
-    ex: "Classify support tickets"
+    q: What task should the few-shot examples teach?
+    ex: Classify campus support tickets by urgency
   INPUT_SCHEMA:
-    q: "What does the input look like?"
-    ex: "Customer message plus category"
+    q: What fields or shape does each input have?
+    ex: Subject line + message body
   OUTPUT_SCHEMA:
-    q: "What should the output format be?"
-    ex: "A label and explanation"
+    q: What exact output format should examples show?
+    ex: 'Label: HIGH/MED/LOW; one-sentence reason'
   RULES:
-    q: "What rules must the examples follow?"
-    ex: "Be explicit and avoid guessing"
+    q: Which rules must every example obey?
+    ex: No guessing missing details; mark UNKNOWN if unclear
   DOMAIN:
-    q: "What domain is this for?"
-    ex: "Customer support"
+    q: What realistic domain should examples use?
+    ex: University IT helpdesk
   EXCLUSIONS:
-    q: "What content should be excluded?"
-    ex: "Private or sensitive details"
+    q: What content must examples never include?
+    ex: Real names, CNIC, passwords, medical details
+    optional: true
   NUMBER:
-    q: "How many examples are needed?"
-    ex: "Four"
-  NEW_INPUT:
-    q: "What placeholder should the prompt use?"
-    ex: "NEW_CASE"
+    q: How many teaching examples should be created?
+    ex: '5'
   UNKNOWN:
-    q: "How should unknown cases be handled?"
-    ex: "Return UNKNOWN"
+    q: What abstention label should unclear cases use?
+    ex: UNKNOWN
+  NEW_INPUT:
+    q: What placeholder name should hold new cases?
+    ex: NEW_CASE
 "038":
   TASK:
-    q: "What task are you choosing a tool for?"
-    ex: "Analyse a long report"
+    q: What task are you choosing an AI tool for?
+    ex: Analyse a 40-page evaluation report
   TEXT_FILES_IMAGES_LINKS_OR_OTHER:
-    q: "What inputs will you use?"
-    ex: "PDFs and notes"
+    q: What inputs will you give the tool?
+    ex: PDF report plus two spreadsheet tabs
   OUTPUT:
-    q: "What final output do you need?"
-    ex: "A summary with citations"
+    q: What final output do you need from the tool?
+    ex: One-page brief with page-cited findings
   WORKFLOW:
-    q: "What workflow is involved?"
-    ex: "Research and drafting"
+    q: What workflow steps surround this task?
+    ex: Read → extract → draft → human verify
   PUBLIC_INTERNAL_CONFIDENTIAL:
-    q: "How sensitive is the data?"
-    ex: "Internal but not confidential"
+    q: How sensitive is the data involved?
+    ex: Internal; no personal student records
   ACCESS:
-    q: "What tools or accounts are available?"
-    ex: "ChatGPT and Microsoft Copilot"
+    q: Which tools or accounts can you actually use?
+    ex: ChatGPT Plus and Microsoft Copilot at work
   PREFERENCES:
-    q: "What preferences matter most?"
-    ex: "Fast and straightforward"
+    q: Which preferences matter if tools are otherwise equal?
+    ex: Strong citations and easy PDF upload
+    optional: true
 "039":
   TOPIC:
-    q: "What topic are you studying?"
-    ex: "Photosynthesis"
+    q: What topic should the Socratic tutor teach?
+    ex: Hypothesis testing basics
   LEVEL:
-    q: "What learning level is this?"
-    ex: "Secondary school"
+    q: What learner level should the dialogue match?
+    ex: First-year undergraduate statistics
   LEARNING_GOAL:
-    q: "What are you trying to learn?"
-    ex: "Explain the process clearly"
+    q: What should the learner be able to do afterward?
+    ex: Explain p-values without confusing them with effect size
   PROBLEM_TYPE:
-    q: "What type of problem is this?"
-    ex: "A science explanation question"
+    q: What kind of problems will the tutor use?
+    ex: Short conceptual and calculation word problems
   MAX_ATTEMPTS:
-    q: "How many attempts should the tutor allow?"
-    ex: "Three"
+    q: After how many attempts may direct explanation start?
+    ex: '3'
   CONTEXT:
-    q: "What context should the examples use?"
-    ex: "A classroom setting"
+    q: What setting should examples reflect?
+    ex: Pakistani university coursework examples
+    optional: true
 "040":
   OUTPUT_TYPE:
-    q: "What type of output is being judged?"
-    ex: "A summary brief"
+    q: What type of AI output will the rubric judge?
+    ex: Decision brief with citations
   AUDIENCE:
-    q: "Who will use the output?"
-    ex: "A management team"
+    q: Who will use the judged output?
+    ex: Programme managers
   PURPOSE:
-    q: "What is the output for?"
-    ex: "Decision-making"
+    q: What decision or use is the output for?
+    ex: Choose whether to scale a pilot
   REQUIREMENTS:
-    q: "What requirements must it meet?"
-    ex: "Clear, brief, and factual"
+    q: What success requirements must the output meet?
+    ex: Accurate, sourced, under two pages
   RISKS:
-    q: "What risks should the rubric catch?"
-    ex: "Invented claims or weak evidence"
-  CRITICAL_FAILURES:
-    q: "What failure conditions matter most?"
-    ex: "False citations or unsafe advice"
+    q: What failure risks should the rubric detect?
+    ex: Invented numbers or missing caveats
   SAMPLES:
-    q: "Do you have example outputs?"
-    ex: "Two sample drafts"
+    q: Briefly describe any sample outputs you have.
+    ex: Two drafts from last week's prompt test
+    optional: true
+  CRITICAL_FAILURES:
+    q: Which failures should auto-fail the output?
+    ex: False citations or unsafe medical advice
   SAMPLE_A:
-    q: "What is the first sample?"
-    ex: "A low-quality draft"
+    q: Paste the weaker sample output, if available.
+    ex: Low-quality draft text
+    optional: true
   SAMPLE_B:
-    q: "What is the second sample?"
-    ex: "A stronger draft"
+    q: Paste the stronger sample output, if available.
+    ex: Stronger draft text
+    optional: true
 "041":
   VENTURE:
     q: "What venture are you describing?"

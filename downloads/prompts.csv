@@ -434,7 +434,7 @@ Finish with a coverage audit showing which major note sections were tested and w
 "
 031,rtcfce-prompt-architect,RTCFCE Prompt Architect,prompting,Intermediate,"Use this to convert a rough task into a complete RTCFCE prompt (Role, Task, Context, Format, Constraints, and Examples).",A completed RTCFCE worksheet and a ready-to-run prompt.,Use a role only when expertise or viewpoint changes how the task should be done.,"rtcfce, prompt-design, framework, workshop",ChatGPT: Supports interactive prompt design and clearly explains structural choices.; Claude: Follows detailed prompt specifications and handles rich context well.,,"Act as an RTCFCE prompt architect helping me turn [ROUGH_TASK] into a precise, reusable instruction.
 
-Do not fill gaps immediately. Interview me one question at a time about Role, Task, Context, Format, Constraints, and Examples. Ask only questions whose answers could materially change the result, with a maximum of eight. If a role adds no value, recommend omitting it. Wait for my replies before building the prompt.
+Do not fill gaps immediately. Interview me one question at a time about Role, Task, Context, Format, Constraints, and Examples. Ask only questions whose answers could materially change the result, with a maximum of eight. If a role adds no value, recommend omitting it. Wait for my replies before building the prompt. Do not invent task details I have not confirmed.
 
 After the interview, create an RTCFCE worksheet:
 R — useful expertise or perspective;
@@ -444,7 +444,7 @@ F — output shape and length;
 C — hard limits, safety, tone, and exclusions;
 E — one positive example or pattern, plus a counterexample if helpful.
 
-Label any assumption you still need to make. Then assemble a natural prompt rather than mechanically repeating the six headings. Put the most important goal in its opening line and represent reusable inputs as [PLACEHOLDERS].
+Label any assumption you still need to make. Then assemble a natural prompt rather than mechanically repeating the six headings. Put the most important goal in its opening line and represent reusable inputs as bracketed tokens drawn from [PLACEHOLDERS]. If that list is blank or still shows brackets, invent only clearly named placeholders and list them.
 
 Provide a compact version and a detailed version. Explain when each is preferable. Finally, simulate one likely model misunderstanding, identify which RTCFCE element failed to prevent it, and patch only that section. The final prompt should be vendor-neutral and should not request hidden chain-of-thought.
 "
@@ -457,7 +457,7 @@ Start by marking the original prompt with inline labels for five possible weakne
 Create three successive rewrites:
 Version 1 — Minimal Repair: change as little as possible.
 Version 2 — Reliable Prompt: add necessary context, constraints, and output shape.
-Version 3 — Reusable Template: replace variable details with [PLACEHOLDERS].
+Version 3 — Reusable Template: replace variable details with bracketed tokens from [PLACEHOLDERS]. If that list is blank, propose sensible placeholder names.
 
 Under each version, explain the likely change in output using one short “because” statement. Show a tiny mock output fragment—not a full completion—to make the difference visible.
 
@@ -465,7 +465,7 @@ Then run a deletion test on Version 2: remove one instruction that does not mate
 "
 033,grounded-answer-guardrails,Grounded Answer Guardrails,prompting,Advanced,Use this to design prompts that reduce unsupported claims and invented details.,A hallucination-resistant prompt with evidence rules and adversarial tests.,"Require an abstention phrase and source locations, then test the prompt with an unanswerable question.","hallucination, grounding, verification, prompt-safety",NotebookLM: Grounds responses in user-provided sources and exposes supporting source locations.; Claude: Follows detailed evidence constraints across long source material.,,"Design a grounded-answer prompt for [TASK] where unsupported claims would create [RISK].
 
-Allowed evidence is [APPROVED_SOURCES]. The user’s question will appear as [QUESTION]. Build instructions that force a clean boundary between supplied evidence, general background knowledge if allowed, and inference. Use the exact abstention phrase “[NOT SUPPORTED BY PROVIDED SOURCES]” whenever the evidence is insufficient.
+Allowed evidence is [APPROVED_SOURCES]. The user’s question will appear as [QUESTION]. Build instructions that force a clean boundary between supplied evidence, general background knowledge if allowed, and inference. Require the exact abstention phrase NOT SUPPORTED BY PROVIDED SOURCES (plain text, not a fill-in field) whenever the evidence is insufficient.
 
 The resulting prompt must require:
 - a source location beside each material claim;
@@ -483,7 +483,7 @@ Return the production prompt first, followed by the tests and a short human veri
 "
 034,clarification-gate-designer,Clarification Gate Designer,prompting,Intermediate,Use this to make an AI ask important questions before attempting the task.,A two-stage prompt with a strict clarification gate and fallback assumptions.,"Tell the model to ask only decision-changing questions, or the intake can become tedious.","clarifying-questions, intake, prompt-flow, requirements",ChatGPT: Handles multi-turn clarification and adapts later output to user responses.; Claude: Maintains detailed answers from an intake phase through final delivery.,,"Create a two-stage clarification-gate prompt for [TASK] so the model cannot rush into an answer.
 
-The minimum information needed is [REQUIRED_INPUTS]. Optional helpful context is [OPTIONAL_INPUTS]. The user may have limited time, so questions must be high value and easy to answer.
+The minimum information needed is [REQUIRED_INPUTS]. Optional helpful context is [OPTIONAL_INPUTS]. The user may have limited time, so questions must be high value and easy to answer. If optional inputs are blank or still show brackets, treat them as absent.
 
 Stage One must instruct the model to inspect the request, identify only gaps that could materially alter the output, and ask up to [MAX_QUESTIONS] numbered questions in one message. It must not draft, outline, research, or solve the task yet. Include “Why I need this” after each question in eight words or fewer. Offer selectable options when users may not know the terminology.
 
@@ -503,9 +503,9 @@ Pass B — Plan: rank no more than five changes by impact.
 Pass C — Revise: edit only what the plan justifies.
 Pass D — Verify: rescore and check facts, constraints, and preserved meaning.
 
-Instruct the model to show concise rationale and checkable evidence, not private hidden chain-of-thought. Require a change log that maps every major edit to one diagnosed issue. If revision would need missing facts, insert [NEEDS INPUT] instead of inventing them.
+Instruct the model to show concise rationale and checkable evidence, not private hidden chain-of-thought. Require a change log that maps every major edit to one diagnosed issue. If revision would need missing facts, insert the plain label NEEDS INPUT instead of inventing them.
 
-Set a stop rule: finish when all critical criteria pass or after [MAX_ROUNDS] rounds, whichever comes first. If the score does not improve, preserve the strongest version and explain the blockage. Return the complete reusable prompt, followed by one miniature demonstration using [SHORT_SAMPLE] and a note on when human review remains essential.
+Set a stop rule: finish when all critical criteria pass or after [MAX_ROUNDS] rounds, whichever comes first. If the score does not improve, preserve the strongest version and explain the blockage. Return the complete reusable prompt, followed by one miniature demonstration using [SHORT_SAMPLE] when supplied; if that sample is blank or still shows brackets, skip the demo and note that. Add a note on when human review remains essential.
 "
 036,constraint-stack-builder,Constraint Stack Builder,prompting,Intermediate,Use this to organise multiple prompt constraints without creating contradictions.,"A prioritized constraint stack, conflict analysis, and executable prompt.",Rank hard constraints above preferences so the model knows what may flex.,"constraints, prompt-design, priorities, compliance",ChatGPT: Organises detailed constraints and detects conflicts through interactive refinement.; Gemini: Handles structured instruction design and offers alternative constraint resolutions.,,"Act as a constraint engineer for the task [TASK], turning my requirements into a coherent prompt.
 
@@ -513,7 +513,7 @@ Raw requirements: [REQUIREMENTS]. Intended audience: [AUDIENCE]. Required output
 
 Search for collisions such as “comprehensive but 100 words,” “friendly but legally exact,” incompatible formats, or missing data required by a hard rule. For each collision, show the competing instructions and offer two resolutions. Ask me to decide whenever the choice changes the goal; do not silently pick.
 
-Build the final prompt with the constraints placed near the action they govern. Add a precedence rule stating what wins if requirements conflict. Translate fuzzy terms—professional, concise, engaging, detailed—into observable boundaries using [EXAMPLES_OR_METRICS].
+Build the final prompt with the constraints placed near the action they govern. Add a precedence rule stating what wins if requirements conflict. Translate fuzzy terms—professional, concise, engaging, detailed—into observable boundaries using [EXAMPLES_OR_METRICS]. If that field is blank or still shows brackets, propose measurable defaults and label them as assumptions.
 
 Include a compact compliance checklist the model can complete after drafting. It should report pass, fail, or not applicable, then revise once only for failed hard constraints. Ensure the check does not invite fabricated facts merely to satisfy format.
 
@@ -523,26 +523,26 @@ Return: the sorted stack, unresolved choices, final prompt, and one edge-case te
 
 Desired input form: [INPUT_SCHEMA]. Desired output form: [OUTPUT_SCHEMA]. Rules: [RULES]. Realistic domain: [DOMAIN]. Sensitive or prohibited content: [EXCLUSIONS].
 
-Begin by expressing the underlying pattern in plain language. Then identify the dimensions that examples must vary: length, wording, class, ambiguity, missing data, and edge conditions. Create [NUMBER] examples that cover those dimensions without copying private or copyrighted material.
+Begin by expressing the underlying pattern in plain language. Then identify the dimensions that examples must vary: length, wording, class, ambiguity, missing data, and edge conditions. Create [NUMBER] examples that cover those dimensions without copying private or copyrighted material. If exclusions are blank, still avoid inventing personal data.
 
 Each example must use:
 Input: a realistic synthetic case.
 Output: the exact target response.
 Teaching point: a note for me that will be removed from the production prompt.
 
-Include at least one typical case, one boundary case, one case requiring abstention or [UNKNOWN], and one tempting near-miss. Keep labels balanced when the task is classification. Avoid accidental clues such as one class always having longer inputs.
+Include at least one typical case, one boundary case, one case requiring abstention or the label [UNKNOWN], and one tempting near-miss. Keep labels balanced when the task is classification. Avoid accidental clues such as one class always having longer inputs.
 
 Next, perform a leakage and consistency audit: check whether outputs reveal hidden answers, examples contradict a rule, or superficial wording predicts the label. Repair issues you find.
 
-Assemble a production prompt containing instructions, clean examples without teaching notes, and a final [NEW_INPUT] slot. Finish with two challenge inputs and expected grading criteria, but keep their answers separate so they can test the prompt honestly.
+Assemble a production prompt containing instructions, clean examples without teaching notes, and a final [[NEW_INPUT]] slot that uses the placeholder name I supplied. Finish with two challenge inputs and expected grading criteria, but keep their answers separate so they can test the prompt honestly.
 "
 038,task-tool-routing-prompt,Task Tool Routing Prompt,prompting,Beginner,Use this to choose an appropriate AI tool based on task capabilities.,"A capability-based recommendation with alternatives, limitations, and a test task.",Choose by required capability and data sensitivity before considering familiarity.,"tool-selection, capabilities, workflow, prompting","ChatGPT: Can elicit requirements and compare tools across common general-purpose capabilities.; Perplexity: Useful when tool selection depends on current, source-linked capability information.",,"Help me choose the most suitable AI tool for [TASK] based on capabilities, access, and risk—not popularity.
 
-My inputs are [TEXT_FILES_IMAGES_LINKS_OR_OTHER], expected output is [OUTPUT], workflow is [WORKFLOW], data sensitivity is [PUBLIC_INTERNAL_CONFIDENTIAL], and devices or accounts available are [ACCESS]. I prefer [PREFERENCES], but they are not hard requirements.
+My inputs are [TEXT_FILES_IMAGES_LINKS_OR_OTHER], expected output is [OUTPUT], workflow is [WORKFLOW], data sensitivity is [PUBLIC_INTERNAL_CONFIDENTIAL], and devices or accounts available are [ACCESS]. I prefer [PREFERENCES], but they are not hard requirements. If preferences are blank or still show brackets, optimise for accuracy and data safety first.
 
 Ask up to five clarifying questions if any decisive requirement is missing. Then create a capability checklist covering current web access, citations, file type and length, multimodal input, office integration, collaboration, privacy controls, and required human verification.
 
-Compare only tools you can describe accurately from current knowledge or verifiable official information. Candidate tools may include ChatGPT, Gemini, Claude, Perplexity, NotebookLM, DeepSeek, Meta AI, and Microsoft Copilot; omit irrelevant ones. Do not discuss prices unless I explicitly ask, and do not claim a feature exists without confidence.
+Compare only tools you can describe accurately from current knowledge or verifiable official information. Candidate tools may include ChatGPT, Gemini, Claude, Perplexity, NotebookLM, DeepSeek, Meta AI, and Microsoft Copilot; omit irrelevant ones. Do not discuss prices unless I explicitly ask, and do not claim a feature exists without confidence. Mark uncertainty rather than inventing product capabilities.
 
 Recommend one primary tool and up to two alternatives. For each, state task fit, key limitation, and the condition that would change the choice. If a simple non-AI tool is safer or sufficient, say so.
 
@@ -561,17 +561,17 @@ Require the tutor to respond to wrong answers by identifying the misconception t
 
 Add an integrity boundary: for live graded work, offer concepts, hints, and feedback but do not impersonate the learner or produce submission-ready answers. Include an option to switch to direct explanation after [MAX_ATTEMPTS] sincere attempts.
 
-Return the complete tutor prompt plus three starter questions ordered by difficulty. Add a closing mastery check requiring explanation, application, and self-assessment. The tutor should be encouraging without excessive praise and should adapt examples to [CONTEXT] respectfully.
+Return the complete tutor prompt plus three starter questions ordered by difficulty. Add a closing mastery check requiring explanation, application, and self-assessment. The tutor should be encouraging without excessive praise and should adapt examples to [CONTEXT] respectfully. If context is blank or still shows brackets, use neutral classroom examples and say so.
 "
 040,output-rubric-designer,Output Rubric Designer,prompting,Advanced,Use this to define measurable criteria for evaluating an AI-generated output.,"A weighted rubric with anchors, failure gates, and a calibration exercise.",Weight factuality and safety separately from style so polished errors cannot score highly.,"rubric, evaluation, quality, prompt-testing",ChatGPT: Builds task-specific rubrics and applies them iteratively to sample outputs.; Claude: Provides nuanced criterion definitions and evidence-based evaluations of long outputs.,,"Design an evaluation rubric for AI-generated [OUTPUT_TYPE] used by [AUDIENCE] for [PURPOSE].
 
-Success requirements are [REQUIREMENTS], likely risks are [RISKS], and sample outputs if available are [SAMPLES]. Begin by separating threshold requirements from quality dimensions. A threshold is pass/fail—such as no invented citations—while a quality dimension can improve by degree.
+Success requirements are [REQUIREMENTS], likely risks are [RISKS], and any overview of available samples is [SAMPLES]. Begin by separating threshold requirements from quality dimensions. A threshold is pass/fail—such as no invented citations—while a quality dimension can improve by degree.
 
 Propose five to eight non-overlapping criteria. For each provide: definition, weight, evidence the evaluator should inspect, and anchors for scores 1, 3, and 5. Ensure weights total 100. Include accuracy, source grounding, or safety where relevant; do not allow fluency to compensate for dangerous or materially false content.
 
 Add automatic failure gates for [CRITICAL_FAILURES]. Define how “not applicable” changes the denominator. Write instructions for two evaluators to resolve disagreements by pointing to output evidence rather than personal taste.
 
-Calibrate the rubric on [SAMPLE_A] and [SAMPLE_B], if supplied. Show criterion scores with short justifications, identify any criterion that both samples expose as ambiguous, and revise its wording once. If no samples are supplied, create two tiny synthetic fragments solely for calibration.
+Calibrate the rubric on [SAMPLE_A] and [SAMPLE_B], if supplied. If either sample is blank or still shows brackets, create two tiny synthetic fragments solely for calibration and label them as synthetic. Show criterion scores with short justifications, identify any criterion that both samples expose as ambiguous, and revise its wording once.
 
 Finish with a compact evaluator form and interpretation bands—unusable, needs revision, usable with checks, strong—tied to both score and failure gates. State what the rubric cannot measure and when a subject-matter expert must override the numeric result.
 "

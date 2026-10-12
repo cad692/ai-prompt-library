@@ -17,11 +17,11 @@
 ```text
 Help me choose the most suitable AI tool for [TASK] based on capabilities, access, and risk—not popularity.
 
-My inputs are [TEXT_FILES_IMAGES_LINKS_OR_OTHER], expected output is [OUTPUT], workflow is [WORKFLOW], data sensitivity is [PUBLIC_INTERNAL_CONFIDENTIAL], and devices or accounts available are [ACCESS]. I prefer [PREFERENCES], but they are not hard requirements.
+My inputs are [TEXT_FILES_IMAGES_LINKS_OR_OTHER], expected output is [OUTPUT], workflow is [WORKFLOW], data sensitivity is [PUBLIC_INTERNAL_CONFIDENTIAL], and devices or accounts available are [ACCESS]. I prefer [PREFERENCES], but they are not hard requirements. If preferences are blank or still show brackets, optimise for accuracy and data safety first.
 
 Ask up to five clarifying questions if any decisive requirement is missing. Then create a capability checklist covering current web access, citations, file type and length, multimodal input, office integration, collaboration, privacy controls, and required human verification.
 
-Compare only tools you can describe accurately from current knowledge or verifiable official information. Candidate tools may include ChatGPT, Gemini, Claude, Perplexity, NotebookLM, DeepSeek, Meta AI, and Microsoft Copilot; omit irrelevant ones. Do not discuss prices unless I explicitly ask, and do not claim a feature exists without confidence.
+Compare only tools you can describe accurately from current knowledge or verifiable official information. Candidate tools may include ChatGPT, Gemini, Claude, Perplexity, NotebookLM, DeepSeek, Meta AI, and Microsoft Copilot; omit irrelevant ones. Do not discuss prices unless I explicitly ask, and do not claim a feature exists without confidence. Mark uncertainty rather than inventing product capabilities.
 
 Recommend one primary tool and up to two alternatives. For each, state task fit, key limitation, and the condition that would change the choice. If a simple non-AI tool is safer or sufficient, say so.
 

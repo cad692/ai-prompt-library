@@ -24,7 +24,7 @@ Start by marking the original prompt with inline labels for five possible weakne
 Create three successive rewrites:
 Version 1 — Minimal Repair: change as little as possible.
 Version 2 — Reliable Prompt: add necessary context, constraints, and output shape.
-Version 3 — Reusable Template: replace variable details with [PLACEHOLDERS].
+Version 3 — Reusable Template: replace variable details with bracketed tokens from [PLACEHOLDERS]. If that list is blank, propose sensible placeholder names.
 
 Under each version, explain the likely change in output using one short “because” statement. Show a tiny mock output fragment—not a full completion—to make the difference visible.
 

@@ -25,9 +25,9 @@ Pass B — Plan: rank no more than five changes by impact.
 Pass C — Revise: edit only what the plan justifies.
 Pass D — Verify: rescore and check facts, constraints, and preserved meaning.
 
-Instruct the model to show concise rationale and checkable evidence, not private hidden chain-of-thought. Require a change log that maps every major edit to one diagnosed issue. If revision would need missing facts, insert [NEEDS INPUT] instead of inventing them.
+Instruct the model to show concise rationale and checkable evidence, not private hidden chain-of-thought. Require a change log that maps every major edit to one diagnosed issue. If revision would need missing facts, insert the plain label NEEDS INPUT instead of inventing them.
 
-Set a stop rule: finish when all critical criteria pass or after [MAX_ROUNDS] rounds, whichever comes first. If the score does not improve, preserve the strongest version and explain the blockage. Return the complete reusable prompt, followed by one miniature demonstration using [SHORT_SAMPLE] and a note on when human review remains essential.
+Set a stop rule: finish when all critical criteria pass or after [MAX_ROUNDS] rounds, whichever comes first. If the score does not improve, preserve the strongest version and explain the blockage. Return the complete reusable prompt, followed by one miniature demonstration using [SHORT_SAMPLE] when supplied; if that sample is blank or still shows brackets, skip the demo and note that. Add a note on when human review remains essential.
 ```
 
 ---
