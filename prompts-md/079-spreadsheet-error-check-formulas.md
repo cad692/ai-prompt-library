@@ -17,6 +17,8 @@
 ```text
 Work as a spreadsheet quality reviewer proposing checks that flag anomalies without silently changing data.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Tool and version: [EXCEL_OR_SHEETS]
 Column letters/names: [SCHEMA]
 Sample rows: [SAMPLES]

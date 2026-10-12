@@ -4104,10 +4104,11 @@ prompts:
   category: data-productivity
   difficulty: Beginner
   usage: Use to plan safe cleaning before changing a messy spreadsheet.
-  use_case: Creates a reversible, auditable cleaning plan for Excel or Google Sheets. It preserves raw
-    data and defines validation checks.
-  preview: 'Work as a cautious data steward planning a spreadsheet cleanup that can be audited and reversed.
-    File purpose: [PURPOSE] Columns and sample rows: [SCHEMA_SAMPLE] Known problems: [PROBLEMS] Intended...'
+  use_case: Creates a reversible, auditable cleaning plan for Excel or Google Sheets. It preserves 
+    raw data and defines validation checks.
+  preview: Work as a cautious data steward planning a spreadsheet cleanup that can be audited and 
+    reversed. If any personalization field is blank or still shows brackets, continue with clearly 
+    labelled...
   best_tools:
   - tool: Excel/Sheets
     reason: Provides filters, formulas, validation, and reproducible cleaning steps.
@@ -4119,8 +4120,12 @@ prompts:
   - spreadsheet
   - data-cleaning
   - quality
-  next_id: null
+  next_id:
   prompt: 'Work as a cautious data steward planning a spreadsheet cleanup that can be audited and reversed.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     File purpose: [PURPOSE]
@@ -4160,10 +4165,11 @@ prompts:
   category: data-productivity
   difficulty: Beginner
   usage: Use to explain a chart in plain language without overstating it.
-  use_case: Converts chart evidence into a concise narrative for reports or meetings. It surfaces alternative
-    explanations and action limits.
-  preview: 'You are a data interpreter writing the honest story of a chart for a non-specialist decision-maker.
-    Chart or data: [CHART_DATA] Metric definition: [METRIC] Audience and decision: [AUDIENCE_DECISION]...'
+  use_case: Converts chart evidence into a concise narrative for reports or meetings. It surfaces 
+    alternative explanations and action limits.
+  preview: You are a data interpreter writing the honest story of a chart for a non-specialist 
+    decision-maker. If any personalization field is blank or still shows brackets, continue with 
+    clearly labelled...
   best_tools:
   - tool: ChatGPT
     reason: Synthesizes supplied chart details into an audience-aware narrative.
@@ -4175,8 +4181,12 @@ prompts:
   - charts
   - data-storytelling
   - reporting
-  next_id: null
+  next_id:
   prompt: 'You are a data interpreter writing the honest story of a chart for a non-specialist decision-maker.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Chart or data: [CHART_DATA]
@@ -4214,11 +4224,13 @@ prompts:
   title: Assumptions First Analysis
   category: data-productivity
   difficulty: Beginner
-  usage: Use before quantitative analysis to expose definitions, assumptions, and decision thresholds.
-  use_case: Frames an analysis so hidden choices become reviewable before calculations begin. It reduces
-    confident answers to the wrong question.
-  preview: 'Act as an analytical reviewer who pauses calculation until the question and assumptions are
-    explicit. Decision to be made: [DECISION] Available data: [DATA] Proposed method: [METHOD] Stakeholders...'
+  usage: Use before quantitative analysis to expose definitions, assumptions, and decision 
+    thresholds.
+  use_case: Frames an analysis so hidden choices become reviewable before calculations begin. It 
+    reduces confident answers to the wrong question.
+  preview: Act as an analytical reviewer who pauses calculation until the question and assumptions 
+    are explicit. If any personalization field is blank or still shows brackets, continue with 
+    clearly labelled...
   best_tools:
   - tool: Claude
     reason: Handles complex analytical context and tracks assumptions across a long brief.
@@ -4230,9 +4242,13 @@ prompts:
   - analysis
   - assumptions
   - decision-science
-  next_id: null
+  next_id:
   prompt: 'Act as an analytical reviewer who pauses calculation until the question and assumptions are
     explicit.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Decision to be made: [DECISION]
@@ -4272,10 +4288,11 @@ prompts:
   category: data-productivity
   difficulty: Beginner
   usage: Use to design a practical Notion database before building views and automations.
-  use_case: Maps a workflow into properties, relations, templates, and views. It avoids turning Notion
-    into an overcomplicated software project.
-  preview: 'Take the role of a Notion systems designer building the smallest database structure that supports
-    the real workflow. What is being tracked: [ITEMS] Users and roles: [USERS] Workflow stages: [STAGES]...'
+  use_case: Maps a workflow into properties, relations, templates, and views. It avoids turning 
+    Notion into an overcomplicated software project.
+  preview: Take the role of a Notion systems designer building the smallest database structure that 
+    supports the real workflow. If any personalization field is blank or still shows brackets, 
+    continue with...
   best_tools:
   - tool: Notion
     reason: Supports linked databases, templates, filtered views, and team workflows.
@@ -4287,9 +4304,13 @@ prompts:
   - notion
   - database
   - workflow
-  next_id: null
+  next_id:
   prompt: 'Take the role of a Notion systems designer building the smallest database structure that supports
     the real workflow.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     What is being tracked: [ITEMS]
@@ -4329,10 +4350,11 @@ prompts:
   category: data-productivity
   difficulty: Beginner
   usage: Use to convert messy meeting notes into decisions, tasks, and open questions.
-  use_case: Extracts accountable actions without inventing owners or deadlines. It preserves uncertainty
-    for confirmation.
-  preview: 'Act as a precise meeting secretary turning rough notes into accountable follow-through without
-    filling gaps from imagination. Meeting notes or transcript: [NOTES] Meeting purpose: [PURPOSE]...'
+  use_case: Extracts accountable actions without inventing owners or deadlines. It preserves 
+    uncertainty for confirmation.
+  preview: Act as a precise meeting secretary turning rough notes into accountable follow-through 
+    without filling gaps from imagination. If any personalization field is blank or still shows 
+    brackets, continue...
   best_tools:
   - tool: Notion
     reason: Stores meeting records and links actions to team workflows.
@@ -4344,9 +4366,13 @@ prompts:
   - meetings
   - tasks
   - accountability
-  next_id: null
+  next_id:
   prompt: 'Act as a precise meeting secretary turning rough notes into accountable follow-through without
     filling gaps from imagination.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Meeting notes or transcript: [NOTES]
@@ -4381,10 +4407,11 @@ prompts:
   category: data-productivity
   difficulty: Beginner
   usage: Use to map an automation before connecting live accounts or customer data.
-  use_case: Designs a tool-neutral workflow with triggers, transformations, failures, and human review.
-    It can then be implemented in Zapier or Make.
-  preview: 'Work as an automation architect sketching the logic before anyone connects production systems.
-    Desired outcome: [OUTCOME] Triggering app and event: [TRIGGER] Source fields: [SOURCE_FIELDS]...'
+  use_case: Designs a tool-neutral workflow with triggers, transformations, failures, and human 
+    review. It can then be implemented in Zapier or Make.
+  preview: Work as an automation architect sketching the logic before anyone connects production 
+    systems. If any personalization field is blank or still shows brackets, continue with clearly 
+    labelled...
   best_tools:
   - tool: Zapier/Make
     reason: Connects supported apps through triggers, actions, filters, and branching.
@@ -4396,8 +4423,12 @@ prompts:
   - automation
   - zapier
   - make
-  next_id: null
+  next_id:
   prompt: 'Work as an automation architect sketching the logic before anyone connects production systems.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Desired outcome: [OUTCOME]
@@ -4439,10 +4470,11 @@ prompts:
   category: data-productivity
   difficulty: Beginner
   usage: Use to define KPIs consistently before building a dashboard.
-  use_case: Creates auditable metric definitions with owners, formulas, and interpretation limits. It
-    reduces dashboard disputes.
-  preview: 'You are a measurement lead defining KPIs so two analysts calculate the same answer from the
-    same data. Business objective: [OBJECTIVE] Proposed KPI names: [KPIS] Available systems: [SYSTEMS]...'
+  use_case: Creates auditable metric definitions with owners, formulas, and interpretation limits. 
+    It reduces dashboard disputes.
+  preview: You are a measurement lead defining KPIs so two analysts calculate the same answer from 
+    the same data. If any personalization field is blank or still shows brackets, continue with 
+    clearly labelled...
   best_tools:
   - tool: Excel/Sheets
     reason: Documents metric formulas and validates sample calculations transparently.
@@ -4454,9 +4486,13 @@ prompts:
   - kpi
   - metrics
   - dashboard
-  next_id: null
+  next_id:
   prompt: 'You are a measurement lead defining KPIs so two analysts calculate the same answer from the
     same data.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Business objective: [OBJECTIVE]
@@ -4489,16 +4525,17 @@ prompts:
     number as useful if it does not inform action.
 
     '
-- id: 078
+- id: '078'
   slug: unbiased-survey-designer
   title: Unbiased Survey Designer
   category: data-productivity
   difficulty: Beginner
   usage: Use to design a short survey that measures one clear research objective.
-  use_case: Creates neutral questions, response options, and a pilot plan. It includes consent, accessibility,
-    and analysis considerations.
-  preview: 'Act as a survey methodologist designing the shortest instrument that can answer [RESEARCH_OBJECTIVE].
-    Target population: [POPULATION] Sampling and distribution plan: [SAMPLING] Decisions based on...'
+  use_case: Creates neutral questions, response options, and a pilot plan. It includes consent, 
+    accessibility, and analysis considerations.
+  preview: Act as a survey methodologist designing the shortest instrument that can answer 
+    [RESEARCH_OBJECTIVE]. If any personalization field is blank or still shows brackets, continue 
+    with clearly labelled...
   best_tools:
   - tool: Google Forms
     reason: Builds accessible surveys with common question types and branching.
@@ -4510,8 +4547,12 @@ prompts:
   - survey
   - research
   - questionnaire
-  next_id: null
+  next_id:
   prompt: 'Act as a survey methodologist designing the shortest instrument that can answer [RESEARCH_OBJECTIVE].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Target population: [POPULATION]
@@ -4548,16 +4589,17 @@ prompts:
     cannot guarantee it.
 
     '
-- id: 079
+- id: '079'
   slug: spreadsheet-error-check-formulas
   title: Spreadsheet Error Check Formulas
   category: data-productivity
   difficulty: Beginner
   usage: Use to design formula-based checks that flag likely spreadsheet errors.
-  use_case: Suggests review formulas for Excel or Google Sheets without overwriting source values. It
-    emphasizes explainable flags and testing.
-  preview: 'Work as a spreadsheet quality reviewer proposing checks that flag anomalies without silently
-    changing data. Tool and version: [EXCEL_OR_SHEETS] Column letters/names: [SCHEMA] Sample rows: [SAMPLES]...'
+  use_case: Suggests review formulas for Excel or Google Sheets without overwriting source values. 
+    It emphasizes explainable flags and testing.
+  preview: Work as a spreadsheet quality reviewer proposing checks that flag anomalies without 
+    silently changing data. If any personalization field is blank or still shows brackets, continue 
+    with clearly...
   best_tools:
   - tool: Excel/Sheets
     reason: Supports transparent formulas, validation rules, and conditional formatting.
@@ -4569,9 +4611,13 @@ prompts:
   - formulas
   - spreadsheet
   - error-checking
-  next_id: null
+  next_id:
   prompt: 'Work as a spreadsheet quality reviewer proposing checks that flag anomalies without silently
     changing data.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Tool and version: [EXCEL_OR_SHEETS]
@@ -4604,16 +4650,17 @@ prompts:
     are missing, provide formula pseudocode with [COLUMN] placeholders instead of guessing.
 
     '
-- id: 080
+- id: '080'
   slug: personal-knowledge-base-architecture
   title: Personal Knowledge Base Architecture
   category: data-productivity
   difficulty: Beginner
   usage: Use to create a simple knowledge system you can maintain each week.
-  use_case: Designs a personal knowledge base around retrieval and action, not collection. It works for
-    study, professional development, or projects.
-  preview: 'Act as a personal knowledge systems coach designing for retrieval, reflection, and action—not
-    endless note collecting. Main uses: [USES] Current tools and notes: [CURRENT_SYSTEM] Types of information...'
+  use_case: Designs a personal knowledge base around retrieval and action, not collection. It works 
+    for study, professional development, or projects.
+  preview: Act as a personal knowledge systems coach designing for retrieval, reflection, and 
+    action—not endless note collecting. If any personalization field is blank or still shows 
+    brackets, continue with...
   best_tools:
   - tool: Notion
     reason: Combines notes, linked databases, templates, and searchable project context.
@@ -4625,9 +4672,13 @@ prompts:
   - knowledge-management
   - notes
   - productivity
-  next_id: null
+  next_id:
   prompt: 'Act as a personal knowledge systems coach designing for retrieval, reflection, and action—not
     endless note collecting.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Main uses: [USES]

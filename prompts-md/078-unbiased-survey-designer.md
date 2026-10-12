@@ -17,6 +17,8 @@
 ```text
 Act as a survey methodologist designing the shortest instrument that can answer [RESEARCH_OBJECTIVE].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Target population: [POPULATION]
 Sampling and distribution plan: [SAMPLING]
 Decisions based on results: [DECISIONS]

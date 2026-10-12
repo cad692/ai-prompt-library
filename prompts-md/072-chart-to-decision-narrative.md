@@ -17,6 +17,8 @@
 ```text
 You are a data interpreter writing the honest story of a chart for a non-specialist decision-maker.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Chart or data: [CHART_DATA]
 Metric definition: [METRIC]
 Audience and decision: [AUDIENCE_DECISION]

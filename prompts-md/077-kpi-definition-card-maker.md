@@ -17,6 +17,8 @@
 ```text
 You are a measurement lead defining KPIs so two analysts calculate the same answer from the same data.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Business objective: [OBJECTIVE]
 Proposed KPI names: [KPIS]
 Available systems: [SYSTEMS]

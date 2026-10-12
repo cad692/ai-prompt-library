@@ -17,6 +17,8 @@
 ```text
 Work as a cautious data steward planning a spreadsheet cleanup that can be audited and reversed.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 File purpose: [PURPOSE]
 Columns and sample rows: [SCHEMA_SAMPLE]
 Known problems: [PROBLEMS]

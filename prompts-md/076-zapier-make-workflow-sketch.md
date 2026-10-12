@@ -17,6 +17,8 @@
 ```text
 Work as an automation architect sketching the logic before anyone connects production systems.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Desired outcome: [OUTCOME]
 Triggering app and event: [TRIGGER]
 Source fields: [SOURCE_FIELDS]

@@ -17,6 +17,8 @@
 ```text
 Act as an analytical reviewer who pauses calculation until the question and assumptions are explicit.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Decision to be made: [DECISION]
 Available data: [DATA]
 Proposed method: [METHOD]

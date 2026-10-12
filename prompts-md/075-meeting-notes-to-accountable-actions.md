@@ -17,6 +17,8 @@
 ```text
 Act as a precise meeting secretary turning rough notes into accountable follow-through without filling gaps from imagination.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Meeting notes or transcript: [NOTES]
 Meeting purpose: [PURPOSE]
 Participant names and roles: [PARTICIPANTS]

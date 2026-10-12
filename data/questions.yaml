@@ -1454,212 +1454,212 @@
     ex: Urdu and English
 "071":
   PURPOSE:
-    q: "What is the spreadsheet for?"
-    ex: "Tracking project costs"
+    q: What is the purpose of this work?
+    ex: Tracking project costs
   SCHEMA_SAMPLE:
-    q: "What columns and sample rows are in the sheet?"
-    ex: "Date, item, and amount"
+    q: What columns and sample rows are in the sheet?
+    ex: Date, item, and amount
   PROBLEMS:
-    q: "What data issues do you already know about?"
-    ex: "Mixed date formats and blanks"
+    q: What data issues do you already know about?
+    ex: Mixed date formats and blanks
   ANALYSIS:
-    q: "What analysis are you planning?"
-    ex: "Monthly cost review"
+    q: What analysis should shape this spreadsheet cleaning blueprint?
+    ex: Monthly cost review
   EXCEL_OR_SHEETS:
-    q: "Which tool are you using?"
-    ex: "Excel or Google Sheets"
+    q: What excel or sheets should shape this spreadsheet cleaning blueprint?
+    ex: Excel or Google Sheets
   LOCALE:
-    q: "What locale or number/date format is used?"
-    ex: "Pakistan and local date style"
+    q: What locale or number/date format is used?
+    ex: Pakistan and local date style
 "072":
   CHART_DATA:
-    q: "What chart or data should be interpreted?"
-    ex: "A sales chart for the last year"
+    q: What chart or data should be interpreted?
+    ex: A sales chart for the last year
   METRIC:
-    q: "What metric is being measured?"
-    ex: "Monthly revenue in PKR"
+    q: What metric should shape this chart to decision narrative?
+    ex: Monthly revenue in PKR
   AUDIENCE_DECISION:
-    q: "Who is the audience and what decision matters?"
-    ex: "A team deciding to expand"
+    q: Who is the audience and what decision matters?
+    ex: A team deciding to expand
   PERIOD:
-    q: "What comparison period should we use?"
-    ex: "This quarter vs last quarter"
+    q: What comparison period should we use?
+    ex: This quarter vs last quarter
   SOURCE_CAVEATS:
-    q: "What source or caveats should we note?"
-    ex: "Past categories changed in July"
+    q: What source or caveats should we note?
+    ex: Past categories changed in July
   ACTION:
-    q: "What action should the evidence support?"
-    ex: "Keep the campaign and review spend"
+    q: What action should the evidence support?
+    ex: Keep the campaign and review spend
   BOUNDARY:
-    q: "What is the decision boundary?"
-    ex: "Within the current budget"
+    q: What boundary should shape this chart to decision narrative?
+    ex: Within the current budget
   UNCERTAINTY:
-    q: "What uncertainty should we monitor?"
-    ex: "Seasonal demand and small sample size"
+    q: What uncertainty should shape this chart to decision narrative?
+    ex: Seasonal demand and small sample size
 "073":
   DECISION:
-    q: "What decision are you making?"
-    ex: "Whether to broaden the launch"
+    q: What decision should shape this assumptions first analysis?
+    ex: Whether to broaden the launch
   DATA:
-    q: "What data is available?"
-    ex: "Recent customer and sales data"
+    q: What data should shape this assumptions first analysis?
+    ex: Recent customer and sales data
   METHOD:
-    q: "What method is being proposed?"
-    ex: "A simple comparison and trend test"
+    q: What method should shape this assumptions first analysis?
+    ex: A simple comparison and trend test
   STAKEHOLDERS:
-    q: "Who is affected by the decision?"
-    ex: "The project team and leadership"
+    q: Who is affected by the decision?
+    ex: The project team and leadership
   CONSTRAINTS:
-    q: "What constraints or limits matter?"
-    ex: "Time, cost, and data quality"
+    q: What constraints should shape this assumptions first analysis?
+    ex: Time, cost, and data quality
   DEADLINE:
-    q: "When do you need the answer?"
-    ex: "Before next Friday"
+    q: When do you need the answer?
+    ex: Before next Friday
 "074":
   ITEMS:
-    q: "What is being tracked?"
-    ex: "Client project tasks"
+    q: What items should shape this notion database system designer?
+    ex: Client project tasks
   USERS:
-    q: "Who will use the database?"
-    ex: "A small team"
+    q: What users should shape this notion database system designer?
+    ex: A small team
   STAGES:
-    q: "What workflow stages matter?"
-    ex: "Backlog, active, review, done"
+    q: What stages should shape this notion database system designer?
+    ex: Backlog, active, review, done
   QUESTIONS:
-    q: "What questions should the database answer?"
-    ex: "Which tasks are blocked?"
+    q: What questions should the database answer?
+    ex: Which tasks are blocked?
   EXISTING:
-    q: "What databases or notes already exist?"
-    ex: "A spreadsheet and email threads"
+    q: What databases or notes already exist?
+    ex: A spreadsheet and email threads
   NEEDS:
-    q: "What reporting or automation is needed?"
-    ex: "Weekly status views"
+    q: What reporting or automation is needed?
+    ex: Weekly status views
   FORMULA_SYNTAX:
-    q: "Do you need a formula syntax example?"
-    ex: "Yes, a simple formula"
+    q: Do you need a formula syntax example?
+    ex: Yes, a simple formula
 "075":
   NOTES:
-    q: "What meeting notes or transcript do you have?"
-    ex: "Rough notes from a team meeting"
+    q: What meeting notes or transcript do you have?
+    ex: Rough notes from a team meeting
   PURPOSE:
-    q: "What was the meeting for?"
-    ex: "Choosing the next project step"
+    q: What is the purpose of this work?
+    ex: Choosing the next project step
   PARTICIPANTS:
-    q: "Who attended the meeting?"
-    ex: "Three team members and a client"
+    q: What participants should shape this meeting notes to accountable actions?
+    ex: Three team members and a client
   CONTEXT:
-    q: "What project context matters?"
-    ex: "Delivery schedule and constraints"
+    q: What setting or situation should shape the work?
+    ex: Delivery schedule and constraints
   CONFIRM:
-    q: "What still needs explicit confirmation?"
-    ex: "The owner or date for a task"
+    q: What confirm should shape this meeting notes to accountable actions?
+    ex: The owner or date for a task
 "076":
   OUTCOME:
-    q: "What should the automation achieve?"
-    ex: "Create a new task when an email arrives"
+    q: What outcome should shape this zapier or make workflow sketch?
+    ex: Create a new task when an email arrives
   TRIGGER:
-    q: "What triggers the workflow?"
-    ex: "A new form submission"
+    q: What trigger should shape this zapier or make workflow sketch?
+    ex: A new form submission
   SOURCE_FIELDS:
-    q: "What source fields matter?"
-    ex: "Email, name, and request type"
+    q: What source fields should shape this zapier or make workflow sketch?
+    ex: Email, name, and request type
   DESTINATIONS:
-    q: "Where should data be sent?"
-    ex: "A spreadsheet and a task board"
+    q: What destinations should shape this zapier or make workflow sketch?
+    ex: A spreadsheet and a task board
   CONDITIONS:
-    q: "What conditions or approvals apply?"
-    ex: "Only confirmed requests"
+    q: What conditions should shape this zapier or make workflow sketch?
+    ex: Only confirmed requests
   VOLUME:
-    q: "How much volume or urgency is expected?"
-    ex: "A few per day"
+    q: How much volume or urgency is expected?
+    ex: A few per day
   SENSITIVE_DATA:
-    q: "What sensitive data needs protection?"
-    ex: "Client contact and billing details"
+    q: What sensitive data should shape this zapier or make workflow sketch?
+    ex: Client contact and billing details
 "077":
   OBJECTIVE:
-    q: "What business objective should this KPI support?"
-    ex: "Improve return visits"
+    q: What business objective should this KPI support?
+    ex: Improve return visits
   KPIS:
-    q: "What KPI names are being considered?"
-    ex: "Weekly active users"
+    q: What KPI names are being considered?
+    ex: Weekly active users
   SYSTEMS:
-    q: "What systems provide the data?"
-    ex: "Google Analytics and CRM"
+    q: What systems should shape this kpi definition card maker?
+    ex: Google Analytics and CRM
   AUDIENCE:
-    q: "Who will read the KPI?"
-    ex: "The project lead"
+    q: Who will see or use this output?
+    ex: The project lead
   FREQUENCY:
-    q: "How often is it reviewed?"
-    ex: "Every week"
+    q: What frequency should shape this kpi definition card maker?
+    ex: Every week
   DISPUTES:
-    q: "What disputes or confusion already exist?"
-    ex: "Whether a visit counts as active"
+    q: What disputes or confusion already exist?
+    ex: Whether a visit counts as active
 "078":
   RESEARCH_OBJECTIVE:
-    q: "What is the survey research objective?"
-    ex: "Understand student study habits"
+    q: What is the survey research objective?
+    ex: Understand student study habits
   POPULATION:
-    q: "Who is the target population?"
-    ex: "Undergraduate students"
+    q: What population should shape this unbiased survey designer?
+    ex: Undergraduate students
   SAMPLING:
-    q: "How will people be recruited?"
-    ex: "A class email and QR code"
+    q: What sampling should shape this unbiased survey designer?
+    ex: A class email and QR code
   DECISIONS:
-    q: "What decisions will the results inform?"
-    ex: "Which support format to offer"
+    q: What decisions will the results inform?
+    ex: Which support format to offer
   TOPICS:
-    q: "What topics need to be measured?"
-    ex: "Study time, stress, and support"
+    q: What topics need to be measured?
+    ex: Study time, stress, and support
   LANGUAGES_ACCESS:
-    q: "What languages or accessibility needs apply?"
-    ex: "Urdu and mobile-friendly design"
+    q: What languages or accessibility needs apply?
+    ex: Urdu and mobile-friendly design
   TIME:
-    q: "What maximum completion time should it fit?"
-    ex: "Five minutes"
+    q: What maximum completion time should it fit?
+    ex: Five minutes
   SENSITIVE:
-    q: "What sensitive topics may come up?"
-    ex: "Mental health and finances"
+    q: What sensitive topics may come up?
+    ex: Mental health and finances
 "079":
   EXCEL_OR_SHEETS:
-    q: "Which spreadsheet tool are you using?"
-    ex: "Excel"
+    q: Which spreadsheet tool are you using?
+    ex: Excel
   SCHEMA:
-    q: "What are the column names or ranges?"
-    ex: "Date, amount, and status"
+    q: What are the column names or ranges?
+    ex: Date, amount, and status
   SAMPLES:
-    q: "What sample rows are available?"
-    ex: "A few rows with known problems"
+    q: What samples should shape this spreadsheet error check formulas?
+    ex: A few rows with known problems
   RULES:
-    q: "What business rules should the checks use?"
-    ex: "No blank date and valid status values"
+    q: What business rules should the checks use?
+    ex: No blank date and valid status values
   KNOWN_ERRORS:
-    q: "What errors are already known?"
-    ex: "Mixed date formats and duplicate IDs"
+    q: What known errors should shape this spreadsheet error check formulas?
+    ex: Mixed date formats and duplicate IDs
   COLUMN:
-    q: "Which column or placeholder needs a formula?"
-    ex: "The cost column"
+    q: Which column or placeholder needs a formula?
+    ex: The cost column
   LOCALE:
-    q: "What locale or separator format should be used?"
-    ex: "Pakistan date and number settings"
+    q: What locale or separator format should be used?
+    ex: Pakistan date and number settings
 "080":
   USES:
-    q: "What will the knowledge base be used for?"
-    ex: "Study notes and project memory"
+    q: What will the knowledge base be used for?
+    ex: Study notes and project memory
   CURRENT_SYSTEM:
-    q: "What system or notes do you already use?"
-    ex: "A messy folder of notes"
+    q: What system or notes do you already use?
+    ex: A messy folder of notes
   INFORMATION:
-    q: "What kinds of information are captured?"
-    ex: "Ideas, readings, and meeting notes"
+    q: What kinds of information are captured?
+    ex: Ideas, readings, and meeting notes
   TIME:
-    q: "How much weekly maintenance time is available?"
-    ex: "Fifteen minutes"
+    q: How much weekly maintenance time is available?
+    ex: Fifteen minutes
   PRIVACY:
-    q: "What privacy or offline needs matter?"
-    ex: "Local-only storage for sensitive notes"
+    q: What privacy or offline needs matter?
+    ex: Local-only storage for sensitive notes
   NOTION_OR_OBSIDIAN:
-    q: "Which tool do you prefer?"
-    ex: "Notion or Obsidian"
+    q: What notion or obsidian should shape this personal knowledge base architecture?
+    ex: Notion or Obsidian
 "081":
   SELECTED_TEXT:
     q: "What text should be rewritten?"

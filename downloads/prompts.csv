@@ -1095,6 +1095,8 @@ Score the angles for distinctiveness, credibility, affordability, and fit. Selec
 "
 071,spreadsheet-cleaning-blueprint,Spreadsheet Cleaning Blueprint,data-productivity,Beginner,Use to plan safe cleaning before changing a messy spreadsheet.,"A staged cleaning plan with rules, checks, and rollback safeguards.",Never clean the only copy; preserve a read-only raw tab with an import date.,"spreadsheet, data-cleaning, quality","Excel/Sheets: Provides filters, formulas, validation, and reproducible cleaning steps.; ChatGPT: Helps diagnose column issues and draft transformation logic.",,"Work as a cautious data steward planning a spreadsheet cleanup that can be audited and reversed.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 File purpose: [PURPOSE]
 Columns and sample rows: [SCHEMA_SAMPLE]
 Known problems: [PROBLEMS]
@@ -1110,6 +1112,8 @@ Define reconciliation checks: row count, unique key count, totals before/after, 
 "
 072,chart-to-decision-narrative,Chart to Decision Narrative,data-productivity,Beginner,Use to explain a chart in plain language without overstating it.,"A chart narrative with takeaway, caveats, and decision implications.",Read the narrative beside the chart and verify every directional claim.,"charts, data-storytelling, reporting","ChatGPT: Synthesizes supplied chart details into an audience-aware narrative.; Excel/Sheets: Allows direct verification of values, labels, and chart construction.",,"You are a data interpreter writing the honest story of a chart for a non-specialist decision-maker.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Chart or data: [CHART_DATA]
 Metric definition: [METRIC]
 Audience and decision: [AUDIENCE_DECISION]
@@ -1123,6 +1127,8 @@ Write three narrative layers: a 12-word chart headline, a 60-word executive expl
 Add two annotations that should appear on the chart, one question the audience is likely to ask, and the precise additional data needed to answer it. Conclude with a decision statement formatted as “This evidence supports [ACTION] within [BOUNDARY], while we monitor [UNCERTAINTY].” Do not infer causation from timing alone.
 "
 073,assumptions-first-analysis,Assumptions First Analysis,data-productivity,Beginner,"Use before quantitative analysis to expose definitions, assumptions, and decision thresholds.","An analysis contract with assumptions, tests, and stop conditions.",Ask the decision owner to approve definitions before calculating results.,"analysis, assumptions, decision-science","Claude: Handles complex analytical context and tracks assumptions across a long brief.; ChatGPT: Structures decision questions, sensitivity tests, and evidence gaps.",,"Act as an analytical reviewer who pauses calculation until the question and assumptions are explicit.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Decision to be made: [DECISION]
 Available data: [DATA]
@@ -1139,6 +1145,8 @@ Propose the smallest defensible analysis sequence, including baseline, segmentat
 "
 074,notion-database-system-designer,Notion Database System Designer,data-productivity,Beginner,Use to design a practical Notion database before building views and automations.,"A build-ready Notion schema with views, templates, and governance.",Start with one source-of-truth database and add relations only for repeated entities.,"notion, database, workflow","Notion: Supports linked databases, templates, filtered views, and team workflows.; ChatGPT: Translates workflow requirements into a clear database specification.",,"Take the role of a Notion systems designer building the smallest database structure that supports the real workflow.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 What is being tracked: [ITEMS]
 Users and roles: [USERS]
 Workflow stages: [STAGES]
@@ -1154,6 +1162,8 @@ Define lifecycle rules for creation, status changes, stale records, permissions,
 "
 075,meeting-notes-to-accountable-actions,Meeting Notes to Accountable Actions,data-productivity,Beginner,"Use to convert messy meeting notes into decisions, tasks, and open questions.","A decision log, action register, and concise follow-up message.",Send the action list within the same day while context is fresh.,"meetings, tasks, accountability","Notion: Stores meeting records and links actions to team workflows.; ChatGPT: Separates decisions, actions, and unresolved issues from raw notes.",,"Act as a precise meeting secretary turning rough notes into accountable follow-through without filling gaps from imagination.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Meeting notes or transcript: [NOTES]
 Meeting purpose: [PURPOSE]
 Participant names and roles: [PARTICIPANTS]
@@ -1166,6 +1176,8 @@ Detect conflicting statements, tentative language, and decisions that appear to 
 Produce a compact decision log followed by the action register in priority order. Add an “awaiting confirmation” section and a parking-lot list. Finish with a neutral follow-up message that summarizes the top decisions, asks owners to confirm actions, and names the next checkpoint. Preserve sensitive material only if it is necessary for execution.
 "
 076,zapier-make-workflow-sketch,Zapier or Make Workflow Sketch,data-productivity,Beginner,Use to map an automation before connecting live accounts or customer data.,"A workflow map with fields, branches, safeguards, and test cases.",Test with fake records before granting access to production accounts.,"automation, zapier, make","Zapier/Make: Connects supported apps through triggers, actions, filters, and branching.; Notion: Documents the automation specification, test cases, and ownership.",,"Work as an automation architect sketching the logic before anyone connects production systems.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Desired outcome: [OUTCOME]
 Triggering app and event: [TRIGGER]
@@ -1183,6 +1195,8 @@ Add safeguards for least-privilege access, test data, idempotency, duplicate pre
 "
 077,kpi-definition-card-maker,KPI Definition Card Maker,data-productivity,Beginner,Use to define KPIs consistently before building a dashboard.,Standard KPI cards and a metric governance checklist.,Calculate one example by hand with the metric owner before publishing.,"kpi, metrics, dashboard",Excel/Sheets: Documents metric formulas and validates sample calculations transparently.; Notion: Maintains a shared KPI dictionary with owners and revision history.,,"You are a measurement lead defining KPIs so two analysts calculate the same answer from the same data.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Business objective: [OBJECTIVE]
 Proposed KPI names: [KPIS]
 Available systems: [SYSTEMS]
@@ -1197,6 +1211,8 @@ Include a worked example using clearly labelled sample numbers, then test edge c
 Compare any KPIs that may conflict or encourage harmful gaming. Recommend one balancing metric where needed. Finish with a compact KPI dictionary, a change-control rule for revised definitions, and five dashboard footnotes users may need. Do not choose targets without evidence or present an attractive number as useful if it does not inform action.
 "
 078,unbiased-survey-designer,Unbiased Survey Designer,data-productivity,Beginner,Use to design a short survey that measures one clear research objective.,A field-ready survey instrument with rationale and pilot checks.,Pilot with five people and ask what they thought each question meant.,"survey, research, questionnaire",Google Forms: Builds accessible surveys with common question types and branching.; Microsoft Forms: Supports straightforward organizational survey collection and export.,,"Act as a survey methodologist designing the shortest instrument that can answer [RESEARCH_OBJECTIVE].
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Target population: [POPULATION]
 Sampling and distribution plan: [SAMPLING]
@@ -1214,6 +1230,8 @@ Annotate each question privately with purpose, variable type, and planned analys
 "
 079,spreadsheet-error-check-formulas,Spreadsheet Error Check Formulas,data-productivity,Beginner,Use to design formula-based checks that flag likely spreadsheet errors.,A formula check library with test cases and review guidance.,Keep every flag column visible during testing and investigate false positives.,"formulas, spreadsheet, error-checking","Excel/Sheets: Supports transparent formulas, validation rules, and conditional formatting.; ChatGPT: Drafts formula patterns from a supplied schema and business rules.",,"Work as a spreadsheet quality reviewer proposing checks that flag anomalies without silently changing data.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Tool and version: [EXCEL_OR_SHEETS]
 Column letters/names: [SCHEMA]
 Sample rows: [SAMPLES]
@@ -1228,6 +1246,8 @@ For each check, give a plain-language rule, formula using the exact supplied col
 Add a summary section that counts each error type and highlights rows through conditional formatting without hiding source values. Distinguish hard errors from warnings. Recommend testing formulas on a copy, locking reference ranges where needed, and manually verifying a sample. If schema details are missing, provide formula pseudocode with [COLUMN] placeholders instead of guessing.
 "
 080,personal-knowledge-base-architecture,Personal Knowledge Base Architecture,data-productivity,Beginner,Use to create a simple knowledge system you can maintain each week.,A maintainable knowledge-base structure with templates and routines.,"Design around how you will retrieve notes, then limit capture fields.","knowledge-management, notes, productivity","Notion: Combines notes, linked databases, templates, and searchable project context.; Obsidian: Supports local markdown notes and lightweight linking between ideas.",,"Act as a personal knowledge systems coach designing for retrieval, reflection, and action—not endless note collecting.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Main uses: [USES]
 Current tools and notes: [CURRENT_SYSTEM]
