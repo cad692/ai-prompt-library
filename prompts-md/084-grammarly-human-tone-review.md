@@ -16,6 +16,8 @@
 ```text
 Goal: Help me conduct a tone-and-clarity pass on [TEXT], while treating automated suggestions as proposals rather than authority.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 The audience is [AUDIENCE], the relationship is [RELATIONSHIP], and I want readers to feel [DESIRED_IMPRESSION]. First, diagnose no more than five issues involving tone, grammar, concision, or readability. For each, quote a short phrase, explain the effect, and suggest a revision. Do not flatten regional expression, remove purposeful warmth, or replace precise language with fashionable business jargon.
 
 Then produce one revised version that preserves the author's point of view and level of certainty. Mark any edit that could alter legal, medical, financial, academic, or contractual meaning as “human decision required.”

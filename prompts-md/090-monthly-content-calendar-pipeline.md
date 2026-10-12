@@ -16,6 +16,8 @@
 ```text
 Goal: Engineer a content-calendar pipeline for [BRAND] that produces [CHANNELS] content for [AUDIENCE] during [MONTH].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Start with an insight intake from [CUSTOMER_QUESTIONS], performance data, seasonal moments, and business priorities. Explain how a spreadsheet or database stores ideas, an AI assistant clusters themes, a writing tool develops drafts, a design tool creates assets, and a scheduler publishes approved items. Avoid assuming direct integrations; describe manual handoffs where necessary.
 
 Create a weekly cadence from research through retrospective. Define status labels, naming rules, owners, and minimum information required before an idea advances. Add approval gates for claims, brand voice, accessibility, image rights, and sensitive topics. AI may suggest language, but [APPROVER] owns final publication.

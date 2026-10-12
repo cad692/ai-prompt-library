@@ -1662,176 +1662,176 @@
     ex: Notion or Obsidian
 "081":
   SELECTED_TEXT:
-    q: "What text should be rewritten?"
-    ex: "A paragraph from a draft"
+    q: What selected text should shape this word rewrite with guardrails?
+    ex: A paragraph from a draft
   DOCUMENT_CONTEXT:
-    q: "What document context matters?"
-    ex: "The surrounding section and audience"
+    q: What local setting or context should examples use?
+    ex: The surrounding section and audience
   AUDIENCE:
-    q: "Who is the intended reader?"
-    ex: "A department lead"
+    q: Who will see or use this output?
+    ex: A department lead
   PURPOSE:
-    q: "What is the writing purpose?"
-    ex: "Explain a policy change clearly"
+    q: What is the purpose of this work?
+    ex: Explain a policy change clearly
   TONE:
-    q: "What tone should the rewrite keep?"
-    ex: "Clear and professional"
+    q: What tone should the final output use?
+    ex: Clear and professional
   LANGUAGE_PREFERENCE:
-    q: "What language preference should we follow?"
-    ex: "Pakistani English with formal wording"
+    q: What language preference should we follow?
+    ex: Pakistani English with formal wording
 "082":
   BUSINESS_QUESTION:
-    q: "What business question are you answering?"
-    ex: "Which region is growing fastest?"
+    q: What business question are you answering?
+    ex: Which region is growing fastest?
   TABLE_NAME:
-    q: "What table should the analysis use?"
-    ex: "Sales_Data"
+    q: What table should the analysis use?
+    ex: Sales_Data
   COLUMN_DESCRIPTIONS:
-    q: "What columns are relevant to the analysis?"
-    ex: "Date, region, and revenue"
+    q: What columns are relevant to the analysis?
+    ex: Date, region, and revenue
   DATE_RANGE:
-    q: "What date range should be used?"
-    ex: "This quarter"
+    q: What date range should be used?
+    ex: This quarter
   SEGMENTS:
-    q: "What segment breakdown matters?"
-    ex: "By region and channel"
+    q: What segments should shape this excel analysis question designer?
+    ex: By region and channel
 "083":
   EMAIL_THREAD:
-    q: "What email thread should be used as context?"
-    ex: "The latest client exchange"
+    q: What email thread should be used as context?
+    ex: The latest client exchange
   DESIRED_OUTCOME:
-    q: "What outcome do you want from the reply?"
-    ex: "Confirm the next step"
+    q: What outcome do you want from the reply?
+    ex: Confirm the next step
   TONE:
-    q: "What tone should the email use?"
-    ex: "Professional and courteous"
+    q: What tone should the final output use?
+    ex: Professional and courteous
   RELATIONSHIP:
-    q: "What is the relationship with the recipient?"
-    ex: "A client or partner"
+    q: What is the relationship with the recipient?
+    ex: A client or partner
   LANGUAGE_VARIANT:
-    q: "Which language variant should it use?"
-    ex: "English for a professional audience"
+    q: Which language variant should it use?
+    ex: English for a professional audience
   LENGTH:
-    q: "How long should the reply be?"
-    ex: "About 120 words"
+    q: How long should the reply be?
+    ex: About 120 words
   ATTACHMENT_STATUS:
-    q: "Is the attachment confirmed?"
-    ex: "Yes, the file is ready"
+    q: What attachment status should shape this gmail context-aware draft?
+    ex: Yes, the file is ready
 "084":
   TEXT:
-    q: "What text needs a tone review?"
-    ex: "A draft email or memo"
+    q: What text needs a tone review?
+    ex: A draft email or memo
   AUDIENCE:
-    q: "Who is the audience for this text?"
-    ex: "A senior manager"
+    q: Who is the audience for this text?
+    ex: A senior manager
   RELATIONSHIP:
-    q: "What is the relationship with the reader?"
-    ex: "A professional colleague"
+    q: What is the relationship with the reader?
+    ex: A professional colleague
   DESIRED_IMPRESSION:
-    q: "What impression should the final writing create?"
-    ex: "Trust and clarity"
+    q: What impression should the final writing create?
+    ex: Trust and clarity
 "085":
   PAGE_URL:
-    q: "What is the page URL?"
-    ex: "https://example.com/report"
+    q: What page url should shape this browser sidebar research capture card?
+    ex: https://example.com/report
   ACCESS_DATE:
-    q: "When did you access the page?"
-    ex: "2026-10-12"
+    q: When did you access the page?
+    ex: '2026-10-12'
   RESEARCH_QUESTION:
-    q: "What question is this source meant to answer?"
-    ex: "How fast is the market growing?"
+    q: What question is this source meant to answer?
+    ex: How fast is the market growing?
   PROJECT_NAME:
-    q: "What project or file should this be named under?"
-    ex: "Market Scan"
+    q: What project or file should this be named under?
+    ex: Market Scan
 "086":
   LANGUAGE:
-    q: "What language should the function be written in?"
-    ex: "Python"
+    q: What language should the function be written in?
+    ex: Python
   FUNCTION_NAME:
-    q: "What is the function called?"
-    ex: "parse_customer_response"
+    q: What function name should shape this github copilot function scaffold?
+    ex: parse_customer_response
   INPUTS:
-    q: "What inputs does the function take?"
-    ex: "A text payload and a user ID"
+    q: What inputs does the function take?
+    ex: A text payload and a user ID
   RETURN_TYPE:
-    q: "What should the function return?"
-    ex: "A parsed object"
+    q: What return type should shape this github copilot function scaffold?
+    ex: A parsed object
   BEHAVIOUR:
-    q: "What behavior must the function satisfy?"
-    ex: "Return errors for invalid input"
+    q: What behavior must the function satisfy?
+    ex: Return errors for invalid input
   REFERENCE_FILE_OR_SNIPPET:
-    q: "What repository file or snippet should guide the style?"
-    ex: "A similar helper function"
+    q: What repository file or snippet should guide the style?
+    ex: A similar helper function
   EDGE_CASE:
-    q: "What edge case matters most?"
-    ex: "Empty input or null values"
+    q: What edge case should shape this github copilot function scaffold?
+    ex: Empty input or null values
 "087":
   REFACTOR_GOAL:
-    q: "What is the refactor trying to improve?"
-    ex: "Simplify a shared parser"
+    q: What is the refactor trying to improve?
+    ex: Simplify a shared parser
   ENTRY_FILES:
-    q: "Which files should be inspected first?"
-    ex: "The parser and its tests"
+    q: Which files should be inspected first?
+    ex: The parser and its tests
   EXPECTED_BEHAVIOUR:
-    q: "What behavior must remain intact?"
-    ex: "Existing API responses"
+    q: What expected behaviour should shape this cursor multi-file refactor brief?
+    ex: Existing API responses
   TEST_COMMAND:
-    q: "What test command should verify the fix?"
-    ex: "pytest -q"
+    q: What test command should verify the fix?
+    ex: pytest -q
   EXCLUDED_PATHS:
-    q: "Which files or folders must stay out of scope?"
-    ex: "Generated assets and lockfiles"
+    q: Which files or folders must stay out of scope?
+    ex: Generated assets and lockfiles
 "088":
   RAW_MEETING_NOTES:
-    q: "What raw notes should be turned into a record?"
-    ex: "A messy meeting transcript"
+    q: What raw notes should be turned into a record?
+    ex: A messy meeting transcript
   MEETING_NAME:
-    q: "What is the meeting called?"
-    ex: "Weekly planning call"
+    q: What meeting name should shape this notion meeting notes curator?
+    ex: Weekly planning call
   DATE:
-    q: "When did the meeting happen?"
-    ex: "2026-10-05"
+    q: What date should shape this notion meeting notes curator?
+    ex: '2026-10-05'
   PARTICIPANTS:
-    q: "Who attended the meeting?"
-    ex: "The core team and a client"
+    q: What participants should shape this notion meeting notes curator?
+    ex: The core team and a client
   CONFIRMATION_DATE:
-    q: "When should corrections be confirmed?"
-    ex: "By Friday"
+    q: What confirmation date should shape this notion meeting notes curator?
+    ex: By Friday
 "089":
   SUBJECT:
-    q: "What subject is the study pack for?"
-    ex: "Economics"
+    q: What subject is the study pack for?
+    ex: Economics
   LEARNER_LEVEL:
-    q: "What learner level is this for?"
-    ex: "Undergraduate students"
+    q: What learner level is this for?
+    ex: Undergraduate students
   SOURCE_MATERIALS:
-    q: "What source materials are available?"
-    ex: "Lecture notes and textbook chapters"
+    q: What source materials should shape this study pack production pipeline?
+    ex: Lecture notes and textbook chapters
   DEADLINE:
-    q: "What deadline matters for the pack?"
-    ex: "In two weeks"
+    q: What deadline matters for the pack?
+    ex: In two weeks
   AVAILABLE_TOOLS:
-    q: "What tools are allowed in the workflow?"
-    ex: "ChatGPT, flashcards, and Docs"
+    q: What tools are allowed in the workflow?
+    ex: ChatGPT, flashcards, and Docs
 "090":
   BRAND:
-    q: "What brand is involved?"
-    ex: "A small education brand"
+    q: What brand should shape this monthly content calendar pipeline?
+    ex: A small education brand
   AUDIENCE:
-    q: "Who is the audience for the content?"
-    ex: "Young professionals"
+    q: Who is the audience for the content?
+    ex: Young professionals
   MONTH:
-    q: "What month is this scheduled for?"
-    ex: "November"
+    q: What month is this scheduled for?
+    ex: November
   CHANNELS:
-    q: "Which channels will publish the content?"
-    ex: "LinkedIn and email"
+    q: Which channels will publish the content?
+    ex: LinkedIn and email
   CUSTOMER_QUESTIONS:
-    q: "What customer questions should inform the plan?"
-    ex: "What support do people need most?"
+    q: What customer questions should inform the plan?
+    ex: What support do people need most?
   APPROVER:
-    q: "Who approves final publication?"
-    ex: "The marketing lead"
+    q: What approver should shape this monthly content calendar pipeline?
+    ex: The marketing lead
 "091":
   SERVICE:
     q: "What service are you delivering?"

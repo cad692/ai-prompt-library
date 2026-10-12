@@ -16,6 +16,8 @@
 ```text
 Goal: Curate [RAW_MEETING_NOTES] into a reliable Notion meeting record that distinguishes what happened from what remains uncertain.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Use the meeting name [MEETING_NAME], date [DATE], and participant list [PARTICIPANTS]. Begin with a three-line overview covering purpose, main outcome, and current status. Then sort the notes into: decisions confirmed, action items, open questions, discussion highlights, and parking-lot topics.
 
 Format each action as a Notion-friendly checklist containing one deliverable, one owner, and one deadline. If any element is missing, use “unassigned” or “date not agreed”; never infer responsibility from who spoke. Mark contradictory notes with a ⚠ review label and quote both versions briefly.

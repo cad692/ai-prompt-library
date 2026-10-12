@@ -4711,7 +4711,7 @@ prompts:
     weeks and warning signs that the structure has become too complex.
 
     '
-- id: 081
+- id: '081'
   slug: word-rewrite-with-guardrails
   title: Word Rewrite With Guardrails
   category: addins
@@ -4719,7 +4719,8 @@ prompts:
   usage: Rewrite a Word document while preserving meaning, facts, and the writer's natural voice.
   use_case: Use Copilot inside Word to improve a draft without surrendering editorial control.
   preview: 'Role: You are my careful in-document editor; your goal is to improve this Word draft without
-    changing its facts or personality. Work only from [SELECTED_TEXT] and, where relevant, [DOCUMENT_CONTEXT]...'
+    changing its facts or personality. If any personalization field is blank or still shows brackets,
+    continue...'
   best_tools:
   - tool: Microsoft Copilot
     reason: Works directly with selected text and surrounding Word document context.
@@ -4730,9 +4731,13 @@ prompts:
   - rewriting
   - editing
   - addin
-  next_id: null
+  next_id:
   prompt: 'Role: You are my careful in-document editor; your goal is to improve this Word draft without
     changing its facts or personality.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Work only from [SELECTED_TEXT] and, where relevant, [DOCUMENT_CONTEXT]. The intended reader is [AUDIENCE],
@@ -4759,16 +4764,16 @@ prompts:
     with the original meaning, retain the meaning and note the conflict.
 
     '
-- id: 082
+- id: '082'
   slug: excel-analysis-question-designer
   title: Excel Analysis Question Designer
   category: addins
   difficulty: Intermediate
   usage: Ask Copilot in Excel for a focused, auditable analysis of a selected table.
-  use_case: Turn a vague business question into a precise Excel analysis request with checks and visible
-    assumptions.
+  use_case: Turn a vague business question into a precise Excel analysis request with checks and 
+    visible assumptions.
   preview: 'Goal: Act as an Excel analysis partner and answer [BUSINESS_QUESTION] using only the table
-    named [TABLE_NAME]. Begin by mapping the relevant columns: [COLUMN_DESCRIPTIONS]. State which field...'
+    named [TABLE_NAME]. If any personalization field is blank or still shows brackets, continue with clearly...'
   best_tools:
   - tool: Microsoft Copilot
     reason: Can analyze structured workbook tables and suggest formulas or summaries in context.
@@ -4779,9 +4784,13 @@ prompts:
   - analysis
   - formulas
   - addin
-  next_id: null
+  next_id:
   prompt: 'Goal: Act as an Excel analysis partner and answer [BUSINESS_QUESTION] using only the table
     named [TABLE_NAME].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Begin by mapping the relevant columns: [COLUMN_DESCRIPTIONS]. State which field represents time, category,
@@ -4812,16 +4821,16 @@ prompts:
     excluded values.
 
     '
-- id: 083
+- id: '083'
   slug: gmail-context-aware-draft
   title: Gmail Context-Aware Draft
   category: addins
   difficulty: Beginner
   usage: Draft a clear Gmail reply grounded in the thread and the sender's actual request.
-  use_case: Use Gemini in Gmail to prepare a reply while keeping commitments and sensitive details under
-    human control.
-  preview: 'Role: Serve as my Gmail correspondence assistant; produce a reply that resolves the thread''s
-    real question without inventing context. Read [EMAIL_THREAD] and identify the sender''s request, any...'
+  use_case: Use Gemini in Gmail to prepare a reply while keeping commitments and sensitive details 
+    under human control.
+  preview: "Role: Serve as my Gmail correspondence assistant; produce a reply that resolves the thread's
+    real question without inventing context. If any personalization field is blank or still shows brackets..."
   best_tools:
   - tool: Gemini in Gmail
     reason: Uses the open email thread as context for drafting and summarising.
@@ -4832,9 +4841,13 @@ prompts:
   - email
   - drafting
   - addin
-  next_id: null
+  next_id:
   prompt: 'Role: Serve as my Gmail correspondence assistant; produce a reply that resolves the thread''s
     real question without inventing context.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Read [EMAIL_THREAD] and identify the sender''s request, any deadline, unanswered questions, and commitments
@@ -4863,17 +4876,16 @@ prompts:
     this finds you well” unless requested.
 
     '
-- id: 084
+- id: '084'
   slug: grammarly-human-tone-review
   title: Grammarly Plus Human Tone Review
   category: addins
   difficulty: Beginner
   usage: Run a Grammarly tone pass, then complete a disciplined human editorial check.
-  use_case: Balance automated language suggestions with a human review for voice, accuracy, and cultural
-    fit.
+  use_case: Balance automated language suggestions with a human review for voice, accuracy, and 
+    cultural fit.
   preview: 'Goal: Help me conduct a tone-and-clarity pass on [TEXT], while treating automated suggestions
-    as proposals rather than authority. The audience is [AUDIENCE], the relationship is [RELATIONSHIP],
-    and I...'
+    as proposals rather than authority. If any personalization field is blank or still shows brackets...'
   best_tools:
   - tool: Grammarly
     reason: Highlights grammar, clarity, and tone signals directly in the writing surface.
@@ -4884,9 +4896,13 @@ prompts:
   - tone
   - human-review
   - addin
-  next_id: null
+  next_id:
   prompt: 'Goal: Help me conduct a tone-and-clarity pass on [TEXT], while treating automated suggestions
     as proposals rather than authority.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     The audience is [AUDIENCE], the relationship is [RELATIONSHIP], and I want readers to feel [DESIRED_IMPRESSION].
@@ -4921,16 +4937,16 @@ prompts:
     applied here.
 
     '
-- id: 085
+- id: '085'
   slug: sidebar-research-capture-card
   title: Browser Sidebar Research Capture Card
   category: addins
   difficulty: Intermediate
-  usage: Capture a web source into reusable evidence notes without confusing claims with conclusions.
+  usage: Capture a web source into reusable evidence notes without confusing claims with 
+    conclusions.
   use_case: Use a browser AI sidebar to turn the current page into a traceable research card.
   preview: 'Role: You are an evidence-capture librarian working from the currently open webpage; create
-    a source card, not a generic summary. Record the page title, publisher, author if visible, publication
-    or...'
+    a source card, not a generic summary. If any personalization field is blank or still shows brackets...'
   best_tools:
   - tool: Browser AI sidebar
     reason: Can summarise the open page while keeping its URL and visible context nearby.
@@ -4941,9 +4957,13 @@ prompts:
   - research
   - evidence
   - addin
-  next_id: null
+  next_id:
   prompt: 'Role: You are an evidence-capture librarian working from the currently open webpage; create
     a source card, not a generic summary.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Record the page title, publisher, author if visible, publication or update date, URL [PAGE_URL], and
@@ -4974,7 +4994,7 @@ prompts:
     note based on transparent criteria, not a definitive truth score.
 
     '
-- id: 086
+- id: '086'
   slug: github-copilot-function-scaffold
   title: GitHub Copilot Function Scaffold
   category: addins
@@ -4982,8 +5002,7 @@ prompts:
   usage: Generate a function stub with explicit contracts, edge cases, and test placeholders.
   use_case: Create a reviewable starting point in the editor before implementing business logic.
   preview: 'Goal: Scaffold a [LANGUAGE] function named [FUNCTION_NAME] that fits this repository without
-    pretending the implementation is complete. Inputs are [INPUTS], the return contract is [RETURN_TYPE],
-    and...'
+    pretending the implementation is complete. If any personalization field is blank or still shows brackets...'
   best_tools:
   - tool: GitHub Copilot
     reason: Uses nearby code, types, and conventions to propose an in-editor scaffold.
@@ -4994,9 +5013,13 @@ prompts:
   - coding
   - function
   - addin
-  next_id: null
+  next_id:
   prompt: 'Goal: Scaffold a [LANGUAGE] function named [FUNCTION_NAME] that fits this repository without
     pretending the implementation is complete.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Inputs are [INPUTS], the return contract is [RETURN_TYPE], and the function must satisfy [BEHAVIOUR].
@@ -5026,15 +5049,16 @@ prompts:
     any ambiguity that a maintainer must resolve before implementation.
 
     '
-- id: 087
+- id: '087'
   slug: cursor-cross-file-refactor-brief
   title: Cursor Multi-File Refactor Brief
   category: addins
   difficulty: Advanced
   usage: Ask Cursor to refactor several files while preserving public behavior and limiting scope.
-  use_case: Frame a repository-aware refactor with boundaries, checkpoints, and verification requirements.
+  use_case: Frame a repository-aware refactor with boundaries, checkpoints, and verification 
+    requirements.
   preview: 'Role: Act as a repository maintainer performing a bounded refactor; preserve observable behaviour
-    while improving [REFACTOR_GOAL]. Inspect [ENTRY_FILES] and trace only the imports, tests, and...'
+    while improving [REFACTOR_GOAL]. If any personalization field is blank or still shows brackets...'
   best_tools:
   - tool: Cursor
     reason: Can inspect related files and apply coordinated edits across a codebase.
@@ -5045,9 +5069,13 @@ prompts:
   - refactor
   - multi-file
   - addin
-  next_id: null
+  next_id:
   prompt: 'Role: Act as a repository maintainer performing a bounded refactor; preserve observable behaviour
     while improving [REFACTOR_GOAL].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Inspect [ENTRY_FILES] and trace only the imports, tests, and configuration needed to understand the
@@ -5079,15 +5107,16 @@ prompts:
     Never claim a check passed unless it ran. Preserve user changes already present in the working tree.
 
     '
-- id: 088
+- id: '088'
   slug: notion-meeting-notes-curator
   title: Notion Meeting Notes Curator
   category: addins
   difficulty: Beginner
-  usage: Convert rough Notion meeting notes into decisions, actions, questions, and a concise record.
+  usage: Convert rough Notion meeting notes into decisions, actions, questions, and a concise 
+    record.
   use_case: Clean up fragmented notes without turning uncertain discussion into confirmed decisions.
   preview: 'Goal: Curate [RAW_MEETING_NOTES] into a reliable Notion meeting record that distinguishes
-    what happened from what remains uncertain. Use the meeting name [MEETING_NAME], date [DATE], and participant...'
+    what happened from what remains uncertain. If any personalization field is blank or still shows brackets...'
   best_tools:
   - tool: Notion AI
     reason: Can restructure notes directly within a shared Notion workspace page.
@@ -5098,9 +5127,13 @@ prompts:
   - meetings
   - notes
   - addin
-  next_id: null
+  next_id:
   prompt: 'Goal: Curate [RAW_MEETING_NOTES] into a reliable Notion meeting record that distinguishes what
     happened from what remains uncertain.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Use the meeting name [MEETING_NAME], date [DATE], and participant list [PARTICIPANTS]. Begin with
@@ -5122,16 +5155,16 @@ prompts:
     by [CONFIRMATION_DATE]. Do not add absent commitments or portray proposals as approvals.
 
     '
-- id: 089
+- id: '089'
   slug: study-pack-production-pipeline
   title: Study Pack Production Pipeline
   category: workflows
   difficulty: Intermediate
   usage: Design a multi-tool pipeline that turns learning material into an ethical study pack.
-  use_case: Plan how to collect, simplify, practise, and verify course content across complementary AI
-    tools.
+  use_case: Plan how to collect, simplify, practise, and verify course content across complementary 
+    AI tools.
   preview: 'Role: You are a learning-workflow designer; map a responsible study-pack pipeline for [SUBJECT]
-    and [LEARNER_LEVEL]. The available inputs are [SOURCE_MATERIALS], the deadline is [DEADLINE], and...'
+    and [LEARNER_LEVEL]. If any personalization field is blank or still shows brackets, continue with...'
   best_tools:
   - tool: ChatGPT
     reason: Coordinates staged transformations and produces clear reusable instructions.
@@ -5142,9 +5175,13 @@ prompts:
   - studying
   - pipeline
   - learning
-  next_id: null
+  next_id:
   prompt: 'Role: You are a learning-workflow designer; map a responsible study-pack pipeline for [SUBJECT]
     and [LEARNER_LEVEL].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     The available inputs are [SOURCE_MATERIALS], the deadline is [DEADLINE], and permitted tools are [AVAILABLE_TOOLS].
@@ -5168,16 +5205,17 @@ prompts:
     recall, not volume of generated notes.
 
     '
-- id: 090
+- id: '090'
   slug: monthly-content-calendar-pipeline
   title: Monthly Content Calendar Pipeline
   category: workflows
   difficulty: Intermediate
   usage: Build a repeatable workflow from audience insight to approved, scheduled content.
-  use_case: Coordinate research, ideation, drafting, design, review, and scheduling without losing brand
-    consistency.
+  use_case: Coordinate research, ideation, drafting, design, review, and scheduling without losing 
+    brand consistency.
   preview: 'Goal: Engineer a content-calendar pipeline for [BRAND] that produces [CHANNELS] content for
-    [AUDIENCE] during [MONTH]. Start with an insight intake from [CUSTOMER_QUESTIONS], performance data...'
+    [AUDIENCE] during [MONTH]. If any personalization field is blank or still shows brackets, continue
+    with...'
   best_tools:
   - tool: Claude
     reason: Handles long brand context and can organise a detailed editorial workflow.
@@ -5188,9 +5226,13 @@ prompts:
   - content-calendar
   - marketing
   - publishing
-  next_id: null
+  next_id:
   prompt: 'Goal: Engineer a content-calendar pipeline for [BRAND] that produces [CHANNELS] content for
     [AUDIENCE] during [MONTH].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Start with an insight intake from [CUSTOMER_QUESTIONS], performance data, seasonal moments, and business

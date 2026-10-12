@@ -16,6 +16,8 @@
 ```text
 Role: Act as a repository maintainer performing a bounded refactor; preserve observable behaviour while improving [REFACTOR_GOAL].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Inspect [ENTRY_FILES] and trace only the imports, tests, and configuration needed to understand the change. Before editing, summarise the current design, list files you expect to touch, and identify public APIs or persisted formats that must remain compatible. Do not modify generated files, lockfiles, unrelated formatting, or [EXCLUDED_PATHS].
 
 Implement the smallest coherent change. Use existing abstractions where they genuinely fit; do not introduce a new framework for convenience. If a proposed rename crosses package boundaries, update references and tests together. Pause and report if the code contradicts [EXPECTED_BEHAVIOUR] or if migration would be required.
