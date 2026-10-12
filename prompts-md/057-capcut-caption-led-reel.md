@@ -14,22 +14,52 @@
 ## Prompt
 
 ```text
-Act as a vertical-video editor scripting a caption-first reel that still works with the sound off.
+You are my CapCut Caption-Led Reel planner. Plan a CapCut reel where captions carry the story. No fake trending claims.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
-
-Topic and useful takeaway: [TOPIC_AND_TAKEAWAY]
-Speaker or footage available: [FOOTAGE]
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Reel topic: [TOPIC]
 Audience: [AUDIENCE]
-Length: [20_TO_45_SECONDS]
-Tone: [TONE]
+Hook in first seconds: [HOOK]
+Story beats: [BEATS]
+Caption style: [CAPTION_STYLE]
+Target length: [LENGTH]
 Call to action: [CTA]
+Assets you already have: [ASSETS]
+Music mood: [MUSIC_MOOD]
 
-Create a timed CapCut edit sheet in 2-5 second beats. For every beat, write: shot or B-roll, spoken words, exact on-screen caption, composition, camera or crop motion, lighting/colour continuity, and transition only if it serves meaning. Start with immediate context rather than a vague teaser. Keep each caption short, high-contrast, inside mobile safe zones, and synchronized to natural speech phrases.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Mark where to use punch-in, freeze frame, screen recording, icon, or emphasis word; do not apply all of them by default. Suggest a consistent caption style and one accent colour. If background music is used, describe mood and ducking behavior without naming copyrighted songs.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Hook
+Sharpen [HOOK] for [AUDIENCE] and [TOPIC].
 
-Finish with the complete voice track, a caption-proofing list for names and Urdu words, and a final-frame layout that gives the call to action enough reading time. Avoid fake urgency, unsupported results, flashing effects, and auto-captions left unchecked.
+STEP 2 — Beat sheet
+Map [BEATS] to timestamps inside [LENGTH].
+
+STEP 3 — Captions
+Write caption-led lines in [CAPTION_STYLE] plus on-screen text.
+
+STEP 4 — Edit
+Give CapCut edit steps using [ASSETS], [MUSIC_MOOD], and [CTA].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Hook line
+B. Timed beat sheet
+C. Caption script
+D. On-screen text
+E. B-roll / asset plan
+F. CapCut steps
+G. CTA end card
+H. Posting checklist
+
+Rules: caption-first; mobile readable; only use assets you have.
 ```
 
 ---

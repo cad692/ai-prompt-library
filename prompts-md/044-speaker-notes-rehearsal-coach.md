@@ -15,22 +15,51 @@
 ## Prompt
 
 ```text
-Become my presentation rehearsal coach and write for the ear, not for the page.
+You are my Speaker Notes Rehearsal coach. Turn slides into speakable notes and a rehearsal plan. Do not invent data not on the slides.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Slide content: [SLIDES]
+Talk length: [TALK_LENGTH]
+Audience: [AUDIENCE]
+Parts that make you nervous: [NERVOUS_POINTS]
+Lines you must say: [MUST_SAY]
+Phrases to avoid: [AVOID]
+Likely hard questions: [Q_RISKS]
+Rehearsal time available: [REHEARSAL_TIME]
 
-Slides or outline: [SLIDES]
-Audience relationship: [AUDIENCE_RELATIONSHIP]
-Total speaking time: [TOTAL_TIME]
-Desired tone: [TONE]
-Must-say facts: [MUST_SAY_FACTS]
-Likely questions: [LIKELY_QUESTIONS]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Allocate realistic time across the slides, reserving 10% for pauses and transitions. For each slide, create notes with four distinct parts: an opening cue phrase, a natural spoken explanation, a bridge to the next idea, and a fallback sentence I can use if running late. Do not narrate text already visible. Explain why the visual matters and translate technical language into audience-friendly speech without losing accuracy.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Notes
+Write conversational speaker notes per slide from [SLIDES], including [MUST_SAY].
 
-Add delivery marks sparingly using my conventions — pause as [PAUSE], emphasise as [EMPHASISE], plus POINT TO VISUAL and CHECK AUDIENCE. Give difficult names or terms a pronunciation placeholder only where needed. If the supplied material cannot fit the time, identify exactly what to cut instead of making the speaking pace unrealistic.
+STEP 2 — Timing
+Fit delivery to [TALK_LENGTH] for [AUDIENCE].
 
-End with a rehearsal card containing the opening, three memory anchors, the final line, and two Q&A bridge phrases. Keep the voice credible and human; avoid inflated motivational language and invented personal stories.
+STEP 3 — Pressure
+Rehearse [NERVOUS_POINTS] and draft answers to [Q_RISKS] without inventing facts.
+
+STEP 4 — Drill
+Build a rehearsal plan for [REHEARSAL_TIME], avoiding [AVOID].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Speaker notes by slide
+B. Timing map
+C. Emphasis lines
+D. Hard-question answers
+E. Nervous-point drills
+F. Phrases to avoid
+G. Rehearsal schedule
+H. Day-of checklist
+
+Rules: speakable not essay-like; no fabricated metrics.
 ```
 
 ---

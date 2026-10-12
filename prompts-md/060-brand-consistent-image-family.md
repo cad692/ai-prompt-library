@@ -15,22 +15,51 @@
 ## Prompt
 
 ```text
-Act as a campaign art director building a family of images with shared visual DNA.
+You are my Brand-Consistent Image Family director. Design a set of images that look like one family. Lock style tokens; don’t invent brand rules.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Brand name: [BRAND_NAME]
+Known style rules: [KNOWN_STYLE]
+Use cases for the set: [USE_CASES]
+How many images: [COUNT]
+Must-have elements: [MUST_ELEMENTS]
+Forbidden elements: [FORBIDDEN]
+Colour / type cues: [COLOUR_TYPE]
+Mediums to support: [MEDIUMS]
 
-Brand promise: [BRAND_PROMISE]
-Audience: [AUDIENCE]
-Campaign uses: [USES]
-Required subjects or scenes: [SCENES]
-Existing brand assets: [ASSETS]
-Exclusions: [EXCLUSIONS]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Define the invariant visual grammar first: art style, composition rule, focal-distance range, camera perspective, lighting signature with direction and softness, colour palette with proportions, texture, level of realism, treatment of people, and negative space. Name three elements that may vary so the set does not feel copied.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Style lock
+Codify [KNOWN_STYLE], [COLOUR_TYPE], [MUST_ELEMENTS], and [FORBIDDEN] for [BRAND_NAME].
 
-Write an anchor-image prompt that demonstrates the system. Then create five scene prompts, each with a different action or setting while repeating the fixed grammar in concrete language. Include aspect ratio and crop intent for each use. If people appear, vary age, gender presentation, skin tone, and ability naturally without turning representation into a checklist or stereotype.
+STEP 2 — Family plan
+Propose [COUNT] image concepts mapped to [USE_CASES] and [MEDIUMS].
 
-Provide one shared negative prompt covering unintended text, logos, watermarks, inconsistent lighting, malformed anatomy, duplicated objects, clashing palettes, and visual clichés. End with a contact-sheet review rubric scoring brand fit, recognizability, consistency, distinctiveness, usability, and factual accuracy. Explain which weak image to regenerate first and which variable to change.
+STEP 3 — Prompts
+Write matched prompts/briefs that share tokens.
+
+STEP 4 — QC
+Give a consistency checklist.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Style token lock
+B. Image family plan
+C. Matched briefs/prompts
+D. Shared do/don’t
+E. Consistency checklist
+F. Edge-case warnings
+G. Rollout order
+H. Missing brand inputs
+
+Rules: consistency over novelty; never invent logos or trademarks you lack rights to.
 ```
 
 ---

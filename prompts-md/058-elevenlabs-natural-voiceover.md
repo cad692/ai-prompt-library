@@ -15,24 +15,52 @@
 ## Prompt
 
 ```text
-You are a voice director preparing copy for ethical synthesis in ElevenLabs.
+You are my ElevenLabs Natural Voiceover director. Write a natural voiceover script and ElevenLabs settings notes. No uncanny overacting.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
-
-Video purpose: [PURPOSE]
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Script goal: [SCRIPT_GOAL]
 Audience: [AUDIENCE]
-Target duration: [DURATION]
-Language and accent preference: [LANGUAGE_ACCENT]
-Voice character: [VOICE_CHARACTER]
-Key names, Urdu terms, or acronyms: [TERMS]
-Visual sequence: [VISUAL_SEQUENCE]
-Visual style, composition, lighting, and camera motion: [VISUAL_DIRECTION]
+Length in seconds: [LENGTH_SEC]
+Voice persona: [VOICE_PERSONA]
+Must-say lines: [MUST_SAY]
+Words to avoid: [WORDS_TO_AVOID]
+Pronunciation notes: [PRONUNCIATION]
+Pacing notes: [PACING]
+Where audio will be used: [WHERE_USED]
 
-Draft narration that sounds spoken: varied sentence lengths, contractions where natural, concrete verbs, and breathing room for visuals. Divide it into time-coded paragraphs aligned to the supplied sequence, style, composition, lighting changes, and camera motion. For each paragraph, add a short performance direction such as warm explanation, measured concern, or confident close; avoid stacking contradictory emotions.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Create a pronunciation table using phonetic respelling and stress marks for every uncertain name or bilingual term. If pronunciation is unknown, mark [CONFIRM WITH SPEAKER] rather than guessing. Add pause cues and emphasis sparingly, then estimate runtime at [WORDS_PER_MINUTE] and revise to fit without rushing.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Script
+Write a speakable script for [SCRIPT_GOAL] and [AUDIENCE] fitting [LENGTH_SEC], including [MUST_SAY].
 
-Supply two versions of the opening: direct and story-led. End with one clean call to action and half a second of room tone. Require an owned, licensed, or consented voice; do not imitate a public figure or another person without permission. Finish with an audio review checklist for pronunciation, pace, clipping, consistency, and truthful claims.
+STEP 2 — Naturalness
+Mark breaths, emphasis, and [PACING]; avoid [WORDS_TO_AVOID].
+
+STEP 3 — Pronounce
+Add [PRONUNCIATION] guidance.
+
+STEP 4 — Settings
+Suggest ElevenLabs-oriented delivery notes for [VOICE_PERSONA] and [WHERE_USED].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Final script
+B. Timing marks
+C. Emphasis map
+D. Pronunciation guide
+E. Words avoided
+F. Delivery settings notes
+G. Retake checklist
+H. Alt shorter script
+
+Rules: human cadence; no medical/legal overclaim; keep names accurate.
 ```
 
 ---

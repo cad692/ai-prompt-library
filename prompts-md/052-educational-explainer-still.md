@@ -15,21 +15,51 @@
 ## Prompt
 
 ```text
-Work as a science-and-learning illustrator designing one still image that teaches [CONCEPT] at a glance.
+You are my Educational Explainer Still director. Brief a single still image that teaches one idea clearly. No decorative nonsense.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Concept to explain: [CONCEPT]
+Learners: [LEARNERS]
+One takeaway: [ONE_TAKEAWAY]
+Visual style: [STYLE]
+Labels that must appear: [MUST_LABELS]
+Visuals to avoid: [AVOID]
+Image format: [FORMAT]
+Accessibility needs: [ACCESSIBILITY]
 
-Learner age or level: [LEVEL]
-Essential parts or stages: [PARTS]
-Misconception to prevent: [MISCONCEPTION]
-Display format: [FORMAT]
-Preferred visual language: [STYLE_PREFERENCE]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Decide first whether a cutaway, sequence, comparison, map, or annotated scene best explains the concept. Write a generation prompt for a clean educational illustration using an accurate but approachable style, a left-to-right or centre-out composition, one dominant focal point, restrained colours, soft even studio-like lighting, and enough blank space for labels. Specify relative scale only when it is scientifically meaningful; otherwise state “not to scale.”
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Focus
+Lock [ONE_TAKEAWAY] for [LEARNERS] from [CONCEPT].
 
-Keep generated text out of the image. Instead, provide a separate label layer: exact label wording, placement, leader-line direction, and reading order. Include a small legend only if colours encode meaning. Avoid photorealism when it would hide internal relationships, and avoid cartoon expressions that distort the concept.
+STEP 2 — Composition
+Design a still with hierarchy, [MUST_LABELS], and [STYLE] for [FORMAT].
 
-Finish with three accuracy checks a teacher should perform against a trusted source, concise alt text describing the learning content, and a simplified black-and-white version suitable for low-cost printing. Do not invent anatomical, historical, or technical details.
+STEP 3 — Guardrails
+Exclude [AVOID] and meet [ACCESSIBILITY].
+
+STEP 4 — Prompt
+Write an image-generation/art brief plus alt text.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Takeaway
+B. Composition brief
+C. Labels and callouts
+D. Style notes
+E. Avoid list
+F. Alt text
+G. Generator prompt
+H. Teacher use tip
+
+Rules: teach one thing; readable labels; accessible.
 ```
 
 ---

@@ -15,22 +15,51 @@
 ## Prompt
 
 ```text
-Take the role of a storyboard artist compressing [STORY_OR_MESSAGE] into exactly six purposeful frames.
+You are my Six-Frame Storyboard mapper. Build a six-frame storyboard with clear continuity. No missing beats.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Story to board: [STORY]
+Audience: [AUDIENCE]
+Final medium: [MEDIUM]
+Frame count target: [FRAMES]
+Must-include beats: [MUST_BEATS]
+Tone: [TONE]
+Text-on-screen needs: [TEXT_ON_SCREEN]
+Production constraints: [CONSTRAINTS]
 
-Audience and platform: [AUDIENCE_PLATFORM]
-Duration: [DURATION]
-Main character or object: [SUBJECT]
-Location: [LOCATION]
-Visual style: [STYLE]
-Required ending: [ENDING]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Give the six frames distinct jobs: orientation, desire/problem, trigger, attempt, turn, resolution. For each frame, provide a thumbnail description, composition and subject placement, shot size, camera angle, lens feel, camera or subject motion leading into the next shot, lighting direction and continuity, dominant colour, visible action, narration/dialogue, ambient sound, and approximate duration.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Beats
+Lock [MUST_BEATS] for [STORY] and [AUDIENCE].
 
-Maintain screen direction, wardrobe, prop count, time of day, and geography. Use at least one close detail and one wider contextual shot, but choose them because they advance the story. Transitions should arise from matched action, gaze, sound, or graphic shape rather than random effects.
+STEP 2 — Frames
+Create [FRAMES] frames with shot type, action, audio, and [TEXT_ON_SCREEN].
 
-After the six frames, include a continuity ledger listing fixed visual facts and a production list separating what must be filmed, generated, recorded, or designed. Add one cheaper alternative that preserves the story with fewer locations. Do not include unsafe action, unlicensed brand marks, or claims not supported by [SOURCE_OR_BRIEF].
+STEP 3 — Continuity
+Check continuity and [TONE] for [MEDIUM].
+
+STEP 4 — Produce
+Note constraints from [CONSTRAINTS] and a shoot/edit order.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Beat list
+B. Frame 1–N board
+C. Continuity notes
+D. On-screen text
+E. Audio cues
+F. Production constraints
+G. Shoot/edit order
+H. Risk frames
+
+Rules: six clear frames; continuity over spectacle.
 ```
 
 ---

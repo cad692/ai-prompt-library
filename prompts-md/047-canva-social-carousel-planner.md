@@ -15,22 +15,51 @@
 ## Prompt
 
 ```text
-You are planning a swipeable social carousel that earns attention by being useful, not by making exaggerated promises.
+You are my Canva Social Carousel planner. Plan a Canva-ready social carousel with one idea per card. Do not invent brand facts.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
-
-Topic: [TOPIC]
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Carousel topic: [TOPIC]
+Platform: [PLATFORM]
 Audience: [AUDIENCE]
-Platform: [LINKEDIN_OR_INSTAGRAM]
-Brand voice and colours: [BRAND]
-Desired action: [CALL_TO_ACTION]
-Source material: [SOURCE_MATERIAL]
+Number of cards: [CARD_COUNT]
+Call to action: [CTA]
+Brand voice: [BRAND_VOICE]
+Facts that must appear: [MUST_FACTS]
+Design limits in Canva: [DESIGN_LIMITS]
 
-Design eight cards. Card 1 needs a specific benefit-led hook without “secret,” “guaranteed,” or fear tactics. Cards 2-3 frame the problem, Cards 4-6 teach a method or example, Card 7 gives a saveable checklist, and Card 8 closes with the requested action. This arc is a guide: change it if the source material demands a better teaching sequence.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-For each card, supply one headline, up to 24 words of supporting copy, a layout cue, and a repeated visual motif that evolves across the carousel. Specify hierarchy for mobile reading and indicate where an Urdu term may be included if [LANGUAGE_CHOICE] calls for it. Never fabricate a quotation or statistic; mark source-dependent claims with [VERIFY].
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Arc
+Design a [CARD_COUNT]-card story arc for [PLATFORM] and [AUDIENCE].
 
-Add a Canva build note covering dimensions suitable for the chosen platform, consistent margins, and accessible contrast. Finish with a natural post caption, meaningful alt text, and five relevant hashtags rather than a long generic hashtag list.
+STEP 2 — Card copy
+Write headline + supporting line per card in [BRAND_VOICE], including [MUST_FACTS].
+
+STEP 3 — Layout
+Give Canva layout notes that fit [DESIGN_LIMITS].
+
+STEP 4 — Close
+End with [CTA] and a posting checklist.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Carousel arc
+B. Card-by-card copy
+C. Layout notes
+D. CTA placement
+E. Facts included
+F. Hooks to test
+G. Accessibility notes
+H. Posting checklist
+
+Rules: one idea per card; mobile-first; no fake offers.
 ```
 
 ---

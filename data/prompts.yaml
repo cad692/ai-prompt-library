@@ -4603,9 +4603,9 @@ prompts:
   usage: Use to teach one difficult concept through examples, checks, and practice.
   use_case: Creates a short lesson deck for a class, training, or study group. It adapts language 
     and examples to the learners.
-  preview: Act as a patient instructional designer preparing a visual mini-lesson, not a textbook 
-    chapter. If any personalization field is blank or still shows brackets, continue with clearly 
-    labelled...
+  preview: You are my Concept-to-Teaching-Slides designer. Turn a concept into teachable slides with
+    one clear learning goal. Do not invent course facts. ======================================== 
+    PERSONAL...
   best_tools:
   - tool: Canva
     reason: Makes classroom-friendly slides easy to lay out and revise.
@@ -4619,45 +4619,89 @@ prompts:
   - lesson
   - education
   next_id:
-  prompt: 'Act as a patient instructional designer preparing a visual mini-lesson, not a textbook chapter.
+  prompt: 'You are my Concept-to-Teaching-Slides designer. Turn a concept into teachable slides with one
+    clear learning goal. Do not invent course facts.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Concept to teach: [CONCEPT]
+
+    Who the learners are: [LEARNERS]
+
+    Learning goal: [LEARNING_GOAL]
+
+    Target slide count: [SLIDE_COUNT]
+
+    Teaching time in minutes: [TIME_MINUTES]
+
+    Must-cover points: [MUST_COVER]
+
+    Example context to prefer: [EXAMPLES_CONTEXT]
+
+    How learning will be checked: [ASSESSMENT_HINT]
 
 
-    Teach [CONCEPT] to [LEARNER_LEVEL] learners in [TIME_AVAILABLE] minutes. Their likely prior knowledge
-    is [PRIOR_KNOWLEDGE], and the real-world setting is [CONTEXT]. The learning outcome is: “[LEARNERS_WILL_BE_ABLE_TO].”
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Design exactly eight slides as a learning journey:
+    ========================================
 
-    1) a relatable puzzle,
+    WORKFLOW YOU MUST FOLLOW
 
-    2) what learners will achieve,
+    ========================================
 
-    3) the simplest accurate explanation,
+    STEP 1 — Goal lock
 
-    4) a visual analogy and where it breaks,
-
-    5) a worked example,
-
-    6) a common misconception,
-
-    7) a one-minute learner challenge,
-
-    8) an answer plus memorable recap.
+    State one measurable learning goal from [LEARNING_GOAL] for [LEARNERS].
 
 
-    For every slide, write a learner-facing title, no more than 30 words of visible text, a visual direction,
-    and what the facilitator does. Use examples recognizable to Pakistani students or professionals when
-    [LOCAL_CONTEXT] is supplied, without stereotypes. Define unfamiliar terms once. Avoid decorative visuals
-    that do not teach.
+    STEP 2 — Outline
+
+    Build a [SLIDE_COUNT]-slide arc that fits [TIME_MINUTES] and covers [MUST_COVER].
 
 
-    Add one diagnostic question before the lesson and one exit question after it. Supply the expected
-    answers and a brief explanation of what each wrong answer may reveal. End with one optional extension
-    for fast learners and one support adjustment for learners who need more scaffolding.
+    STEP 3 — Slide specs
+
+    For each slide: title, one message, speaker cue, and visual suggestion using [EXAMPLES_CONTEXT].
+
+
+    STEP 4 — Check
+
+    Add a quick check aligned to [ASSESSMENT_HINT].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Learning goal
+
+    B. Slide-by-slide outline
+
+    C. Visual suggestions
+
+    D. Speaker cues
+
+    E. Must-cover coverage check
+
+    F. Timing plan
+
+    G. Quick assessment idea
+
+    H. What content is still missing
+
+
+    Rules: one message per slide; no fake citations; teach don’t decorate.
 
     '
 - id: '043'
@@ -4668,9 +4712,9 @@ prompts:
   usage: Use when slides contain dense paragraphs, mixed messages, or unclear headlines.
   use_case: Rewrites an existing deck so every slide carries one audience takeaway. The result 
     preserves meaning while reducing reading load.
-  preview: Work as a ruthless-but-faithful slide editor whose rule is one meaningful message per 
-    slide. If any personalization field is blank or still shows brackets, continue with clearly 
-    labelled assumptions...
+  preview: You are my One-Message-per-Slide editor. Rewrite slide content so each slide carries 
+    exactly one message. Cut clutter without inventing claims. 
+    ======================================== PERSONAL...
   best_tools:
   - tool: ChatGPT
     reason: Reorganizes pasted slide copy while preserving the intended argument.
@@ -4683,32 +4727,89 @@ prompts:
   - slide-design
   - clarity
   next_id:
-  prompt: 'Work as a ruthless-but-faithful slide editor whose rule is one meaningful message per slide.
+  prompt: 'You are my One-Message-per-Slide editor. Rewrite slide content so each slide carries exactly
+    one message. Cut clutter without inventing claims.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Current slide drafts: [SLIDE_DRAFTS]
+
+    Audience: [AUDIENCE]
+
+    Talk goal: [TALK_GOAL]
+
+    Max words per slide: [MAX_WORDS]
+
+    Facts that must stay: [MUST_KEEP]
+
+    What to cut first: [CUT_POLICY]
+
+    Target deck length: [DECK_LENGTH]
+
+    Tone: [TONE]
 
 
-    Here is the current slide content: [PASTE_SLIDES]
-
-    The audience is [AUDIENCE], the decision or learning goal is [GOAL], and the tone should be [TONE].
-
-
-    First, write the deck''s current argument in one sentence. Then process each slide individually. Identify
-    its strongest intended takeaway, rewrite the title as a complete message rather than a topic label,
-    and retain only content that proves or explains that message. Put useful but nonessential material
-    in a “move to notes” line. Mark repetition with the slide number where the idea already appears.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    When a slide contains two indispensable messages, propose a split and name both new slides. When several
-    slides make one weak point, recommend a merge. Do not compress text merely by making sentences vague,
-    and do not alter numbers or factual meaning.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Audit
+
+    Flag slides with multiple messages or clutter in [SLIDE_DRAFTS].
 
 
-    Present the result as a numbered rewrite map with: new headline, visible content, suggested visual,
-    notes material, and action (keep/split/merge/remove). Conclude with the revised headline-only story
-    and flag any logical jump where a new bridge slide or missing evidence is needed.
+    STEP 2 — Rewrite
+
+    Give one-message rewrites under [MAX_WORDS], preserving [MUST_KEEP], matching [TONE] and [AUDIENCE].
+
+
+    STEP 3 — Cuts
+
+    Apply [CUT_POLICY] and note removed content.
+
+
+    STEP 4 — Flow
+
+    Re-sequence toward [TALK_GOAL] within [DECK_LENGTH].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Multi-message flags
+
+    B. Rewritten slides
+
+    C. Cut list
+
+    D. Kept facts
+
+    E. Improved sequence
+
+    F. Speaker reminders
+
+    G. Still-overloaded slides
+
+    H. Final checklist
+
+
+    Rules: one claim per slide; no new facts; ruthlessly clear.
 
     '
 - id: '044'
@@ -4719,9 +4820,9 @@ prompts:
   usage: Use to convert slide bullets into natural notes for a timed presentation.
   use_case: Produces spoken notes that complement rather than read the screen. It also builds timing
     and recovery cues for rehearsal.
-  preview: Become my presentation rehearsal coach and write for the ear, not for the page. If any 
-    personalization field is blank or still shows brackets, continue with clearly labelled 
-    assumptions — do not...
+  preview: You are my Speaker Notes Rehearsal coach. Turn slides into speakable notes and a 
+    rehearsal plan. Do not invent data not on the slides. ======================================== 
+    PERSONAL CONTEXT...
   best_tools:
   - tool: ChatGPT
     reason: Turns slide context into conversational, audience-aware speaking notes.
@@ -4734,42 +4835,89 @@ prompts:
   - public-speaking
   - rehearsal
   next_id:
-  prompt: 'Become my presentation rehearsal coach and write for the ear, not for the page.
+  prompt: 'You are my Speaker Notes Rehearsal coach. Turn slides into speakable notes and a rehearsal
+    plan. Do not invent data not on the slides.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Slide content: [SLIDES]
+
+    Talk length: [TALK_LENGTH]
+
+    Audience: [AUDIENCE]
+
+    Parts that make you nervous: [NERVOUS_POINTS]
+
+    Lines you must say: [MUST_SAY]
+
+    Phrases to avoid: [AVOID]
+
+    Likely hard questions: [Q_RISKS]
+
+    Rehearsal time available: [REHEARSAL_TIME]
 
 
-    Slides or outline: [SLIDES]
-
-    Audience relationship: [AUDIENCE_RELATIONSHIP]
-
-    Total speaking time: [TOTAL_TIME]
-
-    Desired tone: [TONE]
-
-    Must-say facts: [MUST_SAY_FACTS]
-
-    Likely questions: [LIKELY_QUESTIONS]
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Allocate realistic time across the slides, reserving 10% for pauses and transitions. For each slide,
-    create notes with four distinct parts: an opening cue phrase, a natural spoken explanation, a bridge
-    to the next idea, and a fallback sentence I can use if running late. Do not narrate text already visible.
-    Explain why the visual matters and translate technical language into audience-friendly speech without
-    losing accuracy.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Notes
+
+    Write conversational speaker notes per slide from [SLIDES], including [MUST_SAY].
 
 
-    Add delivery marks sparingly using my conventions — pause as [PAUSE], emphasise as [EMPHASISE], plus
-    POINT TO VISUAL and CHECK AUDIENCE. Give difficult names or terms a pronunciation placeholder only
-    where needed. If the supplied material cannot fit the time, identify exactly what to cut instead of
-    making the speaking pace unrealistic.
+    STEP 2 — Timing
+
+    Fit delivery to [TALK_LENGTH] for [AUDIENCE].
 
 
-    End with a rehearsal card containing the opening, three memory anchors, the final line, and two Q&A
-    bridge phrases. Keep the voice credible and human; avoid inflated motivational language and invented
-    personal stories.
+    STEP 3 — Pressure
+
+    Rehearse [NERVOUS_POINTS] and draft answers to [Q_RISKS] without inventing facts.
+
+
+    STEP 4 — Drill
+
+    Build a rehearsal plan for [REHEARSAL_TIME], avoiding [AVOID].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Speaker notes by slide
+
+    B. Timing map
+
+    C. Emphasis lines
+
+    D. Hard-question answers
+
+    E. Nervous-point drills
+
+    F. Phrases to avoid
+
+    G. Rehearsal schedule
+
+    H. Day-of checklist
+
+
+    Rules: speakable not essay-like; no fabricated metrics.
 
     '
 - id: '045'
@@ -4780,9 +4928,9 @@ prompts:
   usage: Use to replace generic stock photos with meaningful visual concepts.
   use_case: Generates visual metaphors that clarify an abstract presentation idea. Each option 
     includes limits to prevent misleading imagery.
-  preview: Serve as a visual-thinking partner for an abstract slide idea that currently has no 
-    useful image. If any personalization field is blank or still shows brackets, continue with 
-    clearly labelled...
+  preview: You are my Visual Metaphor Finder. Propose visual metaphors that clarify an idea without 
+    cliché overload or misleading imagery. ======================================== PERSONAL CONTEXT
+    (filled by...
   best_tools:
   - tool: Canva
     reason: Supports quick assembly of metaphor-led slide compositions.
@@ -4795,40 +4943,89 @@ prompts:
   - creative-direction
   - slides
   next_id:
-  prompt: 'Serve as a visual-thinking partner for an abstract slide idea that currently has no useful
-    image.
+  prompt: 'You are my Visual Metaphor Finder. Propose visual metaphors that clarify an idea without cliché
+    overload or misleading imagery.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
 
+    PERSONAL CONTEXT (filled by me)
 
-    Core message: [CORE_MESSAGE]
+    ========================================
+
+    Idea to visualise: [IDEA]
 
     Audience: [AUDIENCE]
 
-    Context or industry: [CONTEXT]
+    Culture or context notes: [CULTURE_NOTES]
 
-    Brand mood: [BRAND_MOOD]
+    Imagery to avoid: [MUST_AVOID]
 
-    Visuals to avoid: [AVOID]
+    Medium for the visual: [MEDIUM]
 
+    Tone: [TONE]
 
-    Generate five genuinely different metaphor families—not five variations of a road, ladder, or lightbulb.
-    Consider relationships such as compression, balance, navigation, translation, ecosystems, repair,
-    rhythm, or signal versus noise. For each metaphor, explain in one sentence what maps to what, then
-    describe a 16:9 composition with a clear focal point and open space for [SLIDE_TEXT]. Suggest whether
-    photography, illustration, diagram, or collage best carries it.
+    Literal visual if metaphor fails: [LITERAL_FALLBACK]
 
-
-    Give each option a “decoding speed” rating from 1-5 and a caution explaining how the metaphor could
-    confuse, oversimplify, or culturally misfire. Avoid stereotypes, flags as decoration, gendered role
-    assumptions, and images of poverty used to signal Pakistan.
+    Production constraints: [CONSTRAINTS]
 
 
-    Rank the top two for this audience. For the winner, provide a concise image-generation brief including
-    style, composition, colour direction, lighting, and negative constraints. Also offer a no-generation
-    alternative using simple shapes and icons available in common presentation software.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
+
+
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Meaning
+
+    Restate the core meaning of [IDEA] for [AUDIENCE].
+
+
+    STEP 2 — Metaphors
+
+    Offer 5 metaphor options with why they fit, risks, and [CULTURE_NOTES] checks.
+
+
+    STEP 3 — Filter
+
+    Drop anything in [MUST_AVOID] or misleading; keep production realistic for [MEDIUM] and [CONSTRAINTS].
+
+
+    STEP 4 — Pick
+
+    Recommend one primary + [LITERAL_FALLBACK], with art-direction notes in [TONE].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Core meaning
+
+    B. Metaphor shortlist
+
+    C. Risks and clichés
+
+    D. Culture fit notes
+
+    E. Recommended metaphor
+
+    F. Literal fallback
+
+    G. Art direction cues
+
+    H. What not to draw
+
+
+    Rules: clarity over cleverness; no offensive or misleading visuals.
 
     '
 - id: '046'
@@ -4839,8 +5036,9 @@ prompts:
   usage: Use to diagnose and redesign one weak slide without changing its facts.
   use_case: Critiques a slide against audience needs and proposes a concrete after-state. The method
     separates message problems from visual problems.
-  preview: 'Diagnose this slide like a presentation clinician: preserve the facts, repair the communication.
-    If any personalization field is blank or still shows brackets, continue with clearly labelled...'
+  preview: You are my Before/After Slide Clinic. Diagnose weak slides and show a concrete after 
+    version. Preserve true content. ======================================== PERSONAL CONTEXT 
+    (filled by me)...
   best_tools:
   - tool: Canva
     reason: Makes the recommended layout changes easy to prototype.
@@ -4853,39 +5051,89 @@ prompts:
   - redesign
   - presentation
   next_id:
-  prompt: 'Diagnose this slide like a presentation clinician: preserve the facts, repair the communication.
+  prompt: 'You are my Before/After Slide Clinic. Diagnose weak slides and show a concrete after version.
+    Preserve true content.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
 
+    PERSONAL CONTEXT (filled by me)
 
-    Slide screenshot or pasted content: [SLIDE]
+    ========================================
+
+    Before slides: [BEFORE_SLIDES]
 
     Audience: [AUDIENCE]
 
-    What they should think, feel, or do: [INTENDED_RESPONSE]
+    Communication goal: [GOAL]
 
-    Brand constraints: [BRAND_CONSTRAINTS]
+    Problems you already noticed: [PROBLEMS_NOTICED]
 
-    Delivery setting: [ROOM_OR_SCREEN]
+    Brand or template rules: [BRAND_RULES]
 
+    Time for redesign notes: [TIME]
 
-    Start with a five-second reading: what would a busy viewer notice first, and what would they probably
-    miss? Then separate the diagnosis into message, evidence, hierarchy, readability, and visual relevance.
-    Cite specific elements from the supplied slide; do not offer generic advice such as “use fewer words”
-    without naming what to remove.
+    Must-keep content: [MUST_KEEP]
 
-
-    Create an after-version specification. Include a takeaway headline, exact shortened body copy, layout
-    described by regions, recommended chart or visual if one is justified, and presenter-only details
-    to move into notes. State the minimum readable type size appropriate to the setting and any contrast
-    risk.
+    What better looks like: [SUCCESS_LOOKS_LIKE]
 
 
-    Provide a before/after comparison in six paired bullets, each showing the problem and the corresponding
-    repair. Finally, write a 45-second talk track for the redesigned slide and one quick test the creator
-    can perform at normal viewing distance. Do not manufacture data or imply a visual should replace evidence.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
+
+
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Diagnose
+
+    Critique [BEFORE_SLIDES] against [GOAL] and [AUDIENCE], including [PROBLEMS_NOTICED].
+
+
+    STEP 2 — After
+
+    Produce after versions that keep [MUST_KEEP] and respect [BRAND_RULES].
+
+
+    STEP 3 — Principles
+
+    Name the design/communication principles used.
+
+
+    STEP 4 — Next
+
+    Give a rapid fix order for [TIME] aimed at [SUCCESS_LOOKS_LIKE].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Diagnosis
+
+    B. Before→after rewrites
+
+    C. Principles applied
+
+    D. Content preserved
+
+    E. Still-broken slides
+
+    F. Fix order
+
+    G. Checklist for the rest of the deck
+
+    H. Open questions
+
+
+    Rules: teachable clinic; no inventing charts or numbers.
 
     '
 - id: '047'
@@ -4896,9 +5144,9 @@ prompts:
   usage: Use to turn one useful idea into a swipeable educational carousel.
   use_case: Plans a Canva carousel for LinkedIn or Instagram with a coherent visual rhythm. It 
     prioritizes value over engagement bait.
-  preview: You are planning a swipeable social carousel that earns attention by being useful, not by
-    making exaggerated promises. If any personalization field is blank or still shows brackets, 
-    continue with...
+  preview: You are my Canva Social Carousel planner. Plan a Canva-ready social carousel with one 
+    idea per card. Do not invent brand facts. ======================================== PERSONAL 
+    CONTEXT (filled by...
   best_tools:
   - tool: Canva
     reason: Provides practical carousel sizing, layout, and brand controls.
@@ -4911,42 +5159,89 @@ prompts:
   - carousel
   - social-media
   next_id:
-  prompt: 'You are planning a swipeable social carousel that earns attention by being useful, not by making
-    exaggerated promises.
+  prompt: 'You are my Canva Social Carousel planner. Plan a Canva-ready social carousel with one idea
+    per card. Do not invent brand facts.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
 
+    PERSONAL CONTEXT (filled by me)
 
-    Topic: [TOPIC]
+    ========================================
+
+    Carousel topic: [TOPIC]
+
+    Platform: [PLATFORM]
 
     Audience: [AUDIENCE]
 
-    Platform: [LINKEDIN_OR_INSTAGRAM]
+    Number of cards: [CARD_COUNT]
 
-    Brand voice and colours: [BRAND]
+    Call to action: [CTA]
 
-    Desired action: [CALL_TO_ACTION]
+    Brand voice: [BRAND_VOICE]
 
-    Source material: [SOURCE_MATERIAL]
+    Facts that must appear: [MUST_FACTS]
 
-
-    Design eight cards. Card 1 needs a specific benefit-led hook without “secret,” “guaranteed,” or fear
-    tactics. Cards 2-3 frame the problem, Cards 4-6 teach a method or example, Card 7 gives a saveable
-    checklist, and Card 8 closes with the requested action. This arc is a guide: change it if the source
-    material demands a better teaching sequence.
+    Design limits in Canva: [DESIGN_LIMITS]
 
 
-    For each card, supply one headline, up to 24 words of supporting copy, a layout cue, and a repeated
-    visual motif that evolves across the carousel. Specify hierarchy for mobile reading and indicate where
-    an Urdu term may be included if [LANGUAGE_CHOICE] calls for it. Never fabricate a quotation or statistic;
-    mark source-dependent claims with [VERIFY].
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Add a Canva build note covering dimensions suitable for the chosen platform, consistent margins, and
-    accessible contrast. Finish with a natural post caption, meaningful alt text, and five relevant hashtags
-    rather than a long generic hashtag list.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Arc
+
+    Design a [CARD_COUNT]-card story arc for [PLATFORM] and [AUDIENCE].
+
+
+    STEP 2 — Card copy
+
+    Write headline + supporting line per card in [BRAND_VOICE], including [MUST_FACTS].
+
+
+    STEP 3 — Layout
+
+    Give Canva layout notes that fit [DESIGN_LIMITS].
+
+
+    STEP 4 — Close
+
+    End with [CTA] and a posting checklist.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Carousel arc
+
+    B. Card-by-card copy
+
+    C. Layout notes
+
+    D. CTA placement
+
+    E. Facts included
+
+    F. Hooks to test
+
+    G. Accessibility notes
+
+    H. Posting checklist
+
+
+    Rules: one idea per card; mobile-first; no fake offers.
 
     '
 - id: '048'
@@ -4957,9 +5252,9 @@ prompts:
   usage: Use for a concise project update that foregrounds decisions and risks.
   use_case: Turns delivery information into a transparent update for sponsors, clients, or 
     leadership. It makes ownership and decisions explicit.
-  preview: Operate as a project communications lead preparing an update for people who need clarity,
-    not activity theatre. If any personalization field is blank or still shows brackets, continue 
-    with clearly...
+  preview: You are my Stakeholder Update Deck builder. Build a progress update deck that separates 
+    facts, risks, and asks. No vanity status. ======================================== PERSONAL 
+    CONTEXT (filled by...
   best_tools:
   - tool: Beautiful.ai
     reason: Keeps recurring business update layouts consistent and readable.
@@ -4972,45 +5267,91 @@ prompts:
   - project-update
   - leadership
   next_id:
-  prompt: 'Operate as a project communications lead preparing an update for people who need clarity, not
-    activity theatre.
+  prompt: 'You are my Stakeholder Update Deck builder. Build a progress update deck that separates facts,
+    risks, and asks. No vanity status.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Project name: [PROJECT]
+
+    Update period: [PERIOD]
+
+    Stakeholders: [AUDIENCE]
+
+    Real progress: [PROGRESS]
+
+    Blockers: [BLOCKERS]
+
+    Risks: [RISKS]
+
+    Ask or decision needed: [ASK]
+
+    Metrics you can prove: [METRICS]
+
+    Next period plan: [NEXT]
 
 
-    Project: [PROJECT]
-
-    Reporting period: [PERIOD]
-
-    Stakeholders and concerns: [STAKEHOLDERS]
-
-    Outcomes achieved: [OUTCOMES]
-
-    Metrics: [METRICS]
-
-    Risks or blockers: [RISKS]
-
-    Decisions required: [DECISIONS]
-
-    Next-period commitments: [COMMITMENTS]
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Build a maximum seven-slide update. Open with a one-slide executive signal: overall status, what changed,
-    and what needs attention. Follow with outcome progress, metric movement, milestones, risks, decisions,
-    and next steps. Activity belongs only where it explains an outcome.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Status truth
+
+    Summarise [PROGRESS], [BLOCKERS], and [RISKS] without sugar-coating.
 
 
-    On every slide, use a message headline and label information as fact, forecast, or request. For each
-    metric, show baseline, current value, target, period, and source if supplied; write “not provided”
-    where needed. For risks, state probability, impact, mitigation, owner, and trigger for escalation.
-    For decisions, frame the options, recommendation, deadline, and consequence of delay without manipulating
-    the audience.
+    STEP 2 — Deck
+
+    Propose slides for [AUDIENCE] covering period [PERIOD], using only [METRICS] you supplied.
 
 
-    Add a 60-second opening script and an appendix list for detail that should not crowd the main deck.
-    Finish with a pre-send accuracy check covering dates, owners, metric definitions, and confidentiality.
+    STEP 3 — Ask
+
+    Frame [ASK] with options and implications.
+
+
+    STEP 4 — Forward
+
+    Outline [NEXT] with owners left blank if unknown.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Status snapshot
+
+    B. Slide outline
+
+    C. Metrics used
+
+    D. Risks and blockers
+
+    E. Clear ask
+
+    F. Options for decision
+
+    G. Next-period plan
+
+    H. Parking lot
+
+
+    Rules: honest status; no invented KPIs; make the ask unmistakable.
 
     '
 - id: '049'
@@ -5021,9 +5362,8 @@ prompts:
   usage: Use to design agenda slides that explain participation, timing, and outcomes.
   use_case: Creates workshop opening and transition slides that reduce uncertainty for participants.
     It includes energy and accessibility considerations.
-  preview: Act as a workshop experience designer creating slides that help participants know where 
-    they are, why it matters, and what to do next. If any personalization field is blank or still 
-    shows brackets...
+  preview: You are my Workshop Agenda Slide builder. Design workshop agenda slides that protect time
+    and outcomes. ======================================== PERSONAL CONTEXT (filled by me)...
   best_tools:
   - tool: Canva
     reason: Offers flexible visual layouts for facilitated sessions.
@@ -5036,42 +5376,89 @@ prompts:
   - agenda
   - facilitation
   next_id:
-  prompt: 'Act as a workshop experience designer creating slides that help participants know where they
-    are, why it matters, and what to do next.
+  prompt: 'You are my Workshop Agenda Slide builder. Design workshop agenda slides that protect time and
+    outcomes.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
 
+    PERSONAL CONTEXT (filled by me)
 
-    Workshop goal: [GOAL]
+    ========================================
+
+    Workshop goal: [WORKSHOP_GOAL]
 
     Participants: [PARTICIPANTS]
 
-    Duration and breaks: [DURATION]
+    Total duration: [DURATION]
 
-    Activities: [ACTIVITIES]
+    Must-include sections: [SECTIONS]
 
-    Room or online setup: [SETUP]
+    Materials available: [MATERIALS]
 
-    Accessibility or language needs: [ACCESS_NEEDS]
+    Facilitator experience: [FACILITATOR_LEVEL]
 
+    Outputs needed by the end: [OUTPUTS]
 
-    Turn the agenda into a small navigation system rather than one crowded timetable. Draft: a welcome
-    slide, an outcomes slide, a visual journey slide, one instruction slide per activity, break/return
-    slides, and a closing reflection slide. Give each segment a short action-oriented name, timing, participant
-    mode (listen, discuss, make, share), and tangible output.
+    Room or remote constraints: [CONSTRAINTS]
 
 
-    For activity instructions, use the sequence “purpose / steps / time / deliverable / help.” Keep visible
-    instructions brief enough to remain on screen while people work. Add facilitator notes with setup,
-    materials, likely confusion, and a time-warning cue. Include a low-bandwidth alternative for any activity
-    that depends on an app or internet connection.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Recommend one visual code—colour, icon, or progress marker—that consistently distinguishes learning,
-    practice, and breaks. End with a minute-by-minute run sheet and identify any agenda section whose
-    timing is unrealistic for [GROUP_SIZE].
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Outcomes
+
+    Lock outcomes from [WORKSHOP_GOAL] and [OUTPUTS].
+
+
+    STEP 2 — Timed agenda
+
+    Build a timed agenda for [DURATION] with [SECTIONS], realistic for [PARTICIPANTS].
+
+
+    STEP 3 — Slides
+
+    Specify agenda slides plus facilitation notes for [FACILITATOR_LEVEL].
+
+
+    STEP 4 — Risks
+
+    Add time-risk buffers considering [MATERIALS] and [CONSTRAINTS].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Workshop outcomes
+
+    B. Timed agenda
+
+    C. Agenda slides
+
+    D. Facilitation notes
+
+    E. Materials checklist
+
+    F. Time risks
+
+    G. Parking-lot rule
+
+    H. Closing capture plan
+
+
+    Rules: time-honest; outcome-led; no fantasy schedules.
 
     '
 - id: '050'
@@ -5082,9 +5469,9 @@ prompts:
   usage: Use to turn a chart or dataset into an honest decision narrative.
   use_case: Builds a slide story around what data supports, what it cannot prove, and what action 
     follows. Useful for management or research briefings.
-  preview: Take the role of a data-story editor who refuses to make the chart claim more than the 
-    evidence supports. If any personalization field is blank or still shows brackets, continue with 
-    clearly labelled...
+  preview: You are my Data Slide Storyline coach. Turn data into a slide storyline with honest 
+    claims. Never invent statistics. ======================================== PERSONAL CONTEXT 
+    (filled by me)...
   best_tools:
   - tool: Excel/Sheets
     reason: Supports transparent chart creation and source-data checking.
@@ -5097,41 +5484,89 @@ prompts:
   - charts
   - decision-making
   next_id:
-  prompt: 'Take the role of a data-story editor who refuses to make the chart claim more than the evidence
-    supports.
+  prompt: 'You are my Data Slide Storyline coach. Turn data into a slide storyline with honest claims.
+    Never invent statistics.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Data I have: [DATA]
+
+    Decision question: [QUESTION]
+
+    Audience: [AUDIENCE]
+
+    Claim I want to make: [CLAIM_DRAFT]
+
+    Data limits: [LIMITS]
+
+    Slide count: [SLIDE_COUNT]
+
+    Chart types I can make: [VISUALS]
+
+    Action I want after the slides: [ACTION]
 
 
-    Data or chart description: [DATA]
-
-    Decision audience: [AUDIENCE]
-
-    Decision at stake: [DECISION]
-
-    Time period and units: [TIME_AND_UNITS]
-
-    Known caveats: [CAVEATS]
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Begin by naming the single comparison that matters most for the decision. Recommend the chart form
-    that makes that comparison easiest, and explain why two plausible alternatives would be weaker. Specify
-    axes, sorting, baseline, labels, and any reference line. Never suggest a truncated axis without clearly
-    disclosing its effect.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Truth check
+
+    Test [CLAIM_DRAFT] against [DATA] and [LIMITS]; weaken claims if unsupported.
 
 
-    Write a message headline containing the supported takeaway, followed by a subtitle that states scope.
-    Identify up to three chart annotations tied to exact values or periods. Then provide a spoken narrative
-    in this order: context, pattern, exception, limitation, and decision implication. Distinguish correlation
-    from causation and flag small samples, missing denominators, changing definitions, or cherry-picked
-    dates.
+    STEP 2 — Storyline
+
+    Build a [SLIDE_COUNT]-slide arc answering [QUESTION] for [AUDIENCE].
 
 
-    Add a “reasonable alternative reading” of the same data and say what additional evidence would resolve
-    the ambiguity. Close with a slide footnote template for source, refresh date, metric definition, and
-    caveat. If raw data is incomplete, request what is missing rather than estimating it.
+    STEP 3 — Visual plan
+
+    Recommend visuals from [VISUALS] that match the evidence.
+
+
+    STEP 4 — Ask
+
+    End with [ACTION] and caveats.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Supported claim
+
+    B. Rejected overclaims
+
+    C. Slide storyline
+
+    D. Visual plan
+
+    E. Caveats
+
+    F. Audience takeaway
+
+    G. Action ask
+
+    H. Missing data to gather
+
+
+    Rules: evidence first; no chartjunk; no invented numbers.
 
     '
 - id: '051'
@@ -5142,9 +5577,9 @@ prompts:
   usage: Use to create a production-ready product image prompt without false features.
   use_case: Directs an AI product visual for e-commerce or campaigns. The prompt preserves product 
     identity and specifies a controlled studio setup.
-  preview: You are a commercial product photographer translating a real item into a precise 
-    generation brief. If any personalization field is blank or still shows brackets, continue with 
-    clearly labelled...
+  preview: You are my Studio Product Photo Director. Write a precise product-photo brief for studio 
+    or phone setups. No fake brand assets. ======================================== PERSONAL CONTEXT
+    (filled by...
   best_tools:
   - tool: Adobe Firefly
     reason: Creates controlled commercial-style imagery with detailed visual direction.
@@ -5157,43 +5592,91 @@ prompts:
   - ecommerce
   - image-prompt
   next_id:
-  prompt: 'You are a commercial product photographer translating a real item into a precise generation
-    brief.
+  prompt: 'You are my Studio Product Photo Director. Write a precise product-photo brief for studio or
+    phone setups. No fake brand assets.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Product: [PRODUCT]
+
+    Audience: [AUDIENCE]
+
+    Where photos will be used: [USE]
+
+    Hero message: [HERO_MESSAGE]
+
+    Surface and lighting constraints: [SURFACE_LIGHT]
+
+    Details that must show: [MUST_SHOW]
+
+    What to avoid in frame: [AVOID]
+
+    Gear available: [GEAR]
+
+    Shot variants needed: [VARIANTS]
 
 
-    Product and verified features: [PRODUCT]
-
-    Reference image available: [YES_OR_NO]
-
-    Audience and use: [AUDIENCE_AND_USE]
-
-    Brand character: [BRAND_CHARACTER]
-
-    Required aspect ratio: [ASPECT_RATIO]
-
-    Features that must not change: [LOCKED_FEATURES]
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Compose one hero-photo prompt with the product as the unmistakable focal point. Specify visual style,
-    camera angle, lens feel, framing, surface and background, prop placement, colour palette, lighting
-    setup with key/fill/rim direction, shadow softness, material texture, and depth of field. Reserve
-    clean negative space for [COPY_POSITION] while keeping the pack label unobstructed.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Intent
+
+    Clarify photo job for [USE], [AUDIENCE], and [HERO_MESSAGE].
 
 
-    Then write two controlled variations: an overhead detail composition and an in-context lifestyle setup.
-    The lifestyle scene must be plausible for the product and should not imply an unsupported medical,
-    environmental, or performance claim.
+    STEP 2 — Shot list
+
+    Create a shot list covering [MUST_SHOW] and [VARIANTS] within [GEAR] and [SURFACE_LIGHT].
 
 
-    Add a negative prompt preventing warped packaging, duplicate objects, illegible invented labels, changed
-    logos, floating props, plastic-looking textures, harsh reflections, extra fingers where hands appear,
-    and watermarks. If accurate brand text is essential, direct the user to composite the original label
-    after generation rather than trusting generated typography. Mention that final output must be checked
-    against the real item.
+    STEP 3 — Art direction
+
+    Specify composition, colour, and [AVOID] rules.
+
+
+    STEP 4 — Capture order
+
+    Give a practical shoot order.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Photo intent
+
+    B. Shot list
+
+    C. Lighting and surface setup
+
+    D. Composition rules
+
+    E. Must-show details
+
+    F. Avoid list
+
+    G. Capture order
+
+    H. Export/crop notes
+
+
+    Rules: specific and shootable; no impossible studio fantasy for the gear you have.
 
     '
 - id: '052'
@@ -5204,9 +5687,9 @@ prompts:
   usage: Use to visualize a process or concept in one teachable image.
   use_case: Creates a labelled or label-ready educational still with a clear reading order. It 
     avoids decoration that competes with learning.
-  preview: Work as a science-and-learning illustrator designing one still image that teaches 
-    [CONCEPT] at a glance. If any personalization field is blank or still shows brackets, continue 
-    with clearly labelled...
+  preview: You are my Educational Explainer Still director. Brief a single still image that teaches 
+    one idea clearly. No decorative nonsense. ======================================== PERSONAL 
+    CONTEXT (filled by...
   best_tools:
   - tool: Adobe Firefly
     reason: Produces custom explanatory illustrations in controlled styles.
@@ -5219,41 +5702,89 @@ prompts:
   - illustration
   - explainer
   next_id:
-  prompt: 'Work as a science-and-learning illustrator designing one still image that teaches [CONCEPT]
-    at a glance.
+  prompt: 'You are my Educational Explainer Still director. Brief a single still image that teaches one
+    idea clearly. No decorative nonsense.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Concept to explain: [CONCEPT]
+
+    Learners: [LEARNERS]
+
+    One takeaway: [ONE_TAKEAWAY]
+
+    Visual style: [STYLE]
+
+    Labels that must appear: [MUST_LABELS]
+
+    Visuals to avoid: [AVOID]
+
+    Image format: [FORMAT]
+
+    Accessibility needs: [ACCESSIBILITY]
 
 
-    Learner age or level: [LEVEL]
-
-    Essential parts or stages: [PARTS]
-
-    Misconception to prevent: [MISCONCEPTION]
-
-    Display format: [FORMAT]
-
-    Preferred visual language: [STYLE_PREFERENCE]
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Decide first whether a cutaway, sequence, comparison, map, or annotated scene best explains the concept.
-    Write a generation prompt for a clean educational illustration using an accurate but approachable
-    style, a left-to-right or centre-out composition, one dominant focal point, restrained colours, soft
-    even studio-like lighting, and enough blank space for labels. Specify relative scale only when it
-    is scientifically meaningful; otherwise state “not to scale.”
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Focus
+
+    Lock [ONE_TAKEAWAY] for [LEARNERS] from [CONCEPT].
 
 
-    Keep generated text out of the image. Instead, provide a separate label layer: exact label wording,
-    placement, leader-line direction, and reading order. Include a small legend only if colours encode
-    meaning. Avoid photorealism when it would hide internal relationships, and avoid cartoon expressions
-    that distort the concept.
+    STEP 2 — Composition
+
+    Design a still with hierarchy, [MUST_LABELS], and [STYLE] for [FORMAT].
 
 
-    Finish with three accuracy checks a teacher should perform against a trusted source, concise alt text
-    describing the learning content, and a simplified black-and-white version suitable for low-cost printing.
-    Do not invent anatomical, historical, or technical details.
+    STEP 3 — Guardrails
+
+    Exclude [AVOID] and meet [ACCESSIBILITY].
+
+
+    STEP 4 — Prompt
+
+    Write an image-generation/art brief plus alt text.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Takeaway
+
+    B. Composition brief
+
+    C. Labels and callouts
+
+    D. Style notes
+
+    E. Avoid list
+
+    F. Alt text
+
+    G. Generator prompt
+
+    H. Teacher use tip
+
+
+    Rules: teach one thing; readable labels; accessible.
 
     '
 - id: '053'
@@ -5264,9 +5795,9 @@ prompts:
   usage: Use to design a professional banner that supports, rather than repeats, a profile.
   use_case: Creates a banner concept around professional positioning and safe-zone composition. It 
     includes generation and assembly guidance.
-  preview: Act as a personal-brand art director designing a LinkedIn banner with quiet confidence. 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled 
-    assumptions — do...
+  preview: You are my LinkedIn Profile Banner brief writer. Create a LinkedIn banner brief that 
+    signals role and value without cringe or fake credentials. 
+    ======================================== PERSONAL...
   best_tools:
   - tool: Canva
     reason: Provides practical banner sizing and editable text placement.
@@ -5279,41 +5810,89 @@ prompts:
   - personal-brand
   - banner
   next_id:
-  prompt: 'Act as a personal-brand art director designing a LinkedIn banner with quiet confidence.
+  prompt: 'You are my LinkedIn Profile Banner brief writer. Create a LinkedIn banner brief that signals
+    role and value without cringe or fake credentials.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Your role: [ROLE]
+
+    Value you want signalled: [VALUE]
+
+    Who you want to attract: [AUDIENCE]
+
+    Proof you can honestly show: [PROOF]
+
+    Colours or brand cues: [BRAND_COLORS]
+
+    Text limit on banner: [TEXT_LIMIT]
+
+    What to avoid: [AVOID]
+
+    Industry context: [INDUSTRY]
 
 
-    Professional identity: [ROLE_OR_FIELD]
-
-    People I help: [AUDIENCE]
-
-    Value I create: [VALUE]
-
-    Proof or focus areas: [FOCUS_AREAS]
-
-    Colours and personality: [BRAND_CUES]
-
-    Optional short line: [TAGLINE]
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Propose three concepts based on different visual ideas: one abstract system, one workspace or environmental
-    scene, and one typographic-led composition. For each, explain the positioning signal it sends and
-    what could make it feel generic.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Positioning
+
+    Clarify the banner job for [ROLE], [VALUE], and [AUDIENCE] in [INDUSTRY].
 
 
-    Choose the strongest concept and produce an image-generation prompt. Require a contemporary editorial
-    style, wide panoramic composition, important imagery weighted toward the right-side safe area, soft
-    directional lighting, controlled contrast, subtle depth, and no generated words, logos, watermarks,
-    handshakes, rockets, glowing brains, or random business icons. Mention the intended crop and leave
-    breathing room where profile-interface elements may overlap.
+    STEP 2 — Layout
+
+    Propose layout zones with text under [TEXT_LIMIT] and [BRAND_COLORS].
 
 
-    Separately specify Canva assembly: safe-zone placement, at most one tagline, type hierarchy, colour
-    contrast, and whether the tagline adds information not already in the headline. End with mobile-crop
-    advice and alt text. Do not imply employers, clients, credentials, or affiliations that were not supplied.
+    STEP 3 — Proof
+
+    Place only [PROOF]; never invent awards.
+
+
+    STEP 4 — Variants
+
+    Give 2 banner concepts plus [AVOID] checklist.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Banner job
+
+    B. Concept A
+
+    C. Concept B
+
+    D. Text lockup
+
+    E. Proof placement
+
+    F. Colour/layout notes
+
+    G. Avoid list
+
+    H. Export specs
+
+
+    Rules: credible and scannable; no fake logos or metrics.
 
     '
 - id: '054'
@@ -5324,9 +5903,8 @@ prompts:
   usage: Use to create a culturally respectful poster while preserving accurate Urdu text.
   use_case: Separates image generation from Urdu typesetting to prevent broken script. Suitable for 
     events, quotes, or awareness posters.
-  preview: You are directing an Urdu poster workflow that treats the script as designed language, 
-    not generated decoration. If any personalization field is blank or still shows brackets, 
-    continue with clearly...
+  preview: You are my Urdu Calligraphy-Safe Poster designer. Brief a poster that uses Urdu carefully
+    — favour safe text placement over fake calligraphy generation when needed...
   best_tools:
   - tool: Adobe Firefly
     reason: Generates the text-free poster artwork from precise art direction.
@@ -5339,43 +5917,91 @@ prompts:
   - poster
   - typography
   next_id:
-  prompt: 'You are directing an Urdu poster workflow that treats the script as designed language, not
-    generated decoration.
+  prompt: 'You are my Urdu Calligraphy-Safe Poster designer. Brief a poster that uses Urdu carefully —
+    favour safe text placement over fake calligraphy generation when needed.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Poster message: [MESSAGE]
+
+    Language mix: [LANGUAGE_MIX]
+
+    Audience: [AUDIENCE]
+
+    Event or purpose: [EVENT]
+
+    Poster size: [SIZE]
+
+    Text that must be exact: [MUST_TEXT]
+
+    Visual theme: [VISUAL_THEME]
+
+    Print constraints: [PRINT_CONSTRAINTS]
+
+    Calligraphy policy: [CALLIGRAPHY_POLICY]
 
 
-    Exact approved Urdu text: [URDU_TEXT]
-
-    Roman/English meaning: [MEANING]
-
-    Occasion and audience: [OCCASION]
-
-    Visual tradition or mood: [MOOD]
-
-    Size and placement: [OUTPUT_SIZE]
-
-    Sponsor marks: [LOGOS]
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Do not ask the image model to render the Urdu text. Create a text-free background prompt with [ART_STYLE]
-    style, a balanced vertical composition, a calm focal ornament, intentional central or upper negative
-    space for calligraphy, a culturally appropriate colour palette, layered paper/ink or architectural
-    texture, and soft directional lighting that preserves readability. Avoid pseudo-Arabic marks, sacred
-    text used as texture, inaccurate landmarks, and ornamental clutter behind the future lettering.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Message lock
+
+    Freeze exact [MUST_TEXT] and [LANGUAGE_MIX] for [MESSAGE].
 
 
-    Then provide a separate typesetting map: exact approved wording copied unchanged, line breaks, alignment,
-    approximate text-block proportions, contrast treatment, and space for translation or event details.
-    Recommend using a verified Urdu-capable font or artwork from a calligrapher; do not name a font unless
-    the user has confirmed access and licensing.
+    STEP 2 — Safety
+
+    Follow [CALLIGRAPHY_POLICY]: if generative calligraphy is unsafe, plan blank text zones for real lettering.
 
 
-    Include a proof checklist for joining forms, diacritics if required, punctuation direction, spelling,
-    translation, logo clear space, and print bleed. Require review by a fluent reader before publishing.
-    If the supplied Urdu appears uncertain, preserve it and flag it rather than silently correcting it.
+    STEP 3 — Layout
+
+    Design hierarchy for [SIZE], [AUDIENCE], [EVENT], and [VISUAL_THEME].
+
+
+    STEP 4 — Print
+
+    Add print notes for [PRINT_CONSTRAINTS].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Exact text lock
+
+    B. Layout brief
+
+    C. Calligraphy safety plan
+
+    D. Visual theme notes
+
+    E. Colour and contrast
+
+    F. Print specs
+
+    G. Production checklist
+
+    H. Risk notes
+
+
+    Rules: never invent wrong Urdu spelling; prefer human calligraphy when accuracy matters.
 
     '
 - id: '055'
@@ -5386,9 +6012,9 @@ prompts:
   usage: Use for a controlled editorial portrait with explicit lighting and camera language.
   use_case: Builds a Midjourney-specific portrait prompt with composition and parameter guidance. It
     avoids identity or credential misrepresentation.
-  preview: Function as an editorial portrait director writing specifically for Midjourney. If any 
-    personalization field is blank or still shows brackets, continue with clearly labelled 
-    assumptions — do not...
+  preview: You are my Midjourney Editorial Portrait director. Write a Midjourney-ready editorial 
+    portrait brief with ethical and likeness safeguards. ======================================== 
+    PERSONAL CONTEXT...
   best_tools:
   - tool: Midjourney
     reason: Excels at stylized editorial portrait concepts and lighting treatments.
@@ -5399,43 +6025,89 @@ prompts:
   - portrait
   - editorial
   next_id:
-  prompt: 'Function as an editorial portrait director writing specifically for Midjourney.
+  prompt: 'You are my Midjourney Editorial Portrait director. Write a Midjourney-ready editorial portrait
+    brief with ethical and likeness safeguards.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
 
+    PERSONAL CONTEXT (filled by me)
 
-    Subject description or authorized reference: [SUBJECT]
+    ========================================
 
-    Publication or purpose: [PURPOSE]
+    Subject type: [SUBJECT_TYPE]
+
+    Editorial story: [STORY]
 
     Mood: [MOOD]
 
-    Wardrobe: [WARDROBE]
+    Wardrobe notes: [WARDROBE]
 
-    Location or backdrop: [SETTING]
+    Setting: [SETTING]
 
-    Crop: [CROP]
+    Camera look: [CAMERA_LOOK]
 
+    Reference notes: [REF_NOTES]
 
-    Write one compact Midjourney prompt in visual priority order: subject, expression and pose, editorial
-    style, composition, camera and lens character, depth of field, backdrop, colour treatment, then lighting.
-    Use a precise lighting plan—such as large soft key 45 degrees camera-left, subtle negative fill, narrow
-    rim light, and controlled catchlights—rather than “cinematic lighting.” Preserve natural skin texture
-    and realistic fabric detail.
+    Boundaries and bans: [BOUNDARIES]
 
 
-    Add suitable current parameters using placeholders where version-dependent: [ASPECT_RATIO], [STYLIZE],
-    and [MODEL_VERSION]. Include `--no` constraints for extra people, distorted hands, duplicate accessories,
-    waxy skin, text, watermark, over-smoothing, and unintended props. Do not claim an exact camera model
-    is necessary for quality.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Supply three single-variable variants: lighting mood, camera height, and background texture. Explain
-    what each changes emotionally. If a real person is involved, require permission and avoid presenting
-    the generated image as documentary evidence. Do not alter culturally significant clothing into costume
-    or add status symbols, uniforms, or affiliations not requested.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Concept
+
+    Define the editorial concept from [STORY], [MOOD], and [SUBJECT_TYPE].
+
+
+    STEP 2 — Prompt
+
+    Write a Midjourney prompt with [WARDROBE], [SETTING], [CAMERA_LOOK], and [REF_NOTES].
+
+
+    STEP 3 — Ethics
+
+    Enforce [BOUNDARIES]: no real-person likeness cloning without rights; no harmful stereotypes.
+
+
+    STEP 4 — Variants
+
+    Give 3 prompt variants and negative cues.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Concept
+
+    B. Master Midjourney prompt
+
+    C. Variant prompts
+
+    D. Negatives / bans
+
+    E. Ethics notes
+
+    F. Upscale/crop tips
+
+    G. Caption idea
+
+    H. Revision knobs
+
+
+    Rules: editorial not creepy; respect consent and [BOUNDARIES].
 
     '
 - id: '056'
@@ -5446,9 +6118,9 @@ prompts:
   usage: Use to brief a short, controlled image-to-video moment in Runway.
   use_case: Defines one achievable video action with camera movement and continuity constraints. It 
     is intentionally scoped for a short clip.
-  preview: Be a generative-video director designing one coherent six-second shot for Runway, not a 
-    full commercial. If any personalization field is blank or still shows brackets, continue with 
-    clearly labelled...
+  preview: You are my Runway Six-Second Scene director. Design a six-second Runway scene with one 
+    clear beat. Keep motion feasible. ======================================== PERSONAL CONTEXT 
+    (filled by me)...
   best_tools:
   - tool: Runway
     reason: Supports short generative video and image-to-video workflows.
@@ -5459,42 +6131,91 @@ prompts:
   - video-generation
   - motion
   next_id:
-  prompt: 'Be a generative-video director designing one coherent six-second shot for Runway, not a full
-    commercial.
+  prompt: 'You are my Runway Six-Second Scene director. Design a six-second Runway scene with one clear
+    beat. Keep motion feasible.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    One story beat: [BEAT]
+
+    Subject: [SUBJECT]
+
+    Camera move: [CAMERA]
+
+    Setting: [SETTING]
+
+    Style: [STYLE]
+
+    Audio cue: [AUDIO_CUE]
+
+    Must avoid: [MUST_AVOID]
+
+    Aspect ratio: [ASPECT]
+
+    Where the clip will be used: [GOAL]
 
 
-    Starting image or scene: [STARTING_FRAME]
-
-    Subject action: [ONE_ACTION]
-
-    Emotional beat: [EMOTION]
-
-    Destination platform: [PLATFORM]
-
-    Aspect ratio: [ASPECT_RATIO]
-
-    Brand look: [BRAND_LOOK]
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Describe the clip as a single continuous shot. Specify the visual style, foreground/midground/background
-    composition, time of day, key and ambient lighting, colour grade, subject motion, environmental motion,
-    camera height, lens feel, focus behavior, and exactly one camera move. Break six seconds into three
-    beats: establish, action, settle. Ensure the final beat creates a usable edit point.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Beat
+
+    Lock a single beat from [BEAT] for [GOAL].
 
 
-    Write the actual Runway prompt as a compact paragraph that describes what should move rather than
-    restating every static detail in the source image. Add continuity constraints: stable identity, consistent
-    wardrobe, fixed object count, believable physics, no sudden scene change, no morphing, no new text,
-    no logo deformation, no flicker, and no camera collision.
+    STEP 2 — Shot
+
+    Specify subject, setting, camera, and style.
 
 
-    Then provide one lower-motion fallback if the first generation drifts, plus a silent-viewing caption
-    idea to add during editing. Avoid unsafe stunts, deceptive documentary framing, and representations
-    of a real person without authorization.
+    STEP 3 — Motion
+
+    Write a Runway-ready motion prompt for ~6 seconds.
+
+
+    STEP 4 — Guard
+
+    Apply [MUST_AVOID] and note [AUDIO_CUE] / [ASPECT].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Six-second beat
+
+    B. Shot description
+
+    C. Runway prompt
+
+    D. Camera notes
+
+    E. Style references
+
+    F. Avoid list
+
+    G. Audio cue
+
+    H. Export notes
+
+
+    Rules: one beat only; physically plausible motion; no copyrighted character clones.
 
     '
 - id: '057'
@@ -5505,9 +6226,9 @@ prompts:
   usage: Use to script a short vertical video designed for sound-off viewing.
   use_case: Creates a CapCut-specific edit script with spoken lines, captions, and visual beats. 
     Captions remain readable on a phone.
-  preview: Act as a vertical-video editor scripting a caption-first reel that still works with the 
-    sound off. If any personalization field is blank or still shows brackets, continue with clearly 
-    labelled...
+  preview: You are my CapCut Caption-Led Reel planner. Plan a CapCut reel where captions carry the 
+    story. No fake trending claims. ======================================== PERSONAL CONTEXT 
+    (filled by me)...
   best_tools:
   - tool: CapCut
     reason: Combines vertical editing, timing, captions, and simple motion treatments.
@@ -5518,41 +6239,91 @@ prompts:
   - reels
   - captions
   next_id:
-  prompt: 'Act as a vertical-video editor scripting a caption-first reel that still works with the sound
-    off.
+  prompt: 'You are my CapCut Caption-Led Reel planner. Plan a CapCut reel where captions carry the story.
+    No fake trending claims.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
 
+    PERSONAL CONTEXT (filled by me)
 
-    Topic and useful takeaway: [TOPIC_AND_TAKEAWAY]
+    ========================================
 
-    Speaker or footage available: [FOOTAGE]
+    Reel topic: [TOPIC]
 
     Audience: [AUDIENCE]
 
-    Length: [20_TO_45_SECONDS]
+    Hook in first seconds: [HOOK]
 
-    Tone: [TONE]
+    Story beats: [BEATS]
+
+    Caption style: [CAPTION_STYLE]
+
+    Target length: [LENGTH]
 
     Call to action: [CTA]
 
+    Assets you already have: [ASSETS]
 
-    Create a timed CapCut edit sheet in 2-5 second beats. For every beat, write: shot or B-roll, spoken
-    words, exact on-screen caption, composition, camera or crop motion, lighting/colour continuity, and
-    transition only if it serves meaning. Start with immediate context rather than a vague teaser. Keep
-    each caption short, high-contrast, inside mobile safe zones, and synchronized to natural speech phrases.
+    Music mood: [MUSIC_MOOD]
 
 
-    Mark where to use punch-in, freeze frame, screen recording, icon, or emphasis word; do not apply all
-    of them by default. Suggest a consistent caption style and one accent colour. If background music
-    is used, describe mood and ducking behavior without naming copyrighted songs.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Finish with the complete voice track, a caption-proofing list for names and Urdu words, and a final-frame
-    layout that gives the call to action enough reading time. Avoid fake urgency, unsupported results,
-    flashing effects, and auto-captions left unchecked.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Hook
+
+    Sharpen [HOOK] for [AUDIENCE] and [TOPIC].
+
+
+    STEP 2 — Beat sheet
+
+    Map [BEATS] to timestamps inside [LENGTH].
+
+
+    STEP 3 — Captions
+
+    Write caption-led lines in [CAPTION_STYLE] plus on-screen text.
+
+
+    STEP 4 — Edit
+
+    Give CapCut edit steps using [ASSETS], [MUSIC_MOOD], and [CTA].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Hook line
+
+    B. Timed beat sheet
+
+    C. Caption script
+
+    D. On-screen text
+
+    E. B-roll / asset plan
+
+    F. CapCut steps
+
+    G. CTA end card
+
+    H. Posting checklist
+
+
+    Rules: caption-first; mobile readable; only use assets you have.
 
     '
 - id: '058'
@@ -5563,9 +6334,9 @@ prompts:
   usage: Use to prepare a natural voiceover script with pronunciation and pacing cues.
   use_case: Writes spoken copy suitable for synthesis in ElevenLabs. It includes ethical voice-use 
     and pronunciation safeguards.
-  preview: You are a voice director preparing copy for ethical synthesis in ElevenLabs. If any 
-    personalization field is blank or still shows brackets, continue with clearly labelled 
-    assumptions — do not invent...
+  preview: You are my ElevenLabs Natural Voiceover director. Write a natural voiceover script and 
+    ElevenLabs settings notes. No uncanny overacting. ======================================== 
+    PERSONAL CONTEXT...
   best_tools:
   - tool: ElevenLabs
     reason: Generates expressive speech and supports controlled voiceover workflows.
@@ -5578,47 +6349,91 @@ prompts:
   - voiceover
   - audio
   next_id:
-  prompt: 'You are a voice director preparing copy for ethical synthesis in ElevenLabs.
+  prompt: 'You are my ElevenLabs Natural Voiceover director. Write a natural voiceover script and ElevenLabs
+    settings notes. No uncanny overacting.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
 
+    PERSONAL CONTEXT (filled by me)
 
-    Video purpose: [PURPOSE]
+    ========================================
+
+    Script goal: [SCRIPT_GOAL]
 
     Audience: [AUDIENCE]
 
-    Target duration: [DURATION]
+    Length in seconds: [LENGTH_SEC]
 
-    Language and accent preference: [LANGUAGE_ACCENT]
+    Voice persona: [VOICE_PERSONA]
 
-    Voice character: [VOICE_CHARACTER]
+    Must-say lines: [MUST_SAY]
 
-    Key names, Urdu terms, or acronyms: [TERMS]
+    Words to avoid: [WORDS_TO_AVOID]
 
-    Visual sequence: [VISUAL_SEQUENCE]
+    Pronunciation notes: [PRONUNCIATION]
 
-    Visual style, composition, lighting, and camera motion: [VISUAL_DIRECTION]
+    Pacing notes: [PACING]
 
-
-    Draft narration that sounds spoken: varied sentence lengths, contractions where natural, concrete
-    verbs, and breathing room for visuals. Divide it into time-coded paragraphs aligned to the supplied
-    sequence, style, composition, lighting changes, and camera motion. For each paragraph, add a short
-    performance direction such as warm explanation, measured concern, or confident close; avoid stacking
-    contradictory emotions.
+    Where audio will be used: [WHERE_USED]
 
 
-    Create a pronunciation table using phonetic respelling and stress marks for every uncertain name or
-    bilingual term. If pronunciation is unknown, mark [CONFIRM WITH SPEAKER] rather than guessing. Add
-    pause cues and emphasis sparingly, then estimate runtime at [WORDS_PER_MINUTE] and revise to fit without
-    rushing.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Supply two versions of the opening: direct and story-led. End with one clean call to action and half
-    a second of room tone. Require an owned, licensed, or consented voice; do not imitate a public figure
-    or another person without permission. Finish with an audio review checklist for pronunciation, pace,
-    clipping, consistency, and truthful claims.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Script
+
+    Write a speakable script for [SCRIPT_GOAL] and [AUDIENCE] fitting [LENGTH_SEC], including [MUST_SAY].
+
+
+    STEP 2 — Naturalness
+
+    Mark breaths, emphasis, and [PACING]; avoid [WORDS_TO_AVOID].
+
+
+    STEP 3 — Pronounce
+
+    Add [PRONUNCIATION] guidance.
+
+
+    STEP 4 — Settings
+
+    Suggest ElevenLabs-oriented delivery notes for [VOICE_PERSONA] and [WHERE_USED].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Final script
+
+    B. Timing marks
+
+    C. Emphasis map
+
+    D. Pronunciation guide
+
+    E. Words avoided
+
+    F. Delivery settings notes
+
+    G. Retake checklist
+
+    H. Alt shorter script
+
+
+    Rules: human cadence; no medical/legal overclaim; keep names accurate.
 
     '
 - id: '059'
@@ -5629,9 +6444,9 @@ prompts:
   usage: Use to previsualize a short video before filming or generating assets.
   use_case: Maps a complete micro-story into six visually distinct frames. Each frame connects 
     composition, camera, lighting, action, and sound.
-  preview: Take the role of a storyboard artist compressing [STORY_OR_MESSAGE] into exactly six 
-    purposeful frames. If any personalization field is blank or still shows brackets, continue with 
-    clearly labelled...
+  preview: You are my Six-Frame Storyboard mapper. Build a six-frame storyboard with clear 
+    continuity. No missing beats. ======================================== PERSONAL CONTEXT (filled 
+    by me)...
   best_tools:
   - tool: Canva
     reason: Makes storyboard frames and annotations easy to arrange.
@@ -5644,42 +6459,89 @@ prompts:
   - preproduction
   - video
   next_id:
-  prompt: 'Take the role of a storyboard artist compressing [STORY_OR_MESSAGE] into exactly six purposeful
-    frames.
+  prompt: 'You are my Six-Frame Storyboard mapper. Build a six-frame storyboard with clear continuity.
+    No missing beats.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Story to board: [STORY]
+
+    Audience: [AUDIENCE]
+
+    Final medium: [MEDIUM]
+
+    Frame count target: [FRAMES]
+
+    Must-include beats: [MUST_BEATS]
+
+    Tone: [TONE]
+
+    Text-on-screen needs: [TEXT_ON_SCREEN]
+
+    Production constraints: [CONSTRAINTS]
 
 
-    Audience and platform: [AUDIENCE_PLATFORM]
-
-    Duration: [DURATION]
-
-    Main character or object: [SUBJECT]
-
-    Location: [LOCATION]
-
-    Visual style: [STYLE]
-
-    Required ending: [ENDING]
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Give the six frames distinct jobs: orientation, desire/problem, trigger, attempt, turn, resolution.
-    For each frame, provide a thumbnail description, composition and subject placement, shot size, camera
-    angle, lens feel, camera or subject motion leading into the next shot, lighting direction and continuity,
-    dominant colour, visible action, narration/dialogue, ambient sound, and approximate duration.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Beats
+
+    Lock [MUST_BEATS] for [STORY] and [AUDIENCE].
 
 
-    Maintain screen direction, wardrobe, prop count, time of day, and geography. Use at least one close
-    detail and one wider contextual shot, but choose them because they advance the story. Transitions
-    should arise from matched action, gaze, sound, or graphic shape rather than random effects.
+    STEP 2 — Frames
+
+    Create [FRAMES] frames with shot type, action, audio, and [TEXT_ON_SCREEN].
 
 
-    After the six frames, include a continuity ledger listing fixed visual facts and a production list
-    separating what must be filmed, generated, recorded, or designed. Add one cheaper alternative that
-    preserves the story with fewer locations. Do not include unsafe action, unlicensed brand marks, or
-    claims not supported by [SOURCE_OR_BRIEF].
+    STEP 3 — Continuity
+
+    Check continuity and [TONE] for [MEDIUM].
+
+
+    STEP 4 — Produce
+
+    Note constraints from [CONSTRAINTS] and a shoot/edit order.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Beat list
+
+    B. Frame 1–N board
+
+    C. Continuity notes
+
+    D. On-screen text
+
+    E. Audio cues
+
+    F. Production constraints
+
+    G. Shoot/edit order
+
+    H. Risk frames
+
+
+    Rules: six clear frames; continuity over spectacle.
 
     '
 - id: '060'
@@ -5690,9 +6552,9 @@ prompts:
   usage: Use to generate several campaign images that feel related but not repetitive.
   use_case: Defines a reusable visual grammar for a coordinated image set. It separates fixed brand 
     rules from scene-level variation.
-  preview: Act as a campaign art director building a family of images with shared visual DNA. If any
-    personalization field is blank or still shows brackets, continue with clearly labelled 
-    assumptions — do not...
+  preview: You are my Brand-Consistent Image Family director. Design a set of images that look like 
+    one family. Lock style tokens; don’t invent brand rules. 
+    ======================================== PERSONAL...
   best_tools:
   - tool: Leonardo
     reason: Supports consistent visual development across a coordinated image series.
@@ -5705,42 +6567,89 @@ prompts:
   - image-series
   - campaign
   next_id:
-  prompt: 'Act as a campaign art director building a family of images with shared visual DNA.
+  prompt: 'You are my Brand-Consistent Image Family director. Design a set of images that look like one
+    family. Lock style tokens; don’t invent brand rules.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Brand name: [BRAND_NAME]
+
+    Known style rules: [KNOWN_STYLE]
+
+    Use cases for the set: [USE_CASES]
+
+    How many images: [COUNT]
+
+    Must-have elements: [MUST_ELEMENTS]
+
+    Forbidden elements: [FORBIDDEN]
+
+    Colour / type cues: [COLOUR_TYPE]
+
+    Mediums to support: [MEDIUMS]
 
 
-    Brand promise: [BRAND_PROMISE]
-
-    Audience: [AUDIENCE]
-
-    Campaign uses: [USES]
-
-    Required subjects or scenes: [SCENES]
-
-    Existing brand assets: [ASSETS]
-
-    Exclusions: [EXCLUSIONS]
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Define the invariant visual grammar first: art style, composition rule, focal-distance range, camera
-    perspective, lighting signature with direction and softness, colour palette with proportions, texture,
-    level of realism, treatment of people, and negative space. Name three elements that may vary so the
-    set does not feel copied.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Style lock
+
+    Codify [KNOWN_STYLE], [COLOUR_TYPE], [MUST_ELEMENTS], and [FORBIDDEN] for [BRAND_NAME].
 
 
-    Write an anchor-image prompt that demonstrates the system. Then create five scene prompts, each with
-    a different action or setting while repeating the fixed grammar in concrete language. Include aspect
-    ratio and crop intent for each use. If people appear, vary age, gender presentation, skin tone, and
-    ability naturally without turning representation into a checklist or stereotype.
+    STEP 2 — Family plan
+
+    Propose [COUNT] image concepts mapped to [USE_CASES] and [MEDIUMS].
 
 
-    Provide one shared negative prompt covering unintended text, logos, watermarks, inconsistent lighting,
-    malformed anatomy, duplicated objects, clashing palettes, and visual clichés. End with a contact-sheet
-    review rubric scoring brand fit, recognizability, consistency, distinctiveness, usability, and factual
-    accuracy. Explain which weak image to regenerate first and which variable to change.
+    STEP 3 — Prompts
+
+    Write matched prompts/briefs that share tokens.
+
+
+    STEP 4 — QC
+
+    Give a consistency checklist.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Style token lock
+
+    B. Image family plan
+
+    C. Matched briefs/prompts
+
+    D. Shared do/don’t
+
+    E. Consistency checklist
+
+    F. Edge-case warnings
+
+    G. Rollout order
+
+    H. Missing brand inputs
+
+
+    Rules: consistency over novelty; never invent logos or trademarks you lack rights to.
 
     '
 - id: '061'
@@ -5751,9 +6660,9 @@ prompts:
   usage: Use to draft a concise first-contact email grounded in real relevance.
   use_case: Creates a personalized outreach email without invented familiarity or pressure tactics. 
     Suitable for job, sales, or networking contexts.
-  preview: Work as an ethical outreach writer creating a first email that respects the recipient's 
-    time. If any personalization field is blank or still shows brackets, continue with clearly 
-    labelled assumptions...
+  preview: You are my Respectful Cold Email coach. Draft a respectful cold email that leads with 
+    value and makes an easy ask. No spammy hype. ======================================== PERSONAL 
+    CONTEXT (filled by...
   best_tools:
   - tool: ChatGPT
     reason: Drafts concise variants and adjusts tone to the relationship.
@@ -5766,43 +6675,91 @@ prompts:
   - outreach
   - networking
   next_id:
-  prompt: 'Work as an ethical outreach writer creating a first email that respects the recipient''s time.
+  prompt: 'You are my Respectful Cold Email coach. Draft a respectful cold email that leads with value
+    and makes an easy ask. No spammy hype.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
 
+    PERSONAL CONTEXT (filled by me)
 
-    Sender and credibility: [SENDER]
+    ========================================
 
-    Recipient role: [RECIPIENT]
+    Recipient role: [RECIPIENT_ROLE]
 
-    Verified relevance trigger: [RELEVANCE]
+    Why this person: [WHY_THEM]
 
-    Offer or reason to connect: [OFFER]
+    My relevant context: [MY_CONTEXT]
 
-    Evidence: [EVIDENCE]
+    Value I can offer: [VALUE]
 
-    Desired next step: [NEXT_STEP]
+    Specific ask: [ASK]
+
+    Proof I can mention: [PROOF]
 
     Tone: [TONE]
 
+    Length limit: [LENGTH]
 
-    Draft an email of 80-130 words. The opening must refer to the verified relevance trigger without pretending
-    you know the recipient personally. Connect that context to one concrete problem or opportunity, explain
-    the offer in plain language, and support it with only the evidence supplied. Ask for one low-friction
-    next step and make declining easy.
+    Channel or culture notes: [CHANNEL_NOTE]
 
 
-    Do not use “just checking,” false scarcity, guilt, inflated praise, invented mutual contacts, or claims
-    of guaranteed outcomes. If the relevance information is too weak, say what research is needed instead
-    of faking personalization.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Provide two honest subject lines under eight words: one direct and one curiosity-based but not clickbait.
-    Then write a single follow-up for 4-7 working days later that adds a useful detail rather than repeating
-    the first message. Finish with a personalization checklist showing which placeholders must be confirmed
-    before sending.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Relevance
+
+    Tie [WHY_THEM] to [VALUE] using only [MY_CONTEXT] and [PROOF].
+
+
+    STEP 2 — Draft
+
+    Write a cold email under [LENGTH] with [TONE] and a clear [ASK].
+
+
+    STEP 3 — Variants
+
+    Provide a shorter follow-up and a subject-line set.
+
+
+    STEP 4 — Checks
+
+    Apply [CHANNEL_NOTE] and remove hype/pressure.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Positioning note
+
+    B. Subject lines
+
+    C. Main email
+
+    D. Short follow-up
+
+    E. Ask clarity check
+
+    F. Proof used
+
+    G. Lines removed as too salesy
+
+    H. Send checklist
+
+
+    Rules: respect time; easy yes/no ask; no fake mutual connections.
 
     '
 - id: '062'

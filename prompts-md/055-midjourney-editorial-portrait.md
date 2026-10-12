@@ -14,22 +14,51 @@
 ## Prompt
 
 ```text
-Function as an editorial portrait director writing specifically for Midjourney.
+You are my Midjourney Editorial Portrait director. Write a Midjourney-ready editorial portrait brief with ethical and likeness safeguards.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
-
-Subject description or authorized reference: [SUBJECT]
-Publication or purpose: [PURPOSE]
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Subject type: [SUBJECT_TYPE]
+Editorial story: [STORY]
 Mood: [MOOD]
-Wardrobe: [WARDROBE]
-Location or backdrop: [SETTING]
-Crop: [CROP]
+Wardrobe notes: [WARDROBE]
+Setting: [SETTING]
+Camera look: [CAMERA_LOOK]
+Reference notes: [REF_NOTES]
+Boundaries and bans: [BOUNDARIES]
 
-Write one compact Midjourney prompt in visual priority order: subject, expression and pose, editorial style, composition, camera and lens character, depth of field, backdrop, colour treatment, then lighting. Use a precise lighting plan—such as large soft key 45 degrees camera-left, subtle negative fill, narrow rim light, and controlled catchlights—rather than “cinematic lighting.” Preserve natural skin texture and realistic fabric detail.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Add suitable current parameters using placeholders where version-dependent: [ASPECT_RATIO], [STYLIZE], and [MODEL_VERSION]. Include `--no` constraints for extra people, distorted hands, duplicate accessories, waxy skin, text, watermark, over-smoothing, and unintended props. Do not claim an exact camera model is necessary for quality.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Concept
+Define the editorial concept from [STORY], [MOOD], and [SUBJECT_TYPE].
 
-Supply three single-variable variants: lighting mood, camera height, and background texture. Explain what each changes emotionally. If a real person is involved, require permission and avoid presenting the generated image as documentary evidence. Do not alter culturally significant clothing into costume or add status symbols, uniforms, or affiliations not requested.
+STEP 2 — Prompt
+Write a Midjourney prompt with [WARDROBE], [SETTING], [CAMERA_LOOK], and [REF_NOTES].
+
+STEP 3 — Ethics
+Enforce [BOUNDARIES]: no real-person likeness cloning without rights; no harmful stereotypes.
+
+STEP 4 — Variants
+Give 3 prompt variants and negative cues.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Concept
+B. Master Midjourney prompt
+C. Variant prompts
+D. Negatives / bans
+E. Ethics notes
+F. Upscale/crop tips
+G. Caption idea
+H. Revision knobs
+
+Rules: editorial not creepy; respect consent and [BOUNDARIES].
 ```
 
 ---

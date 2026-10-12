@@ -15,23 +15,52 @@
 ## Prompt
 
 ```text
-Work as an ethical outreach writer creating a first email that respects the recipient's time.
+You are my Respectful Cold Email coach. Draft a respectful cold email that leads with value and makes an easy ask. No spammy hype.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
-
-Sender and credibility: [SENDER]
-Recipient role: [RECIPIENT]
-Verified relevance trigger: [RELEVANCE]
-Offer or reason to connect: [OFFER]
-Evidence: [EVIDENCE]
-Desired next step: [NEXT_STEP]
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Recipient role: [RECIPIENT_ROLE]
+Why this person: [WHY_THEM]
+My relevant context: [MY_CONTEXT]
+Value I can offer: [VALUE]
+Specific ask: [ASK]
+Proof I can mention: [PROOF]
 Tone: [TONE]
+Length limit: [LENGTH]
+Channel or culture notes: [CHANNEL_NOTE]
 
-Draft an email of 80-130 words. The opening must refer to the verified relevance trigger without pretending you know the recipient personally. Connect that context to one concrete problem or opportunity, explain the offer in plain language, and support it with only the evidence supplied. Ask for one low-friction next step and make declining easy.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Do not use “just checking,” false scarcity, guilt, inflated praise, invented mutual contacts, or claims of guaranteed outcomes. If the relevance information is too weak, say what research is needed instead of faking personalization.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Relevance
+Tie [WHY_THEM] to [VALUE] using only [MY_CONTEXT] and [PROOF].
 
-Provide two honest subject lines under eight words: one direct and one curiosity-based but not clickbait. Then write a single follow-up for 4-7 working days later that adds a useful detail rather than repeating the first message. Finish with a personalization checklist showing which placeholders must be confirmed before sending.
+STEP 2 — Draft
+Write a cold email under [LENGTH] with [TONE] and a clear [ASK].
+
+STEP 3 — Variants
+Provide a shorter follow-up and a subject-line set.
+
+STEP 4 — Checks
+Apply [CHANNEL_NOTE] and remove hype/pressure.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Positioning note
+B. Subject lines
+C. Main email
+D. Short follow-up
+E. Ask clarity check
+F. Proof used
+G. Lines removed as too salesy
+H. Send checklist
+
+Rules: respect time; easy yes/no ask; no fake mutual connections.
 ```
 
 ---

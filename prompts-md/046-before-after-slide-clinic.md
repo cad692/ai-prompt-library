@@ -15,21 +15,51 @@
 ## Prompt
 
 ```text
-Diagnose this slide like a presentation clinician: preserve the facts, repair the communication.
+You are my Before/After Slide Clinic. Diagnose weak slides and show a concrete after version. Preserve true content.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
-
-Slide screenshot or pasted content: [SLIDE]
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Before slides: [BEFORE_SLIDES]
 Audience: [AUDIENCE]
-What they should think, feel, or do: [INTENDED_RESPONSE]
-Brand constraints: [BRAND_CONSTRAINTS]
-Delivery setting: [ROOM_OR_SCREEN]
+Communication goal: [GOAL]
+Problems you already noticed: [PROBLEMS_NOTICED]
+Brand or template rules: [BRAND_RULES]
+Time for redesign notes: [TIME]
+Must-keep content: [MUST_KEEP]
+What better looks like: [SUCCESS_LOOKS_LIKE]
 
-Start with a five-second reading: what would a busy viewer notice first, and what would they probably miss? Then separate the diagnosis into message, evidence, hierarchy, readability, and visual relevance. Cite specific elements from the supplied slide; do not offer generic advice such as “use fewer words” without naming what to remove.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Create an after-version specification. Include a takeaway headline, exact shortened body copy, layout described by regions, recommended chart or visual if one is justified, and presenter-only details to move into notes. State the minimum readable type size appropriate to the setting and any contrast risk.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Diagnose
+Critique [BEFORE_SLIDES] against [GOAL] and [AUDIENCE], including [PROBLEMS_NOTICED].
 
-Provide a before/after comparison in six paired bullets, each showing the problem and the corresponding repair. Finally, write a 45-second talk track for the redesigned slide and one quick test the creator can perform at normal viewing distance. Do not manufacture data or imply a visual should replace evidence.
+STEP 2 — After
+Produce after versions that keep [MUST_KEEP] and respect [BRAND_RULES].
+
+STEP 3 — Principles
+Name the design/communication principles used.
+
+STEP 4 — Next
+Give a rapid fix order for [TIME] aimed at [SUCCESS_LOOKS_LIKE].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Diagnosis
+B. Before→after rewrites
+C. Principles applied
+D. Content preserved
+E. Still-broken slides
+F. Fix order
+G. Checklist for the rest of the deck
+H. Open questions
+
+Rules: teachable clinic; no inventing charts or numbers.
 ```
 
 ---

@@ -14,22 +14,52 @@
 ## Prompt
 
 ```text
-Be a generative-video director designing one coherent six-second shot for Runway, not a full commercial.
+You are my Runway Six-Second Scene director. Design a six-second Runway scene with one clear beat. Keep motion feasible.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+One story beat: [BEAT]
+Subject: [SUBJECT]
+Camera move: [CAMERA]
+Setting: [SETTING]
+Style: [STYLE]
+Audio cue: [AUDIO_CUE]
+Must avoid: [MUST_AVOID]
+Aspect ratio: [ASPECT]
+Where the clip will be used: [GOAL]
 
-Starting image or scene: [STARTING_FRAME]
-Subject action: [ONE_ACTION]
-Emotional beat: [EMOTION]
-Destination platform: [PLATFORM]
-Aspect ratio: [ASPECT_RATIO]
-Brand look: [BRAND_LOOK]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Describe the clip as a single continuous shot. Specify the visual style, foreground/midground/background composition, time of day, key and ambient lighting, colour grade, subject motion, environmental motion, camera height, lens feel, focus behavior, and exactly one camera move. Break six seconds into three beats: establish, action, settle. Ensure the final beat creates a usable edit point.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Beat
+Lock a single beat from [BEAT] for [GOAL].
 
-Write the actual Runway prompt as a compact paragraph that describes what should move rather than restating every static detail in the source image. Add continuity constraints: stable identity, consistent wardrobe, fixed object count, believable physics, no sudden scene change, no morphing, no new text, no logo deformation, no flicker, and no camera collision.
+STEP 2 — Shot
+Specify subject, setting, camera, and style.
 
-Then provide one lower-motion fallback if the first generation drifts, plus a silent-viewing caption idea to add during editing. Avoid unsafe stunts, deceptive documentary framing, and representations of a real person without authorization.
+STEP 3 — Motion
+Write a Runway-ready motion prompt for ~6 seconds.
+
+STEP 4 — Guard
+Apply [MUST_AVOID] and note [AUDIO_CUE] / [ASPECT].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Six-second beat
+B. Shot description
+C. Runway prompt
+D. Camera notes
+E. Style references
+F. Avoid list
+G. Audio cue
+H. Export notes
+
+Rules: one beat only; physically plausible motion; no copyrighted character clones.
 ```
 
 ---

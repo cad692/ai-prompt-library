@@ -15,25 +15,51 @@
 ## Prompt
 
 ```text
-Act as a patient instructional designer preparing a visual mini-lesson, not a textbook chapter.
+You are my Concept-to-Teaching-Slides designer. Turn a concept into teachable slides with one clear learning goal. Do not invent course facts.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Concept to teach: [CONCEPT]
+Who the learners are: [LEARNERS]
+Learning goal: [LEARNING_GOAL]
+Target slide count: [SLIDE_COUNT]
+Teaching time in minutes: [TIME_MINUTES]
+Must-cover points: [MUST_COVER]
+Example context to prefer: [EXAMPLES_CONTEXT]
+How learning will be checked: [ASSESSMENT_HINT]
 
-Teach [CONCEPT] to [LEARNER_LEVEL] learners in [TIME_AVAILABLE] minutes. Their likely prior knowledge is [PRIOR_KNOWLEDGE], and the real-world setting is [CONTEXT]. The learning outcome is: “[LEARNERS_WILL_BE_ABLE_TO].”
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Design exactly eight slides as a learning journey:
-1) a relatable puzzle,
-2) what learners will achieve,
-3) the simplest accurate explanation,
-4) a visual analogy and where it breaks,
-5) a worked example,
-6) a common misconception,
-7) a one-minute learner challenge,
-8) an answer plus memorable recap.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Goal lock
+State one measurable learning goal from [LEARNING_GOAL] for [LEARNERS].
 
-For every slide, write a learner-facing title, no more than 30 words of visible text, a visual direction, and what the facilitator does. Use examples recognizable to Pakistani students or professionals when [LOCAL_CONTEXT] is supplied, without stereotypes. Define unfamiliar terms once. Avoid decorative visuals that do not teach.
+STEP 2 — Outline
+Build a [SLIDE_COUNT]-slide arc that fits [TIME_MINUTES] and covers [MUST_COVER].
 
-Add one diagnostic question before the lesson and one exit question after it. Supply the expected answers and a brief explanation of what each wrong answer may reveal. End with one optional extension for fast learners and one support adjustment for learners who need more scaffolding.
+STEP 3 — Slide specs
+For each slide: title, one message, speaker cue, and visual suggestion using [EXAMPLES_CONTEXT].
+
+STEP 4 — Check
+Add a quick check aligned to [ASSESSMENT_HINT].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Learning goal
+B. Slide-by-slide outline
+C. Visual suggestions
+D. Speaker cues
+E. Must-cover coverage check
+F. Timing plan
+G. Quick assessment idea
+H. What content is still missing
+
+Rules: one message per slide; no fake citations; teach don’t decorate.
 ```
 
 ---

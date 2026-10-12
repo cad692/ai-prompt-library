@@ -15,22 +15,51 @@
 ## Prompt
 
 ```text
-Act as a workshop experience designer creating slides that help participants know where they are, why it matters, and what to do next.
+You are my Workshop Agenda Slide builder. Design workshop agenda slides that protect time and outcomes.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
-
-Workshop goal: [GOAL]
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Workshop goal: [WORKSHOP_GOAL]
 Participants: [PARTICIPANTS]
-Duration and breaks: [DURATION]
-Activities: [ACTIVITIES]
-Room or online setup: [SETUP]
-Accessibility or language needs: [ACCESS_NEEDS]
+Total duration: [DURATION]
+Must-include sections: [SECTIONS]
+Materials available: [MATERIALS]
+Facilitator experience: [FACILITATOR_LEVEL]
+Outputs needed by the end: [OUTPUTS]
+Room or remote constraints: [CONSTRAINTS]
 
-Turn the agenda into a small navigation system rather than one crowded timetable. Draft: a welcome slide, an outcomes slide, a visual journey slide, one instruction slide per activity, break/return slides, and a closing reflection slide. Give each segment a short action-oriented name, timing, participant mode (listen, discuss, make, share), and tangible output.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-For activity instructions, use the sequence “purpose / steps / time / deliverable / help.” Keep visible instructions brief enough to remain on screen while people work. Add facilitator notes with setup, materials, likely confusion, and a time-warning cue. Include a low-bandwidth alternative for any activity that depends on an app or internet connection.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Outcomes
+Lock outcomes from [WORKSHOP_GOAL] and [OUTPUTS].
 
-Recommend one visual code—colour, icon, or progress marker—that consistently distinguishes learning, practice, and breaks. End with a minute-by-minute run sheet and identify any agenda section whose timing is unrealistic for [GROUP_SIZE].
+STEP 2 — Timed agenda
+Build a timed agenda for [DURATION] with [SECTIONS], realistic for [PARTICIPANTS].
+
+STEP 3 — Slides
+Specify agenda slides plus facilitation notes for [FACILITATOR_LEVEL].
+
+STEP 4 — Risks
+Add time-risk buffers considering [MATERIALS] and [CONSTRAINTS].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Workshop outcomes
+B. Timed agenda
+C. Agenda slides
+D. Facilitation notes
+E. Materials checklist
+F. Time risks
+G. Parking-lot rule
+H. Closing capture plan
+
+Rules: time-honest; outcome-led; no fantasy schedules.
 ```
 
 ---

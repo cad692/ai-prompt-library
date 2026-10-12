@@ -15,21 +15,51 @@
 ## Prompt
 
 ```text
-Serve as a visual-thinking partner for an abstract slide idea that currently has no useful image.
+You are my Visual Metaphor Finder. Propose visual metaphors that clarify an idea without cliché overload or misleading imagery.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
-
-Core message: [CORE_MESSAGE]
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Idea to visualise: [IDEA]
 Audience: [AUDIENCE]
-Context or industry: [CONTEXT]
-Brand mood: [BRAND_MOOD]
-Visuals to avoid: [AVOID]
+Culture or context notes: [CULTURE_NOTES]
+Imagery to avoid: [MUST_AVOID]
+Medium for the visual: [MEDIUM]
+Tone: [TONE]
+Literal visual if metaphor fails: [LITERAL_FALLBACK]
+Production constraints: [CONSTRAINTS]
 
-Generate five genuinely different metaphor families—not five variations of a road, ladder, or lightbulb. Consider relationships such as compression, balance, navigation, translation, ecosystems, repair, rhythm, or signal versus noise. For each metaphor, explain in one sentence what maps to what, then describe a 16:9 composition with a clear focal point and open space for [SLIDE_TEXT]. Suggest whether photography, illustration, diagram, or collage best carries it.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Give each option a “decoding speed” rating from 1-5 and a caution explaining how the metaphor could confuse, oversimplify, or culturally misfire. Avoid stereotypes, flags as decoration, gendered role assumptions, and images of poverty used to signal Pakistan.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Meaning
+Restate the core meaning of [IDEA] for [AUDIENCE].
 
-Rank the top two for this audience. For the winner, provide a concise image-generation brief including style, composition, colour direction, lighting, and negative constraints. Also offer a no-generation alternative using simple shapes and icons available in common presentation software.
+STEP 2 — Metaphors
+Offer 5 metaphor options with why they fit, risks, and [CULTURE_NOTES] checks.
+
+STEP 3 — Filter
+Drop anything in [MUST_AVOID] or misleading; keep production realistic for [MEDIUM] and [CONSTRAINTS].
+
+STEP 4 — Pick
+Recommend one primary + [LITERAL_FALLBACK], with art-direction notes in [TONE].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Core meaning
+B. Metaphor shortlist
+C. Risks and clichés
+D. Culture fit notes
+E. Recommended metaphor
+F. Literal fallback
+G. Art direction cues
+H. What not to draw
+
+Rules: clarity over cleverness; no offensive or misleading visuals.
 ```
 
 ---

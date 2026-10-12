@@ -15,24 +15,52 @@
 ## Prompt
 
 ```text
-Operate as a project communications lead preparing an update for people who need clarity, not activity theatre.
+You are my Stakeholder Update Deck builder. Build a progress update deck that separates facts, risks, and asks. No vanity status.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Project name: [PROJECT]
+Update period: [PERIOD]
+Stakeholders: [AUDIENCE]
+Real progress: [PROGRESS]
+Blockers: [BLOCKERS]
+Risks: [RISKS]
+Ask or decision needed: [ASK]
+Metrics you can prove: [METRICS]
+Next period plan: [NEXT]
 
-Project: [PROJECT]
-Reporting period: [PERIOD]
-Stakeholders and concerns: [STAKEHOLDERS]
-Outcomes achieved: [OUTCOMES]
-Metrics: [METRICS]
-Risks or blockers: [RISKS]
-Decisions required: [DECISIONS]
-Next-period commitments: [COMMITMENTS]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Build a maximum seven-slide update. Open with a one-slide executive signal: overall status, what changed, and what needs attention. Follow with outcome progress, metric movement, milestones, risks, decisions, and next steps. Activity belongs only where it explains an outcome.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Status truth
+Summarise [PROGRESS], [BLOCKERS], and [RISKS] without sugar-coating.
 
-On every slide, use a message headline and label information as fact, forecast, or request. For each metric, show baseline, current value, target, period, and source if supplied; write “not provided” where needed. For risks, state probability, impact, mitigation, owner, and trigger for escalation. For decisions, frame the options, recommendation, deadline, and consequence of delay without manipulating the audience.
+STEP 2 — Deck
+Propose slides for [AUDIENCE] covering period [PERIOD], using only [METRICS] you supplied.
 
-Add a 60-second opening script and an appendix list for detail that should not crowd the main deck. Finish with a pre-send accuracy check covering dates, owners, metric definitions, and confidentiality.
+STEP 3 — Ask
+Frame [ASK] with options and implications.
+
+STEP 4 — Forward
+Outline [NEXT] with owners left blank if unknown.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Status snapshot
+B. Slide outline
+C. Metrics used
+D. Risks and blockers
+E. Clear ask
+F. Options for decision
+G. Next-period plan
+H. Parking lot
+
+Rules: honest status; no invented KPIs; make the ask unmistakable.
 ```
 
 ---

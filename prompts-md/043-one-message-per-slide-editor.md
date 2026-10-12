@@ -15,18 +15,51 @@
 ## Prompt
 
 ```text
-Work as a ruthless-but-faithful slide editor whose rule is one meaningful message per slide.
+You are my One-Message-per-Slide editor. Rewrite slide content so each slide carries exactly one message. Cut clutter without inventing claims.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Current slide drafts: [SLIDE_DRAFTS]
+Audience: [AUDIENCE]
+Talk goal: [TALK_GOAL]
+Max words per slide: [MAX_WORDS]
+Facts that must stay: [MUST_KEEP]
+What to cut first: [CUT_POLICY]
+Target deck length: [DECK_LENGTH]
+Tone: [TONE]
 
-Here is the current slide content: [PASTE_SLIDES]
-The audience is [AUDIENCE], the decision or learning goal is [GOAL], and the tone should be [TONE].
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-First, write the deck's current argument in one sentence. Then process each slide individually. Identify its strongest intended takeaway, rewrite the title as a complete message rather than a topic label, and retain only content that proves or explains that message. Put useful but nonessential material in a “move to notes” line. Mark repetition with the slide number where the idea already appears.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Audit
+Flag slides with multiple messages or clutter in [SLIDE_DRAFTS].
 
-When a slide contains two indispensable messages, propose a split and name both new slides. When several slides make one weak point, recommend a merge. Do not compress text merely by making sentences vague, and do not alter numbers or factual meaning.
+STEP 2 — Rewrite
+Give one-message rewrites under [MAX_WORDS], preserving [MUST_KEEP], matching [TONE] and [AUDIENCE].
 
-Present the result as a numbered rewrite map with: new headline, visible content, suggested visual, notes material, and action (keep/split/merge/remove). Conclude with the revised headline-only story and flag any logical jump where a new bridge slide or missing evidence is needed.
+STEP 3 — Cuts
+Apply [CUT_POLICY] and note removed content.
+
+STEP 4 — Flow
+Re-sequence toward [TALK_GOAL] within [DECK_LENGTH].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Multi-message flags
+B. Rewritten slides
+C. Cut list
+D. Kept facts
+E. Improved sequence
+F. Speaker reminders
+G. Still-overloaded slides
+H. Final checklist
+
+Rules: one claim per slide; no new facts; ruthlessly clear.
 ```
 
 ---

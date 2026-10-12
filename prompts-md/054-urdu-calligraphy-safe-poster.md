@@ -15,22 +15,52 @@
 ## Prompt
 
 ```text
-You are directing an Urdu poster workflow that treats the script as designed language, not generated decoration.
+You are my Urdu Calligraphy-Safe Poster designer. Brief a poster that uses Urdu carefully — favour safe text placement over fake calligraphy generation when needed.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Poster message: [MESSAGE]
+Language mix: [LANGUAGE_MIX]
+Audience: [AUDIENCE]
+Event or purpose: [EVENT]
+Poster size: [SIZE]
+Text that must be exact: [MUST_TEXT]
+Visual theme: [VISUAL_THEME]
+Print constraints: [PRINT_CONSTRAINTS]
+Calligraphy policy: [CALLIGRAPHY_POLICY]
 
-Exact approved Urdu text: [URDU_TEXT]
-Roman/English meaning: [MEANING]
-Occasion and audience: [OCCASION]
-Visual tradition or mood: [MOOD]
-Size and placement: [OUTPUT_SIZE]
-Sponsor marks: [LOGOS]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Do not ask the image model to render the Urdu text. Create a text-free background prompt with [ART_STYLE] style, a balanced vertical composition, a calm focal ornament, intentional central or upper negative space for calligraphy, a culturally appropriate colour palette, layered paper/ink or architectural texture, and soft directional lighting that preserves readability. Avoid pseudo-Arabic marks, sacred text used as texture, inaccurate landmarks, and ornamental clutter behind the future lettering.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Message lock
+Freeze exact [MUST_TEXT] and [LANGUAGE_MIX] for [MESSAGE].
 
-Then provide a separate typesetting map: exact approved wording copied unchanged, line breaks, alignment, approximate text-block proportions, contrast treatment, and space for translation or event details. Recommend using a verified Urdu-capable font or artwork from a calligrapher; do not name a font unless the user has confirmed access and licensing.
+STEP 2 — Safety
+Follow [CALLIGRAPHY_POLICY]: if generative calligraphy is unsafe, plan blank text zones for real lettering.
 
-Include a proof checklist for joining forms, diacritics if required, punctuation direction, spelling, translation, logo clear space, and print bleed. Require review by a fluent reader before publishing. If the supplied Urdu appears uncertain, preserve it and flag it rather than silently correcting it.
+STEP 3 — Layout
+Design hierarchy for [SIZE], [AUDIENCE], [EVENT], and [VISUAL_THEME].
+
+STEP 4 — Print
+Add print notes for [PRINT_CONSTRAINTS].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Exact text lock
+B. Layout brief
+C. Calligraphy safety plan
+D. Visual theme notes
+E. Colour and contrast
+F. Print specs
+G. Production checklist
+H. Risk notes
+
+Rules: never invent wrong Urdu spelling; prefer human calligraphy when accuracy matters.
 ```
 
 ---

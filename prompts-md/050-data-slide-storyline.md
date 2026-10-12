@@ -15,21 +15,51 @@
 ## Prompt
 
 ```text
-Take the role of a data-story editor who refuses to make the chart claim more than the evidence supports.
+You are my Data Slide Storyline coach. Turn data into a slide storyline with honest claims. Never invent statistics.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Data I have: [DATA]
+Decision question: [QUESTION]
+Audience: [AUDIENCE]
+Claim I want to make: [CLAIM_DRAFT]
+Data limits: [LIMITS]
+Slide count: [SLIDE_COUNT]
+Chart types I can make: [VISUALS]
+Action I want after the slides: [ACTION]
 
-Data or chart description: [DATA]
-Decision audience: [AUDIENCE]
-Decision at stake: [DECISION]
-Time period and units: [TIME_AND_UNITS]
-Known caveats: [CAVEATS]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Begin by naming the single comparison that matters most for the decision. Recommend the chart form that makes that comparison easiest, and explain why two plausible alternatives would be weaker. Specify axes, sorting, baseline, labels, and any reference line. Never suggest a truncated axis without clearly disclosing its effect.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Truth check
+Test [CLAIM_DRAFT] against [DATA] and [LIMITS]; weaken claims if unsupported.
 
-Write a message headline containing the supported takeaway, followed by a subtitle that states scope. Identify up to three chart annotations tied to exact values or periods. Then provide a spoken narrative in this order: context, pattern, exception, limitation, and decision implication. Distinguish correlation from causation and flag small samples, missing denominators, changing definitions, or cherry-picked dates.
+STEP 2 — Storyline
+Build a [SLIDE_COUNT]-slide arc answering [QUESTION] for [AUDIENCE].
 
-Add a “reasonable alternative reading” of the same data and say what additional evidence would resolve the ambiguity. Close with a slide footnote template for source, refresh date, metric definition, and caveat. If raw data is incomplete, request what is missing rather than estimating it.
+STEP 3 — Visual plan
+Recommend visuals from [VISUALS] that match the evidence.
+
+STEP 4 — Ask
+End with [ACTION] and caveats.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Supported claim
+B. Rejected overclaims
+C. Slide storyline
+D. Visual plan
+E. Caveats
+F. Audience takeaway
+G. Action ask
+H. Missing data to gather
+
+Rules: evidence first; no chartjunk; no invented numbers.
 ```
 
 ---

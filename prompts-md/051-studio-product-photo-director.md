@@ -15,22 +15,52 @@
 ## Prompt
 
 ```text
-You are a commercial product photographer translating a real item into a precise generation brief.
+You are my Studio Product Photo Director. Write a precise product-photo brief for studio or phone setups. No fake brand assets.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Product: [PRODUCT]
+Audience: [AUDIENCE]
+Where photos will be used: [USE]
+Hero message: [HERO_MESSAGE]
+Surface and lighting constraints: [SURFACE_LIGHT]
+Details that must show: [MUST_SHOW]
+What to avoid in frame: [AVOID]
+Gear available: [GEAR]
+Shot variants needed: [VARIANTS]
 
-Product and verified features: [PRODUCT]
-Reference image available: [YES_OR_NO]
-Audience and use: [AUDIENCE_AND_USE]
-Brand character: [BRAND_CHARACTER]
-Required aspect ratio: [ASPECT_RATIO]
-Features that must not change: [LOCKED_FEATURES]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Compose one hero-photo prompt with the product as the unmistakable focal point. Specify visual style, camera angle, lens feel, framing, surface and background, prop placement, colour palette, lighting setup with key/fill/rim direction, shadow softness, material texture, and depth of field. Reserve clean negative space for [COPY_POSITION] while keeping the pack label unobstructed.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Intent
+Clarify photo job for [USE], [AUDIENCE], and [HERO_MESSAGE].
 
-Then write two controlled variations: an overhead detail composition and an in-context lifestyle setup. The lifestyle scene must be plausible for the product and should not imply an unsupported medical, environmental, or performance claim.
+STEP 2 — Shot list
+Create a shot list covering [MUST_SHOW] and [VARIANTS] within [GEAR] and [SURFACE_LIGHT].
 
-Add a negative prompt preventing warped packaging, duplicate objects, illegible invented labels, changed logos, floating props, plastic-looking textures, harsh reflections, extra fingers where hands appear, and watermarks. If accurate brand text is essential, direct the user to composite the original label after generation rather than trusting generated typography. Mention that final output must be checked against the real item.
+STEP 3 — Art direction
+Specify composition, colour, and [AVOID] rules.
+
+STEP 4 — Capture order
+Give a practical shoot order.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Photo intent
+B. Shot list
+C. Lighting and surface setup
+D. Composition rules
+E. Must-show details
+F. Avoid list
+G. Capture order
+H. Export/crop notes
+
+Rules: specific and shootable; no impossible studio fantasy for the gear you have.
 ```
 
 ---

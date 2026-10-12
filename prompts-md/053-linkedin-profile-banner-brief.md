@@ -15,22 +15,51 @@
 ## Prompt
 
 ```text
-Act as a personal-brand art director designing a LinkedIn banner with quiet confidence.
+You are my LinkedIn Profile Banner brief writer. Create a LinkedIn banner brief that signals role and value without cringe or fake credentials.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Your role: [ROLE]
+Value you want signalled: [VALUE]
+Who you want to attract: [AUDIENCE]
+Proof you can honestly show: [PROOF]
+Colours or brand cues: [BRAND_COLORS]
+Text limit on banner: [TEXT_LIMIT]
+What to avoid: [AVOID]
+Industry context: [INDUSTRY]
 
-Professional identity: [ROLE_OR_FIELD]
-People I help: [AUDIENCE]
-Value I create: [VALUE]
-Proof or focus areas: [FOCUS_AREAS]
-Colours and personality: [BRAND_CUES]
-Optional short line: [TAGLINE]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Propose three concepts based on different visual ideas: one abstract system, one workspace or environmental scene, and one typographic-led composition. For each, explain the positioning signal it sends and what could make it feel generic.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Positioning
+Clarify the banner job for [ROLE], [VALUE], and [AUDIENCE] in [INDUSTRY].
 
-Choose the strongest concept and produce an image-generation prompt. Require a contemporary editorial style, wide panoramic composition, important imagery weighted toward the right-side safe area, soft directional lighting, controlled contrast, subtle depth, and no generated words, logos, watermarks, handshakes, rockets, glowing brains, or random business icons. Mention the intended crop and leave breathing room where profile-interface elements may overlap.
+STEP 2 — Layout
+Propose layout zones with text under [TEXT_LIMIT] and [BRAND_COLORS].
 
-Separately specify Canva assembly: safe-zone placement, at most one tagline, type hierarchy, colour contrast, and whether the tagline adds information not already in the headline. End with mobile-crop advice and alt text. Do not imply employers, clients, credentials, or affiliations that were not supplied.
+STEP 3 — Proof
+Place only [PROOF]; never invent awards.
+
+STEP 4 — Variants
+Give 2 banner concepts plus [AVOID] checklist.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Banner job
+B. Concept A
+C. Concept B
+D. Text lockup
+E. Proof placement
+F. Colour/layout notes
+G. Avoid list
+H. Export specs
+
+Rules: credible and scannable; no fake logos or metrics.
 ```
 
 ---
