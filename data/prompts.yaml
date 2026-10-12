@@ -1620,7 +1620,7 @@ prompts:
   title: RTCFCE Prompt Architect
   category: prompting
   difficulty: Intermediate
-  usage: Use this to convert a rough task into a complete RTCFCE prompt.
+  usage: Use this to convert a rough task into a complete RTCFCE prompt (Role, Task, Context, Format, Constraints, and Examples).
   use_case: A workshop participant can learn how role, task, context, format, constraints, and examples
     work together.
   preview: Act as an RTCFCE prompt architect helping me turn [ROUGH_TASK] into a precise, reusable instruction.
