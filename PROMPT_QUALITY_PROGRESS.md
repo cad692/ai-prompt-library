@@ -1,70 +1,78 @@
 # Prompt Quality Improvement Progress
 
-**Task:** Improve prompt templates and personalization questions for the AI Prompt Library
-**Total Prompts:** 115
-**Total Question Sets:** 115
+**Task:** Deep improvement of prompt templates and unambiguous personalization questions  
+**Repository:** cad692/ai-prompt-library  
+**Total active prompts:** 115  
+**Total question sets:** 115  
 
-## Progress Summary
-- **Prompts Reviewed:** 115/115 ✓
-- **Prompts Improved:** 0/115 (all prompts were already high quality)
-- **Questions Reviewed:** 115/115 ✓
-- **Questions Improved:** 36/115
-- **Batches Completed:** 12/12 ✓
+## Canonical sources
+- `data/prompts.yaml` — prompt templates and metadata
+- `data/questions.yaml` — personalization `q` / `ex` / `optional` per placeholder
+- `assets/js/copy.js` — inserts answers into `[PLACEHOLDER]` tokens; empty optional fields leave brackets
+- `build/generate.py` — regenerates HTML, MD, CSV, ZIP, search index, PDF
+- `scripts/check_questions.py` — `q` ≤ 12 words; every prompt token needs `q`+`ex`
 
-## Current Batch
-All batches completed
+## Batch plan
+| Batch | IDs | Status |
+|------:|-----|--------|
+| 1 | 001–010 | **complete** |
+| 2 | 011–020 | pending |
+| 3 | 021–030 | pending |
+| 4 | 031–040 | pending |
+| 5 | 041–050 | pending |
+| 6 | 051–060 | pending |
+| 7 | 061–070 | pending |
+| 8 | 071–080 | pending |
+| 9 | 081–090 | pending |
+| 10 | 091–100 | pending |
+| 11 | 101–110 | pending |
+| 12 | 111–115 | pending |
 
-## Completed Batches
-**Batch 1 (001-010):** 16 fields improved, commit 41859d7
-**Batch 2 (011-020):** 14 fields improved, commit 0795d7b
-**Batch 3 (021-030):** 3 fields improved, commit b9757d1
-**Batch 4 (031-040):** 1 field improved, commit 9d75774
-**Batch 5 (041-050):** 2 fields improved, commit fbed9ba
-**Batch 6 (051-060):** 0 fields improved, commit 5b5b0e8
-**Batch 7 (061-070):** 0 fields improved (all already clear)
-**Batch 8 (071-080):** 0 fields improved (all already clear)
-**Batch 9 (081-090):** 0 fields improved (all already clear)
-**Batch 10 (091-100):** 0 fields improved (all already clear)
-**Batch 11 (101-110):** 0 fields improved (all already clear)
-**Batch 12 (111-115):** 0 fields improved (all already clear)
+## Note on prior checkpoint
+An earlier session marked 115/115 reviewed with **0 prompt template improvements**. This run re-reviews every active prompt. Do not push until the full library is done.
 
-## Final Validation
-- Build status: ✓ Passed (115 prompts generated successfully)
-- Search index: 56,518 bytes
-- All artifacts generated: HTML, Markdown, CSV, ZIP, PDF
-- No prompt templates required changes (all were already high quality)
-- 36 question fields improved for clarity
-- All commits pushed successfully
+## Progress counters
+- Prompts reviewed: 10/115
+- Prompt templates substantively improved: 10
+- Prompt templates reviewed, left unchanged: 0
+- Question sets reviewed: 10
+- Question fields improved / added / removed / made optional: ~70 improved / 0 added / 0 removed / 0 newly optional (existing optionality preserved)
 
-## Commits
-1. 41859d7 - fix: improve personalization question clarity for prompts 001-010
-2. 0795d7b - fix: improve personalization question clarity for prompts 011-020
-3. b9757d1 - fix: improve personalization question clarity for prompts 021-030
-4. 9d75774 - fix: improve personalization question clarity for prompts 031-040
-5. fbed9ba - fix: improve personalization question clarity for prompts 041-050
-6. 5b5b0e8 - docs: update progress - batch 6 complete with no changes needed
+## Batch 1 (001–010) outcomes
 
-## Remaining Batches
-- Batch 1: 001-010 (10 prompts)
-- Batch 2: 011-020 (10 prompts)
-- Batch 3: 021-030 (10 prompts)
-- Batch 4: 031-040 (10 prompts)
-- Batch 5: 041-050 (10 prompts)
-- Batch 6: 051-060 (10 prompts)
-- Batch 7: 061-070 (10 prompts)
-- Batch 8: 071-080 (10 prompts)
-- Batch 9: 081-090 (10 prompts)
-- Batch 10: 091-100 (10 prompts)
-- Batch 11: 101-110 (10 prompts)
-- Batch 12: 111-115 (5 prompts)
+### Templates improved
+| ID | Reason |
+|----|--------|
+| 001 | Risk tolerance now drives weights/experiments; missing-input handling; no invented options |
+| 002 | Uses focus hours + energy together; blank city/setting fallback; protects recovery blocks |
+| 003 | Stops re-asking known fields; defines success-threshold scoring; clearer practice ladder |
+| 004 | Blank optional considerations ignored; tone/privacy clarity preserved |
+| 005 | Role inferred from participants; blank sensitive/materials omitted instead of invented |
+| 006 | Blank OTHER_FIELD/LOCAL_CONTEXT handled so Wave 2 does not break |
+| 007 | Thin JD clarification; never invent credentials/tools/employers |
+| 008 | Blank local context → neutral examples; uncertainty marked, no fake citations |
+| 009 | Blank time/money → smallest free habit; health disclaimer retained |
+| 010 | CONCERNS aligned to safety/power; blank support/language handled safely |
 
-## Issues Found
-None yet
+### Questions improved (all 10 sets)
+Representative clarity fixes:
+- 002 AVAILABLE_TIME: “How much time do you have?” → “How much focus time can you dedicate?”
+- 004 tone: examples moved into `ex`; q is “What tone should the email use?”
+- 010 CONCERNS: “What worries you most?” → “What safety or power concerns exist?” (matches prompt)
+- 005 PARTICIPANTS: now asks for attendee list **and** the user’s role
+- Examples made concrete (amounts, dates, channel, measurable success)
 
-## Next Steps
-1. Review prompts 001-010 for quality improvements
-2. Review corresponding questions for clarity
-3. Implement improvements
-4. Validate build and personalization
-5. Commit and push changes
-6. Update progress and continue to next batch
+### Validation
+- Local placeholder/`q`≤12/`ex` coverage check: PASS (115 prompts)
+- `python build/generate.py`: PASS (115 prompts; search index 56,479 bytes; ZIP/CSV/PDF regenerated)
+- HTML spot checks for 001/004/010: PASS
+- `scripts/check_questions.py HEAD`: blocked on Windows `git show` encoding (not a data defect)
+
+### Commits
+- Local only — **do not push until full library complete**
+
+## Remaining
+011–115 (batches 2–12)
+
+## Next action
+Review and improve prompts **011–020** (templates first, then questions), validate, commit locally, continue.

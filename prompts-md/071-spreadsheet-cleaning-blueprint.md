@@ -32,4 +32,4 @@ Define reconciliation checks: row count, unique key count, totals before/after, 
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

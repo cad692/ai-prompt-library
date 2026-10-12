@@ -32,4 +32,4 @@ Return the complete tutor prompt plus three starter questions ordered by difficu
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

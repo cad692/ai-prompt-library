@@ -31,4 +31,4 @@ Keep security-sensitive values out of logs. Prefer explicit failure over silent 
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

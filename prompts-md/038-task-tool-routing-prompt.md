@@ -29,4 +29,4 @@ End with a ten-minute test task using non-sensitive sample data and a scorecard 
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

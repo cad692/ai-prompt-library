@@ -33,4 +33,4 @@ Provide two honest subject lines under eight words: one direct and one curiosity
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

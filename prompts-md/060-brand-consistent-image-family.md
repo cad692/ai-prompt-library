@@ -32,4 +32,4 @@ Provide one shared negative prompt covering unintended text, logos, watermarks, 
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

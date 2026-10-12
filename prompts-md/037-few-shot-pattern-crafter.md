@@ -34,4 +34,4 @@ Assemble a production prompt containing instructions, clean examples without tea
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

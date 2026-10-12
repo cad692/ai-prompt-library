@@ -31,4 +31,4 @@ Then provide one lower-motion fallback if the first generation drifts, plus a si
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

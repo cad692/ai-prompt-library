@@ -34,4 +34,4 @@ End with three questions an executive should ask before acting and a 30-second s
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

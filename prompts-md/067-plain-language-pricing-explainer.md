@@ -33,4 +33,4 @@ Finish with a 60-word sales-conversation version and a FAQ of four realistic que
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

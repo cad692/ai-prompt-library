@@ -26,4 +26,4 @@ Conclude with “HANDOFF TO STEP 4”: ranked findings, evidence references, aud
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

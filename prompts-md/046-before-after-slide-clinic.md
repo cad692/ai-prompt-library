@@ -31,4 +31,4 @@ Provide a before/after comparison in six paired bullets, each showing the proble
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

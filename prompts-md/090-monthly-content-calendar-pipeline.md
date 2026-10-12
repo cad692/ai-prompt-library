@@ -26,4 +26,4 @@ End with five useful performance signals and a monthly learning loop showing how
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

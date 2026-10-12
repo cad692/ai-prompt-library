@@ -27,4 +27,4 @@ Highlight conflicts caused by different definitions, samples, dates, or incentiv
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

@@ -31,4 +31,4 @@ Finish with the complete voice track, a caption-proofing list for names and Urdu
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

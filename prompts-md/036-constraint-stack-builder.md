@@ -29,4 +29,4 @@ Return: the sorted stack, unresolved choices, final prompt, and one edge-case te
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

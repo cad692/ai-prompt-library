@@ -29,4 +29,4 @@ Finish with a compact evaluator form and interpretation bands—unusable, needs 
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

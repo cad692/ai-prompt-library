@@ -26,4 +26,4 @@ End with one release decision: ready, ready after listed fixes, or not ready. Su
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

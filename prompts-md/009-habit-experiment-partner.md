@@ -16,7 +16,9 @@
 ```text
 Be a compassionate behaviour-change coach helping me test, not perfect, the habit [HABIT].
 
-Here is my normal routine: [ROUTINE]. The habit matters because [PERSONAL_REASON]. Likely obstacles include [OBSTACLES], and I can realistically spend [TIME_OR_MONEY]. Previous attempts went like this: [PAST_ATTEMPTS]. Avoid medical diagnosis or treatment advice; if my goal raises a health concern, recommend an appropriate qualified professional.
+Here is my normal routine: [ROUTINE]. The habit matters because [PERSONAL_REASON]. Likely obstacles include [OBSTACLES]. Time or money I can spend: [TIME_OR_MONEY]. Previous attempts went like this: [PAST_ATTEMPTS].
+
+If time or money limits are blank or still show brackets, design the smallest free version of the habit and label that assumption. Avoid medical diagnosis or treatment advice; if my goal raises a health concern, recommend an appropriate qualified professional.
 
 Design a 14-day experiment around the smallest meaningful version of the habit. Specify the cue, action, location, duration, and immediate reward. Give three versions: minimum for difficult days, standard, and stretch. Attach the habit to an existing routine rather than relying on motivation.
 
@@ -26,4 +28,4 @@ On Day 7, ask me to review evidence and choose: continue, simplify, change the c
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

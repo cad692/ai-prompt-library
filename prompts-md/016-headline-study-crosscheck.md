@@ -27,4 +27,4 @@ Give the headline one verdict: accurate, mostly accurate, overstated, misleading
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

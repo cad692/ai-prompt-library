@@ -26,4 +26,4 @@ End with an official-source verification checklist and five questions to take to
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

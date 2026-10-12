@@ -33,4 +33,4 @@ Close with a [NUMBER_OF_DAYS]-day review schedule using spaced practice. Include
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

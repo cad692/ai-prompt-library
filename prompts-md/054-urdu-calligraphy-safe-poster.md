@@ -32,4 +32,4 @@ Include a proof checklist for joining forms, diacritics if required, punctuation
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

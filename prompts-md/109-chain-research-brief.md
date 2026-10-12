@@ -26,4 +26,4 @@ Do not research the topic yet or fabricate sources. End with a clearly labelled 
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

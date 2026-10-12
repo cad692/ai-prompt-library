@@ -34,4 +34,4 @@ Supply two versions of the opening: direct and story-led. End with one clean cal
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

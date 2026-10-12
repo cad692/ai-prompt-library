@@ -32,4 +32,4 @@ Add a note-taking frame that separates direct quotes, observed facts, interpreta
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

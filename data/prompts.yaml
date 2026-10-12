@@ -5,11 +5,11 @@ prompts:
   category: assistants
   difficulty: Intermediate
   usage: Use this to compare important options without outsourcing the final decision.
-  use_case: A student choosing a degree or a professional weighing job offers can expose trade-offs, assumptions,
-    and low-risk tests.
-  preview: Act as a decision-framing partner whose goal is to clarify my choice, not make it for me. My
-    decision is [DECISION]. The options are [OPTIONS]. My deadline is [DEADLINE], and the people affected
-    are...
+  use_case: A student choosing a degree or a professional weighing job offers can expose trade-offs,
+    assumptions, and low-risk tests.
+  preview: Act as a decision-framing partner whose goal is to clarify my choice, not make it for me.
+    My decision is [DECISION]. The options are [OPTIONS]. My deadline is [DEADLINE], and the people 
+    affected are...
   best_tools:
   - tool: ChatGPT
     reason: Supports an interactive comparison and can reorganize changing priorities quickly.
@@ -22,20 +22,26 @@ prompts:
   - trade-offs
   - priorities
   - planning
-  next_id: null
+  next_id:
   prompt: 'Act as a decision-framing partner whose goal is to clarify my choice, not make it for me.
 
 
     My decision is [DECISION]. The options are [OPTIONS]. My deadline is [DEADLINE], and the people affected
-    are [STAKEHOLDERS]. What matters to me includes [VALUES_OR_PRIORITIES]. My practical limits are [TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS]. My risk tolerance is [RISK_TOLERANCE].
+    are [STAKEHOLDERS]. What matters to me includes [VALUES_OR_PRIORITIES]. My practical limits are [TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS].
+    My risk tolerance is [RISK_TOLERANCE].
 
 
-    Begin by restating the decision neutrally. Identify any false either/or framing and add a realistic
-    hybrid or reversible option if one exists. Then build a decision map with:
+    Begin by restating the decision neutrally. If options, priorities, or constraints are incomplete,
+    list what is missing and continue with clearly labelled assumptions — do not invent options or facts.
+    Identify any false either/or framing and add a realistic hybrid or reversible option if one exists.
+
+
+    Then build a decision map with:
 
     - five to seven criteria derived from my priorities;
 
-    - a suggested weight for each criterion, clearly marked as editable;
+    - a suggested weight for each criterion, clearly marked as editable, and adjusted for my stated risk
+    tolerance;
 
     - evidence supporting and challenging each option;
 
@@ -46,13 +52,14 @@ prompts:
     - a reversibility assessment for each option (fully reversible, partially reversible, or irreversible).
 
 
-    Do not pretend subjective scores are facts. Show a concise, visible rationale for each proposed weight
-    and rating. Separate facts I supplied from your assumptions.
+    Do not pretend subjective scores are facts. Show a concise rationale for each proposed weight and
+    rating. Separate facts I supplied from your assumptions. When risk tolerance is low, favour criteria
+    and experiments that protect downside; only suggest bolder tests if I explicitly accept uncertainty.
 
 
-    Finish with two low-risk experiments I can run before [DEADLINE], three questions to ask relevant
-    people, and a short reflection: “Which regret would be easier to live with, and why?” End by reminding
-    me that I retain the decision.
+    Finish with two experiments I can run before [DEADLINE] that match my risk tolerance, three questions
+    to ask relevant people, and a short reflection: “Which regret would be easier to live with, and why?”
+    End by reminding me that I retain the decision.
 
     '
 - id: '002'
@@ -61,8 +68,8 @@ prompts:
   category: assistants
   difficulty: Beginner
   usage: Use this to turn crowded commitments into a workable week with recovery time.
-  use_case: A university student or early-career professional can plan classes, work, commuting, family
-    duties, and rest in one realistic schedule.
+  use_case: A university student or early-career professional can plan classes, work, commuting, 
+    family duties, and rest in one realistic schedule.
   preview: 'You are my realistic weekly planner, protecting both important outcomes and sustainable energy.
     Plan the week of [DATES]. Fixed commitments: [CLASSES_MEETINGS_COMMUTE_FAMILY_DUTIES]. Tasks and...'
   best_tools:
@@ -77,19 +84,20 @@ prompts:
   - time-management
   - priorities
   - wellbeing
-  next_id: null
+  next_id:
   prompt: 'You are my realistic weekly planner, protecting both important outcomes and sustainable energy.
 
 
     Plan the week of [DATES]. Fixed commitments: [CLASSES_MEETINGS_COMMUTE_FAMILY_DUTIES]. Tasks and deadlines:
     [TASKS]. My strongest focus hours are [FOCUS_HOURS], typical energy pattern is [ENERGY_PATTERN], and
     available study or work time is [AVAILABLE_TIME]. I also need [SLEEP_EXERCISE_PRAYER_MEALS_OR_REST].
+    Context: [CITY_OR_SETTING].
 
 
     First sort tasks into Must Finish, Should Advance, and Can Wait. Flag any workload that cannot fit
     honestly; do not compress impossible work into tiny blocks. Create a Monday-to-Sunday schedule using
-    time ranges, task names, and a clear stopping point. Place demanding work in high-energy periods and
-    group small administrative tasks.
+    time ranges, task names, and a clear stopping point. Place demanding work in high-energy periods (using
+    both focus hours and energy pattern) and group small administrative tasks.
 
 
     Include:
@@ -105,8 +113,9 @@ prompts:
     5. a reduced plan for a day disrupted by transport, illness, or load-shedding.
 
 
-    Close with the first action for Monday, written so it takes under ten minutes to begin. Keep the plan
-    practical for my context in [CITY_OR_SETTING].
+    If [CITY_OR_SETTING] is blank or still shows brackets, use general practical assumptions and label
+    them. Close with the first action for Monday, written so it takes under ten minutes to begin. Keep
+    recovery blocks non-negotiable unless I explicitly trade them away.
 
     '
 - id: '003'
@@ -115,17 +124,18 @@ prompts:
   category: assistants
   difficulty: Intermediate
   usage: Use this to learn a skill through diagnosis, practice, feedback, and reflection.
-  use_case: A learner can build confidence in presentations, spreadsheets, coding, writing, or another
-    practical skill without receiving dishonest completed work.
-  preview: 'Serve as a practice-first learning coach helping me improve [SKILL] for [REAL_WORLD_GOAL].
-    Before teaching, ask me exactly four questions: my current level, previous attempts, time available,
-    and the...'
+  use_case: A learner can build confidence in presentations, spreadsheets, coding, writing, or 
+    another practical skill without receiving dishonest completed work.
+  preview: Serve as a practice-first learning coach helping me improve [SKILL] for 
+    [REAL_WORLD_GOAL]. I can practise for about [MINUTES] minutes in this session. Use examples 
+    suited to...
   best_tools:
   - tool: ChatGPT
     reason: Provides adaptive exercises, immediate feedback, and conversational coaching.
   - tool: Gemini
     reason: Can support learning from mixed text and visual examples when supplied.
-  tip: Attempt each exercise before revealing the model example; productive struggle improves recall.
+  tip: Attempt each exercise before revealing the model example; productive struggle improves 
+    recall.
   expected_output: A tailored mini-lesson, practice task, feedback method, and follow-up plan.
   tags:
   - learning
@@ -133,18 +143,22 @@ prompts:
   - practice
   - feedback
   - skills
-  next_id: null
+  next_id:
   prompt: 'Serve as a practice-first learning coach helping me improve [SKILL] for [REAL_WORLD_GOAL].
 
 
-    Before teaching, ask me exactly four questions: my current level, previous attempts, time available,
-    and the situation where I must use the skill. Wait for my answers. Then give me a quick diagnostic
-    task that takes no more than [MINUTES] minutes.
+    I can practise for about [MINUTES] minutes in this session. Use examples suited to [PAKISTAN_CONTEXT_OR_INDUSTRY].
+    Treat [SUCCESS_THRESHOLD] as the performance bar for independent practice.
+
+
+    Before teaching, ask only what is still unknown: my current level and what I have already tried. Do
+    not re-ask for the skill, goal, or session length already provided. Wait for my answers. Then give
+    me a quick diagnostic task that fits the available minutes.
 
 
     Use my response to choose one priority weakness. Teach that point with a simple explanation, one analogy
-    relevant to life in [PAKISTAN_CONTEXT_OR_INDUSTRY], and one worked example. Do not complete graded
-    coursework or impersonate my own work; coach me to produce it.
+    relevant to the stated context, and one worked example. Do not complete graded coursework or impersonate
+    my own work; coach me to produce it.
 
 
     Next, create a three-round practice ladder:
@@ -153,13 +167,13 @@ prompts:
 
     - Round B: a changed situation with fewer hints;
 
-    - Round C: a realistic challenge completed independently.
+    - Round C: a realistic challenge completed independently against the success threshold.
 
 
     After each answer, use “Keep / Change / Try” feedback. Ask me to explain one decision in my own words
     before moving on. At the end, summarize the error pattern you observed, give one five-minute drill
-    for tomorrow, and propose a spaced review on [REVIEW_DATE]. Adjust difficulty if I score below or
-    above [SUCCESS_THRESHOLD].
+    for tomorrow, and propose a spaced review on [REVIEW_DATE]. If I am clearly below the success threshold,
+    simplify Round C; if I exceed it, increase difficulty once.
 
     '
 - id: '004'
@@ -168,8 +182,8 @@ prompts:
   category: assistants
   difficulty: Beginner
   usage: Use this to improve an email while preserving facts, intent, and your voice.
-  use_case: A student contacting faculty or an employee writing to a manager can sound clear and respectful
-    without becoming stiff or vague.
+  use_case: A student contacting faculty or an employee writing to a manager can sound clear and 
+    respectful without becoming stiff or vague.
   preview: 'Rewrite my email as a careful communications editor while preserving every verified fact and
     my intended request. Draft: [PASTE_EMAIL] Recipient and relationship: [RECIPIENT_CONTEXT] Desired
     outcome...'
@@ -185,7 +199,7 @@ prompts:
   - tone
   - workplace
   - communication
-  next_id: null
+  next_id:
   prompt: 'Rewrite my email as a careful communications editor while preserving every verified fact and
     my intended request.
 
@@ -203,9 +217,10 @@ prompts:
     Maximum length: [WORD_LIMIT]
 
 
-    Apply these non-negotiable constraints: do not invent dates, promises, attachments, titles, or reasons;
-    do not add exaggerated praise; retain any necessary Urdu terms; and keep the request easy to answer.
-    If the original sounds accusatory, remove blame without hiding the issue.
+    If considerations are blank or still show brackets, ignore that line and rely on recipient context
+    and tone. Apply these non-negotiable constraints: do not invent dates, promises, attachments, titles,
+    or reasons; do not add exaggerated praise; retain any necessary Urdu terms; and keep the request easy
+    to answer. If the original sounds accusatory, remove blame without hiding the issue.
 
 
     Produce Version A as the safest professional rewrite. Produce Version B as a slightly warmer alternative.
@@ -225,10 +240,10 @@ prompts:
   category: assistants
   difficulty: Intermediate
   usage: Use this to enter a meeting with clear outcomes, questions, and fallback positions.
-  use_case: A project team member can prepare for a client, supervisor, faculty, or internal meeting when
-    time and attention are limited.
+  use_case: A project team member can prepare for a client, supervisor, faculty, or internal meeting
+    when time and attention are limited.
   preview: 'Act as my meeting strategist and prepare a concise briefing for [MEETING_NAME] on [DATE].
-    Context: [BACKGROUND] Participants and roles: [PARTICIPANTS] My desired outcome: [IDEAL_OUTCOME] Minimum...'
+    Context: [BACKGROUND] Participants and roles (include mine): [PARTICIPANTS] My desired outcome...'
   best_tools:
   - tool: Claude
     reason: Synthesizes lengthy background notes into a coherent preparation brief.
@@ -241,13 +256,13 @@ prompts:
   - preparation
   - agenda
   - stakeholders
-  next_id: null
+  next_id:
   prompt: 'Act as my meeting strategist and prepare a concise briefing for [MEETING_NAME] on [DATE].
 
 
     Context: [BACKGROUND]
 
-    Participants and roles: [PARTICIPANTS]
+    Participants and roles (include mine): [PARTICIPANTS]
 
     My desired outcome: [IDEAL_OUTCOME]
 
@@ -262,13 +277,15 @@ prompts:
 
     Build a one-page readiness brief. Open with a two-sentence purpose statement I can say aloud. Arrange
     an agenda that fits the stated duration, including explicit minutes for decisions and questions. Add
-    a stakeholder read: what each participant may care about, labelled as either known or inferred.
+    a stakeholder read: what each participant may care about, labelled as either known or inferred. Infer
+    my speaking role from the participants field; if unclear, state the assumption.
 
 
-    Create five high-value questions, ordered from exploratory to decision-focused. Anticipate three difficult
-    questions I may receive and draft honest, compact responses that do not fabricate missing data. For
-    each sensitive point, suggest neutral wording and a phrase for redirecting discussion if it becomes
-    unproductive.
+    If sensitive points or materials are blank or still show brackets, omit invented sensitive topics
+    and document lists; note what is missing instead. Create five high-value questions, ordered from exploratory
+    to decision-focused. Anticipate three difficult questions I may receive and draft honest, compact
+    responses that do not fabricate missing data. For each provided sensitive point, suggest neutral wording
+    and a phrase for redirecting discussion if it becomes unproductive.
 
 
     Add a mini decision log with columns for decision, owner, deadline, and evidence needed. Finish with
@@ -282,23 +299,25 @@ prompts:
   category: assistants
   difficulty: Intermediate
   usage: Use this to generate feasible ideas within real limits instead of generic brainstorming.
-  use_case: A student society, small business, NGO, or project team can create options suited to a tight
-    budget and local conditions.
-  preview: Run a constraint-led idea lab for the goal [GOAL], prioritising usefulness over sheer quantity.
-    The audience is [AUDIENCE]. We have [BUDGET], [TIME], [TEAM_SIZE], and access to [RESOURCES]. We must...
+  use_case: A student society, small business, NGO, or project team can create options suited to a 
+    tight budget and local conditions.
+  preview: Run a constraint-led idea lab for the goal [GOAL], prioritising usefulness over sheer 
+    quantity. The audience is [AUDIENCE]. We have [BUDGET], [TIME], [TEAM_SIZE], and access to 
+    [RESOURCES]. We must...
   best_tools:
   - tool: Gemini
     reason: Generates and reorganizes diverse concepts from detailed contextual constraints.
   - tool: DeepSeek
     reason: Offers capable text brainstorming and structured option comparison.
-  tip: Include one unusual constraint; it often produces more distinctive ideas than asking for creativity.
+  tip: Include one unusual constraint; it often produces more distinctive ideas than asking for 
+    creativity.
   expected_output: A diverse shortlist of feasible concepts with tests and rejection reasons.
   tags:
   - brainstorming
   - constraints
   - innovation
   - feasibility
-  next_id: null
+  next_id:
   prompt: 'Run a constraint-led idea lab for the goal [GOAL], prioritising usefulness over sheer quantity.
 
 
@@ -306,11 +325,16 @@ prompts:
     respect [NON_NEGOTIABLES], avoid [EXCLUSIONS], and account for [LOCAL_CONTEXT]. Success means [MEASURE_OF_SUCCESS].
 
 
+    If local context is blank or still shows brackets, proceed with labelled general assumptions. If [OTHER_FIELD]
+    is blank or still shows brackets, choose one contrasting adjacent field yourself, name it, and use
+    it for Wave 2.
+
+
     Generate ideas in three deliberately different waves:
 
     Wave 1 — five dependable ideas using familiar methods.
 
-    Wave 2 — five combinations that borrow a mechanism from [OTHER_FIELD].
+    Wave 2 — five combinations that borrow a mechanism from the chosen other field.
 
     Wave 3 — three “reverse assumption” ideas that challenge how this is normally done.
 
@@ -334,8 +358,8 @@ prompts:
   category: assistants
   difficulty: Advanced
   usage: Use this to rehearse an interview through realistic role-play and direct critique.
-  use_case: A graduate or professional can practise behavioural and technical answers for a target role,
-    including difficult follow-up questions.
+  use_case: A graduate or professional can practise behavioural and technical answers for a target 
+    role, including difficult follow-up questions.
   preview: 'Role-play a demanding but fair interviewer for [ROLE] at [ORGANISATION_TYPE]. Use this vacancy
     description: [JOB_DESCRIPTION]. My background is [BACKGROUND], and I want special practice on...'
   best_tools:
@@ -351,18 +375,20 @@ prompts:
   - careers
   - feedback
   - practice
-  next_id: null
+  next_id:
   prompt: 'Role-play a demanding but fair interviewer for [ROLE] at [ORGANISATION_TYPE].
 
 
     Use this vacancy description: [JOB_DESCRIPTION]. My background is [BACKGROUND], and I want special
-    practice on [WEAK_AREA]. Conduct an eight-question interview one question at a time. Wait for my response
-    after every question. Mix behavioural, situational, role-specific, and ethical judgement questions;
-    do not reveal the next question early.
+    practice on [WEAK_AREA]. If the job description is thin, ask one clarifying question first, then continue
+    with labelled assumptions. Conduct an eight-question interview one question at a time. Wait for my
+    response after every question. Mix behavioural, situational, role-specific, and ethical judgement
+    questions; do not reveal the next question early.
 
 
     Stay in interviewer character during each exchange. Ask one probing follow-up whenever my answer is
-    vague, unsupported, or avoids the question. Never invent experience for me.
+    vague, unsupported, or avoids the question. Never invent experience, employers, tools, or achievements
+    for me.
 
 
     After each response, briefly score four dimensions from 1–5: relevance, evidence, structure, and delivery.
@@ -385,17 +411,16 @@ prompts:
     not personal preference.
 
     '
-- id: 008
+- id: '008'
   slug: two-level-concept-explainer
   title: Two-Level Concept Explainer
   category: assistants
   difficulty: Beginner
   usage: Use this to understand a concept first simply and then at professional depth.
-  use_case: A learner can build intuition before encountering technical vocabulary, equations, caveats,
-    or domain-specific applications.
+  use_case: A learner can build intuition before encountering technical vocabulary, equations, 
+    caveats, or domain-specific applications.
   preview: 'Teach me [CONCEPT] twice: first as if I am 15, then as if I am entering the profession. My
-    current knowledge is [WHAT_I_ALREADY_KNOW]. I need this for [PURPOSE], in the field of [FIELD]. Use
-    examples...'
+    current knowledge is [WHAT_I_ALREADY_KNOW]. I need this for [PURPOSE], in the field of [FIELD]. Preferred...'
   best_tools:
   - tool: ChatGPT
     reason: Adapts explanations to different knowledge levels and supports follow-up questions.
@@ -408,12 +433,16 @@ prompts:
   - learning
   - concepts
   - expertise
-  next_id: null
+  next_id:
   prompt: 'Teach me [CONCEPT] twice: first as if I am 15, then as if I am entering the profession.
 
 
     My current knowledge is [WHAT_I_ALREADY_KNOW]. I need this for [PURPOSE], in the field of [FIELD].
-    Use examples relevant to [LOCAL_OR_PERSONAL_CONTEXT].
+    Preferred local or personal examples: [LOCAL_OR_PERSONAL_CONTEXT].
+
+
+    If the local or personal context is blank or still shows brackets, use neutral everyday examples and
+    say so. Do not invent biographical details about me.
 
 
     Part One — Build Intuition
@@ -427,7 +456,7 @@ prompts:
 
     Revisit the same example using correct terminology, mechanisms, assumptions, and limitations. If equations
     matter, define every symbol and walk through a tiny numerical example. Distinguish what experts generally
-    agree on from what depends on context.
+    agree on from what depends on context. Mark uncertainty rather than inventing citations or data.
 
 
     The Bridge
@@ -441,14 +470,14 @@ prompts:
     that requires applying the concept to a new situation; do not answer it until I try.
 
     '
-- id: 009
+- id: '009'
   slug: habit-experiment-partner
   title: Habit Experiment Partner
   category: assistants
   difficulty: Intermediate
   usage: Use this to design a small, compassionate habit experiment grounded in your routine.
-  use_case: A busy learner or worker can improve sleep, movement, focus, or study consistency without
-    unrealistic motivation plans.
+  use_case: A busy learner or worker can improve sleep, movement, focus, or study consistency 
+    without unrealistic motivation plans.
   preview: 'Be a compassionate behaviour-change coach helping me test, not perfect, the habit [HABIT].
     Here is my normal routine: [ROUTINE]. The habit matters because [PERSONAL_REASON]. Likely obstacles
     include...'
@@ -462,14 +491,18 @@ prompts:
   - wellbeing
   - behaviour
   - consistency
-  next_id: null
+  next_id:
   prompt: 'Be a compassionate behaviour-change coach helping me test, not perfect, the habit [HABIT].
 
 
     Here is my normal routine: [ROUTINE]. The habit matters because [PERSONAL_REASON]. Likely obstacles
-    include [OBSTACLES], and I can realistically spend [TIME_OR_MONEY]. Previous attempts went like this:
-    [PAST_ATTEMPTS]. Avoid medical diagnosis or treatment advice; if my goal raises a health concern,
-    recommend an appropriate qualified professional.
+    include [OBSTACLES]. Time or money I can spend: [TIME_OR_MONEY]. Previous attempts went like this:
+    [PAST_ATTEMPTS].
+
+
+    If time or money limits are blank or still show brackets, design the smallest free version of the
+    habit and label that assumption. Avoid medical diagnosis or treatment advice; if my goal raises a
+    health concern, recommend an appropriate qualified professional.
 
 
     Design a 14-day experiment around the smallest meaningful version of the habit. Specify the cue, action,
@@ -493,8 +526,8 @@ prompts:
   category: assistants
   difficulty: Advanced
   usage: Use this to draft a calm message about conflict while keeping boundaries clear.
-  use_case: A student, colleague, or team lead can address missed work, disrespect, or misunderstanding
-    without escalating the situation.
+  use_case: A student, colleague, or team lead can address missed work, disrespect, or 
+    misunderstanding without escalating the situation.
   preview: 'Help me draft a respectful conflict message that names the issue without attacking the person.
     Relationship: [RELATIONSHIP] What happened, using observable facts: [EVENTS] Impact on me or the work...'
   best_tools:
@@ -509,7 +542,7 @@ prompts:
   - boundaries
   - messaging
   - communication
-  next_id: null
+  next_id:
   prompt: 'Help me draft a respectful conflict message that names the issue without attacking the person.
 
 
@@ -525,10 +558,15 @@ prompts:
 
     Safety or power concerns: [CONCERNS]
 
+    Support channel if needed: [TRUSTED_PERSON_OR_FORMAL_CHANNEL]
+
+    Language preference: [LANGUAGE_PREFERENCE]
+
 
     Before drafting, separate facts from interpretations in two short lists. Flag loaded labels, mind-reading,
     threats, or claims I cannot verify. If there is a credible safety risk, harassment, or serious power
-    imbalance, do not encourage direct confrontation; suggest seeking support through [TRUSTED_PERSON_OR_FORMAL_CHANNEL].
+    imbalance, do not encourage direct confrontation; suggest seeking support through the named support
+    channel, or through a trusted person or formal process if that field is blank.
 
 
     Write three components: a neutral opening, an “observation–impact–request” core, and a closing that
@@ -539,7 +577,8 @@ prompts:
     Role-play two plausible replies from the recipient: one defensive and one constructive. Under each,
     draft a calm one-sentence response that repeats the boundary without debating motives. Finally, run
     a heat check: identify any phrase that could inflame the exchange and replace it. Preserve my natural
-    formality and any necessary Urdu greeting in [LANGUAGE_PREFERENCE].
+    formality. If a language preference is provided, honour it; otherwise write in clear English and note
+    that choice.
 
     '
 - id: '011'

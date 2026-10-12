@@ -29,4 +29,4 @@ Close with a one-page quick guide and five comprehension questions. Do not intro
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

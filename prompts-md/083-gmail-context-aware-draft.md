@@ -30,4 +30,4 @@ Do not expose that panel in the email itself. Keep courtesy genuine and avoid fi
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

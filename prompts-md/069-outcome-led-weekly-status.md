@@ -34,4 +34,4 @@ Add a “changed since last report” strip and identify any item that has remai
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

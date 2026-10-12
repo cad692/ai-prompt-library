@@ -31,4 +31,4 @@ Use [DATE_RANGE] and [SEGMENTS] as filters. Never overwrite source data, and lab
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

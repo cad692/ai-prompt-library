@@ -32,4 +32,4 @@ Add a lightweight change process: request, impact assessment, written approval, 
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

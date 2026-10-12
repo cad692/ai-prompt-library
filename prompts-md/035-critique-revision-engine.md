@@ -31,4 +31,4 @@ Set a stop rule: finish when all critical criteria pass or after [MAX_ROUNDS] ro
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

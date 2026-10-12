@@ -32,4 +32,4 @@ Propose the smallest defensible analysis sequence, including baseline, segmentat
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

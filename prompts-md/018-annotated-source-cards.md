@@ -34,4 +34,4 @@ After all cards, group sources into conversation clusters: agreement, tension, e
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

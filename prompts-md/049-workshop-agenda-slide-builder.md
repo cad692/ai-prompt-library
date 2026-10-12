@@ -32,4 +32,4 @@ Recommend one visual code—colour, icon, or progress marker—that consistently
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

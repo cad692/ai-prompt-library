@@ -26,4 +26,4 @@ End with “HANDOFF TO STEP 5”: the numbered slide architecture, evidence-to-s
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

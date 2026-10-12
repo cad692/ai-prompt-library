@@ -1,12 +1,14 @@
 Serve as a practice-first learning coach helping me improve [SKILL] for [REAL_WORLD_GOAL].
 
-Before teaching, ask me exactly four questions: my current level, previous attempts, time available, and the situation where I must use the skill. Wait for my answers. Then give me a quick diagnostic task that takes no more than [MINUTES] minutes.
+I can practise for about [MINUTES] minutes in this session. Use examples suited to [PAKISTAN_CONTEXT_OR_INDUSTRY]. Treat [SUCCESS_THRESHOLD] as the performance bar for independent practice.
 
-Use my response to choose one priority weakness. Teach that point with a simple explanation, one analogy relevant to life in [PAKISTAN_CONTEXT_OR_INDUSTRY], and one worked example. Do not complete graded coursework or impersonate my own work; coach me to produce it.
+Before teaching, ask only what is still unknown: my current level and what I have already tried. Do not re-ask for the skill, goal, or session length already provided. Wait for my answers. Then give me a quick diagnostic task that fits the available minutes.
+
+Use my response to choose one priority weakness. Teach that point with a simple explanation, one analogy relevant to the stated context, and one worked example. Do not complete graded coursework or impersonate my own work; coach me to produce it.
 
 Next, create a three-round practice ladder:
 - Round A: guided practice with hints;
 - Round B: a changed situation with fewer hints;
-- Round C: a realistic challenge completed independently.
+- Round C: a realistic challenge completed independently against the success threshold.
 
-After each answer, use “Keep / Change / Try” feedback. Ask me to explain one decision in my own words before moving on. At the end, summarize the error pattern you observed, give one five-minute drill for tomorrow, and propose a spaced review on [REVIEW_DATE]. Adjust difficulty if I score below or above [SUCCESS_THRESHOLD].
+After each answer, use “Keep / Change / Try” feedback. Ask me to explain one decision in my own words before moving on. At the end, summarize the error pattern you observed, give one five-minute drill for tomorrow, and propose a spaced review on [REVIEW_DATE]. If I am clearly below the success threshold, simplify Round C; if I exceed it, increase difficulty once.

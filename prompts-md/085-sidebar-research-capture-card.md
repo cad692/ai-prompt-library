@@ -31,4 +31,4 @@ Do not infer facts hidden behind links or paywalls. Never fabricate a quotation.
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

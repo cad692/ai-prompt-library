@@ -32,4 +32,4 @@ Add a source ledger listing title, publisher, publication date, access date, URL
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

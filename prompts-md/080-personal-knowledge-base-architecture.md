@@ -32,4 +32,4 @@ Map a 15-minute weekly review: process inbox, link useful notes, surface open qu
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

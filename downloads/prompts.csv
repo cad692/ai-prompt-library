@@ -1,24 +1,27 @@
 id,slug,title,category,difficulty,usage,expected_output,tip,tags,best_tools,next_id,prompt
 001,decision-lens-builder,Decision Lens Builder,assistants,Intermediate,Use this to compare important options without outsourcing the final decision.,"A balanced decision map with trade-offs, uncertainties, and next actions.",Choose criteria before scoring options so a favourite does not quietly shape the framework.,"decisions, trade-offs, priorities, planning",ChatGPT: Supports an interactive comparison and can reorganize changing priorities quickly.; Claude: Handles nuanced personal context and long option descriptions well.,,"Act as a decision-framing partner whose goal is to clarify my choice, not make it for me.
 
-My decision is [DECISION]. The options are [OPTIONS]. My deadline is [DEADLINE], and the people affected are [STAKEHOLDERS]. What matters to me includes [VALUES_OR_PRIORITIES]. My practical limits are [TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS].
+My decision is [DECISION]. The options are [OPTIONS]. My deadline is [DEADLINE], and the people affected are [STAKEHOLDERS]. What matters to me includes [VALUES_OR_PRIORITIES]. My practical limits are [TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS]. My risk tolerance is [RISK_TOLERANCE].
 
-Begin by restating the decision neutrally. Identify any false either/or framing and add a realistic hybrid or reversible option if one exists. Then build a decision map with:
+Begin by restating the decision neutrally. If options, priorities, or constraints are incomplete, list what is missing and continue with clearly labelled assumptions — do not invent options or facts. Identify any false either/or framing and add a realistic hybrid or reversible option if one exists.
+
+Then build a decision map with:
 - five to seven criteria derived from my priorities;
-- a suggested weight for each criterion, clearly marked as editable;
+- a suggested weight for each criterion, clearly marked as editable, and adjusted for my stated risk tolerance;
 - evidence supporting and challenging each option;
 - unknowns that could change the outcome;
-- the cost of delaying the choice.
+- the cost of delaying the choice;
+- a reversibility assessment for each option (fully reversible, partially reversible, or irreversible).
 
-Do not pretend subjective scores are facts. Show a concise, visible rationale for each proposed weight and rating. Separate facts I supplied from your assumptions.
+Do not pretend subjective scores are facts. Show a concise rationale for each proposed weight and rating. Separate facts I supplied from your assumptions. When risk tolerance is low, favour criteria and experiments that protect downside; only suggest bolder tests if I explicitly accept uncertainty.
 
-Finish with two low-risk experiments I can run before [DEADLINE], three questions to ask relevant people, and a short reflection: “Which regret would be easier to live with, and why?” End by reminding me that I retain the decision.
+Finish with two experiments I can run before [DEADLINE] that match my risk tolerance, three questions to ask relevant people, and a short reflection: “Which regret would be easier to live with, and why?” End by reminding me that I retain the decision.
 "
 002,realistic-week-designer,Realistic Week Designer,assistants,Beginner,Use this to turn crowded commitments into a workable week with recovery time.,"A seven-day plan with priorities, buffers, and a fallback version.",Estimate each task pessimistically and keep at least one buffer block unassigned.,"weekly-planning, time-management, priorities, wellbeing",ChatGPT: Turns task lists and calendar constraints into clear schedules through conversation.; Microsoft Copilot: Works well when planning information already sits in Microsoft productivity apps.,,"You are my realistic weekly planner, protecting both important outcomes and sustainable energy.
 
-Plan the week of [DATES]. Fixed commitments: [CLASSES_MEETINGS_COMMUTE_FAMILY_DUTIES]. Tasks and deadlines: [TASKS]. My strongest focus hours are [FOCUS_HOURS], typical energy pattern is [ENERGY_PATTERN], and available study or work time is [AVAILABLE_TIME]. I also need [SLEEP_EXERCISE_PRAYER_MEALS_OR_REST].
+Plan the week of [DATES]. Fixed commitments: [CLASSES_MEETINGS_COMMUTE_FAMILY_DUTIES]. Tasks and deadlines: [TASKS]. My strongest focus hours are [FOCUS_HOURS], typical energy pattern is [ENERGY_PATTERN], and available study or work time is [AVAILABLE_TIME]. I also need [SLEEP_EXERCISE_PRAYER_MEALS_OR_REST]. Context: [CITY_OR_SETTING].
 
-First sort tasks into Must Finish, Should Advance, and Can Wait. Flag any workload that cannot fit honestly; do not compress impossible work into tiny blocks. Create a Monday-to-Sunday schedule using time ranges, task names, and a clear stopping point. Place demanding work in high-energy periods and group small administrative tasks.
+First sort tasks into Must Finish, Should Advance, and Can Wait. Flag any workload that cannot fit honestly; do not compress impossible work into tiny blocks. Create a Monday-to-Sunday schedule using time ranges, task names, and a clear stopping point. Place demanding work in high-energy periods (using both focus hours and energy pattern) and group small administrative tasks.
 
 Include:
 1. one daily buffer;
@@ -27,20 +30,22 @@ Include:
 4. a 15-minute weekly review;
 5. a reduced plan for a day disrupted by transport, illness, or load-shedding.
 
-Close with the first action for Monday, written so it takes under ten minutes to begin. Keep the plan practical for my context in [CITY_OR_SETTING].
+If [CITY_OR_SETTING] is blank or still shows brackets, use general practical assumptions and label them. Close with the first action for Monday, written so it takes under ten minutes to begin. Keep recovery blocks non-negotiable unless I explicitly trade them away.
 "
 003,skill-practice-coach,Skill Practice Coach,assistants,Intermediate,"Use this to learn a skill through diagnosis, practice, feedback, and reflection.","A tailored mini-lesson, practice task, feedback method, and follow-up plan.",Attempt each exercise before revealing the model example; productive struggle improves recall.,"learning, coaching, practice, feedback, skills","ChatGPT: Provides adaptive exercises, immediate feedback, and conversational coaching.; Gemini: Can support learning from mixed text and visual examples when supplied.",,"Serve as a practice-first learning coach helping me improve [SKILL] for [REAL_WORLD_GOAL].
 
-Before teaching, ask me exactly four questions: my current level, previous attempts, time available, and the situation where I must use the skill. Wait for my answers. Then give me a quick diagnostic task that takes no more than [MINUTES] minutes.
+I can practise for about [MINUTES] minutes in this session. Use examples suited to [PAKISTAN_CONTEXT_OR_INDUSTRY]. Treat [SUCCESS_THRESHOLD] as the performance bar for independent practice.
 
-Use my response to choose one priority weakness. Teach that point with a simple explanation, one analogy relevant to life in [PAKISTAN_CONTEXT_OR_INDUSTRY], and one worked example. Do not complete graded coursework or impersonate my own work; coach me to produce it.
+Before teaching, ask only what is still unknown: my current level and what I have already tried. Do not re-ask for the skill, goal, or session length already provided. Wait for my answers. Then give me a quick diagnostic task that fits the available minutes.
+
+Use my response to choose one priority weakness. Teach that point with a simple explanation, one analogy relevant to the stated context, and one worked example. Do not complete graded coursework or impersonate my own work; coach me to produce it.
 
 Next, create a three-round practice ladder:
 - Round A: guided practice with hints;
 - Round B: a changed situation with fewer hints;
-- Round C: a realistic challenge completed independently.
+- Round C: a realistic challenge completed independently against the success threshold.
 
-After each answer, use “Keep / Change / Try” feedback. Ask me to explain one decision in my own words before moving on. At the end, summarize the error pattern you observed, give one five-minute drill for tomorrow, and propose a spaced review on [REVIEW_DATE]. Adjust difficulty if I score below or above [SUCCESS_THRESHOLD].
+After each answer, use “Keep / Change / Try” feedback. Ask me to explain one decision in my own words before moving on. At the end, summarize the error pattern you observed, give one five-minute drill for tomorrow, and propose a spaced review on [REVIEW_DATE]. If I am clearly below the success threshold, simplify Round C; if I exceed it, increase difficulty once.
 "
 004,tone-safe-email-rewriter,Tone-Safe Email Rewriter,assistants,Beginner,"Use this to improve an email while preserving facts, intent, and your voice.",Two polished email versions plus a brief explanation of tone choices.,Name the relationship and desired response; tone depends more on context than vocabulary.,"email, tone, workplace, communication",ChatGPT: Quickly rewrites short messages across professional tones while following constraints.; Claude: Useful for preserving nuance and intent in sensitive correspondence.,,"Rewrite my email as a careful communications editor while preserving every verified fact and my intended request.
 
@@ -51,7 +56,7 @@ Tone: [WARM_DIRECT_FORMAL_DIPLOMATIC]
 Cultural or workplace considerations: [CONSIDERATIONS]
 Maximum length: [WORD_LIMIT]
 
-Apply these non-negotiable constraints: do not invent dates, promises, attachments, titles, or reasons; do not add exaggerated praise; retain any necessary Urdu terms; and keep the request easy to answer. If the original sounds accusatory, remove blame without hiding the issue.
+If considerations are blank or still show brackets, ignore that line and rely on recipient context and tone. Apply these non-negotiable constraints: do not invent dates, promises, attachments, titles, or reasons; do not add exaggerated praise; retain any necessary Urdu terms; and keep the request easy to answer. If the original sounds accusatory, remove blame without hiding the issue.
 
 Produce Version A as the safest professional rewrite. Produce Version B as a slightly warmer alternative. For each, provide a subject line and complete email. Afterward, list no more than four important edits in the form “Changed X → Y because…”.
 
@@ -60,16 +65,16 @@ Check names, dates, pronouns, and the requested action against my draft. If an e
 005,meeting-readiness-brief,Meeting Readiness Brief,assistants,Intermediate,"Use this to enter a meeting with clear outcomes, questions, and fallback positions.","A one-page meeting brief with agenda, questions, risks, and follow-up language.",Define one minimum acceptable outcome so the meeting remains useful even if time runs short.,"meetings, preparation, agenda, stakeholders",Claude: Synthesizes lengthy background notes into a coherent preparation brief.; ChatGPT: Supports agenda design and realistic rehearsal of likely questions.,,"Act as my meeting strategist and prepare a concise briefing for [MEETING_NAME] on [DATE].
 
 Context: [BACKGROUND]
-Participants and roles: [PARTICIPANTS]
+Participants and roles (include mine): [PARTICIPANTS]
 My desired outcome: [IDEAL_OUTCOME]
 Minimum acceptable outcome: [MINIMUM_OUTCOME]
 Sensitive points: [SENSITIVE_POINTS]
 Evidence or documents available: [MATERIALS]
 Duration: [MINUTES]
 
-Build a one-page readiness brief. Open with a two-sentence purpose statement I can say aloud. Arrange an agenda that fits the stated duration, including explicit minutes for decisions and questions. Add a stakeholder read: what each participant may care about, labelled as either known or inferred.
+Build a one-page readiness brief. Open with a two-sentence purpose statement I can say aloud. Arrange an agenda that fits the stated duration, including explicit minutes for decisions and questions. Add a stakeholder read: what each participant may care about, labelled as either known or inferred. Infer my speaking role from the participants field; if unclear, state the assumption.
 
-Create five high-value questions, ordered from exploratory to decision-focused. Anticipate three difficult questions I may receive and draft honest, compact responses that do not fabricate missing data. For each sensitive point, suggest neutral wording and a phrase for redirecting discussion if it becomes unproductive.
+If sensitive points or materials are blank or still show brackets, omit invented sensitive topics and document lists; note what is missing instead. Create five high-value questions, ordered from exploratory to decision-focused. Anticipate three difficult questions I may receive and draft honest, compact responses that do not fabricate missing data. For each provided sensitive point, suggest neutral wording and a phrase for redirecting discussion if it becomes unproductive.
 
 Add a mini decision log with columns for decision, owner, deadline, and evidence needed. Finish with a 30-second closing summary and a follow-up email skeleton. If the meeting goal is too broad for [MINUTES], explicitly recommend what to defer.
 "
@@ -77,9 +82,11 @@ Add a mini decision log with columns for decision, owner, deadline, and evidence
 
 The audience is [AUDIENCE]. We have [BUDGET], [TIME], [TEAM_SIZE], and access to [RESOURCES]. We must respect [NON_NEGOTIABLES], avoid [EXCLUSIONS], and account for [LOCAL_CONTEXT]. Success means [MEASURE_OF_SUCCESS].
 
+If local context is blank or still shows brackets, proceed with labelled general assumptions. If [OTHER_FIELD] is blank or still shows brackets, choose one contrasting adjacent field yourself, name it, and use it for Wave 2.
+
 Generate ideas in three deliberately different waves:
 Wave 1 — five dependable ideas using familiar methods.
-Wave 2 — five combinations that borrow a mechanism from [OTHER_FIELD].
+Wave 2 — five combinations that borrow a mechanism from the chosen other field.
 Wave 3 — three “reverse assumption” ideas that challenge how this is normally done.
 
 Each idea must fit on three lines: concept, why it fits the constraints, and its weakest point. Do not repeat the same core mechanism under new names.
@@ -90,9 +97,9 @@ For each finalist, design a [DAYS]-day pilot requiring no more than [PILOT_BUDGE
 "
 007,interview-pressure-rehearsal,Interview Pressure Rehearsal,assistants,Advanced,Use this to rehearse an interview through realistic role-play and direct critique.,An interactive mock interview with scored critique and improved answer outlines.,Answer aloud before typing a summary to practise delivery as well as content.,"interview, role-play, careers, feedback, practice",ChatGPT: Maintains interactive interviewer role-play and gives targeted response feedback.; Meta AI: Provides accessible conversational practice for common interview scenarios.,,"Role-play a demanding but fair interviewer for [ROLE] at [ORGANISATION_TYPE].
 
-Use this vacancy description: [JOB_DESCRIPTION]. My background is [BACKGROUND], and I want special practice on [WEAK_AREA]. Conduct an eight-question interview one question at a time. Wait for my response after every question. Mix behavioural, situational, role-specific, and ethical judgement questions; do not reveal the next question early.
+Use this vacancy description: [JOB_DESCRIPTION]. My background is [BACKGROUND], and I want special practice on [WEAK_AREA]. If the job description is thin, ask one clarifying question first, then continue with labelled assumptions. Conduct an eight-question interview one question at a time. Wait for my response after every question. Mix behavioural, situational, role-specific, and ethical judgement questions; do not reveal the next question early.
 
-Stay in interviewer character during each exchange. Ask one probing follow-up whenever my answer is vague, unsupported, or avoids the question. Never invent experience for me.
+Stay in interviewer character during each exchange. Ask one probing follow-up whenever my answer is vague, unsupported, or avoids the question. Never invent experience, employers, tools, or achievements for me.
 
 After each response, briefly score four dimensions from 1–5: relevance, evidence, structure, and delivery. Give one strength and one precise correction, but let me retry before showing any model outline.
 
@@ -106,13 +113,15 @@ Finish with a realistic hiring signal—strong, mixed, or weak—and explain it 
 "
 008,two-level-concept-explainer,Two-Level Concept Explainer,assistants,Beginner,Use this to understand a concept first simply and then at professional depth.,"A teen-friendly explanation, expert treatment, and bridge between the two.","After reading both levels, explain the connection between them in your own words.","explanation, learning, concepts, expertise",ChatGPT: Adapts explanations to different knowledge levels and supports follow-up questions.; Gemini: Explains concepts using varied examples and can work with supplied visuals.,,"Teach me [CONCEPT] twice: first as if I am 15, then as if I am entering the profession.
 
-My current knowledge is [WHAT_I_ALREADY_KNOW]. I need this for [PURPOSE], in the field of [FIELD]. Use examples relevant to [LOCAL_OR_PERSONAL_CONTEXT].
+My current knowledge is [WHAT_I_ALREADY_KNOW]. I need this for [PURPOSE], in the field of [FIELD]. Preferred local or personal examples: [LOCAL_OR_PERSONAL_CONTEXT].
+
+If the local or personal context is blank or still shows brackets, use neutral everyday examples and say so. Do not invent biographical details about me.
 
 Part One — Build Intuition
 Explain the idea in plain language with one everyday analogy and a small concrete example. Define no more than three essential terms. Include one common misunderstanding and a quick “check yourself” question. Avoid saying something is “just simple” or “obvious.”
 
 Part Two — Add Expert Precision
-Revisit the same example using correct terminology, mechanisms, assumptions, and limitations. If equations matter, define every symbol and walk through a tiny numerical example. Distinguish what experts generally agree on from what depends on context.
+Revisit the same example using correct terminology, mechanisms, assumptions, and limitations. If equations matter, define every symbol and walk through a tiny numerical example. Distinguish what experts generally agree on from what depends on context. Mark uncertainty rather than inventing citations or data.
 
 The Bridge
 Map each element of the first analogy to the technical explanation and state where the analogy breaks down. Show three visible reasoning steps for applying the concept to [APPLICATION], without claiming access to hidden internal reasoning.
@@ -121,7 +130,9 @@ End with a five-item ladder: what to learn next, from easiest to hardest. Ask me
 "
 009,habit-experiment-partner,Habit Experiment Partner,assistants,Intermediate,"Use this to design a small, compassionate habit experiment grounded in your routine.","A two-week habit experiment with triggers, tracking, recovery, and review.","Track whether you started the habit, not whether every session was perfect.","habits, wellbeing, behaviour, consistency","ChatGPT: Supports iterative coaching, check-ins, and practical adjustment of routines.",,"Be a compassionate behaviour-change coach helping me test, not perfect, the habit [HABIT].
 
-Here is my normal routine: [ROUTINE]. The habit matters because [PERSONAL_REASON]. Likely obstacles include [OBSTACLES], and I can realistically spend [TIME_OR_MONEY]. Previous attempts went like this: [PAST_ATTEMPTS]. Avoid medical diagnosis or treatment advice; if my goal raises a health concern, recommend an appropriate qualified professional.
+Here is my normal routine: [ROUTINE]. The habit matters because [PERSONAL_REASON]. Likely obstacles include [OBSTACLES]. Time or money I can spend: [TIME_OR_MONEY]. Previous attempts went like this: [PAST_ATTEMPTS].
+
+If time or money limits are blank or still show brackets, design the smallest free version of the habit and label that assumption. Avoid medical diagnosis or treatment advice; if my goal raises a health concern, recommend an appropriate qualified professional.
 
 Design a 14-day experiment around the smallest meaningful version of the habit. Specify the cue, action, location, duration, and immediate reward. Give three versions: minimum for difficult days, standard, and stretch. Attach the habit to an existing routine rather than relying on motivation.
 
@@ -137,12 +148,14 @@ Impact on me or the work: [IMPACT]
 What I need next: [REQUEST_OR_BOUNDARY]
 Communication channel: [WHATSAPP_EMAIL_SMS_OR_OTHER]
 Safety or power concerns: [CONCERNS]
+Support channel if needed: [TRUSTED_PERSON_OR_FORMAL_CHANNEL]
+Language preference: [LANGUAGE_PREFERENCE]
 
-Before drafting, separate facts from interpretations in two short lists. Flag loaded labels, mind-reading, threats, or claims I cannot verify. If there is a credible safety risk, harassment, or serious power imbalance, do not encourage direct confrontation; suggest seeking support through [TRUSTED_PERSON_OR_FORMAL_CHANNEL].
+Before drafting, separate facts from interpretations in two short lists. Flag loaded labels, mind-reading, threats, or claims I cannot verify. If there is a credible safety risk, harassment, or serious power imbalance, do not encourage direct confrontation; suggest seeking support through the named support channel, or through a trusted person or formal process if that field is blank.
 
 Write three components: a neutral opening, an “observation–impact–request” core, and a closing that allows a practical response. Keep the complete message under [WORD_LIMIT] words. Then provide a firmer version for use if the first request has already been ignored.
 
-Role-play two plausible replies from the recipient: one defensive and one constructive. Under each, draft a calm one-sentence response that repeats the boundary without debating motives. Finally, run a heat check: identify any phrase that could inflame the exchange and replace it. Preserve my natural formality and any necessary Urdu greeting in [LANGUAGE_PREFERENCE].
+Role-play two plausible replies from the recipient: one defensive and one constructive. Under each, draft a calm one-sentence response that repeats the boundary without debating motives. Finally, run a heat check: identify any phrase that could inflame the exchange and replace it. Preserve my natural formality. If a language preference is provided, honour it; otherwise write in clear English and note that choice.
 "
 011,three-source-triangulator,Three-Source Triangulator,research,Advanced,Use this to compare independent sources before trusting a consequential claim.,"A triangulation matrix showing agreement, conflict, provenance, and confidence.",Independence matters more than quantity; three articles repeating one press release count as one source.,"research, triangulation, sources, verification",Perplexity: Finds current web sources and exposes citations for direct inspection.; Gemini: Can compare web-grounded material and organise disagreements across sources.,,"Act as an evidence triangulator investigating the claim [CLAIM] for [DECISION_OR_PROJECT].
 

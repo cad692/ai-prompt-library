@@ -32,4 +32,4 @@ After the six frames, include a continuity ledger listing fixed visual facts and
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

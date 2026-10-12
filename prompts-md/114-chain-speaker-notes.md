@@ -26,4 +26,4 @@ Finish with “HANDOFF TO STEP 7”: the slide-linked notes, timing total, Q&A s
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

@@ -26,4 +26,4 @@ Finish with a reviewer test covering fit, evidence, humility, clarity, and wheth
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

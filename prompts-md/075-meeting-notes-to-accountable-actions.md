@@ -30,4 +30,4 @@ Produce a compact decision log followed by the action register in priority order
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

@@ -19,9 +19,11 @@ Run a constraint-led idea lab for the goal [GOAL], prioritising usefulness over 
 
 The audience is [AUDIENCE]. We have [BUDGET], [TIME], [TEAM_SIZE], and access to [RESOURCES]. We must respect [NON_NEGOTIABLES], avoid [EXCLUSIONS], and account for [LOCAL_CONTEXT]. Success means [MEASURE_OF_SUCCESS].
 
+If local context is blank or still shows brackets, proceed with labelled general assumptions. If [OTHER_FIELD] is blank or still shows brackets, choose one contrasting adjacent field yourself, name it, and use it for Wave 2.
+
 Generate ideas in three deliberately different waves:
 Wave 1 — five dependable ideas using familiar methods.
-Wave 2 — five combinations that borrow a mechanism from [OTHER_FIELD].
+Wave 2 — five combinations that borrow a mechanism from the chosen other field.
 Wave 3 — three “reverse assumption” ideas that challenge how this is normally done.
 
 Each idea must fit on three lines: concept, why it fits the constraints, and its weakest point. Do not repeat the same core mechanism under new names.
@@ -32,4 +34,4 @@ For each finalist, design a [DAYS]-day pilot requiring no more than [PILOT_BUDGE
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

@@ -33,4 +33,4 @@ Provide the final send-ready response first. After it, add an internal-only note
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

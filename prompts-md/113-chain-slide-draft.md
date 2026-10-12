@@ -26,4 +26,4 @@ Close with “HANDOFF TO STEP 6”: all slide titles, on-slide text, visual brie
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

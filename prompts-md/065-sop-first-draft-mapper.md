@@ -32,4 +32,4 @@ Finish with version owner, review date placeholder, change log, and a dry-run te
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

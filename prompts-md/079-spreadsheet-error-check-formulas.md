@@ -32,4 +32,4 @@ Add a summary section that counts each error type and highlights rows through co
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

@@ -26,4 +26,4 @@ Finish with “HANDOFF TO STEP 3”: a clean evidence ledger, unresolved gaps, a
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

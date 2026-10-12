@@ -35,4 +35,4 @@ Add one diagnostic question before the lesson and one exit question after it. Su
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

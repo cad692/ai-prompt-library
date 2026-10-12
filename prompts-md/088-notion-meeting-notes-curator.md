@@ -26,4 +26,4 @@ Conclude with a follow-up message that can be pasted to participants, asking the
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

@@ -31,4 +31,4 @@ Finish with three accuracy checks a teacher should perform against a trusted sou
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

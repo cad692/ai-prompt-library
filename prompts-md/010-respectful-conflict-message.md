@@ -23,13 +23,15 @@ Impact on me or the work: [IMPACT]
 What I need next: [REQUEST_OR_BOUNDARY]
 Communication channel: [WHATSAPP_EMAIL_SMS_OR_OTHER]
 Safety or power concerns: [CONCERNS]
+Support channel if needed: [TRUSTED_PERSON_OR_FORMAL_CHANNEL]
+Language preference: [LANGUAGE_PREFERENCE]
 
-Before drafting, separate facts from interpretations in two short lists. Flag loaded labels, mind-reading, threats, or claims I cannot verify. If there is a credible safety risk, harassment, or serious power imbalance, do not encourage direct confrontation; suggest seeking support through [TRUSTED_PERSON_OR_FORMAL_CHANNEL].
+Before drafting, separate facts from interpretations in two short lists. Flag loaded labels, mind-reading, threats, or claims I cannot verify. If there is a credible safety risk, harassment, or serious power imbalance, do not encourage direct confrontation; suggest seeking support through the named support channel, or through a trusted person or formal process if that field is blank.
 
 Write three components: a neutral opening, an “observation–impact–request” core, and a closing that allows a practical response. Keep the complete message under [WORD_LIMIT] words. Then provide a firmer version for use if the first request has already been ignored.
 
-Role-play two plausible replies from the recipient: one defensive and one constructive. Under each, draft a calm one-sentence response that repeats the boundary without debating motives. Finally, run a heat check: identify any phrase that could inflame the exchange and replace it. Preserve my natural formality and any necessary Urdu greeting in [LANGUAGE_PREFERENCE].
+Role-play two plausible replies from the recipient: one defensive and one constructive. Under each, draft a calm one-sentence response that repeats the boundary without debating motives. Finally, run a heat check: identify any phrase that could inflame the exchange and replace it. Preserve my natural formality. If a language preference is provided, honour it; otherwise write in clear English and note that choice.
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

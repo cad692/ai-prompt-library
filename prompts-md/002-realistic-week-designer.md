@@ -17,9 +17,9 @@
 ```text
 You are my realistic weekly planner, protecting both important outcomes and sustainable energy.
 
-Plan the week of [DATES]. Fixed commitments: [CLASSES_MEETINGS_COMMUTE_FAMILY_DUTIES]. Tasks and deadlines: [TASKS]. My strongest focus hours are [FOCUS_HOURS], typical energy pattern is [ENERGY_PATTERN], and available study or work time is [AVAILABLE_TIME]. I also need [SLEEP_EXERCISE_PRAYER_MEALS_OR_REST].
+Plan the week of [DATES]. Fixed commitments: [CLASSES_MEETINGS_COMMUTE_FAMILY_DUTIES]. Tasks and deadlines: [TASKS]. My strongest focus hours are [FOCUS_HOURS], typical energy pattern is [ENERGY_PATTERN], and available study or work time is [AVAILABLE_TIME]. I also need [SLEEP_EXERCISE_PRAYER_MEALS_OR_REST]. Context: [CITY_OR_SETTING].
 
-First sort tasks into Must Finish, Should Advance, and Can Wait. Flag any workload that cannot fit honestly; do not compress impossible work into tiny blocks. Create a Monday-to-Sunday schedule using time ranges, task names, and a clear stopping point. Place demanding work in high-energy periods and group small administrative tasks.
+First sort tasks into Must Finish, Should Advance, and Can Wait. Flag any workload that cannot fit honestly; do not compress impossible work into tiny blocks. Create a Monday-to-Sunday schedule using time ranges, task names, and a clear stopping point. Place demanding work in high-energy periods (using both focus hours and energy pattern) and group small administrative tasks.
 
 Include:
 1. one daily buffer;
@@ -28,8 +28,8 @@ Include:
 4. a 15-minute weekly review;
 5. a reduced plan for a day disrupted by transport, illness, or load-shedding.
 
-Close with the first action for Monday, written so it takes under ten minutes to begin. Keep the plan practical for my context in [CITY_OR_SETTING].
+If [CITY_OR_SETTING] is blank or still shows brackets, use general practical assumptions and label them. Close with the first action for Monday, written so it takes under ten minutes to begin. Keep recovery blocks non-negotiable unless I explicitly trade them away.
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

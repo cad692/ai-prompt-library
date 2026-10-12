@@ -33,4 +33,4 @@ Add a one-page discussion outline containing pilot objective, each side's role, 
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

@@ -32,4 +32,4 @@ Then run a deletion test on Version 2: remove one instruction that does not mate
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

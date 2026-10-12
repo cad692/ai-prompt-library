@@ -32,4 +32,4 @@ Separately specify Canva assembly: safe-zone placement, at most one tagline, typ
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

@@ -1,249 +1,249 @@
 "001":
   DECISION:
-    q: "What decision are you choosing between?"
-    ex: "Which university to join"
+    q: What decision do you need to make?
+    ex: Which university offer to accept
   OPTIONS:
-    q: "What options are you comparing?"
-    ex: "Job offers or postgraduate study"
+    q: Which concrete options are you comparing?
+    ex: Offer A in Lahore vs Offer B abroad
   DEADLINE:
-    q: "When do you need to decide by?"
-    ex: "In three weeks"
+    q: By what date or event must you decide?
+    ex: Before 30 April / before classes start
   STAKEHOLDERS:
-    q: "Who will be affected by this decision?"
-    ex: "Family, friends, or team members"
+    q: Who will be affected by this decision?
+    ex: Parents, siblings, or a teammate
   VALUES_OR_PRIORITIES:
-    q: "What matters most to you?"
-    ex: "Career growth and stability"
+    q: What matters most in this decision?
+    ex: Growth, stability, and location
   TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS:
-    q: "What practical limits matter here?"
-    ex: "Budget, travel, or family duties"
+    q: What time, money, place, or family limits apply?
+    ex: Rs. 50,000/month and must stay near family
   RISK_TOLERANCE:
-    q: "What is your comfort level with risk and uncertainty?"
-    ex: "I prefer safer options with predictable outcomes"
+    q: How comfortable are you with uncertainty?
+    ex: Prefer safer options with predictable outcomes
 "002":
   DATES:
-    q: "Which week do you want planned?"
-    ex: "This week or 14-20 April"
+    q: Which calendar week should be planned?
+    ex: 14–20 April or this coming week
   CLASSES_MEETINGS_COMMUTE_FAMILY_DUTIES:
-    q: "What fixed commitments do you have?"
-    ex: "Classes, commute, and family duties"
+    q: What fixed commitments already fill the week?
+    ex: Mon–Fri 9–1 classes; 45-min commute; Sunday family lunch
   TASKS:
-    q: "What tasks need attention?"
-    ex: "Assignments, report work, and chores"
+    q: Which tasks and deadlines need attention?
+    ex: Finish report by Thu; revise two chapters; pay bills
   FOCUS_HOURS:
-    q: "When are you most focused?"
-    ex: "7pm to 10pm"
+    q: During which hours do you focus best?
+    ex: 7pm to 10pm on weeknights
   ENERGY_PATTERN:
-    q: "What is your energy pattern?"
-    ex: "Better in the morning"
+    q: When is your energy usually highest or lowest?
+    ex: Alert mornings; low energy after 3pm
   AVAILABLE_TIME:
-    q: "How much time do you have?"
-    ex: "Two hours each evening"
+    q: How much focus time can you dedicate?
+    ex: About 2 hours each weekday evening
   SLEEP_EXERCISE_PRAYER_MEALS_OR_REST:
-    q: "What recovery time matters to you?"
-    ex: "Sleep, meals, and prayer time"
+    q: Which recovery blocks must stay protected?
+    ex: Sleep by 12; prayer times; 30-min walk
   CITY_OR_SETTING:
-    q: "What city or setting should we use?"
-    ex: "Karachi or hostel life"
+    q: What city or living situation shapes the plan?
+    ex: Karachi hostel with evening load-shedding
 "003":
   SKILL:
-    q: "What skill do you want to improve?"
-    ex: "Public speaking"
+    q: Which skill do you want to practise?
+    ex: Public speaking for class presentations
   REAL_WORLD_GOAL:
-    q: "What will you use it for?"
-    ex: "Class presentations and interviews"
+    q: What real situation will you use it for?
+    ex: A 5-minute project presentation next week
   MINUTES:
-    q: "How much practice time do you have?"
-    ex: "Twenty minutes"
+    q: How many minutes can you practise now?
+    ex: '20'
   PAKISTAN_CONTEXT_OR_INDUSTRY:
-    q: "What context should we use?"
-    ex: "University life in Lahore"
+    q: What setting or industry should examples use?
+    ex: Undergraduate engineering class in Lahore
   REVIEW_DATE:
-    q: "When should we review it?"
-    ex: "Next Friday"
+    q: On which date should we review progress?
+    ex: Next Friday
   SUCCESS_THRESHOLD:
-    q: "What result would count as success?"
-    ex: "Three clear points in a talk"
+    q: What result would mean practice succeeded?
+    ex: Deliver three clear points without reading slides
 "004":
   PASTE_EMAIL:
-    q: "Paste the email draft you want rewritten"
-    ex: "Hi sir, I would like to request..."
+    q: Paste the email draft you want rewritten.
+    ex: Include the full draft; replace private names if needed
   RECIPIENT_CONTEXT:
-    q: "Who is the email for?"
-    ex: "A lecturer or hiring manager"
+    q: Who receives it, and what is your relationship?
+    ex: My thesis supervisor whom I email monthly
   OUTCOME:
-    q: "What do you want from the reply?"
-    ex: "A meeting time or permission"
+    q: What reply or action do you want?
+    ex: A meeting slot next week to review chapter 2
   WARM_DIRECT_FORMAL_DIPLOMATIC:
-    q: "What tone should the email have? (e.g., warm, direct, formal, diplomatic)"
-    ex: "Warm and professional"
+    q: What tone should the email use?
+    ex: Formal and respectful, or warm and concise
   CONSIDERATIONS:
-    q: "Any cultural or workplace details to consider?"
-    ex: "Need to sound respectful"
+    q: Any cultural or workplace details to respect?
+    ex: Keep titles; avoid sounding demanding
     optional: true
   WORD_LIMIT:
-    q: "How long should the email be?"
-    ex: "Under 200 words"
+    q: What maximum length should the email have?
+    ex: Under 180 words
 "005":
   MEETING_NAME:
-    q: "What is this meeting about?"
-    ex: "Semester project review"
+    q: What is the meeting called or about?
+    ex: Semester project review with supervisor
   DATE:
-    q: "When is the meeting?"
-    ex: "Tuesday at 4pm"
+    q: When does the meeting take place?
+    ex: Tuesday 4pm PKT
   BACKGROUND:
-    q: "What background should we know?"
-    ex: "Last month's delay and costs"
+    q: What prior context should the brief assume?
+    ex: Last month's delay; revised budget still pending
   PARTICIPANTS:
-    q: "Who will be in the meeting?"
-    ex: "Project team and supervisor"
+    q: Who is attending, and what is your role?
+    ex: Supervisor, two teammates; I present the update
   IDEAL_OUTCOME:
-    q: "What outcome would be ideal?"
-    ex: "A clear action plan"
+    q: What ideal outcome do you want from it?
+    ex: Agreed action plan and new deadlines
   MINIMUM_OUTCOME:
-    q: "What is the minimum acceptable outcome?"
-    ex: "Approval of the next step"
+    q: What minimum outcome would still be useful?
+    ex: Approval to proceed with the next milestone
   SENSITIVE_POINTS:
-    q: "What topics need care?"
-    ex: "Budget and deadlines"
+    q: Which topics need careful wording?
+    ex: Missed deadline and budget overrun
     optional: true
   MATERIALS:
-    q: "What notes or files are needed?"
-    ex: "Slides and cost sheet"
+    q: Which notes or files will you bring?
+    ex: Slides, cost sheet, last meeting notes
     optional: true
   MINUTES:
-    q: "How many minutes is the meeting scheduled for?"
-    ex: "30 minutes"
+    q: How many minutes is the meeting scheduled for?
+    ex: '30'
 "006":
   GOAL:
-    q: "What are you trying to create?"
-    ex: "A student club idea"
+    q: What goal or problem should the ideas solve?
+    ex: Increase first-year attendance at club events
   AUDIENCE:
-    q: "Who is the idea for?"
-    ex: "First-year students"
+    q: Who is the primary audience for these ideas?
+    ex: First-year students on campus
   BUDGET:
-    q: "What budget do you have?"
-    ex: "Rs. 15,000"
+    q: What total budget can you spend?
+    ex: Rs. 15,000
   TIME:
-    q: "How much time is available for the project?"
-    ex: "Three weeks"
+    q: How much calendar time do you have?
+    ex: Three weeks before orientation week
   TEAM_SIZE:
-    q: "How many people are involved?"
-    ex: "Four teammates"
+    q: How many people can help deliver it?
+    ex: Four teammates, evenings only
   RESOURCES:
-    q: "What resources (tools, spaces, equipment) can you use?"
-    ex: "A lab and a small laptop"
+    q: What tools, spaces, or equipment can you use?
+    ex: Seminar room, WhatsApp group, one projector
   NON_NEGOTIABLES:
-    q: "What constraints must stay fixed (non-negotiables)?"
-    ex: "Low cost and safe design"
+    q: Which constraints must remain fixed?
+    ex: Must be free for students and on-campus
   EXCLUSIONS:
-    q: "What should be explicitly avoided?"
-    ex: "Unsafe materials or over-spending"
+    q: What should the ideas explicitly avoid?
+    ex: Paid guest speakers and off-campus venues
   LOCAL_CONTEXT:
-    q: "What local situation matters?"
-    ex: "Lahore power cuts and campus rules"
+    q: What local conditions should ideas respect?
+    ex: Lahore heat, prayer times, campus entry rules
     optional: true
   MEASURE_OF_SUCCESS:
-    q: "How will you measure or judge success?"
-    ex: "More student engagement"
+    q: How will you judge whether an idea worked?
+    ex: 50 sign-ups and 70% show-up rate
   OTHER_FIELD:
-    q: "What other field or discipline should we borrow ideas from?"
-    ex: "Design thinking"
+    q: Which other field should Wave 2 borrow from?
+    ex: Retail loyalty programmes or game design
     optional: true
   DAYS:
-    q: "How many days is the pilot?"
-    ex: "Seven days"
+    q: How many days can each pilot last?
+    ex: '7'
   PILOT_BUDGET:
-    q: "What is the pilot budget?"
-    ex: "Rs. 5,000"
+    q: What budget is allowed for each pilot?
+    ex: Rs. 5,000
 "007":
   ROLE:
-    q: "What role are you applying for?"
-    ex: "Junior data analyst"
+    q: What job role are you practising for?
+    ex: Junior data analyst
   ORGANISATION_TYPE:
-    q: "What type of organisation is it?"
-    ex: "A tech startup"
+    q: What type of organisation is hiring?
+    ex: Karachi fintech startup, ~40 people
   JOB_DESCRIPTION:
-    q: "Paste the job description"
-    ex: "We need strong Excel and SQL skills"
+    q: Paste the full job description text.
+    ex: Paste duties, requirements, and nice-to-haves
   BACKGROUND:
-    q: "What is your background?"
-    ex: "Business studies and internship"
+    q: What experience and education should we use?
+    ex: BBA; Excel internship; basic SQL course
   WEAK_AREA:
-    q: "What area do you want to improve?"
-    ex: "Technical interviews"
+    q: Which interview skill do you want to strengthen?
+    ex: Technical questions and follow-ups
   SELECTION_CRITERIA:
-    q: "What selection criteria matter most to them?"
-    ex: "Problem-solving and teamwork"
+    q: Which hiring criteria matter most to them?
+    ex: Problem-solving, Excel/SQL, teamwork
 "008":
   CONCEPT:
-    q: "What concept do you want explained?"
-    ex: "Machine learning basics"
+    q: Which concept do you want explained?
+    ex: Hypothesis testing in statistics
   WHAT_I_ALREADY_KNOW:
-    q: "What do you already know about this topic?"
-    ex: "Basic statistics only"
+    q: What do you already know about this topic?
+    ex: Means and basic probability only
   PURPOSE:
-    q: "Why do you need the explanation?"
-    ex: "For a class assignment"
+    q: Why do you need this explanation now?
+    ex: Prepare for a midterm and a lab report
   FIELD:
-    q: "What field is this in?"
-    ex: "Computer science"
+    q: Which academic or professional field is this?
+    ex: Undergraduate statistics / data science
   LOCAL_OR_PERSONAL_CONTEXT:
-    q: "Any local or personal context?"
-    ex: "A student project in Islamabad"
+    q: Any local or personal example to prefer?
+    ex: Student survey project in Islamabad
     optional: true
   APPLICATION:
-    q: "How will it be used?"
-    ex: "To explain a model to classmates"
+    q: What situation should the final practice apply to?
+    ex: Explain a model result to classmates
 "009":
   HABIT:
-    q: "What habit are you testing?"
-    ex: "Daily revision"
+    q: Which habit do you want to test?
+    ex: 15 minutes of evening revision
   ROUTINE:
-    q: "What is your current daily routine?"
-    ex: "Study after dinner"
+    q: What does a normal day currently look like?
+    ex: Classes till 4; dinner 8; study after 9
   PERSONAL_REASON:
-    q: "Why do you want this habit?"
-    ex: "To feel more prepared"
+    q: Why does this habit matter to you?
+    ex: Feel prepared before weekly quizzes
   OBSTACLES:
-    q: "What gets in the way?"
-    ex: "Phone distraction and tiredness"
+    q: What usually gets in the way?
+    ex: Phone scrolling and late dinner
   TIME_OR_MONEY:
-    q: "What time or cost constraint matters?"
-    ex: "Only 15 minutes a day"
+    q: What time or money limit applies?
+    ex: Max 15 minutes; no paid apps
     optional: true
   PAST_ATTEMPTS:
-    q: "What have you tried before?"
-    ex: "A strict schedule for one week"
+    q: What have you already tried for this habit?
+    ex: Strict 1-hour plan that lasted four days
 "010":
   RELATIONSHIP:
-    q: "What is your relationship?"
-    ex: "A classmate or coworker"
+    q: What is your relationship to the other person?
+    ex: Class project partner / junior teammate
   EVENTS:
-    q: "What happened?"
-    ex: "A missed meeting and a delayed task"
+    q: What observable events happened?
+    ex: Missed Tuesday standup; shared file still empty
   IMPACT:
-    q: "What was the impact?"
-    ex: "Stress and confusion for the team"
+    q: How did those events affect you or the work?
+    ex: I rewrote the section and the deadline slipped
   REQUEST_OR_BOUNDARY:
-    q: "What do you want to ask for?"
-    ex: "A clearer timeline and boundary"
+    q: What request or boundary do you need?
+    ex: Confirm tasks by Sunday night each week
   WHATSAPP_EMAIL_SMS_OR_OTHER:
-    q: "Which communication channel should we use?"
-    ex: "WhatsApp or email"
+    q: Which channel will you send this on?
+    ex: WhatsApp chat or work email
   CONCERNS:
-    q: "What worries you most?"
-    ex: "Keeping the tone respectful"
+    q: What safety or power concerns exist?
+    ex: They are a senior; I need to stay professional
   TRUSTED_PERSON_OR_FORMAL_CHANNEL:
-    q: "Who should help if needed?"
-    ex: "A trusted mentor or formal email"
+    q: Who or which channel helps if this escalates?
+    ex: Course instructor or HR email
     optional: true
   WORD_LIMIT:
-    q: "How long should the message be?"
-    ex: "Under 120 words"
+    q: What maximum word count should the message have?
+    ex: Under 120 words
   LANGUAGE_PREFERENCE:
-    q: "What language should it use?"
-    ex: "English with simple Urdu words"
+    q: What language or mix should the message use?
+    ex: English with a brief Urdu greeting
     optional: true
 "011":
   CLAIM:

@@ -33,4 +33,4 @@ End with a two-sentence share-safe summary, a list of remaining checks, and the 
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

@@ -32,4 +32,4 @@ Add a Canva build note covering dimensions suitable for the chosen platform, con
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

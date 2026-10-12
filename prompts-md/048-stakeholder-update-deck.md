@@ -34,4 +34,4 @@ Add a 60-second opening script and an appendix list for detail that should not c
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

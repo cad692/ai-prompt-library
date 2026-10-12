@@ -26,4 +26,4 @@ Finish with a delivery manifest listing files, versions, approvals, unresolved l
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

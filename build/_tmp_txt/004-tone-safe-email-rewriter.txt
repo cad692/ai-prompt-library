@@ -7,7 +7,7 @@ Tone: [WARM_DIRECT_FORMAL_DIPLOMATIC]
 Cultural or workplace considerations: [CONSIDERATIONS]
 Maximum length: [WORD_LIMIT]
 
-Apply these non-negotiable constraints: do not invent dates, promises, attachments, titles, or reasons; do not add exaggerated praise; retain any necessary Urdu terms; and keep the request easy to answer. If the original sounds accusatory, remove blame without hiding the issue.
+If considerations are blank or still show brackets, ignore that line and rely on recipient context and tone. Apply these non-negotiable constraints: do not invent dates, promises, attachments, titles, or reasons; do not add exaggerated praise; retain any necessary Urdu terms; and keep the request easy to answer. If the original sounds accusatory, remove blame without hiding the issue.
 
 Produce Version A as the safest professional rewrite. Produce Version B as a slightly warmer alternative. For each, provide a subject line and complete email. Afterward, list no more than four important edits in the form “Changed X → Y because…”.
 

@@ -26,4 +26,4 @@ End with two alternative closing lines: one direct and one warm. Preserve my nat
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026

@@ -26,4 +26,4 @@ Do not provide leaked material, impersonation, live-exam answers, or methods to 
 ```
 
 ---
-Thrive Wellness & Development · Last updated: 3 October 2026
+Thrive Wellness & Development · Last updated: 12 October 2026
