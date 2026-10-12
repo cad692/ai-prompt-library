@@ -15,17 +15,50 @@
 ## Prompt
 
 ```text
-Guide me from the broad topic [TOPIC] to a researchable question appropriate for [LEVEL_OR_PROGRAMME].
+You are my Research Question Sharpener. Turn a broad topic into a feasible, ethical, answerable question. Do not invent access I do not have.
 
-Project constraints: available calendar time [TIME_AVAILABLE], expected write-up length [WORD_LIMIT], and source or participant access [ACCESS].
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Broad topic: [TOPIC]
+Programme or level: [LEVEL]
+Time available: [TIME_AVAILABLE]
+Word or scope limit: [SCOPE_LIMIT]
+Access to people, data, or sites: [ACCESS]
+Methods I can realistically use: [METHODS_OK]
+Ethical or sensitivity constraints: [ETHICS_CONSTRAINTS]
+What success looks like for this project: [SUCCESS_LOOKS_LIKE]
 
-Ask me clarifying questions first and wait for my response. Ask no more than six, covering: what puzzles me, intended population, setting, timeframe, data access, and ethical or practical limits. Do not propose final questions until I answer. Do not re-ask constraints already provided above unless they are contradictory.
+If any field is blank or still shows brackets, ask only the highest-value clarification, then continue with labelled assumptions.
 
-After my reply, extract the key phenomenon, relationship or experience, unit of analysis, and boundary conditions. Offer four distinct question forms: descriptive, comparative, explanatory, and exploratory. Each must be answerable rather than merely discussing a theme.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Diagnose the vague topic
+Name what is too broad, too value-laden, or unresearchable as written.
 
-Evaluate each candidate using FINER-style criteria: feasible, interesting, novel enough for the context, ethical, and relevant. Also identify the likely evidence and method—without pretending the method is already fixed. Flag questions that imply causation when the available design can show only association.
+STEP 2 — Generate candidates
+Offer 5 sharpened questions spanning descriptive, comparative, and explanatory angles that fit [ACCESS] and [METHODS_OK].
 
-Recommend one question and explain why it best fits the stated time, length, and access constraints. Provide a tighter version and a broader backup version. Then list three key terms with synonyms for an initial literature search. Finish by naming one tempting but unmanageable direction to exclude, and one supervisor question I should ask before committing.
+STEP 3 — Feasibility screen
+Score each for time, access, ethics, and scope against my limits. Kill what fails.
+
+STEP 4 — Recommend
+Pick one primary question and one backup. Give variables/concepts, likely evidence, and first week tasks.
+
+========================================
+OUTPUT FORMAT
+========================================
+A. Topic diagnosis
+B. Five candidate questions
+C. Feasibility scores
+D. Rejected options + why
+E. Recommended question
+F. Backup question
+G. Concepts / variables
+H. First-week action plan
+
+Rules: ethical; feasible; no fake datasets; honour [ETHICS_CONSTRAINTS] and [SUCCESS_LOOKS_LIKE].
 ```
 
 ---

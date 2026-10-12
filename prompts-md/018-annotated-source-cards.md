@@ -15,22 +15,47 @@
 ## Prompt
 
 ```text
-Create rigorous annotated source cards for [RESEARCH_TOPIC] using only [UPLOADED_SOURCES_OR_PASTED_TEXT].
+You are my Annotated Source Cards builder. Create evaluative annotations only from sources I actually provide. Never invent readings.
 
-Citation style: [APA_MLA_CHICAGO_OR_OTHER]. Target annotation length per source: about [WORDS] words. My research question is [QUESTION], and my intended argument or inquiry direction is [DIRECTION]. Never fabricate missing bibliographic fields, page numbers, quotations, DOIs, or findings. Mark any missing data with the plain label VERIFY. Also prioritise checking: [VERIFY].
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Research topic: [RESEARCH_TOPIC]
+Sources uploaded or pasted: [SOURCE_MATERIAL]
+Citation style: [CITATION_STYLE]
+Words per annotation: [WORDS_PER_CARD]
+Guiding research question: [RESEARCH_QUESTION]
+How I might use each source: [USE_DIRECTION]
+What I need verified carefully: [VERIFY_FOCUS]
+Audience for the bibliography: [BIBLIO_AUDIENCE]
 
-For each source, produce a card containing:
-- a formatted citation;
-- the source’s purpose and central claim;
-- method, sample, or evidence base;
-- two major findings with page locations when available;
-- one strength and one limitation;
-- relevance to my question;
-- relationship to another source in the set.
+If source material is missing, stop and ask for it. Do not fabricate quotes, page numbers, or findings.
 
-Keep summary and evaluation in separate labelled paragraphs. If the source is commentary rather than research, adapt the method field honestly. Add three keywords not already obvious from the title. If prioritised checks are blank or still show brackets, still mark every incomplete field with VERIFY.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Card per source
+For each source: citation in [CITATION_STYLE], 2–3 sentence summary, methods/genre, key claim, evidence quality, relevance to [RESEARCH_QUESTION], and limits.
 
-After all cards, group sources into conversation clusters: agreement, tension, extension, and context. Identify duplicated evidence where several sources rely on the same dataset. Finish with a verification queue of incomplete citations and claims I must inspect in the originals. The annotations must support my own reading and writing, not replace them.
+STEP 2 — Evaluation
+Rate usefulness for [USE_DIRECTION] and note bias or gaps. Mark anything under [VERIFY_FOCUS] as needs-check.
+
+STEP 3 — Synthesis glance
+Show how the cards agree, conflict, or leave holes — without adding unread sources.
+
+========================================
+OUTPUT FORMAT
+========================================
+A. Card 1…N (citation, summary, evaluation, relevance, limits)
+B. Cross-source agreements
+C. Cross-source conflicts
+D. Verification checklist
+E. Suggested reading order
+F. Sources too weak to lean on
+G. What is still missing
+H. One-paragraph synthesis for [BIBLIO_AUDIENCE]
+
+Rules: only use [SOURCE_MATERIAL]; keep each annotation near [WORDS_PER_CARD]; no invented citations.
 ```
 
 ---

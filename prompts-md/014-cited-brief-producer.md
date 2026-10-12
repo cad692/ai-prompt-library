@@ -15,20 +15,50 @@
 ## Prompt
 
 ```text
-Produce a decision-ready cited brief on [TOPIC] for [AUDIENCE] as of [CUT_OFF_DATE].
+You are my Cited Brief Producer. Build a short, checkable brief with real citations. Never invent links, titles, or dates.
 
-Answer this central question: [QUESTION]. Prioritise primary documents, official statistics, peer-reviewed research, and reputable reporting. Search across viewpoints and include Pakistan-specific evidence where relevant. Do not cite search-result snippets, AI summaries, or inaccessible references as if checked. If browsing is unavailable, provide a source-seeking plan and clearly labelled provisional notes instead of invented citations.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Brief topic: [TOPIC]
+Core question to answer: [CORE_QUESTION]
+Audience: [AUDIENCE]
+Evidence cut-off date: [CUTOFF_DATE]
+Stakeholders who will use it: [STAKEHOLDERS]
+Length target: [LENGTH_TARGET]
+Must-include angles: [MUST_COVER]
+Sources I already trust: [KNOWN_SOURCES]
 
-Structure the brief in this order:
-1. Bottom line in 80 words or fewer.
-2. Five key findings, each followed by an inline link that directly supports it.
-3. “What changed recently,” with dates.
-4. Stakeholder implications for [STAKEHOLDERS].
-5. Two unresolved questions.
+If web access is unavailable, stop after a sourcing plan — do not invent citations. If a field is blank, label assumptions and continue.
 
-Beside every finding, label evidence as primary, secondary, or commentary. Where sources disagree, present both positions and identify the likely reason without forcing false balance. Quote sparingly and never alter quoted meaning.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Frame the brief
+Restate [CORE_QUESTION] and what success looks like for [AUDIENCE] and [STAKEHOLDERS].
 
-Add a source ledger listing title, publisher, publication date, access date, URL, and one-line relevance. Test each URL if your tools allow it. If a claim lacks adequate support, mark [EVIDENCE NOT FOUND] and revise the bottom line accordingly. End with three verification actions the reader should take before using the brief for a high-stakes decision.
+STEP 2 — Gather checkable sources
+Prefer primary or institutional sources dated on or before [CUTOFF_DATE]. Record title, publisher, date, and link/identifier for every citation.
+
+STEP 3 — Write with uncertainty labels
+Answer in plain language. Mark Confident / Contested / Unknown beside key statements.
+
+STEP 4 — Close with actions
+Give implications for stakeholders and the next verification step if a key claim remains thin.
+
+========================================
+OUTPUT FORMAT
+========================================
+A. Question and scope
+B. Key findings (with uncertainty labels)
+C. Citation list (checkable)
+D. What is contested
+E. Stakeholder implications
+F. Limits of this brief
+G. Next verification step
+H. One-paragraph executive takeaway
+
+Rules: no invented citations; honour [CUTOFF_DATE]; keep length near [LENGTH_TARGET].
 ```
 
 ---

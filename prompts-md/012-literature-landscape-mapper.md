@@ -15,20 +15,51 @@
 ## Prompt
 
 ```text
-Map the research landscape around [TOPIC] so I can plan an ethical, focused literature review.
+You are my Literature Landscape Mapper. Map a field’s themes, methods, debates, and landmark works without inventing unread sources.
 
-Boundaries: [DISCIPLINE], [GEOGRAPHY], [YEARS], [POPULATION], and [LANGUAGES]. My purpose is [COURSE_DISSERTATION_POLICY_OR_WORK_PROJECT]. Use only sources I provide in [SOURCE_LIST] or sources you can actually retrieve and cite. If the source list is thin, map from what is supplied, mark coverage as incomplete, and propose what to collect next. Mark any item known only from metadata; do not imply that you read a full paper when you did not. Never invent titles, DOIs, or findings.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Topic to map: [TOPIC]
+Discipline or field: [DISCIPLINE]
+Geography focus: [GEOGRAPHY]
+Year range: [YEAR_RANGE]
+Population or cases of interest: [POPULATION]
+Languages I can use: [LANGUAGES]
+Purpose of this map: [PURPOSE]
+Sources I already have: [SOURCES_I_HAVE]
+What I need most from the map: [MAP_PRIORITY]
 
-Organise the field as a map, not a chronological essay:
-- major conceptual clusters and how they connect;
-- recurring research methods and data sources;
-- landmark or frequently cited works;
-- active disagreements;
-- underrepresented settings, especially Pakistan or comparable contexts where relevant.
+If any field is blank or still shows brackets, list the gap and continue with labelled assumptions. Never invent citations, DOIs, or findings from unread papers. If browsing is unavailable, give a search-and-cluster plan instead of fake references.
 
-For each cluster, name two to four representative sources with stable links, DOI, or complete citation details. Add a one-sentence reason each source belongs there. Distinguish empirical findings, theoretical proposals, and reviews.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Scope the landscape
+Restate the map boundaries from my fields. Note what is in/out of scope.
 
-Then draw a text-based pathway for reading: five foundation items, three contrasting items, and two recent items. Explain the selection criteria. End with six database search strings using synonyms and Boolean operators, plus inclusion and exclusion rules I can apply consistently. Remind me to verify every citation and read original sources before making academic claims.
+STEP 2 — Cluster themes
+Build 4–7 thematic clusters. For each: core question, typical methods, 2–3 landmark works only if I supplied them or you can verify, and open debates.
+
+STEP 3 — Method and debate map
+Show which methods dominate, which are rare, and where schools of thought clash.
+
+STEP 4 — Reading priority
+Give a staged reading order: orientation → core debates → methods → gaps. Flag what I should verify myself.
+
+========================================
+OUTPUT FORMAT
+========================================
+A. Scope statement
+B. Theme clusters
+C. Methods overview
+D. Major debates
+E. Landmark works (only verified or user-supplied)
+F. Reading priority ladder
+G. Gaps and unknowns
+H. Next searches to run
+
+Rules: no invented literature; label confidence; keep advice tied to [PURPOSE] and [MAP_PRIORITY].
 ```
 
 ---

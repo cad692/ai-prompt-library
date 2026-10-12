@@ -342,190 +342,266 @@
     optional: true
 "012":
   TOPIC:
-    q: What research topic are you mapping?
-    ex: AI tutoring tools in secondary schools
+    q: What topic should the literature map cover?
+    ex: Blended learning in undergraduate STEM
   DISCIPLINE:
-    q: Which academic field bounds this review?
-    ex: Education technology / learning sciences
+    q: Which discipline or field frames the map?
+    ex: Education research / learning sciences
   GEOGRAPHY:
-    q: Which geographic region should the map cover?
-    ex: South Asia, with Pakistan examples if available
-  YEARS:
-    q: Which publication years should be included?
-    ex: 2019 to 2025
+    q: Which countries or regions matter most?
+    ex: Pakistan and South Asia, plus global reviews
+  YEAR_RANGE:
+    q: Which publication years should we include?
+    ex: 2018 to 2026
   POPULATION:
-    q: Which population should the literature focus on?
-    ex: Undergraduate students aged 18–24
+    q: Which populations or cases are in focus?
+    ex: Public university undergraduates
   LANGUAGES:
-    q: Which languages may sources be written in?
+    q: Which languages can you read for sources?
     ex: English and Urdu
-  COURSE_DISSERTATION_POLICY_OR_WORK_PROJECT:
-    q: What assignment or project is this map for?
-    ex: Final-year BS dissertation proposal
-  SOURCE_LIST:
-    q: Paste your current list of sources or notes.
-    ex: Titles, DOIs, or links for 8–12 items you already have
+  PURPOSE:
+    q: What will you use this landscape map for?
+    ex: Thesis chapter 2 orientation
+  SOURCES_I_HAVE:
+    q: Which sources do you already have?
+    ex: Five PDFs and one review article
+    optional: true
+  MAP_PRIORITY:
+    q: What do you need most from this map?
+    ex: Debates and a reading order
 "013":
-  PASTED_TEXT_OR_DOCUMENT:
-    q: Paste the text or excerpt you want audited.
-    ex: Include claims and any cited references shown
+  SOURCE_TEXT:
+    q: Paste the text or document to audit.
+    ex: Paste the essay, report, or article section
   AUDIENCE:
-    q: Who will read the audited or revised text?
-    ex: Course instructor or department review panel
-  ACADEMIC_POLICY_BUSINESS_OR_OTHER:
-    q: What evidence standard should we apply?
-    ex: Undergraduate academic writing / policy brief
+    q: Who is the intended audience for this text?
+    ex: Course instructor or policy manager
+  GENRE:
+    q: What genre or setting is this writing?
+    ex: Academic essay / policy memo / business brief
   MAX_WORDS:
-    q: What max words for each rewritten claim?
-    ex: '40'
+    q: How long may your audit notes be?
+    ex: Under 400 words
+  SUSPECT_CLAIMS:
+    q: Which claims do you already doubt?
+    ex: The causal claim about attendance and grades
+    optional: true
+  AUDIT_PURPOSE:
+    q: What will you use this audit for?
+    ex: Revise my draft before submission
+  STRICTNESS:
+    q: How strict should the evidence bar be?
+    ex: Strict — flag any unsupported leap
 "014":
   TOPIC:
-    q: What topic should the cited brief cover?
-    ex: Urban renewable energy incentives
+    q: What topic should the brief cover?
+    ex: Youth unemployment trends in Pakistan
+  CORE_QUESTION:
+    q: What core question must the brief answer?
+    ex: Has urban youth unemployment risen since 2022?
   AUDIENCE:
-    q: Who will use this brief, and for what?
-    ex: Student society preparing a policy meeting
-  CUT_OFF_DATE:
-    q: What is the latest date evidence may include?
-    ex: 12 October 2026
-  QUESTION:
-    q: What central question must the brief answer?
-    ex: Which incentives actually increased rooftop solar uptake?
+    q: Who will read this brief?
+    ex: NGO programme manager
+  CUTOFF_DATE:
+    q: What is the latest evidence date allowed?
+    ex: 30 September 2026
   STAKEHOLDERS:
-    q: Which stakeholders' implications should we cover?
-    ex: Households, utilities, and city administrators
+    q: Who will act on this brief?
+    ex: Programme team and donor liaison
+  LENGTH_TARGET:
+    q: How long should the brief be?
+    ex: About 600 words
+  MUST_COVER:
+    q: Which angles must be included?
+    ex: Gender split and urban vs rural
+    optional: true
+  KNOWN_SOURCES:
+    q: Which sources do you already trust?
+    ex: PBS releases and ILO briefs
+    optional: true
 "015":
-  OBSERVATION_OR_OUTCOME:
+  OBSERVATION:
     q: What observation or outcome needs explaining?
-    ex: Average midterm scores fell 12% this term
+    ex: Club attendance fell 40% after midterms
   CONTEXT:
-    q: What surrounding context should we assume?
-    ex: Timetable change and new online quiz system
-  DATA:
-    q: What data or evidence do you already have?
-    ex: Attendance logs, quiz scores, and two student surveys
+    q: What context surrounds this observation?
+    ex: Campus club; free events; WhatsApp invites
+  KNOWN_DATA:
+    q: What data or facts do you already have?
+    ex: Sign-in sheets and two survey comments
   CURRENT_BELIEF:
-    q: Which explanation do you currently favour?
-    ex: Students were less prepared before class
-  TIME_ACCESS_ETHICS_OR_BUDGET:
-    q: What investigation limits must we respect?
-    ex: Two weeks, no new surveys without ethics approval
-  RESULT:
-    q: Which result would weaken your favoured explanation?
-    ex: Attendance stays high while scores stay low
-  HYPOTHESIS:
-    q: Name the favoured hypothesis for the pre-commitment.
-    ex: Preparation quality, not attendance, drove the drop
-  OTHER_RESULT:
-    q: Which result would strengthen that hypothesis?
-    ex: Homework completion falls and scores fall with it
+    q: What explanation do you currently favour?
+    ex: Students are too busy with exams
+  TEST_LIMITS:
+    q: What limits constrain possible tests?
+    ex: One week; no budget; survey only
+  SURPRISING_RESULT:
+    q: What result would most surprise you?
+    ex: Attendance is high when food is provided
+  LEAD_HYPOTHESIS:
+    q: Which hypothesis should we stress-test first?
+    ex: Exam stress is the main cause
+  RIVAL_RESULT:
+    q: Which alternative result is worth watching?
+    ex: Invite messages arrive too late
+    optional: true
 "016":
-  NEWS_URL_OR_TEXT:
-    q: Paste the news headline and article text or URL.
-    ex: Include headline, outlet, and key paragraphs if no link
-  STUDY_URL_OR_FILE:
-    q: Paste the study link, DOI, or key excerpts.
-    ex: DOI/PDF link, or methods and results excerpts
+  NEWS_ITEM:
+    q: Paste the news URL or article text.
+    ex: Headline article claiming a study proved X
+  STUDY_ITEM:
+    q: Paste the study URL, DOI, or notes.
+    ex: DOI or PDF notes with abstract and limits
+  HEADLINE_CLAIM:
+    q: What claim does the headline imply?
+    ex: This diet cuts heart risk by half
+  MY_POPULATION:
+    q: Which population do you want to apply this to?
+    ex: Adults 30–50 in urban Pakistan
+  RELATED_DECISION:
+    q: What decision might this coverage influence?
+    ex: Whether to share it in a health newsletter
+  RED_FLAGS:
+    q: What already looks suspicious to you?
+    ex: Absolute language; no sample size shown
+    optional: true
 "017":
   TOPIC:
-    q: What broad topic do you want to narrow?
-    ex: Student motivation in online learning
-  LEVEL_OR_PROGRAMME:
-    q: What level or programme is the work for?
-    ex: Undergraduate business studies thesis
+    q: What broad topic are you starting from?
+    ex: Social media and student mental health
+  LEVEL:
+    q: What programme or academic level is this for?
+    ex: Final-year BS research methods course
   TIME_AVAILABLE:
-    q: How much calendar time do you have overall?
-    ex: 8 weeks until the proposal deadline
-  WORD_LIMIT:
-    q: What word limit applies to the final write-up?
-    ex: 3,000 words for the literature chapter
+    q: How much time do you have for the project?
+    ex: Eight weeks part-time
+  SCOPE_LIMIT:
+    q: What word or scope limit applies?
+    ex: 3,000-word report
   ACCESS:
-    q: What sources or participants can you actually reach?
-    ex: Campus library databases; one university class for survey
+    q: What people, data, or sites can you access?
+    ex: Campus survey of ~80 classmates
+  METHODS_OK:
+    q: Which methods can you realistically use?
+    ex: Short survey and basic descriptive stats
+  ETHICS_CONSTRAINTS:
+    q: What ethical or sensitivity limits apply?
+    ex: No clinical diagnosis questions
+    optional: true
+  SUCCESS_LOOKS_LIKE:
+    q: What would make this project successful?
+    ex: Clear question and collectible data plan
 "018":
   RESEARCH_TOPIC:
-    q: What research topic are the annotations for?
-    ex: Remote work and stress among knowledge workers
-  UPLOADED_SOURCES_OR_PASTED_TEXT:
-    q: Paste the sources or excerpts you have read.
-    ex: Full citations plus notes or quoted passages with pages
-  APA_MLA_CHICAGO_OR_OTHER:
-    q: Which citation style should each card use?
+    q: What research topic are the sources for?
+    ex: Remote work productivity in SMEs
+  SOURCE_MATERIAL:
+    q: Paste or describe the sources you read.
+    ex: Paste abstracts/notes for each source
+  CITATION_STYLE:
+    q: Which citation style should cards use?
     ex: APA 7
-  WORDS:
-    q: About how many words per source annotation?
-    ex: 150–200
-  QUESTION:
-    q: What research question should relevance answer?
-    ex: What workplace factors increase remote-work stress?
-  DIRECTION:
-    q: What stance or direction should the review take?
-    ex: Balanced, with attention to measurement limits
-  VERIFY:
-    q: Which details should we prioritise verifying?
-    ex: Page numbers, DOIs, and quoted statistics
+  WORDS_PER_CARD:
+    q: How many words per annotation card?
+    ex: 120–150 words
+  RESEARCH_QUESTION:
+    q: What research question guides the annotations?
+    ex: Do hybrid schedules improve SME output?
+  USE_DIRECTION:
+    q: How might you use each source?
+    ex: Literature review support and method models
+  VERIFY_FOCUS:
+    q: What details need careful verification?
+    ex: Sample sizes and Pakistan applicability
     optional: true
+  BIBLIO_AUDIENCE:
+    q: Who will read this annotated bibliography?
+    ex: My supervisor
 "019":
-  CORPUS_OR_SOURCE_LIST:
-    q: Paste the corpus or source list to analyse.
-    ex: Bibliography, Zotero export, or titled notes set
+  CORPUS:
+    q: What corpus or source list have you reviewed?
+    ex: 12 papers and 2 reviews on teacher training
   TOPIC:
     q: What topic are you searching for gaps in?
-    ex: Household responses to energy price shocks
-  YEARS:
-    q: Which years bound the reviewed literature?
-    ex: 2020 to 2025
+    ex: In-service teacher coaching in Punjab
+  YEAR_RANGE:
+    q: Which years does your review cover?
+    ex: 2015 to 2026
   GEOGRAPHY:
-    q: Which geographic scope should the gap map use?
-    ex: Punjab and Sindh urban districts
+    q: Which geography does your corpus cover?
+    ex: Pakistan with some India comparisons
   POPULATION:
-    q: Which population should the gap analysis focus on?
-    ex: Urban middle-income households
+    q: Which population is in focus?
+    ex: Public secondary school teachers
   DISCIPLINE:
-    q: Which subject or discipline frames the review?
-    ex: Public policy / energy economics
+    q: Which discipline lens should we use?
+    ex: Education policy and teacher development
   TARGET_CONTEXT:
-    q: What local context should gap priority favour?
-    ex: Karachi load-shedding and tariff changes
-"020":
-  CLAIM_OR_CONTENT:
-    q: What claim or content are you verifying?
-    ex: A forwarded post saying tax rates doubled overnight
-  SOURCE_OR_PLATFORM:
-    q: Where did you first see this claim?
-    ex: WhatsApp group / Instagram reel / news site
-  DATE_SEEN:
-    q: On what date did you encounter it?
-    ex: 10 October 2026
-  LOCATION:
-    q: Which place does the claim refer to or come from?
-    ex: Pakistan nationwide, or a Karachi Facebook group
-  WHY_IT_MATTERS:
-    q: What decision or risk makes verification important?
-    ex: I may share it with clients / it affects a purchase
-  FILE_OR_LINK:
-    q: Share the link, screenshot, or file if you have one.
-    ex: URL or describe the image/video contents
+    q: What target context do you care about most?
+    ex: District-level coaching programmes
+  SUSPECTED_GAP_TYPE:
+    q: What kind of gap do you suspect?
+    ex: Few studies on rural female teachers
     optional: true
+  STUDY_CONSTRAINTS:
+    q: What constraints bind a future study?
+    ex: One semester; survey + interviews only
+"020":
+  CLAIM:
+    q: What claim or content are you checking?
+    ex: A forwarded message about a new tax rule
+  SOURCE_OR_PLATFORM:
+    q: Where did you see this claim?
+    ex: WhatsApp group / Twitter/X post
+  DATE_SEEN:
+    q: When did you see the claim?
+    ex: 11 October 2026 evening
+  LOCATION:
+    q: Which location does the claim concern?
+    ex: Pakistan nationwide
+  WHY_IT_MATTERS:
+    q: Why does verifying this claim matter?
+    ex: I might share it with clients today
+  EVIDENCE_FILE:
+    q: What file, screenshot, or link do you have?
+    ex: Screenshot plus one forwarded link
+    optional: true
+  POSSIBLE_ACTION:
+    q: What might you do if the claim is true?
+    ex: Post a client advisory
+  SUSPICION_LEVEL:
+    q: How suspicious does it seem right now?
+    ex: High — no official logo or date
 "021":
   PDF_TITLE:
-    q: What is the PDF or document title?
-    ex: Mankiw Ch. 3 — Interdependence and Trade
+    q: What is the reading or PDF title?
+    ex: 'Chapter 4: Memory and learning'
   COURSE_OR_EXAM:
-    q: Which course or exam are these notes for?
-    ex: Microeconomics midterm
+    q: Which course or exam is this for?
+    ex: Cognitive psychology midterm
   LEVEL:
-    q: What study level should the notes match?
-    ex: First-year undergraduate
-  TOPICS:
-    q: Which topics in the PDF need the most attention?
-    ex: Comparative advantage and opportunity cost
+    q: What is your current study level?
+    ex: Second-year undergraduate
+  PRIORITY_TOPICS:
+    q: Which topics should notes prioritise?
+    ex: Working memory and retrieval practice
   STUDY_TIME:
-    q: How much study time can you spend now?
-    ex: 90 minutes today, then short reviews
-  NUMBER_OF_DAYS:
-    q: Over how many days should spaced review run?
-    ex: '7'
+    q: How much study time do you have now?
+    ex: 90 minutes tonight
+  DAYS_UNTIL_NEED:
+    q: In how many days do you need this?
+    ex: 5 days until the quiz
+  PAGES_OR_SECTIONS:
+    q: Which pages or sections did you cover?
+    ex: Pages 88–110; section on retrieval
+  CONFUSION_POINTS:
+    q: What still confuses you in this reading?
+    ex: Difference between encoding and retrieval
+    optional: true
+  REVISION_STYLE:
+    q: How do you prefer to revise later?
+    ex: Flashcard questions + one summary sheet
+    optional: true
 "022":
   UPLOADED_AGREEMENT:
     q: Paste or name the agreement you are reviewing.

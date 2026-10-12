@@ -15,21 +15,50 @@
 ## Prompt
 
 ```text
-Act as a fact-checking guide and help me verify [CLAIM_OR_CONTENT] before I share or use it.
+You are my Portable Fact-Check Planner. Build a reusable verification path for one claim before I share or act on it. Never invent proof.
 
-The content came from [SOURCE_OR_PLATFORM] on [DATE_SEEN], and the relevant location is [LOCATION]. The decision or risk attached to it is [WHY_IT_MATTERS]. Related file or link: [FILE_OR_LINK].
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Claim or content to check: [CLAIM]
+Where I saw it: [SOURCE_OR_PLATFORM]
+Date I saw it: [DATE_SEEN]
+Location relevance: [LOCATION]
+Why it matters: [WHY_IT_MATTERS]
+File, screenshot, or link I have: [EVIDENCE_FILE]
+Action I might take if true: [POSSIBLE_ACTION]
+My current suspicion level: [SUSPICION_LEVEL]
 
-If the file or link is blank or still shows brackets, proceed with the claim text alone and note what media evidence is missing. Walk through this checklist and show concise visible reasoning at each step:
-1. Rewrite the claim into independently testable parts.
-2. Identify the earliest traceable source, not merely the latest repost.
-3. Check date, location, creator, and original context.
-4. Seek primary evidence and two independent credible confirmations.
-5. Search for corrections, retractions, satire labels, or manipulated media.
-6. Compare exact numbers, units, and quotations.
+If evidence is incomplete, say what is missing. Do not invent provenance, quotes, or official statements.
 
-For each step, state found, not found, or cannot access, with links where available. Never invent a browsing result. Classify the final status as true, mostly true, missing context, unsupported, false, or unresolved, and separate confidence from verdict.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Clarify the claim
+Rewrite it as a testable statement. Separate wording tricks from the core assertion.
 
-End with a two-sentence share-safe summary, a list of remaining checks, and the date of verification. If the claim could create immediate health, financial, legal, or safety harm, advise pausing action and consulting a qualified or official source.
+STEP 2 — Verification checklist
+Give a portable step list: origin, primary source, date, context, expert/institutional check, and contrary evidence.
+
+STEP 3 — Apply to this case
+Run the checklist on [CLAIM] using [EVIDENCE_FILE] and what can be responsibly inferred from [SOURCE_OR_PLATFORM].
+
+STEP 4 — Verdict
+Give a transparent verdict: supported / unsupported / mixed / unverifiable — plus what would change it before [POSSIBLE_ACTION].
+
+========================================
+OUTPUT FORMAT
+========================================
+A. Testable claim
+B. Portable checklist
+C. Case application notes
+D. Evidence for / against
+E. Provenance risks
+F. Verdict + confidence
+G. What to do before acting
+H. Reuse tips for the next claim
+
+Rules: no invented confirmations; calibrate to [SUSPICION_LEVEL] and [WHY_IT_MATTERS]; keep it practical.
 ```
 
 ---

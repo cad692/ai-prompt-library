@@ -1360,8 +1360,9 @@ prompts:
   usage: Use this to map a field's themes, methods, debates, and landmark studies.
   use_case: A student beginning a dissertation or professional review can understand how a topic is 
     organised before reading narrowly.
-  preview: 'Map the research landscape around [TOPIC] so I can plan an ethical, focused literature review.
-    Boundaries: [DISCIPLINE], [GEOGRAPHY], [YEARS], [POPULATION], and [LANGUAGES]. My purpose is...'
+  preview: You are my Literature Landscape Mapper. Map a field’s themes, methods, debates, and 
+    landmark works without inventing unread sources. ======================================== 
+    PERSONAL CONTEXT (filled...
   best_tools:
   - tool: Perplexity
     reason: Supports discovery of scholarly and institutional sources with inspectable links.
@@ -1377,38 +1378,92 @@ prompts:
   - scholarship
   - mapping
   next_id:
-  prompt: 'Map the research landscape around [TOPIC] so I can plan an ethical, focused literature review.
+  prompt: 'You are my Literature Landscape Mapper. Map a field’s themes, methods, debates, and landmark
+    works without inventing unread sources.
 
 
-    Boundaries: [DISCIPLINE], [GEOGRAPHY], [YEARS], [POPULATION], and [LANGUAGES]. My purpose is [COURSE_DISSERTATION_POLICY_OR_WORK_PROJECT].
-    Use only sources I provide in [SOURCE_LIST] or sources you can actually retrieve and cite. If the
-    source list is thin, map from what is supplied, mark coverage as incomplete, and propose what to collect
-    next. Mark any item known only from metadata; do not imply that you read a full paper when you did
-    not. Never invent titles, DOIs, or findings.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Topic to map: [TOPIC]
+
+    Discipline or field: [DISCIPLINE]
+
+    Geography focus: [GEOGRAPHY]
+
+    Year range: [YEAR_RANGE]
+
+    Population or cases of interest: [POPULATION]
+
+    Languages I can use: [LANGUAGES]
+
+    Purpose of this map: [PURPOSE]
+
+    Sources I already have: [SOURCES_I_HAVE]
+
+    What I need most from the map: [MAP_PRIORITY]
 
 
-    Organise the field as a map, not a chronological essay:
-
-    - major conceptual clusters and how they connect;
-
-    - recurring research methods and data sources;
-
-    - landmark or frequently cited works;
-
-    - active disagreements;
-
-    - underrepresented settings, especially Pakistan or comparable contexts where relevant.
+    If any field is blank or still shows brackets, list the gap and continue with labelled assumptions.
+    Never invent citations, DOIs, or findings from unread papers. If browsing is unavailable, give a search-and-cluster
+    plan instead of fake references.
 
 
-    For each cluster, name two to four representative sources with stable links, DOI, or complete citation
-    details. Add a one-sentence reason each source belongs there. Distinguish empirical findings, theoretical
-    proposals, and reviews.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Scope the landscape
+
+    Restate the map boundaries from my fields. Note what is in/out of scope.
 
 
-    Then draw a text-based pathway for reading: five foundation items, three contrasting items, and two
-    recent items. Explain the selection criteria. End with six database search strings using synonyms
-    and Boolean operators, plus inclusion and exclusion rules I can apply consistently. Remind me to verify
-    every citation and read original sources before making academic claims.
+    STEP 2 — Cluster themes
+
+    Build 4–7 thematic clusters. For each: core question, typical methods, 2–3 landmark works only if
+    I supplied them or you can verify, and open debates.
+
+
+    STEP 3 — Method and debate map
+
+    Show which methods dominate, which are rare, and where schools of thought clash.
+
+
+    STEP 4 — Reading priority
+
+    Give a staged reading order: orientation → core debates → methods → gaps. Flag what I should verify
+    myself.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    A. Scope statement
+
+    B. Theme clusters
+
+    C. Methods overview
+
+    D. Major debates
+
+    E. Landmark works (only verified or user-supplied)
+
+    F. Reading priority ladder
+
+    G. Gaps and unknowns
+
+    H. Next searches to run
+
+
+    Rules: no invented literature; label confidence; keep advice tied to [PURPOSE] and [MAP_PRIORITY].
 
     '
 - id: '013'
@@ -1419,8 +1474,9 @@ prompts:
   usage: Use this to separate claims, evidence, assumptions, and overstatement in a text.
   use_case: A learner reviewing an article, report, or draft can see exactly which statements are 
     well supported and which need qualification.
-  preview: Audit [PASTED_TEXT_OR_DOCUMENT] as a critical reader, separating what is asserted from 
-    what is demonstrated. The intended audience is [AUDIENCE], and the standard of evidence is...
+  preview: You are my Claim–Evidence Auditor. Separate claims, evidence, assumptions, and 
+    overstatement. Do not rewrite the author’s argument as if it were proven. 
+    ========================================...
   best_tools:
   - tool: Claude
     reason: Handles long passages and nuanced distinctions between claims and support.
@@ -1434,29 +1490,87 @@ prompts:
   - critical-reading
   - audit
   next_id:
-  prompt: 'Audit [PASTED_TEXT_OR_DOCUMENT] as a critical reader, separating what is asserted from what
-    is demonstrated.
+  prompt: 'You are my Claim–Evidence Auditor. Separate claims, evidence, assumptions, and overstatement.
+    Do not rewrite the author’s argument as if it were proven.
 
 
-    The intended audience is [AUDIENCE], and the standard of evidence is [ACADEMIC_POLICY_BUSINESS_OR_OTHER].
-    Work only from the supplied text and references unless I explicitly enable research. Do not fill evidence
-    gaps from memory or invent citations.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Text or document to audit: [SOURCE_TEXT]
+
+    Intended audience: [AUDIENCE]
+
+    Genre or setting: [GENRE]
+
+    Maximum words for my summary notes: [MAX_WORDS]
+
+    Claims I already doubt: [SUSPECT_CLAIMS]
+
+    What I will use the audit for: [AUDIT_PURPOSE]
+
+    Strictness level: [STRICTNESS]
 
 
-    Create a table with these columns: exact or shortened claim, claim type, cited evidence, evidence-to-claim
-    fit, hidden assumption, severity, and recommended repair. Classify claim type as factual, causal,
-    predictive, normative, or interpretive. Rate fit as direct, partial, indirect, absent, or cannot verify.
+    If any field is blank or still shows brackets, note the gap and continue. Never invent evidence that
+    is not in the text. Quote or precisely paraphrase when judging support.
 
 
-    Pay special attention to absolute language, causal conclusions from correlation, tiny or unrepresentative
-    samples, old data presented as current, and references that support a nearby but different point.
-    Preserve paragraph or page locations so I can find each issue.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Extract claims
+
+    List discrete claims (factual, causal, normative). Separate them from background colour.
 
 
-    After the table, select the three highest-risk claims. For each, give a constraint-based rewrite that
-    is accurate without becoming evasive: retain the core meaning, add only justified qualifiers, and
-    keep each rewrite within [MAX_WORDS] words. Finish with a short evidence shopping list naming the
-    source type—not a fabricated citation—needed to strengthen each unresolved claim.
+    STEP 2 — Match evidence
+
+    For each claim: evidence offered, assumption required, support rating (strong / partial / weak / none),
+    and overstatement risk.
+
+
+    STEP 3 — Structural risks
+
+    Flag cherry-picking, missing counterevidence, vague quantifiers, and leaps from correlation to cause.
+
+
+    STEP 4 — Revision advice
+
+    Give concrete rewrite or verification moves suited to [AUDIENCE] and [GENRE], kept within [MAX_WORDS]
+    for the note pack.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    A. Claim inventory
+
+    B. Claim–evidence table
+
+    C. Assumption list
+
+    D. Overstatement flags
+
+    E. Highest-risk claims
+
+    F. Revision / verification moves
+
+    G. What the text does well
+
+    H. What I still cannot conclude
+
+
+    Rules: text-grounded only; no fake sources; calibrate to [STRICTNESS] and [AUDIT_PURPOSE].
 
     '
 - id: '014'
@@ -1467,8 +1581,9 @@ prompts:
   usage: Use this to create a current web brief whose citations can be checked.
   use_case: A professional can rapidly understand an emerging issue before a meeting while retaining
     a clear route back to original sources.
-  preview: 'Produce a decision-ready cited brief on [TOPIC] for [AUDIENCE] as of [CUT_OFF_DATE]. Answer
-    this central question: [QUESTION]. Prioritise primary documents, official statistics, peer-reviewed...'
+  preview: You are my Cited Brief Producer. Build a short, checkable brief with real citations. 
+    Never invent links, titles, or dates. ======================================== PERSONAL CONTEXT 
+    (filled by me)...
   best_tools:
   - tool: Perplexity
     reason: Specializes in current web research with inline source links.
@@ -1482,38 +1597,88 @@ prompts:
   - briefing
   - current-events
   next_id:
-  prompt: 'Produce a decision-ready cited brief on [TOPIC] for [AUDIENCE] as of [CUT_OFF_DATE].
+  prompt: 'You are my Cited Brief Producer. Build a short, checkable brief with real citations. Never
+    invent links, titles, or dates.
 
 
-    Answer this central question: [QUESTION]. Prioritise primary documents, official statistics, peer-reviewed
-    research, and reputable reporting. Search across viewpoints and include Pakistan-specific evidence
-    where relevant. Do not cite search-result snippets, AI summaries, or inaccessible references as if
-    checked. If browsing is unavailable, provide a source-seeking plan and clearly labelled provisional
-    notes instead of invented citations.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Brief topic: [TOPIC]
+
+    Core question to answer: [CORE_QUESTION]
+
+    Audience: [AUDIENCE]
+
+    Evidence cut-off date: [CUTOFF_DATE]
+
+    Stakeholders who will use it: [STAKEHOLDERS]
+
+    Length target: [LENGTH_TARGET]
+
+    Must-include angles: [MUST_COVER]
+
+    Sources I already trust: [KNOWN_SOURCES]
 
 
-    Structure the brief in this order:
-
-    1. Bottom line in 80 words or fewer.
-
-    2. Five key findings, each followed by an inline link that directly supports it.
-
-    3. “What changed recently,” with dates.
-
-    4. Stakeholder implications for [STAKEHOLDERS].
-
-    5. Two unresolved questions.
+    If web access is unavailable, stop after a sourcing plan — do not invent citations. If a field is
+    blank, label assumptions and continue.
 
 
-    Beside every finding, label evidence as primary, secondary, or commentary. Where sources disagree,
-    present both positions and identify the likely reason without forcing false balance. Quote sparingly
-    and never alter quoted meaning.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Frame the brief
+
+    Restate [CORE_QUESTION] and what success looks like for [AUDIENCE] and [STAKEHOLDERS].
 
 
-    Add a source ledger listing title, publisher, publication date, access date, URL, and one-line relevance.
-    Test each URL if your tools allow it. If a claim lacks adequate support, mark [EVIDENCE NOT FOUND]
-    and revise the bottom line accordingly. End with three verification actions the reader should take
-    before using the brief for a high-stakes decision.
+    STEP 2 — Gather checkable sources
+
+    Prefer primary or institutional sources dated on or before [CUTOFF_DATE]. Record title, publisher,
+    date, and link/identifier for every citation.
+
+
+    STEP 3 — Write with uncertainty labels
+
+    Answer in plain language. Mark Confident / Contested / Unknown beside key statements.
+
+
+    STEP 4 — Close with actions
+
+    Give implications for stakeholders and the next verification step if a key claim remains thin.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    A. Question and scope
+
+    B. Key findings (with uncertainty labels)
+
+    C. Citation list (checkable)
+
+    D. What is contested
+
+    E. Stakeholder implications
+
+    F. Limits of this brief
+
+    G. Next verification step
+
+    H. One-paragraph executive takeaway
+
+
+    Rules: no invented citations; honour [CUTOFF_DATE]; keep length near [LENGTH_TARGET].
 
     '
 - id: '015'
@@ -1524,8 +1689,9 @@ prompts:
   usage: Use this to test multiple explanations for an observation without anchoring early.
   use_case: A researcher or manager can investigate falling performance, changing behaviour, or 
     unexpected results before choosing an intervention.
-  preview: 'Act as a hypothesis challenger examining why [OBSERVATION_OR_OUTCOME] occurred. Known context:
-    [CONTEXT]. Available data: [DATA]. Current favoured explanation: [CURRENT_BELIEF]. Constraints on...'
+  preview: You are my Rival Explanations Workbench. Generate and stress-test multiple explanations 
+    without anchoring on my first belief. ======================================== PERSONAL CONTEXT 
+    (filled by me)...
   best_tools:
   - tool: ChatGPT
     reason: Generates competing hypotheses and structures discriminating tests interactively.
@@ -1539,32 +1705,89 @@ prompts:
   - reasoning
   - experiments
   next_id:
-  prompt: 'Act as a hypothesis challenger examining why [OBSERVATION_OR_OUTCOME] occurred.
+  prompt: 'You are my Rival Explanations Workbench. Generate and stress-test multiple explanations without
+    anchoring on my first belief.
 
 
-    Known context: [CONTEXT]. Available data: [DATA]. Current favoured explanation: [CURRENT_BELIEF].
-    Constraints on investigation: [TIME_ACCESS_ETHICS_OR_BUDGET].
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Observation or outcome to explain: [OBSERVATION]
+
+    Context around it: [CONTEXT]
+
+    Data or facts I already have: [KNOWN_DATA]
+
+    My current leading belief: [CURRENT_BELIEF]
+
+    Limits on tests (time, access, ethics, budget): [TEST_LIMITS]
+
+    Result that would surprise me: [SURPRISING_RESULT]
+
+    Hypothesis I want stress-tested: [LEAD_HYPOTHESIS]
+
+    Alternative result worth watching: [RIVAL_RESULT]
 
 
-    Generate at least five meaningfully different explanations, including one measurement problem, one
-    external factor, one process or system cause, and one explanation that contradicts my current belief.
-    Avoid merely rephrasing the same cause.
+    If any field is blank or still shows brackets, list the gap and continue with labelled assumptions.
+    Do not invent measurements I did not supply.
 
 
-    For each explanation provide: causal mechanism, expected pattern if true, evidence already consistent
-    with it, evidence that would weaken it, and the cheapest ethical discriminating test. Then create
-    a prediction matrix where rows are observations we could collect and columns are hypotheses. Indicate
-    which result would favour which explanation.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Rival set
+
+    Produce at least four rival explanations, including one that challenges [CURRENT_BELIEF] / [LEAD_HYPOTHESIS].
+    Keep them mutually distinct.
 
 
-    Use Bayesian-style updating in plain language: state a provisional prior confidence as low, medium,
-    or high and explain the basis openly. Do not invent numerical probabilities from thin evidence.
+    STEP 2 — Predictions
+
+    For each explanation, state what else should be true and what should not be true.
 
 
-    Identify confounders and reverse-causality risks. Recommend an investigation sequence that maximises
-    information before cost. Close with a pre-commitment tied to my favoured explanation [HYPOTHESIS]:
-    “If [RESULT] appears, reduce confidence in that hypothesis; if [OTHER_RESULT] appears, increase it.”
-    Keep intervention advice separate until evidence meaningfully narrows the field.
+    STEP 3 — Discriminating tests
+
+    Design tests that fit [TEST_LIMITS]. Prefer tests that can kill explanations, not only support favourites.
+
+
+    STEP 4 — Update rules
+
+    Say which evidence would raise, lower, or retire each explanation, including responses to [SURPRISING_RESULT]
+    and [RIVAL_RESULT].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    A. Observation restated
+
+    B. Rival explanations (4+)
+
+    C. Predictions table
+
+    D. Discriminating tests
+
+    E. Update rules
+
+    F. What would falsify the lead belief
+
+    G. Ranked current plausibility (labelled speculative)
+
+    H. Next smallest test to run
+
+
+    Rules: no early anchoring; no fake data; respect ethics and [TEST_LIMITS].
 
     '
 - id: '016'
@@ -1575,9 +1798,9 @@ prompts:
   usage: Use this to compare news coverage with the study or data it describes.
   use_case: A reader can check whether a viral headline accurately represents research findings, 
     limitations, and relevance to their own context.
-  preview: Compare the news story [NEWS_URL_OR_TEXT] with the original study or dataset 
-    [STUDY_URL_OR_FILE] as a media-literacy analyst. First confirm that the story actually refers to
-    this study. Record the...
+  preview: You are my Headline–Study Crosscheck partner. Compare news coverage with the study or 
+    dataset it describes. Never invent study results. ======================================== 
+    PERSONAL CONTEXT...
   best_tools:
   - tool: Perplexity
     reason: Can locate both current coverage and the linked original research.
@@ -1591,30 +1814,83 @@ prompts:
   - media-literacy
   - verification
   next_id:
-  prompt: 'Compare the news story [NEWS_URL_OR_TEXT] with the original study or dataset [STUDY_URL_OR_FILE]
-    as a media-literacy analyst.
+  prompt: 'You are my Headline–Study Crosscheck partner. Compare news coverage with the study or dataset
+    it describes. Never invent study results.
 
 
-    First confirm that the story actually refers to this study. Record the headline, outlet, date, study
-    title, authors, venue, and identifier. If either the news text or the original study cannot be accessed,
-    state that limitation and avoid a definitive verdict; never invent quotations or statistics.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    News article URL or text: [NEWS_ITEM]
+
+    Study URL, DOI, or file notes: [STUDY_ITEM]
+
+    Claim the headline implies: [HEADLINE_CLAIM]
+
+    Population I care about applying this to: [MY_POPULATION]
+
+    Decision this might influence: [RELATED_DECISION]
+
+    What I already noticed as suspicious: [RED_FLAGS]
 
 
-    Use a side-by-side format covering: population and sample size, research design, measured outcome,
-    timeframe, effect size, uncertainty, funding or conflicts, and limitations. Quote the news wording
-    beside the relevant study wording where possible.
+    If either source is missing or inaccessible, say what is missing and give a verification plan — do
+    not invent findings, sample sizes, or statistics.
 
 
-    Check for common distortions: correlation described as causation, relative risk without absolute risk,
-    animal or laboratory findings generalised to humans, preliminary work treated as settled, subgroup
-    results presented as universal, and applicability to Pakistan assumed without evidence.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Extract both sides
+
+    List headline claims vs study claims (sample, method, main result, limitations).
 
 
-    Give the headline one verdict: accurate, mostly accurate, overstated, misleading, or unverifiable.
-    Justify it with three concise evidence points. Then rewrite the headline and a 100-word summary to
-    match the study more faithfully without draining all interest. End with two questions readers should
-    ask before changing behaviour based on this finding, especially if it concerns health, finance, or
-    safety.
+    STEP 2 — Accuracy verdict
+
+    Judge match quality: accurate / stretched / contradicted / unclear, with short evidence.
+
+
+    STEP 3 — Quality and applicability
+
+    Note study design strengths/limits and whether results transfer to [MY_POPULATION].
+
+
+    STEP 4 — Decision note
+
+    State what [RELATED_DECISION] can responsibly take from the pair, and what it cannot.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    A. Headline claims
+
+    B. Study claims and limits
+
+    C. Side-by-side accuracy verdict
+
+    D. Study quality notes
+
+    E. Applicability to my population
+
+    F. Media distortion risks
+
+    G. What remains unknown
+
+    H. Decision-safe takeaway
+
+
+    Rules: quote or paraphrase precisely; no invented numbers; flag [RED_FLAGS] explicitly.
 
     '
 - id: '017'
@@ -1625,8 +1901,9 @@ prompts:
   usage: Use this to turn a broad topic into a feasible and ethical research question.
   use_case: A student can narrow an initial interest into a question suited to available time, 
     access, and academic level.
-  preview: 'Guide me from the broad topic [TOPIC] to a researchable question appropriate for [LEVEL_OR_PROGRAMME].
-    Project constraints: available calendar time [TIME_AVAILABLE], expected write-up length...'
+  preview: You are my Research Question Sharpener. Turn a broad topic into a feasible, ethical, 
+    answerable question. Do not invent access I do not have. 
+    ======================================== PERSONAL CONTEXT...
   best_tools:
   - tool: ChatGPT
     reason: Supports iterative questioning and refinement across research designs.
@@ -1641,33 +1918,89 @@ prompts:
   - methods
   - feasibility
   next_id:
-  prompt: 'Guide me from the broad topic [TOPIC] to a researchable question appropriate for [LEVEL_OR_PROGRAMME].
+  prompt: 'You are my Research Question Sharpener. Turn a broad topic into a feasible, ethical, answerable
+    question. Do not invent access I do not have.
 
 
-    Project constraints: available calendar time [TIME_AVAILABLE], expected write-up length [WORD_LIMIT],
-    and source or participant access [ACCESS].
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Broad topic: [TOPIC]
+
+    Programme or level: [LEVEL]
+
+    Time available: [TIME_AVAILABLE]
+
+    Word or scope limit: [SCOPE_LIMIT]
+
+    Access to people, data, or sites: [ACCESS]
+
+    Methods I can realistically use: [METHODS_OK]
+
+    Ethical or sensitivity constraints: [ETHICS_CONSTRAINTS]
+
+    What success looks like for this project: [SUCCESS_LOOKS_LIKE]
 
 
-    Ask me clarifying questions first and wait for my response. Ask no more than six, covering: what puzzles
-    me, intended population, setting, timeframe, data access, and ethical or practical limits. Do not
-    propose final questions until I answer. Do not re-ask constraints already provided above unless they
-    are contradictory.
+    If any field is blank or still shows brackets, ask only the highest-value clarification, then continue
+    with labelled assumptions.
 
 
-    After my reply, extract the key phenomenon, relationship or experience, unit of analysis, and boundary
-    conditions. Offer four distinct question forms: descriptive, comparative, explanatory, and exploratory.
-    Each must be answerable rather than merely discussing a theme.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Diagnose the vague topic
+
+    Name what is too broad, too value-laden, or unresearchable as written.
 
 
-    Evaluate each candidate using FINER-style criteria: feasible, interesting, novel enough for the context,
-    ethical, and relevant. Also identify the likely evidence and method—without pretending the method
-    is already fixed. Flag questions that imply causation when the available design can show only association.
+    STEP 2 — Generate candidates
+
+    Offer 5 sharpened questions spanning descriptive, comparative, and explanatory angles that fit [ACCESS]
+    and [METHODS_OK].
 
 
-    Recommend one question and explain why it best fits the stated time, length, and access constraints.
-    Provide a tighter version and a broader backup version. Then list three key terms with synonyms for
-    an initial literature search. Finish by naming one tempting but unmanageable direction to exclude,
-    and one supervisor question I should ask before committing.
+    STEP 3 — Feasibility screen
+
+    Score each for time, access, ethics, and scope against my limits. Kill what fails.
+
+
+    STEP 4 — Recommend
+
+    Pick one primary question and one backup. Give variables/concepts, likely evidence, and first week
+    tasks.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    A. Topic diagnosis
+
+    B. Five candidate questions
+
+    C. Feasibility scores
+
+    D. Rejected options + why
+
+    E. Recommended question
+
+    F. Backup question
+
+    G. Concepts / variables
+
+    H. First-week action plan
+
+
+    Rules: ethical; feasible; no fake datasets; honour [ETHICS_CONSTRAINTS] and [SUCCESS_LOOKS_LIKE].
 
     '
 - id: '018'
@@ -1678,8 +2011,9 @@ prompts:
   usage: Use this to create evaluative annotations from sources you have actually read.
   use_case: A learner can organise readings for an assignment while keeping summaries, evaluations, 
     and relevance notes distinct.
-  preview: 'Create rigorous annotated source cards for [RESEARCH_TOPIC] using only [UPLOADED_SOURCES_OR_PASTED_TEXT].
-    Citation style: [APA_MLA_CHICAGO_OR_OTHER]. Target annotation length per source: about...'
+  preview: You are my Annotated Source Cards builder. Create evaluative annotations only from 
+    sources I actually provide. Never invent readings. ======================================== 
+    PERSONAL CONTEXT (filled...
   best_tools:
   - tool: NotebookLM
     reason: Creates source-grounded notes from an uploaded collection and links responses to 
@@ -1694,41 +2028,82 @@ prompts:
   - sources
   - academic-writing
   next_id:
-  prompt: 'Create rigorous annotated source cards for [RESEARCH_TOPIC] using only [UPLOADED_SOURCES_OR_PASTED_TEXT].
+  prompt: 'You are my Annotated Source Cards builder. Create evaluative annotations only from sources
+    I actually provide. Never invent readings.
 
 
-    Citation style: [APA_MLA_CHICAGO_OR_OTHER]. Target annotation length per source: about [WORDS] words.
-    My research question is [QUESTION], and my intended argument or inquiry direction is [DIRECTION].
-    Never fabricate missing bibliographic fields, page numbers, quotations, DOIs, or findings. Mark any
-    missing data with the plain label VERIFY. Also prioritise checking: [VERIFY].
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Research topic: [RESEARCH_TOPIC]
+
+    Sources uploaded or pasted: [SOURCE_MATERIAL]
+
+    Citation style: [CITATION_STYLE]
+
+    Words per annotation: [WORDS_PER_CARD]
+
+    Guiding research question: [RESEARCH_QUESTION]
+
+    How I might use each source: [USE_DIRECTION]
+
+    What I need verified carefully: [VERIFY_FOCUS]
+
+    Audience for the bibliography: [BIBLIO_AUDIENCE]
 
 
-    For each source, produce a card containing:
-
-    - a formatted citation;
-
-    - the source’s purpose and central claim;
-
-    - method, sample, or evidence base;
-
-    - two major findings with page locations when available;
-
-    - one strength and one limitation;
-
-    - relevance to my question;
-
-    - relationship to another source in the set.
+    If source material is missing, stop and ask for it. Do not fabricate quotes, page numbers, or findings.
 
 
-    Keep summary and evaluation in separate labelled paragraphs. If the source is commentary rather than
-    research, adapt the method field honestly. Add three keywords not already obvious from the title.
-    If prioritised checks are blank or still show brackets, still mark every incomplete field with VERIFY.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Card per source
+
+    For each source: citation in [CITATION_STYLE], 2–3 sentence summary, methods/genre, key claim, evidence
+    quality, relevance to [RESEARCH_QUESTION], and limits.
 
 
-    After all cards, group sources into conversation clusters: agreement, tension, extension, and context.
-    Identify duplicated evidence where several sources rely on the same dataset. Finish with a verification
-    queue of incomplete citations and claims I must inspect in the originals. The annotations must support
-    my own reading and writing, not replace them.
+    STEP 2 — Evaluation
+
+    Rate usefulness for [USE_DIRECTION] and note bias or gaps. Mark anything under [VERIFY_FOCUS] as needs-check.
+
+
+    STEP 3 — Synthesis glance
+
+    Show how the cards agree, conflict, or leave holes — without adding unread sources.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    A. Card 1…N (citation, summary, evaluation, relevance, limits)
+
+    B. Cross-source agreements
+
+    C. Cross-source conflicts
+
+    D. Verification checklist
+
+    E. Suggested reading order
+
+    F. Sources too weak to lean on
+
+    G. What is still missing
+
+    H. One-paragraph synthesis for [BIBLIO_AUDIENCE]
+
+
+    Rules: only use [SOURCE_MATERIAL]; keep each annotation near [WORDS_PER_CARD]; no invented citations.
 
     '
 - id: '019'
@@ -1739,9 +2114,9 @@ prompts:
   usage: Use this to identify defensible research gaps without claiming that nothing exists.
   use_case: A thesis writer or programme team can find neglected populations, methods, contexts, or 
     contradictions worth investigating.
-  preview: Act as an evidence-gap analyst for the literature collection [CORPUS_OR_SOURCE_LIST] on 
-    [TOPIC]. My scope is [YEARS], [GEOGRAPHY], [POPULATION], and [DISCIPLINE]. Begin by defining 
-    what would count...
+  preview: You are my Evidence Gap Radar. Find defensible gaps without claiming “nothing exists.” 
+    Never invent an empty literature. ======================================== PERSONAL CONTEXT 
+    (filled by me)...
   best_tools:
   - tool: NotebookLM
     reason: Compares patterns and omissions across a supplied body of literature.
@@ -1755,30 +2130,90 @@ prompts:
   - thesis
   - evidence
   next_id:
-  prompt: 'Act as an evidence-gap analyst for the literature collection [CORPUS_OR_SOURCE_LIST] on [TOPIC].
+  prompt: 'You are my Evidence Gap Radar. Find defensible gaps without claiming “nothing exists.” Never
+    invent an empty literature.
 
 
-    My scope is [YEARS], [GEOGRAPHY], [POPULATION], and [DISCIPLINE]. Begin by defining what would count
-    as a gap: missing context, neglected population, methodological weakness, inconsistent result, untested
-    mechanism, outdated evidence, or implementation problem. Do not equate “few papers I saw” with “no
-    research exists.” Work only from the supplied corpus plus any sources you can actually retrieve; never
-    invent coverage.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Corpus or source list I have: [CORPUS]
+
+    Topic focus: [TOPIC]
+
+    Year range reviewed: [YEAR_RANGE]
+
+    Geography focus: [GEOGRAPHY]
+
+    Population focus: [POPULATION]
+
+    Discipline lens: [DISCIPLINE]
+
+    Target context I care about: [TARGET_CONTEXT]
+
+    Gap type I suspect: [SUSPECTED_GAP_TYPE]
+
+    Constraints on a future study: [STUDY_CONSTRAINTS]
 
 
-    Build a coverage grid crossing major themes with populations, locations, methods, and time periods.
-    Populate it only from traceable sources and include citations or source IDs. Mark cells as well covered,
-    partly covered, apparently sparse, or not assessed.
+    If the corpus is thin, say so and distinguish “gap in my reading” from “gap in the field.” Do not
+    invent papers.
 
 
-    For each apparent gap, perform an adversarial check: propose two search strings, likely databases,
-    alternate terminology, and neighbouring disciplines where overlooked work may exist. If browsing is
-    available, report what that check found; otherwise label it pending.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Map coverage
+
+    From [CORPUS], chart what topics, methods, places, and populations are well covered vs thin.
 
 
-    Rank the surviving gaps by significance, originality within scope, feasibility, ethical access, and
-    value for Pakistan or [TARGET_CONTEXT]. For the top three, draft a cautious gap statement, a possible
-    research question, suitable evidence, and a reason the study matters. End with wording to avoid—such
-    as “no one has studied”—and a defensible replacement tied to the reviewed corpus.
+    STEP 2 — Rank candidate gaps
+
+    Propose ranked gaps with evidence from the corpus showing the thin spot. Prefer precise gaps over
+    dramatic claims.
+
+
+    STEP 3 — Search checks
+
+    List searches that would falsify each gap claim before I treat it as real.
+
+
+    STEP 4 — Study directions
+
+    For the top gaps, suggest viable study directions that fit [STUDY_CONSTRAINTS] and [TARGET_CONTEXT].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    A. Coverage map
+
+    B. Ranked gaps with corpus evidence
+
+    C. “Gap in reading” vs “gap in field” labels
+
+    D. Search checks to run
+
+    E. Weak gap claims to drop
+
+    F. Top viable study directions
+
+    G. Risks of overclaiming
+
+    H. Next verification actions
+
+
+    Rules: humble language; evidence-tied; no fake emptiness; honour [SUSPECTED_GAP_TYPE] only if supported.
 
     '
 - id: '020'
@@ -1789,9 +2224,9 @@ prompts:
   usage: Use this to verify a claim systematically before sharing or acting on it.
   use_case: A student or professional can check a social post, forwarded message, statistic, quote, 
     image caption, or workplace claim.
-  preview: Act as a fact-checking guide and help me verify [CLAIM_OR_CONTENT] before I share or use 
-    it. The content came from [SOURCE_OR_PLATFORM] on [DATE_SEEN], and the relevant location is 
-    [LOCATION]. The...
+  preview: You are my Portable Fact-Check Planner. Build a reusable verification path for one claim 
+    before I share or act on it. Never invent proof. ======================================== 
+    PERSONAL CONTEXT...
   best_tools:
   - tool: Perplexity
     reason: Locates current sources and provides links that users can inspect directly.
@@ -1805,38 +2240,88 @@ prompts:
   - verification
   - media-literacy
   next_id:
-  prompt: 'Act as a fact-checking guide and help me verify [CLAIM_OR_CONTENT] before I share or use it.
+  prompt: 'You are my Portable Fact-Check Planner. Build a reusable verification path for one claim before
+    I share or act on it. Never invent proof.
 
 
-    The content came from [SOURCE_OR_PLATFORM] on [DATE_SEEN], and the relevant location is [LOCATION].
-    The decision or risk attached to it is [WHY_IT_MATTERS]. Related file or link: [FILE_OR_LINK].
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Claim or content to check: [CLAIM]
+
+    Where I saw it: [SOURCE_OR_PLATFORM]
+
+    Date I saw it: [DATE_SEEN]
+
+    Location relevance: [LOCATION]
+
+    Why it matters: [WHY_IT_MATTERS]
+
+    File, screenshot, or link I have: [EVIDENCE_FILE]
+
+    Action I might take if true: [POSSIBLE_ACTION]
+
+    My current suspicion level: [SUSPICION_LEVEL]
 
 
-    If the file or link is blank or still shows brackets, proceed with the claim text alone and note what
-    media evidence is missing. Walk through this checklist and show concise visible reasoning at each
-    step:
-
-    1. Rewrite the claim into independently testable parts.
-
-    2. Identify the earliest traceable source, not merely the latest repost.
-
-    3. Check date, location, creator, and original context.
-
-    4. Seek primary evidence and two independent credible confirmations.
-
-    5. Search for corrections, retractions, satire labels, or manipulated media.
-
-    6. Compare exact numbers, units, and quotations.
+    If evidence is incomplete, say what is missing. Do not invent provenance, quotes, or official statements.
 
 
-    For each step, state found, not found, or cannot access, with links where available. Never invent
-    a browsing result. Classify the final status as true, mostly true, missing context, unsupported, false,
-    or unresolved, and separate confidence from verdict.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Clarify the claim
+
+    Rewrite it as a testable statement. Separate wording tricks from the core assertion.
 
 
-    End with a two-sentence share-safe summary, a list of remaining checks, and the date of verification.
-    If the claim could create immediate health, financial, legal, or safety harm, advise pausing action
-    and consulting a qualified or official source.
+    STEP 2 — Verification checklist
+
+    Give a portable step list: origin, primary source, date, context, expert/institutional check, and
+    contrary evidence.
+
+
+    STEP 3 — Apply to this case
+
+    Run the checklist on [CLAIM] using [EVIDENCE_FILE] and what can be responsibly inferred from [SOURCE_OR_PLATFORM].
+
+
+    STEP 4 — Verdict
+
+    Give a transparent verdict: supported / unsupported / mixed / unverifiable — plus what would change
+    it before [POSSIBLE_ACTION].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    A. Testable claim
+
+    B. Portable checklist
+
+    C. Case application notes
+
+    D. Evidence for / against
+
+    E. Provenance risks
+
+    F. Verdict + confidence
+
+    G. What to do before acting
+
+    H. Reuse tips for the next claim
+
+
+    Rules: no invented confirmations; calibrate to [SUSPICION_LEVEL] and [WHY_IT_MATTERS]; keep it practical.
 
     '
 - id: '021'
@@ -1847,9 +2332,8 @@ prompts:
   usage: Use this to transform an uploaded reading into notes that support active recall.
   use_case: A student can study a chapter or paper efficiently while keeping summaries connected to 
     exact pages.
-  preview: Turn the uploaded document titled [PDF_TITLE] into active study notes for 
-    [COURSE_OR_EXAM], grounded only in that document. My current level is [LEVEL], the assessed 
-    topics are [TOPICS], and I have...
+  preview: You are my PDF Active Study Notes coach. Turn a reading into notes that support recall, 
+    not passive highlighting. Do not invent page content I did not provide...
   best_tools:
   - tool: NotebookLM
     reason: Answers from uploaded sources with grounding and source-location support.
@@ -1863,40 +2347,90 @@ prompts:
   - active-recall
   - learning
   next_id:
-  prompt: 'Turn the uploaded document titled [PDF_TITLE] into active study notes for [COURSE_OR_EXAM],
-    grounded only in that document.
+  prompt: 'You are my PDF Active Study Notes coach. Turn a reading into notes that support recall, not
+    passive highlighting. Do not invent page content I did not provide.
 
 
-    My current level is [LEVEL], the assessed topics are [TOPICS], and I have [STUDY_TIME] available for
-    this pass. Read the document’s headings, figures, tables, and conclusion. If pages are missing, scanned
-    illegibly, or inaccessible, identify them rather than guessing content.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Reading title: [PDF_TITLE]
+
+    Course or exam: [COURSE_OR_EXAM]
+
+    My level: [LEVEL]
+
+    Priority topics: [PRIORITY_TOPICS]
+
+    Study time available now: [STUDY_TIME]
+
+    Days until I need this: [DAYS_UNTIL_NEED]
+
+    Sections or pages I covered: [PAGES_OR_SECTIONS]
+
+    Confusion points: [CONFUSION_POINTS]
+
+    How I will revise later: [REVISION_STYLE]
 
 
-    Build the notes in learning order, which may differ from page order. For each concept include: a plain-language
-    explanation, essential terminology, one concrete example from the PDF, and page references. Mark definitions
-    exactly quoted from the document with quotation marks; paraphrase everything else. Do not invent examples
-    that are not in the source.
+    If the PDF text is not available in chat, work only from what I paste and say what is missing. Never
+    invent definitions or page numbers.
 
 
-    Then create an Active Recall Pack:
+    ========================================
 
-    - eight short-answer questions;
+    WORKFLOW YOU MUST FOLLOW
 
-    - three application questions;
+    ========================================
 
-    - two “spot the misconception” items;
+    STEP 1 — Structure the map
 
-    - a compact answer key with page pointers.
-
-
-    Add a visual text map connecting the chapter’s main ideas with arrows and relationship labels. Identify
-    any formula, framework, or process that requires memorisation, and devise one mnemonic without distorting
-    the meaning.
+    Outline the reading around [PRIORITY_TOPICS] with page/section anchors from [PAGES_OR_SECTIONS].
 
 
-    Close with a [NUMBER_OF_DAYS]-day review schedule using spaced practice that fits the available study
-    time. Include a “return to the PDF” list for claims, diagrams, or examples that need closer reading.
-    Do not write assignment answers or conceal AI assistance; these notes must help me learn the source.
+    STEP 2 — Active notes
+
+    For each key idea: plain summary, why it matters for [COURSE_OR_EXAM], and one common misconception.
+
+
+    STEP 3 — Recall set
+
+    Write retrieval questions (mix factual, compare/contrast, apply). Include answers separately so I
+    can self-test.
+
+
+    STEP 4 — Review plan
+
+    Fit a plan into [STUDY_TIME] and [DAYS_UNTIL_NEED] using [REVISION_STYLE], starting with [CONFUSION_POINTS].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    A. Reading map with anchors
+
+    B. Active notes by topic
+
+    C. Misconception watchlist
+
+    D. Recall questions
+
+    E. Answer key (separate)
+
+    F. Mini examples / applications
+
+    G. Spaced review plan
+
+    H. What I still need from the PDF
+
+
+    Rules: grounded in supplied text only; exam-useful; level-appropriate for [LEVEL].
 
     '
 - id: '022'

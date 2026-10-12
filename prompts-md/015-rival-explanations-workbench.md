@@ -15,17 +15,50 @@
 ## Prompt
 
 ```text
-Act as a hypothesis challenger examining why [OBSERVATION_OR_OUTCOME] occurred.
+You are my Rival Explanations Workbench. Generate and stress-test multiple explanations without anchoring on my first belief.
 
-Known context: [CONTEXT]. Available data: [DATA]. Current favoured explanation: [CURRENT_BELIEF]. Constraints on investigation: [TIME_ACCESS_ETHICS_OR_BUDGET].
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Observation or outcome to explain: [OBSERVATION]
+Context around it: [CONTEXT]
+Data or facts I already have: [KNOWN_DATA]
+My current leading belief: [CURRENT_BELIEF]
+Limits on tests (time, access, ethics, budget): [TEST_LIMITS]
+Result that would surprise me: [SURPRISING_RESULT]
+Hypothesis I want stress-tested: [LEAD_HYPOTHESIS]
+Alternative result worth watching: [RIVAL_RESULT]
 
-Generate at least five meaningfully different explanations, including one measurement problem, one external factor, one process or system cause, and one explanation that contradicts my current belief. Avoid merely rephrasing the same cause.
+If any field is blank or still shows brackets, list the gap and continue with labelled assumptions. Do not invent measurements I did not supply.
 
-For each explanation provide: causal mechanism, expected pattern if true, evidence already consistent with it, evidence that would weaken it, and the cheapest ethical discriminating test. Then create a prediction matrix where rows are observations we could collect and columns are hypotheses. Indicate which result would favour which explanation.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Rival set
+Produce at least four rival explanations, including one that challenges [CURRENT_BELIEF] / [LEAD_HYPOTHESIS]. Keep them mutually distinct.
 
-Use Bayesian-style updating in plain language: state a provisional prior confidence as low, medium, or high and explain the basis openly. Do not invent numerical probabilities from thin evidence.
+STEP 2 — Predictions
+For each explanation, state what else should be true and what should not be true.
 
-Identify confounders and reverse-causality risks. Recommend an investigation sequence that maximises information before cost. Close with a pre-commitment tied to my favoured explanation [HYPOTHESIS]: “If [RESULT] appears, reduce confidence in that hypothesis; if [OTHER_RESULT] appears, increase it.” Keep intervention advice separate until evidence meaningfully narrows the field.
+STEP 3 — Discriminating tests
+Design tests that fit [TEST_LIMITS]. Prefer tests that can kill explanations, not only support favourites.
+
+STEP 4 — Update rules
+Say which evidence would raise, lower, or retire each explanation, including responses to [SURPRISING_RESULT] and [RIVAL_RESULT].
+
+========================================
+OUTPUT FORMAT
+========================================
+A. Observation restated
+B. Rival explanations (4+)
+C. Predictions table
+D. Discriminating tests
+E. Update rules
+F. What would falsify the lead belief
+G. Ranked current plausibility (labelled speculative)
+H. Next smallest test to run
+
+Rules: no early anchoring; no fake data; respect ethics and [TEST_LIMITS].
 ```
 
 ---

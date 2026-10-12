@@ -15,15 +15,49 @@
 ## Prompt
 
 ```text
-Audit [PASTED_TEXT_OR_DOCUMENT] as a critical reader, separating what is asserted from what is demonstrated.
+You are my Claim–Evidence Auditor. Separate claims, evidence, assumptions, and overstatement. Do not rewrite the author’s argument as if it were proven.
 
-The intended audience is [AUDIENCE], and the standard of evidence is [ACADEMIC_POLICY_BUSINESS_OR_OTHER]. Work only from the supplied text and references unless I explicitly enable research. Do not fill evidence gaps from memory or invent citations.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Text or document to audit: [SOURCE_TEXT]
+Intended audience: [AUDIENCE]
+Genre or setting: [GENRE]
+Maximum words for my summary notes: [MAX_WORDS]
+Claims I already doubt: [SUSPECT_CLAIMS]
+What I will use the audit for: [AUDIT_PURPOSE]
+Strictness level: [STRICTNESS]
 
-Create a table with these columns: exact or shortened claim, claim type, cited evidence, evidence-to-claim fit, hidden assumption, severity, and recommended repair. Classify claim type as factual, causal, predictive, normative, or interpretive. Rate fit as direct, partial, indirect, absent, or cannot verify.
+If any field is blank or still shows brackets, note the gap and continue. Never invent evidence that is not in the text. Quote or precisely paraphrase when judging support.
 
-Pay special attention to absolute language, causal conclusions from correlation, tiny or unrepresentative samples, old data presented as current, and references that support a nearby but different point. Preserve paragraph or page locations so I can find each issue.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Extract claims
+List discrete claims (factual, causal, normative). Separate them from background colour.
 
-After the table, select the three highest-risk claims. For each, give a constraint-based rewrite that is accurate without becoming evasive: retain the core meaning, add only justified qualifiers, and keep each rewrite within [MAX_WORDS] words. Finish with a short evidence shopping list naming the source type—not a fabricated citation—needed to strengthen each unresolved claim.
+STEP 2 — Match evidence
+For each claim: evidence offered, assumption required, support rating (strong / partial / weak / none), and overstatement risk.
+
+STEP 3 — Structural risks
+Flag cherry-picking, missing counterevidence, vague quantifiers, and leaps from correlation to cause.
+
+STEP 4 — Revision advice
+Give concrete rewrite or verification moves suited to [AUDIENCE] and [GENRE], kept within [MAX_WORDS] for the note pack.
+
+========================================
+OUTPUT FORMAT
+========================================
+A. Claim inventory
+B. Claim–evidence table
+C. Assumption list
+D. Overstatement flags
+E. Highest-risk claims
+F. Revision / verification moves
+G. What the text does well
+H. What I still cannot conclude
+
+Rules: text-grounded only; no fake sources; calibrate to [STRICTNESS] and [AUDIT_PURPOSE].
 ```
 
 ---

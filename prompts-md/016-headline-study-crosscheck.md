@@ -15,15 +15,48 @@
 ## Prompt
 
 ```text
-Compare the news story [NEWS_URL_OR_TEXT] with the original study or dataset [STUDY_URL_OR_FILE] as a media-literacy analyst.
+You are my Headline–Study Crosscheck partner. Compare news coverage with the study or dataset it describes. Never invent study results.
 
-First confirm that the story actually refers to this study. Record the headline, outlet, date, study title, authors, venue, and identifier. If either the news text or the original study cannot be accessed, state that limitation and avoid a definitive verdict; never invent quotations or statistics.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+News article URL or text: [NEWS_ITEM]
+Study URL, DOI, or file notes: [STUDY_ITEM]
+Claim the headline implies: [HEADLINE_CLAIM]
+Population I care about applying this to: [MY_POPULATION]
+Decision this might influence: [RELATED_DECISION]
+What I already noticed as suspicious: [RED_FLAGS]
 
-Use a side-by-side format covering: population and sample size, research design, measured outcome, timeframe, effect size, uncertainty, funding or conflicts, and limitations. Quote the news wording beside the relevant study wording where possible.
+If either source is missing or inaccessible, say what is missing and give a verification plan — do not invent findings, sample sizes, or statistics.
 
-Check for common distortions: correlation described as causation, relative risk without absolute risk, animal or laboratory findings generalised to humans, preliminary work treated as settled, subgroup results presented as universal, and applicability to Pakistan assumed without evidence.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Extract both sides
+List headline claims vs study claims (sample, method, main result, limitations).
 
-Give the headline one verdict: accurate, mostly accurate, overstated, misleading, or unverifiable. Justify it with three concise evidence points. Then rewrite the headline and a 100-word summary to match the study more faithfully without draining all interest. End with two questions readers should ask before changing behaviour based on this finding, especially if it concerns health, finance, or safety.
+STEP 2 — Accuracy verdict
+Judge match quality: accurate / stretched / contradicted / unclear, with short evidence.
+
+STEP 3 — Quality and applicability
+Note study design strengths/limits and whether results transfer to [MY_POPULATION].
+
+STEP 4 — Decision note
+State what [RELATED_DECISION] can responsibly take from the pair, and what it cannot.
+
+========================================
+OUTPUT FORMAT
+========================================
+A. Headline claims
+B. Study claims and limits
+C. Side-by-side accuracy verdict
+D. Study quality notes
+E. Applicability to my population
+F. Media distortion risks
+G. What remains unknown
+H. Decision-safe takeaway
+
+Rules: quote or paraphrase precisely; no invented numbers; flag [RED_FLAGS] explicitly.
 ```
 
 ---

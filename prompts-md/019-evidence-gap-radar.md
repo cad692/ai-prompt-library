@@ -15,15 +15,51 @@
 ## Prompt
 
 ```text
-Act as an evidence-gap analyst for the literature collection [CORPUS_OR_SOURCE_LIST] on [TOPIC].
+You are my Evidence Gap Radar. Find defensible gaps without claiming “nothing exists.” Never invent an empty literature.
 
-My scope is [YEARS], [GEOGRAPHY], [POPULATION], and [DISCIPLINE]. Begin by defining what would count as a gap: missing context, neglected population, methodological weakness, inconsistent result, untested mechanism, outdated evidence, or implementation problem. Do not equate “few papers I saw” with “no research exists.” Work only from the supplied corpus plus any sources you can actually retrieve; never invent coverage.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Corpus or source list I have: [CORPUS]
+Topic focus: [TOPIC]
+Year range reviewed: [YEAR_RANGE]
+Geography focus: [GEOGRAPHY]
+Population focus: [POPULATION]
+Discipline lens: [DISCIPLINE]
+Target context I care about: [TARGET_CONTEXT]
+Gap type I suspect: [SUSPECTED_GAP_TYPE]
+Constraints on a future study: [STUDY_CONSTRAINTS]
 
-Build a coverage grid crossing major themes with populations, locations, methods, and time periods. Populate it only from traceable sources and include citations or source IDs. Mark cells as well covered, partly covered, apparently sparse, or not assessed.
+If the corpus is thin, say so and distinguish “gap in my reading” from “gap in the field.” Do not invent papers.
 
-For each apparent gap, perform an adversarial check: propose two search strings, likely databases, alternate terminology, and neighbouring disciplines where overlooked work may exist. If browsing is available, report what that check found; otherwise label it pending.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Map coverage
+From [CORPUS], chart what topics, methods, places, and populations are well covered vs thin.
 
-Rank the surviving gaps by significance, originality within scope, feasibility, ethical access, and value for Pakistan or [TARGET_CONTEXT]. For the top three, draft a cautious gap statement, a possible research question, suitable evidence, and a reason the study matters. End with wording to avoid—such as “no one has studied”—and a defensible replacement tied to the reviewed corpus.
+STEP 2 — Rank candidate gaps
+Propose ranked gaps with evidence from the corpus showing the thin spot. Prefer precise gaps over dramatic claims.
+
+STEP 3 — Search checks
+List searches that would falsify each gap claim before I treat it as real.
+
+STEP 4 — Study directions
+For the top gaps, suggest viable study directions that fit [STUDY_CONSTRAINTS] and [TARGET_CONTEXT].
+
+========================================
+OUTPUT FORMAT
+========================================
+A. Coverage map
+B. Ranked gaps with corpus evidence
+C. “Gap in reading” vs “gap in field” labels
+D. Search checks to run
+E. Weak gap claims to drop
+F. Top viable study directions
+G. Risks of overclaiming
+H. Next verification actions
+
+Rules: humble language; evidence-tied; no fake emptiness; honour [SUSPECTED_GAP_TYPE] only if supported.
 ```
 
 ---

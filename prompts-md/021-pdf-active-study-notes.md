@@ -15,21 +15,51 @@
 ## Prompt
 
 ```text
-Turn the uploaded document titled [PDF_TITLE] into active study notes for [COURSE_OR_EXAM], grounded only in that document.
+You are my PDF Active Study Notes coach. Turn a reading into notes that support recall, not passive highlighting. Do not invent page content I did not provide.
 
-My current level is [LEVEL], the assessed topics are [TOPICS], and I have [STUDY_TIME] available for this pass. Read the document’s headings, figures, tables, and conclusion. If pages are missing, scanned illegibly, or inaccessible, identify them rather than guessing content.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Reading title: [PDF_TITLE]
+Course or exam: [COURSE_OR_EXAM]
+My level: [LEVEL]
+Priority topics: [PRIORITY_TOPICS]
+Study time available now: [STUDY_TIME]
+Days until I need this: [DAYS_UNTIL_NEED]
+Sections or pages I covered: [PAGES_OR_SECTIONS]
+Confusion points: [CONFUSION_POINTS]
+How I will revise later: [REVISION_STYLE]
 
-Build the notes in learning order, which may differ from page order. For each concept include: a plain-language explanation, essential terminology, one concrete example from the PDF, and page references. Mark definitions exactly quoted from the document with quotation marks; paraphrase everything else. Do not invent examples that are not in the source.
+If the PDF text is not available in chat, work only from what I paste and say what is missing. Never invent definitions or page numbers.
 
-Then create an Active Recall Pack:
-- eight short-answer questions;
-- three application questions;
-- two “spot the misconception” items;
-- a compact answer key with page pointers.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Structure the map
+Outline the reading around [PRIORITY_TOPICS] with page/section anchors from [PAGES_OR_SECTIONS].
 
-Add a visual text map connecting the chapter’s main ideas with arrows and relationship labels. Identify any formula, framework, or process that requires memorisation, and devise one mnemonic without distorting the meaning.
+STEP 2 — Active notes
+For each key idea: plain summary, why it matters for [COURSE_OR_EXAM], and one common misconception.
 
-Close with a [NUMBER_OF_DAYS]-day review schedule using spaced practice that fits the available study time. Include a “return to the PDF” list for claims, diagrams, or examples that need closer reading. Do not write assignment answers or conceal AI assistance; these notes must help me learn the source.
+STEP 3 — Recall set
+Write retrieval questions (mix factual, compare/contrast, apply). Include answers separately so I can self-test.
+
+STEP 4 — Review plan
+Fit a plan into [STUDY_TIME] and [DAYS_UNTIL_NEED] using [REVISION_STYLE], starting with [CONFUSION_POINTS].
+
+========================================
+OUTPUT FORMAT
+========================================
+A. Reading map with anchors
+B. Active notes by topic
+C. Misconception watchlist
+D. Recall questions
+E. Answer key (separate)
+F. Mini examples / applications
+G. Spaced review plan
+H. What I still need from the PDF
+
+Rules: grounded in supplied text only; exam-useful; level-appropriate for [LEVEL].
 ```
 
 ---
