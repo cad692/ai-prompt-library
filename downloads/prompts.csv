@@ -577,6 +577,8 @@ Finish with a compact evaluator form and interpretation bands—unusable, needs 
 "
 041,investor-pitch-deck-architect,Investor Pitch Deck Architect,presentations,Beginner,Use to shape an early-stage venture story before designing the slides.,A slide-by-slide pitch outline with evidence gaps and a closing ask.,Replace ambitious claims with a sourced number or a clearly named assumption.,"pitch-deck, startup, fundraising",Gamma: Builds a polished first-pass deck from a structured narrative.; PowerPoint+Copilot: Supports familiar slide editing and presenter-ready refinement.,,"You are a venture-story architect turning raw founder notes into an evidence-led pitch deck.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Venture: [VENTURE]
 Audience: [INVESTOR_TYPE]
 Stage and traction: [STAGE_AND_TRACTION]
@@ -593,6 +595,8 @@ Include a “proof gap” beside any claim that lacks support. Separate current 
 Finish with: the one-sentence investment thesis, the two questions investors are most likely to challenge, and a 30-second closing statement. Keep slide text sparse; place explanation in brief presenter guidance.
 "
 042,concept-to-teaching-slides,Concept to Teaching Slides,presentations,Beginner,"Use to teach one difficult concept through examples, checks, and practice.",An eight-slide mini-lesson with examples and learning checks.,Test the misconception question before presenting; it reveals where the explanation needs work.,"teaching, lesson, education",Canva: Makes classroom-friendly slides easy to lay out and revise.; Gamma: Quickly converts a lesson sequence into visual sections.,,"Act as a patient instructional designer preparing a visual mini-lesson, not a textbook chapter.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Teach [CONCEPT] to [LEARNER_LEVEL] learners in [TIME_AVAILABLE] minutes. Their likely prior knowledge is [PRIOR_KNOWLEDGE], and the real-world setting is [CONTEXT]. The learning outcome is: “[LEARNERS_WILL_BE_ABLE_TO].”
 
@@ -612,6 +616,8 @@ Add one diagnostic question before the lesson and one exit question after it. Su
 "
 043,one-message-per-slide-editor,One Message per Slide Editor,presentations,Beginner,"Use when slides contain dense paragraphs, mixed messages, or unclear headlines.","A slide rewrite map with message headlines, cuts, and split recommendations.",Read only the revised headlines in order; they should tell the complete story.,"editing, slide-design, clarity",ChatGPT: Reorganizes pasted slide copy while preserving the intended argument.; Claude: Handles long decks and maintains narrative continuity across slides.,,"Work as a ruthless-but-faithful slide editor whose rule is one meaningful message per slide.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Here is the current slide content: [PASTE_SLIDES]
 The audience is [AUDIENCE], the decision or learning goal is [GOAL], and the tone should be [TONE].
 
@@ -623,6 +629,8 @@ Present the result as a numbered rewrite map with: new headline, visible content
 "
 044,speaker-notes-rehearsal-coach,Speaker Notes Rehearsal Coach,presentations,Beginner,Use to convert slide bullets into natural notes for a timed presentation.,"Natural speaker notes with timing, transitions, and rehearsal cues.","Rehearse once from cue phrases only, then shorten any note you still read verbatim.","speaker-notes, public-speaking, rehearsal","ChatGPT: Turns slide context into conversational, audience-aware speaking notes.; PowerPoint+Copilot: Keeps notes close to the slides used during delivery.",,"Become my presentation rehearsal coach and write for the ear, not for the page.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Slides or outline: [SLIDES]
 Audience relationship: [AUDIENCE_RELATIONSHIP]
 Total speaking time: [TOTAL_TIME]
@@ -632,11 +640,13 @@ Likely questions: [LIKELY_QUESTIONS]
 
 Allocate realistic time across the slides, reserving 10% for pauses and transitions. For each slide, create notes with four distinct parts: an opening cue phrase, a natural spoken explanation, a bridge to the next idea, and a fallback sentence I can use if running late. Do not narrate text already visible. Explain why the visual matters and translate technical language into audience-friendly speech without losing accuracy.
 
-Add delivery marks sparingly: [PAUSE], [EMPHASISE], [POINT TO VISUAL], and [CHECK AUDIENCE]. Give difficult names or terms a pronunciation placeholder only where needed. If the supplied material cannot fit the time, identify exactly what to cut instead of making the speaking pace unrealistic.
+Add delivery marks sparingly using my conventions — pause as [PAUSE], emphasise as [EMPHASISE], plus POINT TO VISUAL and CHECK AUDIENCE. Give difficult names or terms a pronunciation placeholder only where needed. If the supplied material cannot fit the time, identify exactly what to cut instead of making the speaking pace unrealistic.
 
 End with a rehearsal card containing the opening, three memory anchors, the final line, and two Q&A bridge phrases. Keep the voice credible and human; avoid inflated motivational language and invented personal stories.
 "
 045,visual-metaphor-finder,Visual Metaphor Finder,presentations,Beginner,Use to replace generic stock photos with meaningful visual concepts.,Five ranked visual metaphors with composition and misuse warnings.,Choose the metaphor your audience can decode in under three seconds.,"visual-metaphor, creative-direction, slides",Canva: Supports quick assembly of metaphor-led slide compositions.; Adobe Firefly: Generates custom conceptual imagery from detailed art direction.,,"Serve as a visual-thinking partner for an abstract slide idea that currently has no useful image.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Core message: [CORE_MESSAGE]
 Audience: [AUDIENCE]
@@ -652,6 +662,8 @@ Rank the top two for this audience. For the winner, provide a concise image-gene
 "
 046,before-after-slide-clinic,Before and After Slide Clinic,presentations,Beginner,Use to diagnose and redesign one weak slide without changing its facts.,A concise critique and build-ready redesign specification for one slide.,"Fix the message hierarchy before adjusting fonts, colours, or icons.","slide-critique, redesign, presentation",Canva: Makes the recommended layout changes easy to prototype.; PowerPoint+Copilot: Helps revise content inside a common business presentation workflow.,,"Diagnose this slide like a presentation clinician: preserve the facts, repair the communication.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Slide screenshot or pasted content: [SLIDE]
 Audience: [AUDIENCE]
 What they should think, feel, or do: [INTENDED_RESPONSE]
@@ -665,6 +677,8 @@ Create an after-version specification. Include a takeaway headline, exact shorte
 Provide a before/after comparison in six paired bullets, each showing the problem and the corresponding repair. Finally, write a 45-second talk track for the redesigned slide and one quick test the creator can perform at normal viewing distance. Do not manufacture data or imply a visual should replace evidence.
 "
 047,canva-social-carousel-planner,Canva Social Carousel Planner,presentations,Beginner,Use to turn one useful idea into a swipeable educational carousel.,An eight-card carousel script with art direction and caption.,Export and inspect every card at phone size before publishing.,"canva, carousel, social-media","Canva: Provides practical carousel sizing, layout, and brand controls.; ChatGPT: Develops concise card copy and narrative progression.",,"You are planning a swipeable social carousel that earns attention by being useful, not by making exaggerated promises.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Topic: [TOPIC]
 Audience: [AUDIENCE]
@@ -680,6 +694,8 @@ For each card, supply one headline, up to 24 words of supporting copy, a layout 
 Add a Canva build note covering dimensions suitable for the chosen platform, consistent margins, and accessible contrast. Finish with a natural post caption, meaningful alt text, and five relevant hashtags rather than a long generic hashtag list.
 "
 048,stakeholder-update-deck,Stakeholder Update Deck,presentations,Beginner,Use for a concise project update that foregrounds decisions and risks.,A seven-slide decision-focused update with owners and next steps.,"Lead with what changed since the last update, not a full project history.","stakeholders, project-update, leadership",Beautiful.ai: Keeps recurring business update layouts consistent and readable.; PowerPoint+Copilot: Fits common stakeholder review and collaboration workflows.,,"Operate as a project communications lead preparing an update for people who need clarity, not activity theatre.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Project: [PROJECT]
 Reporting period: [PERIOD]
@@ -698,6 +714,8 @@ Add a 60-second opening script and an appendix list for detail that should not c
 "
 049,workshop-agenda-slide-builder,Workshop Agenda Slide Builder,presentations,Beginner,"Use to design agenda slides that explain participation, timing, and outcomes.",A facilitation-ready agenda deck plan with timings and transitions.,"Show participants what they will produce, not only what topics they will hear.","workshop, agenda, facilitation",Canva: Offers flexible visual layouts for facilitated sessions.; Gamma: Quickly assembles modular agenda and activity slides.,,"Act as a workshop experience designer creating slides that help participants know where they are, why it matters, and what to do next.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Workshop goal: [GOAL]
 Participants: [PARTICIPANTS]
 Duration and breaks: [DURATION]
@@ -712,6 +730,8 @@ For activity instructions, use the sequence “purpose / steps / time / delivera
 Recommend one visual code—colour, icon, or progress marker—that consistently distinguishes learning, practice, and breaks. End with a minute-by-minute run sheet and identify any agenda section whose timing is unrealistic for [GROUP_SIZE].
 "
 050,data-slide-storyline,Data Slide Storyline,presentations,Beginner,Use to turn a chart or dataset into an honest decision narrative.,"A chart recommendation, message headline, annotations, and spoken interpretation.",State the denominator and time period wherever a percentage appears.,"data-storytelling, charts, decision-making",Excel/Sheets: Supports transparent chart creation and source-data checking.; PowerPoint+Copilot: Helps present chart takeaways within a decision deck.,,"Take the role of a data-story editor who refuses to make the chart claim more than the evidence supports.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Data or chart description: [DATA]
 Decision audience: [AUDIENCE]

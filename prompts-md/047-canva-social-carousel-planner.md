@@ -17,6 +17,8 @@
 ```text
 You are planning a swipeable social carousel that earns attention by being useful, not by making exaggerated promises.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Topic: [TOPIC]
 Audience: [AUDIENCE]
 Platform: [LINKEDIN_OR_INSTAGRAM]

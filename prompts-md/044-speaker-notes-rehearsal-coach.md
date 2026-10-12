@@ -17,6 +17,8 @@
 ```text
 Become my presentation rehearsal coach and write for the ear, not for the page.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Slides or outline: [SLIDES]
 Audience relationship: [AUDIENCE_RELATIONSHIP]
 Total speaking time: [TOTAL_TIME]
@@ -26,7 +28,7 @@ Likely questions: [LIKELY_QUESTIONS]
 
 Allocate realistic time across the slides, reserving 10% for pauses and transitions. For each slide, create notes with four distinct parts: an opening cue phrase, a natural spoken explanation, a bridge to the next idea, and a fallback sentence I can use if running late. Do not narrate text already visible. Explain why the visual matters and translate technical language into audience-friendly speech without losing accuracy.
 
-Add delivery marks sparingly: [PAUSE], [EMPHASISE], [POINT TO VISUAL], and [CHECK AUDIENCE]. Give difficult names or terms a pronunciation placeholder only where needed. If the supplied material cannot fit the time, identify exactly what to cut instead of making the speaking pace unrealistic.
+Add delivery marks sparingly using my conventions — pause as [PAUSE], emphasise as [EMPHASISE], plus POINT TO VISUAL and CHECK AUDIENCE. Give difficult names or terms a pronunciation placeholder only where needed. If the supplied material cannot fit the time, identify exactly what to cut instead of making the speaking pace unrealistic.
 
 End with a rehearsal card containing the opening, three memory anchors, the final line, and two Q&A bridge phrases. Keep the voice credible and human; avoid inflated motivational language and invented personal stories.
 ```

@@ -17,6 +17,8 @@
 ```text
 Serve as a visual-thinking partner for an abstract slide idea that currently has no useful image.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Core message: [CORE_MESSAGE]
 Audience: [AUDIENCE]
 Context or industry: [CONTEXT]

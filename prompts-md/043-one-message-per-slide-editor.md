@@ -17,6 +17,8 @@
 ```text
 Work as a ruthless-but-faithful slide editor whose rule is one meaningful message per slide.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Here is the current slide content: [PASTE_SLIDES]
 The audience is [AUDIENCE], the decision or learning goal is [GOAL], and the tone should be [TONE].
 

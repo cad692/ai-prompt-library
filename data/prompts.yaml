@@ -2269,10 +2269,11 @@ prompts:
   category: presentations
   difficulty: Beginner
   usage: Use to shape an early-stage venture story before designing the slides.
-  use_case: Turn scattered venture facts into a credible pitch sequence for Pakistani or international
-    investors. Missing evidence remains clearly labelled.
-  preview: 'You are a venture-story architect turning raw founder notes into an evidence-led pitch deck.
-    Venture: [VENTURE] Audience: [INVESTOR_TYPE] Stage and traction: [STAGE_AND_TRACTION] Customer problem...'
+  use_case: Turn scattered venture facts into a credible pitch sequence for Pakistani or 
+    international investors. Missing evidence remains clearly labelled.
+  preview: You are a venture-story architect turning raw founder notes into an evidence-led pitch 
+    deck. If any personalization field is blank or still shows brackets, continue with clearly 
+    labelled assumptions...
   best_tools:
   - tool: Gamma
     reason: Builds a polished first-pass deck from a structured narrative.
@@ -2284,8 +2285,12 @@ prompts:
   - pitch-deck
   - startup
   - fundraising
-  next_id: null
+  next_id:
   prompt: 'You are a venture-story architect turning raw founder notes into an evidence-led pitch deck.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Venture: [VENTURE]
@@ -2327,23 +2332,29 @@ prompts:
   category: presentations
   difficulty: Beginner
   usage: Use to teach one difficult concept through examples, checks, and practice.
-  use_case: Creates a short lesson deck for a class, training, or study group. It adapts language and
-    examples to the learners.
-  preview: Act as a patient instructional designer preparing a visual mini-lesson, not a textbook chapter.
-    Teach [CONCEPT] to [LEARNER_LEVEL] learners in [TIME_AVAILABLE] minutes. Their likely prior knowledge...
+  use_case: Creates a short lesson deck for a class, training, or study group. It adapts language 
+    and examples to the learners.
+  preview: Act as a patient instructional designer preparing a visual mini-lesson, not a textbook 
+    chapter. If any personalization field is blank or still shows brackets, continue with clearly 
+    labelled...
   best_tools:
   - tool: Canva
     reason: Makes classroom-friendly slides easy to lay out and revise.
   - tool: Gamma
     reason: Quickly converts a lesson sequence into visual sections.
-  tip: Test the misconception question before presenting; it reveals where the explanation needs work.
+  tip: Test the misconception question before presenting; it reveals where the explanation needs 
+    work.
   expected_output: An eight-slide mini-lesson with examples and learning checks.
   tags:
   - teaching
   - lesson
   - education
-  next_id: null
+  next_id:
   prompt: 'Act as a patient instructional designer preparing a visual mini-lesson, not a textbook chapter.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Teach [CONCEPT] to [LEARNER_LEVEL] learners in [TIME_AVAILABLE] minutes. Their likely prior knowledge
@@ -2386,10 +2397,11 @@ prompts:
   category: presentations
   difficulty: Beginner
   usage: Use when slides contain dense paragraphs, mixed messages, or unclear headlines.
-  use_case: Rewrites an existing deck so every slide carries one audience takeaway. The result preserves
-    meaning while reducing reading load.
-  preview: 'Work as a ruthless-but-faithful slide editor whose rule is one meaningful message per slide.
-    Here is the current slide content: [PASTE_SLIDES] The audience is [AUDIENCE], the decision or learning...'
+  use_case: Rewrites an existing deck so every slide carries one audience takeaway. The result 
+    preserves meaning while reducing reading load.
+  preview: Work as a ruthless-but-faithful slide editor whose rule is one meaningful message per 
+    slide. If any personalization field is blank or still shows brackets, continue with clearly 
+    labelled assumptions...
   best_tools:
   - tool: ChatGPT
     reason: Reorganizes pasted slide copy while preserving the intended argument.
@@ -2401,8 +2413,12 @@ prompts:
   - editing
   - slide-design
   - clarity
-  next_id: null
+  next_id:
   prompt: 'Work as a ruthless-but-faithful slide editor whose rule is one meaningful message per slide.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Here is the current slide content: [PASTE_SLIDES]
@@ -2432,11 +2448,11 @@ prompts:
   category: presentations
   difficulty: Beginner
   usage: Use to convert slide bullets into natural notes for a timed presentation.
-  use_case: Produces spoken notes that complement rather than read the screen. It also builds timing and
-    recovery cues for rehearsal.
-  preview: 'Become my presentation rehearsal coach and write for the ear, not for the page. Slides or
-    outline: [SLIDES] Audience relationship: [AUDIENCE_RELATIONSHIP] Total speaking time: [TOTAL_TIME]
-    Desired...'
+  use_case: Produces spoken notes that complement rather than read the screen. It also builds timing
+    and recovery cues for rehearsal.
+  preview: Become my presentation rehearsal coach and write for the ear, not for the page. If any 
+    personalization field is blank or still shows brackets, continue with clearly labelled 
+    assumptions — do not...
   best_tools:
   - tool: ChatGPT
     reason: Turns slide context into conversational, audience-aware speaking notes.
@@ -2448,8 +2464,12 @@ prompts:
   - speaker-notes
   - public-speaking
   - rehearsal
-  next_id: null
+  next_id:
   prompt: 'Become my presentation rehearsal coach and write for the ear, not for the page.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Slides or outline: [SLIDES]
@@ -2472,9 +2492,10 @@ prompts:
     losing accuracy.
 
 
-    Add delivery marks sparingly: [PAUSE], [EMPHASISE], [POINT TO VISUAL], and [CHECK AUDIENCE]. Give
-    difficult names or terms a pronunciation placeholder only where needed. If the supplied material cannot
-    fit the time, identify exactly what to cut instead of making the speaking pace unrealistic.
+    Add delivery marks sparingly using my conventions — pause as [PAUSE], emphasise as [EMPHASISE], plus
+    POINT TO VISUAL and CHECK AUDIENCE. Give difficult names or terms a pronunciation placeholder only
+    where needed. If the supplied material cannot fit the time, identify exactly what to cut instead of
+    making the speaking pace unrealistic.
 
 
     End with a rehearsal card containing the opening, three memory anchors, the final line, and two Q&A
@@ -2488,10 +2509,11 @@ prompts:
   category: presentations
   difficulty: Beginner
   usage: Use to replace generic stock photos with meaningful visual concepts.
-  use_case: Generates visual metaphors that clarify an abstract presentation idea. Each option includes
-    limits to prevent misleading imagery.
-  preview: 'Serve as a visual-thinking partner for an abstract slide idea that currently has no useful
-    image. Core message: [CORE_MESSAGE] Audience: [AUDIENCE] Context or industry: [CONTEXT] Brand mood...'
+  use_case: Generates visual metaphors that clarify an abstract presentation idea. Each option 
+    includes limits to prevent misleading imagery.
+  preview: Serve as a visual-thinking partner for an abstract slide idea that currently has no 
+    useful image. If any personalization field is blank or still shows brackets, continue with 
+    clearly labelled...
   best_tools:
   - tool: Canva
     reason: Supports quick assembly of metaphor-led slide compositions.
@@ -2503,9 +2525,13 @@ prompts:
   - visual-metaphor
   - creative-direction
   - slides
-  next_id: null
+  next_id:
   prompt: 'Serve as a visual-thinking partner for an abstract slide idea that currently has no useful
     image.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Core message: [CORE_MESSAGE]
@@ -2542,11 +2568,10 @@ prompts:
   category: presentations
   difficulty: Beginner
   usage: Use to diagnose and redesign one weak slide without changing its facts.
-  use_case: Critiques a slide against audience needs and proposes a concrete after-state. The method separates
-    message problems from visual problems.
+  use_case: Critiques a slide against audience needs and proposes a concrete after-state. The method
+    separates message problems from visual problems.
   preview: 'Diagnose this slide like a presentation clinician: preserve the facts, repair the communication.
-    Slide screenshot or pasted content: [SLIDE] Audience: [AUDIENCE] What they should think, feel, or
-    do...'
+    If any personalization field is blank or still shows brackets, continue with clearly labelled...'
   best_tools:
   - tool: Canva
     reason: Makes the recommended layout changes easy to prototype.
@@ -2558,8 +2583,12 @@ prompts:
   - slide-critique
   - redesign
   - presentation
-  next_id: null
+  next_id:
   prompt: 'Diagnose this slide like a presentation clinician: preserve the facts, repair the communication.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Slide screenshot or pasted content: [SLIDE]
@@ -2596,11 +2625,11 @@ prompts:
   category: presentations
   difficulty: Beginner
   usage: Use to turn one useful idea into a swipeable educational carousel.
-  use_case: Plans a Canva carousel for LinkedIn or Instagram with a coherent visual rhythm. It prioritizes
-    value over engagement bait.
-  preview: 'You are planning a swipeable social carousel that earns attention by being useful, not by
-    making exaggerated promises. Topic: [TOPIC] Audience: [AUDIENCE] Platform: [LINKEDIN_OR_INSTAGRAM]
-    Brand...'
+  use_case: Plans a Canva carousel for LinkedIn or Instagram with a coherent visual rhythm. It 
+    prioritizes value over engagement bait.
+  preview: You are planning a swipeable social carousel that earns attention by being useful, not by
+    making exaggerated promises. If any personalization field is blank or still shows brackets, 
+    continue with...
   best_tools:
   - tool: Canva
     reason: Provides practical carousel sizing, layout, and brand controls.
@@ -2612,9 +2641,13 @@ prompts:
   - canva
   - carousel
   - social-media
-  next_id: null
+  next_id:
   prompt: 'You are planning a swipeable social carousel that earns attention by being useful, not by making
     exaggerated promises.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Topic: [TOPIC]
@@ -2647,16 +2680,17 @@ prompts:
     rather than a long generic hashtag list.
 
     '
-- id: 048
+- id: '048'
   slug: stakeholder-update-deck
   title: Stakeholder Update Deck
   category: presentations
   difficulty: Beginner
   usage: Use for a concise project update that foregrounds decisions and risks.
-  use_case: Turns delivery information into a transparent update for sponsors, clients, or leadership.
-    It makes ownership and decisions explicit.
-  preview: 'Operate as a project communications lead preparing an update for people who need clarity,
-    not activity theatre. Project: [PROJECT] Reporting period: [PERIOD] Stakeholders and concerns: [STAKEHOLDERS]...'
+  use_case: Turns delivery information into a transparent update for sponsors, clients, or 
+    leadership. It makes ownership and decisions explicit.
+  preview: Operate as a project communications lead preparing an update for people who need clarity,
+    not activity theatre. If any personalization field is blank or still shows brackets, continue 
+    with clearly...
   best_tools:
   - tool: Beautiful.ai
     reason: Keeps recurring business update layouts consistent and readable.
@@ -2668,9 +2702,13 @@ prompts:
   - stakeholders
   - project-update
   - leadership
-  next_id: null
+  next_id:
   prompt: 'Operate as a project communications lead preparing an update for people who need clarity, not
     activity theatre.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Project: [PROJECT]
@@ -2706,17 +2744,17 @@ prompts:
     Finish with a pre-send accuracy check covering dates, owners, metric definitions, and confidentiality.
 
     '
-- id: 049
+- id: '049'
   slug: workshop-agenda-slide-builder
   title: Workshop Agenda Slide Builder
   category: presentations
   difficulty: Beginner
   usage: Use to design agenda slides that explain participation, timing, and outcomes.
-  use_case: Creates workshop opening and transition slides that reduce uncertainty for participants. It
-    includes energy and accessibility considerations.
-  preview: 'Act as a workshop experience designer creating slides that help participants know where they
-    are, why it matters, and what to do next. Workshop goal: [GOAL] Participants: [PARTICIPANTS] Duration
-    and...'
+  use_case: Creates workshop opening and transition slides that reduce uncertainty for participants.
+    It includes energy and accessibility considerations.
+  preview: Act as a workshop experience designer creating slides that help participants know where 
+    they are, why it matters, and what to do next. If any personalization field is blank or still 
+    shows brackets...
   best_tools:
   - tool: Canva
     reason: Offers flexible visual layouts for facilitated sessions.
@@ -2728,9 +2766,13 @@ prompts:
   - workshop
   - agenda
   - facilitation
-  next_id: null
+  next_id:
   prompt: 'Act as a workshop experience designer creating slides that help participants know where they
     are, why it matters, and what to do next.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Workshop goal: [GOAL]
@@ -2769,10 +2811,11 @@ prompts:
   category: presentations
   difficulty: Beginner
   usage: Use to turn a chart or dataset into an honest decision narrative.
-  use_case: Builds a slide story around what data supports, what it cannot prove, and what action follows.
-    Useful for management or research briefings.
-  preview: 'Take the role of a data-story editor who refuses to make the chart claim more than the evidence
-    supports. Data or chart description: [DATA] Decision audience: [AUDIENCE] Decision at stake: [DECISION]...'
+  use_case: Builds a slide story around what data supports, what it cannot prove, and what action 
+    follows. Useful for management or research briefings.
+  preview: Take the role of a data-story editor who refuses to make the chart claim more than the 
+    evidence supports. If any personalization field is blank or still shows brackets, continue with 
+    clearly labelled...
   best_tools:
   - tool: Excel/Sheets
     reason: Supports transparent chart creation and source-data checking.
@@ -2784,9 +2827,13 @@ prompts:
   - data-storytelling
   - charts
   - decision-making
-  next_id: null
+  next_id:
   prompt: 'Take the role of a data-story editor who refuses to make the chart claim more than the evidence
     supports.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Data or chart description: [DATA]

@@ -17,6 +17,8 @@
 ```text
 Diagnose this slide like a presentation clinician: preserve the facts, repair the communication.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Slide screenshot or pasted content: [SLIDE]
 Audience: [AUDIENCE]
 What they should think, feel, or do: [INTENDED_RESPONSE]

@@ -17,6 +17,8 @@
 ```text
 Operate as a project communications lead preparing an update for people who need clarity, not activity theatre.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Project: [PROJECT]
 Reporting period: [PERIOD]
 Stakeholders and concerns: [STAKEHOLDERS]

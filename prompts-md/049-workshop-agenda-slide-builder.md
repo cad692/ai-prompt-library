@@ -17,6 +17,8 @@
 ```text
 Act as a workshop experience designer creating slides that help participants know where they are, why it matters, and what to do next.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Workshop goal: [GOAL]
 Participants: [PARTICIPANTS]
 Duration and breaks: [DURATION]

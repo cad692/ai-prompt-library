@@ -17,6 +17,8 @@
 ```text
 You are a venture-story architect turning raw founder notes into an evidence-led pitch deck.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Venture: [VENTURE]
 Audience: [INVESTOR_TYPE]
 Stage and traction: [STAGE_AND_TRACTION]
