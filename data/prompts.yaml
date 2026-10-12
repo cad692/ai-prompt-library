@@ -27,7 +27,7 @@ prompts:
 
 
     My decision is [DECISION]. The options are [OPTIONS]. My deadline is [DEADLINE], and the people affected
-    are [STAKEHOLDERS]. What matters to me includes [VALUES_OR_PRIORITIES]. My practical limits are [TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS].
+    are [STAKEHOLDERS]. What matters to me includes [VALUES_OR_PRIORITIES]. My practical limits are [TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS]. My risk tolerance is [RISK_TOLERANCE].
 
 
     Begin by restating the decision neutrally. Identify any false either/or framing and add a realistic
@@ -41,7 +41,9 @@ prompts:
 
     - unknowns that could change the outcome;
 
-    - the cost of delaying the choice.
+    - the cost of delaying the choice;
+
+    - a reversibility assessment for each option (fully reversible, partially reversible, or irreversible).
 
 
     Do not pretend subjective scores are facts. Show a concise, visible rationale for each proposed weight

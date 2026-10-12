@@ -17,6 +17,9 @@
   TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS:
     q: "What practical limits matter here?"
     ex: "Budget, travel, or family duties"
+  RISK_TOLERANCE:
+    q: "What is your comfort level with risk and uncertainty?"
+    ex: "I prefer safer options with predictable outcomes"
 "002":
   DATES:
     q: "Which week do you want planned?"
