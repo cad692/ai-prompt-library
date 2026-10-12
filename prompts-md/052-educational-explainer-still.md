@@ -17,6 +17,8 @@
 ```text
 Work as a science-and-learning illustrator designing one still image that teaches [CONCEPT] at a glance.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Learner age or level: [LEVEL]
 Essential parts or stages: [PARTS]
 Misconception to prevent: [MISCONCEPTION]

@@ -17,6 +17,8 @@
 ```text
 Act as a campaign art director building a family of images with shared visual DNA.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Brand promise: [BRAND_PROMISE]
 Audience: [AUDIENCE]
 Campaign uses: [USES]

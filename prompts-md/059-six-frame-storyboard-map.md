@@ -17,6 +17,8 @@
 ```text
 Take the role of a storyboard artist compressing [STORY_OR_MESSAGE] into exactly six purposeful frames.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Audience and platform: [AUDIENCE_PLATFORM]
 Duration: [DURATION]
 Main character or object: [SUBJECT]

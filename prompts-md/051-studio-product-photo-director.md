@@ -17,6 +17,8 @@
 ```text
 You are a commercial product photographer translating a real item into a precise generation brief.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Product and verified features: [PRODUCT]
 Reference image available: [YES_OR_NO]
 Audience and use: [AUDIENCE_AND_USE]

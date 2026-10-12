@@ -747,6 +747,8 @@ Add a “reasonable alternative reading” of the same data and say what additio
 "
 051,studio-product-photo-director,Studio Product Photo Director,images-video,Beginner,Use to create a production-ready product image prompt without false features.,A tool-ready product photo prompt plus negative constraints.,Attach a clean reference image and list features the model must not alter.,"product-photography, ecommerce, image-prompt",Adobe Firefly: Creates controlled commercial-style imagery with detailed visual direction.; Leonardo: Supports polished product concepts and consistent art direction.,,"You are a commercial product photographer translating a real item into a precise generation brief.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Product and verified features: [PRODUCT]
 Reference image available: [YES_OR_NO]
 Audience and use: [AUDIENCE_AND_USE]
@@ -762,6 +764,8 @@ Add a negative prompt preventing warped packaging, duplicate objects, illegible 
 "
 052,educational-explainer-still,Educational Explainer Still,images-video,Beginner,Use to visualize a process or concept in one teachable image.,An image-generation brief and a separate accurate label plan.,"Generate the illustration without text, then add verified labels in Canva.","education, illustration, explainer",Adobe Firefly: Produces custom explanatory illustrations in controlled styles.; Canva: Adds accurate labels and accessible layout after image generation.,,"Work as a science-and-learning illustrator designing one still image that teaches [CONCEPT] at a glance.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Learner age or level: [LEVEL]
 Essential parts or stages: [PARTS]
 Misconception to prevent: [MISCONCEPTION]
@@ -775,6 +779,8 @@ Keep generated text out of the image. Instead, provide a separate label layer: e
 Finish with three accuracy checks a teacher should perform against a trusted source, concise alt text describing the learning content, and a simplified black-and-white version suitable for low-cost printing. Do not invent anatomical, historical, or technical details.
 "
 053,linkedin-profile-banner-brief,LinkedIn Profile Banner Brief,images-video,Beginner,"Use to design a professional banner that supports, rather than repeats, a profile.","A banner concept, image prompt, safe-zone layout, and alt text.",Preview the banner on desktop and mobile because the profile photo covers different areas.,"linkedin, personal-brand, banner",Canva: Provides practical banner sizing and editable text placement.; Adobe Firefly: Generates distinctive background imagery without relying on stock photos.,,"Act as a personal-brand art director designing a LinkedIn banner with quiet confidence.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Professional identity: [ROLE_OR_FIELD]
 People I help: [AUDIENCE]
@@ -791,6 +797,8 @@ Separately specify Canva assembly: safe-zone placement, at most one tagline, typ
 "
 054,urdu-calligraphy-safe-poster,Urdu Calligraphy Safe Poster,images-video,Beginner,Use to create a culturally respectful poster while preserving accurate Urdu text.,A text-free art prompt and a safe manual Urdu typesetting plan.,"Ask a fluent Urdu reader to proof the final joined letters, punctuation, and meaning.","urdu, poster, typography",Adobe Firefly: Generates the text-free poster artwork from precise art direction.; Canva: Supports manual placement of verified text over the generated background.,,"You are directing an Urdu poster workflow that treats the script as designed language, not generated decoration.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Exact approved Urdu text: [URDU_TEXT]
 Roman/English meaning: [MEANING]
 Occasion and audience: [OCCASION]
@@ -805,6 +813,8 @@ Then provide a separate typesetting map: exact approved wording copied unchanged
 Include a proof checklist for joining forms, diacritics if required, punctuation direction, spelling, translation, logo clear space, and print bleed. Require review by a fluent reader before publishing. If the supplied Urdu appears uncertain, preserve it and flag it rather than silently correcting it.
 "
 055,midjourney-editorial-portrait,Midjourney Editorial Portrait,images-video,Beginner,Use for a controlled editorial portrait with explicit lighting and camera language.,A Midjourney-ready portrait prompt with variants and negative constraints.,Change one variable per reroll so you can identify what improved the portrait.,"midjourney, portrait, editorial",Midjourney: Excels at stylized editorial portrait concepts and lighting treatments.,,"Function as an editorial portrait director writing specifically for Midjourney.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Subject description or authorized reference: [SUBJECT]
 Publication or purpose: [PURPOSE]
@@ -821,6 +831,8 @@ Supply three single-variable variants: lighting mood, camera height, and backgro
 "
 056,runway-six-second-scene,Runway Six Second Scene,images-video,Beginner,"Use to brief a short, controlled image-to-video moment in Runway.",A Runway-ready clip brief with motion beats and continuity controls.,Use one subject action and one camera move; complexity causes visual drift.,"runway, video-generation, motion",Runway: Supports short generative video and image-to-video workflows.,,"Be a generative-video director designing one coherent six-second shot for Runway, not a full commercial.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Starting image or scene: [STARTING_FRAME]
 Subject action: [ONE_ACTION]
 Emotional beat: [EMOTION]
@@ -836,6 +848,8 @@ Then provide one lower-motion fallback if the first generation drifts, plus a si
 "
 057,capcut-caption-led-reel,CapCut Caption Led Reel,images-video,Beginner,Use to script a short vertical video designed for sound-off viewing.,"A timed reel script with shots, voice, captions, and edit cues.",Keep captions to one idea per screen and manually correct every proper noun.,"capcut, reels, captions","CapCut: Combines vertical editing, timing, captions, and simple motion treatments.",,"Act as a vertical-video editor scripting a caption-first reel that still works with the sound off.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Topic and useful takeaway: [TOPIC_AND_TAKEAWAY]
 Speaker or footage available: [FOOTAGE]
 Audience: [AUDIENCE]
@@ -850,6 +864,8 @@ Mark where to use punch-in, freeze frame, screen recording, icon, or emphasis wo
 Finish with the complete voice track, a caption-proofing list for names and Urdu words, and a final-frame layout that gives the call to action enough reading time. Avoid fake urgency, unsupported results, flashing effects, and auto-captions left unchecked.
 "
 058,elevenlabs-natural-voiceover,ElevenLabs Natural Voiceover,images-video,Beginner,Use to prepare a natural voiceover script with pronunciation and pacing cues.,A timed voiceover script with delivery and pronunciation notes.,"Generate paragraph by paragraph, then select takes with consistent energy.","elevenlabs, voiceover, audio",ElevenLabs: Generates expressive speech and supports controlled voiceover workflows.; Descript: Helps align the generated narration with the edited timeline.,,"You are a voice director preparing copy for ethical synthesis in ElevenLabs.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Video purpose: [PURPOSE]
 Audience: [AUDIENCE]
@@ -868,6 +884,8 @@ Supply two versions of the opening: direct and story-led. End with one clean cal
 "
 059,six-frame-storyboard-map,Six Frame Storyboard Map,images-video,Beginner,Use to previsualize a short video before filming or generating assets.,"A six-frame storyboard with shot, action, audio, and continuity details.",Check that the story is understandable from frame thumbnails alone.,"storyboard, preproduction, video",Canva: Makes storyboard frames and annotations easy to arrange.; Adobe Firefly: Generates consistent visual references for individual frames.,,"Take the role of a storyboard artist compressing [STORY_OR_MESSAGE] into exactly six purposeful frames.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Audience and platform: [AUDIENCE_PLATFORM]
 Duration: [DURATION]
 Main character or object: [SUBJECT]
@@ -882,6 +900,8 @@ Maintain screen direction, wardrobe, prop count, time of day, and geography. Use
 After the six frames, include a continuity ledger listing fixed visual facts and a production list separating what must be filmed, generated, recorded, or designed. Add one cheaper alternative that preserves the story with fewer locations. Do not include unsafe action, unlicensed brand marks, or claims not supported by [SOURCE_OR_BRIEF].
 "
 060,brand-consistent-image-family,Brand Consistent Image Family,images-video,Beginner,Use to generate several campaign images that feel related but not repetitive.,"A visual system, anchor prompt, and five coordinated scene prompts.",Approve one anchor image before generating the rest of the set.,"brand-system, image-series, campaign",Leonardo: Supports consistent visual development across a coordinated image series.; Adobe Firefly: Generates varied campaign scenes from controlled brand art direction.,,"Act as a campaign art director building a family of images with shared visual DNA.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Brand promise: [BRAND_PROMISE]
 Audience: [AUDIENCE]

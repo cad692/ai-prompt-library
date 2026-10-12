@@ -2871,11 +2871,11 @@ prompts:
   category: images-video
   difficulty: Beginner
   usage: Use to create a production-ready product image prompt without false features.
-  use_case: Directs an AI product visual for e-commerce or campaigns. The prompt preserves product identity
-    and specifies a controlled studio setup.
-  preview: 'You are a commercial product photographer translating a real item into a precise generation
-    brief. Product and verified features: [PRODUCT] Reference image available: [YES_OR_NO] Audience and
-    use...'
+  use_case: Directs an AI product visual for e-commerce or campaigns. The prompt preserves product 
+    identity and specifies a controlled studio setup.
+  preview: You are a commercial product photographer translating a real item into a precise 
+    generation brief. If any personalization field is blank or still shows brackets, continue with 
+    clearly labelled...
   best_tools:
   - tool: Adobe Firefly
     reason: Creates controlled commercial-style imagery with detailed visual direction.
@@ -2887,9 +2887,13 @@ prompts:
   - product-photography
   - ecommerce
   - image-prompt
-  next_id: null
+  next_id:
   prompt: 'You are a commercial product photographer translating a real item into a precise generation
     brief.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Product and verified features: [PRODUCT]
@@ -2929,10 +2933,11 @@ prompts:
   category: images-video
   difficulty: Beginner
   usage: Use to visualize a process or concept in one teachable image.
-  use_case: Creates a labelled or label-ready educational still with a clear reading order. It avoids
-    decoration that competes with learning.
-  preview: 'Work as a science-and-learning illustrator designing one still image that teaches [CONCEPT]
-    at a glance. Learner age or level: [LEVEL] Essential parts or stages: [PARTS] Misconception to prevent...'
+  use_case: Creates a labelled or label-ready educational still with a clear reading order. It 
+    avoids decoration that competes with learning.
+  preview: Work as a science-and-learning illustrator designing one still image that teaches 
+    [CONCEPT] at a glance. If any personalization field is blank or still shows brackets, continue 
+    with clearly labelled...
   best_tools:
   - tool: Adobe Firefly
     reason: Produces custom explanatory illustrations in controlled styles.
@@ -2944,9 +2949,13 @@ prompts:
   - education
   - illustration
   - explainer
-  next_id: null
+  next_id:
   prompt: 'Work as a science-and-learning illustrator designing one still image that teaches [CONCEPT]
     at a glance.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Learner age or level: [LEVEL]
@@ -2984,10 +2993,11 @@ prompts:
   category: images-video
   difficulty: Beginner
   usage: Use to design a professional banner that supports, rather than repeats, a profile.
-  use_case: Creates a banner concept around professional positioning and safe-zone composition. It includes
-    generation and assembly guidance.
-  preview: 'Act as a personal-brand art director designing a LinkedIn banner with quiet confidence. Professional
-    identity: [ROLE_OR_FIELD] People I help: [AUDIENCE] Value I create: [VALUE] Proof or focus areas...'
+  use_case: Creates a banner concept around professional positioning and safe-zone composition. It 
+    includes generation and assembly guidance.
+  preview: Act as a personal-brand art director designing a LinkedIn banner with quiet confidence. 
+    If any personalization field is blank or still shows brackets, continue with clearly labelled 
+    assumptions — do...
   best_tools:
   - tool: Canva
     reason: Provides practical banner sizing and editable text placement.
@@ -2999,8 +3009,12 @@ prompts:
   - linkedin
   - personal-brand
   - banner
-  next_id: null
+  next_id:
   prompt: 'Act as a personal-brand art director designing a LinkedIn banner with quiet confidence.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Professional identity: [ROLE_OR_FIELD]
@@ -3039,11 +3053,11 @@ prompts:
   category: images-video
   difficulty: Beginner
   usage: Use to create a culturally respectful poster while preserving accurate Urdu text.
-  use_case: Separates image generation from Urdu typesetting to prevent broken script. Suitable for events,
-    quotes, or awareness posters.
-  preview: 'You are directing an Urdu poster workflow that treats the script as designed language, not
-    generated decoration. Exact approved Urdu text: [URDU_TEXT] Roman/English meaning: [MEANING] Occasion
-    and...'
+  use_case: Separates image generation from Urdu typesetting to prevent broken script. Suitable for 
+    events, quotes, or awareness posters.
+  preview: You are directing an Urdu poster workflow that treats the script as designed language, 
+    not generated decoration. If any personalization field is blank or still shows brackets, 
+    continue with clearly...
   best_tools:
   - tool: Adobe Firefly
     reason: Generates the text-free poster artwork from precise art direction.
@@ -3055,9 +3069,13 @@ prompts:
   - urdu
   - poster
   - typography
-  next_id: null
+  next_id:
   prompt: 'You are directing an Urdu poster workflow that treats the script as designed language, not
     generated decoration.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Exact approved Urdu text: [URDU_TEXT]
@@ -3097,10 +3115,11 @@ prompts:
   category: images-video
   difficulty: Beginner
   usage: Use for a controlled editorial portrait with explicit lighting and camera language.
-  use_case: Builds a Midjourney-specific portrait prompt with composition and parameter guidance. It avoids
-    identity or credential misrepresentation.
-  preview: 'Function as an editorial portrait director writing specifically for Midjourney. Subject description
-    or authorized reference: [SUBJECT] Publication or purpose: [PURPOSE] Mood: [MOOD] Wardrobe...'
+  use_case: Builds a Midjourney-specific portrait prompt with composition and parameter guidance. It
+    avoids identity or credential misrepresentation.
+  preview: Function as an editorial portrait director writing specifically for Midjourney. If any 
+    personalization field is blank or still shows brackets, continue with clearly labelled 
+    assumptions — do not...
   best_tools:
   - tool: Midjourney
     reason: Excels at stylized editorial portrait concepts and lighting treatments.
@@ -3110,8 +3129,12 @@ prompts:
   - midjourney
   - portrait
   - editorial
-  next_id: null
+  next_id:
   prompt: 'Function as an editorial portrait director writing specifically for Midjourney.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Subject description or authorized reference: [SUBJECT]
@@ -3152,10 +3175,11 @@ prompts:
   category: images-video
   difficulty: Beginner
   usage: Use to brief a short, controlled image-to-video moment in Runway.
-  use_case: Defines one achievable video action with camera movement and continuity constraints. It is
-    intentionally scoped for a short clip.
-  preview: 'Be a generative-video director designing one coherent six-second shot for Runway, not a full
-    commercial. Starting image or scene: [STARTING_FRAME] Subject action: [ONE_ACTION] Emotional beat...'
+  use_case: Defines one achievable video action with camera movement and continuity constraints. It 
+    is intentionally scoped for a short clip.
+  preview: Be a generative-video director designing one coherent six-second shot for Runway, not a 
+    full commercial. If any personalization field is blank or still shows brackets, continue with 
+    clearly labelled...
   best_tools:
   - tool: Runway
     reason: Supports short generative video and image-to-video workflows.
@@ -3165,9 +3189,13 @@ prompts:
   - runway
   - video-generation
   - motion
-  next_id: null
+  next_id:
   prompt: 'Be a generative-video director designing one coherent six-second shot for Runway, not a full
     commercial.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Starting image or scene: [STARTING_FRAME]
@@ -3206,10 +3234,11 @@ prompts:
   category: images-video
   difficulty: Beginner
   usage: Use to script a short vertical video designed for sound-off viewing.
-  use_case: Creates a CapCut-specific edit script with spoken lines, captions, and visual beats. Captions
-    remain readable on a phone.
-  preview: 'Act as a vertical-video editor scripting a caption-first reel that still works with the sound
-    off. Topic and useful takeaway: [TOPIC_AND_TAKEAWAY] Speaker or footage available: [FOOTAGE] Audience...'
+  use_case: Creates a CapCut-specific edit script with spoken lines, captions, and visual beats. 
+    Captions remain readable on a phone.
+  preview: Act as a vertical-video editor scripting a caption-first reel that still works with the 
+    sound off. If any personalization field is blank or still shows brackets, continue with clearly 
+    labelled...
   best_tools:
   - tool: CapCut
     reason: Combines vertical editing, timing, captions, and simple motion treatments.
@@ -3219,9 +3248,13 @@ prompts:
   - capcut
   - reels
   - captions
-  next_id: null
+  next_id:
   prompt: 'Act as a vertical-video editor scripting a caption-first reel that still works with the sound
     off.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Topic and useful takeaway: [TOPIC_AND_TAKEAWAY]
@@ -3253,16 +3286,17 @@ prompts:
     flashing effects, and auto-captions left unchecked.
 
     '
-- id: 058
+- id: '058'
   slug: elevenlabs-natural-voiceover
   title: ElevenLabs Natural Voiceover
   category: images-video
   difficulty: Beginner
   usage: Use to prepare a natural voiceover script with pronunciation and pacing cues.
-  use_case: Writes spoken copy suitable for synthesis in ElevenLabs. It includes ethical voice-use and
-    pronunciation safeguards.
-  preview: 'You are a voice director preparing copy for ethical synthesis in ElevenLabs. Video purpose:
-    [PURPOSE] Audience: [AUDIENCE] Target duration: [DURATION] Language and accent preference...'
+  use_case: Writes spoken copy suitable for synthesis in ElevenLabs. It includes ethical voice-use 
+    and pronunciation safeguards.
+  preview: You are a voice director preparing copy for ethical synthesis in ElevenLabs. If any 
+    personalization field is blank or still shows brackets, continue with clearly labelled 
+    assumptions — do not invent...
   best_tools:
   - tool: ElevenLabs
     reason: Generates expressive speech and supports controlled voiceover workflows.
@@ -3274,8 +3308,12 @@ prompts:
   - elevenlabs
   - voiceover
   - audio
-  next_id: null
+  next_id:
   prompt: 'You are a voice director preparing copy for ethical synthesis in ElevenLabs.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Video purpose: [PURPOSE]
@@ -3314,16 +3352,17 @@ prompts:
     clipping, consistency, and truthful claims.
 
     '
-- id: 059
+- id: '059'
   slug: six-frame-storyboard-map
   title: Six Frame Storyboard Map
   category: images-video
   difficulty: Beginner
   usage: Use to previsualize a short video before filming or generating assets.
-  use_case: Maps a complete micro-story into six visually distinct frames. Each frame connects composition,
-    camera, lighting, action, and sound.
-  preview: 'Take the role of a storyboard artist compressing [STORY_OR_MESSAGE] into exactly six purposeful
-    frames. Audience and platform: [AUDIENCE_PLATFORM] Duration: [DURATION] Main character or object...'
+  use_case: Maps a complete micro-story into six visually distinct frames. Each frame connects 
+    composition, camera, lighting, action, and sound.
+  preview: Take the role of a storyboard artist compressing [STORY_OR_MESSAGE] into exactly six 
+    purposeful frames. If any personalization field is blank or still shows brackets, continue with 
+    clearly labelled...
   best_tools:
   - tool: Canva
     reason: Makes storyboard frames and annotations easy to arrange.
@@ -3335,9 +3374,13 @@ prompts:
   - storyboard
   - preproduction
   - video
-  next_id: null
+  next_id:
   prompt: 'Take the role of a storyboard artist compressing [STORY_OR_MESSAGE] into exactly six purposeful
     frames.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Audience and platform: [AUDIENCE_PLATFORM]
@@ -3376,10 +3419,11 @@ prompts:
   category: images-video
   difficulty: Beginner
   usage: Use to generate several campaign images that feel related but not repetitive.
-  use_case: Defines a reusable visual grammar for a coordinated image set. It separates fixed brand rules
-    from scene-level variation.
-  preview: 'Act as a campaign art director building a family of images with shared visual DNA. Brand promise:
-    [BRAND_PROMISE] Audience: [AUDIENCE] Campaign uses: [USES] Required subjects or scenes: [SCENES]...'
+  use_case: Defines a reusable visual grammar for a coordinated image set. It separates fixed brand 
+    rules from scene-level variation.
+  preview: Act as a campaign art director building a family of images with shared visual DNA. If any
+    personalization field is blank or still shows brackets, continue with clearly labelled 
+    assumptions — do not...
   best_tools:
   - tool: Leonardo
     reason: Supports consistent visual development across a coordinated image series.
@@ -3391,8 +3435,12 @@ prompts:
   - brand-system
   - image-series
   - campaign
-  next_id: null
+  next_id:
   prompt: 'Act as a campaign art director building a family of images with shared visual DNA.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Brand promise: [BRAND_PROMISE]

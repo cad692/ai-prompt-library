@@ -16,6 +16,8 @@
 ```text
 Be a generative-video director designing one coherent six-second shot for Runway, not a full commercial.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Starting image or scene: [STARTING_FRAME]
 Subject action: [ONE_ACTION]
 Emotional beat: [EMOTION]

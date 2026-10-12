@@ -1020,224 +1020,224 @@
     ex: A short sample and missing data
 "051":
   PRODUCT:
-    q: "What product are you shooting?"
-    ex: "A reusable water bottle"
+    q: What product should shape this studio product photo director?
+    ex: A reusable water bottle
   YES_OR_NO:
-    q: "Do you have a reference image?"
-    ex: "Yes"
+    q: Do you have a reference image?
+    ex: 'Yes'
   AUDIENCE_AND_USE:
-    q: "Who is it for and how is it used?"
-    ex: "Students on campus"
+    q: Who is it for and how is it used?
+    ex: Students on campus
   BRAND_CHARACTER:
-    q: "What brand character should it have?"
-    ex: "Simple and premium"
+    q: What brand character should it have?
+    ex: Simple and premium
   ASPECT_RATIO:
-    q: "What aspect ratio do you need?"
-    ex: "Square"
+    q: What aspect ratio do you need?
+    ex: Square
   LOCKED_FEATURES:
-    q: "What product features must not change?"
-    ex: "Color, shape, and size"
+    q: What product features must not change?
+    ex: Color, shape, and size
   COPY_POSITION:
-    q: "Where should any text go?"
-    ex: "Bottom left"
+    q: What copy position should shape this studio product photo director?
+    ex: Bottom left
 "052":
   CONCEPT:
-    q: "What concept are you explaining?"
-    ex: "The water cycle"
+    q: What concept should shape this educational explainer still?
+    ex: The water cycle
   LEVEL:
-    q: "What learner level is this?"
-    ex: "Middle school"
+    q: What level should shape this educational explainer still?
+    ex: Middle school
   PARTS:
-    q: "What parts or stages matter?"
-    ex: "Evaporation, rain, and collection"
+    q: What parts should shape this educational explainer still?
+    ex: Evaporation, rain, and collection
   MISCONCEPTION:
-    q: "What misconception should be avoided?"
-    ex: "Clouds make rain from nothing"
+    q: What misconception should shape this educational explainer still?
+    ex: Clouds make rain from nothing
   FORMAT:
-    q: "What format do you need?"
-    ex: "A single classroom poster"
+    q: What format should shape this educational explainer still?
+    ex: A single classroom poster
   STYLE_PREFERENCE:
-    q: "What style do you want?"
-    ex: "Clean and simple"
+    q: What style preference should shape this educational explainer still?
+    ex: Clean and simple
 "053":
   ROLE_OR_FIELD:
-    q: "What is your role or field?"
-    ex: "Product designer"
+    q: What is your role or field?
+    ex: Product designer
   AUDIENCE:
-    q: "Who are you trying to reach?"
-    ex: "Recruiters in tech"
+    q: Who will see or use this output?
+    ex: Recruiters in tech
   VALUE:
-    q: "What value do you bring?"
-    ex: "User-centered design systems"
+    q: What value should shape this linkedin profile banner brief?
+    ex: User-centered design systems
   FOCUS_AREAS:
-    q: "What should the banner emphasize?"
-    ex: "Research, prototyping, and delivery"
+    q: What focus areas should shape this linkedin profile banner brief?
+    ex: Research, prototyping, and delivery
   BRAND_CUES:
-    q: "What brand cues matter?"
-    ex: "Minimal and modern"
+    q: What brand cues should shape this linkedin profile banner brief?
+    ex: Minimal and modern
   TAGLINE:
-    q: "Do you have a short tagline?"
-    ex: "Designing clarity into decisions"
+    q: Do you have a short tagline?
+    ex: Designing clarity into decisions
 "054":
   URDU_TEXT:
-    q: "What Urdu text must be used?"
-    ex: "A short event slogan"
+    q: What Urdu text must be used?
+    ex: A short event slogan
   MEANING:
-    q: "What does it mean in English?"
-    ex: "Together we learn"
+    q: What does it mean in English?
+    ex: Together we learn
   OCCASION:
-    q: "What is the occasion?"
-    ex: "A student event"
+    q: What occasion should shape this urdu calligraphy safe poster?
+    ex: A student event
   MOOD:
-    q: "What feeling should the poster have?"
-    ex: "Hopeful and calm"
+    q: What feeling should the poster have?
+    ex: Hopeful and calm
   OUTPUT_SIZE:
-    q: "What poster size do you need?"
-    ex: "A4 or Instagram post"
+    q: What poster size do you need?
+    ex: A4 or Instagram post
   LOGOS:
-    q: "What logos or sponsor marks are included?"
-    ex: "University and event logos"
+    q: What logos or sponsor marks are included?
+    ex: University and event logos
   ART_STYLE:
-    q: "What art style should the background use?"
-    ex: "Minimal geometric"
+    q: What art style should the background use?
+    ex: Minimal geometric
 "055":
   SUBJECT:
-    q: "Who or what is the subject?"
-    ex: "A young professional woman"
+    q: Who or what is the subject?
+    ex: A young professional woman
   PURPOSE:
-    q: "What is the portrait for?"
-    ex: "A magazine cover"
+    q: What is the purpose of this work?
+    ex: A magazine cover
   MOOD:
-    q: "What emotional tone should it have?"
-    ex: "Confident and calm"
+    q: What emotional tone should it have?
+    ex: Confident and calm
   WARDROBE:
-    q: "What should they wear?"
-    ex: "Smart casual officewear"
+    q: What wardrobe should shape this midjourney editorial portrait?
+    ex: Smart casual officewear
   SETTING:
-    q: "Where is the backdrop?"
-    ex: "An urban studio"
+    q: What local setting or context should examples use?
+    ex: An urban studio
   CROP:
-    q: "What crop do you want?"
-    ex: "Medium close-up"
+    q: What crop should shape this midjourney editorial portrait?
+    ex: Medium close-up
   ASPECT_RATIO:
-    q: "What aspect ratio should it use?"
-    ex: "Portrait"
+    q: What aspect ratio should it use?
+    ex: Portrait
   MODEL_VERSION:
-    q: "Which model version should we target?"
-    ex: "Latest Midjourney default"
+    q: Which model version should we target?
+    ex: Latest Midjourney default
   STYLIZE:
-    q: "How stylized should the result be?"
-    ex: "Moderately stylized"
+    q: How stylized should the result be?
+    ex: Moderately stylized
 "056":
   STARTING_FRAME:
-    q: "What is the starting image or scene?"
-    ex: "A close-up of a tea cup"
+    q: What is the starting image or scene?
+    ex: A close-up of a tea cup
   ONE_ACTION:
-    q: "What single action should happen?"
-    ex: "A hand picks up the cup"
+    q: What one action should shape this runway six second scene?
+    ex: A hand picks up the cup
   EMOTION:
-    q: "What feeling should the shot have?"
-    ex: "Calm and reflective"
+    q: What feeling should the shot have?
+    ex: Calm and reflective
   PLATFORM:
-    q: "Where will the clip be published?"
-    ex: "Instagram Reels"
+    q: Where will the clip be published?
+    ex: Instagram Reels
   ASPECT_RATIO:
-    q: "What aspect ratio should it use?"
-    ex: "9:16"
+    q: What aspect ratio should it use?
+    ex: '9:16'
   BRAND_LOOK:
-    q: "What brand look do you want?"
-    ex: "Soft and premium"
+    q: What brand look do you want?
+    ex: Soft and premium
 "057":
   TOPIC_AND_TAKEAWAY:
-    q: "What topic and takeaway should the reel have?"
-    ex: "Three study tips"
+    q: What topic and takeaway should the reel have?
+    ex: Three study tips
   FOOTAGE:
-    q: "What footage or speaker is available?"
-    ex: "Phone footage and voiceover"
+    q: What footage or speaker is available?
+    ex: Phone footage and voiceover
   AUDIENCE:
-    q: "Who is this for?"
-    ex: "University students"
+    q: Who will see or use this output?
+    ex: University students
   20_TO_45_SECONDS:
-    q: "How long should the reel be?"
-    ex: "Thirty seconds"
+    q: How long should the reel be?
+    ex: Thirty seconds
   TONE:
-    q: "What tone should it have?"
-    ex: "Helpful and energetic"
+    q: What tone should the final output use?
+    ex: Helpful and energetic
   CTA:
-    q: "What should viewers do next?"
-    ex: "Save this for later"
+    q: What cta should shape this capcut caption led reel?
+    ex: Save this for later
 "058":
   PURPOSE:
-    q: "What is the video for?"
-    ex: "An explainer for students"
+    q: What is the purpose of this work?
+    ex: An explainer for students
   AUDIENCE:
-    q: "Who is the audience?"
-    ex: "First-year undergraduates"
+    q: Who will see or use this output?
+    ex: First-year undergraduates
   DURATION:
-    q: "How long should the narration be?"
-    ex: "Sixty seconds"
+    q: What is the total time limit?
+    ex: 8 minutes speaking / 30-minute meeting
   LANGUAGE_ACCENT:
-    q: "What language or accent should it use?"
-    ex: "English with a neutral accent"
+    q: What language or accent should it use?
+    ex: English with a neutral accent
   VOICE_CHARACTER:
-    q: "What voice character fits the video?"
-    ex: "Warm and clear"
+    q: What voice character fits the video?
+    ex: Warm and clear
   TERMS:
-    q: "What names or terms need careful pronunciation?"
-    ex: "Acronyms and Urdu words"
+    q: What names or terms need careful pronunciation?
+    ex: Acronyms and Urdu words
   VISUAL_SEQUENCE:
-    q: "What visual sequence should the narration match?"
-    ex: "Slide transitions and key moments"
+    q: What visual sequence should the narration match?
+    ex: Slide transitions and key moments
   VISUAL_DIRECTION:
-    q: "How should the visuals feel?"
-    ex: "Clean and modern"
+    q: What visual direction should shape this elevenlabs natural voiceover?
+    ex: Clean and modern
   WORDS_PER_MINUTE:
-    q: "What speaking pace should we target?"
-    ex: "150 words per minute"
+    q: What speaking pace should we target?
+    ex: 150 words per minute
 "059":
   STORY_OR_MESSAGE:
-    q: "What story or message is being told?"
-    ex: "A short product reveal"
+    q: What story or message is being told?
+    ex: A short product reveal
   AUDIENCE_PLATFORM:
-    q: "Who is it for and where will it play?"
-    ex: "Instagram audience"
+    q: Who is it for and where will it play?
+    ex: Instagram audience
   DURATION:
-    q: "How long should the sequence be?"
-    ex: "Ten seconds"
+    q: What is the total time limit?
+    ex: 8 minutes speaking / 30-minute meeting
   SUBJECT:
-    q: "Who or what is the main subject?"
-    ex: "A reusable bottle"
+    q: Who or what is the main subject?
+    ex: A reusable bottle
   LOCATION:
-    q: "Where is the story set?"
-    ex: "A home kitchen"
+    q: What location should shape this six frame storyboard map?
+    ex: A home kitchen
   STYLE:
-    q: "What visual style do you want?"
-    ex: "Clean and modern"
+    q: What visual style do you want?
+    ex: Clean and modern
   ENDING:
-    q: "What should the ending feel like?"
-    ex: "Clear and satisfying"
+    q: What should the ending feel like?
+    ex: Clear and satisfying
   SOURCE_OR_BRIEF:
-    q: "What source or brief should we follow?"
-    ex: "The campaign brief"
+    q: What source or brief should we follow?
+    ex: The campaign brief
 "060":
   BRAND_PROMISE:
-    q: "What is the brand promise?"
-    ex: "Better learning with less stress"
+    q: What brand promise should shape this brand consistent image family?
+    ex: Better learning with less stress
   AUDIENCE:
-    q: "Who is the campaign for?"
-    ex: "University students"
+    q: Who will see or use this output?
+    ex: University students
   USES:
-    q: "How will the images be used?"
-    ex: "Website and social posts"
+    q: How will the images be used?
+    ex: Website and social posts
   SCENES:
-    q: "What scenes or subjects are required?"
-    ex: "Study space and group work"
+    q: What scenes or subjects are required?
+    ex: Study space and group work
   ASSETS:
-    q: "What brand assets already exist?"
-    ex: "Logo and brand colours"
+    q: What assets should shape this brand consistent image family?
+    ex: Logo and brand colours
   EXCLUSIONS:
-    q: "What should be avoided?"
-    ex: "Stock clichés and clutter"
+    q: What exclusions should shape this brand consistent image family?
+    ex: Stock clichés and clutter
 "061":
   SENDER:
     q: "Who is sending the email?"

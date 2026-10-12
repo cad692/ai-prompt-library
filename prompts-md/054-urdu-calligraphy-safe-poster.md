@@ -17,6 +17,8 @@
 ```text
 You are directing an Urdu poster workflow that treats the script as designed language, not generated decoration.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Exact approved Urdu text: [URDU_TEXT]
 Roman/English meaning: [MEANING]
 Occasion and audience: [OCCASION]

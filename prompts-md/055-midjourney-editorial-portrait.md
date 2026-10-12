@@ -16,6 +16,8 @@
 ```text
 Function as an editorial portrait director writing specifically for Midjourney.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Subject description or authorized reference: [SUBJECT]
 Publication or purpose: [PURPOSE]
 Mood: [MOOD]
