@@ -17,3 +17,412 @@
   TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS:
     q: "Any limits you must work within?"
     ex: "Budget, travel, or family duties"
+"002":
+  DATES:
+    q: "Which week do you want planned?"
+    ex: "This week or 14-20 April"
+  CLASSES_MEETINGS_COMMUTE_FAMILY_DUTIES:
+    q: "What fixed commitments do you have?"
+    ex: "Classes, commute, and family duties"
+  TASKS:
+    q: "What tasks need attention?"
+    ex: "Assignments, report work, and chores"
+  FOCUS_HOURS:
+    q: "When are you most focused?"
+    ex: "7pm to 10pm"
+  ENERGY_PATTERN:
+    q: "What is your energy pattern?"
+    ex: "Better in the morning"
+  AVAILABLE_TIME:
+    q: "How much time do you have?"
+    ex: "Two hours each evening"
+  SLEEP_EXERCISE_PRAYER_MEALS_OR_REST:
+    q: "What recovery time matters to you?"
+    ex: "Sleep, meals, and prayer time"
+  CITY_OR_SETTING:
+    q: "What city or setting should we use?"
+    ex: "Karachi or hostel life"
+"003":
+  SKILL:
+    q: "What skill do you want to improve?"
+    ex: "Public speaking"
+  REAL_WORLD_GOAL:
+    q: "What will you use it for?"
+    ex: "Class presentations and interviews"
+  MINUTES:
+    q: "How much practice time do you have?"
+    ex: "Twenty minutes"
+  PAKISTAN_CONTEXT_OR_INDUSTRY:
+    q: "What context should we use?"
+    ex: "University life in Lahore"
+  REVIEW_DATE:
+    q: "When should we review it?"
+    ex: "Next Friday"
+  SUCCESS_THRESHOLD:
+    q: "What result would count as success?"
+    ex: "Three clear points in a talk"
+"004":
+  PASTE_EMAIL:
+    q: "Paste the email you want rewritten?"
+    ex: "Hi sir, I would like to request..."
+  RECIPIENT_CONTEXT:
+    q: "Who is the email for?"
+    ex: "A lecturer or hiring manager"
+  OUTCOME:
+    q: "What do you want from the reply?"
+    ex: "A meeting time or permission"
+  WARM_DIRECT_FORMAL_DIPLOMATIC:
+    q: "What tone should it have?"
+    ex: "Warm and professional"
+  CONSIDERATIONS:
+    q: "Any cultural or workplace details?"
+    ex: "Need to sound respectful"
+    optional: true
+  WORD_LIMIT:
+    q: "How long should the email be?"
+    ex: "Under 200 words"
+"005":
+  MEETING_NAME:
+    q: "What is this meeting about?"
+    ex: "Semester project review"
+  DATE:
+    q: "When is the meeting?"
+    ex: "Tuesday at 4pm"
+  BACKGROUND:
+    q: "What background should we know?"
+    ex: "Last month's delay and costs"
+  PARTICIPANTS:
+    q: "Who will be in the meeting?"
+    ex: "Project team and supervisor"
+  IDEAL_OUTCOME:
+    q: "What outcome would be ideal?"
+    ex: "A clear action plan"
+  MINIMUM_OUTCOME:
+    q: "What is the minimum success?"
+    ex: "Approval of the next step"
+  SENSITIVE_POINTS:
+    q: "What topics need care?"
+    ex: "Budget and deadlines"
+    optional: true
+  MATERIALS:
+    q: "What notes or files are needed?"
+    ex: "Slides and cost sheet"
+    optional: true
+  MINUTES:
+    q: "How much time is available?"
+    ex: "30 minutes"
+"006":
+  GOAL:
+    q: "What are you trying to create?"
+    ex: "A student club idea"
+  AUDIENCE:
+    q: "Who is the idea for?"
+    ex: "First-year students"
+  BUDGET:
+    q: "What budget do you have?"
+    ex: "Rs. 15,000"
+  TIME:
+    q: "How much time is available?"
+    ex: "Three weeks"
+  TEAM_SIZE:
+    q: "How many people are involved?"
+    ex: "Four teammates"
+  RESOURCES:
+    q: "What resources can you use?"
+    ex: "A lab and a small laptop"
+  NON_NEGOTIABLES:
+    q: "What must stay fixed?"
+    ex: "Low cost and safe design"
+  EXCLUSIONS:
+    q: "What should be avoided?"
+    ex: "Unsafe materials or over-spending"
+  LOCAL_CONTEXT:
+    q: "What local situation matters?"
+    ex: "Lahore power cuts and campus rules"
+    optional: true
+  MEASURE_OF_SUCCESS:
+    q: "How will you judge success?"
+    ex: "More student engagement"
+  OTHER_FIELD:
+    q: "What field should we borrow from?"
+    ex: "Design thinking"
+    optional: true
+  DAYS:
+    q: "How many days is the pilot?"
+    ex: "Seven days"
+  PILOT_BUDGET:
+    q: "What is the pilot budget?"
+    ex: "Rs. 5,000"
+"007":
+  ROLE:
+    q: "What role are you applying for?"
+    ex: "Junior data analyst"
+  ORGANISATION_TYPE:
+    q: "What type of organisation is it?"
+    ex: "A tech startup"
+  JOB_DESCRIPTION:
+    q: "Paste the job description?"
+    ex: "We need strong Excel and SQL skills"
+  BACKGROUND:
+    q: "What is your background?"
+    ex: "Business studies and internship"
+  WEAK_AREA:
+    q: "What area do you want to improve?"
+    ex: "Technical interviews"
+  SELECTION_CRITERIA:
+    q: "What matters most to them?"
+    ex: "Problem-solving and teamwork"
+"008":
+  CONCEPT:
+    q: "What concept do you want explained?"
+    ex: "Machine learning basics"
+  WHAT_I_ALREADY_KNOW:
+    q: "What do you already know?"
+    ex: "Basic statistics only"
+  PURPOSE:
+    q: "Why do you need the explanation?"
+    ex: "For a class assignment"
+  FIELD:
+    q: "What field is this in?"
+    ex: "Computer science"
+  LOCAL_OR_PERSONAL_CONTEXT:
+    q: "Any local or personal context?"
+    ex: "A student project in Islamabad"
+    optional: true
+  APPLICATION:
+    q: "How will it be used?"
+    ex: "To explain a model to classmates"
+"009":
+  HABIT:
+    q: "What habit are you testing?"
+    ex: "Daily revision"
+  ROUTINE:
+    q: "What is your current routine?"
+    ex: "Study after dinner"
+  PERSONAL_REASON:
+    q: "Why do you want this habit?"
+    ex: "To feel more prepared"
+  OBSTACLES:
+    q: "What gets in the way?"
+    ex: "Phone distraction and tiredness"
+  TIME_OR_MONEY:
+    q: "What cost or time issue matters?"
+    ex: "Only 15 minutes a day"
+    optional: true
+  PAST_ATTEMPTS:
+    q: "What have you tried before?"
+    ex: "A strict schedule for one week"
+"010":
+  RELATIONSHIP:
+    q: "What is your relationship?"
+    ex: "A classmate or coworker"
+  EVENTS:
+    q: "What happened?"
+    ex: "A missed meeting and a delayed task"
+  IMPACT:
+    q: "What was the impact?"
+    ex: "Stress and confusion for the team"
+  REQUEST_OR_BOUNDARY:
+    q: "What do you want to ask for?"
+    ex: "A clearer timeline and boundary"
+  WHATSAPP_EMAIL_SMS_OR_OTHER:
+    q: "Which channel should we use?"
+    ex: "WhatsApp or email"
+  CONCERNS:
+    q: "What worries you most?"
+    ex: "Keeping the tone respectful"
+  TRUSTED_PERSON_OR_FORMAL_CHANNEL:
+    q: "Who should help if needed?"
+    ex: "A trusted mentor or formal email"
+    optional: true
+  WORD_LIMIT:
+    q: "How long should the message be?"
+    ex: "Under 120 words"
+  LANGUAGE_PREFERENCE:
+    q: "What language should it use?"
+    ex: "English with simple Urdu words"
+    optional: true
+"011":
+  CLAIM:
+    q: "What claim are you checking?"
+    ex: "A social media claim about study habits"
+  DECISION_OR_PROJECT:
+    q: "What decision or project is this for?"
+    ex: "Choosing a product to buy"
+  LOCATION:
+    q: "Where is this happening?"
+    ex: "Islamabad or Karachi"
+  DATE_RANGE:
+    q: "What time period should we cover?"
+    ex: "Last six months"
+  POPULATION:
+    q: "Who is being studied?"
+    ex: "College students in Pakistan"
+  DEFINITIONS:
+    q: "What terms need clear meaning?"
+    ex: "What counts as a healthy habit"
+"012":
+  TOPIC:
+    q: "What topic are you mapping?"
+    ex: "AI in education"
+  DISCIPLINE:
+    q: "What field is this in?"
+    ex: "Education and technology"
+  GEOGRAPHY:
+    q: "What region matters?"
+    ex: "South Asia"
+  YEARS:
+    q: "What years should we include?"
+    ex: "2019 to 2025"
+  POPULATION:
+    q: "Who are you studying?"
+    ex: "University students"
+  LANGUAGES:
+    q: "Which languages are relevant?"
+    ex: "English and Urdu"
+  COURSE_DISSERTATION_POLICY_OR_WORK_PROJECT:
+    q: "What project is this for?"
+    ex: "A final-year dissertation"
+  SOURCE_LIST:
+    q: "What source list do you have?"
+    ex: "Ten journal articles and two reports"
+"013":
+  PASTED_TEXT_OR_DOCUMENT:
+    q: "What text or document are you checking?"
+    ex: "A pasted paragraph from a report"
+  AUDIENCE:
+    q: "Who is this for?"
+    ex: "A teacher or manager"
+  ACADEMIC_POLICY_BUSINESS_OR_OTHER:
+    q: "What setting is this in?"
+    ex: "Academic policy"
+  MAX_WORDS:
+    q: "How long should the response be?"
+    ex: "500 words"
+"014":
+  TOPIC:
+    q: "What topic are you summarising?"
+    ex: "Renewable energy in cities"
+  AUDIENCE:
+    q: "Who is the audience?"
+    ex: "A group of students"
+  CUT_OFF_DATE:
+    q: "What date should we cover up to?"
+    ex: "31 March 2025"
+  QUESTION:
+    q: "What question are you answering?"
+    ex: "What is the main finding?"
+  STAKEHOLDERS:
+    q: "Who is affected?"
+    ex: "Students, staff, and local residents"
+"015":
+  OBSERVATION_OR_OUTCOME:
+    q: "What outcome are you explaining?"
+    ex: "Lower exam scores this term"
+  CONTEXT:
+    q: "What context matters here?"
+    ex: "A campus change and timetable shift"
+  DATA:
+    q: "What data do you have?"
+    ex: "Attendance and assignment marks"
+  CURRENT_BELIEF:
+    q: "What explanation do you favour now?"
+    ex: "Students were less prepared"
+  TIME_ACCESS_ETHICS_OR_BUDGET:
+    q: "What limits matter in your investigation?"
+    ex: "Budget, ethics, and time"
+  RESULT:
+    q: "What result would change your mind?"
+    ex: "Attendance stays low"
+  HYPOTHESIS:
+    q: "What is your main hypothesis?"
+    ex: "The timing of classes is the problem"
+  OTHER_RESULT:
+    q: "What other result matters?"
+    ex: "Assignments improve but attendance falls"
+"016":
+  NEWS_URL_OR_TEXT:
+    q: "Paste the news item or link?"
+    ex: "A headline and article link"
+  STUDY_URL_OR_FILE:
+    q: "Where is the study or file?"
+    ex: "A downloadable PDF or link"
+"017":
+  TOPIC:
+    q: "What topic are you refining?"
+    ex: "Student motivation in online learning"
+  LEVEL_OR_PROGRAMME:
+    q: "What level or programme is this?"
+    ex: "Undergraduate business studies"
+  TIME_AVAILABLE:
+    q: "How much time do you have?"
+    ex: "One hour"
+  WORD_LIMIT:
+    q: "How long should it be?"
+    ex: "300 words"
+  ACCESS:
+    q: "What access do you have?"
+    ex: "Campus library and online articles"
+"018":
+  RESEARCH_TOPIC:
+    q: "What topic are you reviewing?"
+    ex: "Remote work stress"
+  UPLOADED_SOURCES_OR_PASTED_TEXT:
+    q: "What sources or text do you have?"
+    ex: "Uploaded notes and paper excerpts"
+  APA_MLA_CHICAGO_OR_OTHER:
+    q: "Which citation style do you need?"
+    ex: "APA 7"
+  WORDS:
+    q: "How long should the summary be?"
+    ex: "800 words"
+  QUESTION:
+    q: "What question are you answering?"
+    ex: "What causes the trend?"
+  DIRECTION:
+    q: "What direction should the review take?"
+    ex: "Supportive but critical"
+  VERIFY:
+    q: "What needs checking before you use it?"
+    ex: "Dates, page numbers, and quotes"
+"019":
+  CORPUS_OR_SOURCE_LIST:
+    q: "What sources are you reviewing?"
+    ex: "A list of news reports and studies"
+  TOPIC:
+    q: "What topic are you mapping?"
+    ex: "Energy price changes"
+  YEARS:
+    q: "What years should we include?"
+    ex: "2020 to 2024"
+  GEOGRAPHY:
+    q: "What region matters?"
+    ex: "Punjab and Sindh"
+  POPULATION:
+    q: "Who is the focus?"
+    ex: "Urban households"
+  DISCIPLINE:
+    q: "What subject area is this?"
+    ex: "Public policy"
+  TARGET_CONTEXT:
+    q: "What context should we use?"
+    ex: "A local government decision"
+"020":
+  CLAIM_OR_CONTENT:
+    q: "What claim or content are you checking?"
+    ex: "A social media post about taxes"
+  SOURCE_OR_PLATFORM:
+    q: "Where did it appear?"
+    ex: "Instagram or a news channel"
+  DATE_SEEN:
+    q: "When did you see it?"
+    ex: "Last Friday"
+  LOCATION:
+    q: "Where was it shared?"
+    ex: "Karachi or a public group"
+  WHY_IT_MATTERS:
+    q: "Why does it matter?"
+    ex: "It affects public trust"
+  FILE_OR_LINK:
+    q: "Please share the link or file?"
+    ex: "A screenshot or article link"

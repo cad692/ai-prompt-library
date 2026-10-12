@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "prompts.yaml"
 QUESTIONS_PATH = ROOT / "data" / "questions.yaml"
 TOKEN_RE = re.compile(r"\[([A-Z0-9_]+)\]")
+EXEMPT_TOKENS = set()
 
 
 def load_yaml(path: Path):
@@ -71,6 +72,8 @@ def check_questions(start_hash: str):
         question_token_set = set(meta)
 
         for token in sorted(prompt_token_set):
+            if token in EXEMPT_TOKENS:
+                continue
             if token not in meta:
                 errors.append(f"{pid}: missing token {token} in questions.yaml")
                 continue
@@ -86,7 +89,7 @@ def check_questions(start_hash: str):
             if q_text and len(q_text.split()) > 12:
                 errors.append(f"{pid}: token {token} q exceeds 12 words: {q_text}")
 
-        extras = sorted(question_token_set - prompt_token_set)
+        extras = sorted((question_token_set - prompt_token_set) - EXEMPT_TOKENS)
         if extras:
             errors.append(f"{pid}: questions.yaml has extra tokens not used in the prompt: {', '.join(extras)}")
 
