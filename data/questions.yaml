@@ -1635,3 +1635,401 @@
   NOTION_OR_OBSIDIAN:
     q: "Which tool do you prefer?"
     ex: "Notion or Obsidian"
+"081":
+  SELECTED_TEXT:
+    q: "What text should be rewritten?"
+    ex: "A paragraph from a draft"
+  DOCUMENT_CONTEXT:
+    q: "What document context matters?"
+    ex: "The surrounding section and audience"
+  AUDIENCE:
+    q: "Who is the intended reader?"
+    ex: "A department lead"
+  PURPOSE:
+    q: "What is the writing purpose?"
+    ex: "Explain a policy change clearly"
+  TONE:
+    q: "What tone should the rewrite keep?"
+    ex: "Clear and professional"
+  LANGUAGE_PREFERENCE:
+    q: "What language preference should we follow?"
+    ex: "Pakistani English with formal wording"
+"082":
+  BUSINESS_QUESTION:
+    q: "What business question are you answering?"
+    ex: "Which region is growing fastest?"
+  TABLE_NAME:
+    q: "What table should the analysis use?"
+    ex: "Sales_Data"
+  COLUMN_DESCRIPTIONS:
+    q: "What columns are relevant to the analysis?"
+    ex: "Date, region, and revenue"
+  DATE_RANGE:
+    q: "What date range should be used?"
+    ex: "This quarter"
+  SEGMENTS:
+    q: "What segment breakdown matters?"
+    ex: "By region and channel"
+"083":
+  EMAIL_THREAD:
+    q: "What email thread should be used as context?"
+    ex: "The latest client exchange"
+  DESIRED_OUTCOME:
+    q: "What outcome do you want from the reply?"
+    ex: "Confirm the next step"
+  TONE:
+    q: "What tone should the email use?"
+    ex: "Professional and courteous"
+  RELATIONSHIP:
+    q: "What is the relationship with the recipient?"
+    ex: "A client or partner"
+  LANGUAGE_VARIANT:
+    q: "Which language variant should it use?"
+    ex: "English for a professional audience"
+  LENGTH:
+    q: "How long should the reply be?"
+    ex: "About 120 words"
+  ATTACHMENT_STATUS:
+    q: "Is the attachment confirmed?"
+    ex: "Yes, the file is ready"
+"084":
+  TEXT:
+    q: "What text needs a tone review?"
+    ex: "A draft email or memo"
+  AUDIENCE:
+    q: "Who is the audience for this text?"
+    ex: "A senior manager"
+  RELATIONSHIP:
+    q: "What is the relationship with the reader?"
+    ex: "A professional colleague"
+  DESIRED_IMPRESSION:
+    q: "What impression should the final writing create?"
+    ex: "Trust and clarity"
+"085":
+  PAGE_URL:
+    q: "What is the page URL?"
+    ex: "https://example.com/report"
+  ACCESS_DATE:
+    q: "When did you access the page?"
+    ex: "2026-10-12"
+  RESEARCH_QUESTION:
+    q: "What question is this source meant to answer?"
+    ex: "How fast is the market growing?"
+  PROJECT_NAME:
+    q: "What project or file should this be named under?"
+    ex: "Market Scan"
+"086":
+  LANGUAGE:
+    q: "What language should the function be written in?"
+    ex: "Python"
+  FUNCTION_NAME:
+    q: "What is the function called?"
+    ex: "parse_customer_response"
+  INPUTS:
+    q: "What inputs does the function take?"
+    ex: "A text payload and a user ID"
+  RETURN_TYPE:
+    q: "What should the function return?"
+    ex: "A parsed object"
+  BEHAVIOUR:
+    q: "What behavior must the function satisfy?"
+    ex: "Return errors for invalid input"
+  REFERENCE_FILE_OR_SNIPPET:
+    q: "What repository file or snippet should guide the style?"
+    ex: "A similar helper function"
+  EDGE_CASE:
+    q: "What edge case matters most?"
+    ex: "Empty input or null values"
+"087":
+  REFACTOR_GOAL:
+    q: "What is the refactor trying to improve?"
+    ex: "Simplify a shared parser"
+  ENTRY_FILES:
+    q: "Which files should be inspected first?"
+    ex: "The parser and its tests"
+  EXPECTED_BEHAVIOUR:
+    q: "What behavior must remain intact?"
+    ex: "Existing API responses"
+  TEST_COMMAND:
+    q: "What test command should verify the fix?"
+    ex: "pytest -q"
+  EXCLUDED_PATHS:
+    q: "Which files or folders must stay out of scope?"
+    ex: "Generated assets and lockfiles"
+"088":
+  RAW_MEETING_NOTES:
+    q: "What raw notes should be turned into a record?"
+    ex: "A messy meeting transcript"
+  MEETING_NAME:
+    q: "What is the meeting called?"
+    ex: "Weekly planning call"
+  DATE:
+    q: "When did the meeting happen?"
+    ex: "2026-10-05"
+  PARTICIPANTS:
+    q: "Who attended the meeting?"
+    ex: "The core team and a client"
+  CONFIRMATION_DATE:
+    q: "When should corrections be confirmed?"
+    ex: "By Friday"
+"089":
+  SUBJECT:
+    q: "What subject is the study pack for?"
+    ex: "Economics"
+  LEARNER_LEVEL:
+    q: "What learner level is this for?"
+    ex: "Undergraduate students"
+  SOURCE_MATERIALS:
+    q: "What source materials are available?"
+    ex: "Lecture notes and textbook chapters"
+  DEADLINE:
+    q: "What deadline matters for the pack?"
+    ex: "In two weeks"
+  AVAILABLE_TOOLS:
+    q: "What tools are allowed in the workflow?"
+    ex: "ChatGPT, flashcards, and Docs"
+"090":
+  BRAND:
+    q: "What brand is involved?"
+    ex: "A small education brand"
+  AUDIENCE:
+    q: "Who is the audience for the content?"
+    ex: "Young professionals"
+  MONTH:
+    q: "What month is this scheduled for?"
+    ex: "November"
+  CHANNELS:
+    q: "Which channels will publish the content?"
+    ex: "LinkedIn and email"
+  CUSTOMER_QUESTIONS:
+    q: "What customer questions should inform the plan?"
+    ex: "What support do people need most?"
+  APPROVER:
+    q: "Who approves final publication?"
+    ex: "The marketing lead"
+"091":
+  SERVICE:
+    q: "What service are you delivering?"
+    ex: "A research and design package"
+  CLIENT_REQUIREMENTS:
+    q: "What are the client requirements?"
+    ex: "Short turnaround and clear reporting"
+  DELIVERABLES:
+    q: "What deliverables are included?"
+    ex: "Outline, draft, and final deck"
+  DEADLINE:
+    q: "What is the delivery deadline?"
+    ex: "Next Friday"
+  APPROVED_AI_TOOLS:
+    q: "Which AI tools are approved for use?"
+    ex: "Microsoft Copilot and approved docs"
+  PROJECT_PLATFORM:
+    q: "What project platform or workspace is used?"
+    ex: "Microsoft Teams and SharePoint"
+"092":
+  DECISION_QUESTION:
+    q: "What decision question needs a brief?"
+    ex: "Whether to expand the service"
+  DECISION_MAKER:
+    q: "Who is the decision-maker?"
+    ex: "The department lead"
+  DEADLINE:
+    q: "When is the brief due?"
+    ex: "Before Thursday"
+  SEARCH_TOOL:
+    q: "What tool will be used for discovery?"
+    ex: "Perplexity"
+  NOTES_TOOL:
+    q: "What tool will capture the evidence?"
+    ex: "Notion or a document log"
+  ANALYSIS_TOOL:
+    q: "What tool will compare the evidence?"
+    ex: "A spreadsheet"
+  WRITING_TOOL:
+    q: "What tool will draft the final brief?"
+    ex: "Google Docs"
+"093":
+  TARGET_ROLES:
+    q: "What roles are you targeting?"
+    ex: "Product and operations roles"
+  LOCATION_OR_REMOTE_PREFERENCE:
+    q: "What location or remote preference applies?"
+    ex: "Remote with occasional on-site work"
+  DAILY_TIME:
+    q: "How much time do you have each day?"
+    ex: "One hour"
+  JOB_BOARDS:
+    q: "What job boards or listings do you use?"
+    ex: "LinkedIn and local boards"
+  DOCUMENT_TOOL:
+    q: "What document tool do you use?"
+    ex: "Google Docs"
+  AI_ASSISTANT:
+    q: "What AI assistant do you use?"
+    ex: "ChatGPT"
+  TRACKER:
+    q: "What tracker or spreadsheet do you use?"
+    ex: "A simple application tracker"
+  CANDIDATE_PROFILE:
+    q: "What is your candidate profile or background?"
+    ex: "A recent graduate with project work"
+"094":
+  BUSINESS_TYPE:
+    q: "What type of business is this?"
+    ex: "A local tutoring business"
+  CUSTOMERS:
+    q: "Who do you serve?"
+    ex: "Parents and students"
+  TEAM_SIZE:
+    q: "How large is the team?"
+    ex: "Three people"
+  WEEKLY_TASKS:
+    q: "What recurring tasks happen weekly?"
+    ex: "Customer follow-ups and content creation"
+  TOOLS:
+    q: "What tools are already approved?"
+    ex: "Google Workspace and ChatGPT"
+  CONSTRAINTS:
+    q: "What operational constraints matter?"
+    ex: "Limited time and no extra staff"
+  WORKING_DAYS:
+    q: "Which days are in the working week?"
+    ex: "Monday to Friday"
+  MAX_EXPERIMENTS:
+    q: "How many experiments should be tried first?"
+    ex: "Two"
+"095":
+  DATASET:
+    q: "What dataset is being used?"
+    ex: "Monthly sales records"
+  DECISION:
+    q: "What decision is this data meant to inform?"
+    ex: "Whether to scale a channel"
+  DATA_TOOL:
+    q: "What tool will clean the dataset?"
+    ex: "Excel"
+  ANALYSIS_TOOL:
+    q: "What tool will calculate the analysis?"
+    ex: "Power BI or Python"
+  WRITING_TOOL:
+    q: "What tool will draft the recommendation?"
+    ex: "Google Docs"
+  PRESENTATION_TOOL:
+    q: "What tool is used for presentation if needed?"
+    ex: "PowerPoint"
+  KEY_ASSUMPTIONS:
+    q: "What assumptions matter most?"
+    ex: "A stable sales pattern and consistent tracking"
+"096":
+  TOPIC:
+    q: "What topic is the lesson about?"
+    ex: "The water cycle"
+  GRADE_OR_LEVEL:
+    q: "What grade or learner level is this for?"
+    ex: "Year 7"
+  LESSON_DURATION:
+    q: "How long is the lesson?"
+    ex: "40 minutes"
+  CURRICULUM_OUTCOME:
+    q: "What curriculum outcome does the lesson target?"
+    ex: "Explain key processes in simple terms"
+  MATERIALS:
+    q: "What resources are available?"
+    ex: "Slides, textbook, and worksheets"
+  LEARNER_NEEDS:
+    q: "What learner needs or support are required?"
+    ex: "Mixed ability and English support"
+  PLATFORM:
+    q: "Where will the lesson resource live?"
+    ex: "Google Classroom"
+"097":
+  EXAM:
+    q: "Which exam are you preparing for?"
+    ex: "CSS"
+  ATTEMPT_YEAR:
+    q: "What attempt year is this for?"
+    ex: "2027"
+  PROVINCE_IF_PMS:
+    q: "What province should we use if this is PMS?"
+    ex: "Punjab"
+  SYLLABUS:
+    q: "What official syllabus should be followed?"
+    ex: "The published CSS or PMS syllabus"
+  SUBJECTS:
+    q: "Which subjects are you taking?"
+    ex: "International Relations and Pakistan Affairs"
+  BASELINE:
+    q: "What is your current baseline or strength?"
+    ex: "Strong in current affairs but weak in essay structure"
+  HOURS:
+    q: "How many hours are available each week?"
+    ex: "Twelve hours"
+  DATES:
+    q: "What dates or milestones matter?"
+    ex: "The actual exam date and revision deadlines"
+  PLAN_LENGTH:
+    q: "How long should the plan run?"
+    ex: "Twelve weeks"
+"098":
+  CONCEPT:
+    q: "What concept do you want to learn?"
+    ex: "Federalism in Pakistan"
+  CSS_OR_PMS_SUBJECT:
+    q: "Which subject area is this from?"
+    ex: "Pakistan Affairs"
+  SOURCES_OR_NOTES:
+    q: "What notes or sources should the explanation use?"
+    ex: "Class notes and the official syllabus"
+  MY_ANSWERS:
+    q: "What answers or responses should be reviewed?"
+    ex: "My self-test answers"
+"099":
+  ASSIGNMENT_TOPIC:
+    q: "What is the assignment topic?"
+    ex: "Public policy and accountability"
+  COURSE:
+    q: "What course is this for?"
+    ex: "Public Administration"
+  ASSIGNMENT_BRIEF:
+    q: "What is the exact assignment brief?"
+    ex: "The full task instructions"
+  RUBRIC:
+    q: "What rubric or marking guide is used?"
+    ex: "The course rubric and criteria"
+  WORD_COUNT:
+    q: "What is the required word count?"
+    ex: "2,000 words"
+  STYLE:
+    q: "What citation or writing style is required?"
+    ex: "APA 7"
+  MY_IDEAS:
+    q: "What preliminary ideas or notes do you already have?"
+    ex: "A rough list of arguments"
+  POLICY:
+    q: "What AI policy or academic rule applies?"
+    ex: "The university's guidance on responsible use"
+"100":
+  DEGREE_PROGRAMME:
+    q: "What degree programme is this for?"
+    ex: "MS in Public Policy"
+  TOPIC:
+    q: "What is the research topic?"
+    ex: "Urban transport reform"
+  QUESTION:
+    q: "What is the research question?"
+    ex: "How do governance reforms affect access?"
+  OBJECTIVES:
+    q: "What objectives guide the study?"
+    ex: "Explain the policy problem and assess implementation"
+  METHOD:
+    q: "What research method is being used?"
+    ex: "Qualitative interviews and document review"
+  EVIDENCE:
+    q: "What evidence is available so far?"
+    ex: "Interviews, reports, and field notes"
+  FRAMEWORK:
+    q: "What theoretical or conceptual framework applies?"
+    ex: "Governance and policy implementation"
+  GUIDELINES:
+    q: "What departmental or supervisor guidelines matter?"
+    ex: "Formatting, ethics, and chapter requirements"
