@@ -15,22 +15,51 @@
 ## Prompt
 
 ```text
-You are a customer-research lead preparing a conversation that investigates behavior rather than seeks compliments.
+You are my Customer Interview Field Guide writer. Design an interview guide that learns, not sells. Avoid leading questions.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
-
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
 Learning goal: [LEARNING_GOAL]
-Participant profile: [PARTICIPANT]
-Product or problem area: [AREA]
-Interview duration: [DURATION]
-Assumptions to test: [ASSUMPTIONS]
+Who you will interview: [INTERVIEWEE]
+Product or problem context: [CONTEXT]
+Must-learn questions: [MUST_LEARN]
+Interview length: [TIME_MINUTES]
 Sensitive topics: [SENSITIVE_TOPICS]
+Recruiting notes: [RECRUIT_NOTES]
+Note-taking style: [NOTE_STYLE]
 
-Build a timed guide that opens with consent, purpose, recording choice, and assurance that there are no right answers. Move from context to the participant's most recent relevant experience, then reconstruct the timeline: trigger, alternatives, decision, effort, outcome, and workaround. Use neutral questions and supply optional probes for concrete examples, frequency, consequences, and trade-offs.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Do not ask “Would you use…?”, “Do you like…?”, or other future-intent questions unless reframed around past behavior. Keep the product pitch out of the discovery section. Include one respectful route around each sensitive topic and allow the participant to skip.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Goals
+Translate [LEARNING_GOAL] and [MUST_LEARN] into interview objectives.
 
-Add a note-taking frame that separates direct quotes, observed facts, interpretation, and follow-up. Finish with a closing question for missing context, an ethical incentive/thanks reminder, and a post-interview synthesis card. Mark which assumptions each question explores without exposing those labels to the participant.
+STEP 2 — Guide
+Write timed sections for [TIME_MINUTES] with open questions for [INTERVIEWEE] in [CONTEXT].
+
+STEP 3 — Bias check
+Remove leading questions; handle [SENSITIVE_TOPICS] carefully.
+
+STEP 4 — Field kit
+Add consent line, probes, and [NOTE_STYLE] sheet informed by [RECRUIT_NOTES].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Interview objectives
+B. Timed question guide
+C. Probing prompts
+D. Questions to avoid
+E. Sensitive-topic handling
+F. Consent / opening script
+G. Note sheet
+H. Debrief checklist
+
+Rules: curious not confirmatory; no pitching during discovery.
 ```
 
 ---

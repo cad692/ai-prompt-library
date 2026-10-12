@@ -15,20 +15,51 @@
 ## Prompt
 
 ```text
-Act as a precise meeting secretary turning rough notes into accountable follow-through without filling gaps from imagination.
+You are my Meeting-Notes-to-Accountable-Actions converter. Turn meeting notes into accountable actions with owners and dates. No invented assignees.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Meeting notes: [NOTES]
+Meeting name/date: [MEETING]
+People present: [PEOPLE]
+Priority rule: [PRIORITY]
+Done definition: [DONE_DEFINITION]
+Timezone: [TIMEZONE]
+Already done items: [ALREADY_DONE]
+Output format: [FORMAT]
 
-Meeting notes or transcript: [NOTES]
-Meeting purpose: [PURPOSE]
-Participant names and roles: [PARTICIPANTS]
-Project context: [CONTEXT]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Separate the material into five buckets: decisions made, action items, open questions, risks or blockers, and contextual discussion. A decision must state what was agreed and, if present, why. An action must begin with a verb and include owner, deliverable, due date, dependency, and completion evidence. If any field was not explicitly agreed, write [CONFIRM] rather than assigning it.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Extract
+Pull candidate actions from [NOTES], excluding [ALREADY_DONE].
 
-Detect conflicting statements, tentative language, and decisions that appear to have been reopened later in the meeting. Quote a short source phrase beside ambiguous items so participants can resolve them. Exclude conversational filler and do not transform every suggestion into a task.
+STEP 2 — Account
+Assign owners only from [PEOPLE] when supported; else mark needs-owner.
 
-Produce a compact decision log followed by the action register in priority order. Add an “awaiting confirmation” section and a parking-lot list. Finish with a neutral follow-up message that summarizes the top decisions, asks owners to confirm actions, and names the next checkpoint. Preserve sensitive material only if it is necessary for execution.
+STEP 3 — Clarify
+Rewrite vague tasks using [DONE_DEFINITION] and [PRIORITY].
+
+STEP 4 — Deliver
+Output in [FORMAT] with dates in [TIMEZONE] for [MEETING].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Action table
+B. Needs-owner items
+C. Priority order
+D. Dependencies
+E. Done definitions
+F. Follow-up agenda seeds
+G. Ambiguity flags
+H. Share-ready summary
+
+Rules: no invented owners/dates; actions must be checkable.
 ```
 
 ---

@@ -15,22 +15,51 @@
 ## Prompt
 
 ```text
-Serve as a strategy facilitator running an evidence-aware SWOT for a specific choice, not a generic company description.
+You are my Evidence-Aware SWOT guide. Build a SWOT that separates evidence from guesses. No fake market data.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
-
-Decision to inform: [DECISION]
-Organization or project: [ORGANIZATION]
-Internal evidence: [INTERNAL_EVIDENCE]
-External evidence: [EXTERNAL_EVIDENCE]
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Subject of SWOT: [SUBJECT]
+Decision the SWOT supports: [GOAL]
+Evidence I already have: [EVIDENCE]
+Strength seeds: [STRENGTH_SEEDS]
+Weakness seeds: [WEAKNESS_SEEDS]
+External opportunity/threat notes: [EXTERNAL_NOTES]
 Time horizon: [TIME_HORIZON]
-Geography or market: [MARKET]
+Audience: [AUDIENCE]
 
-Begin by restating the decision boundary. Sort candidate observations by internal strengths/weaknesses and external opportunities/threats, but attach one label to every item: verified fact, informed interpretation, or untested assumption. Remove vague entries such as “competition” or “good team” unless made specific and comparative.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Prioritize no more than four items per quadrant using impact on the decision and confidence in evidence. For the top items, show the evidence, why it matters now, and what could disconfirm it. Then cross the quadrants to form four strategic moves: use a strength to capture an opportunity, use a strength to reduce a threat, repair a weakness to capture an opportunity, and limit exposure where weakness meets threat.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Evidence pass
+Sort [EVIDENCE] into strong / weak / missing for [SUBJECT].
 
-Convert the best two moves into small experiments with owner, signal, time box, and stop/continue rule. End with five research questions that would most change the analysis. Do not present assumptions as market facts.
+STEP 2 — SWOT
+Build S/W/O/T using seeds and [EXTERNAL_NOTES]; label each item evidence-backed or speculative.
+
+STEP 3 — Decision
+Connect the matrix to [GOAL] and [TIME_HORIZON] for [AUDIENCE].
+
+STEP 4 — Next proof
+List the cheapest evidence to gather next.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Evidence inventory
+B. Strengths
+C. Weaknesses
+D. Opportunities
+E. Threats
+F. Speculation flags
+G. Decision implications
+H. Next evidence to gather
+
+Rules: no invented stats; mark speculation; decision-useful.
 ```
 
 ---

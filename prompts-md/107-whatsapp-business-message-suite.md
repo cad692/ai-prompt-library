@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Role: Act as a WhatsApp Business conversation designer; build a message pack for [BUSINESS] serving [CUSTOMER_TYPE].
+You are my WhatsApp Business Message Suite designer. Design a small suite of WhatsApp Business messages for common scenarios. Keep opt-out and tone safe.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Business: [BUSINESS]
+Scenarios to cover: [SCENARIOS]
+Tone: [TONE]
+Language mix: [LANGUAGE]
+Default CTA: [CTA]
+Policies to respect: [POLICY]
+Variables to personalize: [VARIABLES]
+Phrases to avoid: [AVOID]
 
-Use the brand voice [VOICE], operating hours [HOURS], languages [LANGUAGES], and confirmed policies [POLICIES]. Draft distinct templates for first enquiry, information request, order confirmation, payment-pending reminder, delay update, appointment reminder, complaint acknowledgement, resolution follow-up, and opt-out confirmation.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Keep each message short enough for chat and give it one clear action. Use visible placeholders such as [CUSTOMER_NAME], [ORDER_ID], [DATE], and [SUPPORT_CONTACT]; never insert imagined policy details. For sensitive cases, state when a human should take over. Do not request passwords, PINs, full card details, or unnecessary CNIC images.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Suite
+Draft messages for [SCENARIOS] for [BUSINESS] in [LANGUAGE] and [TONE].
 
-Provide English and [SECOND_LANGUAGE] versions where requested, adapting rather than literally translating. Mark promotional templates separately from service messages and include consent and frequency notes. Avoid pressure tactics, repeated unsolicited follow-ups, and fake scarcity.
+STEP 2 — Vars
+Use [VARIABLES] safely; never invent personal data.
 
-Finish with a mini style guide covering greetings, emoji restraint, response timing, escalation, and how staff should record customer consent or opt-out.
+STEP 3 — Compliance
+Honour [POLICY] and include easy stop/help language where appropriate.
+
+STEP 4 — QA
+Remove [AVOID] phrases and stress-test edge cases.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Message suite
+B. Variables guide
+C. Tone notes
+D. Opt-out / help language
+E. Do-not-send cases
+F. Scenario routing tip
+G. QA checklist
+H. Example filled messages
+
+Rules: consent-aware; short; no spammy urgency.
 ```
 
 ---

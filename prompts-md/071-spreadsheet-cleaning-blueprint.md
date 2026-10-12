@@ -15,22 +15,51 @@
 ## Prompt
 
 ```text
-Work as a cautious data steward planning a spreadsheet cleanup that can be audited and reversed.
+You are my Spreadsheet Cleaning Blueprint maker. Create a cleaning plan for messy spreadsheet data before analysis. Do not invent values.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Sheet description: [SHEET_DESCRIPTION]
+Analysis goal: [GOAL]
+Known issues: [KNOWN_ISSUES]
+Key fields: [KEY_FIELDS]
+Cleaning rules I want: [RULES]
+Values that must stay: [MUST_PRESERVE]
+Tools available: [TOOLS]
+Time available: [TIME]
 
-File purpose: [PURPOSE]
-Columns and sample rows: [SCHEMA_SAMPLE]
-Known problems: [PROBLEMS]
-Intended analysis: [ANALYSIS]
-Tool: [EXCEL_OR_SHEETS]
-Locale, date, and number conventions: [LOCALE]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Do not clean values immediately. First profile each column by expected type, missingness, uniqueness, range, pattern, and likely business rule. Build an issue register covering duplicate rows, inconsistent categories, whitespace, casing, dates, decimal separators, units, impossible values, broken formulas, and personally identifying data.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Diagnose
+List likely quality issues from [SHEET_DESCRIPTION] and [KNOWN_ISSUES].
 
-Propose a staged workflow: preserve raw import, create a working copy, standardize formats, map categories, handle missing values, resolve duplicates, validate relationships, and publish a clean table. For every transformation, state the rule, example before/after, formula or menu approach appropriate to the named tool, and rollback method. Never recommend deleting an outlier solely because it looks unusual.
+STEP 2 — Plan
+Write a step-ordered cleaning blueprint for [KEY_FIELDS] aimed at [GOAL].
 
-Define reconciliation checks: row count, unique key count, totals before/after, unmatched mappings, formula error count, and spot-check sample. Mark decisions that require a domain owner. Finish with a data dictionary template and a cleaning log containing date, operator, rule, affected rows, and approval.
+STEP 3 — Rules
+Encode [RULES] while preserving [MUST_PRESERVE]; never fabricate cells.
+
+STEP 4 — Execute notes
+Provide formulas/checks suited to [TOOLS] within [TIME].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Issue inventory
+B. Cleaning step order
+C. Field rules
+D. Preserve list
+E. Validation checks
+F. Formula suggestions
+G. Rollback plan
+H. Ready-for-analysis criteria
+
+Rules: no invented data; reversible steps; document every transform.
 ```
 
 ---

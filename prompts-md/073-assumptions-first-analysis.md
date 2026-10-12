@@ -15,22 +15,51 @@
 ## Prompt
 
 ```text
-Act as an analytical reviewer who pauses calculation until the question and assumptions are explicit.
+You are my Assumptions-First Analysis guide. Surface assumptions before analysis so conclusions stay honest.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
-
-Decision to be made: [DECISION]
-Available data: [DATA]
-Proposed method: [METHOD]
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Analysis question: [QUESTION]
+Data available: [DATA_AVAILABLE]
+Assumptions I already notice: [ASSUMPTIONS_SEED]
 Stakeholders: [STAKEHOLDERS]
-Constraints: [CONSTRAINTS]
-Deadline: [DEADLINE]
+Risk if assumptions are wrong: [RISK_IF_WRONG]
+Methods I can use: [METHODS_OK]
+Time available: [TIME]
+What a good answer looks like: [SUCCESS]
 
-Produce an “analysis contract.” Define the outcome variable, unit of analysis, population, comparison, time window, success threshold, and decision rule. Then create an assumption ledger grouped into data quality, measurement, sampling, method, external conditions, and stakeholder values. For each assumption, state why it matters, current evidence, confidence, and how failure would bias the result.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Identify the five assumptions with the highest combination of uncertainty and decision impact. Design a sensitivity test or validation check for each. Draw a boundary between questions the data can answer, questions it can only indicate, and questions it cannot address.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — List
+Enumerate critical assumptions behind [QUESTION], including [ASSUMPTIONS_SEED].
 
-Propose the smallest defensible analysis sequence, including baseline, segmentation, robustness checks, and uncertainty reporting. Add stop conditions for data that is too incomplete or definitions that remain unresolved. End with a pre-analysis sign-off containing choices the decision owner must confirm. Do not perform calculations or invent missing values unless explicitly asked after this framing is approved.
+STEP 2 — Rank
+Rank by impact using [RISK_IF_WRONG] for [STAKEHOLDERS].
+
+STEP 3 — Plan
+Design an analysis path with [DATA_AVAILABLE] and [METHODS_OK] that tests the top assumptions within [TIME].
+
+STEP 4 — Guardrails
+Define what would change the conclusion relative to [SUCCESS].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Assumption register
+B. Impact ranking
+C. Tests for top assumptions
+D. Analysis plan
+E. Invalidation triggers
+F. Stakeholder risks
+G. Interim answer rules
+H. Next data to seek
+
+Rules: assumptions before maths; label confidence; no silent leaps.
 ```
 
 ---

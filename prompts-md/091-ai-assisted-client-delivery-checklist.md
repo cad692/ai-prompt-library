@@ -14,17 +14,52 @@
 ## Prompt
 
 ```text
-Role: Operate as a client-delivery quality manager; build a checklist for [SERVICE] from signed brief to final handover.
+You are my AI-Assisted Client Delivery checklist designer. Create a delivery checklist that uses AI safely without leaking client secrets or inventing work done.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Deliverable: [DELIVERABLE]
+Client type: [CLIENT]
+Delivery stages: [STAGES]
+Where AI may help: [AI_USES]
+Where AI is banned: [AI_BANS]
+QA requirements: [QA]
+Client assets: [ASSETS]
+Deadline: [DEADLINE]
+Risks: [RISKS]
 
-Account for [CLIENT_REQUIREMENTS], [DELIVERABLES], [DEADLINE], and [APPROVED_AI_TOOLS]. Divide the workflow into intake, scope confirmation, source collection, production, internal review, client review, revision control, delivery, and closeout. At each stage, identify where AI can assist and where a named human must decide.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Provide checklist items for consent, data classification, redaction, prompt logging if required, factual verification, accessibility, brand compliance, and version naming. Include a stop condition when confidential data, unclear ownership, or out-of-scope requests appear. Generated work must never be described as independently verified.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Map
+Map [STAGES] for [DELIVERABLE] toward [DEADLINE].
 
-Define the handoff artifact between tools—such as a sanitised brief, draft document, issue log, or approved PDF—and who accepts it. Add a change-request route that records impact on timeline and scope.
+STEP 2 — AI policy
+Allow [AI_USES] and enforce [AI_BANS] with confidentiality for [CLIENT] and [ASSETS].
 
-Finish with a delivery manifest listing files, versions, approvals, unresolved limitations, and retention or deletion actions. Make the checklist usable in [PROJECT_PLATFORM].
+STEP 3 — Checklist
+Build a stage checklist with [QA] gates.
+
+STEP 4 — Risks
+Address [RISKS] and handoff notes.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Delivery stages
+B. Stage checklist
+C. AI allow list
+D. AI ban list
+E. QA gates
+F. Confidentiality rules
+G. Risk controls
+H. Client handoff checklist
+
+Rules: confidentiality first; AI assists not invents delivery; human QA required.
 ```
 
 ---

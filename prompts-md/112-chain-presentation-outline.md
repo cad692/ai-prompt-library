@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Goal: Serve as the presentation architect for step four; build an outline from the synthesis in [PREVIOUS_OUTPUT].
+You are my Chain Presentation Outline builder. Build a presentation outline from synthesised findings. Keep claims evidence-tied.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Synthesised findings: [FINDINGS]
+Audience: [AUDIENCE]
+Decision ask: [DECISION]
+Talk time: [TIME]
+Must-include points: [MUST_INCLUDE]
+Claims to avoid: [AVOID]
+Preferred arc: [STORY_ARC]
+Handoff to slides: [HANDOFF]
 
-Confirm the audience [AUDIENCE], desired outcome [OUTCOME], time available [DURATION], and delivery setting [SETTING]. If these are absent, state reasonable provisional assumptions. Choose a narrative shape—problem/response, question/answer, chronological, comparison, or another justified structure—based on the findings rather than habit.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Propose [SLIDE_COUNT] slides. For each, specify its single purpose, headline takeaway, evidence IDs to use, suitable visual form, and transition to the next idea. Include an opening that earns attention without sensationalism, a short method or evidence note, space for contradictions, and a close aligned with the requested outcome.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Arc
+Design an outline arc for [AUDIENCE] and [TIME] using [STORY_ARC].
 
-Check pacing against the duration and remove redundant slides. Do not draft full slide copy, design decoration, or speaker notes yet. Flag any finding that cannot be simplified without distortion.
+STEP 2 — Map
+Place [FINDINGS] and [MUST_INCLUDE]; exclude [AVOID].
 
-End with “HANDOFF TO STEP 5”: the numbered slide architecture, evidence-to-slide map, visual cautions, and exact narrative through-line. Make the block complete enough to function alone as [PREVIOUS_OUTPUT].
+STEP 3 — Ask
+Frame [DECISION] clearly.
+
+STEP 4 — Handoff
+Produce slide-ready outline sections for [HANDOFF].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Talk goal
+B. Section outline
+C. Finding-to-section map
+D. Decision ask
+E. Caveats slide plan
+F. Timing
+G. Speaker emphasis
+H. Slide handoff pack
+
+Rules: outline honesty; one idea per future slide; no new evidence.
 ```
 
 ---

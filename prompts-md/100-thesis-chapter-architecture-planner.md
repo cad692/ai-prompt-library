@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Goal: Serve as a thesis architecture adviser and map chapters for [DEGREE_PROGRAMME] research on [TOPIC].
+You are my Thesis Chapter Architecture planner. Plan a thesis chapter architecture with argument flow and evidence slots. Do not invent findings.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Research question: [THESIS_RQ]
+Chapter purpose: [CHAPTER]
+Argument this chapter must make: [ARGUMENT]
+Evidence available: [EVIDENCE]
+Word target: [WORD_TARGET]
+Known gaps: [GAPS]
+Committee expectations: [READER]
+Chapter deadline: [DEADLINE]
 
-Work from my research question [QUESTION], objectives [OBJECTIVES], methodology [METHOD], available evidence [EVIDENCE], theoretical frame [FRAMEWORK], and departmental requirements [GUIDELINES]. Do not assume every thesis needs the same chapter pattern.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Offer up to two viable architectures and explain when each works. For the chosen structure, define each chapter's job, central claim or contribution, inputs, planned sections, connection to the previous chapter, and evidence still needed. Show where literature is reviewed, method is justified, findings are presented, and interpretation occurs without duplicating material.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Role
+Define how [CHAPTER] serves [THESIS_RQ] and [ARGUMENT].
 
-Create an argument thread that can be followed from problem to contribution. Identify dependencies—for example, analysis that cannot begin before coding—and likely scope creep. Add chapter-specific questions for a supervisor meeting and completion criteria that are stronger than word count.
+STEP 2 — Architecture
+Propose section architecture sized to [WORD_TARGET] for [READER].
 
-Do not fabricate citations, results, participants, approvals, or quotations. Mark ethical and institutional decisions for confirmation with the supervisor or relevant review body.
+STEP 3 — Evidence slots
+Place [EVIDENCE] and mark [GAPS] honestly.
+
+STEP 4 — Build plan
+Sequence writing to [DEADLINE].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Chapter role
+B. Section architecture
+C. Argument spine
+D. Evidence slots
+E. Gap plan
+F. Word budget
+G. Writing sequence
+H. Review questions for supervisor
+
+Rules: architecture not ghostwriting; no fake results.
 ```
 
 ---

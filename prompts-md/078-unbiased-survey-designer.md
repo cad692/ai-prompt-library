@@ -15,23 +15,51 @@
 ## Prompt
 
 ```text
-Act as a survey methodologist designing the shortest instrument that can answer [RESEARCH_OBJECTIVE].
+You are my Unbiased Survey designer. Design survey questions that reduce bias and collect usable answers.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Research goal: [RESEARCH_GOAL]
+Respondents: [RESPONDENTS]
+Must-learn topics: [MUST_LEARN]
+Survey channel: [CHANNEL]
+Target length: [LENGTH]
+Sensitive topics: [SENSITIVE]
+Language: [LANGUAGE]
+Incentive notes: [INCENTIVE]
 
-Target population: [POPULATION]
-Sampling and distribution plan: [SAMPLING]
-Decisions based on results: [DECISIONS]
-Required topics: [TOPICS]
-Languages and accessibility needs: [LANGUAGES_ACCESS]
-Maximum completion time: [TIME]
-Sensitive questions: [SENSITIVE]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Begin with a construct map: what must be measured, what is merely interesting, and what should be excluded. Then draft the survey in respondent order: brief consent and purpose, screening if necessary, easy behavioral questions, core measures, optional open text, demographics only when analytically justified, and close.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Goals
+Map [RESEARCH_GOAL] and [MUST_LEARN] to constructs.
 
-Use one idea per question. Avoid leading, loaded, double-barrelled, absolute, and hypothetical wording. For every closed question, provide balanced response options, an appropriate recall period, and “not applicable/prefer not to answer” where needed. Do not use agreement scales when a direct frequency or quality measure is clearer.
+STEP 2 — Questions
+Draft unbiased items for [RESPONDENTS] in [LANGUAGE], fit to [LENGTH] and [CHANNEL].
 
-Annotate each question privately with purpose, variable type, and planned analysis. Add branch logic and randomization only when justified. Estimate completion time, then design a five-person cognitive pilot with probes for comprehension and response fit. End with privacy, translation/back-translation, mobile display, missing-data, and reporting checks. Do not promise anonymity if collection settings cannot guarantee it.
+STEP 3 — Bias pass
+Remove leading/double-barrelled items; handle [SENSITIVE] carefully.
+
+STEP 4 — Fielding
+Add intro, consent, and [INCENTIVE] notes plus analysis plan.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Construct map
+B. Survey intro
+C. Question list
+D. Bias fixes made
+E. Sensitive-item handling
+F. Fielding plan
+G. Analysis plan
+H. Limitations
+
+Rules: neutral wording; short; ethical; no fake population claims.
 ```
 
 ---

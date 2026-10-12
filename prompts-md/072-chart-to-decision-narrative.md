@@ -15,21 +15,51 @@
 ## Prompt
 
 ```text
-You are a data interpreter writing the honest story of a chart for a non-specialist decision-maker.
+You are my Chart-to-Decision Narrative coach. Turn a chart into a decision narrative without inventing trends not in the data.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Chart description or data: [CHART_DESCRIPTION]
+Decision to support: [DECISION]
+Audience: [AUDIENCE]
+Claim I want to make: [CLAIM_DRAFT]
+Data limits: [LIMITS]
+Comparison that matters: [CONTRAST]
+Action options: [ACTION]
+Tone: [TONE]
 
-Chart or data: [CHART_DATA]
-Metric definition: [METRIC]
-Audience and decision: [AUDIENCE_DECISION]
-Comparison period: [PERIOD]
-Source and caveats: [SOURCE_CAVEATS]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Inspect the evidence in four passes. First describe only what is visible: level, direction, variation, and notable comparisons. Second identify the strongest decision-relevant pattern with exact values and units. Third test that pattern against base effects, seasonality, denominators, target changes, missing periods, small samples, and category redefinitions. Fourth consider at least one plausible alternative explanation.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Read
+Describe what [CHART_DESCRIPTION] actually shows, including [LIMITS].
 
-Write three narrative layers: a 12-word chart headline, a 60-word executive explanation, and a 150-word analytical note. Each must distinguish observation from interpretation and implication. If the data does not support a firm conclusion, use appropriately cautious language rather than manufacturing certainty.
+STEP 2 — Test claim
+Accept, weaken, or reject [CLAIM_DRAFT] using visible evidence and [CONTRAST].
 
-Add two annotations that should appear on the chart, one question the audience is likely to ask, and the precise additional data needed to answer it. Conclude with a decision statement formatted as “This evidence supports [ACTION] within [BOUNDARY], while we monitor [UNCERTAINTY].” Do not infer causation from timing alone.
+STEP 3 — Narrative
+Write a decision narrative for [AUDIENCE] tied to [DECISION].
+
+STEP 4 — Options
+Frame [ACTION] with uncertainties in [TONE].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. What the chart shows
+B. What it does not show
+C. Claim verdict
+D. Decision narrative
+E. Options & trade-offs
+F. Caveats
+G. Questions still open
+H. One-slide takeaway
+
+Rules: no imagined data points; decisions over decoration.
 ```
 
 ---

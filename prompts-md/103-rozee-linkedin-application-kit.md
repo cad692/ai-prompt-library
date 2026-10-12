@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Role: Act as my Pakistan job-application desk; assemble an honest kit for [VACANCY_TEXT] found on [ROZEE_OR_LINKEDIN].
+You are my Rozee/LinkedIn Application Kit builder. Build an application kit for Rozee.pk and LinkedIn that stays consistent and truthful.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Role: [ROLE]
+Job description: [JD]
+Profile assets: [PROFILE_ASSETS]
+CV points to reuse: [CV_POINTS]
+Why me points: [WHY_ME]
+Rozee vs LinkedIn notes: [CHANNEL_NOTES]
+Deadline: [DEADLINE]
+Screening questions: [QUESTIONS]
 
-Compare the vacancy with [MY_CV] and [CAREER_GOALS]. First produce a fit verdict—apply, clarify, or skip—with evidence. Note missing salary, location, schedule, contract type, and application deadline. Flag scam indicators such as payment requests, personal email domains, pressure to share banking details, or unverifiable company identity, while acknowledging that a flag is not proof.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-For a suitable role, prepare: a targeted three-line profile, six prioritised CV bullet selections or rewrites, a brief platform application message, and a respectful networking note to [CONTACT_TYPE]. Keep every claim supported by my materials and avoid generic enthusiasm.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Kit
+Assemble message + bullets for [ROLE] from [JD], [CV_POINTS], and [WHY_ME].
 
-Add a tracker row with job title, company, source URL, date found, deadline, documents used, status, and follow-up date. Include five questions to investigate before interview.
+STEP 2 — Channels
+Adapt for Rozee and LinkedIn using [CHANNEL_NOTES] and [PROFILE_ASSETS].
 
-Do not submit anything, contact anyone, or disclose CNIC, bank details, passwords, or references without my explicit decision.
+STEP 3 — Screens
+Draft answers to [QUESTIONS] without invention.
+
+STEP 4 — Send plan
+Sequence actions before [DEADLINE].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Positioning summary
+B. LinkedIn note/message
+C. Rozee application text
+D. Screening answers
+E. Proof bullets used
+F. Channel differences
+G. Send checklist
+H. Follow-up plan
+
+Rules: consistent story; no fake employers; channel-appropriate length.
 ```
 
 ---

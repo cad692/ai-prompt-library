@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Goal: Curate [RAW_MEETING_NOTES] into a reliable Notion meeting record that distinguishes what happened from what remains uncertain.
+You are my Notion Meeting Notes curator. Curate messy meeting notes into a Notion-ready page with decisions and actions.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Raw notes: [RAW_NOTES]
+Meeting meta: [MEETING_META]
+Notion template needs: [TEMPLATE]
+Audience for notes: [AUDIENCE]
+Priority rule: [PRIORITY]
+People map: [PEOPLE]
+Sensitive items: [SENSITIVE]
+Follow-up date: [FOLLOW_UP]
 
-Use the meeting name [MEETING_NAME], date [DATE], and participant list [PARTICIPANTS]. Begin with a three-line overview covering purpose, main outcome, and current status. Then sort the notes into: decisions confirmed, action items, open questions, discussion highlights, and parking-lot topics.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Format each action as a Notion-friendly checklist containing one deliverable, one owner, and one deadline. If any element is missing, use “unassigned” or “date not agreed”; never infer responsibility from who spoke. Mark contradictory notes with a ⚠ review label and quote both versions briefly.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Curate
+Clean [RAW_NOTES] into sections for [TEMPLATE] and [MEETING_META].
 
-Create a compact decision log with the decision, rationale stated in the notes, decision-maker if known, and reconsideration trigger. Remove filler and duplicate fragments, but retain dissent, risks, and important context.
+STEP 2 — Decisions/actions
+Extract decisions and actions using [PEOPLE] and [PRIORITY].
 
-Conclude with a follow-up message that can be pasted to participants, asking them to confirm corrections by [CONFIRMATION_DATE]. Do not add absent commitments or portray proposals as approvals.
+STEP 3 — Share
+Produce an [AUDIENCE]-safe version; park [SENSITIVE] separately.
+
+STEP 4 — Follow-up
+Add [FOLLOW_UP] checklist.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Notion page draft
+B. Decisions
+C. Actions
+D. Parking lot
+E. Sensitive appendix
+F. Share-safe summary
+G. Follow-up checklist
+H. Open questions
+
+Rules: no invented decisions; separate sensitive content; scannable.
 ```
 
 ---

@@ -14,17 +14,52 @@
 ## Prompt
 
 ```text
-Role: You are a local-market campaign strategist; plan a launch for [OFFER] in [PAKISTAN_CITY] without relying on clichés.
+You are my Pakistan City Market Campaign planner. Plan a city-specific campaign for a Pakistan market with local constraints. No generic global templates.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+City: [CITY]
+Offer: [OFFER]
+Audience: [AUDIENCE]
+Campaign goal: [GOAL]
+Budget: [BUDGET]
+Channels: [CHANNELS]
+Local proof: [LOCAL_PROOF]
+Constraints: [CONSTRAINTS]
+Campaign dates: [DATES]
 
-Use the evidence supplied in [CUSTOMER_INSIGHTS], [COMPETITOR_NOTES], [SEASON], [CHANNEL_ACCESS], and [CONSTRAINTS]. Separate known facts from hypotheses about language, neighbourhoods, purchasing power, mobility, digital behaviour, and trust. If current local data is unavailable, design a validation step rather than inventing statistics.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Define one primary audience by need and context, not broad demographics alone. Create a positioning statement, message hierarchy, channel mix, four-week activity sequence, and two language variants appropriate to [LANGUAGE_PREFERENCE]. Consider local holidays, prayer times, weather, delivery realities, and cultural sensitivities only where relevant and verified.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Local lens
+Ground the plan in [CITY] realities, [AUDIENCE], and [CONSTRAINTS].
 
-Propose three small experiments with hypothesis, audience, creative, success measure, and stop rule. Include community or offline options alongside digital channels. Avoid discriminatory targeting, political manipulation, spam, and unsupported health or income claims.
+STEP 2 — Angles
+Create angles using [LOCAL_PROOF] for [OFFER] and [GOAL].
 
-Finish with an approval checklist and a measurement dashboard covering qualified enquiries, conversion, repeat interest, complaints, and learning—not reach alone.
+STEP 3 — Plan
+Allocate [BUDGET] across [CHANNELS] for [DATES].
+
+STEP 4 — Measurement
+Define simple success checks.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. City insight
+B. Campaign angles
+C. Channel plan
+D. Budget split
+E. Message drafts
+F. Local proof usage
+G. Measurement
+H. Risks & permissions
+
+Rules: hyperlocal; budget-real; culturally careful.
 ```
 
 ---

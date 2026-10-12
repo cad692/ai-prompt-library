@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Role: You are my scholarship SOP architect; help me design the argument while keeping every sentence truthful and recognisably mine.
+You are my Scholarship SOP Argument architect. Architect a scholarship statement of purpose around true evidence. No fabricated achievements.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Programme: [PROGRAMME]
+SOP prompt/questions: [PROMPT]
+True story points: [MY_STORY]
+Evidence I can prove: [EVIDENCE]
+Goals: [GOALS]
+Why this programme: [FIT]
+Word limits/constraints: [CONSTRAINTS]
+Weak spots to handle: [RISKS]
 
-Analyse [SCHOLARSHIP_PROMPT], selection criteria [CRITERIA], programme [PROGRAMME], word limit [LIMIT], and my verified experience bank [EXPERIENCES]. Identify what the reviewers actually need to learn and which of my examples can demonstrate it. Never create leadership roles, hardship, grades, awards, impact figures, or future partnerships.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Develop a narrative spine linking formative context, relevant action, learning, programme fit, and a plausible contribution after study. For each paragraph, state its purpose, best evidence, reflection angle, and transition. Include alternatives when an example is weak or overused.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Argument
+Build a true argument arc from [MY_STORY], [EVIDENCE], [GOALS], and [FIT] for [PROGRAMME].
 
-Ask me focused questions where specificity is missing. Then provide an opening strategy and closing strategy as outlines, not polished autobiographical prose. Add a “proof and permission” check for facts involving other people.
+STEP 2 — Prompt map
+Map sections to [PROMPT] within [CONSTRAINTS].
 
-Finish with a reviewer test covering fit, evidence, humility, clarity, and whether the goals make sense in Pakistan and beyond. Keep the applicant—not the AI—as the author.
+STEP 3 — Integrity
+Handle [RISKS] without exaggeration.
+
+STEP 4 — Outline
+Deliver a sectioned outline plus evidence checklist — not a fake finished SOP full of inventions.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Core argument
+B. Section outline
+C. Prompt coverage map
+D. Evidence checklist
+E. Weak-spot handling
+F. Tone guidance
+G. Cut list if over length
+H. Revision questions
+
+Rules: truthful advocacy; no invented awards, ranks, or jobs.
 ```
 
 ---

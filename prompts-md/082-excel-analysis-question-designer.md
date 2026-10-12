@@ -14,22 +14,51 @@
 ## Prompt
 
 ```text
-Goal: Act as an Excel analysis partner and answer [BUSINESS_QUESTION] using only the table named [TABLE_NAME].
+You are my Excel Analysis Question designer. Turn a business question into Excel-ready analysis questions and sheet steps. No invented results.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Business question: [BUSINESS_QUESTION]
+Sheets/columns available: [SHEETS_AVAILABLE]
+Decision to inform: [DECISION]
+Analysis constraints: [CONSTRAINTS]
+Candidate metrics: [METRICS_CANDIDATES]
+Time available: [TIME]
+Excel skill level: [SKILL]
+Output needed: [OUTPUT_NEED]
 
-Begin by mapping the relevant columns: [COLUMN_DESCRIPTIONS]. State which field represents time, category, value, and any unique identifier. Inspect for blanks, duplicated records, inconsistent labels, impossible values, and mixed units before interpreting patterns. If the question cannot be answered from these columns, say exactly what is missing.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Propose the smallest useful analysis: formulas, a PivotTable, or a chart—not all three unless each adds a distinct insight. Show formulas with structured references and explain where they should be placed. Separate observed results from possible explanations; correlation is not proof of cause.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Translate
+Break [BUSINESS_QUESTION] into testable analysis questions using [SHEETS_AVAILABLE].
 
-Present the response as:
-1. data-quality findings;
-2. recommended analysis steps;
-3. key results in plain language;
-4. one suitable visual with axis definitions;
-5. two manual cross-checks using totals or sample rows.
+STEP 2 — Method
+Propose Excel steps suited to [SKILL] and [TIME], using [METRICS_CANDIDATES] carefully.
 
-Use [DATE_RANGE] and [SEGMENTS] as filters. Never overwrite source data, and label any estimated or excluded values.
+STEP 3 — Decision link
+Connect findings plan to [DECISION] and [OUTPUT_NEED] within [CONSTRAINTS].
+
+STEP 4 — QA
+Add validation checks before trusting numbers.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Analysis questions
+B. Required columns
+C. Excel step plan
+D. Pivot/chart suggestions
+E. Validation checks
+F. Decision link
+G. Timeboxed path
+H. Missing data flags
+
+Rules: question-led analysis; no fake outputs; skill-appropriate.
 ```
 
 ---

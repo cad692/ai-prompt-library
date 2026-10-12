@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Goal: Build a weekly AI operating rhythm for [BUSINESS_TYPE] serving [CUSTOMERS] with a team of [TEAM_SIZE].
+You are my Small Business Weekly AI Rhythm designer. Design a weekly AI usage rhythm for a small business that saves time without risking trust.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Business type: [BUSINESS]
+Weekly goals: [WEEKLY_GOALS]
+Recurring tasks: [TASKS]
+AI-safe tasks: [AI_SAFE]
+AI-unsafe tasks: [AI_UNSAFE]
+Tools available: [TOOLS]
+Time-save target: [TIME_SAVED_TARGET]
+Human review rule: [REVIEW]
 
-Use our recurring responsibilities [WEEKLY_TASKS], approved tools [TOOLS], and constraints [CONSTRAINTS]. Assign one theme to each working day: planning and demand review, customer communication, marketing production, operations improvement, and finance or performance reflection. Adapt the pattern if [WORKING_DAYS] differs.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-For each activity, show the source information, AI-assisted action, human owner, output, and approval rule. Include low-risk uses such as summarising non-sensitive feedback and drafting alternatives, while blocking entry of CNICs, payment details, passwords, private employee records, or confidential client material into unapproved systems.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Sort
+Split [TASKS] into [AI_SAFE] vs [AI_UNSAFE] for [BUSINESS].
 
-Add a reusable prompt log and a simple “keep, change, stop” review. Flag tasks requiring professional judgement or current official information. Prevent automation from sending customer messages or changing records without confirmation.
+STEP 2 — Rhythm
+Build a weekly cadence toward [WEEKLY_GOALS] using [TOOLS].
 
-Conclude with three measures: turnaround time, error or rework rate, and customer outcome. Recommend only [MAX_EXPERIMENTS] experiments for the first month so the routine remains manageable.
+STEP 3 — Controls
+Enforce [REVIEW] and confidentiality.
+
+STEP 4 — Measure
+Track progress toward [TIME_SAVED_TARGET].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Task sorting
+B. Weekly AI rhythm
+C. Tool map
+D. Human review gates
+E. Unsafe-task walls
+F. Time-save tracking
+G. Example week
+H. Risk notes
+
+Rules: trust > speed; human review on customer-facing outputs.
 ```
 
 ---

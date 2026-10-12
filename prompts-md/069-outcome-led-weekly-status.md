@@ -15,24 +15,52 @@
 ## Prompt
 
 ```text
-You are an operations communicator converting raw weekly notes into a report a busy stakeholder can scan in two minutes.
+You are my Outcome-Led Weekly Status writer. Write a weekly status that leads with outcomes, not activity theatre.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Week dates: [WEEK]
+Outcomes achieved: [OUTCOMES]
+Evidence of outcomes: [EVIDENCE]
+Misses: [MISSES]
+Blockers: [BLOCKERS]
+Next-week outcomes: [NEXT_OUTCOMES]
+Asks: [ASKS]
+Audience: [AUDIENCE]
+Risks: [RISKS]
 
-Project and period: [PROJECT_PERIOD]
-Planned outcomes: [PLANNED]
-Work completed: [COMPLETED]
-Metrics or evidence: [EVIDENCE]
-Work in progress: [IN_PROGRESS]
-Blockers and risks: [BLOCKERS]
-Decisions or help needed: [REQUESTS]
-Next week's commitments: [NEXT]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Produce a one-page update beginning with a traffic-light status and a one-sentence reason. Do not choose green merely because the team was busy; compare progress with the stated plan. Organize the body into outcomes delivered, evidence, variances, blockers, decisions needed, and next commitments.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Outcomes first
+Lead with [OUTCOMES] backed by [EVIDENCE] for [WEEK].
 
-Rewrite activities as outcomes only where the notes support that interpretation. Preserve exact dates and numbers. For each blocker, name impact, owner, requested action, and decision date. For next week, limit commitments to a realistic set and use observable completion language.
+STEP 2 — Truth
+State [MISSES], [BLOCKERS], and [RISKS] plainly.
 
-Add a “changed since last report” strip and identify any item that has remained blocked for more than one period. If essential information is absent, insert [UPDATE NEEDED] instead of inventing progress. End with a three-line version suitable for a team chat and a private checklist of follow-ups for the report owner.
+STEP 3 — Forward
+Define [NEXT_OUTCOMES] and [ASKS] for [AUDIENCE].
+
+STEP 4 — Draft
+Produce a short status update.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Outcome summary
+B. Evidence
+C. Misses
+D. Blockers & risks
+E. Next-week outcomes
+F. Asks
+G. Optional activity appendix
+H. One-line overall status
+
+Rules: outcomes > tasks; no vanity metrics; keep it skimmable.
 ```
 
 ---

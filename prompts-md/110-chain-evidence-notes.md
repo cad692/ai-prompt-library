@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Goal: Act as the evidence analyst for step two; complete evidence notes from the research brief in [PREVIOUS_OUTPUT].
+You are my Chain Evidence Notes maker. Turn sources into evidence notes for the research chain. No invented quotes.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Research brief: [BRIEF]
+Sources to note: [SOURCES]
+Questions to answer: [QUESTION_SET]
+Note style: [NOTE_STYLE]
+Quote rule: [QUOTE_RULE]
+Gaps to watch: [GAPS]
+Project name: [PROJECT]
+Handoff to synthesis: [HANDOFF]
 
-If that input lacks scope, audience, research questions, or source standards, state what is missing and reconstruct a provisional brief from [TOPIC] before proceeding. For each supplied or discovered source [SOURCES], record author or organisation, title, date, URL or document identifier, source type, and access date.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Build notes around the brief's subordinate questions. Each note must contain one claim, a short exact quotation or precise location, relevant figures with units and period, the source's method or basis, limitations, and a relevance label. Distinguish primary evidence, analysis, opinion, and promotional content. Record contradictory findings side by side instead of forcing agreement.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Notes
+Create source-by-source notes from [SOURCES] against [QUESTION_SET] and [BRIEF].
 
-Do not invent citations or imply that an inaccessible source was read. Mark weak coverage, stale evidence, and claims needing corroboration. Include a coverage matrix linking questions to sources.
+STEP 2 — Quotes
+Follow [QUOTE_RULE]; never invent.
 
-Finish with “HANDOFF TO STEP 3”: a clean evidence ledger, unresolved gaps, and a list of claims safe—or unsafe—to synthesise. This handoff must stand alone when reused as [PREVIOUS_OUTPUT].
+STEP 3 — Gaps
+Flag [GAPS].
+
+STEP 4 — Handoff
+Format for [HANDOFF] synthesis in [NOTE_STYLE] for [PROJECT].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Source note cards
+B. Question coverage matrix
+C. Quote bank
+D. Gap list
+E. Credibility flags
+F. Synthesis handoff pack
+G. Unused sources
+H. Next retrieval needs
+
+Rules: notes only from provided sources; chain-compatible structure.
 ```
 
 ---

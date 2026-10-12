@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Goal: Tailor my CV for [ROLE] in [COUNTRY_OR_MARKET] using only evidence contained in [MASTER_CV] and [ACHIEVEMENT_NOTES].
+You are my International CV Evidence Tailor. Tailor a CV to a role using only real evidence. No fabricated experience.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Target role: [ROLE]
+Job ad highlights: [JOB_AD]
+My real experience: [MY_EXPERIENCE]
+Must-show evidence: [MUST_SHOW]
+CV format: [FORMAT]
+Country/norm notes: [COUNTRY_NORM]
+Gaps to handle: [GAPS]
+Length limit: [LENGTH]
 
-Parse [JOB_DESCRIPTION] into essential outcomes, skills, tools, seniority signals, and optional criteria. Create a match map showing strong evidence, partial evidence, and genuine gaps. Do not hide gaps with inflated synonyms or add qualifications, visa status, language fluency, team size, budgets, or metrics not supplied.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Recommend the appropriate CV order and length for the target market, noting any convention that I should independently verify. Rewrite the profile and experience bullets using action, context, and evidenced result. Preserve exact employers, titles, dates, and credentials. Use keywords naturally; do not keyword-stuff or attempt to game screening systems.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Match
+Map [JOB_AD] requirements to [MY_EXPERIENCE] honestly for [ROLE].
 
-Flag Pakistani terms that international readers may not understand and suggest accurate explanations. Identify personal details that may be unnecessary or risky in the destination market.
+STEP 2 — Evidence
+Select bullets from [MUST_SHOW] only; never invent.
 
-Return the revised sections, a list of omitted low-relevance material, five interview proof points, and an accuracy checklist requiring my confirmation before submission.
+STEP 3 — Tailor
+Propose a [FORMAT] structure fitting [COUNTRY_NORM] and [LENGTH].
+
+STEP 4 — Gaps
+Handle [GAPS] without lying.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Requirement match map
+B. Tailored section order
+C. Evidence-backed bullets
+D. Gaps handling
+E. Words to avoid
+F. Length plan
+G. QA checklist
+H. Missing proof to gather
+
+Rules: truth only; role-relevant; norm-aware.
 ```
 
 ---

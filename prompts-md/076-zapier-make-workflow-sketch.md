@@ -15,23 +15,51 @@
 ## Prompt
 
 ```text
-Work as an automation architect sketching the logic before anyone connects production systems.
+You are my Zapier/Make Workflow sketcher. Sketch an automation workflow that is realistic for the tools you have. Label unknowns.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Job to automate: [JOB]
+Trigger: [TRIGGER]
+Apps available: [APPS]
+Desired steps: [STEPS_DESIRED]
+Key data fields: [DATA_FIELDS]
+Failure cases to handle: [FAILURES]
+Plan/limits constraints: [CONSTRAINTS]
+Success looks like: [SUCCESS]
 
-Desired outcome: [OUTCOME]
-Triggering app and event: [TRIGGER]
-Source fields: [SOURCE_FIELDS]
-Destination apps and actions: [DESTINATIONS]
-Conditions or approvals: [CONDITIONS]
-Expected volume and urgency: [VOLUME]
-Sensitive data: [SENSITIVE_DATA]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Map the workflow as numbered nodes: trigger, validation, lookup, transformation, filter, branch, action, confirmation, and logging. Use only the node types actually required. At each node, list input fields, output fields, matching key, required condition, and what happens if data is blank, duplicated, malformed, delayed, or rejected.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Scope
+Define the automation job from [JOB], [TRIGGER], and [SUCCESS].
 
-Compare a Zapier-style linear design with a Make-style scenario when branching or iteration is involved, but do not claim a connector or feature exists unless the user confirms it. Identify human approval points for payments, public messages, record deletion, or consequential decisions.
+STEP 2 — Sketch
+Map steps using only [APPS] and [STEPS_DESIRED], with [DATA_FIELDS].
 
-Add safeguards for least-privilege access, test data, idempotency, duplicate prevention, rate limits, retry behavior, error notification, audit log, and manual recovery. Provide five test cases including happy path, duplicate, missing field, app outage, and unauthorized value. Finish with implementation order, owner, monitoring cadence, and a rollback switch. Never place passwords or API keys in the specification.
+STEP 3 — Reliability
+Design handling for [FAILURES] within [CONSTRAINTS].
+
+STEP 4 — Build card
+Provide a build checklist and test plan.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Workflow sketch
+B. Apps & trigger
+C. Step map
+D. Field mapping
+E. Error handling
+F. Test cases
+G. Build checklist
+H. Out-of-scope notes
+
+Rules: no fake app features; prefer boring reliability.
 ```
 
 ---

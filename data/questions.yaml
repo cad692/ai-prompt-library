@@ -1687,1062 +1687,1458 @@
     ex: Email; use formal greeting
     optional: true
 "062":
-  GOAL:
-    q: What decision or objective must this support?
-    ex: Launch a simple digital product
-  NOTES:
-    q: What discovery notes should we use?
-    ex: A list of client requirements and ideas
-  DELIVERABLES:
-    q: What deliverables should shape this proposal scope boundary builder?
-    ex: Design, build, and handover support
+  PROJECT:
+    q: What project is the proposal for?
+    ex: Website redesign for a clinic
+  CLIENT_GOAL:
+    q: What is the client’s main goal?
+    ex: Book more appointments online
+  IN_SCOPE:
+    q: What is explicitly in scope?
+    ex: 5 pages, booking form, mobile layout
+  OUT_SCOPE:
+    q: What is explicitly out of scope?
+    ex: Custom CRM; patient records migration
+  ASSUMPTIONS:
+    q: What assumptions must hold?
+    ex: Client provides logo and copy by week 1
+  DEPENDENCIES:
+    q: What dependencies exist?
+    ex: Hosting access; doctor availability for photos
+    optional: true
   TIMELINE:
-    q: What timeline should shape this proposal scope boundary builder?
-    ex: A six-week delivery window
-  CLIENT_INPUTS:
-    q: What client inputs should shape this proposal scope boundary builder?
-    ex: Content, approvals, and access
-  BUDGET_MODEL:
-    q: What budget model should shape this proposal scope boundary builder?
-    ex: A fixed fee or staged payment
+    q: What timeline are you proposing?
+    ex: 4 weeks
+  BUDGET_BAND:
+    q: What budget band applies?
+    ex: Rs. 180k–220k
+  CHANGE_RULE:
+    q: How will scope changes be handled?
+    ex: Written change note + timeline impact
+    optional: true
 "063":
-  DECISION:
-    q: What decision should shape this evidence aware swot?
-    ex: Whether to expand the service
-  ORGANIZATION:
-    q: What organization or project is this for?
-    ex: A community education initiative
-  INTERNAL_EVIDENCE:
-    q: What internal evidence do you have?
-    ex: Recent results and team capacity
-  EXTERNAL_EVIDENCE:
-    q: What external evidence should shape this evidence aware swot?
-    ex: Competitor activity and market demand
+  SUBJECT:
+    q: What is the SWOT about?
+    ex: Campus tutoring pilot
+  GOAL:
+    q: What decision should this SWOT support?
+    ex: Whether to expand to a second campus
+  EVIDENCE:
+    q: What evidence do you already have?
+    ex: 40 users; 70% 4-week retention; 12 testimonials
+  STRENGTH_SEEDS:
+    q: What strengths do you suspect?
+    ex: Fast feedback loop; low price
+  WEAKNESS_SEEDS:
+    q: What weaknesses do you suspect?
+    ex: Founder-dependent tutoring quality
+  EXTERNAL_NOTES:
+    q: What external opportunity or threat notes exist?
+    ex: Exam season demand; free YouTube competition
+    optional: true
   TIME_HORIZON:
-    q: What time horizon should we use?
-    ex: Next 12 months
-  MARKET:
-    q: What market or geography is relevant?
-    ex: Lahore and nearby districts
+    q: What time horizon should the SWOT use?
+    ex: Next 6 months
+  AUDIENCE:
+    q: Who will read this SWOT?
+    ex: Co-founder and advisor
 "064":
   LEARNING_GOAL:
-    q: What are you trying to learn?
-    ex: Why customers switch providers
-  PARTICIPANT:
-    q: What participant should shape this customer interview field guide?
-    ex: Recent customers in the target group
-  AREA:
-    q: What product or problem area is this about?
-    ex: Online tutoring services
-  DURATION:
-    q: What is the total time limit?
-    ex: 8 minutes speaking / 30-minute meeting
-  ASSUMPTIONS:
-    q: What assumptions should shape this customer interview field guide?
-    ex: Price matters more than convenience
+    q: What do you need to learn from interviews?
+    ex: Why students abandon study plans
+  INTERVIEWEE:
+    q: Who will you interview?
+    ex: Second-year university students
+  CONTEXT:
+    q: What product or problem context applies?
+    ex: Habit app for exam revision
+  MUST_LEARN:
+    q: Which topics must you learn about?
+    ex: Triggers, drop-off moments, current tools
+  TIME_MINUTES:
+    q: How many minutes is each interview?
+    ex: '30'
   SENSITIVE_TOPICS:
-    q: What sensitive topics should shape this customer interview field guide?
-    ex: Budget and personal stress
+    q: Which topics need careful handling?
+    ex: Academic failure and family pressure
+    optional: true
+  RECRUIT_NOTES:
+    q: Any recruiting notes?
+    ex: Campus WhatsApp groups; offer tea voucher
+    optional: true
+  NOTE_STYLE:
+    q: How will you take notes?
+    ex: Timestamped bullets + exact quotes
 "065":
-  PROCESS:
-    q: What process should shape this sop first draft mapper?
-    ex: A client onboarding workflow
-  START_END:
-    q: What starts and ends the process?
-    ex: Lead received to final sign-off
-  NOTES:
-    q: What notes or transcript should we use?
-    ex: Current operational notes
-  ROLES:
-    q: Who is involved in the work?
-    ex: Admin staff and project lead
+  PROCESS_NAME:
+    q: What process needs an SOP?
+    ex: Client onboarding for freelance design
+  GOAL:
+    q: What should the process achieve?
+    ex: Kickoff in 5 business days with clear scope
+  ACTORS:
+    q: Who is involved in the process?
+    ex: Freelancer, client, optional VA
+  TRIGGER:
+    q: What triggers this process?
+    ex: Signed proposal + first payment
+  STEPS_KNOWN:
+    q: Which steps do you already know?
+    ex: Send questionnaire; schedule call; share folder
   TOOLS:
-    q: What tools should shape this sop first draft mapper?
-    ex: Google Drive and email
-  EXCEPTIONS:
-    q: What exceptions should shape this sop first draft mapper?
-    ex: Missing files or delayed approvals
+    q: Which tools are used?
+    ex: Gmail, Google Drive, Notion
+  RISKS:
+    q: What risks or failure points exist?
+    ex: Missing brand assets; unpaid start
+    optional: true
+  COMPLIANCE:
+    q: Any compliance notes to respect?
+    ex: Keep client files private
+    optional: true
+  AUDIENCE:
+    q: Who will follow this SOP?
+    ex: Me and a future VA
 "066":
   COMPLAINT:
-    q: What complaint should shape this service complaint recovery reply?
-    ex: A delayed order and poor follow-up
+    q: Paste the customer complaint.
+    ex: Order arrived damaged; wants replacement today
   FACTS:
-    q: What facts should shape this service complaint recovery reply?
-    ex: Order date, delivery status, and support logs
-  POLICY:
-    q: What policy should shape this service complaint recovery reply?
-    ex: Refund and support policy
-  ACTIONS:
-    q: What actions have already been taken?
-    ex: A refund was offered and tracked
-  REMEDIES:
-    q: What remedies should shape this service complaint recovery reply?
-    ex: Refund, replacement, or service credit
-  TIMING:
-    q: What timing should shape this service complaint recovery reply?
-    ex: Within 48 hours
-  CHANNEL_TONE:
-    q: What channel and tone should be used?
-    ex: Email with a calm and accountable tone
+    q: What facts can you confirm?
+    ex: 'Order #441; delivered yesterday; photo shows cracked lid'
+  WHAT_WENT_WRONG:
+    q: What went wrong on your side?
+    ex: Packaging insufficient for courier handling
+  CUSTOMER_IMPACT:
+    q: How did this affect the customer?
+    ex: Gift unusable for tonight’s dinner
+  FIX_OPTIONS:
+    q: Which fix options can you actually offer?
+    ex: Reship today or full refund
+  LIMITS:
+    q: What limits can you not exceed?
+    ex: No same-hour courier outside city
+  TONE:
+    q: What tone should the reply use?
+    ex: Apologetic, calm, practical
+  CHANNEL:
+    q: Which channel will you reply on?
+    ex: WhatsApp
+  FOLLOW_UP:
+    q: What follow-up can you honestly promise?
+    ex: Tracking message within 2 hours
+    optional: true
 "067":
   OFFER:
-    q: What product or service are you explaining?
-    ex: A monthly coaching package
-  CURRENCY_MARKET:
-    q: What currency or market is this for?
-    ex: PKR for Pakistani customers
-  COMPONENTS:
-    q: What components should shape this plain language pricing explainer?
-    ex: Session fee, materials, and admin support
-  INCLUSIONS:
-    q: What is included in the price?
-    ex: One onboarding call and monthly check-ins
-  EXCLUSIONS:
-    q: What exclusions should shape this plain language pricing explainer?
-    ex: Custom research and extra workshops
+    q: What offer are you explaining?
+    ex: Monthly social content retainer
+  PRICE_STRUCTURE:
+    q: What is the price structure?
+    ex: Rs. 45,000/month for 12 posts
+  WHO_FOR:
+    q: Who is this pricing for?
+    ex: Local clinics and tutors
+  INCLUDED:
+    q: What is included?
+    ex: Captions, Canva designs, scheduling
+  EXCLUDED:
+    q: What is excluded?
+    ex: Paid ads management; video shoots
   BILLING:
-    q: What billing should shape this plain language pricing explainer?
-    ex: Monthly with annual discount
-  CONFIRMED_RULES:
-    q: What taxes or discounts are already confirmed?
-    ex: GST and a 10% student discount
-  CONFIRM:
-    q: What confirm should shape this plain language pricing explainer?
-    ex: Exchange rate or extra service fees
+    q: When and how is billing done?
+    ex: Invoice on the 1st; due in 5 days
+  FAQS:
+    q: Which FAQs come up most?
+    ex: Unused posts roll over? Rush fees?
+    optional: true
+  TONE:
+    q: What tone should the explainer use?
+    ex: Friendly and transparent
+  CURRENCY:
+    q: Which currency should we use?
+    ex: PKR
 "068":
-  OUR_SIDE:
-    q: What our side should shape this mutual value partnership outreach?
-    ex: A community learning platform
-  PARTNER:
-    q: What partner should shape this mutual value partnership outreach?
-    ex: A local NGO or campus office
-  OVERLAP:
-    q: What overlap should shape this mutual value partnership outreach?
-    ex: Student skills and outreach
-  IDEA:
-    q: What idea should shape this mutual value partnership outreach?
-    ex: A short workshop series
-  OUR_CONTRIBUTION:
-    q: What our contribution should shape this mutual value partnership outreach?
-    ex: Curriculum design and facilitation
-  REQUEST:
-    q: What request should shape this mutual value partnership outreach?
-    ex: Access to members and a meeting slot
-  EVIDENCE:
-    q: What evidence should shape this mutual value partnership outreach?
-    ex: Past workshops and learner feedback
-"069":
-  PROJECT_PERIOD:
-    q: What project and period are you reporting?
-    ex: Website refresh for this week
-  PLANNED:
-    q: What planned should shape this outcome led weekly status?
-    ex: Launch new pages and fix errors
-  COMPLETED:
-    q: What completed should shape this outcome led weekly status?
-    ex: New pages were built and reviewed
-  EVIDENCE:
-    q: What evidence should shape this outcome led weekly status?
-    ex: Launch metrics or proof of completion
-  IN_PROGRESS:
-    q: What in progress should shape this outcome led weekly status?
-    ex: Final QA and client review
-  BLOCKERS:
-    q: What blockers should shape this outcome led weekly status?
-    ex: Waiting on final copy approval
-  REQUESTS:
-    q: What decisions or help are needed?
-    ex: Approval on the final copy
-  NEXT:
-    q: What next should shape this outcome led weekly status?
-    ex: Publish the revised content
-"070":
-  SHOP_LOCATION:
-    q: What shop type and location are you targeting?
-    ex: A bookstore in Gulshan
-  OFFERINGS:
-    q: What products or services should be promoted?
-    ex: Books, stationery, and printing
-  CUSTOMERS:
-    q: What customers should shape this local shop campaign angle lab?
-    ex: Students and office workers
-  GOAL:
-    q: What decision or objective must this support?
-    ex: Drive more repeat visits
+  PARTNER_TYPE:
+    q: What type of partner are you approaching?
+    ex: Campus society with large student reach
+  THEIR_GOAL:
+    q: What do they likely care about?
+    ex: Useful member perks and events
+  MY_ASSET:
+    q: What can you offer them?
+    ex: Free exam-week workshops for members
+  SHARED_FIT:
+    q: What shared fit do you see?
+    ex: Both help students prepare during midterms
+  ASK:
+    q: What specific ask are you making?
+    ex: Co-host one 60-min session next month
   PROOF:
-    q: What proof or differentiator can you use?
-    ex: Fast service and local trust
+    q: What proof of seriousness can you share?
+    ex: Ran 2 workshops; 90 attendees total
+  TONE:
+    q: What tone should outreach use?
+    ex: Collaborative and concise
+  CHANNEL:
+    q: Which channel will you use?
+    ex: Email to society president
   CONSTRAINTS:
-    q: What budget, channels, and timeframe matter?
-    ex: A small budget and a two-week launch
-  LANGUAGES:
-    q: What languages do local customers use?
-    ex: Urdu and English
+    q: Any constraints to respect?
+    ex: No paid promotion required
+    optional: true
+"069":
+  WEEK:
+    q: Which week is this status for?
+    ex: 6–12 October 2026
+  OUTCOMES:
+    q: What outcomes were achieved?
+    ex: Proposal sent; pilot script approved
+  EVIDENCE:
+    q: What evidence supports those outcomes?
+    ex: Client email approval; Doc link v3
+  MISSES:
+    q: What did you miss?
+    ex: Analytics dashboard delayed
+  BLOCKERS:
+    q: What blockers remain?
+    ex: Waiting on brand fonts
+  NEXT_OUTCOMES:
+    q: What outcomes will next week target?
+    ex: First 5 creatives in review
+  ASKS:
+    q: What asks do you have?
+    ex: Font files by Wednesday
+  AUDIENCE:
+    q: Who reads this status?
+    ex: Client and project lead
+  RISKS:
+    q: What risks should be visible?
+    ex: Launch art may slip 2 days
+    optional: true
+"070":
+  SHOP:
+    q: What shop or business is this for?
+    ex: Neighbourhood bakery
+  CITY:
+    q: Which city or neighbourhood?
+    ex: Karachi — North Nazimabad
+  OFFER:
+    q: What offer are you promoting?
+    ex: Weekend family pack
+  AUDIENCE:
+    q: Who is the local audience?
+    ex: Families within 2 km
+  BUDGET:
+    q: What budget can you spend?
+    ex: Rs. 15,000
+  CHANNEL:
+    q: Which channels can you use?
+    ex: WhatsApp status; Facebook local; flyers
+  PROOF:
+    q: What local proof can you show?
+    ex: 120 weekend regulars; fresh at 5pm
+  CONSTRAINTS:
+    q: What constraints apply?
+    ex: No delivery beyond 3 km
+    optional: true
+  GOAL:
+    q: What is the campaign goal?
+    ex: Sell 80 family packs this weekend
 "071":
-  PURPOSE:
-    q: What is the purpose of this work?
-    ex: Tracking project costs
-  SCHEMA_SAMPLE:
-    q: What columns and sample rows are in the sheet?
-    ex: Date, item, and amount
-  PROBLEMS:
-    q: What data issues do you already know about?
-    ex: Mixed date formats and blanks
-  ANALYSIS:
-    q: What analysis should shape this spreadsheet cleaning blueprint?
-    ex: Monthly cost review
-  EXCEL_OR_SHEETS:
-    q: What excel or sheets should shape this spreadsheet cleaning blueprint?
+  SHEET_DESCRIPTION:
+    q: What does the messy spreadsheet contain?
+    ex: Student attendance export with duplicates
+  GOAL:
+    q: What analysis is this cleaning for?
+    ex: Monthly attendance rate by section
+  KNOWN_ISSUES:
+    q: What issues do you already see?
+    ex: Extra spaces; mixed date formats; blank IDs
+  KEY_FIELDS:
+    q: Which fields matter most?
+    ex: student_id, date, present_flag, section
+  RULES:
+    q: Which cleaning rules do you want?
+    ex: Trim text; ISO dates; drop blank IDs
+  MUST_PRESERVE:
+    q: Which values must not be altered casually?
+    ex: Original present_flag meanings
+  TOOLS:
+    q: Which tools can you use?
     ex: Excel or Google Sheets
-  LOCALE:
-    q: What locale or number/date format is used?
-    ex: Pakistan and local date style
+  TIME:
+    q: How much time do you have?
+    ex: 90 minutes
+    optional: true
 "072":
-  CHART_DATA:
-    q: What chart or data should be interpreted?
-    ex: A sales chart for the last year
-  METRIC:
-    q: What metric should shape this chart to decision narrative?
-    ex: Monthly revenue in PKR
-  AUDIENCE_DECISION:
-    q: Who is the audience and what decision matters?
-    ex: A team deciding to expand
-  PERIOD:
-    q: What comparison period should we use?
-    ex: This quarter vs last quarter
-  SOURCE_CAVEATS:
-    q: What source or caveats should we note?
-    ex: Past categories changed in July
-  ACTION:
-    q: What action should the evidence support?
-    ex: Keep the campaign and review spend
-  BOUNDARY:
-    q: What boundary should shape this chart to decision narrative?
-    ex: Within the current budget
-  UNCERTAINTY:
-    q: What uncertainty should shape this chart to decision narrative?
-    ex: Seasonal demand and small sample size
-"073":
+  CHART_DESCRIPTION:
+    q: Describe the chart or paste the data summary.
+    ex: 'Line chart: weekly active users Jan–Sep'
   DECISION:
-    q: What decision should shape this assumptions first analysis?
-    ex: Whether to broaden the launch
-  DATA:
-    q: What data should shape this assumptions first analysis?
-    ex: Recent customer and sales data
-  METHOD:
-    q: What method should shape this assumptions first analysis?
-    ex: A simple comparison and trend test
+    q: What decision should the narrative support?
+    ex: Hire one more community moderator
+  AUDIENCE:
+    q: Who is the audience?
+    ex: Ops lead and founder
+  CLAIM_DRAFT:
+    q: What claim do you want to make?
+    ex: Growth is accelerating since June
+  LIMITS:
+    q: What limits does the data have?
+    ex: No retention cohort split
+    optional: true
+  CONTRAST:
+    q: What comparison matters most?
+    ex: June vs September growth rate
+  ACTION:
+    q: What action options are on the table?
+    ex: Hire now, wait 30 days, or automate FAQs
+  TONE:
+    q: What tone should the narrative use?
+    ex: Cautious and practical
+"073":
+  QUESTION:
+    q: What analysis question are you answering?
+    ex: Will evening classes raise attendance?
+  DATA_AVAILABLE:
+    q: What data do you already have?
+    ex: Term attendance by hour for one campus
+  ASSUMPTIONS_SEED:
+    q: Which assumptions do you already notice?
+    ex: Students are free in evenings
   STAKEHOLDERS:
-    q: Who is affected by the decision?
-    ex: The project team and leadership
-  CONSTRAINTS:
-    q: What constraints should shape this assumptions first analysis?
-    ex: Time, cost, and data quality
-  DEADLINE:
-    q: When do you need the answer?
-    ex: Before next Friday
+    q: Who depends on this analysis?
+    ex: Academic coordinator
+  RISK_IF_WRONG:
+    q: What is the risk if assumptions are wrong?
+    ex: Hire tutors for empty slots
+  METHODS_OK:
+    q: Which methods can you use?
+    ex: Descriptive stats and simple comparison
+  TIME:
+    q: How much time do you have?
+    ex: Two days
+  SUCCESS:
+    q: What does a good answer look like?
+    ex: Clear go/no-go with tested assumptions
 "074":
-  ITEMS:
-    q: What items should shape this notion database system designer?
-    ex: Client project tasks
+  WORKFLOW:
+    q: What workflow should Notion support?
+    ex: Freelance project tracking
   USERS:
-    q: What users should shape this notion database system designer?
-    ex: A small team
-  STAGES:
-    q: What stages should shape this notion database system designer?
-    ex: Backlog, active, review, done
-  QUESTIONS:
-    q: What questions should the database answer?
-    ex: Which tasks are blocked?
-  EXISTING:
-    q: What databases or notes already exist?
-    ex: A spreadsheet and email threads
-  NEEDS:
-    q: What reporting or automation is needed?
-    ex: Weekly status views
-  FORMULA_SYNTAX:
-    q: Do you need a formula syntax example?
-    ex: Yes, a simple formula
+    q: Who will use the system?
+    ex: Me and one VA
+  OBJECTS:
+    q: What main objects must be tracked?
+    ex: Clients, projects, tasks, invoices
+  VIEWS_NEEDED:
+    q: Which views do you need?
+    ex: This week, waiting on client, unpaid
+  FIELDS_MUST:
+    q: Which fields are must-have?
+    ex: Status, due date, amount, client relation
+  AUTOMATIONS:
+    q: Which automations do you want?
+    ex: Status→archive; due soon reminders
+    optional: true
+  CONSTRAINTS:
+    q: What constraints apply?
+    ex: Free Notion plan; keep under 4 databases
+  SUCCESS:
+    q: What does success look like?
+    ex: I can see blockers in under 30 seconds
 "075":
   NOTES:
-    q: What meeting notes or transcript do you have?
-    ex: Rough notes from a team meeting
-  PURPOSE:
-    q: What is the purpose of this work?
-    ex: Choosing the next project step
-  PARTICIPANTS:
-    q: What participants should shape this meeting notes to accountable actions?
-    ex: Three team members and a client
-  CONTEXT:
-    q: What setting or situation should shape the work?
-    ex: Delivery schedule and constraints
-  CONFIRM:
-    q: What confirm should shape this meeting notes to accountable actions?
-    ex: The owner or date for a task
+    q: Paste the meeting notes.
+    ex: Paste bullets from the meeting
+  MEETING:
+    q: What is the meeting name and date?
+    ex: Sprint review 11 Oct 2026
+  PEOPLE:
+    q: Who was present?
+    ex: Amina, Bilal, Noor, vendor Rizwan
+  PRIORITY:
+    q: How should priorities be decided?
+    ex: Launch blockers first
+  DONE_DEFINITION:
+    q: What does done mean for key tasks?
+    ex: Merged PR + QA note posted
+  TIMEZONE:
+    q: Which timezone for deadlines?
+    ex: PKT
+  ALREADY_DONE:
+    q: What is already done?
+    ex: Logo approved
+    optional: true
+  FORMAT:
+    q: What output format do you need?
+    ex: Markdown table for Notion
 "076":
-  OUTCOME:
-    q: What outcome should shape this zapier or make workflow sketch?
-    ex: Create a new task when an email arrives
+  JOB:
+    q: What job should automation do?
+    ex: Log Typeform leads into Sheets and Slack
   TRIGGER:
-    q: What trigger should shape this zapier or make workflow sketch?
-    ex: A new form submission
-  SOURCE_FIELDS:
-    q: What source fields should shape this zapier or make workflow sketch?
-    ex: Email, name, and request type
-  DESTINATIONS:
-    q: What destinations should shape this zapier or make workflow sketch?
-    ex: A spreadsheet and a task board
-  CONDITIONS:
-    q: What conditions should shape this zapier or make workflow sketch?
-    ex: Only confirmed requests
-  VOLUME:
-    q: How much volume or urgency is expected?
-    ex: A few per day
-  SENSITIVE_DATA:
-    q: What sensitive data should shape this zapier or make workflow sketch?
-    ex: Client contact and billing details
+    q: What triggers the workflow?
+    ex: New Typeform submission
+  APPS:
+    q: Which apps can you connect?
+    ex: Typeform, Google Sheets, Slack
+  STEPS_DESIRED:
+    q: Which steps do you want?
+    ex: 'Validate email; append row; notify #leads'
+  DATA_FIELDS:
+    q: Which data fields matter?
+    ex: name, email, city, source
+  FAILURES:
+    q: Which failure cases must be handled?
+    ex: Missing email; Slack downtime
+  CONSTRAINTS:
+    q: What plan or limit constraints apply?
+    ex: Zapier Free; under 100 tasks/mo
+    optional: true
+  SUCCESS:
+    q: What does success look like?
+    ex: Lead in Sheet + Slack within 1 minute
 "077":
-  OBJECTIVE:
-    q: What business objective should this KPI support?
-    ex: Improve return visits
-  KPIS:
-    q: What KPI names are being considered?
-    ex: Weekly active users
-  SYSTEMS:
-    q: What systems should shape this kpi definition card maker?
-    ex: Google Analytics and CRM
+  OUTCOME:
+    q: What outcome should the KPI track?
+    ex: Students finish weekly practice
   AUDIENCE:
-    q: Who will see or use this output?
-    ex: The project lead
-  FREQUENCY:
-    q: What frequency should shape this kpi definition card maker?
-    ex: Every week
-  DISPUTES:
-    q: What disputes or confusion already exist?
-    ex: Whether a visit counts as active
-"078":
-  RESEARCH_OBJECTIVE:
-    q: What is the survey research objective?
-    ex: Understand student study habits
-  POPULATION:
-    q: What population should shape this unbiased survey designer?
-    ex: Undergraduate students
-  SAMPLING:
-    q: What sampling should shape this unbiased survey designer?
-    ex: A class email and QR code
+    q: Who will use this KPI?
+    ex: Product and tutoring leads
+  CANDIDATE_METRIC:
+    q: What candidate metric are you considering?
+    ex: '% users completing 3+ practice sets/week'
+  DATA_SOURCE:
+    q: Where will the data come from?
+    ex: Product analytics events
+  CADENCE:
+    q: How often will you review it?
+    ex: Weekly on Mondays
+  OWNER:
+    q: Who owns this KPI?
+    ex: Growth associate
+  GAMING_RISKS:
+    q: How might this KPI be gamed?
+    ex: Tiny empty sets counted as complete
+    optional: true
   DECISIONS:
-    q: What decisions will the results inform?
-    ex: Which support format to offer
-  TOPICS:
-    q: What topics need to be measured?
-    ex: Study time, stress, and support
-  LANGUAGES_ACCESS:
-    q: What languages or accessibility needs apply?
-    ex: Urdu and mobile-friendly design
-  TIME:
-    q: What maximum completion time should it fit?
-    ex: Five minutes
+    q: Which decisions should it drive?
+    ex: Whether to change onboarding nudges
+"078":
+  RESEARCH_GOAL:
+    q: What is the research goal of the survey?
+    ex: Understand why members miss events
+  RESPONDENTS:
+    q: Who will respond?
+    ex: Club members from last semester
+  MUST_LEARN:
+    q: Which topics must the survey cover?
+    ex: Timing, transport, relevance, reminders
+  CHANNEL:
+    q: Which channel will you use?
+    ex: Google Form via WhatsApp
+  LENGTH:
+    q: What target length should it have?
+    ex: Under 4 minutes
   SENSITIVE:
-    q: What sensitive topics may come up?
-    ex: Mental health and finances
+    q: Which topics are sensitive?
+    ex: Financial barriers
+    optional: true
+  LANGUAGE:
+    q: What language should questions use?
+    ex: Simple English with optional Urdu
+  INCENTIVE:
+    q: Any incentive notes?
+    ex: Optional raffle for campus voucher
+    optional: true
 "079":
-  EXCEL_OR_SHEETS:
-    q: Which spreadsheet tool are you using?
-    ex: Excel
-  SCHEMA:
-    q: What are the column names or ranges?
-    ex: Date, amount, and status
-  SAMPLES:
-    q: What samples should shape this spreadsheet error check formulas?
-    ex: A few rows with known problems
-  RULES:
-    q: What business rules should the checks use?
-    ex: No blank date and valid status values
-  KNOWN_ERRORS:
-    q: What known errors should shape this spreadsheet error check formulas?
-    ex: Mixed date formats and duplicate IDs
-  COLUMN:
-    q: Which column or placeholder needs a formula?
-    ex: The cost column
-  LOCALE:
-    q: What locale or separator format should be used?
-    ex: Pakistan date and number settings
+  SHEET_GOAL:
+    q: What is this spreadsheet used for?
+    ex: Monthly stipend disbursement log
+  KEY_COLUMNS:
+    q: Which columns are critical?
+    ex: student_id, amount, status, paid_on
+  KNOWN_RULES:
+    q: Which business rules are known?
+    ex: Amount must be >0; status paid needs date
+  ERROR_TYPES:
+    q: Which error types should we catch?
+    ex: Duplicates, blanks, invalid status
+  TOOL:
+    q: Which spreadsheet tool is this for?
+    ex: Google Sheets
+  SAMPLE_ROWS:
+    q: Any sample rows or patterns to use?
+    ex: IDs like STU-001; statuses draft/paid
+    optional: true
+  OWNER:
+    q: Who maintains the sheet?
+    ex: Finance volunteer
+  CADENCE:
+    q: How often should QA run?
+    ex: Before each payout batch
 "080":
-  USES:
-    q: What will the knowledge base be used for?
-    ex: Study notes and project memory
-  CURRENT_SYSTEM:
-    q: What system or notes do you already use?
-    ex: A messy folder of notes
-  INFORMATION:
-    q: What kinds of information are captured?
-    ex: Ideas, readings, and meeting notes
-  TIME:
-    q: How much weekly maintenance time is available?
-    ex: Fifteen minutes
-  PRIVACY:
-    q: What privacy or offline needs matter?
-    ex: Local-only storage for sensitive notes
-  NOTION_OR_OBSIDIAN:
-    q: What notion or obsidian should shape this personal knowledge base architecture?
-    ex: Notion or Obsidian
-"081":
-  SELECTED_TEXT:
-    q: What selected text should shape this word rewrite with guardrails?
-    ex: A paragraph from a draft
-  DOCUMENT_CONTEXT:
-    q: What local setting or context should examples use?
-    ex: The surrounding section and audience
-  AUDIENCE:
-    q: Who will see or use this output?
-    ex: A department lead
   PURPOSE:
-    q: What is the purpose of this work?
-    ex: Explain a policy change clearly
+    q: What is your personal knowledge base for?
+    ex: Course notes, project decisions, writing ideas
+  SOURCES:
+    q: What incoming sources feed it?
+    ex: PDFs, lecture notes, meeting bullets
+  TOOLS:
+    q: Which tools will store it?
+    ex: Notion + local PDF folder
+  RETRIEVAL_NEEDS:
+    q: How do you usually need to retrieve things?
+    ex: By course, by project, by ‘decision’
+  TAGS_OR_LINKS:
+    q: Do you prefer tags, links, or both?
+    ex: Light tags + bi-directional links
+  TIME_BUDGET:
+    q: What weekly time budget can you spare?
+    ex: 90 minutes
+  PAIN_POINTS:
+    q: What pain points exist now?
+    ex: Notes scattered; can’t find decisions
+    optional: true
+  SUCCESS:
+    q: What does success look like?
+    ex: Find any decision note in under a minute
+"081":
+  DRAFT:
+    q: Paste the draft text to rewrite.
+    ex: Paste the Word section or paragraphs
+  GOAL:
+    q: What is the rewrite goal?
+    ex: Clearer for non-specialists
+  AUDIENCE:
+    q: Who will read the rewritten text?
+    ex: Parent newsletter readers
+  MUST_KEEP:
+    q: Which facts must stay unchanged?
+    ex: Dates, fees, and contact email
+  FORBIDDEN:
+    q: Which changes are forbidden?
+    ex: No new promises; no deleted deadlines
   TONE:
-    q: What tone should the final output use?
-    ex: Clear and professional
-  LANGUAGE_PREFERENCE:
-    q: What language preference should we follow?
-    ex: Pakistani English with formal wording
+    q: What tone should the rewrite use?
+    ex: Warm and plain
+  LENGTH:
+    q: What length target should we hit?
+    ex: About 30% shorter
+  STYLE_GUIDE:
+    q: Any style notes to follow?
+    ex: Short sentences; no jargon
+    optional: true
 "082":
   BUSINESS_QUESTION:
-    q: What business question are you answering?
-    ex: Which region is growing fastest?
-  TABLE_NAME:
-    q: What table should the analysis use?
-    ex: Sales_Data
-  COLUMN_DESCRIPTIONS:
-    q: What columns are relevant to the analysis?
-    ex: Date, region, and revenue
-  DATE_RANGE:
-    q: What date range should be used?
-    ex: This quarter
-  SEGMENTS:
-    q: What segments should shape this excel analysis question designer?
-    ex: By region and channel
+    q: What business question are you analyzing?
+    ex: Which course section has rising absences?
+  SHEETS_AVAILABLE:
+    q: What sheets or columns do you have?
+    ex: attendance with section, date, status
+  DECISION:
+    q: What decision will this inform?
+    ex: Where to add mentoring support
+  CONSTRAINTS:
+    q: What analysis constraints apply?
+    ex: One term only; no student names in share-out
+  METRICS_CANDIDATES:
+    q: Which metrics are candidates?
+    ex: Absence rate; streak of absences
+  TIME:
+    q: How much time do you have?
+    ex: 2 hours
+  SKILL:
+    q: What is your Excel skill level?
+    ex: Intermediate pivots
+  OUTPUT_NEED:
+    q: What output do you need?
+    ex: One chart + top 3 sections table
 "083":
-  EMAIL_THREAD:
-    q: What email thread should be used as context?
-    ex: The latest client exchange
-  DESIRED_OUTCOME:
-    q: What outcome do you want from the reply?
-    ex: Confirm the next step
+  THREAD_CONTEXT:
+    q: Paste the thread or describe the context.
+    ex: Client asked for timeline update yesterday
+  GOAL:
+    q: What should this email achieve?
+    ex: Confirm new delivery date and next review
+  RECIPIENT:
+    q: What is your relationship to the recipient?
+    ex: Paying client; weekly check-ins
+  MUST_INCLUDE:
+    q: Which points must be included?
+    ex: 'New date 21 Oct; reason: waiting on copy'
   TONE:
-    q: What tone should the final output use?
-    ex: Professional and courteous
-  RELATIONSHIP:
-    q: What is the relationship with the recipient?
-    ex: A client or partner
-  LANGUAGE_VARIANT:
-    q: Which language variant should it use?
-    ex: English for a professional audience
+    q: What tone should the email use?
+    ex: Professional and accountable
   LENGTH:
-    q: How long should the reply be?
-    ex: About 120 words
-  ATTACHMENT_STATUS:
-    q: What attachment status should shape this gmail context-aware draft?
-    ex: Yes, the file is ready
+    q: What length should it be?
+    ex: Under 120 words
+  CTA:
+    q: What call to action do you want?
+    ex: Please confirm the date by tomorrow
+  AVOID:
+    q: What should the email avoid?
+    ex: Blame language; over-apologising
+    optional: true
+  DEADLINE:
+    q: Any deadline to highlight?
+    ex: Copy needed by 16 Oct
+    optional: true
 "084":
   TEXT:
-    q: What text needs a tone review?
-    ex: A draft email or memo
+    q: Paste the text to review.
+    ex: Paste the paragraph or email
   AUDIENCE:
-    q: Who is the audience for this text?
-    ex: A senior manager
-  RELATIONSHIP:
-    q: What is the relationship with the reader?
-    ex: A professional colleague
-  DESIRED_IMPRESSION:
-    q: What impression should the final writing create?
-    ex: Trust and clarity
+    q: Who is the audience?
+    ex: Course instructor
+  VOICE:
+    q: What voice should we preserve?
+    ex: Direct student voice, not corporate
+  TONE_TARGET:
+    q: What tone target should we hit?
+    ex: Respectful and clear
+  MUST_KEEP:
+    q: Which phrases must stay?
+    ex: Assignment title and deadline wording
+  STRICTNESS:
+    q: How strict should grammar fixes be?
+    ex: Fix errors; keep contractions if natural
+  FORMALITY:
+    q: What formality level is needed?
+    ex: Semi-formal
+  NOTES:
+    q: Any extra notes for the review?
+    ex: English is L2; keep simple
+    optional: true
 "085":
-  PAGE_URL:
-    q: What page url should shape this browser sidebar research capture card?
-    ex: https://example.com/report
-  ACCESS_DATE:
-    q: When did you access the page?
-    ex: '2026-10-12'
+  PAGE_NOTES:
+    q: Paste notes or key excerpts from the page.
+    ex: Paste important paragraphs
+  URL_OR_TITLE:
+    q: What is the URL or page title?
+    ex: https://example.org/report or full title
   RESEARCH_QUESTION:
-    q: What question is this source meant to answer?
-    ex: How fast is the market growing?
-  PROJECT_NAME:
-    q: What project or file should this be named under?
-    ex: Market Scan
+    q: What research question are you working on?
+    ex: Do tutoring bots raise completion rates?
+  CLAIM_FOCUS:
+    q: Which claim focus should we capture?
+    ex: Effect sizes and sample limits
+  NEED:
+    q: What do you need this card for?
+    ex: Literature matrix row
+  STYLE:
+    q: What card style do you want?
+    ex: Bullet card under 180 words
+  PROJECT:
+    q: Which project does this feed?
+    ex: Edtech thesis lit review
+  VERIFY:
+    q: What should be verified later?
+    ex: Author credentials and funding
+    optional: true
 "086":
+  FUNCTION_GOAL:
+    q: What should the function do?
+    ex: Normalise Pakistani phone numbers to E.164
   LANGUAGE:
-    q: What language should the function be written in?
+    q: Which language is this for?
     ex: Python
-  FUNCTION_NAME:
-    q: What function name should shape this github copilot function scaffold?
-    ex: parse_customer_response
   INPUTS:
-    q: What inputs does the function take?
-    ex: A text payload and a user ID
-  RETURN_TYPE:
-    q: What return type should shape this github copilot function scaffold?
-    ex: A parsed object
-  BEHAVIOUR:
-    q: What behavior must the function satisfy?
-    ex: Return errors for invalid input
-  REFERENCE_FILE_OR_SNIPPET:
-    q: What repository file or snippet should guide the style?
-    ex: A similar helper function
-  EDGE_CASE:
-    q: What edge case should shape this github copilot function scaffold?
-    ex: Empty input or null values
+    q: What are the inputs?
+    ex: raw string phone; default region PK
+  OUTPUTS:
+    q: What should it output?
+    ex: E.164 string or None if invalid
+  CONSTRAINTS:
+    q: Which constraints apply?
+    ex: No network calls; pure function
+  EDGE_CASES:
+    q: Which edge cases matter?
+    ex: Leading 0; +92; spaces and dashes
+  STYLE:
+    q: Any code style notes?
+    ex: Type hints; small helpers OK
+    optional: true
+  TEST_IDEAS:
+    q: What test ideas should we include?
+    ex: Valid mobile; landline; garbage input
+    optional: true
 "087":
   REFACTOR_GOAL:
-    q: What is the refactor trying to improve?
-    ex: Simplify a shared parser
-  ENTRY_FILES:
-    q: Which files should be inspected first?
-    ex: The parser and its tests
-  EXPECTED_BEHAVIOUR:
-    q: What expected behaviour should shape this cursor multi-file refactor brief?
-    ex: Existing API responses
-  TEST_COMMAND:
-    q: What test command should verify the fix?
-    ex: pytest -q
-  EXCLUDED_PATHS:
-    q: Which files or folders must stay out of scope?
-    ex: Generated assets and lockfiles
+    q: What is the refactor goal?
+    ex: Extract shared date parsing from 3 modules
+  FILES:
+    q: Which files are involved?
+    ex: utils/dates.py, importers/csv.py, api/handlers.py
+  CURRENT_PAIN:
+    q: What is the current pain?
+    ex: Duplicated parsers disagree on formats
+  INVARIANTS:
+    q: Which invariants must be preserved?
+    ex: Existing API responses stay identical
+  DONE_LOOKS_LIKE:
+    q: What does done look like?
+    ex: One parser helper; all call sites updated
+  TESTS:
+    q: Which tests should be run?
+    ex: unit tests for dates + importer fixtures
+  OUT_OF_SCOPE:
+    q: What is out of scope?
+    ex: Renaming unrelated utils; UI changes
+  RISKS:
+    q: What risks should we watch?
+    ex: Timezone regressions
+    optional: true
 "088":
-  RAW_MEETING_NOTES:
-    q: What raw notes should be turned into a record?
-    ex: A messy meeting transcript
-  MEETING_NAME:
-    q: What meeting name should shape this notion meeting notes curator?
-    ex: Weekly planning call
-  DATE:
-    q: What date should shape this notion meeting notes curator?
-    ex: '2026-10-05'
-  PARTICIPANTS:
-    q: What participants should shape this notion meeting notes curator?
-    ex: The core team and a client
-  CONFIRMATION_DATE:
-    q: What confirmation date should shape this notion meeting notes curator?
-    ex: By Friday
-"089":
-  SUBJECT:
-    q: What subject is the study pack for?
-    ex: Economics
-  LEARNER_LEVEL:
-    q: What learner level is this for?
-    ex: Undergraduate students
-  SOURCE_MATERIALS:
-    q: What source materials should shape this study pack production pipeline?
-    ex: Lecture notes and textbook chapters
-  DEADLINE:
-    q: What deadline matters for the pack?
-    ex: In two weeks
-  AVAILABLE_TOOLS:
-    q: What tools are allowed in the workflow?
-    ex: ChatGPT, flashcards, and Docs
-"090":
-  BRAND:
-    q: What brand should shape this monthly content calendar pipeline?
-    ex: A small education brand
+  RAW_NOTES:
+    q: Paste the raw meeting notes.
+    ex: Paste messy bullets
+  MEETING_META:
+    q: What is the meeting name, date, and attendees?
+    ex: Design sync 12 Oct; Amina, Bilal, Sara
+  TEMPLATE:
+    q: What Notion sections do you need?
+    ex: Summary, decisions, actions, links
   AUDIENCE:
-    q: Who is the audience for the content?
-    ex: Young professionals
+    q: Who will read these curated notes?
+    ex: Whole product team
+  PRIORITY:
+    q: How should actions be prioritised?
+    ex: Customer-impact first
+  PEOPLE:
+    q: How should people be mapped to actions?
+    ex: Use first names from attendees list
+  SENSITIVE:
+    q: Any sensitive items to separate?
+    ex: Salary discussion — private only
+    optional: true
+  FOLLOW_UP:
+    q: When is the follow-up?
+    ex: Next Monday standup
+    optional: true
+"089":
+  COURSE:
+    q: What course or exam is this for?
+    ex: Second-year statistics midterm
+  MATERIALS:
+    q: What materials do you have?
+    ex: Lecture PDFs, 2 past papers, lab notes
+  LEVEL:
+    q: What is your level?
+    ex: Undergraduate year 2
+  PACK_CONTENTS:
+    q: What should the study pack include?
+    ex: Summary sheets, 30 flash Qs, formula card
+  DAYS:
+    q: How many days until you need it?
+    ex: '10'
+  DAILY_TIME:
+    q: How much daily study time do you have?
+    ex: 90 minutes
+  WEAK_AREAS:
+    q: Which weak areas need emphasis?
+    ex: Hypothesis testing and confidence intervals
+  FORMAT:
+    q: What output format do you want?
+    ex: Markdown + printable one-pagers
+    optional: true
+"090":
   MONTH:
-    q: What month is this scheduled for?
-    ex: November
+    q: Which month are you planning?
+    ex: November 2026
   CHANNELS:
-    q: Which channels will publish the content?
-    ex: LinkedIn and email
-  CUSTOMER_QUESTIONS:
-    q: What customer questions should inform the plan?
-    ex: What support do people need most?
-  APPROVER:
-    q: What approver should shape this monthly content calendar pipeline?
-    ex: The marketing lead
+    q: Which channels are in scope?
+    ex: Instagram, LinkedIn, WhatsApp broadcast
+  GOALS:
+    q: What content goals matter this month?
+    ex: Explain offer; collect waitlist emails
+  PILLARS:
+    q: What content pillars will you use?
+    ex: Tips, proof, behind-the-scenes, offer
+  CAPACITY:
+    q: What production capacity do you have?
+    ex: 8 posts; 2 short videos
+  ASSETS:
+    q: What assets do you already have?
+    ex: Customer quotes; product photos
+  CTA_MAP:
+    q: What CTAs map to which goals?
+    ex: Waitlist link on proof posts
+  CONSTRAINTS:
+    q: What constraints apply?
+    ex: No ads budget; Urdu-English mix OK
+    optional: true
+  REVIEW:
+    q: What review cadence will you use?
+    ex: Weekly 30-min content review
+    optional: true
 "091":
-  SERVICE:
-    q: What service should shape this ai-assisted client delivery checklist?
-    ex: A research and design package
-  CLIENT_REQUIREMENTS:
-    q: What client requirements should shape this ai-assisted client delivery checklist?
-    ex: Short turnaround and clear reporting
-  DELIVERABLES:
-    q: What deliverables should shape this ai-assisted client delivery checklist?
-    ex: Outline, draft, and final deck
+  DELIVERABLE:
+    q: What deliverable are you shipping?
+    ex: Brand messaging one-pager + 10 captions
+  CLIENT:
+    q: What type of client is this?
+    ex: Private clinic
+  STAGES:
+    q: Which delivery stages exist?
+    ex: Brief, draft, revise, final, handoff
+  AI_USES:
+    q: Where may AI help?
+    ex: Outline options; grammar pass
+  AI_BANS:
+    q: Where is AI banned?
+    ex: No pasting patient data; no medical claims
+  QA:
+    q: What QA is required?
+    ex: Factual check by human; client tone match
+  ASSETS:
+    q: What client assets are in play?
+    ex: Logo, approved offer text
   DEADLINE:
-    q: What deadline should shape this ai-assisted client delivery checklist?
-    ex: Next Friday
-  APPROVED_AI_TOOLS:
-    q: Which AI tools are approved for use?
-    ex: Microsoft Copilot and approved docs
-  PROJECT_PLATFORM:
-    q: What project platform or workspace is used?
-    ex: Microsoft Teams and SharePoint
+    q: What is the deadline?
+    ex: 18 October 2026
+  RISKS:
+    q: What risks should the checklist catch?
+    ex: Scope creep captions; off-brand medical advice
+    optional: true
 "092":
-  DECISION_QUESTION:
-    q: What decision question needs a brief?
-    ex: Whether to expand the service
-  DECISION_MAKER:
-    q: What decision maker should shape this source-to-decision brief workflow?
-    ex: The department lead
-  DEADLINE:
-    q: What deadline should shape this source-to-decision brief workflow?
-    ex: Before Thursday
-  SEARCH_TOOL:
-    q: What tool will be used for discovery?
-    ex: Perplexity
-  NOTES_TOOL:
-    q: What tool will capture the evidence?
-    ex: Notion or a document log
-  ANALYSIS_TOOL:
-    q: What tool will compare the evidence?
-    ex: A spreadsheet
-  WRITING_TOOL:
-    q: What tool will draft the final brief?
-    ex: Google Docs
+  DECISION:
+    q: What decision must the brief support?
+    ex: Whether to buy a paid research database
+  SOURCES:
+    q: What sources do you already have?
+    ex: Vendor deck, 2 reviews, budget sheet
+  STAKEHOLDERS:
+    q: Who are the stakeholders?
+    ex: Librarian and department head
+  TIME:
+    q: How much time do you have?
+    ex: 3 days
+  RISK:
+    q: How risky is a wrong decision?
+    ex: Medium budget lock-in
+  OUTPUT:
+    q: What brief output do you need?
+    ex: 2-page go/no-go with alternatives
+  GATES:
+    q: Which quality gates do you want?
+    ex: Independent review + cost check
+  CONSTRAINTS:
+    q: What constraints apply?
+    ex: PKR budget; annual licence only
+    optional: true
 "093":
   TARGET_ROLES:
-    q: What target roles should shape this focused job-hunt daily system?
-    ex: Product and operations roles
-  LOCATION_OR_REMOTE_PREFERENCE:
-    q: What location or remote preference applies?
-    ex: Remote with occasional on-site work
-  DAILY_TIME:
-    q: How much time do you have each day?
-    ex: One hour
-  JOB_BOARDS:
-    q: What job boards or listings do you use?
-    ex: LinkedIn and local boards
-  DOCUMENT_TOOL:
-    q: What document tool do you use?
-    ex: Google Docs
-  AI_ASSISTANT:
-    q: What AI assistant do you use?
-    ex: ChatGPT
-  TRACKER:
-    q: What tracker or spreadsheet do you use?
-    ex: A simple application tracker
-  CANDIDATE_PROFILE:
-    q: What is your candidate profile or background?
-    ex: A recent graduate with project work
-"094":
-  BUSINESS_TYPE:
-    q: What type of business is this?
-    ex: A local tutoring business
-  CUSTOMERS:
-    q: What customers should shape this small business weekly ai rhythm?
-    ex: Parents and students
-  TEAM_SIZE:
-    q: What team size should shape this small business weekly ai rhythm?
-    ex: Three people
-  WEEKLY_TASKS:
-    q: What weekly tasks should shape this small business weekly ai rhythm?
-    ex: Customer follow-ups and content creation
-  TOOLS:
-    q: What tools should shape this small business weekly ai rhythm?
-    ex: Google Workspace and ChatGPT
+    q: Which roles are you targeting?
+    ex: Junior data analyst; ops analyst
   CONSTRAINTS:
-    q: What constraints should shape this small business weekly ai rhythm?
-    ex: Limited time and no extra staff
-  WORKING_DAYS:
-    q: Which days are in the working week?
-    ex: Monday to Friday
-  MAX_EXPERIMENTS:
-    q: How many experiments should be tried first?
-    ex: Two
+    q: What time or location constraints apply?
+    ex: Karachi hybrid/remote; evenings only
+  ASSETS:
+    q: What assets are ready?
+    ex: CV v3; LinkedIn; 2 project writeups
+  DAILY_TIME:
+    q: How much daily time can you spend?
+    ex: 90 minutes
+  CHANNELS:
+    q: Which channels will you use?
+    ex: LinkedIn, Rozee, referrals
+  WEAK_SPOTS:
+    q: What are your weak spots?
+    ex: SQL interview practice
+  METRICS:
+    q: Which success metrics will you track?
+    ex: 3 tailored apps/week; 2 practice sets
+  BOUNDARIES:
+    q: What energy boundaries matter?
+    ex: No applications after 11pm
+    optional: true
+"094":
+  BUSINESS:
+    q: What type of small business is this?
+    ex: Neighbourhood tutoring centre
+  WEEKLY_GOALS:
+    q: What weekly goals matter?
+    ex: Fill 5 trial seats; post 3 tips
+  TASKS:
+    q: Which recurring tasks eat time?
+    ex: Captions, parent replies, worksheet drafts
+  AI_SAFE:
+    q: Which tasks are AI-safe?
+    ex: Caption drafts; worksheet outlines
+  AI_UNSAFE:
+    q: Which tasks are AI-unsafe?
+    ex: Fee disputes; student assessment decisions
+  TOOLS:
+    q: Which AI tools can you use?
+    ex: ChatGPT; Canva Magic Studio
+  TIME_SAVED_TARGET:
+    q: How much time do you want to save weekly?
+    ex: 4 hours
+  REVIEW:
+    q: What human review rule applies?
+    ex: Owner reviews all parent-facing text
+    optional: true
 "095":
-  DATASET:
-    q: What dataset should shape this data-to-decision operating workflow?
-    ex: Monthly sales records
-  DECISION:
-    q: What decision is this data meant to inform?
-    ex: Whether to scale a channel
-  DATA_TOOL:
-    q: What tool will clean the dataset?
-    ex: Excel
-  ANALYSIS_TOOL:
-    q: What tool will calculate the analysis?
-    ex: Power BI or Python
-  WRITING_TOOL:
-    q: What tool will draft the recommendation?
-    ex: Google Docs
-  PRESENTATION_TOOL:
-    q: What tool is used for presentation if needed?
-    ex: PowerPoint
-  KEY_ASSUMPTIONS:
-    q: What key assumptions should shape this data-to-decision operating workflow?
-    ex: A stable sales pattern and consistent tracking
+  DECISION_FORUM:
+    q: What decision forum does this feed?
+    ex: Monday growth meeting
+  DATA_SOURCES:
+    q: Which data sources are used?
+    ex: Sheets CRM + Stripe export
+  CADENCE:
+    q: What cadence should the workflow run on?
+    ex: Weekly
+  OWNERS:
+    q: Who owns each major step?
+    ex: Ali pulls data; Sara interprets; founder decides
+  METRICS:
+    q: Which core metrics matter?
+    ex: Trials, paid conversions, churn
+  SLACK_RULES:
+    q: When should issues escalate early?
+    ex: Churn >5% WoW
+  OUTPUTS:
+    q: What recurring outputs are needed?
+    ex: 1-page metric brief + anomaly note
+  TOOLS:
+    q: Which tools are in the stack?
+    ex: Sheets, Looker Studio, Slack
+    optional: true
 "096":
-  TOPIC:
-    q: What topic should this work cover?
-    ex: Supply and demand basics
-  GRADE_OR_LEVEL:
-    q: What grade or learner level is this for?
-    ex: Year 7
-  LESSON_DURATION:
-    q: What lesson duration should shape this teacher preparation workflow?
-    ex: 40 minutes
-  CURRICULUM_OUTCOME:
-    q: What curriculum outcome does the lesson target?
-    ex: Explain key processes in simple terms
+  CLASS:
+    q: What class or subject is this for?
+    ex: Grade 9 English — persuasive writing
+  LEARNERS:
+    q: Who are the learners?
+    ex: Mixed proficiency; 35 students
+  OBJECTIVES:
+    q: What are the lesson objectives?
+    ex: Write a claim with two supporting reasons
+  TIME_TO_PREP:
+    q: How much prep time do you have?
+    ex: 45 minutes
   MATERIALS:
-    q: What materials should shape this teacher preparation workflow?
-    ex: Slides, textbook, and worksheets
-  LEARNER_NEEDS:
-    q: What learner needs or support are required?
-    ex: Mixed ability and English support
-  PLATFORM:
-    q: Where will the lesson resource live?
-    ex: Google Classroom
+    q: What materials do you have on hand?
+    ex: Textbook page; whiteboard; worksheets
+  CONSTRAINTS:
+    q: What classroom constraints apply?
+    ex: 40-minute period; no projector some days
+  ASSESSMENT:
+    q: How will you assess learning?
+    ex: Exit ticket paragraph
+  INCLUSION:
+    q: What inclusion needs should we plan for?
+    ex: Urdu glosses for key terms
+    optional: true
 "097":
   EXAM:
     q: Which exam are you preparing for?
-    ex: CSS
-  ATTEMPT_YEAR:
-    q: What attempt year is this for?
-    ex: '2027'
-  PROVINCE_IF_PMS:
-    q: What province should we use if this is PMS?
-    ex: Punjab
-  SYLLABUS:
-    q: What official syllabus should be followed?
-    ex: The published CSS or PMS syllabus
+    ex: CSS 2027
+  ATTEMPT_WINDOW:
+    q: What is your attempt window?
+    ex: 12 months
   SUBJECTS:
-    q: What subjects should shape this css and pms study plan builder?
-    ex: International Relations and Pakistan Affairs
-  BASELINE:
-    q: What is your current baseline or strength?
-    ex: Strong in current affairs but weak in essay structure
-  HOURS:
-    q: How many hours are available each week?
-    ex: Twelve hours
-  DATES:
-    q: What dates should shape this css and pms study plan builder?
-    ex: The actual exam date and revision deadlines
-  PLAN_LENGTH:
-    q: How long should the plan run?
-    ex: Twelve weeks
+    q: Which subjects are in scope this phase?
+    ex: Essay, Current Affairs, Pakistan Affairs
+  DAILY_TIME:
+    q: How much daily study time can you give?
+    ex: 3 hours weekdays; 5 weekends
+  STRONG:
+    q: Which areas are comparatively strong?
+    ex: English essay structure
+  WEAK:
+    q: Which areas are weak?
+    ex: Pakistan Affairs chronology
+  RESOURCES:
+    q: What resources do you have?
+    ex: Syllabus, 2 books, newspaper routine
+  CONSTRAINTS:
+    q: What life constraints apply?
+    ex: Job until 5pm
+    optional: true
+  REVIEW_SYSTEM:
+    q: What review system do you prefer?
+    ex: Weekly revision + monthly mocks
+    optional: true
 "098":
   CONCEPT:
-    q: What concept do you want to learn?
-    ex: Federalism in Pakistan
-  CSS_OR_PMS_SUBJECT:
-    q: Which subject area is this from?
-    ex: Pakistan Affairs
-  SOURCES_OR_NOTES:
-    q: What notes or sources should the explanation use?
-    ex: Class notes and the official syllabus
-  MY_ANSWERS:
-    q: What answers or responses should be reviewed?
-    ex: My self-test answers
+    q: Which concept should we tutor?
+    ex: Separation of powers
+  PAPER:
+    q: Which paper does this serve?
+    ex: Pakistan Affairs / Constitutional
+  LEVEL:
+    q: What is your current level on this?
+    ex: I know the definition but answers are thin
+  ANGLE:
+    q: What answer angle do you need?
+    ex: CSS 20-mark analytical outline
+  EXAMPLES_OK:
+    q: Which examples can we safely use?
+    ex: Textbook cases I already studied
+  TIME:
+    q: How long is this session?
+    ex: 25 minutes
+  WEAKNESS:
+    q: What specific weakness should we fix?
+    ex: Linking concept to Pakistani institutions
+  OUTPUT:
+    q: What output do you want by the end?
+    ex: Outline + one practice intro
+    optional: true
 "099":
-  ASSIGNMENT_TOPIC:
-    q: What assignment topic should shape this hec university assignment structure coach?
-    ex: Public policy and accountability
+  BRIEF:
+    q: Paste the assignment brief.
+    ex: Paste requirements and constraints
   COURSE:
-    q: What course should shape this hec university assignment structure coach?
-    ex: Public Administration
-  ASSIGNMENT_BRIEF:
-    q: What is the exact assignment brief?
-    ex: The full task instructions
-  RUBRIC:
-    q: What rubric or marking guide is used?
-    ex: The course rubric and criteria
-  WORD_COUNT:
-    q: What is the required word count?
+    q: Which course is this for?
+    ex: Research Methods
+  WORD_LIMIT:
+    q: What is the word limit?
     ex: 2,000 words
-  STYLE:
-    q: What citation or writing style is required?
-    ex: APA 7
-  MY_IDEAS:
-    q: What preliminary ideas or notes do you already have?
-    ex: A rough list of arguments
-  POLICY:
-    q: What AI policy or academic rule applies?
-    ex: The university's guidance on responsible use
-"100":
-  DEGREE_PROGRAMME:
-    q: What degree programme is this for?
-    ex: MS in Public Policy
-  TOPIC:
-    q: What topic should this work cover?
-    ex: Urban transport reform
   QUESTION:
-    q: What question should shape this thesis chapter architecture planner?
-    ex: How do governance reforms affect access?
-  OBJECTIVES:
-    q: What objectives should shape this thesis chapter architecture planner?
-    ex: Explain the policy problem and assess implementation
-  METHOD:
-    q: What research method is being used?
-    ex: Qualitative interviews and document review
+    q: What is the exact question?
+    ex: Compare two sampling strategies for campus surveys
+  SOURCES_OK:
+    q: Which sources can you use?
+    ex: Course readings + 3 journal PDFs
+  RUBRIC:
+    q: What does the rubric prioritise?
+    ex: Method justification and clarity
+  MY_ANGLE:
+    q: What angle do you want to take?
+    ex: Argue stratified sampling fits mixed faculties
+  DEADLINE:
+    q: When is the deadline?
+    ex: 25 October 2026
+"100":
+  THESIS_RQ:
+    q: What is your thesis research question?
+    ex: How coaching cycles affect Grade 8 maths outcomes
+  CHAPTER:
+    q: What is this chapter’s purpose?
+    ex: Literature review
+  ARGUMENT:
+    q: What argument must this chapter make?
+    ex: Coaching effects depend on fidelity and dosage
   EVIDENCE:
-    q: What evidence is available so far?
-    ex: Interviews, reports, and field notes
-  FRAMEWORK:
-    q: What theoretical or conceptual framework applies?
-    ex: Governance and policy implementation
-  GUIDELINES:
-    q: What departmental or supervisor guidelines matter?
-    ex: Formatting, ethics, and chapter requirements
+    q: What evidence do you already have?
+    ex: 18 papers + 2 reviews
+  WORD_TARGET:
+    q: What word target should we plan for?
+    ex: 4,000 words
+  GAPS:
+    q: What gaps are already known?
+    ex: Few Pakistan secondary-school studies
+  READER:
+    q: What do committee readers expect?
+    ex: Critical synthesis, not annotated list
+  DEADLINE:
+    q: When is the chapter due?
+    ex: 30 November 2026
+    optional: true
 "101":
-  SCHOLARSHIP_PROMPT:
-    q: What scholarship prompt or criteria are you using?
-    ex: The programme application prompt
-  CRITERIA:
-    q: What criteria should shape this scholarship sop argument architect?
-    ex: Academic merit, leadership, and motivation
   PROGRAMME:
-    q: What programme are you applying for?
-    ex: A master's in public policy
-  LIMIT:
-    q: What word or length limit applies?
-    ex: 750 words
-  EXPERIENCES:
-    q: What verified experiences should the statement reflect?
-    ex: Academic work, service, and leadership
+    q: Which programme is the SOP for?
+    ex: MSc Data Science — University X
+  PROMPT:
+    q: What questions must the SOP answer?
+    ex: Background, goals, why us, contribution
+  MY_STORY:
+    q: What true story points can you use?
+    ex: Campus analytics project; teaching assistant role
+  EVIDENCE:
+    q: What evidence can you prove?
+    ex: Project report; supervisor email; transcript
+  GOALS:
+    q: What goals will you state?
+    ex: Build education analytics for public colleges
+  FIT:
+    q: Why this programme specifically?
+    ex: Course modules in causal inference + lab access
+  CONSTRAINTS:
+    q: What word limits or constraints apply?
+    ex: 1,000 words max
+  RISKS:
+    q: Which weak spots must we handle carefully?
+    ex: One low semester GPA
+    optional: true
 "102":
   ROLE:
-    q: What role are you applying for?
-    ex: A research and operations role
-  COUNTRY_OR_MARKET:
-    q: What country or market are you targeting?
-    ex: Pakistan or a regional market
-  JOB_DESCRIPTION:
-    q: Paste the job description.?
-    ex: Include the full text; replace private names if needed
-  MASTER_CV:
-    q: What is your master CV or background document?
-    ex: Your full CV or experience summary
-  ACHIEVEMENT_NOTES:
-    q: What key achievements or results should be highlighted?
-    ex: Project outcomes and measurable wins
-"103":
-  ROZEE_OR_LINKEDIN:
-    q: Which platform or source are you applying through?
-    ex: Rozee or LinkedIn
-  VACANCY_TEXT:
-    q: What vacancy text or job post should be used?
-    ex: The posted role and requirements
-  MY_CV:
-    q: What CV or résumé should be tailored?
-    ex: Your current CV
-  CAREER_GOALS:
-    q: What are your short-term career goals?
-    ex: Grow into a strategic operations role
-  CONTACT_TYPE:
-    q: What type of contact are you trying to make?
-    ex: A recruiter or hiring manager
-"104":
-  CLIENT_BRIEF:
-    q: What is the client brief or project brief?
-    ex: A scope note and expected deliverables
-  FREELANCER_PROFILE:
-    q: What is your freelancer profile or background?
-    ex: Your profile, skills, and past work
-  WORK_SAMPLES:
-    q: What work samples or examples can you show?
-    ex: Previous projects and portfolio pieces
-  PLATFORM:
-    q: What platform or channel is this proposal for?
-    ex: Upwork or a direct proposal
-  VOICE_SAMPLE:
-    q: What voice or writing sample should match the tone?
-    ex: A sample that shows clarity and professionalism
+    q: What role are you targeting?
+    ex: Junior product analyst
+  JOB_AD:
+    q: Paste key job-ad highlights.
+    ex: SQL, dashboards, stakeholder updates
+  MY_EXPERIENCE:
+    q: What real experience can you use?
+    ex: Internship dashboards; campus survey analysis
+  MUST_SHOW:
+    q: Which evidence must appear?
+    ex: SQL project; Excel dashboard; presentation
+  FORMAT:
+    q: What CV format do you need?
+    ex: 1-page reverse chronological
+  COUNTRY_NORM:
+    q: Any country or norm notes?
+    ex: UK-style; no photo; no DOB
+    optional: true
+  GAPS:
+    q: What gaps must we handle?
+    ex: No full-time industry role yet
+    optional: true
   LENGTH:
-    q: What length should the proposal aim for?
-    ex: A concise proposal under 500 words
+    q: What length limit applies?
+    ex: One page
+"103":
+  ROLE:
+    q: What role are you applying for?
+    ex: Operations coordinator
+  JD:
+    q: Paste the key job description points.
+    ex: Scheduling, vendor follow-ups, Excel reports
+  PROFILE_ASSETS:
+    q: What profile assets are ready?
+    ex: LinkedIn about; Rozee CV uploaded
+  CV_POINTS:
+    q: Which CV points can you reuse?
+    ex: Event ops; spreadsheet trackers; WhatsApp desk
+  WHY_ME:
+    q: What ‘why me’ points are true?
+    ex: Ran campus desk for 200 students
+  CHANNEL_NOTES:
+    q: Any Rozee vs LinkedIn differences to respect?
+    ex: Rozee formal; LinkedIn shorter note
+    optional: true
+  DEADLINE:
+    q: When is the application deadline?
+    ex: 16 October 2026
+  QUESTIONS:
+    q: Which screening questions must be answered?
+    ex: Notice period; expected salary range
+    optional: true
+"104":
+  PLATFORM:
+    q: Which platform is this proposal for?
+    ex: Upwork
+  CLIENT_POST:
+    q: Paste the client post.
+    ex: Need Shopify product descriptions for 30 SKUs
+  MY_OFFER:
+    q: What can you deliver?
+    ex: 30 SEO-ready descriptions + tone guide
+  PROOF:
+    q: What proof can you show?
+    ex: 2 sample SKUs; past catalogue link
+  PROCESS:
+    q: What process will you follow?
+    ex: Sample 3 → approve tone → batch delivery
+  PRICE_FRAME:
+    q: What price frame are you proposing?
+    ex: Fixed $120 or milestone split
+  TIMELINE:
+    q: What timeline can you commit to?
+    ex: 5 days after tone approval
+  QUESTIONS:
+    q: Which clarifying questions should we ask?
+    ex: Brand voice refs; words per SKU
+    optional: true
+  TONE:
+    q: What tone should the proposal use?
+    ex: Clear, confident, concise
 "105":
-  PAKISTAN_CITY:
-    q: What city or market are you targeting in Pakistan?
-    ex: Lahore or Karachi
+  CITY:
+    q: Which city is the campaign for?
+    ex: Lahore
   OFFER:
-    q: What product, service, or offer are you promoting?
-    ex: A local tutoring package
-  SEASON:
-    q: What season or timing matters most?
-    ex: The exam season
-  CUSTOMER_INSIGHTS:
-    q: What customer insights do you already know?
-    ex: Price sensitivity and local trust
-  COMPETITOR_NOTES:
-    q: What competitor notes should shape this pakistan city market campaign planner?
-    ex: Nearby providers and pricing
-  CHANNEL_ACCESS:
-    q: What channels are available for promotion?
-    ex: Instagram, WhatsApp, and local posters
-  LANGUAGE_PREFERENCE:
-    q: What language or tone should the campaign use?
-    ex: Urdu and English for a local audience
-  CONSTRAINTS:
-    q: What constraints should shape this pakistan city market campaign planner?
-    ex: Small budget and a short campaign window
-"106":
-  SOURCE_MESSAGE:
-    q: What message or source text needs adaptation?
-    ex: A draft announcement or ad
+    q: What offer are you promoting?
+    ex: Home tutoring trial week
   AUDIENCE:
-    q: Who is the audience for this content?
-    ex: A local customer base
+    q: Who is the audience?
+    ex: Parents of Grade 9–10 students
+  GOAL:
+    q: What is the campaign goal?
+    ex: 80 trial signups
+  BUDGET:
+    q: What budget do you have?
+    ex: Rs. 40,000
+  CHANNELS:
+    q: Which channels can you use?
+    ex: Facebook local, WhatsApp, school-gate flyers
+  LOCAL_PROOF:
+    q: What local proof can you show?
+    ex: 12 neighbourhood reviews; A+ results stories
+  CONSTRAINTS:
+    q: What constraints apply?
+    ex: No school-ground marketing without permission
+    optional: true
+  DATES:
+    q: What are the campaign dates?
+    ex: 20–30 October 2026
+"106":
+  SOURCE_TEXT:
+    q: Paste the source text to adapt.
+    ex: Paste the announcement or message
+  SOURCE_LANG:
+    q: What language is the source in?
+    ex: English
+  TARGETS:
+    q: Which target variants do you need?
+    ex: Urdu + Roman Urdu + tightened English
+  AUDIENCE:
+    q: Who is the audience?
+    ex: Parents on WhatsApp
+  FORMALITY:
+    q: What formality level should we use?
+    ex: Respectful, semi-formal
+  MUST_KEEP:
+    q: Which terms must stay exact?
+    ex: Fee amount; date; office hours
   CHANNEL:
-    q: What channel or format is it for?
-    ex: WhatsApp or Instagram caption
-  REGION_OR_REGISTER:
-    q: What regional or register variation should be used?
-    ex: Pakistani English with natural Urdu phrasing
-  TERMS_TO_KEEP:
-    q: What terms or phrases must remain unchanged?
-    ex: Legal or brand terms
-  CHARACTER_LIMIT:
-    q: What character or length limit applies?
-    ex: 160 characters
+    q: Which channel will carry the message?
+    ex: WhatsApp broadcast
+  SENSITIVITY:
+    q: Any sensitivity notes?
+    ex: Avoid sounding punitive about late fees
+    optional: true
 "107":
   BUSINESS:
-    q: What business is this message about?
-    ex: A local home services business
-  CUSTOMER_NAME:
-    q: What is the customer or recipient name?
-    ex: Aisha
-  CUSTOMER_TYPE:
-    q: What type of customer is this?
-    ex: A new customer or returning client
-  DATE:
-    q: What date should be mentioned in the message?
-    ex: Today or the next working day
-  HOURS:
-    q: What are the business hours or availability?
-    ex: 9 AM to 6 PM
-  LANGUAGES:
-    q: What languages should the message use?
-    ex: Urdu and English
-  ORDER_ID:
-    q: What order or reference number applies?
-    ex: 'Order #1047'
-  POLICIES:
-    q: What policies or terms need to be reflected?
-    ex: Refund, delivery, and support policies
-  SECOND_LANGUAGE:
-    q: Which second language should we support?
-    ex: English for bilingual customers
-  SUPPORT_CONTACT:
-    q: What support contact should shape this whatsapp business message suite?
-    ex: By phone or WhatsApp
-  VOICE:
-    q: What voice or tone should the message use?
-    ex: Friendly and professional
+    q: What business are these messages for?
+    ex: Dental clinic WhatsApp desk
+  SCENARIOS:
+    q: Which scenarios must be covered?
+    ex: Booking confirm, reminder, reschedule, feedback
+  TONE:
+    q: What tone should messages use?
+    ex: Warm and professional
+  LANGUAGE:
+    q: What language mix should we use?
+    ex: English with light Urdu greetings
+  CTA:
+    q: What default CTA should appear?
+    ex: Reply 1 to confirm, 2 to reschedule
+  POLICY:
+    q: Which policies must messages respect?
+    ex: No medical advice; patient privacy
+  VARIABLES:
+    q: Which variables will be personalised?
+    ex: '{{name}} {{date}} {{time}}'
+  AVOID:
+    q: Which phrases should we avoid?
+    ex: Guaranteed results; scare language
+    optional: true
 "108":
-  PAKISTAN_TAX_TOPIC:
-    q: What tax topic are you explaining?
-    ex: Sales tax or withholding tax
-  TAXPAYER_SCENARIO:
-    q: What taxpayer scenario should shape this fbr tax awareness explainer?
-    ex: A small business owner
-  TAX_YEAR:
-    q: What tax year or period should be covered?
-    ex: 2026 tax year
-  OFFICIAL_SOURCES:
-    q: What official sources should shape this fbr tax awareness explainer?
-    ex: FBR guidance and official notifications
+  TOPIC:
+    q: What FBR awareness topic should we explain?
+    ex: What a sales tax invoice generally includes
+  AUDIENCE:
+    q: Who is the audience?
+    ex: New small shopkeepers
+  WHY_NOW:
+    q: Why does this matter now?
+    ex: Customers ask for proper invoices
+  KNOWN_FACTS:
+    q: Which facts have you already verified?
+    ex: Paste only confirmed public points
+  QUESTIONS:
+    q: Which audience questions should we answer?
+    ex: Why invoice matter; what to check
+  LANGUAGE:
+    q: What language should the explainer use?
+    ex: Simple English + Urdu terms
+  MUST_DISCLAIM:
+    q: What disclaimer must appear?
+    ex: Not tax advice; verify on official FBR sources
+  SOURCE_HINTS:
+    q: Which official sources should people check?
+    ex: FBR website / helpline references you trust
+    optional: true
 "109":
   TOPIC:
-    q: What topic is the chain brief about?
-    ex: A public health issue
-  GOAL:
-    q: What is the main goal of the brief?
-    ex: Explain the issue clearly to a decision-maker
+    q: What topic does this research chain cover?
+    ex: Campus mental-health support uptake
+  DECISION:
+    q: What decision or use will it serve?
+    ex: Whether to expand peer counselling hours
   AUDIENCE:
-    q: Who will see or use this output?
-    ex: A committee or client team
-  CONSTRAINTS:
-    q: What constraints should shape this chain step 1 - research brief?
-    ex: Short length and a tight deadline
-  DEADLINE:
-    q: When is the final output needed?
-    ex: By Friday
-  PREVIOUS_OUTPUT:
-    q: Paste the previous output.?
-    ex: Include the full text; replace private names if needed
-"110":
-  TOPIC:
-    q: What topic should this work cover?
-    ex: Local climate adaptation
-  SOURCES:
-    q: What sources or references are available?
-    ex: Reports, articles, and notes
-  PREVIOUS_OUTPUT:
-    q: Paste the previous output.?
-    ex: Include the full text; replace private names if needed
-"111":
-  PREVIOUS_OUTPUT:
-    q: Paste the previous output.?
-    ex: Include the full text; replace private names if needed
-  AUDIENCE:
-    q: Who will see or use this output?
-    ex: Students, managers, or public readers
-  WORD_LIMIT:
-    q: What length limit should the output stay within?
-    ex: 500 words
-"112":
-  PREVIOUS_OUTPUT:
-    q: Paste the previous output.?
-    ex: Include the full text; replace private names if needed
-  AUDIENCE:
-    q: Who will see or use this output?
-    ex: A stakeholder meeting
-  OUTCOME:
-    q: What is the presentation trying to achieve?
-    ex: Inform and get approval
-  DURATION:
-    q: What is the total time limit?
-    ex: 8 minutes speaking / 30-minute meeting
-  SETTING:
-    q: What local setting or context should examples use?
-    ex: In a meeting room or online
-  SLIDE_COUNT:
-    q: How many slides should the outline include?
-    ex: Five slides
-"113":
-  PREVIOUS_OUTPUT:
-    q: Paste the previous output.?
-    ex: Include the full text; replace private names if needed
-  AUDIENCE:
-    q: Who is the audience for the slide draft?
-    ex: Senior stakeholders
-  BRAND_GUIDANCE:
-    q: What brand or visual guidance should we respect?
-    ex: A formal, minimal style
-"114":
-  PREVIOUS_OUTPUT:
-    q: Paste the previous output.?
-    ex: Include the full text; replace private names if needed
-  AUDIENCE_LEVEL:
-    q: What level of audience familiarity should we assume?
-    ex: Mostly familiar with the topic
-  DURATION:
-    q: How long should the note set run?
-    ex: Five minutes
-  SETTING:
-    q: What local setting or context should examples use?
-    ex: At a live presentation or briefing
-  VERIFY:
-    q: Which details should we prioritise verifying?
-    ex: Dates, numbers, and quoted claims
+    q: Who is the audience for later outputs?
+    ex: Student affairs committee
+  SCOPE:
+    q: What scope boundaries apply?
+    ex: Our campus only; last 3 years
+  SOURCES_SEED:
+    q: Which seed sources do you already have?
+    ex: Counselling centre stats; 2 surveys
+  TIME:
+    q: What time budget does the chain have?
+    ex: One week
+  SUCCESS:
+    q: What does success look like?
+    ex: Evidence-backed recommendation slide
+  HANDOFF:
+    q: What does the next step need from this brief?
+    ex: Questions + source list for notes
     optional: true
-  VOICE:
-    q: What delivery voice should the notes support?
-    ex: Confident and calm
-"115":
-  PREVIOUS_OUTPUT:
-    q: Paste the previous output.?
-    ex: Include the full text; replace private names if needed
+"110":
+  BRIEF:
+    q: Paste the research brief from step 1.
+    ex: Paste brief summary
+  SOURCES:
+    q: Paste or list sources to note.
+    ex: Paste excerpts / links / PDFs notes
+  QUESTION_SET:
+    q: Which questions must notes answer?
+    ex: Demand, capacity, barriers, outcomes
+  NOTE_STYLE:
+    q: What note style should we use?
+    ex: Claim / evidence / limit per source
+  QUOTE_RULE:
+    q: What quote rule should we follow?
+    ex: Short quotes with location anchors
+  GAPS:
+    q: Which gaps should we watch for?
+    ex: Missing male student data
+  PROJECT:
+    q: What is the project name?
+    ex: Peer counselling expansion
+  HANDOFF:
+    q: What does synthesis need next?
+    ex: Tagged notes by question
+    optional: true
+"111":
+  NOTES:
+    q: Paste the evidence notes from step 2.
+    ex: Paste tagged notes
+  QUESTIONS:
+    q: Which questions must synthesis answer?
+    ex: Same question set from the brief
+  DECISION:
+    q: What decision will this inform?
+    ex: Expand peer counselling hours or not
+  CONFLICTS:
+    q: What conflicts are already known?
+    ex: Survey says demand high; centre says no-shows high
+    optional: true
+  CONFIDENCE_RULE:
+    q: How should confidence be rated?
+    ex: High only if 2+ independent sources
   AUDIENCE:
-    q: Who will see or use this output?
-    ex: A client or committee
-  GOAL:
-    q: What quality goal should the review focus on?
-    ex: Clarity and credibility
-  DURATION:
-    q: How much time is available for the review?
-    ex: Ten minutes
-  SOURCE_STANDARD:
-    q: What quality standard should source material meet?
-    ex: Verified and traceable evidence
+    q: Who is the audience?
+    ex: Student affairs committee
+  HANDOFF:
+    q: What does the outline step need?
+    ex: 5 key findings + caveats
+  LIMITS:
+    q: What limits should stay visible?
+    ex: One-campus data only
+    optional: true
+"112":
+  FINDINGS:
+    q: Paste synthesised findings from step 3.
+    ex: Paste findings + confidence
+  AUDIENCE:
+    q: Who is the presentation for?
+    ex: Student affairs committee
+  DECISION:
+    q: What decision ask will you make?
+    ex: Approve 10 extra peer-counsellor hours/week
+  TIME:
+    q: How long is the talk?
+    ex: 8 minutes
+  MUST_INCLUDE:
+    q: Which points must be included?
+    ex: Demand, no-show risk, cost, pilot plan
+  AVOID:
+    q: Which claims must we avoid?
+    ex: Nationwide generalisations
+  STORY_ARC:
+    q: What story arc do you prefer?
+    ex: Problem → evidence → options → ask
+    optional: true
+  HANDOFF:
+    q: What does the slide step need?
+    ex: Section titles + bullet intent
+    optional: true
+"113":
+  OUTLINE:
+    q: Paste the outline from step 4.
+    ex: Paste section outline
+  SLIDE_COUNT:
+    q: How many slides should we draft?
+    ex: '8'
+  AUDIENCE:
+    q: Who will see the slides?
+    ex: Student affairs committee
+  DATA_ALLOWED:
+    q: Which data may appear on slides?
+    ex: Only figures present in synthesis
+  VISUAL_NOTES:
+    q: Any visual notes?
+    ex: Simple bars; avoid clipart
+    optional: true
+  BRAND:
+    q: Any brand or template notes?
+    ex: University template; blue accent
+    optional: true
+  ASK:
+    q: What closing ask must be clear?
+    ex: Approve pilot hours for one term
+  HANDOFF:
+    q: What should speaker notes receive?
+    ex: Slide titles + intent lines
+    optional: true
+"114":
+  SLIDES:
+    q: Paste the slide draft from step 5.
+    ex: Paste titles and bullets
+  TIME:
+    q: How long will you speak?
+    ex: 8 minutes
+  AUDIENCE:
+    q: Who is listening?
+    ex: Student affairs committee
+  MUST_SAY:
+    q: Which lines must you say?
+    ex: This is a one-term pilot with review gates
+  Q_RISKS:
+    q: What hard questions are likely?
+    ex: What if no-shows stay high? Cost source?
+  TONE:
+    q: What tone should notes use?
+    ex: Calm, evidence-led, respectful
+  AVOID:
+    q: Which phrases should we avoid?
+    ex: Obviously; guaranteed impact
+    optional: true
+  HANDOFF:
+    q: What should final review receive?
+    ex: Notes + risk answers
+    optional: true
+"115":
+  BRIEF:
+    q: Paste the original research brief.
+    ex: Paste step-1 brief
+  FINDINGS:
+    q: Paste the synthesised findings.
+    ex: Paste step-3 findings
+  SLIDES:
+    q: Paste the slide draft.
+    ex: Paste step-5 slides
+  NOTES:
+    q: Paste the speaker notes.
+    ex: Paste step-6 notes
+  AUDIENCE:
+    q: Who is the final audience?
+    ex: Student affairs committee
+  DECISION_ASK:
+    q: What decision ask is being made?
+    ex: Approve one-term pilot hours
+  RISK_TOLERANCE:
+    q: How risk-sensitive is this room?
+    ex: High — budget scrutiny likely
+  CHECKLIST:
+    q: Any extra checklist items to include?
+    ex: Accessibility of slides; source appendix
+    optional: true

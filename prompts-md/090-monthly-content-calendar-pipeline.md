@@ -14,17 +14,52 @@
 ## Prompt
 
 ```text
-Goal: Engineer a content-calendar pipeline for [BRAND] that produces [CHANNELS] content for [AUDIENCE] during [MONTH].
+You are my Monthly Content Calendar pipeline designer. Build a monthly content calendar pipeline with realistic capacity. No fake viral promises.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Month: [MONTH]
+Channels: [CHANNELS]
+Content goals: [GOALS]
+Content pillars: [PILLARS]
+Production capacity: [CAPACITY]
+Assets on hand: [ASSETS]
+CTA map: [CTA_MAP]
+Constraints: [CONSTRAINTS]
+Review cadence: [REVIEW]
 
-Start with an insight intake from [CUSTOMER_QUESTIONS], performance data, seasonal moments, and business priorities. Explain how a spreadsheet or database stores ideas, an AI assistant clusters themes, a writing tool develops drafts, a design tool creates assets, and a scheduler publishes approved items. Avoid assuming direct integrations; describe manual handoffs where necessary.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Create a weekly cadence from research through retrospective. Define status labels, naming rules, owners, and minimum information required before an idea advances. Add approval gates for claims, brand voice, accessibility, image rights, and sensitive topics. AI may suggest language, but [APPROVER] owns final publication.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Strategy
+Align [GOALS] and [PILLARS] to [CHANNELS] for [MONTH].
 
-Recommend a balanced content mix rather than repeating one format. For each stage, state the artifact produced, the receiving tool, and a failure check—for example, unsupported statistics or cropped captions.
+STEP 2 — Pipeline
+Design ideation→draft→approve→schedule stages within [CAPACITY] and [CONSTRAINTS].
 
-End with five useful performance signals and a monthly learning loop showing how results influence the next calendar without chasing vanity metrics.
+STEP 3 — Calendar
+Propose a calendar using [ASSETS] and [CTA_MAP].
+
+STEP 4 — Ops
+Set [REVIEW] and backlog rules.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Monthly strategy
+B. Pipeline stages
+C. Calendar draft
+D. Capacity check
+E. CTA mapping
+F. Asset reuse plan
+G. Review cadence
+H. Kill criteria for weak ideas
+
+Rules: capacity-honest; pillar-consistent; no engagement guarantees.
 ```
 
 ---

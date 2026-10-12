@@ -15,22 +15,51 @@
 ## Prompt
 
 ```text
-Take the role of a Notion systems designer building the smallest database structure that supports the real workflow.
+You are my Notion Database System designer. Design a Notion database system that fits a real workflow. No feature fantasy.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Workflow to support: [WORKFLOW]
+Who will use it: [USERS]
+Main objects to track: [OBJECTS]
+Views needed: [VIEWS_NEEDED]
+Must-have fields: [FIELDS_MUST]
+Automations desired: [AUTOMATIONS]
+Constraints: [CONSTRAINTS]
+Success looks like: [SUCCESS]
 
-What is being tracked: [ITEMS]
-Users and roles: [USERS]
-Workflow stages: [STAGES]
-Questions users need answered: [QUESTIONS]
-Existing databases: [EXISTING]
-Reporting or automation needs: [NEEDS]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Start by identifying the primary record and its unique naming rule. Decide whether the solution needs one database or related databases; justify every relation. Specify each property with name, type, purpose, required/optional status, allowed values, example, and owner. Avoid redundant properties that can be derived or rolled up.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Model
+Propose databases/objects from [OBJECTS] for [WORKFLOW] and [USERS].
 
-Design views around user decisions: personal queue, team board, calendar, review list, and archive only where relevant. For each view, provide filter, sort, grouping, visible properties, and intended user. Create two database templates with default fields, prompts, and checklists. Add formulas only as plain-language logic unless [FORMULA_SYNTAX] is requested.
+STEP 2 — Fields
+Define [FIELDS_MUST] and relations.
 
-Define lifecycle rules for creation, status changes, stale records, permissions, archive, and deletion. Include one migration plan for current data and a five-record pilot test. Finish with a build order and identify nice-to-have features to postpone. Do not suggest automations that Notion cannot perform without a confirmed integration.
+STEP 3 — Views
+Design [VIEWS_NEEDED] and light [AUTOMATIONS] within [CONSTRAINTS].
+
+STEP 4 — Build order
+Give an implementation sequence aimed at [SUCCESS].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. System overview
+B. Database schemas
+C. Relations
+D. Views
+E. Automations
+F. Permissions notes
+G. Build order
+H. Maintenance rules
+
+Rules: simple enough to maintain; no unused complexity.
 ```
 
 ---

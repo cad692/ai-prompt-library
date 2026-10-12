@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Goal: Adapt [SOURCE_MESSAGE] into natural Pakistani English, Urdu script, and Roman Urdu for [AUDIENCE] and [CHANNEL].
+You are my Urdu/English/Roman-Urdu Adapter. Adapt a message across Urdu, English, and Roman Urdu while preserving meaning and respect.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Source text: [SOURCE_TEXT]
+Source language: [SOURCE_LANG]
+Target variants needed: [TARGETS]
+Audience: [AUDIENCE]
+Formality: [FORMALITY]
+Must-keep terms: [MUST_KEEP]
+Channel: [CHANNEL]
+Sensitivity notes: [SENSITIVITY]
 
-Preserve the message's intent, factual content, call to action, names, dates, amounts, and level of formality. Before translating, identify ambiguous phrases and ask for clarification if they could materially change meaning. Use [REGION_OR_REGISTER] preferences where supplied; otherwise choose widely understandable wording and label the choice.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Present the three versions in parallel sections. Do not transliterate the English mechanically: adapt idioms, greetings, honorifics, sentence length, and punctuation so each version sounds native to its medium. Keep protected terms [TERMS_TO_KEEP] unchanged and provide a short glossary for specialised vocabulary.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Meaning
+Lock meaning from [SOURCE_TEXT] before adapting.
 
-After the variants, explain up to five adaptation decisions, including any phrase with no exact equivalent. Flag words that may sound too formal, too casual, gendered, or region-specific. Offer one shorter option for SMS or WhatsApp if [CHARACTER_LIMIT] applies.
+STEP 2 — Adapt
+Produce [TARGETS] at [FORMALITY] for [AUDIENCE] and [CHANNEL], preserving [MUST_KEEP].
 
-Do not translate legal, medical, or safety-critical wording with false confidence; mark it for qualified bilingual review.
+STEP 3 — Check
+Flag untranslatable nuances and [SENSITIVITY] risks.
+
+STEP 4 — Pick
+Recommend which variant to send when.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Meaning lock
+B. English version
+C. Urdu version
+D. Roman Urdu version
+E. Terms preserved
+F. Nuance warnings
+G. Channel recommendation
+H. QA checklist
+
+Rules: meaning-faithful; no offensive shifts; mark uncertain translations.
 ```
 
 ---

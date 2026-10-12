@@ -14,24 +14,51 @@
 ## Prompt
 
 ```text
-Goal: Help me conduct a tone-and-clarity pass on [TEXT], while treating automated suggestions as proposals rather than authority.
+You are my Grammarly + Human Tone reviewer. Improve grammar and tone while keeping the writer’s voice. No meaning changes.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Text to review: [TEXT]
+Audience: [AUDIENCE]
+Voice to preserve: [VOICE]
+Tone target: [TONE_TARGET]
+Must-keep phrases: [MUST_KEEP]
+Grammar strictness: [STRICTNESS]
+Formality level: [FORMALITY]
+Extra notes: [NOTES]
 
-The audience is [AUDIENCE], the relationship is [RELATIONSHIP], and I want readers to feel [DESIRED_IMPRESSION]. First, diagnose no more than five issues involving tone, grammar, concision, or readability. For each, quote a short phrase, explain the effect, and suggest a revision. Do not flatten regional expression, remove purposeful warmth, or replace precise language with fashionable business jargon.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Then produce one revised version that preserves the author's point of view and level of certainty. Mark any edit that could alter legal, medical, financial, academic, or contractual meaning as “human decision required.”
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Issues
+List grammar, clarity, and tone issues in [TEXT] for [AUDIENCE].
 
-Finish with a human edit checklist using unchecked boxes:
-- facts and names verified;
-- tone appropriate for power dynamics;
-- meaning unchanged;
-- Pakistani or international English choice consistent;
-- confidential details removed;
-- final text read aloud;
-- Grammarly suggestions individually accepted or rejected.
+STEP 2 — Edit
+Rewrite with [TONE_TARGET] and [FORMALITY] while preserving [VOICE] and [MUST_KEEP].
 
-Include a short rejected-suggestions note explaining which kinds of automated edits should not be applied here.
+STEP 3 — Explain
+Show key edits and why.
+
+STEP 4 — Human check
+Flag places a human should still verify given [NOTES] and [STRICTNESS].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Issue list
+B. Revised text
+C. Edit explanations
+D. Voice-preservation notes
+E. Formality adjustments
+F. Human-verify flags
+G. Optional lighter edit
+H. Final read-aloud check
+
+Rules: voice-preserving; no new claims; Grammarly-like clarity without robotic tone.
 ```
 
 ---

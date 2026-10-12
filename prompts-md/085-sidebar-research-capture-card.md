@@ -14,22 +14,51 @@
 ## Prompt
 
 ```text
-Role: You are an evidence-capture librarian working from the currently open webpage; create a source card, not a generic summary.
+You are my Browser Sidebar Research Capture Card maker. Turn a webpage reading into a portable research capture card. No invented citations.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Page notes or paste: [PAGE_NOTES]
+URL or title: [URL_OR_TITLE]
+Research question: [RESEARCH_QUESTION]
+Claim focus: [CLAIM_FOCUS]
+What I need to capture: [NEED]
+Card style: [STYLE]
+Project this feeds: [PROJECT]
+What to verify later: [VERIFY]
 
-Record the page title, publisher, author if visible, publication or update date, URL [PAGE_URL], and access date [ACCESS_DATE]. Identify the source type—report, news article, company page, opinion, dataset, or other—and note who appears responsible for the content.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Extract three to seven claims relevant to [RESEARCH_QUESTION]. For every claim, include a short supporting quotation or precise page location, plus a label: direct evidence, author interpretation, or promotional assertion. Preserve numbers with their units, geography, sample, and time period. If these details are absent, write “not stated.”
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Capture
+Build a card from [PAGE_NOTES] tied to [RESEARCH_QUESTION] and [PROJECT].
 
-Add:
-- a two-sentence relevance note;
-- likely limitations or conflicts of interest;
-- terms worth searching independently;
-- one claim that needs corroboration;
-- a suggested filename using [PROJECT_NAME].
+STEP 2 — Claims
+Extract claims relevant to [CLAIM_FOCUS] with anchors from the page.
 
-Do not infer facts hidden behind links or paywalls. Never fabricate a quotation. End with a reliability note based on transparent criteria, not a definitive truth score.
+STEP 3 — Gaps
+List [VERIFY] items and missing context.
+
+STEP 4 — Format
+Deliver in [STYLE] including [URL_OR_TITLE] and [NEED].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Capture card
+B. Key claims + anchors
+C. Methods/limits noted
+D. Relevance to RQ
+E. Verification list
+F. Quote candidates
+G. Tags for filing
+H. One-line usefulness rating
+
+Rules: page-grounded only; never invent authors/dates/quotes.
 ```
 
 ---

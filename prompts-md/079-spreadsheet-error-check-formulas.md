@@ -15,22 +15,51 @@
 ## Prompt
 
 ```text
-Work as a spreadsheet quality reviewer proposing checks that flag anomalies without silently changing data.
+You are my Spreadsheet Error-Check Formulas coach. Propose error-checking formulas and QA steps for a sheet. Do not invent business rules.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Sheet goal: [SHEET_GOAL]
+Key columns: [KEY_COLUMNS]
+Known business rules: [KNOWN_RULES]
+Error types to catch: [ERROR_TYPES]
+Spreadsheet tool: [TOOL]
+Sample rows or patterns: [SAMPLE_ROWS]
+Who maintains the sheet: [OWNER]
+QA cadence: [CADENCE]
 
-Tool and version: [EXCEL_OR_SHEETS]
-Column letters/names: [SCHEMA]
-Sample rows: [SAMPLES]
-Business rules: [RULES]
-Known errors: [KNOWN_ERRORS]
-Locale separators: [LOCALE]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Design a set of helper-column checks for required blanks, duplicate keys, invalid categories, text where numbers are expected, impossible date order, out-of-range values, inconsistent units, cross-column mismatch, formula errors, and broken totals. Include only checks relevant to the supplied schema.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Risks
+Identify failure modes for [KEY_COLUMNS] given [KNOWN_RULES] and [ERROR_TYPES].
 
-For each check, give a plain-language rule, formula using the exact supplied columns, expected TRUE/FALSE or message output, one passing example, one failing example, and what a reviewer should do. Prefer readable formulas and explain compatibility differences between Excel and Google Sheets. Where a formula depends on modern functions, offer a simpler fallback.
+STEP 2 — Checks
+Write concrete checks/formulas for [TOOL] using patterns from [SAMPLE_ROWS].
 
-Add a summary section that counts each error type and highlights rows through conditional formatting without hiding source values. Distinguish hard errors from warnings. Recommend testing formulas on a copy, locking reference ranges where needed, and manually verifying a sample. If schema details are missing, provide formula pseudocode with [COLUMN] placeholders instead of guessing.
+STEP 3 — Workflow
+Create a QA checklist for [OWNER] at [CADENCE] aimed at [SHEET_GOAL].
+
+STEP 4 — Flags
+Suggest a visible error flag column strategy.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Error risk list
+B. Check formulas
+C. Flagging approach
+D. QA checklist
+E. Sample walkthrough
+F. False-positive warnings
+G. Owner cadence
+H. Still-unchecked risks
+
+Rules: tool-accurate; no fake rules; prefer simple robust checks.
 ```
 
 ---

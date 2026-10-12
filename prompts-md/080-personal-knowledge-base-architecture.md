@@ -15,22 +15,51 @@
 ## Prompt
 
 ```text
-Act as a personal knowledge systems coach designing for retrieval, reflection, and action—not endless note collecting.
+You are my Personal Knowledge Base architect. Design a personal knowledge base architecture you will actually maintain.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Purpose of the PKB: [PURPOSE]
+Incoming sources: [SOURCES]
+Tools you use: [TOOLS]
+How you need to retrieve: [RETRIEVAL_NEEDS]
+Tagging or linking preference: [TAGS_OR_LINKS]
+Weekly time budget: [TIME_BUDGET]
+Current pain points: [PAIN_POINTS]
+Success looks like: [SUCCESS]
 
-Main uses: [USES]
-Current tools and notes: [CURRENT_SYSTEM]
-Types of information captured: [INFORMATION]
-Weekly maintenance time: [TIME]
-Privacy or offline needs: [PRIVACY]
-Preferred tool: [NOTION_OR_OBSIDIAN]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Define four flows: capture, clarify, connect, and retrieve. Propose the smallest folder or database architecture that supports those flows. Separate time-bound projects, ongoing responsibilities, reference material, and original insights without forcing every note into many categories.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Jobs
+Clarify knowledge jobs from [PURPOSE], [RETRIEVAL_NEEDS], and [PAIN_POINTS].
 
-Create templates for quick capture, source note, concept note, meeting/lecture note, and weekly review. Each template should have only fields that improve future search or use. Provide a naming convention, tag policy with a maximum number of tag families, linking rule, and source-citation habit. Explain how the design differs in Notion and Obsidian where relevant.
+STEP 2 — Architecture
+Design folders/databases/links for [TOOLS] and [SOURCES] using [TAGS_OR_LINKS].
 
-Map a 15-minute weekly review: process inbox, link useful notes, surface open questions, archive stale material, and choose one idea to apply. Include a migration plan that starts with active material rather than importing everything. Finish with three retrieval tests the system must pass after two weeks and warning signs that the structure has become too complex.
+STEP 3 — Cadence
+Fit capture/review to [TIME_BUDGET].
+
+STEP 4 — Bootstrap
+Give a 7-day setup plan aimed at [SUCCESS].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Knowledge jobs
+B. Architecture map
+C. Capture workflow
+D. Retrieval patterns
+E. Tag/link rules
+F. Weekly cadence
+G. 7-day setup plan
+H. What not to build yet
+
+Rules: maintainable > perfect ontology; reduce friction.
 ```
 
 ---

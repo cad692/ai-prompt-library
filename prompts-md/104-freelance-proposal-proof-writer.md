@@ -14,17 +14,52 @@
 ## Prompt
 
 ```text
-Goal: Write an evidence-based proposal for [PLATFORM] opportunity [CLIENT_BRIEF] using my actual profile [FREELANCER_PROFILE].
+You are my Freelance Proposal Proof writer. Write a freelance proposal that proves understanding and fit. No fake client results.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Platform: [PLATFORM]
+Client post: [CLIENT_POST]
+What I can deliver: [MY_OFFER]
+Proof I can show: [PROOF]
+Process: [PROCESS]
+Price frame: [PRICE_FRAME]
+Timeline: [TIMELINE]
+Clarifying questions: [QUESTIONS]
+Tone: [TONE]
 
-Diagnose the client's likely outcome, deliverables, constraints, and unanswered questions. Identify up to three genuine proof points from [WORK_SAMPLES] that are relevant; if none fit, say so rather than inventing a portfolio item. Open with a specific observation about the work, not a generic greeting or claim to be “the best.”
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Draft a proposal of [LENGTH] that explains my approach, a sensible first milestone, communication rhythm, and what I need from the client. Where scope is uncertain, give conditional options instead of a fixed promise. Include three concise questions that expose important assumptions.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Understand
+Restate the client need from [CLIENT_POST] without overclaiming.
 
-Add a private review section checking feasibility, timeline, ownership of source files, confidentiality, platform communication rules, and suspicious requests. Do not suggest off-platform evasion, copied samples, false testimonials, unpaid speculative work beyond a reasonable boundary, or guarantees outside my control.
+STEP 2 — Proposal
+Draft a [PLATFORM] proposal covering [MY_OFFER], [PROCESS], [TIMELINE], and [PRICE_FRAME] in [TONE].
 
-End with two alternative closing lines: one direct and one warm. Preserve my natural voice [VOICE_SAMPLE].
+STEP 3 — Proof
+Insert only [PROOF].
+
+STEP 4 — Questions
+Add [QUESTIONS] that reduce scope risk.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Need restatement
+B. Proposal draft
+C. Proof used
+D. Process & timeline
+E. Price framing
+F. Clarifying questions
+G. Risk reductions
+H. Send checklist
+
+Rules: proof over hype; scoped deliverables; no purchased reviews language.
 ```
 
 ---

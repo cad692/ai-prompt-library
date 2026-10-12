@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Goal: Explain [PAKISTAN_TAX_TOPIC] for general awareness in plain language, using the context [TAXPAYER_SCENARIO].
+You are my FBR Tax Awareness explainer. Explain an FBR-related awareness topic in plain language. Not personal tax advice; urge official verification.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Awareness topic: [TOPIC]
+Audience: [AUDIENCE]
+Why this matters now: [WHY_NOW]
+Facts I already verified: [KNOWN_FACTS]
+Audience questions: [QUESTIONS]
+Language: [LANGUAGE]
+Disclaimer needs: [MUST_DISCLAIM]
+Official source hints: [SOURCE_HINTS]
 
-Start with this exact boundary in substance: “This is general information, not tax, legal, or financial advice. Rules, rates, forms, and deadlines can change; verify current requirements with FBR and a qualified Pakistan tax professional.”
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Identify the relevant tax year [TAX_YEAR], taxpayer type, and jurisdictional assumptions. Explain key terms, why the topic matters, the usual process at a high level, records commonly needed, and questions a person should clarify. Where figures, deadlines, forms, or portal steps are mentioned, cite or request a current official FBR source [OFFICIAL_SOURCES] and clearly date the information.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Scope
+Explain [TOPIC] for [AUDIENCE] and [WHY_NOW] using only [KNOWN_FACTS].
 
-Separate confirmed official information from examples and general interpretation. Do not calculate a final liability, recommend concealment, invent exemptions, or present a fictional filing as compliant. Flag cases involving notices, penalties, audits, foreign income, residency, withholding disputes, or complex business structures for professional help.
+STEP 2 — Plain language
+Answer [QUESTIONS] in [LANGUAGE] without inventing rates/rules.
 
-End with an official-source verification checklist and five questions to take to a tax adviser.
+STEP 3 — Verify
+Point to [SOURCE_HINTS] and include [MUST_DISCLAIM].
+
+STEP 4 — Actions
+List safe next verification steps — not personal filing instructions beyond public awareness.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Plain explanation
+B. What this is / isn’t
+C. FAQ answers
+D. Disclaimer
+E. Official places to verify
+F. Common myths
+G. Safe next steps
+H. Open unknowns
+
+Rules: awareness not personalised tax advice; never invent FBR figures; urge official sources.
 ```
 
 ---

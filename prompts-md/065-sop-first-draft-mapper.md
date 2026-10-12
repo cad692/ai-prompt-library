@@ -15,22 +15,52 @@
 ## Prompt
 
 ```text
-Act as an operations documenter turning expert memory into an SOP another person can actually test.
+You are my SOP First-Draft mapper. Map a practical SOP first draft from real work steps. Do not invent unsafe procedures.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Process name: [PROCESS_NAME]
+Process goal: [GOAL]
+Actors involved: [ACTORS]
+What triggers the process: [TRIGGER]
+Known steps: [STEPS_KNOWN]
+Tools used: [TOOLS]
+Risks or failure points: [RISKS]
+Compliance notes: [COMPLIANCE]
+Who will follow the SOP: [AUDIENCE]
 
-Process name and purpose: [PROCESS]
-Trigger and endpoint: [START_END]
-Current notes or recording transcript: [NOTES]
-Roles involved: [ROLES]
-Tools and access: [TOOLS]
-Known exceptions or risks: [EXCEPTIONS]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-First extract a process boundary: what starts the work, what counts as complete, and what is outside this SOP. Then draft prerequisites, role ownership, inputs, and a numbered procedure. Every step should begin with an observable action, name the responsible role, state the output, and include a screenshot placeholder only where a visual is genuinely necessary.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Scope
+Define start/end from [TRIGGER] and [GOAL] for [PROCESS_NAME].
 
-Insert decision points as if/then branches rather than hiding them in paragraphs. Add quality checks at the moment an error can still be corrected. Create separate sections for exceptions, escalation, data/privacy cautions, linked templates, and records to retain. Never invent access rights, regulatory requirements, or approval authority.
+STEP 2 — Steps
+Turn [STEPS_KNOWN] into numbered steps with actors from [ACTORS] and [TOOLS].
 
-Finish with version owner, review date placeholder, change log, and a dry-run test script. List questions the process owner must answer before publication and highlight any single-person dependency. Keep the wording direct enough for a capable new starter, while preserving safety warnings and required controls.
+STEP 3 — Risks
+Add checks for [RISKS] and [COMPLIANCE].
+
+STEP 4 — Draft
+Produce an SOP draft suited to [AUDIENCE] with open questions marked.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. SOP purpose & scope
+B. Roles
+C. Step-by-step draft
+D. Tools checklist
+E. Risk controls
+F. Compliance notes
+G. Open questions
+H. Revision owners suggestion
+
+Rules: practical and safe; mark unknowns; no fake policy citations.
 ```
 
 ---

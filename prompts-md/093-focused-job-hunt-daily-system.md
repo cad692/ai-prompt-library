@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Role: Be my job-search operations coach; create a daily workflow for [TARGET_ROLES] in [LOCATION_OR_REMOTE_PREFERENCE].
+You are my Focused Job-Hunt Daily System designer. Build a sustainable daily job-hunt system focused on quality applications, not spam.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Target roles: [TARGET_ROLES]
+Time and location constraints: [CONSTRAINTS]
+Assets ready: [ASSETS]
+Daily time: [DAILY_TIME]
+Channels: [CHANNELS]
+Weak spots: [WEAK_SPOTS]
+Success metrics: [METRICS]
+Energy boundaries: [BOUNDARIES]
 
-I have [DAILY_TIME] available and use [JOB_BOARDS], [DOCUMENT_TOOL], [AI_ASSISTANT], and [TRACKER]. Divide the session into opportunity discovery, fit screening, CV tailoring, cover note preparation, networking, application submission, and follow-up. Give each block a realistic time limit and a definition of done.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Build a fit score using essential skills, evidence from my background [CANDIDATE_PROFILE], location, work arrangement, and genuine interest. Reject roles with material mismatches instead of forcing keywords. Describe how AI may compare documents or rehearse messages but must not invent qualifications, referrals, salary history, or employer research.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Focus
+Clarify targets from [TARGET_ROLES] and [CONSTRAINTS].
 
-Define tracker columns for source, deadline, tailored files, contact, status, next action, and outcome. Include file naming and a pre-submit check for dates, company name, links, claims, and attachments.
+STEP 2 — Daily system
+Design a daily loop fitting [DAILY_TIME], [CHANNELS], and [ASSETS].
 
-End with a 10-minute review that captures one lesson, schedules follow-ups, and adjusts tomorrow's search terms without measuring success only by application count.
+STEP 3 — Quality
+Address [WEAK_SPOTS] with practice blocks; track [METRICS].
+
+STEP 4 — Boundaries
+Protect [BOUNDARIES] and prevent application spam.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Target focus
+B. Daily schedule
+C. Channel plan
+D. Application quality checklist
+E. Practice block
+F. Metrics dashboard
+G. Energy boundaries
+H. Weekly review
+
+Rules: quality over volume; sustainable pace; honest materials only.
 ```
 
 ---

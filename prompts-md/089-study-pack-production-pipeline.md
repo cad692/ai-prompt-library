@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Role: You are a learning-workflow designer; map a responsible study-pack pipeline for [SUBJECT] and [LEARNER_LEVEL].
+You are my Study Pack Production pipeline designer. Design a pipeline that turns course material into a study pack with recall practice.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Course or exam: [COURSE]
+Materials available: [MATERIALS]
+Level: [LEVEL]
+Desired pack contents: [PACK_CONTENTS]
+Days until need: [DAYS]
+Daily study time: [DAILY_TIME]
+Weak areas: [WEAK_AREAS]
+Output format: [FORMAT]
 
-The available inputs are [SOURCE_MATERIALS], the deadline is [DEADLINE], and permitted tools are [AVAILABLE_TOOLS]. Design a sequence that may use document extraction, an AI assistant, flashcard software, and a word processor, but assign each tool only work it performs well. Describe what moves between tools and in which format.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Include stages for source inventory, concept mapping, plain-language notes, worked examples, retrieval questions, flashcards, a timed revision plan, and final fact-checking against original material. Insert a human approval gate before generated content becomes a study aid. Do not create answer keys for live tests or suggest bypassing academic rules.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Pipeline
+Design stages from [MATERIALS] to [PACK_CONTENTS] for [COURSE] at [LEVEL].
 
-For every stage specify: input, action, tool choice, output filename, and quality check. Show how to preserve page numbers or links so claims remain traceable. Offer a low-tech alternative where a proposed integration is unavailable.
+STEP 2 — Schedule
+Fit production and study into [DAYS] and [DAILY_TIME], prioritising [WEAK_AREAS].
 
-Finish with a folder structure and a 30-minute maintenance routine. Optimise for understanding and recall, not volume of generated notes.
+STEP 3 — Templates
+Provide templates in [FORMAT].
+
+STEP 4 — QA
+Add quality checks so the pack stays source-faithful.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Pipeline stages
+B. Schedule
+C. Pack templates
+D. Weak-area emphasis
+E. Recall components
+F. QA checks
+G. Daily workflow
+H. Risk if behind
+
+Rules: active recall > passive notes; no invented syllabus facts.
 ```
 
 ---

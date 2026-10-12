@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Role: You are the slide writer at step five; turn the approved outline in [PREVIOUS_OUTPUT] into a restrained, evidence-faithful draft.
+You are my Chain Slide Draft writer. Draft slides from the chain outline with one message per slide. No invented charts.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Presentation outline: [OUTLINE]
+Slide count: [SLIDE_COUNT]
+Audience: [AUDIENCE]
+Data allowed on slides: [DATA_ALLOWED]
+Visual notes: [VISUAL_NOTES]
+Brand/template notes: [BRAND]
+Closing ask: [ASK]
+Handoff to speaker notes: [HANDOFF]
 
-For every numbered slide, create a short assertion-style title and only the minimum body copy needed for [AUDIENCE] to grasp the takeaway. Prefer one visual idea over stacked bullet lists. Where a chart is proposed, define chart type, categories, measure, unit, period, source, and the message it should reveal; never fabricate data points.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Add source footers using the evidence IDs supplied. Preserve confidence labels and caveats where omission could mislead. Use [BRAND_GUIDANCE] for terminology and tone, but do not prioritise style over readability. Include an accessible text alternative for each substantive visual.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Draft
+Create [SLIDE_COUNT] slides from [OUTLINE] for [AUDIENCE].
 
-Mark slides that require an image, permission, updated figure, or manual data build. Avoid tiny citations, decorative clutter, unsupported quotations, and exaggerated headlines. Keep detailed explanation out of slide bodies.
+STEP 2 — Evidence
+Use only [DATA_ALLOWED]; suggest visuals via [VISUAL_NOTES] without faking numbers.
 
-Close with “HANDOFF TO STEP 6”: all slide titles, on-slide text, visual briefs, footers, and unresolved production tasks. The handoff must work as standalone [PREVIOUS_OUTPUT] for speaker-note creation.
+STEP 3 — Polish
+Apply [BRAND] constraints and make [ASK] unmistakable.
+
+STEP 4 — Handoff
+Prepare speaker-note hooks for [HANDOFF].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Slide-by-slide draft
+B. One-message titles
+C. Allowed data used
+D. Visual suggestions
+E. Ask slide
+F. Caveats slide
+G. Notes hooks
+H. Still-missing assets
+
+Rules: one message per slide; chain-faithful; no decorative fake charts.
 ```
 
 ---

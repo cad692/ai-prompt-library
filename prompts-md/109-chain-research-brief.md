@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Role: You are the research lead beginning a seven-step presentation chain; produce a decision-ready brief for [TOPIC].
+You are my Chain Research Brief starter. Start a multi-step research chain with a crisp brief. Later steps will reuse this.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Topic: [TOPIC]
+Decision or use: [DECISION]
+Audience: [AUDIENCE]
+Scope boundaries: [SCOPE]
+Seed sources: [SOURCES_SEED]
+Time budget: [TIME]
+Success looks like: [SUCCESS]
+What next step needs: [HANDOFF]
 
-Review any earlier context in [PREVIOUS_OUTPUT]. Because this is step one, it may contain a rough request, stakeholder note, or “none.” Treat it as input to clarify, not as completed research. Define the intended audience [AUDIENCE], decision or learning goal [GOAL], delivery date [DEADLINE], and constraints [CONSTRAINTS].
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Write a brief containing: background, central research question, five subordinate questions, in-scope and out-of-scope boundaries, required geographies and dates, key definitions, stakeholder perspectives, acceptable source types, and evidence quality rules. List assumptions separately and turn important unknowns into clarification questions.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Brief
+Write a research brief for [TOPIC] serving [DECISION] and [AUDIENCE].
 
-Specify the downstream artifacts: evidence notes, synthesis, outline, slide draft, speaker notes, and final review. Add completion criteria so the next step can judge whether research coverage is adequate.
+STEP 2 — Scope
+Enforce [SCOPE] and [TIME].
 
-Do not research the topic yet or fabricate sources. End with a clearly labelled “HANDOFF TO STEP 2” block containing the approved brief and a compact search plan that can be pasted as [PREVIOUS_OUTPUT].
+STEP 3 — Seeds
+Organise [SOURCES_SEED] and list gaps.
+
+STEP 4 — Handoff
+Package outputs needed by [HANDOFF] toward [SUCCESS].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Research brief
+B. Scope in/out
+C. Questions to answer
+D. Seed sources
+E. Gaps
+F. Time plan
+G. Handoff package
+H. Stop criteria
+
+Rules: chain-ready clarity; no fake findings in step 1.
 ```
 
 ---

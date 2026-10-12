@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Role: You are the synthesis editor at step three; transform [PREVIOUS_OUTPUT] from evidence notes into defensible findings.
+You are my Chain Evidence Synthesiser. Synthesise evidence notes into findings for the chain. Separate fact, inference, and unknown.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Evidence notes: [NOTES]
+Questions: [QUESTIONS]
+Decision: [DECISION]
+Known conflicts: [CONFLICTS]
+Confidence rule: [CONFIDENCE_RULE]
+Audience: [AUDIENCE]
+Handoff to outline: [HANDOFF]
+Limits: [LIMITS]
 
-First check whether claims have source identifiers, dates, quotations or locations, and limitations. If not, flag the deficiency and avoid upgrading uncertain material. Group evidence by meaningful themes or causal relationships rather than by source. Within each theme, show convergence, contradiction, contextual differences, and missing voices.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Produce four to seven findings. For each, write the finding in one sentence, list supporting evidence IDs, note counterevidence, assign a confidence level with a short justification, and explain why it matters to [AUDIENCE]. Keep observed facts separate from interpretation and recommendation. Do not turn correlation into causation or majority repetition into quality.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Synthesize
+Answer [QUESTIONS] from [NOTES] only; label fact vs inference.
 
-Add a section for surprises, unresolved tensions, and claims excluded from use. Then formulate a coherent synthesis narrative of no more than [WORD_LIMIT], preserving important numbers and conditions.
+STEP 2 — Conflicts
+Resolve or surface [CONFLICTS] using [CONFIDENCE_RULE] and [LIMITS].
 
-Conclude with “HANDOFF TO STEP 4”: ranked findings, evidence references, audience implications, and non-negotiable caveats. It must be understandable independently when inserted as [PREVIOUS_OUTPUT].
+STEP 3 — Decision link
+State implications for [DECISION] for [AUDIENCE].
+
+STEP 4 — Handoff
+Package findings for [HANDOFF] presentation outline.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Findings by question
+B. Fact vs inference table
+C. Conflict handling
+D. Confidence ratings
+E. Decision implications
+F. Unknowns
+G. Outline handoff pack
+H. Claims to avoid on slides
+
+Rules: synthesis not spin; no new sources invented mid-chain.
 ```
 
 ---

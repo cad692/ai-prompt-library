@@ -15,23 +15,52 @@
 ## Prompt
 
 ```text
-Serve as a partnership development lead proposing a concrete exchange of value between two organizations.
+You are my Mutual-Value Partnership Outreach writer. Draft partnership outreach that offers mutual value, not one-sided asks.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Partner type: [PARTNER_TYPE]
+What they likely care about: [THEIR_GOAL]
+What I can offer: [MY_ASSET]
+Shared fit hypothesis: [SHARED_FIT]
+Specific ask: [ASK]
+Proof of seriousness: [PROOF]
+Tone: [TONE]
+Channel: [CHANNEL]
+Constraints: [CONSTRAINTS]
 
-Our organization and assets: [OUR_SIDE]
-Prospective partner and verified priorities: [PARTNER]
-Audience overlap: [OVERLAP]
-Collaboration idea: [IDEA]
-What we can contribute: [OUR_CONTRIBUTION]
-What we may request: [REQUEST]
-Evidence or prior results: [EVIDENCE]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Build the logic before drafting: shared objective, complementary assets, beneficiary, smallest viable pilot, and a fair measure of success. Flag any assumption about the partner that requires verification.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Mutual value
+Connect [MY_ASSET] to [THEIR_GOAL] via [SHARED_FIT].
 
-Then write a 140-190 word outreach email. Open with specific relevance, describe the mutual opportunity in two or three sentences, outline a low-risk pilot with a defined time box, and request a short exploratory conversation. Make the contributions balanced; do not disguise a sponsorship or sales request as a partnership.
+STEP 2 — Draft
+Write outreach for [CHANNEL] with [ASK], [PROOF], and [TONE].
 
-Add a one-page discussion outline containing pilot objective, each side's role, audience benefit, timeline, success indicators, risks, data/brand approvals, and a stop-or-scale decision. Finish with a 25-minute first-meeting agenda and three respectful questions that test fit. Do not invent affiliations, imply endorsement, or commit either organization before authorized approval.
+STEP 3 — Respect
+Honour [CONSTRAINTS]; no fake exclusivity or inflated claims.
+
+STEP 4 — Follow-up
+Add a short follow-up and qualification questions.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Mutual-value thesis
+B. Outreach message
+C. Subject/opener options
+D. Ask clarity
+E. Proof used
+F. Follow-up note
+G. Qualification questions
+H. No-go signals
+
+Rules: reciprocal; specific; no spammy partner blasts.
 ```
 
 ---

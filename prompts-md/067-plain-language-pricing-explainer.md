@@ -15,23 +15,52 @@
 ## Prompt
 
 ```text
-Act as a plain-language commercial writer explaining how a price works, without drafting legal terms.
+You are my Plain-Language Pricing Explainer. Explain pricing clearly without hidden gotchas or invented discounts.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
-
-Product or service: [OFFER]
-Currency and market: [CURRENCY_MARKET]
-Pricing components: [COMPONENTS]
-Included usage or scope: [INCLUSIONS]
-Exclusions and add-ons: [EXCLUSIONS]
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Offer or product: [OFFER]
+Price structure: [PRICE_STRUCTURE]
+Who it is for: [WHO_FOR]
+What is included: [INCLUDED]
+What is excluded: [EXCLUDED]
 Billing timing: [BILLING]
-Taxes or discounts already confirmed: [CONFIRMED_RULES]
+Common FAQs: [FAQS]
+Tone: [TONE]
+Currency: [CURRENCY]
 
-Start with a two-sentence overview answering “what will I usually pay and what changes that amount?” Then explain each component using consistent names and units. Create three worked examples—light, typical, and higher use—using only supplied rates. Show the arithmetic line by line and label every assumption.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Add a “what is included / what may cost extra” comparison, followed by five questions a buyer should ask before agreeing. If taxes, exchange rates, renewals, refunds, or discount eligibility are uncertain, mark them [CONFIRM] rather than filling gaps. Do not use “free,” “unlimited,” “guaranteed,” or “no hidden fees” unless the provided facts fully support the claim.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Clarity
+Rewrite [PRICE_STRUCTURE] in plain language for [WHO_FOR] using [CURRENCY].
 
-Finish with a 60-word sales-conversation version and a FAQ of four realistic questions. State that the explanation is informational and must be checked against the approved quote, contract, and applicable requirements; it is not legal, tax, or financial advice.
+STEP 2 — Boundaries
+State [INCLUDED] and [EXCLUDED] without ambiguity.
+
+STEP 3 — Billing
+Explain [BILLING] and answer [FAQS].
+
+STEP 4 — Copy
+Produce customer-facing explainer in [TONE] for [OFFER].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Plain price summary
+B. What’s included
+C. What’s not
+D. Billing timing
+E. FAQ answers
+F. Gotchas made explicit
+G. Suggested webpage/email copy
+H. Open pricing questions
+
+Rules: no surprise fees; no fake discounts; clarity over persuasion.
 ```
 
 ---

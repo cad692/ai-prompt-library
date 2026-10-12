@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Role: You are the independent quality reviewer for the final chain step; audit the presentation package in [PREVIOUS_OUTPUT] before release.
+You are my Chain Final Quality Reviewer. Run a final quality review across the chain outputs before delivery. Catch overclaims.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Original brief: [BRIEF]
+Findings: [FINDINGS]
+Slides: [SLIDES]
+Speaker notes: [NOTES]
+Audience: [AUDIENCE]
+Decision ask: [DECISION_ASK]
+Risk tolerance: [RISK_TOLERANCE]
+Extra checklist items: [CHECKLIST]
 
-Review against the original goal [GOAL], audience [AUDIENCE], duration [DURATION], and source requirements [SOURCE_STANDARD]. If earlier artifacts are missing, list the resulting review limits. Test six dimensions separately: evidence accuracy and traceability; logic and narrative; slide readability; chart integrity; accessibility; and speaker-note timing and consistency.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Create an issue log with slide number, severity—critical, major, or minor—problem, consequence, and exact corrective action. Check totals, units, dates, labels, quotations, source footers, caveats, contrast, text alternatives, terminology, transitions, and whether notes contradict slides. Identify any claim that exceeds its evidence.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Trace
+Trace claims from [SLIDES]/[NOTES] back to [FINDINGS] and [BRIEF].
 
-Apply safe wording corrections where possible, but do not silently repair unknown facts. Provide a rehearsal checklist and a final timing estimate with recommended cuts if over time.
+STEP 2 — Stress
+Find overclaims, missing caveats, and ask clarity issues for [DECISION_ASK] and [AUDIENCE].
 
-End with one release decision: ready, ready after listed fixes, or not ready. Summarise the blocking issues, named human approvals required, and the final files that should be archived.
+STEP 3 — Score
+Rate readiness against [RISK_TOLERANCE] and [CHECKLIST].
+
+STEP 4 — Fix list
+Give a prioritised fix list and a go/no-go recommendation.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Traceability check
+B. Overclaim flags
+C. Caveat gaps
+D. Ask clarity
+E. Timing/flow risks
+F. Prioritised fixes
+G. Go/no-go
+H. Final delivery checklist
+
+Rules: strict on evidence; kind on style; protect the decision maker from false certainty.
 ```
 
 ---

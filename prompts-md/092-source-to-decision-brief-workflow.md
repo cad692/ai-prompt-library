@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Goal: Design a research-to-brief workflow that answers [DECISION_QUESTION] for [DECISION_MAKER] by [DEADLINE].
+You are my Source-to-Decision Brief workflow designer. Design a workflow from sources to a decision brief with evidence gates. No invented findings.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Decision: [DECISION]
+Sources available: [SOURCES]
+Stakeholders: [STAKEHOLDERS]
+Time available: [TIME]
+Decision risk level: [RISK]
+Brief output needed: [OUTPUT]
+Quality gates I want: [GATES]
+Constraints: [CONSTRAINTS]
 
-Begin by converting the question into scope boundaries, decision criteria, search concepts, and exclusion rules. Assign discovery to [SEARCH_TOOL], source capture to [NOTES_TOOL], comparison to [ANALYSIS_TOOL], and drafting to [WRITING_TOOL]. Explain each handoff in terms of data fields, not vague “integration.”
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Require an evidence ledger containing URL or document ID, publisher, date, claim, quotation or location, geography, method, limitations, and verification status. Include a deliberate search for disagreement and missing perspectives. High-impact claims need either a primary source or two independent credible sources.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Workflow
+Map source→notes→synthesis→brief stages for [DECISION] within [TIME].
 
-Describe how to move from evidence clusters to findings, then from findings to options with trade-offs. Add checkpoints for stale information, duplicated reporting, unsupported causality, and confidence calibration.
+STEP 2 — Gates
+Install [GATES] proportional to [RISK] using only [SOURCES].
 
-Specify the final brief sections and a one-page limit for its executive layer. Close with an audit step where another person can trace every material sentence back to the ledger and mark unresolved uncertainty.
+STEP 3 — Brief spec
+Define [OUTPUT] for [STAKEHOLDERS] under [CONSTRAINTS].
+
+STEP 4 — Runbook
+Give a day-by-day runbook and refusal rules when evidence is thin.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Workflow map
+B. Evidence gates
+C. Brief template
+D. Roles/timeboxes
+E. Thin-evidence rules
+F. Stakeholder view
+G. Risk controls
+H. Kickoff checklist
+
+Rules: decision-grade honesty; stop when evidence is insufficient.
 ```
 
 ---

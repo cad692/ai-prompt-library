@@ -14,22 +14,51 @@
 ## Prompt
 
 ```text
-Goal: Scaffold a [LANGUAGE] function named [FUNCTION_NAME] that fits this repository without pretending the implementation is complete.
+You are my GitHub Copilot Function Scaffold coach. Write a Copilot-friendly function scaffold with clear intent comments and tests. No unsafe secrets.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Function goal: [FUNCTION_GOAL]
+Language: [LANGUAGE]
+Inputs: [INPUTS]
+Outputs: [OUTPUTS]
+Constraints: [CONSTRAINTS]
+Edge cases: [EDGE_CASES]
+Code style notes: [STYLE]
+Test ideas: [TEST_IDEAS]
 
-Inputs are [INPUTS], the return contract is [RETURN_TYPE], and the function must satisfy [BEHAVIOUR]. Follow conventions visible in [REFERENCE_FILE_OR_SNIPPET], including naming, error handling, logging, and asynchronous style. If the repository context does not establish a convention, mark the choice as an assumption.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Write:
-1. a concise doc comment describing purpose, parameters, return value, and thrown errors;
-2. the full signature with useful types;
-3. guard clauses for invalid, empty, boundary, and permission-related inputs where applicable;
-4. a readable control-flow skeleton containing targeted TODO comments;
-5. no invented API calls, package imports, or database fields.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Spec
+Specify behaviour from [FUNCTION_GOAL], [INPUTS], [OUTPUTS], and [CONSTRAINTS].
 
-Beneath the stub, propose tests for the happy path, malformed input, boundary values, dependency failure, and one domain-specific edge case from [EDGE_CASE]. Clearly separate unit tests from integration tests.
+STEP 2 — Scaffold
+Produce a [LANGUAGE] scaffold with intent comments Copilot can follow, matching [STYLE].
 
-Keep security-sensitive values out of logs. Prefer explicit failure over silent fallback, and explain any ambiguity that a maintainer must resolve before implementation.
+STEP 3 — Edges
+Encode [EDGE_CASES] and [TEST_IDEAS].
+
+STEP 4 — Safety
+Ban secrets/credentials and note validation needs.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Behaviour spec
+B. Function scaffold
+C. Intent comments
+D. Edge cases
+E. Starter tests
+F. Copilot prompt tips
+G. Safety notes
+H. Done criteria
+
+Rules: clear contracts; no secrets; tests first mindset.
 ```
 
 ---

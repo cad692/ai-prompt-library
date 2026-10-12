@@ -15,22 +15,52 @@
 ## Prompt
 
 ```text
-Act as a project scoping facilitator converting messy discovery notes into a shared definition of done.
+You are my Proposal Scope Boundary builder. Define what is in, out, and negotiable in a proposal so scope creep is harder. Do not invent client promises.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Project: [PROJECT]
+Client goal: [CLIENT_GOAL]
+In-scope items: [IN_SCOPE]
+Out-of-scope items: [OUT_SCOPE]
+Assumptions: [ASSUMPTIONS]
+Dependencies: [DEPENDENCIES]
+Timeline: [TIMELINE]
+Budget band: [BUDGET_BAND]
+Change-request rule: [CHANGE_RULE]
 
-Client goal: [GOAL]
-Discovery notes: [NOTES]
-Deliverables discussed: [DELIVERABLES]
-Timeline constraints: [TIMELINE]
-Client responsibilities: [CLIENT_INPUTS]
-Budget model if relevant: [BUDGET_MODEL]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Write a proposal scope draft with these functional sections: outcome, deliverable cards, project phases, client inputs, explicit exclusions, assumptions, acceptance method, change-request path, and handover. Each deliverable card must state what will be produced, format, quantity or boundary, review rounds, dependencies, and observable acceptance criteria.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Boundaries
+Turn [IN_SCOPE] and [OUT_SCOPE] into crisp boundary statements for [PROJECT].
 
-Create a “scope edge” section using examples of nearby work that is not included, so ambiguity is reduced without sounding defensive. Identify contradictions or unanswered questions in the notes and list them before the draft as decisions required. Do not invent dates, fees, legal protections, intellectual-property terms, or service guarantees.
+STEP 2 — Assumptions
+List [ASSUMPTIONS] and [DEPENDENCIES] that must hold.
 
-Add a lightweight change process: request, impact assessment, written approval, and revised schedule or cost. Finish with a plain-language summary the client can read in one minute and a kickoff checklist. Label the document as a commercial working draft requiring appropriate business or legal review where needed.
+STEP 3 — Commercial
+Align [TIMELINE], [BUDGET_BAND], and [CHANGE_RULE] to [CLIENT_GOAL].
+
+STEP 4 — Proposal text
+Write paste-ready scope sections.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. In-scope list
+B. Out-of-scope list
+C. Assumptions
+D. Dependencies
+E. Timeline & budget band
+F. Change-request rule
+G. Client confirmation questions
+H. Risk if boundaries blur
+
+Rules: clear boundaries; no hidden free work; no fake deliverables.
 ```
 
 ---

@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Goal: Design a teaching-preparation workflow for [TOPIC], [GRADE_OR_LEVEL], and a [LESSON_DURATION] session.
+You are my Teacher Preparation workflow designer. Design a lesson-prep workflow that is realistic for teaching load and student needs.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Class / subject: [CLASS]
+Learners: [LEARNERS]
+Lesson objectives: [OBJECTIVES]
+Prep time available: [TIME_TO_PREP]
+Materials on hand: [MATERIALS]
+Classroom constraints: [CONSTRAINTS]
+Assessment approach: [ASSESSMENT]
+Inclusion needs: [INCLUSION]
 
-Begin from [CURRICULUM_OUTCOME] and available resources [MATERIALS], not from an AI-generated activity. Show how the teacher defines evidence of learning, uses an assistant to brainstorm misconceptions and examples, develops slides or handouts, creates formative questions, checks accessibility, and stores approved resources in [PLATFORM].
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-At each stage name the input, tool, output, and teacher decision. Include differentiation for [LEARNER_NEEDS], language support, a no-device alternative, and a plan for students who finish early. Questions should assess understanding rather than reward guessing; do not generate answers for active graded assessments.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Outcomes
+Lock objectives for [CLASS] and [LEARNERS], including [INCLUSION].
 
-Add checks for factual accuracy, local cultural relevance, reading level, copyright, safeguarding, and accidental disclosure of student information. Any student data must be removed or anonymised before external tools are used.
+STEP 2 — Workflow
+Build a prep workflow that fits [TIME_TO_PREP] using [MATERIALS].
 
-End with a pre-class readiness list, a minute-by-minute lesson spine, and a post-class reflection loop that compares intended evidence with what learners actually demonstrated.
+STEP 3 — Lesson arc
+Outline activities under [CONSTRAINTS] with [ASSESSMENT] checks.
+
+STEP 4 — Reuse
+Add a reuse/reflection loop for next time.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Objectives
+B. Prep workflow
+C. Lesson arc
+D. Materials checklist
+E. Assessment checks
+F. Inclusion adaptations
+G. Timebox tips
+H. Post-lesson reflection
+
+Rules: teachable in real time; no fantasy resources.
 ```
 
 ---

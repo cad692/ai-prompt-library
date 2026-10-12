@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Goal: Act as the presentation coach for step six; write speaker notes for the slide draft contained in [PREVIOUS_OUTPUT].
+You are my Chain Speaker Notes coach. Write speaker notes for the chain slides that sound human and stay evidence-safe.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Slide draft: [SLIDES]
+Talk time: [TIME]
+Audience: [AUDIENCE]
+Must-say lines: [MUST_SAY]
+Likely questions: [Q_RISKS]
+Tone: [TONE]
+Phrases to avoid: [AVOID]
+Handoff to final review: [HANDOFF]
 
-Use the presenter's voice [VOICE], audience knowledge [AUDIENCE_LEVEL], and total duration [DURATION]. For each slide, provide an opening sentence, the explanation that is not already visible, evidence nuance, a natural transition, and an estimated speaking time. Expand abbreviations on first use and give pronunciation cues for unfamiliar names where verified.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Notes should sound spoken, not like an essay. Preserve uncertainty and explain chart denominators or baselines that audiences may miss. Add a pause or interaction cue only when it advances the goal. Never introduce new facts without an evidence reference; mark unsupported additions with the plain label VERIFY. Also prioritise verifying: [VERIFY].
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Notes
+Write speakable notes per slide from [SLIDES] for [TIME] and [AUDIENCE].
 
-Prepare five likely questions, concise evidence-based responses, and an honest fallback for questions outside the research. Include reminders for accessibility, remote delivery, or handouts from [SETTING].
+STEP 2 — Emphasis
+Include [MUST_SAY]; avoid [AVOID].
 
-Finish with “HANDOFF TO STEP 7”: the slide-linked notes, timing total, Q&A sheet, and all VERIFY items. Ensure this block can be reviewed independently as [PREVIOUS_OUTPUT].
+STEP 3 — Q prep
+Draft answers to [Q_RISKS] without new invented evidence.
+
+STEP 4 — Handoff
+Package for [HANDOFF] quality review in [TONE].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Speaker notes by slide
+B. Timing cues
+C. Must-say emphasis
+D. Hard-question answers
+E. Phrases avoided
+F. Fallback if overtime
+G. Confidence reminders
+H. Final-review handoff
+
+Rules: spoken language; no new claims beyond slides/evidence pack.
 ```
 
 ---

@@ -14,17 +14,51 @@
 ## Prompt
 
 ```text
-Role: Act as an analytics process designer; map how [DATASET] should inform [DECISION] without overstating certainty.
+You are my Data-to-Decision Operating workflow designer. Create an operating workflow from raw data to a decision meeting with clear owners.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Decision forum: [DECISION_FORUM]
+Data sources: [DATA_SOURCES]
+Cadence: [CADENCE]
+Owners: [OWNERS]
+Core metrics: [METRICS]
+When to escalate: [SLACK_RULES]
+Recurring outputs: [OUTPUTS]
+Tools: [TOOLS]
 
-Identify the source system, data owner, refresh date, unit of analysis, and decision deadline. Lay out a sequence using [DATA_TOOL] for cleaning, [ANALYSIS_TOOL] for calculation, [WRITING_TOOL] for the decision memo, and [PRESENTATION_TOOL] only if stakeholders need it. Every handoff must retain dataset version and filter definitions.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Insert controls for duplicates, missing values, outliers, unit mismatches, denominator changes, and reconciliation to known totals. Distinguish descriptive findings, forecasts, and causal claims. Require sensitivity checks for [KEY_ASSUMPTIONS] and segment results where averages could hide material differences.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Pipeline
+Design data→QA→insight→decision stages for [DECISION_FORUM] at [CADENCE].
 
-The workflow should produce an analysis notebook or formula record, a chart pack, a finding log, and a recommendation with options. Assign a challenger to test alternative explanations before approval.
+STEP 2 — Roles
+Assign work using [OWNERS], [DATA_SOURCES], [METRICS], and [TOOLS].
 
-Finish with a decision register capturing owner, date, evidence used, assumptions, chosen option, rejected alternatives, review trigger, and later outcome. Include a route to say “insufficient evidence” rather than manufacturing confidence.
+STEP 3 — Escalation
+Define [SLACK_RULES] / escalation thresholds.
+
+STEP 4 — Artifacts
+Specify [OUTPUTS] and a meeting agenda.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Operating workflow
+B. RACI/owners
+C. Metric set
+D. QA steps
+E. Decision agenda
+F. Escalation rules
+G. Recurring artifacts
+H. Failure modes
+
+Rules: decisions on schedule; data quality before debate.
 ```
 
 ---
