@@ -426,3 +426,362 @@
   FILE_OR_LINK:
     q: "Please share the link or file?"
     ex: "A screenshot or article link"
+"021":
+  PDF_TITLE:
+    q: "What is the document called?"
+    ex: "Economics Chapter 3"
+  COURSE_OR_EXAM:
+    q: "What course or exam is this for?"
+    ex: "Microeconomics"
+  LEVEL:
+    q: "What level are you working at?"
+    ex: "First year undergraduate"
+  TOPICS:
+    q: "Which topics need attention?"
+    ex: "Elasticity and consumer demand"
+  STUDY_TIME:
+    q: "How much study time do you have?"
+    ex: "Two hours this week"
+  NUMBER_OF_DAYS:
+    q: "How many days should the review cover?"
+    ex: "Seven days"
+"022":
+  UPLOADED_AGREEMENT:
+    q: "What agreement are you reviewing?"
+    ex: "A freelance service contract"
+  PARTY_ROLE:
+    q: "What is your role?"
+    ex: "The freelancer or tenant"
+  PURPOSE:
+    q: "What is the agreement for?"
+    ex: "Website development work"
+  JURISDICTION:
+    q: "Which jurisdiction matters here?"
+    ex: "Pakistan or Punjab"
+  PRIORITIES:
+    q: "What matters most to you?"
+    ex: "Payment security and fairness"
+"023":
+  REPORT_TITLE_OR_UPLOAD:
+    q: "What report are you summarising?"
+    ex: "A city transport review"
+  AUDIENCE:
+    q: "Who is the summary for?"
+    ex: "Senior managers"
+  DECISION:
+    q: "What decision is being made?"
+    ex: "Whether to expand the project"
+  READING_TIME:
+    q: "How much time does the reader have?"
+    ex: "Ten minutes"
+  PRIORITIES:
+    q: "What matters most to them?"
+    ex: "Costs, risks, and timeline"
+  ORGANISATION_OR_CONTEXT:
+    q: "What context should we use?"
+    ex: "A university operations office"
+"024":
+  PDF_A:
+    q: "What is the first document?"
+    ex: "Policy draft A"
+  PDF_B:
+    q: "What is the second document?"
+    ex: "Policy draft B"
+  PURPOSE:
+    q: "Why are you comparing them?"
+    ex: "To choose the stronger version"
+  CRITERIA:
+    q: "What criteria should drive comparison?"
+    ex: "Cost, clarity, and fairness"
+"025":
+  DOCUMENT_OR_PASTED_TEXT:
+    q: "What document or text is this from?"
+    ex: "A meeting summary and email thread"
+  PROJECT:
+    q: "What project is this for?"
+    ex: "Campus event planning"
+  DATE:
+    q: "What date should we use today?"
+    ex: "12 October 2026"
+  TEAM_ROLES_OR_NAMES:
+    q: "Who is on the team?"
+    ex: "Design lead, finance, and outreach"
+"026":
+  CHAPTER_TITLE:
+    q: "What chapter are you reviewing?"
+    ex: "Methodology and findings"
+  PROGRAMME:
+    q: "What programme or discipline is this?"
+    ex: "MPhil in education"
+  QUESTION:
+    q: "What is the research question?"
+    ex: "How do learners adapt to online study?"
+  PURPOSE:
+    q: "What is the chapter trying to do?"
+    ex: "Explain the evidence and argument"
+  GUIDANCE:
+    q: "What institutional guidance applies?"
+    ex: "Faculty rubric and thesis policy"
+"027":
+  MEETING_TRANSCRIPT:
+    q: "Paste the meeting transcript?"
+    ex: "Transcript text from the call"
+  MEETING_DETAILS:
+    q: "What are the meeting details?"
+    ex: "Team planning on 5 May"
+  SPEAKER_LIST:
+    q: "Who spoke in the meeting?"
+    ex: "Amina, Usman, and Raza"
+  CLEAN_TRANSCRIPT_OR_MINUTES:
+    q: "Do you want a transcript or minutes?"
+    ex: "A clean meeting summary"
+  INTERVAL_OR_TOPIC_CHANGES:
+    q: "How often should timestamps appear?"
+    ex: "At topic changes"
+  UNCLEAR:
+    q: "How should unclear passages be marked?"
+    ex: "[UNCLEAR at TIMESTAMP]"
+"028":
+  POLICY_DOCUMENT:
+    q: "What policy are you translating?"
+    ex: "Attendance and leave policy"
+  AUDIENCE:
+    q: "Who is the audience?"
+    ex: "Student volunteers"
+  READING_LEVEL:
+    q: "What reading level should it target?"
+    ex: "Secondary school level"
+  ENGLISH_URDU_OR_BILINGUAL:
+    q: "What language version do you want?"
+    ex: "English and Urdu"
+  CONTEXT:
+    q: "What organisation or jurisdiction is this?"
+    ex: "A university hostel policy"
+"029":
+  PASTE_REFERENCES:
+    q: "Paste the references to normalize?"
+    ex: "A messy bibliography list"
+  CITATION_STYLE_AND_EDITION:
+    q: "Which citation style do you need?"
+    ex: "APA 7"
+  ALPHABETICAL_NUMERICAL_OR_CUSTOM:
+    q: "How should entries be ordered?"
+    ex: "Alphabetical order"
+  LANGUAGE_RULES:
+    q: "What language rules should apply?"
+    ex: "Use English titles only"
+"030":
+  UPLOADED_NOTES:
+    q: "What notes are you using?"
+    ex: "Uploaded lecture notes"
+  COURSE_AND_TOPIC:
+    q: "What course and topic are these for?"
+    ex: "Sociology of education"
+  EXAM_FORMAT:
+    q: "What assessment format is this?"
+    ex: "Short-answer exam"
+  LEVEL:
+    q: "What level are you studying at?"
+    ex: "Undergraduate second year"
+  WEAK_AREAS:
+    q: "What topics are hardest for you?"
+    ex: "Theory and case examples"
+  MARK_SCHEME:
+    q: "What marking guide should we follow?"
+    ex: "Ten marks per question"
+"031":
+  ROUGH_TASK:
+    q: "What task do you want to structure?"
+    ex: "Write a policy summary prompt"
+  PLACEHOLDERS:
+    q: "Which placeholders should be reused?"
+    ex: "TASK, AUDIENCE, CONTEXT"
+"032":
+  WEAK_PROMPT:
+    q: "Paste the weak prompt to improve?"
+    ex: "Summarise this article in simple words"
+  OUTCOME:
+    q: "What should the better prompt achieve?"
+    ex: "A clear, actionable summary"
+  USER:
+    q: "Who is the prompt for?"
+    ex: "A new student user"
+  USE:
+    q: "How will the output be used?"
+    ex: "For a class presentation"
+  PLACEHOLDERS:
+    q: "Which placeholders should be kept?"
+    ex: "TOPIC, AUDIENCE, PURPOSE"
+"033":
+  TASK:
+    q: "What task needs grounded answers?"
+    ex: "Summarise the evidence report"
+  RISK:
+    q: "What risk would unsupported claims create?"
+    ex: "Wrong policy advice"
+  APPROVED_SOURCES:
+    q: "What sources are allowed?"
+    ex: "Only the uploaded report"
+  QUESTION:
+    q: "What question will the user ask?"
+    ex: "What caused the change in rates?"
+  AUDIENCE:
+    q: "Who will read the final answer?"
+    ex: "A project committee"
+"034":
+  TASK:
+    q: "What task needs clarification?"
+    ex: "Write a briefing for a donor"
+  REQUIRED_INPUTS:
+    q: "What information is essential first?"
+    ex: "Audience, goal, and deadline"
+  OPTIONAL_INPUTS:
+    q: "What extra context may help?"
+    ex: "Past notes and examples"
+  MAX_QUESTIONS:
+    q: "How many questions should be asked?"
+    ex: "Three"
+  OUTPUT_FORMAT:
+    q: "What output format do you need?"
+    ex: "A one-page brief"
+  CONSTRAINTS:
+    q: "What constraints should apply?"
+    ex: "Short, clear, and factual"
+"035":
+  DRAFT_TYPE:
+    q: "What kind of draft is this?"
+    ex: "A summary paragraph"
+  GOAL:
+    q: "What are you trying to improve?"
+    ex: "Clarity and evidence"
+  DRAFT:
+    q: "Paste the draft you want reviewed?"
+    ex: "A rough first draft"
+  AUDIENCE:
+    q: "Who will read it?"
+    ex: "A research supervisor"
+  CONSTRAINTS:
+    q: "What must the revision respect?"
+    ex: "No new invented facts"
+  MUST_PRESERVE:
+    q: "What must not change?"
+    ex: "The core argument and evidence"
+  MAX_ROUNDS:
+    q: "How many revision rounds should happen?"
+    ex: "Three"
+  SHORT_SAMPLE:
+    q: "Do you want a short demonstration sample?"
+    ex: "A two-sentence example"
+"036":
+  TASK:
+    q: "What task needs constraints?"
+    ex: "Draft a policy memo"
+  REQUIREMENTS:
+    q: "What requirements must be handled?"
+    ex: "Length, tone, and evidence"
+  AUDIENCE:
+    q: "Who is the audience?"
+    ex: "A student committee"
+  OUTPUT:
+    q: "What final output do you need?"
+    ex: "A one-page brief"
+  EXAMPLES_OR_METRICS:
+    q: "What metrics or examples guide quality?"
+    ex: "Clear structure and concise wording"
+"037":
+  TASK:
+    q: "What task should the examples teach?"
+    ex: "Classify support tickets"
+  INPUT_SCHEMA:
+    q: "What does the input look like?"
+    ex: "Customer message plus category"
+  OUTPUT_SCHEMA:
+    q: "What should the output format be?"
+    ex: "A label and explanation"
+  RULES:
+    q: "What rules must the examples follow?"
+    ex: "Be explicit and avoid guessing"
+  DOMAIN:
+    q: "What domain is this for?"
+    ex: "Customer support"
+  EXCLUSIONS:
+    q: "What content should be excluded?"
+    ex: "Private or sensitive details"
+  NUMBER:
+    q: "How many examples are needed?"
+    ex: "Four"
+  NEW_INPUT:
+    q: "What placeholder should the prompt use?"
+    ex: "NEW_CASE"
+  UNKNOWN:
+    q: "How should unknown cases be handled?"
+    ex: "Return UNKNOWN"
+"038":
+  TASK:
+    q: "What task are you choosing a tool for?"
+    ex: "Analyse a long report"
+  TEXT_FILES_IMAGES_LINKS_OR_OTHER:
+    q: "What inputs will you use?"
+    ex: "PDFs and notes"
+  OUTPUT:
+    q: "What final output do you need?"
+    ex: "A summary with citations"
+  WORKFLOW:
+    q: "What workflow is involved?"
+    ex: "Research and drafting"
+  PUBLIC_INTERNAL_CONFIDENTIAL:
+    q: "How sensitive is the data?"
+    ex: "Internal but not confidential"
+  ACCESS:
+    q: "What tools or accounts are available?"
+    ex: "ChatGPT and Microsoft Copilot"
+  PREFERENCES:
+    q: "What preferences matter most?"
+    ex: "Fast and straightforward"
+"039":
+  TOPIC:
+    q: "What topic are you studying?"
+    ex: "Photosynthesis"
+  LEVEL:
+    q: "What learning level is this?"
+    ex: "Secondary school"
+  LEARNING_GOAL:
+    q: "What are you trying to learn?"
+    ex: "Explain the process clearly"
+  PROBLEM_TYPE:
+    q: "What type of problem is this?"
+    ex: "A science explanation question"
+  MAX_ATTEMPTS:
+    q: "How many attempts should the tutor allow?"
+    ex: "Three"
+  CONTEXT:
+    q: "What context should the examples use?"
+    ex: "A classroom setting"
+"040":
+  OUTPUT_TYPE:
+    q: "What type of output is being judged?"
+    ex: "A summary brief"
+  AUDIENCE:
+    q: "Who will use the output?"
+    ex: "A management team"
+  PURPOSE:
+    q: "What is the output for?"
+    ex: "Decision-making"
+  REQUIREMENTS:
+    q: "What requirements must it meet?"
+    ex: "Clear, brief, and factual"
+  RISKS:
+    q: "What risks should the rubric catch?"
+    ex: "Invented claims or weak evidence"
+  CRITICAL_FAILURES:
+    q: "What failure conditions matter most?"
+    ex: "False citations or unsafe advice"
+  SAMPLES:
+    q: "Do you have example outputs?"
+    ex: "Two sample drafts"
+  SAMPLE_A:
+    q: "What is the first sample?"
+    ex: "A low-quality draft"
+  SAMPLE_B:
+    q: "What is the second sample?"
+    ex: "A stronger draft"
