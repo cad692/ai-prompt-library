@@ -17,6 +17,8 @@
 ```text
 Work as a customer-care writer handling a difficult complaint with empathy, accuracy, and clear ownership.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Customer message: [COMPLAINT]
 Verified account facts: [FACTS]
 Policy or limits: [POLICY]

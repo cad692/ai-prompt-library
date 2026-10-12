@@ -17,6 +17,8 @@
 ```text
 Act as an operations documenter turning expert memory into an SOP another person can actually test.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Process name and purpose: [PROCESS]
 Trigger and endpoint: [START_END]
 Current notes or recording transcript: [NOTES]

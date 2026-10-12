@@ -1240,218 +1240,218 @@
     ex: Stock clichés and clutter
 "061":
   SENDER:
-    q: "Who is sending the email?"
-    ex: "A student applying for a workshop"
+    q: What sender should shape this respectful cold email?
+    ex: A student applying for a workshop
   RECIPIENT:
-    q: "Who is the message for?"
-    ex: "A department head or manager"
+    q: What recipient should shape this respectful cold email?
+    ex: A department head or manager
   RELEVANCE:
-    q: "What is the reason for reaching out?"
-    ex: "A shared project or mutual interest"
+    q: What is the reason for reaching out?
+    ex: A shared project or mutual interest
   OFFER:
-    q: "What do you want to offer or ask?"
-    ex: "A proposal for a short collaboration"
+    q: What do you want to offer or ask?
+    ex: A proposal for a short collaboration
   EVIDENCE:
-    q: "What evidence supports your contact?"
-    ex: "A recent article or relevant portfolio"
+    q: What evidence should shape this respectful cold email?
+    ex: A recent article or relevant portfolio
   NEXT_STEP:
-    q: "What is the next step you want?"
-    ex: "A short meeting or reply"
+    q: What is the next step you want?
+    ex: A short meeting or reply
   TONE:
-    q: "What tone should the email use?"
-    ex: "Warm and respectful"
+    q: What tone should the final output use?
+    ex: Warm and respectful
 "062":
   GOAL:
-    q: "What is the client goal?"
-    ex: "Launch a simple digital product"
+    q: What decision or objective must this support?
+    ex: Launch a simple digital product
   NOTES:
-    q: "What discovery notes should we use?"
-    ex: "A list of client requirements and ideas"
+    q: What discovery notes should we use?
+    ex: A list of client requirements and ideas
   DELIVERABLES:
-    q: "What work is included?"
-    ex: "Design, build, and handover support"
+    q: What deliverables should shape this proposal scope boundary builder?
+    ex: Design, build, and handover support
   TIMELINE:
-    q: "What timeline or deadline matters?"
-    ex: "A six-week delivery window"
+    q: What timeline should shape this proposal scope boundary builder?
+    ex: A six-week delivery window
   CLIENT_INPUTS:
-    q: "What will the client provide?"
-    ex: "Content, approvals, and access"
+    q: What client inputs should shape this proposal scope boundary builder?
+    ex: Content, approvals, and access
   BUDGET_MODEL:
-    q: "What budget model applies?"
-    ex: "A fixed fee or staged payment"
+    q: What budget model should shape this proposal scope boundary builder?
+    ex: A fixed fee or staged payment
 "063":
   DECISION:
-    q: "What decision are you informing?"
-    ex: "Whether to expand the service"
+    q: What decision should shape this evidence aware swot?
+    ex: Whether to expand the service
   ORGANIZATION:
-    q: "What organization or project is this for?"
-    ex: "A community education initiative"
+    q: What organization or project is this for?
+    ex: A community education initiative
   INTERNAL_EVIDENCE:
-    q: "What internal evidence do you have?"
-    ex: "Recent results and team capacity"
+    q: What internal evidence do you have?
+    ex: Recent results and team capacity
   EXTERNAL_EVIDENCE:
-    q: "What external evidence matters?"
-    ex: "Competitor activity and market demand"
+    q: What external evidence should shape this evidence aware swot?
+    ex: Competitor activity and market demand
   TIME_HORIZON:
-    q: "What time horizon should we use?"
-    ex: "Next 12 months"
+    q: What time horizon should we use?
+    ex: Next 12 months
   MARKET:
-    q: "What market or geography is relevant?"
-    ex: "Lahore and nearby districts"
+    q: What market or geography is relevant?
+    ex: Lahore and nearby districts
 "064":
   LEARNING_GOAL:
-    q: "What are you trying to learn?"
-    ex: "Why customers switch providers"
+    q: What are you trying to learn?
+    ex: Why customers switch providers
   PARTICIPANT:
-    q: "Who are you interviewing?"
-    ex: "Recent customers in the target group"
+    q: What participant should shape this customer interview field guide?
+    ex: Recent customers in the target group
   AREA:
-    q: "What product or problem area is this about?"
-    ex: "Online tutoring services"
+    q: What product or problem area is this about?
+    ex: Online tutoring services
   DURATION:
-    q: "How long is the interview?"
-    ex: "Thirty minutes"
+    q: What is the total time limit?
+    ex: 8 minutes speaking / 30-minute meeting
   ASSUMPTIONS:
-    q: "What assumptions are you testing?"
-    ex: "Price matters more than convenience"
+    q: What assumptions should shape this customer interview field guide?
+    ex: Price matters more than convenience
   SENSITIVE_TOPICS:
-    q: "What topics need careful handling?"
-    ex: "Budget and personal stress"
+    q: What sensitive topics should shape this customer interview field guide?
+    ex: Budget and personal stress
 "065":
   PROCESS:
-    q: "What process are you documenting?"
-    ex: "A client onboarding workflow"
+    q: What process should shape this sop first draft mapper?
+    ex: A client onboarding workflow
   START_END:
-    q: "What starts and ends the process?"
-    ex: "Lead received to final sign-off"
+    q: What starts and ends the process?
+    ex: Lead received to final sign-off
   NOTES:
-    q: "What notes or transcript should we use?"
-    ex: "Current operational notes"
+    q: What notes or transcript should we use?
+    ex: Current operational notes
   ROLES:
-    q: "Who is involved in the work?"
-    ex: "Admin staff and project lead"
+    q: Who is involved in the work?
+    ex: Admin staff and project lead
   TOOLS:
-    q: "What tools are used?"
-    ex: "Google Drive and email"
+    q: What tools should shape this sop first draft mapper?
+    ex: Google Drive and email
   EXCEPTIONS:
-    q: "What exceptions or risks matter?"
-    ex: "Missing files or delayed approvals"
+    q: What exceptions should shape this sop first draft mapper?
+    ex: Missing files or delayed approvals
 "066":
   COMPLAINT:
-    q: "What is the customer complaint?"
-    ex: "A delayed order and poor follow-up"
+    q: What complaint should shape this service complaint recovery reply?
+    ex: A delayed order and poor follow-up
   FACTS:
-    q: "What facts are confirmed?"
-    ex: "Order date, delivery status, and support logs"
+    q: What facts should shape this service complaint recovery reply?
+    ex: Order date, delivery status, and support logs
   POLICY:
-    q: "What policy or rules apply?"
-    ex: "Refund and support policy"
+    q: What policy should shape this service complaint recovery reply?
+    ex: Refund and support policy
   ACTIONS:
-    q: "What actions have already been taken?"
-    ex: "A refund was offered and tracked"
+    q: What actions have already been taken?
+    ex: A refund was offered and tracked
   REMEDIES:
-    q: "What remedy options are allowed?"
-    ex: "Refund, replacement, or service credit"
+    q: What remedies should shape this service complaint recovery reply?
+    ex: Refund, replacement, or service credit
   TIMING:
-    q: "When should the update happen?"
-    ex: "Within 48 hours"
+    q: What timing should shape this service complaint recovery reply?
+    ex: Within 48 hours
   CHANNEL_TONE:
-    q: "What channel and tone should be used?"
-    ex: "Email with a calm and accountable tone"
+    q: What channel and tone should be used?
+    ex: Email with a calm and accountable tone
 "067":
   OFFER:
-    q: "What product or service are you explaining?"
-    ex: "A monthly coaching package"
+    q: What product or service are you explaining?
+    ex: A monthly coaching package
   CURRENCY_MARKET:
-    q: "What currency or market is this for?"
-    ex: "PKR for Pakistani customers"
+    q: What currency or market is this for?
+    ex: PKR for Pakistani customers
   COMPONENTS:
-    q: "What pricing components are included?"
-    ex: "Session fee, materials, and admin support"
+    q: What components should shape this plain language pricing explainer?
+    ex: Session fee, materials, and admin support
   INCLUSIONS:
-    q: "What is included in the price?"
-    ex: "One onboarding call and monthly check-ins"
+    q: What is included in the price?
+    ex: One onboarding call and monthly check-ins
   EXCLUSIONS:
-    q: "What is excluded or extra?"
-    ex: "Custom research and extra workshops"
+    q: What exclusions should shape this plain language pricing explainer?
+    ex: Custom research and extra workshops
   BILLING:
-    q: "How is billing structured?"
-    ex: "Monthly with annual discount"
+    q: What billing should shape this plain language pricing explainer?
+    ex: Monthly with annual discount
   CONFIRMED_RULES:
-    q: "What taxes or discounts are already confirmed?"
-    ex: "GST and a 10% student discount"
+    q: What taxes or discounts are already confirmed?
+    ex: GST and a 10% student discount
   CONFIRM:
-    q: "What item needs confirmation?"
-    ex: "Exchange rate or extra service fees"
+    q: What confirm should shape this plain language pricing explainer?
+    ex: Exchange rate or extra service fees
 "068":
   OUR_SIDE:
-    q: "What does our organization offer?"
-    ex: "A community learning platform"
+    q: What our side should shape this mutual value partnership outreach?
+    ex: A community learning platform
   PARTNER:
-    q: "Who is the prospective partner?"
-    ex: "A local NGO or campus office"
+    q: What partner should shape this mutual value partnership outreach?
+    ex: A local NGO or campus office
   OVERLAP:
-    q: "What audience or goal overlaps?"
-    ex: "Student skills and outreach"
+    q: What overlap should shape this mutual value partnership outreach?
+    ex: Student skills and outreach
   IDEA:
-    q: "What is the collaboration idea?"
-    ex: "A short workshop series"
+    q: What idea should shape this mutual value partnership outreach?
+    ex: A short workshop series
   OUR_CONTRIBUTION:
-    q: "What can we contribute?"
-    ex: "Curriculum design and facilitation"
+    q: What our contribution should shape this mutual value partnership outreach?
+    ex: Curriculum design and facilitation
   REQUEST:
-    q: "What are we asking for?"
-    ex: "Access to members and a meeting slot"
+    q: What request should shape this mutual value partnership outreach?
+    ex: Access to members and a meeting slot
   EVIDENCE:
-    q: "What evidence supports the idea?"
-    ex: "Past workshops and learner feedback"
+    q: What evidence should shape this mutual value partnership outreach?
+    ex: Past workshops and learner feedback
 "069":
   PROJECT_PERIOD:
-    q: "What project and period are you reporting?"
-    ex: "Website refresh for this week"
+    q: What project and period are you reporting?
+    ex: Website refresh for this week
   PLANNED:
-    q: "What outcomes were planned?"
-    ex: "Launch new pages and fix errors"
+    q: What planned should shape this outcome led weekly status?
+    ex: Launch new pages and fix errors
   COMPLETED:
-    q: "What work was completed?"
-    ex: "New pages were built and reviewed"
+    q: What completed should shape this outcome led weekly status?
+    ex: New pages were built and reviewed
   EVIDENCE:
-    q: "What evidence supports progress?"
-    ex: "Launch metrics or proof of completion"
+    q: What evidence should shape this outcome led weekly status?
+    ex: Launch metrics or proof of completion
   IN_PROGRESS:
-    q: "What is still in progress?"
-    ex: "Final QA and client review"
+    q: What in progress should shape this outcome led weekly status?
+    ex: Final QA and client review
   BLOCKERS:
-    q: "What blockers or risks remain?"
-    ex: "Waiting on final copy approval"
+    q: What blockers should shape this outcome led weekly status?
+    ex: Waiting on final copy approval
   REQUESTS:
-    q: "What decisions or help are needed?"
-    ex: "Approval on the final copy"
+    q: What decisions or help are needed?
+    ex: Approval on the final copy
   NEXT:
-    q: "What is next week’s commitment?"
-    ex: "Publish the revised content"
+    q: What next should shape this outcome led weekly status?
+    ex: Publish the revised content
 "070":
   SHOP_LOCATION:
-    q: "What shop type and location are you targeting?"
-    ex: "A bookstore in Gulshan"
+    q: What shop type and location are you targeting?
+    ex: A bookstore in Gulshan
   OFFERINGS:
-    q: "What products or services should be promoted?"
-    ex: "Books, stationery, and printing"
+    q: What products or services should be promoted?
+    ex: Books, stationery, and printing
   CUSTOMERS:
-    q: "Who are the typical customers?"
-    ex: "Students and office workers"
+    q: What customers should shape this local shop campaign angle lab?
+    ex: Students and office workers
   GOAL:
-    q: "What campaign goal do you have?"
-    ex: "Drive more repeat visits"
+    q: What decision or objective must this support?
+    ex: Drive more repeat visits
   PROOF:
-    q: "What proof or differentiator can you use?"
-    ex: "Fast service and local trust"
+    q: What proof or differentiator can you use?
+    ex: Fast service and local trust
   CONSTRAINTS:
-    q: "What budget, channels, and timeframe matter?"
-    ex: "A small budget and a two-week launch"
+    q: What budget, channels, and timeframe matter?
+    ex: A small budget and a two-week launch
   LANGUAGES:
-    q: "What languages do local customers use?"
-    ex: "Urdu and English"
+    q: What languages do local customers use?
+    ex: Urdu and English
 "071":
   PURPOSE:
     q: "What is the spreadsheet for?"

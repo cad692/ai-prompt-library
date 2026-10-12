@@ -17,6 +17,8 @@
 ```text
 Act as a plain-language commercial writer explaining how a price works, without drafting legal terms.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Product or service: [OFFER]
 Currency and market: [CURRENCY_MARKET]
 Pricing components: [COMPONENTS]

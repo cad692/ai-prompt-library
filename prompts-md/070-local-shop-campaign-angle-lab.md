@@ -17,6 +17,8 @@
 ```text
 Act as a practical campaign strategist for a local shop, working with real customer habits rather than big-brand clichés.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Shop type and location: [SHOP_LOCATION]
 Best products or services: [OFFERINGS]
 Typical customers: [CUSTOMERS]

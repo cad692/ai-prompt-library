@@ -918,6 +918,8 @@ Provide one shared negative prompt covering unintended text, logos, watermarks, 
 "
 061,respectful-cold-email,Respectful Cold Email,work-business,Beginner,Use to draft a concise first-contact email grounded in real relevance.,"A short cold email, two subject lines, and a follow-up.","Personalize from one verifiable fact, not a compliment that could fit anyone.","email, outreach, networking",ChatGPT: Drafts concise variants and adjusts tone to the relationship.; Claude: Maintains nuance while working from detailed prospect context.,,"Work as an ethical outreach writer creating a first email that respects the recipient's time.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Sender and credibility: [SENDER]
 Recipient role: [RECIPIENT]
 Verified relevance trigger: [RELEVANCE]
@@ -934,6 +936,8 @@ Provide two honest subject lines under eight words: one direct and one curiosity
 "
 062,proposal-scope-boundary-builder,Proposal Scope Boundary Builder,work-business,Beginner,"Use to define project deliverables, exclusions, acceptance, and change handling.","A proposal scope with deliverables, boundaries, assumptions, and acceptance criteria.",Write acceptance criteria so both sides can observe whether the work is complete.,"proposal, scope, client-work","Claude: Structures detailed scope language across long project notes.; Notion: Keeps scope, deliverables, and decisions in a collaborative workspace.",,"Act as a project scoping facilitator converting messy discovery notes into a shared definition of done.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Client goal: [GOAL]
 Discovery notes: [NOTES]
 Deliverables discussed: [DELIVERABLES]
@@ -948,6 +952,8 @@ Create a “scope edge” section using examples of nearby work that is not incl
 Add a lightweight change process: request, impact assessment, written approval, and revised schedule or cost. Finish with a plain-language summary the client can read in one minute and a kickoff checklist. Label the document as a commercial working draft requiring appropriate business or legal review where needed.
 "
 063,evidence-aware-swot,Evidence Aware SWOT,work-business,Beginner,Use to build a SWOT that separates evidence from team assumptions.,A prioritized SWOT with evidence labels and strategic experiments.,Reject any SWOT item that could describe nearly every organization.,"swot, strategy, analysis",ChatGPT: Organizes evidence and generates decision-linked strategic questions.; Gemini: Synthesizes supplied market context and structured business inputs.,,"Serve as a strategy facilitator running an evidence-aware SWOT for a specific choice, not a generic company description.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Decision to inform: [DECISION]
 Organization or project: [ORGANIZATION]
@@ -964,6 +970,8 @@ Convert the best two moves into small experiments with owner, signal, time box, 
 "
 064,customer-interview-field-guide,Customer Interview Field Guide,work-business,Beginner,Use to plan non-leading interviews about real customer behavior.,A timed interview guide with neutral probes and note-taking fields.,Ask for the last specific example whenever an answer becomes hypothetical.,"customer-research, interviews, discovery","ChatGPT: Generates neutral questions and realistic follow-up probes.; Notion: Organizes interview guides, notes, and recurring evidence.",,"You are a customer-research lead preparing a conversation that investigates behavior rather than seeks compliments.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Learning goal: [LEARNING_GOAL]
 Participant profile: [PARTICIPANT]
 Product or problem area: [AREA]
@@ -979,6 +987,8 @@ Add a note-taking frame that separates direct quotes, observed facts, interpreta
 "
 065,sop-first-draft-mapper,SOP First Draft Mapper,work-business,Beginner,Use to turn process knowledge into a testable first SOP.,"A versioned SOP draft with steps, exceptions, and a test plan.",Have a new team member test the SOP while the process owner only observes.,"sop, operations, documentation",Notion: Publishes searchable SOPs with linked templates and revision history.; Claude: Structures detailed process notes and edge cases coherently.,,"Act as an operations documenter turning expert memory into an SOP another person can actually test.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Process name and purpose: [PROCESS]
 Trigger and endpoint: [START_END]
 Current notes or recording transcript: [NOTES]
@@ -993,6 +1003,8 @@ Insert decision points as if/then branches rather than hiding them in paragraphs
 Finish with version owner, review date placeholder, change log, and a dry-run test script. List questions the process owner must answer before publication and highlight any single-person dependency. Keep the wording direct enough for a capable new starter, while preserving safety warnings and required controls.
 "
 066,service-complaint-recovery-reply,Service Complaint Recovery Reply,work-business,Beginner,Use to respond calmly to a customer complaint with verified next steps.,"A concise customer reply with ownership, action, and follow-up timing.",Name the inconvenience specifically; generic empathy often sounds automated.,"customer-service, complaint, email","ChatGPT: Adjusts tone and produces clear, customer-friendly service replies.; Gemini: Summarizes supplied complaint details and drafts structured responses.",,"Work as a customer-care writer handling a difficult complaint with empathy, accuracy, and clear ownership.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Customer message: [COMPLAINT]
 Verified account facts: [FACTS]
@@ -1010,6 +1022,8 @@ Provide the final send-ready response first. After it, add an internal-only note
 "
 067,plain-language-pricing-explainer,Plain Language Pricing Explainer,work-business,Beginner,Use to explain pricing structure clearly without hidden qualifiers or legal claims.,A transparent pricing explanation with examples and review flags.,Test every example with a calculator and have an authorized person verify taxes and terms.,"pricing, communication, sales",Claude: Handles nuanced commercial explanations while maintaining internal consistency.; ChatGPT: Creates plain-language versions and worked examples from supplied figures.,,"Act as a plain-language commercial writer explaining how a price works, without drafting legal terms.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Product or service: [OFFER]
 Currency and market: [CURRENCY_MARKET]
 Pricing components: [COMPONENTS]
@@ -1025,6 +1039,8 @@ Add a “what is included / what may cost extra” comparison, followed by five 
 Finish with a 60-word sales-conversation version and a FAQ of four realistic questions. State that the explanation is informational and must be checked against the approved quote, contract, and applicable requirements; it is not legal, tax, or financial advice.
 "
 068,mutual-value-partnership-outreach,Mutual Value Partnership Outreach,work-business,Beginner,"Use to approach an organization with a specific, balanced collaboration idea.","A partnership email, pilot concept, and meeting agenda.",Propose a small pilot before asking for a broad long-term partnership.,"partnerships, outreach, collaboration","ChatGPT: Shapes concise outreach and adapts value framing to each partner.; Notion: Tracks partner research, proposals, owners, and follow-ups.",,"Serve as a partnership development lead proposing a concrete exchange of value between two organizations.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Our organization and assets: [OUR_SIDE]
 Prospective partner and verified priorities: [PARTNER]
@@ -1042,6 +1058,8 @@ Add a one-page discussion outline containing pilot objective, each side's role, 
 "
 069,outcome-led-weekly-status,Outcome Led Weekly Status,work-business,Beginner,Use to turn weekly activity notes into a concise outcome and risk update.,A one-page weekly status report with decisions and next commitments.,Write blockers as a requested action with an owner and due date.,"status-report, project-management, weekly",Notion: Maintains recurring status reports with linked tasks and owners.; ChatGPT: Condenses raw notes into clear outcome-focused updates.,,"You are an operations communicator converting raw weekly notes into a report a busy stakeholder can scan in two minutes.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Project and period: [PROJECT_PERIOD]
 Planned outcomes: [PLANNED]
 Work completed: [COMPLETED]
@@ -1058,6 +1076,8 @@ Rewrite activities as outcomes only where the notes support that interpretation.
 Add a “changed since last report” strip and identify any item that has remained blocked for more than one period. If essential information is absent, insert [UPDATE NEEDED] instead of inventing progress. End with a three-line version suitable for a team chat and a private checklist of follow-ups for the report owner.
 "
 070,local-shop-campaign-angle-lab,Local Shop Campaign Angle Lab,work-business,Beginner,Use to brainstorm practical campaign angles for a neighborhood business.,Ten distinct campaign angles and three low-cost test plans.,Test one angle with a small audience before producing a full campaign.,"local-business, campaign, marketing",ChatGPT: Generates and compares varied campaign angles from local context.; Canva: Turns selected angles into affordable social and print assets.,,"Act as a practical campaign strategist for a local shop, working with real customer habits rather than big-brand clichés.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Shop type and location: [SHOP_LOCATION]
 Best products or services: [OFFERINGS]

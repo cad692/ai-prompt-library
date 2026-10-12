@@ -17,6 +17,8 @@
 ```text
 Act as a project scoping facilitator converting messy discovery notes into a shared definition of done.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Client goal: [GOAL]
 Discovery notes: [NOTES]
 Deliverables discussed: [DELIVERABLES]

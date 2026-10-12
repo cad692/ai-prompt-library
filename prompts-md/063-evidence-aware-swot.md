@@ -17,6 +17,8 @@
 ```text
 Serve as a strategy facilitator running an evidence-aware SWOT for a specific choice, not a generic company description.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Decision to inform: [DECISION]
 Organization or project: [ORGANIZATION]
 Internal evidence: [INTERNAL_EVIDENCE]

@@ -17,6 +17,8 @@
 ```text
 Work as an ethical outreach writer creating a first email that respects the recipient's time.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Sender and credibility: [SENDER]
 Recipient role: [RECIPIENT]
 Verified relevance trigger: [RELEVANCE]

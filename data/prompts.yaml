@@ -3480,10 +3480,11 @@ prompts:
   category: work-business
   difficulty: Beginner
   usage: Use to draft a concise first-contact email grounded in real relevance.
-  use_case: Creates a personalized outreach email without invented familiarity or pressure tactics. Suitable
-    for job, sales, or networking contexts.
-  preview: 'Work as an ethical outreach writer creating a first email that respects the recipient''s time.
-    Sender and credibility: [SENDER] Recipient role: [RECIPIENT] Verified relevance trigger: [RELEVANCE]...'
+  use_case: Creates a personalized outreach email without invented familiarity or pressure tactics. 
+    Suitable for job, sales, or networking contexts.
+  preview: Work as an ethical outreach writer creating a first email that respects the recipient's 
+    time. If any personalization field is blank or still shows brackets, continue with clearly 
+    labelled assumptions...
   best_tools:
   - tool: ChatGPT
     reason: Drafts concise variants and adjusts tone to the relationship.
@@ -3495,8 +3496,12 @@ prompts:
   - email
   - outreach
   - networking
-  next_id: null
+  next_id:
   prompt: 'Work as an ethical outreach writer creating a first email that respects the recipient''s time.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Sender and credibility: [SENDER]
@@ -3537,24 +3542,30 @@ prompts:
   category: work-business
   difficulty: Beginner
   usage: Use to define project deliverables, exclusions, acceptance, and change handling.
-  use_case: Turns discovery notes into a clear proposal scope for client alignment. It is a working draft,
-    not legal advice.
-  preview: 'Act as a project scoping facilitator converting messy discovery notes into a shared definition
-    of done. Client goal: [GOAL] Discovery notes: [NOTES] Deliverables discussed: [DELIVERABLES] Timeline...'
+  use_case: Turns discovery notes into a clear proposal scope for client alignment. It is a working 
+    draft, not legal advice.
+  preview: Act as a project scoping facilitator converting messy discovery notes into a shared 
+    definition of done. If any personalization field is blank or still shows brackets, continue with
+    clearly labelled...
   best_tools:
   - tool: Claude
     reason: Structures detailed scope language across long project notes.
   - tool: Notion
     reason: Keeps scope, deliverables, and decisions in a collaborative workspace.
   tip: Write acceptance criteria so both sides can observe whether the work is complete.
-  expected_output: A proposal scope with deliverables, boundaries, assumptions, and acceptance criteria.
+  expected_output: A proposal scope with deliverables, boundaries, assumptions, and acceptance 
+    criteria.
   tags:
   - proposal
   - scope
   - client-work
-  next_id: null
+  next_id:
   prompt: 'Act as a project scoping facilitator converting messy discovery notes into a shared definition
     of done.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Client goal: [GOAL]
@@ -3594,10 +3605,11 @@ prompts:
   category: work-business
   difficulty: Beginner
   usage: Use to build a SWOT that separates evidence from team assumptions.
-  use_case: Produces a focused SWOT tied to one decision rather than generic business labels. It converts
-    observations into testable strategic moves.
-  preview: 'Serve as a strategy facilitator running an evidence-aware SWOT for a specific choice, not
-    a generic company description. Decision to inform: [DECISION] Organization or project: [ORGANIZATION]...'
+  use_case: Produces a focused SWOT tied to one decision rather than generic business labels. It 
+    converts observations into testable strategic moves.
+  preview: Serve as a strategy facilitator running an evidence-aware SWOT for a specific choice, not
+    a generic company description. If any personalization field is blank or still shows brackets, 
+    continue with...
   best_tools:
   - tool: ChatGPT
     reason: Organizes evidence and generates decision-linked strategic questions.
@@ -3609,9 +3621,13 @@ prompts:
   - swot
   - strategy
   - analysis
-  next_id: null
+  next_id:
   prompt: 'Serve as a strategy facilitator running an evidence-aware SWOT for a specific choice, not a
     generic company description.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Decision to inform: [DECISION]
@@ -3651,11 +3667,11 @@ prompts:
   category: work-business
   difficulty: Beginner
   usage: Use to plan non-leading interviews about real customer behavior.
-  use_case: Creates a practical discussion guide focused on past actions and current problems. It avoids
-    pitching during discovery.
-  preview: 'You are a customer-research lead preparing a conversation that investigates behavior rather
-    than seeks compliments. Learning goal: [LEARNING_GOAL] Participant profile: [PARTICIPANT] Product
-    or...'
+  use_case: Creates a practical discussion guide focused on past actions and current problems. It 
+    avoids pitching during discovery.
+  preview: You are a customer-research lead preparing a conversation that investigates behavior 
+    rather than seeks compliments. If any personalization field is blank or still shows brackets, 
+    continue with...
   best_tools:
   - tool: ChatGPT
     reason: Generates neutral questions and realistic follow-up probes.
@@ -3667,9 +3683,13 @@ prompts:
   - customer-research
   - interviews
   - discovery
-  next_id: null
+  next_id:
   prompt: 'You are a customer-research lead preparing a conversation that investigates behavior rather
     than seeks compliments.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Learning goal: [LEARNING_GOAL]
@@ -3708,10 +3728,11 @@ prompts:
   category: work-business
   difficulty: Beginner
   usage: Use to turn process knowledge into a testable first SOP.
-  use_case: Documents a repeatable workflow with controls, exceptions, and ownership. The draft is designed
-    for validation by the people doing the work.
-  preview: 'Act as an operations documenter turning expert memory into an SOP another person can actually
-    test. Process name and purpose: [PROCESS] Trigger and endpoint: [START_END] Current notes or recording...'
+  use_case: Documents a repeatable workflow with controls, exceptions, and ownership. The draft is 
+    designed for validation by the people doing the work.
+  preview: Act as an operations documenter turning expert memory into an SOP another person can 
+    actually test. If any personalization field is blank or still shows brackets, continue with 
+    clearly labelled...
   best_tools:
   - tool: Notion
     reason: Publishes searchable SOPs with linked templates and revision history.
@@ -3723,9 +3744,13 @@ prompts:
   - sop
   - operations
   - documentation
-  next_id: null
+  next_id:
   prompt: 'Act as an operations documenter turning expert memory into an SOP another person can actually
     test.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Process name and purpose: [PROCESS]
@@ -3765,10 +3790,11 @@ prompts:
   category: work-business
   difficulty: Beginner
   usage: Use to respond calmly to a customer complaint with verified next steps.
-  use_case: Drafts an empathetic complaint response without admitting unverified facts or making unauthorized
-    promises. It centers resolution and ownership.
-  preview: 'Work as a customer-care writer handling a difficult complaint with empathy, accuracy, and
-    clear ownership. Customer message: [COMPLAINT] Verified account facts: [FACTS] Policy or limits: [POLICY]...'
+  use_case: Drafts an empathetic complaint response without admitting unverified facts or making 
+    unauthorized promises. It centers resolution and ownership.
+  preview: Work as a customer-care writer handling a difficult complaint with empathy, accuracy, and
+    clear ownership. If any personalization field is blank or still shows brackets, continue with 
+    clearly...
   best_tools:
   - tool: ChatGPT
     reason: Adjusts tone and produces clear, customer-friendly service replies.
@@ -3780,9 +3806,13 @@ prompts:
   - customer-service
   - complaint
   - email
-  next_id: null
+  next_id:
   prompt: 'Work as a customer-care writer handling a difficult complaint with empathy, accuracy, and clear
     ownership.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Customer message: [COMPLAINT]
@@ -3823,10 +3853,11 @@ prompts:
   category: work-business
   difficulty: Beginner
   usage: Use to explain pricing structure clearly without hidden qualifiers or legal claims.
-  use_case: Turns a pricing model into customer-friendly language and examples. It highlights assumptions,
-    exclusions, and questions for review.
-  preview: 'Act as a plain-language commercial writer explaining how a price works, without drafting legal
-    terms. Product or service: [OFFER] Currency and market: [CURRENCY_MARKET] Pricing components...'
+  use_case: Turns a pricing model into customer-friendly language and examples. It highlights 
+    assumptions, exclusions, and questions for review.
+  preview: Act as a plain-language commercial writer explaining how a price works, without drafting 
+    legal terms. If any personalization field is blank or still shows brackets, continue with 
+    clearly labelled...
   best_tools:
   - tool: Claude
     reason: Handles nuanced commercial explanations while maintaining internal consistency.
@@ -3838,9 +3869,13 @@ prompts:
   - pricing
   - communication
   - sales
-  next_id: null
+  next_id:
   prompt: 'Act as a plain-language commercial writer explaining how a price works, without drafting legal
     terms.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Product or service: [OFFER]
@@ -3875,16 +3910,17 @@ prompts:
     requirements; it is not legal, tax, or financial advice.
 
     '
-- id: 068
+- id: '068'
   slug: mutual-value-partnership-outreach
   title: Mutual Value Partnership Outreach
   category: work-business
   difficulty: Beginner
   usage: Use to approach an organization with a specific, balanced collaboration idea.
-  use_case: Builds a partnership message around credible overlap and mutual contribution. It avoids vague
-    requests to collaborate.
-  preview: 'Serve as a partnership development lead proposing a concrete exchange of value between two
-    organizations. Our organization and assets: [OUR_SIDE] Prospective partner and verified priorities...'
+  use_case: Builds a partnership message around credible overlap and mutual contribution. It avoids 
+    vague requests to collaborate.
+  preview: Serve as a partnership development lead proposing a concrete exchange of value between 
+    two organizations. If any personalization field is blank or still shows brackets, continue with 
+    clearly labelled...
   best_tools:
   - tool: ChatGPT
     reason: Shapes concise outreach and adapts value framing to each partner.
@@ -3896,9 +3932,13 @@ prompts:
   - partnerships
   - outreach
   - collaboration
-  next_id: null
+  next_id:
   prompt: 'Serve as a partnership development lead proposing a concrete exchange of value between two
     organizations.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Our organization and assets: [OUR_SIDE]
@@ -3932,16 +3972,17 @@ prompts:
     imply endorsement, or commit either organization before authorized approval.
 
     '
-- id: 069
+- id: '069'
   slug: outcome-led-weekly-status
   title: Outcome Led Weekly Status
   category: work-business
   difficulty: Beginner
   usage: Use to turn weekly activity notes into a concise outcome and risk update.
-  use_case: Produces a scan-friendly weekly report for managers or clients. It distinguishes completed
-    work, progress, blockers, and decisions.
-  preview: 'You are an operations communicator converting raw weekly notes into a report a busy stakeholder
-    can scan in two minutes. Project and period: [PROJECT_PERIOD] Planned outcomes: [PLANNED] Work...'
+  use_case: Produces a scan-friendly weekly report for managers or clients. It distinguishes 
+    completed work, progress, blockers, and decisions.
+  preview: You are an operations communicator converting raw weekly notes into a report a busy 
+    stakeholder can scan in two minutes. If any personalization field is blank or still shows 
+    brackets, continue with...
   best_tools:
   - tool: Notion
     reason: Maintains recurring status reports with linked tasks and owners.
@@ -3953,9 +3994,13 @@ prompts:
   - status-report
   - project-management
   - weekly
-  next_id: null
+  next_id:
   prompt: 'You are an operations communicator converting raw weekly notes into a report a busy stakeholder
     can scan in two minutes.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Project and period: [PROJECT_PERIOD]
@@ -3997,10 +4042,11 @@ prompts:
   category: work-business
   difficulty: Beginner
   usage: Use to brainstorm practical campaign angles for a neighborhood business.
-  use_case: Generates locally relevant campaign routes across trust, convenience, occasion, and product
-    value. Ideas respect a small-business budget.
-  preview: 'Act as a practical campaign strategist for a local shop, working with real customer habits
-    rather than big-brand clichés. Shop type and location: [SHOP_LOCATION] Best products or services...'
+  use_case: Generates locally relevant campaign routes across trust, convenience, occasion, and 
+    product value. Ideas respect a small-business budget.
+  preview: Act as a practical campaign strategist for a local shop, working with real customer 
+    habits rather than big-brand clichés. If any personalization field is blank or still shows 
+    brackets, continue with...
   best_tools:
   - tool: ChatGPT
     reason: Generates and compares varied campaign angles from local context.
@@ -4012,9 +4058,13 @@ prompts:
   - local-business
   - campaign
   - marketing
-  next_id: null
+  next_id:
   prompt: 'Act as a practical campaign strategist for a local shop, working with real customer habits
     rather than big-brand clichés.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Shop type and location: [SHOP_LOCATION]
