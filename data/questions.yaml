@@ -1,25 +1,25 @@
 "001":
   DECISION:
-    q: What decision do you need to make?
-    ex: Which university offer to accept
+    q: What exact decision are you trying to frame?
+    ex: Which university offer to accept for Fall 2026
   OPTIONS:
-    q: Which concrete options are you comparing?
-    ex: Offer A in Lahore vs Offer B abroad
+    q: List each option you are seriously comparing.
+    ex: 1) LUMS CS in Lahore 2) Offer abroad 3) Gap year + work
   DEADLINE:
     q: By what date or event must you decide?
-    ex: Before 30 April / before classes start
+    ex: Accept offer by 30 April / before visa filing
   STAKEHOLDERS:
-    q: Who will be affected by this decision?
-    ex: Parents, siblings, or a teammate
+    q: Who will be affected, and how are they involved?
+    ex: Parents funding tuition; sibling sharing housing
   VALUES_OR_PRIORITIES:
-    q: What matters most in this decision?
-    ex: Growth, stability, and location
+    q: What outcomes matter most in this decision?
+    ex: Career growth, family nearness, manageable debt
   TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS:
-    q: What time, money, place, or family limits apply?
-    ex: Rs. 50,000/month and must stay near family
+    q: What hard limits of time, money, place, or family apply?
+    ex: Max Rs. 80,000/month; must stay in Pakistan this year
   RISK_TOLERANCE:
-    q: How comfortable are you with uncertainty?
-    ex: Prefer safer options with predictable outcomes
+    q: How much uncertainty are you willing to accept?
+    ex: Low — prefer safer path with reversible steps
 "002":
   DATES:
     q: Which calendar week should be planned?

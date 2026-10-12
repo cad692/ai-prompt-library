@@ -7,9 +7,9 @@ prompts:
   usage: Use this to compare important options without outsourcing the final decision.
   use_case: A student choosing a degree or a professional weighing job offers can expose trade-offs,
     assumptions, and low-risk tests.
-  preview: Act as a decision-framing partner whose goal is to clarify my choice, not make it for me.
-    My decision is [DECISION]. The options are [OPTIONS]. My deadline is [DEADLINE], and the people 
-    affected are...
+  preview: 'Act as a careful decision-framing partner. Your job is to help me see the choice clearly,
+    compare options fairly, and prepare next steps — not to choose for me or pressure me toward one answer.
+    ## My...'
   best_tools:
   - tool: ChatGPT
     reason: Supports an interactive comparison and can reorganize changing priorities quickly.
@@ -23,45 +23,37 @@ prompts:
   - priorities
   - planning
   next_id:
-  prompt: 'Act as a decision-framing partner whose goal is to clarify my choice, not make it for me.
-
-
-    My decision is [DECISION]. The options are [OPTIONS]. My deadline is [DEADLINE], and the people affected
-    are [STAKEHOLDERS]. What matters to me includes [VALUES_OR_PRIORITIES]. My practical limits are [TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS].
-    My risk tolerance is [RISK_TOLERANCE].
-
-
-    Begin by restating the decision neutrally. If options, priorities, or constraints are incomplete,
-    list what is missing and continue with clearly labelled assumptions — do not invent options or facts.
-    Identify any false either/or framing and add a realistic hybrid or reversible option if one exists.
-
-
-    Then build a decision map with:
-
-    - five to seven criteria derived from my priorities;
-
-    - a suggested weight for each criterion, clearly marked as editable, and adjusted for my stated risk
-    tolerance;
-
-    - evidence supporting and challenging each option;
-
-    - unknowns that could change the outcome;
-
-    - the cost of delaying the choice;
-
-    - a reversibility assessment for each option (fully reversible, partially reversible, or irreversible).
-
-
-    Do not pretend subjective scores are facts. Show a concise rationale for each proposed weight and
-    rating. Separate facts I supplied from your assumptions. When risk tolerance is low, favour criteria
-    and experiments that protect downside; only suggest bolder tests if I explicitly accept uncertainty.
-
-
-    Finish with two experiments I can run before [DEADLINE] that match my risk tolerance, three questions
-    to ask relevant people, and a short reflection: “Which regret would be easier to live with, and why?”
-    End by reminding me that I retain the decision.
-
-    '
+  prompt: "Act as a careful decision-framing partner. Your job is to help me see the choice clearly, compare
+    options fairly, and prepare next steps — not to choose for me or pressure me toward one answer.\n\n\
+    ## My situation\n- Decision I need to frame: [DECISION]\n- Options I am comparing: [OPTIONS]\n- Deadline
+    or latest decision point: [DEADLINE]\n- People affected by the outcome: [STAKEHOLDERS]\n- What matters
+    most to me: [VALUES_OR_PRIORITIES]\n- Practical limits (time, money, place, family, or similar): [TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS]\n\
+    - Comfort with risk and uncertainty: [RISK_TOLERANCE]\n\nIf any field above is blank or still shows
+    brackets, list what is missing, continue with clearly labelled assumptions, and do not invent options,
+    facts, quotes, or numbers.\n\n## How to work\n1. Restate the decision in neutral language (no recommendation
+    yet).\n2. Check framing: name any false either/or, missing middle path, or option that is actually
+    a tactic rather than a real alternative. Add at most one realistic hybrid or reversible option only
+    if it fits my limits.\n3. Build criteria before scoring. Derive 5–7 criteria from my priorities and
+    limits. For each criterion give:\n   - a plain-language definition;\n   - a suggested weight (must
+    total 100), marked as editable;\n   - a one-line rationale tied to my risk tolerance;\n   - whether
+    higher or lower scores are better.\n4. Build an option-by-criterion map. For every option and criterion
+    provide:\n   - a brief rating or note;\n   - supporting evidence I supplied;\n   - challenging evidence
+    or counterpoints;\n   - what is still unknown.\n5. Add decision quality checks:\n   - reversibility
+    of each option (fully / partially / irreversible) with why;\n   - cost of delaying past the deadline;\n\
+    \   - who among the stakeholders gains or loses under each option;\n   - which assumptions, if wrong,
+    would flip the ranking.\n6. Separate sections clearly:\n   - Facts I supplied\n   - Your assumptions\n\
+    \   - Uncertainties\n\nDo not treat subjective scores as objective truth. Do not invent market data,
+    salaries, admissions odds, or other unverified numbers. Prefer downside protection when my risk tolerance
+    is low; suggest bolder tests only if I accept uncertainty.\n\n## Deliverable structure\nA. Neutral
+    restatement and framing notes  \nB. Criteria table (definition, weight, rationale, direction)  \n\
+    C. Comparison matrix (option × criterion)  \nD. Trade-off summary (what I gain and give up with each
+    leading option)  \nE. Two low-risk experiments I can run before [DEADLINE], matched to my risk tolerance\
+    \  \nF. Three questions to ask relevant people (name which stakeholder each question fits)  \nG. Closing
+    reflection prompt for me: “Which regret would be easier to live with, and why?”  \nH. Final reminder
+    that I retain the decision — give no “you should choose X” verdict\n\nKeep language plain and practical.
+    Use short headings and tables where they help. If my options are too vague to compare, stop after
+    naming the missing details and ask me only the highest-value clarifying questions before finishing
+    the full map.\n"
 - id: '002'
   slug: realistic-week-designer
   title: Realistic Week Designer
