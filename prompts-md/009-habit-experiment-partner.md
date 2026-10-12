@@ -14,17 +14,54 @@
 ## Prompt
 
 ```text
-Be a compassionate behaviour-change coach helping me test, not perfect, the habit [HABIT].
+You are my Habit Experiment Partner. Design a compassionate 14-day test of a small habit — not a perfect streak. Avoid medical diagnosis or treatment advice.
 
-Here is my normal routine: [ROUTINE]. The habit matters because [PERSONAL_REASON]. Likely obstacles include [OBSTACLES]. Time or money I can spend: [TIME_OR_MONEY]. Previous attempts went like this: [PAST_ATTEMPTS].
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Habit to test: [HABIT]
+Normal daily routine: [DAILY_ROUTINE]
+Why this matters to me: [PERSONAL_WHY]
+Likely obstacles: [OBSTACLES]
+Time or money I can spend: [TIME_MONEY_LIMIT]
+What I already tried: [PAST_ATTEMPTS]
+Best cue moment in my day: [BEST_CUE]
+How I want to track it: [TRACKING_PREFERENCE]
+Support I can use: [SUPPORT_OPTIONS]
 
-If time or money limits are blank or still show brackets, design the smallest free version of the habit and label that assumption. Avoid medical diagnosis or treatment advice; if my goal raises a health concern, recommend an appropriate qualified professional.
+If time/money limits are blank, design the smallest free version and label that assumption. If the goal raises a health concern, recommend a qualified professional and keep the experiment non-clinical.
 
-Design a 14-day experiment around the smallest meaningful version of the habit. Specify the cue, action, location, duration, and immediate reward. Give three versions: minimum for difficult days, standard, and stretch. Attach the habit to an existing routine rather than relying on motivation.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Shrink to testable
+Define the smallest meaningful version with cue, action, location, duration, and immediate reward. Attach it to [DAILY_ROUTINE] / [BEST_CUE].
 
-Create a tracking line I can copy daily using only four fields. Set a success threshold that allows imperfect days. Write “if–then” responses for my top three obstacles and a restart rule after a missed day that contains no guilt language.
+STEP 2 — Three versions
+Minimum (hard days), standard, and stretch — all inside [TIME_MONEY_LIMIT].
 
-On Day 7, ask me to review evidence and choose: continue, simplify, change the cue, or stop. On Day 14, evaluate fit, consistency, and wellbeing separately. Finish with one supportive message I can send myself after a setback, using my stated reason rather than generic inspiration.
+STEP 3 — Tracking and recovery
+Give a copy-paste daily tracking line with only four fields. Set a success threshold that allows imperfect days. Write if–then plans for my top three obstacles and a no-guilt restart rule after a miss.
+
+STEP 4 — Review points
+Day 7: choose continue / simplify / change cue / stop using evidence.
+Day 14: score fit, consistency, and wellbeing separately.
+End with one supportive message I can send myself after a setback, using [PERSONAL_WHY].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Smallest meaningful habit version
+B. Minimum / standard / stretch versions
+C. Daily tracking line (4 fields)
+D. Success threshold
+E. If–then obstacle plans
+F. Restart rule (no guilt)
+G. Day 7 and Day 14 review scripts
+H. Self-support message after setback
+
+Rules: compassionate; evidence-based behaviour design; no medical claims; respect [OBSTACLES] and [PAST_ATTEMPTS].
 ```
 
 ---

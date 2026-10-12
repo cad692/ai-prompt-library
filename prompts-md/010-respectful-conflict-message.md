@@ -15,22 +15,53 @@
 ## Prompt
 
 ```text
-Help me draft a respectful conflict message that names the issue without attacking the person.
+You are my Respectful Conflict Message coach. Help me name the issue without attacking the person. Prioritise safety and power awareness.
 
-Relationship: [RELATIONSHIP]
-What happened, using observable facts: [EVENTS]
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Relationship to the other person: [RELATIONSHIP]
+Observable events (facts only): [OBSERVABLE_EVENTS]
 Impact on me or the work: [IMPACT]
-What I need next: [REQUEST_OR_BOUNDARY]
-Communication channel: [WHATSAPP_EMAIL_SMS_OR_OTHER]
-Safety or power concerns: [CONCERNS]
-Support channel if needed: [TRUSTED_PERSON_OR_FORMAL_CHANNEL]
+Request or boundary I need: [REQUEST_OR_BOUNDARY]
+Channel I will use: [CHANNEL]
+Safety or power concerns: [POWER_OR_SAFETY]
+Support person or formal channel: [SUPPORT_CHANNEL]
+Maximum words: [WORD_LIMIT]
 Language preference: [LANGUAGE_PREFERENCE]
+Tone I want: [TONE_TARGET]
 
-Before drafting, separate facts from interpretations in two short lists. Flag loaded labels, mind-reading, threats, or claims I cannot verify. If there is a credible safety risk, harassment, or serious power imbalance, do not encourage direct confrontation; suggest seeking support through the named support channel, or through a trusted person or formal process if that field is blank.
+If any field is blank or still shows brackets, note the gap and continue carefully. If there is credible safety risk, harassment, or serious power imbalance, do not push direct confrontation — guide me toward [SUPPORT_CHANNEL] or another trusted/formal path.
 
-Write three components: a neutral opening, an “observation–impact–request” core, and a closing that allows a practical response. Keep the complete message under [WORD_LIMIT] words. Then provide a firmer version for use if the first request has already been ignored.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Separate facts from stories
+Two short lists: observable facts vs interpretations. Flag loaded labels, mind-reading, threats, or unverifiable claims.
 
-Role-play two plausible replies from the recipient: one defensive and one constructive. Under each, draft a calm one-sentence response that repeats the boundary without debating motives. Finally, run a heat check: identify any phrase that could inflame the exchange and replace it. Preserve my natural formality. If a language preference is provided, honour it; otherwise write in clear English and note that choice.
+STEP 2 — Draft the core message
+Neutral opening + observation–impact–request core + closing that invites a practical reply. Stay under [WORD_LIMIT]. Match [CHANNEL], [LANGUAGE_PREFERENCE], and [TONE_TARGET].
+
+STEP 3 — Firmer alternative
+Provide a firmer version for use if the first request was already ignored.
+
+STEP 4 — Reply rehearsal
+Role-play one defensive reply and one constructive reply. Under each, give a calm one-sentence response that repeats the boundary without debating motives. Run a heat check and replace any inflamining phrase.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Facts vs interpretations
+B. Risk / safety note
+C. Main message (under word limit)
+D. Firmer alternative
+E. Defensive reply + my one-line response
+F. Constructive reply + my one-line response
+G. Heat-check replacements
+H. When to escalate to support
+
+Rules: no attacks; preserve my natural formality; never encourage unsafe confrontation; honour [REQUEST_OR_BOUNDARY].
 ```
 
 ---

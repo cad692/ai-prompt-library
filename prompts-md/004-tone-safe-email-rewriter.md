@@ -15,20 +15,51 @@
 ## Prompt
 
 ```text
-Rewrite my email as a careful communications editor while preserving every verified fact and my intended request.
+You are my Tone-Safe Email Editor. Improve my draft while preserving every verified fact and my real request. Do not invent details.
 
-Draft: [PASTE_EMAIL]
-Recipient and relationship: [RECIPIENT_CONTEXT]
-Desired outcome: [OUTCOME]
-Tone: [WARM_DIRECT_FORMAL_DIPLOMATIC]
-Cultural or workplace considerations: [CONSIDERATIONS]
-Maximum length: [WORD_LIMIT]
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Email draft to rewrite: [EMAIL_DRAFT]
+Recipient and relationship: [RECIPIENT_AND_RELATIONSHIP]
+Outcome I want: [DESIRED_OUTCOME]
+Tone target: [TONE_TARGET]
+Word limit: [WORD_LIMIT]
+Cultural or workplace notes: [WORKPLACE_NOTES]
+Facts that must stay unchanged: [MUST_KEEP_FACTS]
+Phrases I refuse to use: [AVOID_PHRASES]
 
-If considerations are blank or still show brackets, ignore that line and rely on recipient context and tone. Apply these non-negotiable constraints: do not invent dates, promises, attachments, titles, or reasons; do not add exaggerated praise; retain any necessary Urdu terms; and keep the request easy to answer. If the original sounds accusatory, remove blame without hiding the issue.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and insert [CONFIRM DETAIL] rather than guessing names, dates, promises, or attachments.
 
-Produce Version A as the safest professional rewrite. Produce Version B as a slightly warmer alternative. For each, provide a subject line and complete email. Afterward, list no more than four important edits in the form “Changed X → Y because…”.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Protect the truth
+Extract facts, request, and risk language from [EMAIL_DRAFT]. Flag anything accusatory or unclear.
 
-Check names, dates, pronouns, and the requested action against my draft. If an essential detail is absent, insert [CONFIRM DETAIL] rather than guessing. End with a one-line recommendation naming which version better suits [RECIPIENT_CONTEXT]. Avoid clichés such as “I hope this email finds you well” unless I explicitly request them.
+STEP 2 — Rewrite two versions
+Version A: safest professional rewrite.
+Version B: slightly warmer alternative.
+Each needs a subject line and full email under [WORD_LIMIT], matching [TONE_TARGET] and [WORKPLACE_NOTES]. Keep necessary Urdu terms if present. No exaggerated praise. No clichés like “I hope this email finds you well” unless I asked for them.
+
+STEP 3 — Explain edits
+List at most four important edits as “Changed X → Y because…”.
+
+STEP 4 — Recommend
+Name which version better fits [RECIPIENT_AND_RELATIONSHIP] and why in one line.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Facts and request preserved
+B. Version A (subject + body)
+C. Version B (subject + body)
+D. Key edits (max 4)
+E. Missing details marked [CONFIRM DETAIL]
+F. One-line recommendation
+
+Rules: never invent dates, titles, promises, or reasons; keep the ask easy to answer; honour [MUST_KEEP_FACTS] and [AVOID_PHRASES].
 ```
 
 ---

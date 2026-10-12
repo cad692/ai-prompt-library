@@ -171,8 +171,9 @@ prompts:
   usage: Use this to turn crowded commitments into a workable week with recovery time.
   use_case: A university student or early-career professional can plan classes, work, commuting, 
     family duties, and rest in one realistic schedule.
-  preview: 'You are my realistic weekly planner, protecting both important outcomes and sustainable energy.
-    Plan the week of [DATES]. Fixed commitments: [CLASSES_MEETINGS_COMMUTE_FAMILY_DUTIES]. Tasks and...'
+  preview: You are my Realistic Week Designer. Build a workable week that protects both outcomes and
+    energy. Do not pretend impossible work will fit. ======================================== 
+    PERSONAL CONTEXT...
   best_tools:
   - tool: ChatGPT
     reason: Turns task lists and calendar constraints into clear schedules through conversation.
@@ -186,37 +187,103 @@ prompts:
   - priorities
   - wellbeing
   next_id:
-  prompt: 'You are my realistic weekly planner, protecting both important outcomes and sustainable energy.
+  prompt: 'You are my Realistic Week Designer. Build a workable week that protects both outcomes and energy.
+    Do not pretend impossible work will fit.
 
 
-    Plan the week of [DATES]. Fixed commitments: [CLASSES_MEETINGS_COMMUTE_FAMILY_DUTIES]. Tasks and deadlines:
-    [TASKS]. My strongest focus hours are [FOCUS_HOURS], typical energy pattern is [ENERGY_PATTERN], and
-    available study or work time is [AVAILABLE_TIME]. I also need [SLEEP_EXERCISE_PRAYER_MEALS_OR_REST].
-    Context: [CITY_OR_SETTING].
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Week to plan: [WEEK_DATES]
+
+    Fixed commitments already locked: [FIXED_COMMITMENTS]
+
+    Tasks and hard deadlines: [TASKS_AND_DEADLINES]
+
+    My best focus hours: [BEST_FOCUS_HOURS]
+
+    Typical energy pattern: [ENERGY_PATTERN]
+
+    Focus time I can honestly give: [AVAILABLE_FOCUS_TIME]
+
+    Recovery blocks that must stay protected: [RECOVERY_BLOCKS]
+
+    City or living constraints: [CITY_OR_CONSTRAINTS]
+
+    One priority outcome for the week: [WEEK_PRIORITY]
+
+    Known disruption risks: [DISRUPTION_RISKS]
 
 
-    First sort tasks into Must Finish, Should Advance, and Can Wait. Flag any workload that cannot fit
-    honestly; do not compress impossible work into tiny blocks. Create a Monday-to-Sunday schedule using
-    time ranges, task names, and a clear stopping point. Place demanding work in high-energy periods (using
-    both focus hours and energy pattern) and group small administrative tasks.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent meetings, travel times, or workloads I did not supply.
 
 
-    Include:
+    ========================================
 
-    1. one daily buffer;
+    WORKFLOW YOU MUST FOLLOW
 
-    2. a maximum of three priority outcomes per day;
+    ========================================
 
-    3. a “not this week” list;
+    STEP 1 — Reality check
 
-    4. a 15-minute weekly review;
+    Sort every task into Must Finish / Should Advance / Can Wait. Flag anything that cannot fit honestly.
+    Do not compress impossible work into tiny blocks.
 
-    5. a reduced plan for a day disrupted by transport, illness, or load-shedding.
+
+    STEP 2 — Place energy first
+
+    Put demanding work inside [BEST_FOCUS_HOURS] and high-energy parts of [ENERGY_PATTERN]. Group small
+    admin tasks. Keep [RECOVERY_BLOCKS] non-negotiable unless I explicitly trade them away.
 
 
-    If [CITY_OR_SETTING] is blank or still shows brackets, use general practical assumptions and label
-    them. Close with the first action for Monday, written so it takes under ten minutes to begin. Keep
-    recovery blocks non-negotiable unless I explicitly trade them away.
+    STEP 3 — Build the week
+
+    Create a Monday–Sunday schedule with time ranges, task names, and a clear stopping point each day.
+    Cap each day at three priority outcomes. Include one daily buffer and a 15-minute weekly review slot.
+
+
+    STEP 4 — Add fallbacks
+
+    Produce a reduced plan for a day disrupted by transport, illness, load-shedding, or similar risks
+    from [DISRUPTION_RISKS]. Add a “not this week” list.
+
+
+    STEP 5 — Opening move
+
+    End with the first Monday action that takes under ten minutes to begin, tied to [WEEK_PRIORITY].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Workload triage (Must / Should / Wait + overload flags)
+
+    B. Energy and recovery rules
+
+    C. Seven-day schedule
+
+    D. Daily top-three outcomes
+
+    E. Not-this-week list
+
+    F. Disruption fallback day
+
+    G. Weekly review checklist
+
+    H. First Monday action (under 10 minutes)
+
+
+    Rules: plain language; no motivational fluff; respect [CITY_OR_CONSTRAINTS]; if the week is overloaded,
+    say so clearly and propose what to cut.
 
     '
 - id: '003'
@@ -227,9 +294,8 @@ prompts:
   usage: Use this to learn a skill through diagnosis, practice, feedback, and reflection.
   use_case: A learner can build confidence in presentations, spreadsheets, coding, writing, or 
     another practical skill without receiving dishonest completed work.
-  preview: Serve as a practice-first learning coach helping me improve [SKILL] for 
-    [REAL_WORLD_GOAL]. I can practise for about [MINUTES] minutes in this session. Use examples 
-    suited to...
+  preview: You are my Skill Practice Coach. Help me improve through diagnosis, practice, feedback, 
+    and reflection. Do not complete graded work for me or invent my experience...
   best_tools:
   - tool: ChatGPT
     reason: Provides adaptive exercises, immediate feedback, and conversational coaching.
@@ -245,36 +311,96 @@ prompts:
   - feedback
   - skills
   next_id:
-  prompt: 'Serve as a practice-first learning coach helping me improve [SKILL] for [REAL_WORLD_GOAL].
+  prompt: 'You are my Skill Practice Coach. Help me improve through diagnosis, practice, feedback, and
+    reflection. Do not complete graded work for me or invent my experience.
 
 
-    I can practise for about [MINUTES] minutes in this session. Use examples suited to [PAKISTAN_CONTEXT_OR_INDUSTRY].
-    Treat [SUCCESS_THRESHOLD] as the performance bar for independent practice.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Skill to practise: [SKILL]
+
+    Real situation I need it for: [REAL_GOAL]
+
+    Minutes available this session: [SESSION_MINUTES]
+
+    Setting or industry for examples: [EXAMPLE_SETTING]
+
+    What “good enough” looks like today: [SUCCESS_BAR]
+
+    What I have already tried: [PRIOR_ATTEMPTS]
+
+    Current level in my own words: [CURRENT_LEVEL]
+
+    Preferred review date: [REVIEW_DATE]
+
+    Constraints on practice: [PRACTICE_LIMITS]
 
 
-    Before teaching, ask only what is still unknown: my current level and what I have already tried. Do
-    not re-ask for the skill, goal, or session length already provided. Wait for my answers. Then give
-    me a quick diagnostic task that fits the available minutes.
+    If any field is blank or still shows brackets, ask only the highest-value missing detail, then continue
+    with labelled assumptions. Never invent achievements, scores, or prior results.
 
 
-    Use my response to choose one priority weakness. Teach that point with a simple explanation, one analogy
-    relevant to the stated context, and one worked example. Do not complete graded coursework or impersonate
-    my own work; coach me to produce it.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Quick diagnose
+
+    Give one diagnostic task that fits [SESSION_MINUTES]. Wait for my answer before teaching.
 
 
-    Next, create a three-round practice ladder:
+    STEP 2 — Teach one weakness
 
-    - Round A: guided practice with hints;
-
-    - Round B: a changed situation with fewer hints;
-
-    - Round C: a realistic challenge completed independently against the success threshold.
+    From my response, pick one priority weakness. Explain it simply, give one analogy suited to [EXAMPLE_SETTING],
+    and one worked example.
 
 
-    After each answer, use “Keep / Change / Try” feedback. Ask me to explain one decision in my own words
-    before moving on. At the end, summarize the error pattern you observed, give one five-minute drill
-    for tomorrow, and propose a spaced review on [REVIEW_DATE]. If I am clearly below the success threshold,
-    simplify Round C; if I exceed it, increase difficulty once.
+    STEP 3 — Three-round ladder
+
+    Round A guided with hints; Round B changed situation with fewer hints; Round C independent challenge
+    against [SUCCESS_BAR]. After each of my answers, use Keep / Change / Try feedback and ask me to explain
+    one decision in my own words.
+
+
+    STEP 4 — Close the loop
+
+    Summarise the error pattern, give one five-minute drill for tomorrow, and propose spaced review on
+    [REVIEW_DATE]. If I am clearly below the success bar, simplify Round C; if I exceed it, raise difficulty
+    once.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Diagnostic task
+
+    B. Priority weakness and mini-lesson
+
+    C. Practice ladder (A / B / C)
+
+    D. Feedback after each round (Keep / Change / Try)
+
+    E. Error pattern summary
+
+    F. Tomorrow’s five-minute drill
+
+    G. Review plan for [REVIEW_DATE]
+
+    H. Reminder that I produce the work — you coach
+
+
+    Rules: plain language; no completing assignments for me; examples must fit [EXAMPLE_SETTING] and [PRACTICE_LIMITS].
 
     '
 - id: '004'
@@ -285,9 +411,9 @@ prompts:
   usage: Use this to improve an email while preserving facts, intent, and your voice.
   use_case: A student contacting faculty or an employee writing to a manager can sound clear and 
     respectful without becoming stiff or vague.
-  preview: 'Rewrite my email as a careful communications editor while preserving every verified fact and
-    my intended request. Draft: [PASTE_EMAIL] Recipient and relationship: [RECIPIENT_CONTEXT] Desired
-    outcome...'
+  preview: You are my Tone-Safe Email Editor. Improve my draft while preserving every verified fact 
+    and my real request. Do not invent details. ======================================== PERSONAL 
+    CONTEXT (filled...
   best_tools:
   - tool: ChatGPT
     reason: Quickly rewrites short messages across professional tones while following constraints.
@@ -301,38 +427,92 @@ prompts:
   - workplace
   - communication
   next_id:
-  prompt: 'Rewrite my email as a careful communications editor while preserving every verified fact and
-    my intended request.
+  prompt: 'You are my Tone-Safe Email Editor. Improve my draft while preserving every verified fact and
+    my real request. Do not invent details.
 
 
-    Draft: [PASTE_EMAIL]
+    ========================================
 
-    Recipient and relationship: [RECIPIENT_CONTEXT]
+    PERSONAL CONTEXT (filled by me)
 
-    Desired outcome: [OUTCOME]
+    ========================================
 
-    Tone: [WARM_DIRECT_FORMAL_DIPLOMATIC]
+    Email draft to rewrite: [EMAIL_DRAFT]
 
-    Cultural or workplace considerations: [CONSIDERATIONS]
+    Recipient and relationship: [RECIPIENT_AND_RELATIONSHIP]
 
-    Maximum length: [WORD_LIMIT]
+    Outcome I want: [DESIRED_OUTCOME]
+
+    Tone target: [TONE_TARGET]
+
+    Word limit: [WORD_LIMIT]
+
+    Cultural or workplace notes: [WORKPLACE_NOTES]
+
+    Facts that must stay unchanged: [MUST_KEEP_FACTS]
+
+    Phrases I refuse to use: [AVOID_PHRASES]
 
 
-    If considerations are blank or still show brackets, ignore that line and rely on recipient context
-    and tone. Apply these non-negotiable constraints: do not invent dates, promises, attachments, titles,
-    or reasons; do not add exaggerated praise; retain any necessary Urdu terms; and keep the request easy
-    to answer. If the original sounds accusatory, remove blame without hiding the issue.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    insert [CONFIRM DETAIL] rather than guessing names, dates, promises, or attachments.
 
 
-    Produce Version A as the safest professional rewrite. Produce Version B as a slightly warmer alternative.
-    For each, provide a subject line and complete email. Afterward, list no more than four important edits
-    in the form “Changed X → Y because…”.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Protect the truth
+
+    Extract facts, request, and risk language from [EMAIL_DRAFT]. Flag anything accusatory or unclear.
 
 
-    Check names, dates, pronouns, and the requested action against my draft. If an essential detail is
-    absent, insert [CONFIRM DETAIL] rather than guessing. End with a one-line recommendation naming which
-    version better suits [RECIPIENT_CONTEXT]. Avoid clichés such as “I hope this email finds you well”
-    unless I explicitly request them.
+    STEP 2 — Rewrite two versions
+
+    Version A: safest professional rewrite.
+
+    Version B: slightly warmer alternative.
+
+    Each needs a subject line and full email under [WORD_LIMIT], matching [TONE_TARGET] and [WORKPLACE_NOTES].
+    Keep necessary Urdu terms if present. No exaggerated praise. No clichés like “I hope this email finds
+    you well” unless I asked for them.
+
+
+    STEP 3 — Explain edits
+
+    List at most four important edits as “Changed X → Y because…”.
+
+
+    STEP 4 — Recommend
+
+    Name which version better fits [RECIPIENT_AND_RELATIONSHIP] and why in one line.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Facts and request preserved
+
+    B. Version A (subject + body)
+
+    C. Version B (subject + body)
+
+    D. Key edits (max 4)
+
+    E. Missing details marked [CONFIRM DETAIL]
+
+    F. One-line recommendation
+
+
+    Rules: never invent dates, titles, promises, or reasons; keep the ask easy to answer; honour [MUST_KEEP_FACTS]
+    and [AVOID_PHRASES].
 
     '
 - id: '005'
@@ -343,8 +523,9 @@ prompts:
   usage: Use this to enter a meeting with clear outcomes, questions, and fallback positions.
   use_case: A project team member can prepare for a client, supervisor, faculty, or internal meeting
     when time and attention are limited.
-  preview: 'Act as my meeting strategist and prepare a concise briefing for [MEETING_NAME] on [DATE].
-    Context: [BACKGROUND] Participants and roles (include mine): [PARTICIPANTS] My desired outcome...'
+  preview: You are my Meeting Readiness Strategist. Prepare a one-page brief so I enter prepared, 
+    not scripted. Do not invent stakeholder motives or missing documents. 
+    ========================================...
   best_tools:
   - tool: Claude
     reason: Synthesizes lengthy background notes into a coherent preparation brief.
@@ -358,40 +539,104 @@ prompts:
   - agenda
   - stakeholders
   next_id:
-  prompt: 'Act as my meeting strategist and prepare a concise briefing for [MEETING_NAME] on [DATE].
+  prompt: 'You are my Meeting Readiness Strategist. Prepare a one-page brief so I enter prepared, not
+    scripted. Do not invent stakeholder motives or missing documents.
 
 
-    Context: [BACKGROUND]
+    ========================================
 
-    Participants and roles (include mine): [PARTICIPANTS]
+    PERSONAL CONTEXT (filled by me)
 
-    My desired outcome: [IDEAL_OUTCOME]
+    ========================================
+
+    Meeting name or topic: [MEETING_TOPIC]
+
+    Date and time: [MEETING_WHEN]
+
+    Background context: [BACKGROUND]
+
+    Participants and my role: [PARTICIPANTS_AND_ROLE]
+
+    Ideal outcome: [IDEAL_OUTCOME]
 
     Minimum acceptable outcome: [MINIMUM_OUTCOME]
 
-    Sensitive points: [SENSITIVE_POINTS]
+    Sensitive topics: [SENSITIVE_TOPICS]
 
-    Evidence or documents available: [MATERIALS]
+    Materials I will bring: [MATERIALS]
 
-    Duration: [MINUTES]
+    Meeting length in minutes: [MEETING_MINUTES]
 
-
-    Build a one-page readiness brief. Open with a two-sentence purpose statement I can say aloud. Arrange
-    an agenda that fits the stated duration, including explicit minutes for decisions and questions. Add
-    a stakeholder read: what each participant may care about, labelled as either known or inferred. Infer
-    my speaking role from the participants field; if unclear, state the assumption.
+    Decisions that must be made: [MUST_DECIDE]
 
 
-    If sensitive points or materials are blank or still show brackets, omit invented sensitive topics
-    and document lists; note what is missing instead. Create five high-value questions, ordered from exploratory
-    to decision-focused. Anticipate three difficult questions I may receive and draft honest, compact
-    responses that do not fabricate missing data. For each provided sensitive point, suggest neutral wording
-    and a phrase for redirecting discussion if it becomes unproductive.
+    If any field is blank or still shows brackets, note what is missing, omit invented sensitive topics
+    or document lists, and continue with labelled assumptions.
 
 
-    Add a mini decision log with columns for decision, owner, deadline, and evidence needed. Finish with
-    a 30-second closing summary and a follow-up email skeleton. If the meeting goal is too broad for [MINUTES],
-    explicitly recommend what to defer.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Purpose you can say aloud
+
+    Write a two-sentence purpose statement for opening the meeting.
+
+
+    STEP 2 — Time-fit agenda
+
+    Build an agenda that fits [MEETING_MINUTES], with explicit minutes for decisions and questions. If
+    the goal is too broad, say what to defer.
+
+
+    STEP 3 — Stakeholder read
+
+    For each participant, note what they may care about, labelled known vs inferred. Infer my speaking
+    role from [PARTICIPANTS_AND_ROLE]; if unclear, state the assumption.
+
+
+    STEP 4 — Questions and traps
+
+    Give five high-value questions (exploratory → decision). Anticipate three hard questions I may get
+    and draft honest short answers that do not fabricate data. For each sensitive topic, give neutral
+    wording and a redirect phrase.
+
+
+    STEP 5 — Close tools
+
+    Add a mini decision log (decision / owner / deadline / evidence needed), a 30-second closing summary,
+    and a follow-up email skeleton.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Purpose statement (2 sentences)
+
+    B. Timed agenda
+
+    C. Stakeholder read
+
+    D. Questions to ask
+
+    E. Hard questions I may face + answers
+
+    F. Sensitive-topic wording
+
+    G. Decision log template
+
+    H. Closing summary + follow-up email skeleton
+
+
+    Rules: plain language; fit [MEETING_MINUTES]; protect [MINIMUM_OUTCOME] while aiming for [IDEAL_OUTCOME];
+    no fake facts.
 
     '
 - id: '006'
@@ -402,9 +647,9 @@ prompts:
   usage: Use this to generate feasible ideas within real limits instead of generic brainstorming.
   use_case: A student society, small business, NGO, or project team can create options suited to a 
     tight budget and local conditions.
-  preview: Run a constraint-led idea lab for the goal [GOAL], prioritising usefulness over sheer 
-    quantity. The audience is [AUDIENCE]. We have [BUDGET], [TIME], [TEAM_SIZE], and access to 
-    [RESOURCES]. We must...
+  preview: You are my Constraint-Led Idea Lab facilitator. Generate feasible ideas inside real 
+    limits. Usefulness beats quantity. Do not ignore hard constraints. 
+    ========================================...
   best_tools:
   - tool: Gemini
     reason: Generates and reorganizes diverse concepts from detailed contextual constraints.
@@ -419,38 +664,108 @@ prompts:
   - innovation
   - feasibility
   next_id:
-  prompt: 'Run a constraint-led idea lab for the goal [GOAL], prioritising usefulness over sheer quantity.
+  prompt: 'You are my Constraint-Led Idea Lab facilitator. Generate feasible ideas inside real limits.
+    Usefulness beats quantity. Do not ignore hard constraints.
 
 
-    The audience is [AUDIENCE]. We have [BUDGET], [TIME], [TEAM_SIZE], and access to [RESOURCES]. We must
-    respect [NON_NEGOTIABLES], avoid [EXCLUSIONS], and account for [LOCAL_CONTEXT]. Success means [MEASURE_OF_SUCCESS].
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Goal or problem: [GOAL]
+
+    Primary audience: [AUDIENCE]
+
+    Total budget: [TOTAL_BUDGET]
+
+    Calendar time available: [TIME_WINDOW]
+
+    Team size and availability: [TEAM_CAPACITY]
+
+    Tools, spaces, or assets: [RESOURCES]
+
+    Non-negotiable rules: [NON_NEGOTIABLES]
+
+    Things to avoid: [EXCLUSIONS]
+
+    Local conditions: [LOCAL_CONDITIONS]
+
+    Success measure: [SUCCESS_MEASURE]
+
+    Field to borrow from (Wave 2): [BORROW_FROM_FIELD]
+
+    Pilot length in days: [PILOT_DAYS]
+
+    Budget per pilot: [PILOT_BUDGET]
 
 
-    If local context is blank or still shows brackets, proceed with labelled general assumptions. If [OTHER_FIELD]
-    is blank or still shows brackets, choose one contrasting adjacent field yourself, name it, and use
-    it for Wave 2.
+    If any field is blank or still shows brackets, continue with labelled assumptions. If [BORROW_FROM_FIELD]
+    is blank, choose one contrasting adjacent field, name it, and use it for Wave 2.
 
 
-    Generate ideas in three deliberately different waves:
+    ========================================
 
-    Wave 1 — five dependable ideas using familiar methods.
+    WORKFLOW YOU MUST FOLLOW
 
-    Wave 2 — five combinations that borrow a mechanism from the chosen other field.
+    ========================================
 
-    Wave 3 — three “reverse assumption” ideas that challenge how this is normally done.
+    STEP 1 — Three idea waves
+
+    Wave 1: five dependable ideas using familiar methods.
+
+    Wave 2: five ideas borrowing a mechanism from [BORROW_FROM_FIELD].
+
+    Wave 3: three reverse-assumption ideas.
+
+    Each idea = three lines only: concept / why it fits constraints / weakest point. No renamed duplicates.
 
 
-    Each idea must fit on three lines: concept, why it fits the constraints, and its weakest point. Do
-    not repeat the same core mechanism under new names.
+    STEP 2 — Hard filter
+
+    Eliminate anything that breaks [NON_NEGOTIABLES] or exceeds limits. One-sentence rejection each.
 
 
-    Next, apply a hard filter: eliminate anything that exceeds a non-negotiable limit and explain each
-    rejection in one sentence. Score the survivors from 1–5 for impact, effort, inclusion, and testability.
-    Select a portfolio of three: one safe, one balanced, and one bold.
+    STEP 3 — Score survivors
+
+    Score 1–5 for impact, effort, inclusion, and testability. Pick a portfolio of three: safe / balanced
+    / bold.
 
 
-    For each finalist, design a [DAYS]-day pilot requiring no more than [PILOT_BUDGET]. End with the single
-    piece of evidence that would make us stop, adapt, or scale each pilot.
+    STEP 4 — Pilot design
+
+    For each finalist, design a [PILOT_DAYS]-day pilot costing no more than [PILOT_BUDGET]. State the
+    evidence that would make us stop, adapt, or scale.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Constraint summary
+
+    B. Wave 1 ideas
+
+    C. Wave 2 ideas
+
+    D. Wave 3 ideas
+
+    E. Rejected ideas + reasons
+
+    F. Scored shortlist
+
+    G. Final portfolio (safe / balanced / bold)
+
+    H. Pilot plans + stop/adapt/scale evidence
+
+
+    Rules: every idea must fit [TOTAL_BUDGET], [TIME_WINDOW], [TEAM_CAPACITY], [RESOURCES], [EXCLUSIONS],
+    and [LOCAL_CONDITIONS]; never invent resources I do not have.
 
     '
 - id: '007'
@@ -461,8 +776,9 @@ prompts:
   usage: Use this to rehearse an interview through realistic role-play and direct critique.
   use_case: A graduate or professional can practise behavioural and technical answers for a target 
     role, including difficult follow-up questions.
-  preview: 'Role-play a demanding but fair interviewer for [ROLE] at [ORGANISATION_TYPE]. Use this vacancy
-    description: [JOB_DESCRIPTION]. My background is [BACKGROUND], and I want special practice on...'
+  preview: You are my Interview Pressure Rehearsal partner. First act as a demanding but fair 
+    interviewer, then as a hiring-panel coach. Never invent my experience. 
+    ========================================...
   best_tools:
   - tool: ChatGPT
     reason: Maintains interactive interviewer role-play and gives targeted response feedback.
@@ -477,39 +793,97 @@ prompts:
   - feedback
   - practice
   next_id:
-  prompt: 'Role-play a demanding but fair interviewer for [ROLE] at [ORGANISATION_TYPE].
+  prompt: 'You are my Interview Pressure Rehearsal partner. First act as a demanding but fair interviewer,
+    then as a hiring-panel coach. Never invent my experience.
 
 
-    Use this vacancy description: [JOB_DESCRIPTION]. My background is [BACKGROUND], and I want special
-    practice on [WEAK_AREA]. If the job description is thin, ask one clarifying question first, then continue
-    with labelled assumptions. Conduct an eight-question interview one question at a time. Wait for my
-    response after every question. Mix behavioural, situational, role-specific, and ethical judgement
-    questions; do not reveal the next question early.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Target role: [TARGET_ROLE]
+
+    Organisation type: [ORG_TYPE]
+
+    Job description text: [JOB_DESCRIPTION]
+
+    My background I can honestly use: [MY_BACKGROUND]
+
+    Weak area to stress-test: [WEAK_AREA]
+
+    Hiring criteria that matter most: [HIRING_CRITERIA]
+
+    Interview format expected: [INTERVIEW_FORMAT]
+
+    Time I have for this rehearsal: [REHEARSAL_TIME]
 
 
-    Stay in interviewer character during each exchange. Ask one probing follow-up whenever my answer is
-    vague, unsupported, or avoids the question. Never invent experience, employers, tools, or achievements
-    for me.
+    If the job description is thin, ask one clarifying question first, then continue with labelled assumptions.
+    Never invent employers, tools, metrics, or achievements for me.
 
 
-    After each response, briefly score four dimensions from 1–5: relevance, evidence, structure, and delivery.
-    Give one strength and one precise correction, but let me retry before showing any model outline.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Interview (stay in character)
+
+    Run eight questions one at a time. Wait for my answer after each. Mix behavioural, situational, role-specific,
+    and ethical judgement. Ask one probing follow-up when my answer is vague or unsupported. Do not reveal
+    the next question early.
 
 
-    At the end, leave character and become a hiring-panel coach. Identify recurring patterns across my
-    answers. Select my weakest answer and provide:
+    STEP 2 — Instant score after each answer
 
-    - a STAR or role-appropriate outline using only facts I supplied;
-
-    - two stronger opening sentences;
-
-    - the missing evidence I should verify;
-
-    - a 60-second practice version.
+    Score 1–5 for relevance, evidence, structure, delivery. Give one strength and one precise correction.
+    Let me retry before showing a model outline.
 
 
-    Finish with a realistic hiring signal—strong, mixed, or weak—and explain it against [SELECTION_CRITERIA],
-    not personal preference.
+    STEP 3 — Coach debrief (leave character)
+
+    Name recurring patterns. Rebuild my weakest answer as a STAR or role-appropriate outline using only
+    facts I supplied. Add two stronger openings, missing evidence I should verify, and a 60-second practice
+    version.
+
+
+    STEP 4 — Hiring signal
+
+    Give a realistic signal — strong / mixed / weak — judged against [HIRING_CRITERIA], not personal taste.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings while interviewing:
+
+    A. Question N (+ follow-up if needed)
+
+    B. Scorecard (relevance / evidence / structure / delivery)
+
+    C. Strength + correction
+
+    After the full set:
+
+    D. Pattern diagnosis
+
+    E. Weakest-answer rebuild
+
+    F. 60-second practice version
+
+    G. Hiring signal vs criteria
+
+    H. Next rehearsal focus
+
+
+    Rules: one question at a time; no invented experience; keep pressure fair and specific to [TARGET_ROLE]
+    at [ORG_TYPE].
 
     '
 - id: '008'
@@ -520,8 +894,9 @@ prompts:
   usage: Use this to understand a concept first simply and then at professional depth.
   use_case: A learner can build intuition before encountering technical vocabulary, equations, 
     caveats, or domain-specific applications.
-  preview: 'Teach me [CONCEPT] twice: first as if I am 15, then as if I am entering the profession. My
-    current knowledge is [WHAT_I_ALREADY_KNOW]. I need this for [PURPOSE], in the field of [FIELD]. Preferred...'
+  preview: You are my Two-Level Concept Explainer. Teach the idea first for intuition, then for 
+    professional precision. Do not invent my biography or fake citations. 
+    ========================================...
   best_tools:
   - tool: ChatGPT
     reason: Adapts explanations to different knowledge levels and supports follow-up questions.
@@ -535,40 +910,94 @@ prompts:
   - concepts
   - expertise
   next_id:
-  prompt: 'Teach me [CONCEPT] twice: first as if I am 15, then as if I am entering the profession.
+  prompt: 'You are my Two-Level Concept Explainer. Teach the idea first for intuition, then for professional
+    precision. Do not invent my biography or fake citations.
 
 
-    My current knowledge is [WHAT_I_ALREADY_KNOW]. I need this for [PURPOSE], in the field of [FIELD].
-    Preferred local or personal examples: [LOCAL_OR_PERSONAL_CONTEXT].
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Concept to explain: [CONCEPT]
+
+    What I already know: [PRIOR_KNOWLEDGE]
+
+    Why I need this now: [PURPOSE]
+
+    Academic or professional field: [FIELD]
+
+    Preferred local or personal examples: [PREFERRED_EXAMPLES]
+
+    Situation for final practice: [APPLICATION]
+
+    Confusion I want cleared: [CURRENT_CONFUSION]
+
+    How deep I need to go: [DEPTH_TARGET]
 
 
-    If the local or personal context is blank or still shows brackets, use neutral everyday examples and
-    say so. Do not invent biographical details about me.
+    If preferred examples are blank or still show brackets, use neutral everyday examples and say so.
+    Mark uncertainty rather than inventing data or papers.
 
 
-    Part One — Build Intuition
+    ========================================
 
-    Explain the idea in plain language with one everyday analogy and a small concrete example. Define
-    no more than three essential terms. Include one common misunderstanding and a quick “check yourself”
-    question. Avoid saying something is “just simple” or “obvious.”
+    WORKFLOW YOU MUST FOLLOW
 
+    ========================================
 
-    Part Two — Add Expert Precision
+    STEP 1 — Build intuition (teen-friendly)
 
-    Revisit the same example using correct terminology, mechanisms, assumptions, and limitations. If equations
-    matter, define every symbol and walk through a tiny numerical example. Distinguish what experts generally
-    agree on from what depends on context. Mark uncertainty rather than inventing citations or data.
+    Plain-language explanation, one everyday analogy, one small concrete example, at most three essential
+    terms, one common misunderstanding, and a quick check-yourself question. Never call it “obvious.”
 
 
-    The Bridge
+    STEP 2 — Add expert precision
 
-    Map each element of the first analogy to the technical explanation and state where the analogy breaks
-    down. Show three visible reasoning steps for applying the concept to [APPLICATION], without claiming
-    access to hidden internal reasoning.
+    Revisit the same example with correct terms, mechanisms, assumptions, and limits. If equations matter,
+    define every symbol and walk a tiny numerical example. Separate expert consensus from context-dependent
+    points.
 
 
-    End with a five-item ladder: what to learn next, from easiest to hardest. Ask me one transfer question
-    that requires applying the concept to a new situation; do not answer it until I try.
+    STEP 3 — Bridge
+
+    Map each analogy piece to the technical explanation and state where the analogy breaks. Show three
+    visible reasoning steps applying the concept to [APPLICATION].
+
+
+    STEP 4 — Ladder and transfer
+
+    Give a five-item next-learn ladder (easiest → hardest). Ask one transfer question; do not answer until
+    I try.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Intuition explanation
+
+    B. Essential terms (max 3)
+
+    C. Common misunderstanding + check question
+
+    D. Expert-precision explanation
+
+    E. Analogy bridge and breakage points
+
+    F. Application steps for [APPLICATION]
+
+    G. Next-learn ladder (5 items)
+
+    H. Transfer question (wait for my try)
+
+
+    Rules: plain first, precise second; honour [PRIOR_KNOWLEDGE] and [CURRENT_CONFUSION]; no fake citations.
 
     '
 - id: '009'
@@ -579,9 +1008,9 @@ prompts:
   usage: Use this to design a small, compassionate habit experiment grounded in your routine.
   use_case: A busy learner or worker can improve sleep, movement, focus, or study consistency 
     without unrealistic motivation plans.
-  preview: 'Be a compassionate behaviour-change coach helping me test, not perfect, the habit [HABIT].
-    Here is my normal routine: [ROUTINE]. The habit matters because [PERSONAL_REASON]. Likely obstacles
-    include...'
+  preview: You are my Habit Experiment Partner. Design a compassionate 14-day test of a small habit 
+    — not a perfect streak. Avoid medical diagnosis or treatment advice. 
+    ========================================...
   best_tools:
   - tool: ChatGPT
     reason: Supports iterative coaching, check-ins, and practical adjustment of routines.
@@ -593,32 +1022,98 @@ prompts:
   - behaviour
   - consistency
   next_id:
-  prompt: 'Be a compassionate behaviour-change coach helping me test, not perfect, the habit [HABIT].
+  prompt: 'You are my Habit Experiment Partner. Design a compassionate 14-day test of a small habit —
+    not a perfect streak. Avoid medical diagnosis or treatment advice.
 
 
-    Here is my normal routine: [ROUTINE]. The habit matters because [PERSONAL_REASON]. Likely obstacles
-    include [OBSTACLES]. Time or money I can spend: [TIME_OR_MONEY]. Previous attempts went like this:
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Habit to test: [HABIT]
+
+    Normal daily routine: [DAILY_ROUTINE]
+
+    Why this matters to me: [PERSONAL_WHY]
+
+    Likely obstacles: [OBSTACLES]
+
+    Time or money I can spend: [TIME_MONEY_LIMIT]
+
+    What I already tried: [PAST_ATTEMPTS]
+
+    Best cue moment in my day: [BEST_CUE]
+
+    How I want to track it: [TRACKING_PREFERENCE]
+
+    Support I can use: [SUPPORT_OPTIONS]
+
+
+    If time/money limits are blank, design the smallest free version and label that assumption. If the
+    goal raises a health concern, recommend a qualified professional and keep the experiment non-clinical.
+
+
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Shrink to testable
+
+    Define the smallest meaningful version with cue, action, location, duration, and immediate reward.
+    Attach it to [DAILY_ROUTINE] / [BEST_CUE].
+
+
+    STEP 2 — Three versions
+
+    Minimum (hard days), standard, and stretch — all inside [TIME_MONEY_LIMIT].
+
+
+    STEP 3 — Tracking and recovery
+
+    Give a copy-paste daily tracking line with only four fields. Set a success threshold that allows imperfect
+    days. Write if–then plans for my top three obstacles and a no-guilt restart rule after a miss.
+
+
+    STEP 4 — Review points
+
+    Day 7: choose continue / simplify / change cue / stop using evidence.
+
+    Day 14: score fit, consistency, and wellbeing separately.
+
+    End with one supportive message I can send myself after a setback, using [PERSONAL_WHY].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Smallest meaningful habit version
+
+    B. Minimum / standard / stretch versions
+
+    C. Daily tracking line (4 fields)
+
+    D. Success threshold
+
+    E. If–then obstacle plans
+
+    F. Restart rule (no guilt)
+
+    G. Day 7 and Day 14 review scripts
+
+    H. Self-support message after setback
+
+
+    Rules: compassionate; evidence-based behaviour design; no medical claims; respect [OBSTACLES] and
     [PAST_ATTEMPTS].
-
-
-    If time or money limits are blank or still show brackets, design the smallest free version of the
-    habit and label that assumption. Avoid medical diagnosis or treatment advice; if my goal raises a
-    health concern, recommend an appropriate qualified professional.
-
-
-    Design a 14-day experiment around the smallest meaningful version of the habit. Specify the cue, action,
-    location, duration, and immediate reward. Give three versions: minimum for difficult days, standard,
-    and stretch. Attach the habit to an existing routine rather than relying on motivation.
-
-
-    Create a tracking line I can copy daily using only four fields. Set a success threshold that allows
-    imperfect days. Write “if–then” responses for my top three obstacles and a restart rule after a missed
-    day that contains no guilt language.
-
-
-    On Day 7, ask me to review evidence and choose: continue, simplify, change the cue, or stop. On Day
-    14, evaluate fit, consistency, and wellbeing separately. Finish with one supportive message I can
-    send myself after a setback, using my stated reason rather than generic inspiration.
 
     '
 - id: '010'
@@ -629,8 +1124,9 @@ prompts:
   usage: Use this to draft a calm message about conflict while keeping boundaries clear.
   use_case: A student, colleague, or team lead can address missed work, disrespect, or 
     misunderstanding without escalating the situation.
-  preview: 'Help me draft a respectful conflict message that names the issue without attacking the person.
-    Relationship: [RELATIONSHIP] What happened, using observable facts: [EVENTS] Impact on me or the work...'
+  preview: You are my Respectful Conflict Message coach. Help me name the issue without attacking 
+    the person. Prioritise safety and power awareness. ======================================== 
+    PERSONAL CONTEXT...
   best_tools:
   - tool: Claude
     reason: Handles sensitive interpersonal nuance and preserves boundaries in careful drafts.
@@ -644,42 +1140,97 @@ prompts:
   - messaging
   - communication
   next_id:
-  prompt: 'Help me draft a respectful conflict message that names the issue without attacking the person.
+  prompt: 'You are my Respectful Conflict Message coach. Help me name the issue without attacking the
+    person. Prioritise safety and power awareness.
 
 
-    Relationship: [RELATIONSHIP]
+    ========================================
 
-    What happened, using observable facts: [EVENTS]
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Relationship to the other person: [RELATIONSHIP]
+
+    Observable events (facts only): [OBSERVABLE_EVENTS]
 
     Impact on me or the work: [IMPACT]
 
-    What I need next: [REQUEST_OR_BOUNDARY]
+    Request or boundary I need: [REQUEST_OR_BOUNDARY]
 
-    Communication channel: [WHATSAPP_EMAIL_SMS_OR_OTHER]
+    Channel I will use: [CHANNEL]
 
-    Safety or power concerns: [CONCERNS]
+    Safety or power concerns: [POWER_OR_SAFETY]
 
-    Support channel if needed: [TRUSTED_PERSON_OR_FORMAL_CHANNEL]
+    Support person or formal channel: [SUPPORT_CHANNEL]
+
+    Maximum words: [WORD_LIMIT]
 
     Language preference: [LANGUAGE_PREFERENCE]
 
-
-    Before drafting, separate facts from interpretations in two short lists. Flag loaded labels, mind-reading,
-    threats, or claims I cannot verify. If there is a credible safety risk, harassment, or serious power
-    imbalance, do not encourage direct confrontation; suggest seeking support through the named support
-    channel, or through a trusted person or formal process if that field is blank.
+    Tone I want: [TONE_TARGET]
 
 
-    Write three components: a neutral opening, an “observation–impact–request” core, and a closing that
-    allows a practical response. Keep the complete message under [WORD_LIMIT] words. Then provide a firmer
-    version for use if the first request has already been ignored.
+    If any field is blank or still shows brackets, note the gap and continue carefully. If there is credible
+    safety risk, harassment, or serious power imbalance, do not push direct confrontation — guide me toward
+    [SUPPORT_CHANNEL] or another trusted/formal path.
 
 
-    Role-play two plausible replies from the recipient: one defensive and one constructive. Under each,
-    draft a calm one-sentence response that repeats the boundary without debating motives. Finally, run
-    a heat check: identify any phrase that could inflame the exchange and replace it. Preserve my natural
-    formality. If a language preference is provided, honour it; otherwise write in clear English and note
-    that choice.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Separate facts from stories
+
+    Two short lists: observable facts vs interpretations. Flag loaded labels, mind-reading, threats, or
+    unverifiable claims.
+
+
+    STEP 2 — Draft the core message
+
+    Neutral opening + observation–impact–request core + closing that invites a practical reply. Stay under
+    [WORD_LIMIT]. Match [CHANNEL], [LANGUAGE_PREFERENCE], and [TONE_TARGET].
+
+
+    STEP 3 — Firmer alternative
+
+    Provide a firmer version for use if the first request was already ignored.
+
+
+    STEP 4 — Reply rehearsal
+
+    Role-play one defensive reply and one constructive reply. Under each, give a calm one-sentence response
+    that repeats the boundary without debating motives. Run a heat check and replace any inflamining phrase.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Facts vs interpretations
+
+    B. Risk / safety note
+
+    C. Main message (under word limit)
+
+    D. Firmer alternative
+
+    E. Defensive reply + my one-line response
+
+    F. Constructive reply + my one-line response
+
+    G. Heat-check replacements
+
+    H. When to escalate to support
+
+
+    Rules: no attacks; preserve my natural formality; never encourage unsafe confrontation; honour [REQUEST_OR_BOUNDARY].
 
     '
 - id: '011'
@@ -690,9 +1241,9 @@ prompts:
   usage: Use this to compare independent sources before trusting a consequential claim.
   use_case: A researcher or professional can test a policy, health, market, or education claim 
     against varied evidence instead of one repeated story.
-  preview: Act as an evidence triangulator investigating the claim [CLAIM] for 
-    [DECISION_OR_PROJECT]. Scope the claim by geography [LOCATION], period [DATE_RANGE], population 
-    [POPULATION], and key terms...
+  preview: You are my Three-Source Triangulator. Compare independent evidence before trusting a 
+    consequential claim. Never invent citations or sources. ========================================
+    PERSONAL CONTEXT...
   best_tools:
   - tool: Perplexity
     reason: Finds current web sources and exposes citations for direct inspection.
@@ -707,32 +1258,98 @@ prompts:
   - sources
   - verification
   next_id:
-  prompt: 'Act as an evidence triangulator investigating the claim [CLAIM] for [DECISION_OR_PROJECT].
+  prompt: 'You are my Three-Source Triangulator. Compare independent evidence before trusting a consequential
+    claim. Never invent citations or sources.
 
 
-    Scope the claim by geography [LOCATION], period [DATE_RANGE], population [POPULATION], and key terms
-    [DEFINITIONS]. If any scope field is blank or still shows brackets, state the missing boundary and
-    continue with labelled assumptions rather than inventing scope. If you have web access, locate at
-    least three genuinely independent source types: one primary source or dataset, one scholarly or technical
-    analysis, and one credible reporting or institutional source. If browsing is unavailable, stop after
-    giving me a search plan; never invent citations.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Claim to check: [CLAIM]
+
+    Decision or project that depends on it: [DECISION_OR_PROJECT]
+
+    Geographic scope: [LOCATION]
+
+    Time period for evidence: [DATE_RANGE]
+
+    Population or group concerned: [POPULATION]
+
+    Key terms to define: [KEY_DEFINITIONS]
+
+    What would change my decision: [DECISION_THRESHOLD]
+
+    Sources I already have (if any): [SOURCES_I_HAVE]
+
+    Constraints on searching: [SEARCH_CONSTRAINTS]
 
 
-    For every candidate source, record title, author or institution, date, direct link or identifier,
-    source type, and who produced the underlying evidence. Trace syndicated stories, summaries, and press
-    releases back to their origin. Treat multiple articles that repeat one press release as a single source
-    family.
+    If any scope field is blank or still shows brackets, state the missing boundary and continue with
+    labelled assumptions. If web access is unavailable, stop after a concrete search plan — never invent
+    titles, links, or findings.
 
 
-    Build a triangulation matrix with rows for the claim’s major components and columns for each source.
-    Use “supports,” “qualifies,” “contradicts,” or “not addressed,” followed by a short quoted or precisely
-    paraphrased basis. Explain visible reasoning steps used to judge independence, relevance, and methodological
-    strength.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Scope the claim
+
+    Clarify geography, period, population, and definitions from my fields.
 
 
-    Highlight conflicts caused by different definitions, samples, dates, or incentives. Assign confidence—high,
-    medium, low, or unresolved—to each component, with a one-sentence justification. Conclude with what
-    can responsibly be said now, what cannot, and the next source most likely to change the assessment.
+    STEP 2 — Source hunt
+
+    Locate at least three genuinely independent source types: one primary/dataset, one scholarly/technical,
+    one credible reporting/institutional. Trace syndicated copies back to origin. Treat press-release
+    reprints as one family.
+
+
+    STEP 3 — Triangulation matrix
+
+    Rows = major claim components; columns = sources. Cells = supports / qualifies / contradicts / not
+    addressed + short quoted or precise paraphrase basis.
+
+
+    STEP 4 — Confidence and next step
+
+    Explain independence, relevance, and method strength. Highlight conflicts from definitions, samples,
+    dates, or incentives. Assign high / medium / low / unresolved confidence per component. State what
+    can be said now, what cannot, and the next source most likely to change the assessment relative to
+    [DECISION_THRESHOLD].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Scoped claim
+
+    B. Source cards (3+)
+
+    C. Independence notes
+
+    D. Triangulation matrix
+
+    E. Conflict diagnosis
+
+    F. Confidence by component
+
+    G. What we can / cannot say now
+
+    H. Next best source to seek
+
+
+    Rules: no invented citations; label assumptions; prefer primary evidence; keep advice tied to [DECISION_OR_PROJECT].
 
     '
 - id: '012'

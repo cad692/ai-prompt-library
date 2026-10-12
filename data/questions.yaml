@@ -32,80 +32,104 @@
     ex: No written contract, or unpaid overtime culture
     optional: true
 "002":
-  DATES:
-    q: Which calendar week should be planned?
+  WEEK_DATES:
+    q: Which calendar week should we plan?
     ex: 14–20 April or this coming week
-  CLASSES_MEETINGS_COMMUTE_FAMILY_DUTIES:
+  FIXED_COMMITMENTS:
     q: What fixed commitments already fill the week?
     ex: Mon–Fri 9–1 classes; 45-min commute; Sunday family lunch
-  TASKS:
+  TASKS_AND_DEADLINES:
     q: Which tasks and deadlines need attention?
     ex: Finish report by Thu; revise two chapters; pay bills
-  FOCUS_HOURS:
+  BEST_FOCUS_HOURS:
     q: During which hours do you focus best?
     ex: 7pm to 10pm on weeknights
   ENERGY_PATTERN:
     q: When is your energy usually highest or lowest?
     ex: Alert mornings; low energy after 3pm
-  AVAILABLE_TIME:
-    q: How much focus time can you dedicate?
+  AVAILABLE_FOCUS_TIME:
+    q: How much focus time can you honestly give?
     ex: About 2 hours each weekday evening
-  SLEEP_EXERCISE_PRAYER_MEALS_OR_REST:
+  RECOVERY_BLOCKS:
     q: Which recovery blocks must stay protected?
     ex: Sleep by 12; prayer times; 30-min walk
-  CITY_OR_SETTING:
-    q: What city or living situation shapes the plan?
+  CITY_OR_CONSTRAINTS:
+    q: What city or living constraints shape the plan?
     ex: Karachi hostel with evening load-shedding
+  WEEK_PRIORITY:
+    q: What is the single most important weekly outcome?
+    ex: Submit the internship application draft
+  DISRUPTION_RISKS:
+    q: What disruptions are most likely this week?
+    ex: Load-shedding, late buses, sudden family visit
+    optional: true
 "003":
   SKILL:
     q: Which skill do you want to practise?
     ex: Public speaking for class presentations
-  REAL_WORLD_GOAL:
+  REAL_GOAL:
     q: What real situation will you use it for?
     ex: A 5-minute project presentation next week
-  MINUTES:
+  SESSION_MINUTES:
     q: How many minutes can you practise now?
     ex: '20'
-  PAKISTAN_CONTEXT_OR_INDUSTRY:
-    q: What setting or industry should examples use?
+  EXAMPLE_SETTING:
+    q: What setting should practice examples use?
     ex: Undergraduate engineering class in Lahore
+  SUCCESS_BAR:
+    q: What result would mean practice succeeded?
+    ex: Deliver three clear points without reading slides
+  PRIOR_ATTEMPTS:
+    q: What have you already tried for this skill?
+    ex: Recorded myself once; still freeze on openings
+  CURRENT_LEVEL:
+    q: How would you describe your current level?
+    ex: Beginner-plus; ideas exist but delivery shakes
   REVIEW_DATE:
     q: On which date should we review progress?
     ex: Next Friday
-  SUCCESS_THRESHOLD:
-    q: What result would mean practice succeeded?
-    ex: Deliver three clear points without reading slides
+  PRACTICE_LIMITS:
+    q: Any limits on how you can practise?
+    ex: No audience available; phone recording only
+    optional: true
 "004":
-  PASTE_EMAIL:
+  EMAIL_DRAFT:
     q: Paste the email draft you want rewritten.
     ex: Include the full draft; replace private names if needed
-  RECIPIENT_CONTEXT:
+  RECIPIENT_AND_RELATIONSHIP:
     q: Who receives it, and what is your relationship?
     ex: My thesis supervisor whom I email monthly
-  OUTCOME:
+  DESIRED_OUTCOME:
     q: What reply or action do you want?
     ex: A meeting slot next week to review chapter 2
-  WARM_DIRECT_FORMAL_DIPLOMATIC:
-    q: What tone should the email use?
+  TONE_TARGET:
+    q: What tone should the rewritten email use?
     ex: Formal and respectful, or warm and concise
-  CONSIDERATIONS:
-    q: Any cultural or workplace details to respect?
-    ex: Keep titles; avoid sounding demanding
-    optional: true
   WORD_LIMIT:
     q: What maximum length should the email have?
     ex: Under 180 words
+  WORKPLACE_NOTES:
+    q: Any cultural or workplace details to respect?
+    ex: Keep titles; avoid sounding demanding
+    optional: true
+  MUST_KEEP_FACTS:
+    q: Which facts must stay exactly unchanged?
+    ex: Deadline is 22 Oct; attachment is chapter 2 PDF
+  AVOID_PHRASES:
+    q: Which phrases or clichés should we avoid?
+    ex: No ‘I hope this email finds you well’
+    optional: true
 "005":
-  MEETING_NAME:
+  MEETING_TOPIC:
     q: What is the meeting called or about?
     ex: Semester project review with supervisor
-  DATE:
+  MEETING_WHEN:
     q: When does the meeting take place?
     ex: Tuesday 4pm PKT
   BACKGROUND:
     q: What prior context should the brief assume?
     ex: Last month's delay; revised budget still pending
-  PARTICIPANTS:
+  PARTICIPANTS_AND_ROLE:
     q: Who is attending, and what is your role?
     ex: Supervisor, two teammates; I present the update
   IDEAL_OUTCOME:
@@ -114,7 +138,7 @@
   MINIMUM_OUTCOME:
     q: What minimum outcome would still be useful?
     ex: Approval to proceed with the next milestone
-  SENSITIVE_POINTS:
+  SENSITIVE_TOPICS:
     q: Which topics need careful wording?
     ex: Missed deadline and budget overrun
     optional: true
@@ -122,9 +146,12 @@
     q: Which notes or files will you bring?
     ex: Slides, cost sheet, last meeting notes
     optional: true
-  MINUTES:
+  MEETING_MINUTES:
     q: How many minutes is the meeting scheduled for?
     ex: '30'
+  MUST_DECIDE:
+    q: Which decisions must be made in the meeting?
+    ex: New deadline, owner for budget fix
 "006":
   GOAL:
     q: What goal or problem should the ideas solve?
@@ -132,14 +159,14 @@
   AUDIENCE:
     q: Who is the primary audience for these ideas?
     ex: First-year students on campus
-  BUDGET:
+  TOTAL_BUDGET:
     q: What total budget can you spend?
     ex: Rs. 15,000
-  TIME:
+  TIME_WINDOW:
     q: How much calendar time do you have?
     ex: Three weeks before orientation week
-  TEAM_SIZE:
-    q: How many people can help deliver it?
+  TEAM_CAPACITY:
+    q: How many people can help, and when?
     ex: Four teammates, evenings only
   RESOURCES:
     q: What tools, spaces, or equipment can you use?
@@ -150,47 +177,54 @@
   EXCLUSIONS:
     q: What should the ideas explicitly avoid?
     ex: Paid guest speakers and off-campus venues
-  LOCAL_CONTEXT:
+  LOCAL_CONDITIONS:
     q: What local conditions should ideas respect?
     ex: Lahore heat, prayer times, campus entry rules
     optional: true
-  MEASURE_OF_SUCCESS:
+  SUCCESS_MEASURE:
     q: How will you judge whether an idea worked?
     ex: 50 sign-ups and 70% show-up rate
-  OTHER_FIELD:
+  BORROW_FROM_FIELD:
     q: Which other field should Wave 2 borrow from?
     ex: Retail loyalty programmes or game design
     optional: true
-  DAYS:
+  PILOT_DAYS:
     q: How many days can each pilot last?
     ex: '7'
   PILOT_BUDGET:
     q: What budget is allowed for each pilot?
     ex: Rs. 5,000
 "007":
-  ROLE:
+  TARGET_ROLE:
     q: What job role are you practising for?
     ex: Junior data analyst
-  ORGANISATION_TYPE:
+  ORG_TYPE:
     q: What type of organisation is hiring?
     ex: Karachi fintech startup, ~40 people
   JOB_DESCRIPTION:
     q: Paste the full job description text.
     ex: Paste duties, requirements, and nice-to-haves
-  BACKGROUND:
-    q: What experience and education should we use?
+  MY_BACKGROUND:
+    q: What experience and education can you honestly use?
     ex: BBA; Excel internship; basic SQL course
   WEAK_AREA:
     q: Which interview skill do you want to strengthen?
     ex: Technical questions and follow-ups
-  SELECTION_CRITERIA:
+  HIRING_CRITERIA:
     q: Which hiring criteria matter most to them?
     ex: Problem-solving, Excel/SQL, teamwork
+  INTERVIEW_FORMAT:
+    q: What interview format do you expect?
+    ex: 45-min video call with two interviewers
+  REHEARSAL_TIME:
+    q: How long can this rehearsal session last?
+    ex: 30 minutes today
+    optional: true
 "008":
   CONCEPT:
     q: Which concept do you want explained?
     ex: Hypothesis testing in statistics
-  WHAT_I_ALREADY_KNOW:
+  PRIOR_KNOWLEDGE:
     q: What do you already know about this topic?
     ex: Means and basic probability only
   PURPOSE:
@@ -199,38 +233,55 @@
   FIELD:
     q: Which academic or professional field is this?
     ex: Undergraduate statistics / data science
-  LOCAL_OR_PERSONAL_CONTEXT:
+  PREFERRED_EXAMPLES:
     q: Any local or personal example to prefer?
     ex: Student survey project in Islamabad
     optional: true
   APPLICATION:
     q: What situation should the final practice apply to?
     ex: Explain a model result to classmates
+  CURRENT_CONFUSION:
+    q: What part of the concept confuses you most?
+    ex: p-values versus practical significance
+  DEPTH_TARGET:
+    q: How deep should the expert section go?
+    ex: Exam-ready with one tiny worked example
 "009":
   HABIT:
     q: Which habit do you want to test?
     ex: 15 minutes of evening revision
-  ROUTINE:
+  DAILY_ROUTINE:
     q: What does a normal day currently look like?
     ex: Classes till 4; dinner 8; study after 9
-  PERSONAL_REASON:
+  PERSONAL_WHY:
     q: Why does this habit matter to you?
     ex: Feel prepared before weekly quizzes
   OBSTACLES:
     q: What usually gets in the way?
     ex: Phone scrolling and late dinner
-  TIME_OR_MONEY:
+  TIME_MONEY_LIMIT:
     q: What time or money limit applies?
     ex: Max 15 minutes; no paid apps
     optional: true
   PAST_ATTEMPTS:
     q: What have you already tried for this habit?
     ex: Strict 1-hour plan that lasted four days
+  BEST_CUE:
+    q: What existing moment could trigger the habit?
+    ex: Right after I put dinner dishes away
+  TRACKING_PREFERENCE:
+    q: How do you prefer to track each day?
+    ex: One WhatsApp note to myself
+    optional: true
+  SUPPORT_OPTIONS:
+    q: Who or what can support the experiment?
+    ex: Study buddy check-in twice a week
+    optional: true
 "010":
   RELATIONSHIP:
     q: What is your relationship to the other person?
     ex: Class project partner / junior teammate
-  EVENTS:
+  OBSERVABLE_EVENTS:
     q: What observable events happened?
     ex: Missed Tuesday standup; shared file still empty
   IMPACT:
@@ -239,13 +290,13 @@
   REQUEST_OR_BOUNDARY:
     q: What request or boundary do you need?
     ex: Confirm tasks by Sunday night each week
-  WHATSAPP_EMAIL_SMS_OR_OTHER:
+  CHANNEL:
     q: Which channel will you send this on?
     ex: WhatsApp chat or work email
-  CONCERNS:
+  POWER_OR_SAFETY:
     q: What safety or power concerns exist?
     ex: They are a senior; I need to stay professional
-  TRUSTED_PERSON_OR_FORMAL_CHANNEL:
+  SUPPORT_CHANNEL:
     q: Who or which channel helps if this escalates?
     ex: Course instructor or HR email
     optional: true
@@ -256,6 +307,9 @@
     q: What language or mix should the message use?
     ex: English with a brief Urdu greeting
     optional: true
+  TONE_TARGET:
+    q: What tone should the message keep?
+    ex: Calm, firm, and respectful
 "011":
   CLAIM:
     q: What exact claim are you checking?
@@ -272,9 +326,20 @@
   POPULATION:
     q: Which people or groups does the claim concern?
     ex: First-year public university students
-  DEFINITIONS:
+  KEY_DEFINITIONS:
     q: Which key terms need a clear definition?
     ex: Pass rate means end-of-semester exam pass
+  DECISION_THRESHOLD:
+    q: What evidence would change your decision?
+    ex: Independent study with local university data
+  SOURCES_I_HAVE:
+    q: Which sources do you already have, if any?
+    ex: One newspaper article and a vendor white paper
+    optional: true
+  SEARCH_CONSTRAINTS:
+    q: Any limits on how sources can be found?
+    ex: Prefer free sources; English or Urdu OK
+    optional: true
 "012":
   TOPIC:
     q: What research topic are you mapping?
