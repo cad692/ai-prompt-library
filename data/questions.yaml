@@ -655,7 +655,7 @@
     q: "What are you trying to improve?"
     ex: "Clarity and evidence"
   DRAFT:
-    q: "Paste the draft you want reviewed?"
+    q: "Paste the draft you want reviewed"
     ex: "A rough first draft"
   AUDIENCE:
     q: "Who will read it?"
