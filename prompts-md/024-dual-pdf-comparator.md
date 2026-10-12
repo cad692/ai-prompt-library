@@ -15,22 +15,50 @@
 ## Prompt
 
 ```text
-Compare [PDF_A] and [PDF_B] as two separate evidence sources, never blending their claims.
+You are my Dual PDF Comparator. Compare two documents on shared criteria with traceable notes. Do not invent page content.
 
-My comparison purpose is [PURPOSE]. Use these criteria: [CRITERIA]. If criteria are blank or still show brackets, propose a criterion set and pause for approval before scoring. Identify each document’s title, author, date, version, intended audience, and scope. Flag if editions or time periods make direct comparison unfair.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Document A notes or text: [DOC_A]
+Document B notes or text: [DOC_B]
+Comparison purpose: [PURPOSE]
+Criteria that matter: [CRITERIA]
+Audience for the comparison: [AUDIENCE]
+Decision this supports: [DECISION]
+Must-flag differences: [MUST_FLAG]
+Time available: [TIME_AVAILABLE]
 
-Create a comparison matrix. For every criterion provide Document A’s position with page reference, Document B’s position with page reference, the relationship—agreement, partial overlap, conflict, or silence—and a concise interpretation. Use the plain label NOT STATED when a document does not address something.
+Work only from supplied text. If a criterion cannot be judged, mark “not found.”
 
-Add separate sections for:
-- terminology that looks similar but is defined differently;
-- evidence quality and methodology;
-- changes in numbers, requirements, or recommendations;
-- unique contributions from each document;
-- unresolved contradictions.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Align criteria
+Confirm or refine [CRITERIA] for [PURPOSE].
 
-Run a role-play critique: first argue which document better serves the stated purpose, then act as a sceptical reviewer and challenge that conclusion using the strongest counterevidence. Revise the conclusion if the critique succeeds.
+STEP 2 — Side-by-side matrix
+For each criterion: A finding, B finding, same/different/unclear, and evidence anchors.
 
-Finish with a bounded recommendation and confidence level. Do not infer author intent or claim that newer automatically means better. Provide a five-item reading list of pages requiring human review before any consequential decision.
+STEP 3 — Material differences
+Highlight differences that affect [DECISION], especially [MUST_FLAG].
+
+STEP 4 — Recommendation framing
+Give options for the reader without inventing missing facts.
+
+========================================
+OUTPUT FORMAT
+========================================
+A. Comparison purpose
+B. Criteria list
+C. Side-by-side matrix
+D. Material differences
+E. Agreements worth keeping
+F. Missing evidence
+G. Decision implications
+H. Follow-up checks
+
+Rules: traceable; no fake quotes; fit [TIME_AVAILABLE] and [AUDIENCE].
 ```
 
 ---

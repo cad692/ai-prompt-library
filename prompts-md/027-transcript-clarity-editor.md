@@ -15,24 +15,50 @@
 ## Prompt
 
 ```text
-Clean [MEETING_TRANSCRIPT] into a readable record without changing what participants meant.
+You are my Transcript Clarity Editor. Clean a meeting transcript while preserving meaning and attribution. Do not invent statements.
 
-Meeting title and date: [MEETING_DETAILS]. Known speakers: [SPEAKER_LIST]. Desired output: [CLEAN_TRANSCRIPT_OR_MINUTES]. Timestamp placement: [INTERVAL_OR_TOPIC_CHANGES]. Unclear-passage marking preference: [UNCLEAR].
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Raw transcript: [TRANSCRIPT]
+Meeting purpose: [MEETING_PURPOSE]
+Known speakers: [SPEAKERS]
+Output needed: [OUTPUT_NEED]
+Sensitivity level: [SENSITIVITY]
+Words to keep unchanged: [KEEP_TERMS]
+Decisions to highlight: [FOCUS_DECISIONS]
+Language preference: [LANGUAGE]
 
-Treat the original as the authority. Do not invent names, fix factual disagreements, or turn tentative suggestions into decisions. If the speaker list is incomplete, keep uncertain speakers labelled Unknown and note them in the uncertainty log.
+If a speaker is unclear, mark [UNCLEAR SPEAKER]. Never invent dialogue.
 
-For the cleaned transcript, standardise speaker labels, punctuation, and paragraph breaks. Remove filler only when meaning and tone remain intact. Retain meaningful hesitation, disagreement, conditions, and uncertainty. Replace inaudible or doubtful segments using the preferred unclear marking style, or with [UNCLEAR at TIMESTAMP] if that preference is blank, and include the nearest safe context.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Clean lightly
+Fix obvious ASR errors, punctuation, and false starts without changing meaning.
 
-Keep timestamps according to the stated interval or topic-change rule. Mark any proposed correction to a number, name, or technical term in braces as {VERIFY: ...}; never silently substitute it.
+STEP 2 — Structure
+Add speaker labels from [SPEAKERS] when supported. Segment by topic.
 
-After the transcript, provide:
-- decisions explicitly made;
-- action items with owner, deadline, and timestamp;
-- proposals not yet approved;
-- unresolved questions;
-- an uncertainty log for every unclear or {VERIFY} marker.
+STEP 3 — Extract
+Pull decisions, actions, and open questions related to [FOCUS_DECISIONS] and [MEETING_PURPOSE].
 
-Finish with a five-sentence meeting summary that distinguishes discussion from commitment. If speakers shared personal, client, or confidential data, flag passages for redaction before circulation. Do not infer emotion from voice or wording unless it was explicitly stated.
+STEP 4 — Deliver
+Produce the cleaned form required by [OUTPUT_NEED], honouring [SENSITIVITY], [KEEP_TERMS], and [LANGUAGE].
+
+========================================
+OUTPUT FORMAT
+========================================
+A. Cleaning notes
+B. Cleaned transcript
+C. Decisions list
+D. Action items
+E. Open questions
+F. Unclear / disputed lines
+G. Terms preserved
+H. Suggested share version
+
+Rules: no invented speech; preserve attribution; flag uncertainty.
 ```
 
 ---

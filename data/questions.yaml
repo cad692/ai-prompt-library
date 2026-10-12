@@ -603,163 +603,270 @@
     ex: Flashcard questions + one summary sheet
     optional: true
 "022":
-  UPLOADED_AGREEMENT:
-    q: Paste or name the agreement you are reviewing.
-    ex: Freelance web-development service agreement PDF
-  PARTY_ROLE:
-    q: Which party are you in this agreement?
-    ex: Service provider / freelancer
-  PURPOSE:
-    q: What work or arrangement does the agreement cover?
-    ex: Website build and three months of maintenance
+  AGREEMENT_TYPE:
+    q: What type of agreement are you reviewing?
+    ex: Freelance service contract / MoU
+  MY_ROLE:
+    q: What is your role in this agreement?
+    ex: Service provider being paid monthly
+  COUNTERPARTY:
+    q: Who is the other party, in general terms?
+    ex: Local startup client
   JURISDICTION:
-    q: Which country or region’s law likely applies?
-    ex: Pakistan / Punjab
-  PRIORITIES:
-    q: Which risks or outcomes matter most to you?
-    ex: Payment timing, IP ownership, and exit terms
+    q: Which city or jurisdiction applies, if known?
+    ex: Karachi / Pakistan law unknown
+    optional: true
+  AGREEMENT_TEXT:
+    q: Paste the clauses or agreement text to review.
+    ex: Paste payment, IP, and termination sections
+  PRIORITY_OUTCOMES:
+    q: Which outcomes matter most to you?
+    ex: Get paid on time; keep portfolio rights
+  DEAL_BREAKERS:
+    q: What terms would make you walk away?
+    ex: Unlimited liability; unpaid revisions forever
+  TIMELINE:
+    q: How soon must you respond or sign?
+    ex: Client wants signature by Friday
+  LEGAL_BUDGET:
+    q: What budget do you have for legal review?
+    ex: Rs. 10,000 one-time consult
+    optional: true
 "023":
-  REPORT_TITLE_OR_UPLOAD:
-    q: What report are you summarising?
-    ex: City transport evaluation, final PDF
+  SOURCE_REPORT:
+    q: Paste the report or long text to summarise.
+    ex: Paste the PDF extract or memo
   AUDIENCE:
-    q: Who will read this executive summary?
-    ex: Operations directors and the CFO
+    q: Who is the decision-making audience?
+    ex: Department head with 5 minutes
   DECISION:
-    q: What decision must this summary support?
-    ex: Whether to fund phase-two bus corridors
-  READING_TIME:
-    q: How many minutes does the reader have?
-    ex: '10'
-  PRIORITIES:
-    q: What issues should the summary emphasise?
-    ex: Cost, delivery risk, and equity impacts
-  ORGANISATION_OR_CONTEXT:
-    q: What organisation or setting is deciding?
-    ex: Municipal transport authority, FY2026 budget
+    q: What decision must they make?
+    ex: Approve, delay, or redesign the pilot
+  READ_TIME:
+    q: How much reading time do they have?
+    ex: 3 minutes
+  PRIORITY_SIGNALS:
+    q: Which signals matter most in the summary?
+    ex: Cost, risk, and timeline slip
+  CONSTRAINTS:
+    q: What constraints shape their decision?
+    ex: No new hiring this quarter
+  CAN_DEFER:
+    q: What detail can wait if time is short?
+    ex: Appendix methodology notes
+    optional: true
+  TONE:
+    q: What tone should the summary use?
+    ex: Direct and neutral
 "024":
-  PDF_A:
-    q: What is the first document to compare?
-    ex: Policy draft A, March version
-  PDF_B:
-    q: What is the second document to compare?
-    ex: Policy draft B, June revision
+  DOC_A:
+    q: Paste notes or text from document A.
+    ex: Policy draft v1 key sections
+  DOC_B:
+    q: Paste notes or text from document B.
+    ex: Policy draft v2 key sections
   PURPOSE:
     q: Why are you comparing these two documents?
-    ex: Choose which draft to send for legal review
+    ex: Find material changes before approval
   CRITERIA:
-    q: Which criteria should drive the comparison?
-    ex: Clarity, fairness, cost, and enforceability
+    q: Which criteria should the comparison use?
+    ex: Scope, obligations, deadlines, penalties
+  AUDIENCE:
+    q: Who will read the comparison?
+    ex: Project sponsor
+  DECISION:
+    q: What decision does this comparison support?
+    ex: Whether v2 is safe to sign
+  MUST_FLAG:
+    q: Which differences must not be missed?
+    ex: Payment terms and liability caps
+  TIME_AVAILABLE:
+    q: How much time do you have for this?
+    ex: 40 minutes
     optional: true
 "025":
-  DOCUMENT_OR_PASTED_TEXT:
-    q: Paste the minutes, email, or document text.
-    ex: Meeting notes plus follow-up email thread
-  PROJECT:
-    q: What project should the action register serve?
-    ex: Campus orientation week planning
-  DATE:
-    q: What calendar date should count as today?
-    ex: 12 October 2026
-  TEAM_ROLES_OR_NAMES:
-    q: Which names or roles should label owners?
-    ex: Ayesha (design), Bilal (finance), Sara (outreach)
+  SOURCE_DOC:
+    q: Paste the document or notes to mine for actions.
+    ex: Meeting notes or project email thread
+  PROJECT_NAME:
+    q: What project or meeting is this for?
+    ex: Website launch weekly sync
+  TIMEZONE:
+    q: Which timezone should deadlines use?
+    ex: PKT
+  POSSIBLE_OWNERS:
+    q: Who can own tasks on this work?
+    ex: Ayesha, Bilal, vendor team
+  DOC_DATE:
+    q: What is the date of this document?
+    ex: 10 October 2026
+  DONE_LOOKS_LIKE:
+    q: What does done look like for key tasks?
+    ex: Link live and QA checklist signed
+  PRIORITY_LENS:
+    q: How should priorities be judged?
+    ex: Launch blockers first
+  ALREADY_DONE:
+    q: What is already completed and should be skipped?
+    ex: Logo finalised yesterday
+    optional: true
 "026":
-  CHAPTER_TITLE:
-    q: Which thesis chapter are you reviewing?
-    ex: Chapter 4 — Findings and discussion
-  PROGRAMME:
-    q: What degree programme and field is this?
-    ex: MPhil Education
-  QUESTION:
+  CHAPTER_MATERIAL:
+    q: Paste the chapter text or your reading notes.
+    ex: Paste section summaries and key quotes
+  THESIS_TOPIC:
+    q: What is your thesis topic?
+    ex: Teacher coaching and student outcomes
+  CHAPTER_GOAL:
+    q: What is this chapter supposed to achieve?
+    ex: Literature review of coaching models
+  RESEARCH_QUESTION:
     q: What is your research question?
-    ex: How do first-year students adapt to online tutorials?
-  PURPOSE:
-    q: What is this chapter supposed to accomplish?
-    ex: Present findings and link them to the literature
-  GUIDANCE:
-    q: What faculty rubric or thesis rules apply?
-    ex: Faculty handbook section on evidence and citation
+    ex: How do coaching cycles affect Grade 8 maths?
+  EXTRACT_FOCUS:
+    q: What must you extract from this chapter?
+    ex: Methods used and Pakistan-relevant findings
+  CONFUSION_POINTS:
+    q: What confuses you in this chapter?
+    ex: How they define coaching fidelity
     optional: true
+  CITATION_STYLE:
+    q: Which citation style do you use?
+    ex: APA 7
+  SESSION_TIME:
+    q: How long is this reading session?
+    ex: 60 minutes
 "027":
-  MEETING_TRANSCRIPT:
-    q: Paste the raw meeting transcript text.
-    ex: Full auto-transcript, including timestamps if present
-  MEETING_DETAILS:
-    q: What is the meeting title and date?
-    ex: Sprint planning — 5 May 2026, 3pm
-  SPEAKER_LIST:
-    q: Which speakers should labels use, if known?
-    ex: Amina, Usman, Raza
+  TRANSCRIPT:
+    q: Paste the raw meeting transcript.
+    ex: Paste ASR output with speakers if any
+  MEETING_PURPOSE:
+    q: What was the meeting for?
+    ex: Sprint planning and blocker review
+  SPEAKERS:
+    q: Who were the known speakers?
+    ex: Sara (PM), Ali (dev), client Noor
+  OUTPUT_NEED:
+    q: What output do you need from the transcript?
+    ex: Clean transcript plus action list
+  SENSITIVITY:
+    q: How sensitive is this content?
+    ex: Internal only; no public sharing
+  KEEP_TERMS:
+    q: Which terms must stay unchanged?
+    ex: Product names and OKR labels
     optional: true
-  CLEAN_TRANSCRIPT_OR_MINUTES:
-    q: Do you need a cleaned transcript or minutes?
-    ex: Cleaned transcript plus action minutes
-  INTERVAL_OR_TOPIC_CHANGES:
-    q: When should timestamps appear in the output?
-    ex: At each topic change, or every 5 minutes
-  UNCLEAR:
-    q: How should unclear speech be marked?
-    ex: '[UNCLEAR at 00:12:04]'
-    optional: true
+  FOCUS_DECISIONS:
+    q: Which decisions should be highlighted?
+    ex: Scope cut and new release date
+  LANGUAGE:
+    q: What language should the cleaned output use?
+    ex: Clear English; keep Urdu quotes
 "028":
-  POLICY_DOCUMENT:
-    q: Which policy document should be simplified?
-    ex: Hostel attendance and leave policy PDF
+  POLICY_TEXT:
+    q: Paste the policy text to translate.
+    ex: Paste the attendance or refund policy
   AUDIENCE:
-    q: Who must understand the plain-language guide?
-    ex: First-year students and resident tutors
+    q: Who must understand and follow this policy?
+    ex: First-year students and parents
+  SETTING:
+    q: What organisation or setting is this for?
+    ex: Public university department
+  COMMON_CONFUSION:
+    q: What do people usually misunderstand?
+    ex: They think warnings are optional
+  REQUIRED_ACTIONS:
+    q: What actions must people actually take?
+    ex: Submit leave form within 48 hours
   READING_LEVEL:
-    q: What reading level should the guide target?
-    ex: Secondary-school / clear everyday English
-  ENGLISH_URDU_OR_BILINGUAL:
-    q: Should the guide be English, Urdu, or bilingual?
-    ex: Bilingual English with Urdu key terms
-  CONTEXT:
-    q: Which organisation or jurisdiction owns this policy?
-    ex: Public university hostel, Lahore
+    q: What reading level should the rewrite use?
+    ex: Plain language, short sentences
+  KEEP_PHRASES:
+    q: Which legal phrases must stay exact?
+    ex: Keep ‘shall’ obligations unchanged
     optional: true
+  EXAMPLE_CONTEXT:
+    q: What example context should illustrations use?
+    ex: Student missing a midterm for travel
 "029":
-  CITATION_STYLE_AND_EDITION:
-    q: Which citation style and edition is required?
-    ex: APA 7th edition
-  PASTE_REFERENCES:
+  RAW_REFERENCES:
     q: Paste the messy reference list to clean.
-    ex: Full bibliography block, one entry per line if possible
-  ALPHABETICAL_NUMERICAL_OR_CUSTOM:
-    q: How should the cleaned list be ordered?
-    ex: Alphabetical by author surname
-  LANGUAGE_RULES:
-    q: What language or title-script rules apply?
-    ex: Keep original titles; translate notes in English
+    ex: Paste Word/PDF bibliography dump
+  CITATION_STYLE:
+    q: Which citation style is the target?
+    ex: APA 7 / MLA / Chicago
+  OUTPUT_FORM:
+    q: How should the cleaned list be delivered?
+    ex: Numbered list ready for Word
+  ALLOW_BLANK:
+    q: Which missing fields may stay blank?
+    ex: Page numbers if truly unavailable
+    optional: true
+  RECHECK_AVAILABLE:
+    q: Which sources can you re-check online?
+    ex: All DOIs and university repository links
+  PRIORITY:
+    q: What should be cleaned first?
+    ex: In-text critical sources first
+  MUST_FIX:
+    q: What broken strings must be fixed?
+    ex: Mojibake characters and doubled spaces
     optional: true
 "030":
-  UPLOADED_NOTES:
-    q: Paste or name the notes that answers must use.
-    ex: Week 3–5 lecture notes PDF / pasted text
-  COURSE_AND_TOPIC:
-    q: What course and topic is this revision for?
-    ex: Sociology of Education — tracking and inequality
-  EXAM_FORMAT:
-    q: What exam or assessment format should we match?
-    ex: 90-minute short-answer paper
+  NOTES:
+    q: Paste the learning notes to ground Q&A on.
+    ex: Paste lecture notes or summary sheet
+  COURSE_TOPIC:
+    q: What course or topic are these notes for?
+    ex: Intro microeconomics — elasticity
   LEVEL:
-    q: What academic level should questions match?
-    ex: Undergraduate second year
+    q: What is your current study level?
+    ex: First-year undergraduate
+  QUESTION_TYPES:
+    q: Which question types do you want?
+    ex: Definition, calculate, explain-why
+  QUESTION_COUNT:
+    q: How many questions should be created?
+    ex: '10'
   WEAK_AREAS:
-    q: Which topics are hardest for you right now?
-    ex: Theory application and comparing case studies
-  MARK_SCHEME:
-    q: What marking guide or mark weights apply?
-    ex: 10 marks each; 2 for definition, 8 for explanation
+    q: Which weak areas should get extra questions?
+    ex: Cross-price elasticity
     optional: true
+  ANSWER_STYLE:
+    q: How should answers be written?
+    ex: Short model answers with note anchors
+  PRACTICE_TIME:
+    q: How much time do you have to practise?
+    ex: 25 minutes
 "031":
   ROUGH_TASK:
-    q: What rough task should the RTCFCE prompt cover?
-    ex: Summarise a policy PDF for student leaders
-  PLACEHOLDERS:
-    q: Which reusable placeholder names should appear?
-    ex: TASK, AUDIENCE, CONTEXT, WORD_LIMIT
+    q: What rough task should become a full prompt?
+    ex: Make a study plan for my finals
+  AI_TOOL:
+    q: Which AI tool will run the prompt?
+    ex: ChatGPT / Claude
+  END_USER:
+    q: Who will use the AI’s output?
+    ex: Me — third-year CS student
+  SUCCESS_LOOKS_LIKE:
+    q: What does a successful output look like?
+    ex: 7-day plan with daily goals and buffers
+  HARD_CONSTRAINTS:
+    q: Which constraints must the prompt enforce?
+    ex: Max 3 hours/day; include Fridays off
+  TONE:
+    q: What tone or voice should outputs use?
+    ex: Supportive and concrete
+  EXAMPLE_SEEDS:
+    q: What example inputs or outputs can you provide?
+    ex: One sample day plan I liked
+    optional: true
+  RISKS_TO_AVOID:
+    q: What failure modes should the prompt block?
+    ex: No fake exam dates; no overload
+  LENGTH_TARGET:
+    q: What length should the AI output aim for?
+    ex: Under 500 words
     optional: true
 "032":
   WEAK_PROMPT:

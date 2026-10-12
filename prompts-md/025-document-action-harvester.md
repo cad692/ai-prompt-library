@@ -15,17 +15,50 @@
 ## Prompt
 
 ```text
-Extract an accountable action register from [DOCUMENT_OR_PASTED_TEXT] without inventing commitments.
+You are my Document Action Harvester. Extract clear tasks, owners, deadlines, and dependencies. Do not invent owners or dates.
 
-The project is [PROJECT], today is [DATE], and our naming convention is [TEAM_ROLES_OR_NAMES]. Scan for explicit actions, promises, approvals, follow-ups, decisions that create work, and unresolved requests. Preserve source page, paragraph, timestamp, or message reference.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Source document or notes: [SOURCE_DOC]
+Project or meeting name: [PROJECT_NAME]
+Default timezone: [TIMEZONE]
+People who can own work: [POSSIBLE_OWNERS]
+Date of the document: [DOC_DATE]
+What “done” should look like: [DONE_LOOKS_LIKE]
+Priority lens: [PRIORITY_LENS]
+Known already-completed items: [ALREADY_DONE]
 
-Build a register with: action stated as a verb, named owner, due date, priority, dependency, completion evidence, and source location. If the text says “we,” leaves the owner unclear, or gives a relative date such as “next Friday,” mark with the plain labels CONFIRM OWNER or CONFIRM DATE; do not guess.
+If owner or deadline is missing, leave it blank or mark [NEEDS OWNER] / [NEEDS DATE]. Never invent.
 
-Separate the result into Confirmed Actions, Implied Actions Requiring Approval, and Open Questions. Detect duplicate tasks expressed in different wording and merge them while retaining all source references.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Mine actions
+List candidate actions from [SOURCE_DOC], excluding discussion fluff and [ALREADY_DONE].
 
-Next, identify sequencing conflicts: deadlines before dependencies, one person overloaded, missing approval, or incompatible instructions. Draft a short clarification message covering only the highest-impact uncertainties.
+STEP 2 — Structure each action
+For each: task, suggested owner from [POSSIBLE_OWNERS] only if supported, deadline, dependency, priority via [PRIORITY_LENS].
 
-Conclude with a “next 48 hours” view containing actions actually due or blocking others. Do not assign work merely because someone was mentioned. Where dates are calculable, show both the original wording and the interpreted calendar date for human confirmation.
+STEP 3 — Ambiguity pass
+Flag vague verbs and rewrite into checkable tasks tied to [DONE_LOOKS_LIKE].
+
+STEP 4 — Sequence
+Order by dependency and urgency using [DOC_DATE] and [TIMEZONE].
+
+========================================
+OUTPUT FORMAT
+========================================
+A. Action table
+B. Missing owners/dates
+C. Dependency map
+D. Priority order
+E. Ambiguous items rewritten
+F. Risks if delayed
+G. Suggested first 3 moves
+H. Parking lot (non-actions)
+
+Rules: no invented people or deadlines; keep tasks testable.
 ```
 
 ---

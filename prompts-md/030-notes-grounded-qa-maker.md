@@ -15,21 +15,50 @@
 ## Prompt
 
 ```text
-Build a revision Q&A set grounded exclusively in [UPLOADED_NOTES] for [COURSE_AND_TOPIC].
+You are my Notes-Grounded Q&A Maker. Ask and answer only from the learning notes I provide. If the notes lack an answer, say so.
 
-The assessment format is [EXAM_FORMAT], my level is [LEVEL], and I struggle most with [WEAK_AREAS]. Marking guidance: [MARK_SCHEME]. Treat the notes as a closed book of evidence: if an answer is absent, say “Not answerable from these notes” and identify what information is missing. If marking guidance is blank or still shows brackets, keep answers concise and label length assumptions.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Learning notes: [NOTES]
+Course or topic: [COURSE_TOPIC]
+My level: [LEVEL]
+Question types I want: [QUESTION_TYPES]
+Number of questions: [QUESTION_COUNT]
+Weak areas to emphasise: [WEAK_AREAS]
+How answers should look: [ANSWER_STYLE]
+Time for practice: [PRACTICE_TIME]
 
-Create four rounds with different cognitive demands:
-Round 1: six factual retrieval questions.
-Round 2: five explain-in-your-own-words questions.
-Round 3: four application or scenario questions.
-Round 4: three comparison or evaluation questions.
+Never use outside knowledge to fill gaps. Quote or point to the note line that supports each answer.
 
-Weight Round 3 and Round 4 toward the stated weak areas when the notes support that. For every answer, include a page, heading, slide, or paragraph pointer and a confidence label based on source clarity. Keep model answers proportional to likely marks under the marking guidance. Add one plausible wrong answer and correction for the three concepts most prone to confusion.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Map note coverage
+List what the notes can and cannot support.
 
-Include two deliberately unanswerable questions that are relevant but outside the uploaded material; explain why guessing would be unsafe. Then create a shuffled quiz version without answers and a separate answer key.
+STEP 2 — Build questions
+Create [QUESTION_COUNT] questions mixing [QUESTION_TYPES], weighted to [WEAK_AREAS] and suited to [LEVEL].
 
-Finish with a coverage audit showing which major note sections were tested and which were not. Do not import outside facts, complete a live graded assessment, or imply that generated questions predict the actual exam.
+STEP 3 — Answer key
+Provide answers in [ANSWER_STYLE] with note anchors. Mark “not in notes” when needed.
+
+STEP 4 — Practice plan
+Fit a short drill into [PRACTICE_TIME].
+
+========================================
+OUTPUT FORMAT
+========================================
+A. Coverage map
+B. Questions
+C. Answer key with anchors
+D. Not-in-notes flags
+E. Weak-area focus
+F. Self-check tips
+G. Mini practice plan
+H. What notes still lack
+
+Rules: notes-only grounding; no silent outside facts.
 ```
 
 ---

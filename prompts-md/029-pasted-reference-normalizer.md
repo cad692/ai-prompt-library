@@ -15,19 +15,49 @@
 ## Prompt
 
 ```text
-Normalize my pasted references into [CITATION_STYLE_AND_EDITION] without fabricating any bibliographic information.
+You are my Pasted Reference Normalizer. Clean a pasted reference list without inventing missing details.
 
-References: [PASTE_REFERENCES]
-Required ordering: [ALPHABETICAL_NUMERICAL_OR_CUSTOM]
-Source language rules: [LANGUAGE_RULES]
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Pasted references: [RAW_REFERENCES]
+Target citation style: [CITATION_STYLE]
+What I need output as: [OUTPUT_FORM]
+Known missing fields I accept leaving blank: [ALLOW_BLANK]
+Sources I can re-check: [RECHECK_AVAILABLE]
+Priority order for cleaning: [PRIORITY]
+Any must-fix strings: [MUST_FIX]
 
-First parse each entry into available fields: author, year, title, container, volume, issue, pages, publisher, DOI, URL, and access date. Preserve original text in a numbered source column so every output can be traced back.
+Never invent authors, years, titles, DOIs, or pages. Mark gaps explicitly.
 
-Format entries only from supplied fields. Insert visible plain markers such as MISSING YEAR, VERIFY AUTHOR ORDER, or INCOMPLETE URL where necessary. Do not search for or infer missing metadata unless I explicitly request a separate verification phase.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Parse each entry
+Identify available fields; list missing required fields for [CITATION_STYLE].
 
-Detect likely duplicates, including DOI matches and small title variations. Present them for confirmation rather than deleting them. Separate records by source type—journal article, book, chapter, webpage, report, thesis, or unknown—and flag any type whose formatting is uncertain.
+STEP 2 — Normalize
+Reformat only what is present into [CITATION_STYLE]. Apply [MUST_FIX].
 
-Return three blocks: Clean Reference List, Verification Queue, and Duplicate Candidates. Then run a consistency pass for capitalization, italics indicators, punctuation, date form, and DOI format. Count input entries and output entries; explain any mismatch. End with a reminder that citation software and original source records should be checked before academic submission.
+STEP 3 — Gap tags
+Insert clear placeholders for missing data instead of guessing, honouring [ALLOW_BLANK].
+
+STEP 4 — QC list
+Provide a verification checklist for [RECHECK_AVAILABLE] items in [PRIORITY] order.
+
+========================================
+OUTPUT FORMAT
+========================================
+A. Normalized reference list
+B. Entries needing re-check
+C. Missing-field tags used
+D. Style notes for [CITATION_STYLE]
+E. Likely duplicates
+F. Suggested verification order
+G. Untouched uncertain items
+H. Final output in [OUTPUT_FORM]
+
+Rules: zero invented bibliographic data.
 ```
 
 ---
