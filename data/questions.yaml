@@ -250,13 +250,13 @@
     q: "What decision or project is this for?"
     ex: "Choosing a product to buy"
   LOCATION:
-    q: "Where is this happening?"
+    q: "Where is this claim or situation happening?"
     ex: "Islamabad or Karachi"
   DATE_RANGE:
     q: "What time period should we cover?"
     ex: "Last six months"
   POPULATION:
-    q: "Who is being studied?"
+    q: "Who is the population being studied?"
     ex: "College students in Pakistan"
   DEFINITIONS:
     q: "What terms need clear meaning?"
@@ -269,7 +269,7 @@
     q: "What field is this in?"
     ex: "Education and technology"
   GEOGRAPHY:
-    q: "What region matters?"
+    q: "What geographic region matters?"
     ex: "South Asia"
   YEARS:
     q: "What years should we include?"
@@ -288,7 +288,7 @@
     ex: "Ten journal articles and two reports"
 "013":
   PASTED_TEXT_OR_DOCUMENT:
-    q: "What text or document are you checking?"
+    q: "Paste the text or document you want to check"
     ex: "A pasted paragraph from a report"
   AUDIENCE:
     q: "Who is this for?"
@@ -342,10 +342,10 @@
     ex: "Assignments improve but attendance falls"
 "016":
   NEWS_URL_OR_TEXT:
-    q: "Paste the news item or link?"
+    q: "Paste the news item or link"
     ex: "A headline and article link"
   STUDY_URL_OR_FILE:
-    q: "Where is the study or file?"
+    q: "Where is the study or file located?"
     ex: "A downloadable PDF or link"
 "017":
   TOPIC:
@@ -355,32 +355,32 @@
     q: "What level or programme is this?"
     ex: "Undergraduate business studies"
   TIME_AVAILABLE:
-    q: "How much time do you have?"
+    q: "How much time do you have for this task?"
     ex: "One hour"
   WORD_LIMIT:
-    q: "How long should it be?"
+    q: "What is the word limit?"
     ex: "300 words"
   ACCESS:
-    q: "What access do you have?"
+    q: "What access to sources do you have?"
     ex: "Campus library and online articles"
 "018":
   RESEARCH_TOPIC:
     q: "What topic are you reviewing?"
     ex: "Remote work stress"
   UPLOADED_SOURCES_OR_PASTED_TEXT:
-    q: "What sources or text do you have?"
+    q: "What sources or text do you have available?"
     ex: "Uploaded notes and paper excerpts"
   APA_MLA_CHICAGO_OR_OTHER:
     q: "Which citation style do you need?"
     ex: "APA 7"
   WORDS:
-    q: "How long should the summary be?"
+    q: "How long should the summary be in words?"
     ex: "800 words"
   QUESTION:
     q: "What question are you answering?"
     ex: "What causes the trend?"
   DIRECTION:
-    q: "What direction should the review take?"
+    q: "What direction should the review take (e.g., supportive, critical, balanced)?"
     ex: "Supportive but critical"
   VERIFY:
     q: "What needs checking before you use it?"
@@ -396,7 +396,7 @@
     q: "What years should we include?"
     ex: "2020 to 2024"
   GEOGRAPHY:
-    q: "What region matters?"
+    q: "What geographic region matters?"
     ex: "Punjab and Sindh"
   POPULATION:
     q: "Who is the focus?"
@@ -424,7 +424,7 @@
     q: "Why does it matter?"
     ex: "It affects public trust"
   FILE_OR_LINK:
-    q: "Please share the link or file?"
+    q: "Share the link or file"
     ex: "A screenshot or article link"
 "021":
   PDF_TITLE:
