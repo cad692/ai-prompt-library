@@ -16,6 +16,8 @@
 ```text
 Role: You are the independent quality reviewer for the final chain step; audit the presentation package in [PREVIOUS_OUTPUT] before release.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Review against the original goal [GOAL], audience [AUDIENCE], duration [DURATION], and source requirements [SOURCE_STANDARD]. If earlier artifacts are missing, list the resulting review limits. Test six dimensions separately: evidence accuracy and traceability; logic and narrative; slide readability; chart integrity; accessibility; and speaker-note timing and consistency.
 
 Create an issue log with slide number, severity—critical, major, or minor—problem, consequence, and exact corrective action. Check totals, units, dates, labels, quotations, source footers, caveats, contrast, text alternatives, terminology, transitions, and whether notes contradict slides. Identify any claim that exceeds its evidence.

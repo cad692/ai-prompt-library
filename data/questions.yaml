@@ -2247,75 +2247,76 @@
     ex: Include the full text; replace private names if needed
 "111":
   PREVIOUS_OUTPUT:
-    q: "What earlier output or notes should be synthesized?"
-    ex: "The research brief and evidence cards"
+    q: Paste the previous output.?
+    ex: Include the full text; replace private names if needed
   AUDIENCE:
-    q: "Who is the synthesis for?"
-    ex: "A project lead"
+    q: Who will see or use this output?
+    ex: Students, managers, or public readers
   WORD_LIMIT:
-    q: "What length limit should the output stay within?"
-    ex: "500 words"
+    q: What length limit should the output stay within?
+    ex: 500 words
 "112":
   PREVIOUS_OUTPUT:
-    q: "What previous material should the outline build from?"
-    ex: "The synthesis and key findings"
+    q: Paste the previous output.?
+    ex: Include the full text; replace private names if needed
   AUDIENCE:
-    q: "Who is the presentation for?"
-    ex: "A stakeholder meeting"
+    q: Who will see or use this output?
+    ex: A stakeholder meeting
   OUTCOME:
-    q: "What is the presentation trying to achieve?"
-    ex: "Inform and get approval"
+    q: What is the presentation trying to achieve?
+    ex: Inform and get approval
   DURATION:
-    q: "How long is the presentation?"
-    ex: "Ten minutes"
+    q: What is the total time limit?
+    ex: 8 minutes speaking / 30-minute meeting
   SETTING:
-    q: "Where will it be delivered?"
-    ex: "In a meeting room or online"
+    q: What local setting or context should examples use?
+    ex: In a meeting room or online
   SLIDE_COUNT:
-    q: "How many slides should the outline include?"
-    ex: "Five slides"
+    q: How many slides should the outline include?
+    ex: Five slides
 "113":
   PREVIOUS_OUTPUT:
-    q: "What research or outline should be turned into a slide draft?"
-    ex: "The presentation outline"
+    q: Paste the previous output.?
+    ex: Include the full text; replace private names if needed
   AUDIENCE:
-    q: "Who is the audience for the slide draft?"
-    ex: "Senior stakeholders"
+    q: Who is the audience for the slide draft?
+    ex: Senior stakeholders
   BRAND_GUIDANCE:
-    q: "What brand or visual guidance should we respect?"
-    ex: "A formal, minimal style"
+    q: What brand or visual guidance should we respect?
+    ex: A formal, minimal style
 "114":
   PREVIOUS_OUTPUT:
-    q: "What earlier material should the speaker notes build from?"
-    ex: "The slide draft"
+    q: Paste the previous output.?
+    ex: Include the full text; replace private names if needed
   AUDIENCE_LEVEL:
-    q: "What level of audience familiarity should we assume?"
-    ex: "Mostly familiar with the topic"
+    q: What level of audience familiarity should we assume?
+    ex: Mostly familiar with the topic
   DURATION:
-    q: "How long should the note set run?"
-    ex: "Five minutes"
+    q: How long should the note set run?
+    ex: Five minutes
   SETTING:
-    q: "Where will the notes be used?"
-    ex: "At a live presentation or briefing"
+    q: What local setting or context should examples use?
+    ex: At a live presentation or briefing
   VERIFY:
-    q: "What point needs verification?"
-    ex: "Any fact or statistic that must be checked"
+    q: Which details should we prioritise verifying?
+    ex: Dates, numbers, and quoted claims
+    optional: true
   VOICE:
-    q: "What delivery voice should the notes support?"
-    ex: "Confident and calm"
+    q: What delivery voice should the notes support?
+    ex: Confident and calm
 "115":
   PREVIOUS_OUTPUT:
-    q: "What earlier draft should be reviewed for quality?"
-    ex: "The final slide deck and notes"
+    q: Paste the previous output.?
+    ex: Include the full text; replace private names if needed
   AUDIENCE:
-    q: "Who will review the final output?"
-    ex: "A client or committee"
+    q: Who will see or use this output?
+    ex: A client or committee
   GOAL:
-    q: "What quality goal should the review focus on?"
-    ex: "Clarity and credibility"
+    q: What quality goal should the review focus on?
+    ex: Clarity and credibility
   DURATION:
-    q: "How much time is available for the review?"
-    ex: "Ten minutes"
+    q: How much time is available for the review?
+    ex: Ten minutes
   SOURCE_STANDARD:
-    q: "What quality standard should source material meet?"
-    ex: "Verified and traceable evidence"
+    q: What quality standard should source material meet?
+    ex: Verified and traceable evidence

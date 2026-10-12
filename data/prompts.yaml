@@ -6259,8 +6259,7 @@ prompts:
   usage: Turn verified evidence notes into findings, tensions, and calibrated implications.
   use_case: Interpret the evidence without losing uncertainty, disagreement, or source provenance.
   preview: 'Role: You are the synthesis editor at step three; transform [PREVIOUS_OUTPUT] from evidence
-    notes into defensible findings. First check whether claims have source identifiers, dates, quotations
-    or...'
+    notes into defensible findings. If any personalization field is blank or still shows brackets, continue...'
   best_tools:
   - tool: Claude
     reason: Can compare a long evidence ledger and preserve nuanced disagreements.
@@ -6274,6 +6273,10 @@ prompts:
   next_id: '112'
   prompt: 'Role: You are the synthesis editor at step three; transform [PREVIOUS_OUTPUT] from evidence
     notes into defensible findings.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     First check whether claims have source identifiers, dates, quotations or locations, and limitations.
@@ -6304,7 +6307,8 @@ prompts:
   usage: Shape synthesised findings into a persuasive and logically paced presentation outline.
   use_case: Decide the narrative sequence and slide jobs before writing slide content.
   preview: 'Goal: Serve as the presentation architect for step four; build an outline from the synthesis
-    in [PREVIOUS_OUTPUT]. Confirm the audience [AUDIENCE], desired outcome [OUTCOME], time available...'
+    in [PREVIOUS_OUTPUT]. If any personalization field is blank or still shows brackets, continue with
+    clearly...'
   best_tools:
   - tool: ChatGPT
     reason: Can organise findings into audience-focused narrative structures and transitions.
@@ -6318,6 +6322,10 @@ prompts:
   next_id: '113'
   prompt: 'Goal: Serve as the presentation architect for step four; build an outline from the synthesis
     in [PREVIOUS_OUTPUT].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Confirm the audience [AUDIENCE], desired outcome [OUTCOME], time available [DURATION], and delivery
@@ -6348,8 +6356,7 @@ prompts:
   usage: Draft concise slide content from an approved evidence-mapped presentation outline.
   use_case: Create readable slide copy and visual specifications without inventing evidence.
   preview: 'Role: You are the slide writer at step five; turn the approved outline in [PREVIOUS_OUTPUT]
-    into a restrained, evidence-faithful draft. For every numbered slide, create a short assertion-style
-    title...'
+    into a restrained, evidence-faithful draft. If any personalization field is blank or still shows brackets...'
   best_tools:
   - tool: Microsoft Copilot
     reason: Can help draft presentation content within PowerPoint from a structured outline.
@@ -6363,6 +6370,10 @@ prompts:
   next_id: '114'
   prompt: 'Role: You are the slide writer at step five; turn the approved outline in [PREVIOUS_OUTPUT]
     into a restrained, evidence-faithful draft.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     For every numbered slide, create a short assertion-style title and only the minimum body copy needed
@@ -6393,11 +6404,12 @@ prompts:
   usage: Create natural speaker notes that add context without reading the slides aloud.
   use_case: Equip the presenter with transitions, nuance, timing, and likely audience questions.
   preview: 'Goal: Act as the presentation coach for step six; write speaker notes for the slide draft
-    contained in [PREVIOUS_OUTPUT]. Use the presenter''s voice [VOICE], audience knowledge [AUDIENCE_LEVEL],
-    and...'
+    contained in [PREVIOUS_OUTPUT]. If any personalization field is blank or still shows brackets, continue
+    with...'
   best_tools:
   - tool: Claude
-    reason: Can maintain narrative continuity across a complete slide draft and its evidence context.
+    reason: Can maintain narrative continuity across a complete slide draft and its evidence 
+      context.
   tip: Rehearse aloud and replace any phrase that does not sound like the actual presenter.
   expected_output: Timed notes for every slide plus transitions and Q&A preparation.
   tags:
@@ -6410,6 +6422,10 @@ prompts:
     in [PREVIOUS_OUTPUT].
 
 
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
+
+
     Use the presenter''s voice [VOICE], audience knowledge [AUDIENCE_LEVEL], and total duration [DURATION].
     For each slide, provide an opening sentence, the explanation that is not already visible, evidence
     nuance, a natural transition, and an estimated speaking time. Expand abbreviations on first use and
@@ -6418,15 +6434,16 @@ prompts:
 
     Notes should sound spoken, not like an essay. Preserve uncertainty and explain chart denominators
     or baselines that audiences may miss. Add a pause or interaction cue only when it advances the goal.
-    Never introduce new facts without an evidence reference; mark unsupported additions [VERIFY].
+    Never introduce new facts without an evidence reference; mark unsupported additions with the plain
+    label VERIFY. Also prioritise verifying: [VERIFY].
 
 
     Prepare five likely questions, concise evidence-based responses, and an honest fallback for questions
     outside the research. Include reminders for accessibility, remote delivery, or handouts from [SETTING].
 
 
-    Finish with “HANDOFF TO STEP 7”: the slide-linked notes, timing total, Q&A sheet, and all [VERIFY]
-    items. Ensure this block can be reviewed independently as [PREVIOUS_OUTPUT].
+    Finish with “HANDOFF TO STEP 7”: the slide-linked notes, timing total, Q&A sheet, and all VERIFY items.
+    Ensure this block can be reviewed independently as [PREVIOUS_OUTPUT].
 
     '
 - id: '115'
@@ -6437,7 +6454,7 @@ prompts:
   usage: Conduct a final evidence, narrative, design, accessibility, and delivery review.
   use_case: Catch consequential weaknesses across the full presentation package before release.
   preview: 'Role: You are the independent quality reviewer for the final chain step; audit the presentation
-    package in [PREVIOUS_OUTPUT] before release. Review against the original goal [GOAL], audience...'
+    package in [PREVIOUS_OUTPUT] before release. If any personalization field is blank or still shows...'
   best_tools:
   - tool: ChatGPT
     reason: Can apply a structured multi-criterion review to slides and speaker notes.
@@ -6448,9 +6465,13 @@ prompts:
   - quality-review
   - presentation
   - chain-step-7
-  next_id: null
+  next_id:
   prompt: 'Role: You are the independent quality reviewer for the final chain step; audit the presentation
     package in [PREVIOUS_OUTPUT] before release.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Review against the original goal [GOAL], audience [AUDIENCE], duration [DURATION], and source requirements

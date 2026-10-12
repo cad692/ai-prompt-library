@@ -16,6 +16,8 @@
 ```text
 Goal: Serve as the presentation architect for step four; build an outline from the synthesis in [PREVIOUS_OUTPUT].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Confirm the audience [AUDIENCE], desired outcome [OUTCOME], time available [DURATION], and delivery setting [SETTING]. If these are absent, state reasonable provisional assumptions. Choose a narrative shape—problem/response, question/answer, chronological, comparison, or another justified structure—based on the findings rather than habit.
 
 Propose [SLIDE_COUNT] slides. For each, specify its single purpose, headline takeaway, evidence IDs to use, suitable visual form, and transition to the next idea. Include an opening that earns attention without sensationalism, a short method or evidence note, space for contradictions, and a close aligned with the requested outcome.
