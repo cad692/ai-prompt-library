@@ -39,6 +39,14 @@ def load_prompts():
     return prompts
 
 
+def load_questions():
+    questions_path = ROOT / "data" / "questions.yaml"
+    if not questions_path.exists():
+        return {}
+    with open(questions_path, encoding="utf-8") as f:
+        return yaml.safe_load(f) or {}
+
+
 def make_preview(text: str, limit: int = 200) -> str:
     text = re.sub(r"\s+", " ", text.strip())
     if len(text) <= limit:
@@ -204,6 +212,9 @@ def render_site(prompts, cfg):
         grouped[p["category"]].append(p)
     cat_order = [c["id"] for c in cfg["categories"]]
 
+    questions = load_questions()
+    questions_json = json.dumps(questions, ensure_ascii=False, separators=(",", ":"))
+
     index_html = env.get_template("index.html").render(
         cfg=cfg,
         prompts=prompts,
@@ -213,6 +224,7 @@ def render_site(prompts, cfg):
         base_url=cfg["BASE_URL"].rstrip("/"),
         repo_url=cfg["GITHUB_REPO_URL"].rstrip("/"),
         cat_names_json=json.dumps({c["id"]: c["name"] for c in cfg["categories"]}),
+        questions_json=questions_json,
     )
     (ROOT / "index.html").write_text(index_html, encoding="utf-8")
 
@@ -230,6 +242,7 @@ def render_site(prompts, cfg):
             base_url=cfg["BASE_URL"].rstrip("/"),
             repo_url=cfg["GITHUB_REPO_URL"].rstrip("/"),
             highlighted=highlight_placeholders(p["prompt"]),
+            questions_json=questions_json,
         )
         (prompts_dir / f"{p['id']}-{p['slug']}.html").write_text(html, encoding="utf-8")
 

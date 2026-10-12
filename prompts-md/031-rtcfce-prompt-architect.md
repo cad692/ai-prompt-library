@@ -2,7 +2,7 @@
 
 **Category:** prompting · **Difficulty:** Intermediate
 
-**Usage:** Use this to convert a rough task into a complete RTCFCE prompt.
+**Usage:** Use this to convert a rough task into a complete RTCFCE prompt (Role, Task, Context, Format, Constraints, and Examples).
 
 **Expected output:** A completed RTCFCE worksheet and a ready-to-run prompt.
 

@@ -12,6 +12,16 @@
 
   var template = src.textContent;
   var placeholders = uniquePlaceholders(template);
+  var promptId = formRoot.dataset && formRoot.dataset.promptId ? String(formRoot.dataset.promptId) : "";
+  var questionData = {};
+
+  try {
+    if (formRoot.dataset && formRoot.dataset.questions) {
+      questionData = JSON.parse(formRoot.dataset.questions) || {};
+    }
+  } catch (err) {
+    questionData = {};
+  }
 
   function uniquePlaceholders(text) {
     var re = /\[([A-Z][A-Z0-9_]*)\]/g;
@@ -51,8 +61,18 @@
       TONE: "What tone do you want?",
       CITY_OR_SETTING: "What city or setting should we use?",
     };
+    if (questionData[promptId] && questionData[promptId][key] && questionData[promptId][key].q) {
+      return questionData[promptId][key].q;
+    }
     if (map[key]) return map[key];
     return "What should we use for " + labelFor(key) + "?";
+  }
+
+  function metadataFor(key) {
+    if (questionData[promptId] && questionData[promptId][key]) {
+      return questionData[promptId][key];
+    }
+    return null;
   }
 
   function escapeHtml(s) {
@@ -118,18 +138,22 @@
     var intro = document.createElement("p");
     intro.className = "muted";
     intro.textContent =
-      "Answer only the questions below. Your answers replace the square-bracket fields automatically.";
+      "Answer the questions below. Your answers are placed into the prompt automatically.";
     formRoot.appendChild(intro);
 
     placeholders.forEach(function (key, i) {
       var wrap = document.createElement("div");
       wrap.className = "fill-field";
 
+      var meta = metadataFor(key);
+      var labelText = questionFor(key);
+      if (meta && meta.optional) labelText += " (optional)";
+
       var label = document.createElement("label");
       label.setAttribute("for", "field-" + key);
       label.innerHTML =
         '<span class="fill-q">' +
-        escapeHtml(String(i + 1) + ". " + questionFor(key)) +
+        escapeHtml(String(i + 1) + ". " + labelText) +
         '</span><span class="fill-key">[' +
         escapeHtml(key) +
         "]</span>";
@@ -143,7 +167,7 @@
       input.id = "field-" + key;
       input.name = key;
       input.autocomplete = "off";
-      input.placeholder = "Type your answer for [" + key + "]";
+      input.placeholder = meta && meta.ex ? meta.ex : "Type your answer for [" + key + "]";
       if (input.tagName === "TEXTAREA") input.rows = 3;
 
       input.addEventListener("input", updatePreview);

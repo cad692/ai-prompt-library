@@ -1,0 +1,19 @@
+"001":
+  DECISION:
+    q: "What decision are you trying to make?"
+    ex: "Which university to join"
+  OPTIONS:
+    q: "What options are you comparing?"
+    ex: "Job offers or postgraduate study"
+  DEADLINE:
+    q: "When do you need to decide?"
+    ex: "In three weeks"
+  STAKEHOLDERS:
+    q: "Who will be affected?"
+    ex: "Family, friends, or team members"
+  VALUES_OR_PRIORITIES:
+    q: "What matters most to you?"
+    ex: "Career growth and stability"
+  TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS:
+    q: "Any limits you must work within?"
+    ex: "Budget, travel, or family duties"
