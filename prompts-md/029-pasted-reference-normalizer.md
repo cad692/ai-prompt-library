@@ -23,7 +23,7 @@ Source language rules: [LANGUAGE_RULES]
 
 First parse each entry into available fields: author, year, title, container, volume, issue, pages, publisher, DOI, URL, and access date. Preserve original text in a numbered source column so every output can be traced back.
 
-Format entries only from supplied fields. Insert visible markers such as [MISSING YEAR], [VERIFY AUTHOR ORDER], or [INCOMPLETE URL] where necessary. Do not search for or infer missing metadata unless I explicitly request a separate verification phase.
+Format entries only from supplied fields. Insert visible plain markers such as MISSING YEAR, VERIFY AUTHOR ORDER, or INCOMPLETE URL where necessary. Do not search for or infer missing metadata unless I explicitly request a separate verification phase.
 
 Detect likely duplicates, including DOI matches and small title variations. Present them for confirmation rather than deleting them. Separate records by source type—journal article, book, chapter, webpage, report, thesis, or unknown—and flag any type whose formatting is uncertain.
 

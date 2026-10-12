@@ -284,11 +284,11 @@ For each step, state found, not found, or cannot access, with links where availa
 
 End with a two-sentence share-safe summary, a list of remaining checks, and the date of verification. If the claim could create immediate health, financial, legal, or safety harm, advise pausing action and consulting a qualified or official source.
 "
-021,pdf-active-study-notes,PDF Active Study Notes,documents,Beginner,Use this to transform an uploaded reading into notes that support active recall.,"Page-linked study notes, recall questions, misconceptions, and a review plan.",Try the recall questions before reopening the PDF or reading the answer key.,"pdf, study-notes, active-recall, learning",NotebookLM: Answers from uploaded sources with grounding and source-location support.; Claude: Handles long PDFs and produces well-structured learning materials.,,"Turn the uploaded [PDF_TITLE] into active study notes for [COURSE_OR_EXAM], grounded only in the document.
+021,pdf-active-study-notes,PDF Active Study Notes,documents,Beginner,Use this to transform an uploaded reading into notes that support active recall.,"Page-linked study notes, recall questions, misconceptions, and a review plan.",Try the recall questions before reopening the PDF or reading the answer key.,"pdf, study-notes, active-recall, learning",NotebookLM: Answers from uploaded sources with grounding and source-location support.; Claude: Handles long PDFs and produces well-structured learning materials.,,"Turn the uploaded document titled [PDF_TITLE] into active study notes for [COURSE_OR_EXAM], grounded only in that document.
 
-My current level is [LEVEL], the assessed topics are [TOPICS], and I have [STUDY_TIME]. Read the document’s headings, figures, tables, and conclusion. If pages are missing, scanned illegibly, or inaccessible, identify them rather than guessing.
+My current level is [LEVEL], the assessed topics are [TOPICS], and I have [STUDY_TIME] available for this pass. Read the document’s headings, figures, tables, and conclusion. If pages are missing, scanned illegibly, or inaccessible, identify them rather than guessing content.
 
-Build the notes in learning order, which may differ from page order. For each concept include: a plain-language explanation, essential terminology, one concrete example from the PDF, and page references. Mark definitions exactly quoted from the document with quotation marks; paraphrase everything else.
+Build the notes in learning order, which may differ from page order. For each concept include: a plain-language explanation, essential terminology, one concrete example from the PDF, and page references. Mark definitions exactly quoted from the document with quotation marks; paraphrase everything else. Do not invent examples that are not in the source.
 
 Then create an Active Recall Pack:
 - eight short-answer questions;
@@ -298,27 +298,27 @@ Then create an Active Recall Pack:
 
 Add a visual text map connecting the chapter’s main ideas with arrows and relationship labels. Identify any formula, framework, or process that requires memorisation, and devise one mnemonic without distorting the meaning.
 
-Close with a [NUMBER_OF_DAYS]-day review schedule using spaced practice. Include a “return to the PDF” list for claims, diagrams, or examples that need closer reading. Do not write assignment answers or conceal AI assistance; these notes must help me learn the source.
+Close with a [NUMBER_OF_DAYS]-day review schedule using spaced practice that fits the available study time. Include a “return to the PDF” list for claims, diagrams, or examples that need closer reading. Do not write assignment answers or conceal AI assistance; these notes must help me learn the source.
 "
 022,agreement-risk-spotter,Agreement Risk Spotter,documents,Advanced,Use this to spot contract clauses worth discussing with a qualified lawyer.,A non-legal risk summary with clause references and lawyer questions.,Upload every schedule and annexure; key obligations are often outside the main document.,"contracts, risk, documents, plain-language, pakistan",Claude: Reviews lengthy agreements and tracks definitions across clauses.; ChatGPT: Explains dense provisions in plain language and organises follow-up questions.,,"Review [UPLOADED_AGREEMENT] as a plain-language issue spotter, not as a lawyer or substitute for legal advice.
 
-I am the [PARTY_ROLE], the agreement concerns [PURPOSE], and the relevant jurisdiction appears to be [JURISDICTION]. My priorities are [PRIORITIES]. State clearly that enforceability and legal rights require advice from a qualified lawyer familiar with the applicable law.
+I am the [PARTY_ROLE], the agreement concerns [PURPOSE], and the relevant jurisdiction appears to be [JURISDICTION]. My priorities are [PRIORITIES]. State clearly that enforceability and legal rights require advice from a qualified lawyer familiar with the applicable law. If the uploaded text is incomplete or schedules/annexures are missing, list what is absent before scoring risk.
 
 Start with a deal snapshot: parties, term, payment, renewal, termination, and main obligations, each linked to clause or page numbers. Then create a red-flag register using severity—urgent, important, or monitor—for:
 liability and indemnity; unilateral changes; intellectual property; confidentiality; data use; non-compete or exclusivity; payment and penalties; termination; dispute resolution; governing law; warranties; and missing schedules.
 
 For every flag, quote only the minimum relevant wording, explain the practical effect in neutral language, identify who bears the risk, and draft one clarification or negotiation question. Do not declare a clause illegal or enforceable.
 
-Add a cross-reference check for inconsistent definitions, dates, amounts, and annexures. List obligations due in the first 30 days. Finish with “Questions for a Pakistani lawyer” tailored to [JURISDICTION] and a missing-information list. Mask CNIC numbers, bank details, signatures, and personal addresses in your output.
+Add a cross-reference check for inconsistent definitions, dates, amounts, and annexures. List obligations due in the first 30 days. Finish with “Questions for a lawyer” tailored to [JURISDICTION] and a missing-information list. Mask CNIC numbers, bank details, signatures, and personal addresses in your output.
 "
 023,executive-signal-summary,Executive Signal Summary,documents,Intermediate,"Use this to compress a long report into decisions, evidence, and implications.","A one-page executive summary with findings, implications, and source locations.",Tell the model which decision the summary must support; relevance changes with audience.,"executive-summary, reports, decisions, synthesis",Claude: Maintains coherence and detail across very long documents.; NotebookLM: Grounds report summaries in uploaded source passages and citations.,,"Distil [REPORT_TITLE_OR_UPLOAD] into an executive summary for [AUDIENCE] deciding [DECISION].
 
-The reader has [READING_TIME] minutes and cares most about [PRIORITIES]. Work only from the report. Preserve the difference between reported evidence, author interpretation, and your synthesis. Every material number must retain its unit, period, population, and page or section reference.
+The reader has about [READING_TIME] minutes and cares most about [PRIORITIES]. Organisational context: [ORGANISATION_OR_CONTEXT]. Work only from the report. Preserve the difference between reported evidence, author interpretation, and your synthesis. Every material number must retain its unit, period, population, and page or section reference. If the report is incomplete, say what sections are missing instead of filling gaps from memory.
 
 Open with a decision signal: one sentence stating why this report matters now. Follow with:
 - Purpose and scope in three lines;
 - five findings ranked by decision relevance, not document order;
-- implications for [ORGANISATION_OR_CONTEXT];
+- implications for the stated organisational context;
 - risks, limitations, and excluded populations;
 - decisions or actions the report explicitly supports.
 
@@ -330,9 +330,9 @@ End with three questions an executive should ask before acting and a 30-second s
 "
 024,dual-pdf-comparator,Dual PDF Comparator,documents,Advanced,Use this to compare two documents on matching criteria with traceable evidence.,"A criterion-by-criterion comparison with page evidence, conflicts, and gaps.",Define comparison criteria before reading conclusions to reduce confirmation bias.,"pdf-comparison, documents, evidence, analysis",NotebookLM: Compares uploaded sources while grounding statements in their respective documents.; Claude: Handles long-document comparison and follows detailed comparison criteria.,,"Compare [PDF_A] and [PDF_B] as two separate evidence sources, never blending their claims.
 
-My comparison purpose is [PURPOSE]. Use these criteria: [CRITERIA]. If no criteria are supplied, propose a set and ask for approval before proceeding. Identify each document’s title, author, date, version, intended audience, and scope. Flag if editions or time periods make direct comparison unfair.
+My comparison purpose is [PURPOSE]. Use these criteria: [CRITERIA]. If criteria are blank or still show brackets, propose a criterion set and pause for approval before scoring. Identify each document’s title, author, date, version, intended audience, and scope. Flag if editions or time periods make direct comparison unfair.
 
-Create a comparison matrix. For every criterion provide Document A’s position with page reference, Document B’s position with page reference, the relationship—agreement, partial overlap, conflict, or silence—and a concise interpretation. Use [NOT STATED] when a document does not address something.
+Create a comparison matrix. For every criterion provide Document A’s position with page reference, Document B’s position with page reference, the relationship—agreement, partial overlap, conflict, or silence—and a concise interpretation. Use the plain label NOT STATED when a document does not address something.
 
 Add separate sections for:
 - terminology that looks similar but is defined differently;
@@ -341,7 +341,7 @@ Add separate sections for:
 - unique contributions from each document;
 - unresolved contradictions.
 
-Run a role-play critique: first argue which document better serves [PURPOSE], then act as a sceptical reviewer and challenge that conclusion using the strongest counterevidence. Revise the conclusion if the critique succeeds.
+Run a role-play critique: first argue which document better serves the stated purpose, then act as a sceptical reviewer and challenge that conclusion using the strongest counterevidence. Revise the conclusion if the critique succeeds.
 
 Finish with a bounded recommendation and confidence level. Do not infer author intent or claim that newer automatically means better. Provide a five-item reading list of pages requiring human review before any consequential decision.
 "
@@ -349,7 +349,7 @@ Finish with a bounded recommendation and confidence level. Do not infer author i
 
 The project is [PROJECT], today is [DATE], and our naming convention is [TEAM_ROLES_OR_NAMES]. Scan for explicit actions, promises, approvals, follow-ups, decisions that create work, and unresolved requests. Preserve source page, paragraph, timestamp, or message reference.
 
-Build a register with: action stated as a verb, named owner, due date, priority, dependency, completion evidence, and source location. If the text says “we,” leaves the owner unclear, or gives a relative date such as “next Friday,” mark [CONFIRM OWNER] or [CONFIRM DATE]; do not guess.
+Build a register with: action stated as a verb, named owner, due date, priority, dependency, completion evidence, and source location. If the text says “we,” leaves the owner unclear, or gives a relative date such as “next Friday,” mark with the plain labels CONFIRM OWNER or CONFIRM DATE; do not guess.
 
 Separate the result into Confirmed Actions, Implied Actions Requiring Approval, and Open Questions. Detect duplicate tasks expressed in different wording and merge them while retaining all source references.
 
@@ -359,7 +359,7 @@ Conclude with a “next 48 hours” view containing actions actually due or bloc
 "
 026,thesis-chapter-reading-companion,Thesis Chapter Reading Companion,documents,Advanced,Use this to take analytical notes on a thesis chapter without rewriting it.,"An argument map, evidence audit, and ethical revision checklist for one chapter.",Ask for diagnosis before suggested wording so you remain the author of revisions.,"thesis, academic-writing, chapter-review, integrity",Claude: Tracks argument structure and consistency across long academic chapters.; NotebookLM: Grounds analytical notes in uploaded chapter and reference materials.,,"Act as a thesis reading companion for [CHAPTER_TITLE], helping me diagnose the draft while preserving my authorship.
 
-Degree and discipline: [PROGRAMME]. Research question: [QUESTION]. Chapter purpose: [PURPOSE]. Institutional guidance: [GUIDANCE]. Read the uploaded chapter and refer to paragraph, heading, or page locations. Do not write replacement passages unless I later request limited examples, and never generate fabricated data or references.
+Degree and discipline: [PROGRAMME]. Research question: [QUESTION]. Chapter purpose: [PURPOSE]. Institutional guidance: [GUIDANCE]. Read the uploaded chapter and refer to paragraph, heading, or page locations. If guidance is blank or still shows brackets, apply general academic integrity norms and label that assumption. Do not write replacement passages unless I later request limited examples, and never generate fabricated data or references.
 
 Produce four analytical layers:
 1. Argument spine: one line per major claim, showing how each supports the chapter purpose.
@@ -373,30 +373,32 @@ Ask me to choose the three comments I accept. Only then create a revision sequen
 "
 027,transcript-clarity-editor,Transcript Clarity Editor,documents,Intermediate,Use this to clean a meeting transcript while preserving meaning and accountability.,"A cleaned transcript, uncertainty log, decisions, and verified action items.",Keep the raw transcript unchanged alongside the edited version for auditability.,"transcripts, meetings, editing, minutes",Claude: Handles long transcripts and preserves context across speaker turns.; Microsoft Copilot: Fits meeting workflows involving Teams transcripts and Microsoft documents.,,"Clean [MEETING_TRANSCRIPT] into a readable record without changing what participants meant.
 
-Meeting title and date: [MEETING_DETAILS]. Known speakers: [SPEAKER_LIST]. Desired output: [CLEAN_TRANSCRIPT_OR_MINUTES]. Treat the original as the authority. Do not invent names, fix factual disagreements, or turn tentative suggestions into decisions.
+Meeting title and date: [MEETING_DETAILS]. Known speakers: [SPEAKER_LIST]. Desired output: [CLEAN_TRANSCRIPT_OR_MINUTES]. Timestamp placement: [INTERVAL_OR_TOPIC_CHANGES]. Unclear-passage marking preference: [UNCLEAR].
 
-For the cleaned transcript, standardise speaker labels, punctuation, and paragraph breaks. Remove filler only when meaning and tone remain intact. Retain meaningful hesitation, disagreement, conditions, and uncertainty. Replace inaudible or doubtful segments with [UNCLEAR at TIMESTAMP] and include the nearest safe context.
+Treat the original as the authority. Do not invent names, fix factual disagreements, or turn tentative suggestions into decisions. If the speaker list is incomplete, keep uncertain speakers labelled Unknown and note them in the uncertainty log.
 
-Keep timestamps at [INTERVAL_OR_TOPIC_CHANGES]. Mark any proposed correction to a number, name, or technical term in braces as {VERIFY: ...}; never silently substitute it.
+For the cleaned transcript, standardise speaker labels, punctuation, and paragraph breaks. Remove filler only when meaning and tone remain intact. Retain meaningful hesitation, disagreement, conditions, and uncertainty. Replace inaudible or doubtful segments using the preferred unclear marking style, or with [UNCLEAR at TIMESTAMP] if that preference is blank, and include the nearest safe context.
+
+Keep timestamps according to the stated interval or topic-change rule. Mark any proposed correction to a number, name, or technical term in braces as {VERIFY: ...}; never silently substitute it.
 
 After the transcript, provide:
 - decisions explicitly made;
 - action items with owner, deadline, and timestamp;
 - proposals not yet approved;
 - unresolved questions;
-- an uncertainty log for every [UNCLEAR] or {VERIFY} marker.
+- an uncertainty log for every unclear or {VERIFY} marker.
 
 Finish with a five-sentence meeting summary that distinguishes discussion from commitment. If speakers shared personal, client, or confidential data, flag passages for redaction before circulation. Do not infer emotion from voice or wording unless it was explicitly stated.
 "
 028,policy-plain-language-translator,Policy Plain-Language Translator,documents,Intermediate,Use this to explain a policy clearly without weakening its actual requirements.,"A plain-language policy guide with duties, examples, exceptions, and traceability.",Have the policy owner verify every obligation after simplification.,"policy, plain-language, accessibility, compliance",ChatGPT: Rewrites complex policy language for defined reading levels and audiences.; Claude: Preserves cross-references and exceptions across long policy documents.,,"Translate [POLICY_DOCUMENT] into a plain-language guide for [AUDIENCE] while preserving its rules and exceptions.
 
-Target reading level: [READING_LEVEL]. Preferred language: [ENGLISH_URDU_OR_BILINGUAL]. Jurisdiction or organisation: [CONTEXT]. This is an explanation, not legal advice or a replacement for the official policy.
+Target reading level: [READING_LEVEL]. Preferred language: [ENGLISH_URDU_OR_BILINGUAL]. Jurisdiction or organisation: [CONTEXT]. This is an explanation, not legal advice or a replacement for the official policy. If context is blank or still shows brackets, keep explanations general and flag organisation-specific gaps.
 
 Begin with “What this policy is for” and “Who it applies to.” Then explain duties as direct questions: What must I do? What must I not do? When do I need approval? What happens if something goes wrong? Who can help? Attach each answer to the original clause or page.
 
 Define technical terms at first use. Convert long sentences into short steps, but retain mandatory words such as must, may, and should with their different force. Use two realistic examples and one non-example for each high-risk rule. Clearly label exceptions and appeal or reporting routes.
 
-Create a fidelity ledger listing any phrase that could not be simplified safely and why. Add [ORGANISATION TO CONFIRM] wherever the document is ambiguous or internally inconsistent.
+Create a fidelity ledger listing any phrase that could not be simplified safely and why. Add the plain label ORGANISATION TO CONFIRM wherever the document is ambiguous or internally inconsistent.
 
 Close with a one-page quick guide and five comprehension questions. Do not introduce new requirements, deadlines, penalties, or promises. Recommend review by the policy owner and, where necessary, a qualified adviser before publication.
 "
@@ -408,7 +410,7 @@ Source language rules: [LANGUAGE_RULES]
 
 First parse each entry into available fields: author, year, title, container, volume, issue, pages, publisher, DOI, URL, and access date. Preserve original text in a numbered source column so every output can be traced back.
 
-Format entries only from supplied fields. Insert visible markers such as [MISSING YEAR], [VERIFY AUTHOR ORDER], or [INCOMPLETE URL] where necessary. Do not search for or infer missing metadata unless I explicitly request a separate verification phase.
+Format entries only from supplied fields. Insert visible plain markers such as MISSING YEAR, VERIFY AUTHOR ORDER, or INCOMPLETE URL where necessary. Do not search for or infer missing metadata unless I explicitly request a separate verification phase.
 
 Detect likely duplicates, including DOI matches and small title variations. Present them for confirmation rather than deleting them. Separate records by source type—journal article, book, chapter, webpage, report, thesis, or unknown—and flag any type whose formatting is uncertain.
 
@@ -416,7 +418,7 @@ Return three blocks: Clean Reference List, Verification Queue, and Duplicate Can
 "
 030,notes-grounded-qa-maker,Notes-Grounded Q&A Maker,documents,Intermediate,Use this to ask and answer questions strictly from uploaded learning notes.,"A source-grounded question bank with answers, locations, and confidence labels.",Include some unanswerable questions to practise recognising the limits of your notes.,"question-bank, notes, revision, source-grounding",NotebookLM: Specializes in source-grounded questions and answers over uploaded notes.; ChatGPT: Can analyse uploaded notes and create adaptive practice questions.,,"Build a revision Q&A set grounded exclusively in [UPLOADED_NOTES] for [COURSE_AND_TOPIC].
 
-The assessment format is [EXAM_FORMAT], my level is [LEVEL], and I struggle most with [WEAK_AREAS]. Treat the notes as a closed book of evidence: if an answer is absent, say “Not answerable from these notes” and identify what information is missing.
+The assessment format is [EXAM_FORMAT], my level is [LEVEL], and I struggle most with [WEAK_AREAS]. Marking guidance: [MARK_SCHEME]. Treat the notes as a closed book of evidence: if an answer is absent, say “Not answerable from these notes” and identify what information is missing. If marking guidance is blank or still shows brackets, keep answers concise and label length assumptions.
 
 Create four rounds with different cognitive demands:
 Round 1: six factual retrieval questions.
@@ -424,7 +426,7 @@ Round 2: five explain-in-your-own-words questions.
 Round 3: four application or scenario questions.
 Round 4: three comparison or evaluation questions.
 
-For every answer, include a page, heading, slide, or paragraph pointer and a confidence label based on source clarity. Keep model answers proportional to likely marks under [MARK_SCHEME]. Add one plausible wrong answer and correction for the three concepts most prone to confusion.
+Weight Round 3 and Round 4 toward the stated weak areas when the notes support that. For every answer, include a page, heading, slide, or paragraph pointer and a confidence label based on source clarity. Keep model answers proportional to likely marks under the marking guidance. Add one plausible wrong answer and correction for the three concepts most prone to confusion.
 
 Include two deliberately unanswerable questions that are relevant but outside the uploaded material; explain why guessing would be unsafe. Then create a shuffled quiz version without answers and a separate answer key.
 

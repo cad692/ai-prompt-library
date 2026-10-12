@@ -17,18 +17,20 @@
 ```text
 Clean [MEETING_TRANSCRIPT] into a readable record without changing what participants meant.
 
-Meeting title and date: [MEETING_DETAILS]. Known speakers: [SPEAKER_LIST]. Desired output: [CLEAN_TRANSCRIPT_OR_MINUTES]. Treat the original as the authority. Do not invent names, fix factual disagreements, or turn tentative suggestions into decisions.
+Meeting title and date: [MEETING_DETAILS]. Known speakers: [SPEAKER_LIST]. Desired output: [CLEAN_TRANSCRIPT_OR_MINUTES]. Timestamp placement: [INTERVAL_OR_TOPIC_CHANGES]. Unclear-passage marking preference: [UNCLEAR].
 
-For the cleaned transcript, standardise speaker labels, punctuation, and paragraph breaks. Remove filler only when meaning and tone remain intact. Retain meaningful hesitation, disagreement, conditions, and uncertainty. Replace inaudible or doubtful segments with [UNCLEAR at TIMESTAMP] and include the nearest safe context.
+Treat the original as the authority. Do not invent names, fix factual disagreements, or turn tentative suggestions into decisions. If the speaker list is incomplete, keep uncertain speakers labelled Unknown and note them in the uncertainty log.
 
-Keep timestamps at [INTERVAL_OR_TOPIC_CHANGES]. Mark any proposed correction to a number, name, or technical term in braces as {VERIFY: ...}; never silently substitute it.
+For the cleaned transcript, standardise speaker labels, punctuation, and paragraph breaks. Remove filler only when meaning and tone remain intact. Retain meaningful hesitation, disagreement, conditions, and uncertainty. Replace inaudible or doubtful segments using the preferred unclear marking style, or with [UNCLEAR at TIMESTAMP] if that preference is blank, and include the nearest safe context.
+
+Keep timestamps according to the stated interval or topic-change rule. Mark any proposed correction to a number, name, or technical term in braces as {VERIFY: ...}; never silently substitute it.
 
 After the transcript, provide:
 - decisions explicitly made;
 - action items with owner, deadline, and timestamp;
 - proposals not yet approved;
 - unresolved questions;
-- an uncertainty log for every [UNCLEAR] or {VERIFY} marker.
+- an uncertainty log for every unclear or {VERIFY} marker.
 
 Finish with a five-sentence meeting summary that distinguishes discussion from commitment. If speakers shared personal, client, or confidential data, flag passages for redaction before circulation. Do not infer emotion from voice or wording unless it was explicitly stated.
 ```

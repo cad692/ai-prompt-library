@@ -1127,11 +1127,11 @@ prompts:
   category: documents
   difficulty: Beginner
   usage: Use this to transform an uploaded reading into notes that support active recall.
-  use_case: A student can study a chapter or paper efficiently while keeping summaries connected to exact
-    pages.
-  preview: Turn the uploaded [PDF_TITLE] into active study notes for [COURSE_OR_EXAM], grounded only in
-    the document. My current level is [LEVEL], the assessed topics are [TOPICS], and I have [STUDY_TIME].
-    Read...
+  use_case: A student can study a chapter or paper efficiently while keeping summaries connected to 
+    exact pages.
+  preview: Turn the uploaded document titled [PDF_TITLE] into active study notes for 
+    [COURSE_OR_EXAM], grounded only in that document. My current level is [LEVEL], the assessed 
+    topics are [TOPICS], and I have...
   best_tools:
   - tool: NotebookLM
     reason: Answers from uploaded sources with grounding and source-location support.
@@ -1144,19 +1144,20 @@ prompts:
   - study-notes
   - active-recall
   - learning
-  next_id: null
-  prompt: 'Turn the uploaded [PDF_TITLE] into active study notes for [COURSE_OR_EXAM], grounded only in
-    the document.
+  next_id:
+  prompt: 'Turn the uploaded document titled [PDF_TITLE] into active study notes for [COURSE_OR_EXAM],
+    grounded only in that document.
 
 
-    My current level is [LEVEL], the assessed topics are [TOPICS], and I have [STUDY_TIME]. Read the document’s
-    headings, figures, tables, and conclusion. If pages are missing, scanned illegibly, or inaccessible,
-    identify them rather than guessing.
+    My current level is [LEVEL], the assessed topics are [TOPICS], and I have [STUDY_TIME] available for
+    this pass. Read the document’s headings, figures, tables, and conclusion. If pages are missing, scanned
+    illegibly, or inaccessible, identify them rather than guessing content.
 
 
     Build the notes in learning order, which may differ from page order. For each concept include: a plain-language
     explanation, essential terminology, one concrete example from the PDF, and page references. Mark definitions
-    exactly quoted from the document with quotation marks; paraphrase everything else.
+    exactly quoted from the document with quotation marks; paraphrase everything else. Do not invent examples
+    that are not in the source.
 
 
     Then create an Active Recall Pack:
@@ -1175,9 +1176,9 @@ prompts:
     the meaning.
 
 
-    Close with a [NUMBER_OF_DAYS]-day review schedule using spaced practice. Include a “return to the
-    PDF” list for claims, diagrams, or examples that need closer reading. Do not write assignment answers
-    or conceal AI assistance; these notes must help me learn the source.
+    Close with a [NUMBER_OF_DAYS]-day review schedule using spaced practice that fits the available study
+    time. Include a “return to the PDF” list for claims, diagrams, or examples that need closer reading.
+    Do not write assignment answers or conceal AI assistance; these notes must help me learn the source.
 
     '
 - id: '022'
@@ -1186,10 +1187,11 @@ prompts:
   category: documents
   difficulty: Advanced
   usage: Use this to spot contract clauses worth discussing with a qualified lawyer.
-  use_case: A freelancer, employee, tenant, or small organisation can prepare informed questions before
-    signing an agreement in Pakistan.
-  preview: Review [UPLOADED_AGREEMENT] as a plain-language issue spotter, not as a lawyer or substitute
-    for legal advice. I am the [PARTY_ROLE], the agreement concerns [PURPOSE], and the relevant jurisdiction...
+  use_case: A freelancer, employee, tenant, or small organisation can prepare informed questions 
+    before signing an agreement in Pakistan.
+  preview: Review [UPLOADED_AGREEMENT] as a plain-language issue spotter, not as a lawyer or 
+    substitute for legal advice. I am the [PARTY_ROLE], the agreement concerns [PURPOSE], and the 
+    relevant jurisdiction...
   best_tools:
   - tool: Claude
     reason: Reviews lengthy agreements and tracks definitions across clauses.
@@ -1203,14 +1205,15 @@ prompts:
   - documents
   - plain-language
   - pakistan
-  next_id: null
+  next_id:
   prompt: 'Review [UPLOADED_AGREEMENT] as a plain-language issue spotter, not as a lawyer or substitute
     for legal advice.
 
 
     I am the [PARTY_ROLE], the agreement concerns [PURPOSE], and the relevant jurisdiction appears to
     be [JURISDICTION]. My priorities are [PRIORITIES]. State clearly that enforceability and legal rights
-    require advice from a qualified lawyer familiar with the applicable law.
+    require advice from a qualified lawyer familiar with the applicable law. If the uploaded text is incomplete
+    or schedules/annexures are missing, list what is absent before scoring risk.
 
 
     Start with a deal snapshot: parties, term, payment, renewal, termination, and main obligations, each
@@ -1228,9 +1231,8 @@ prompts:
 
 
     Add a cross-reference check for inconsistent definitions, dates, amounts, and annexures. List obligations
-    due in the first 30 days. Finish with “Questions for a Pakistani lawyer” tailored to [JURISDICTION]
-    and a missing-information list. Mask CNIC numbers, bank details, signatures, and personal addresses
-    in your output.
+    due in the first 30 days. Finish with “Questions for a lawyer” tailored to [JURISDICTION] and a missing-information
+    list. Mask CNIC numbers, bank details, signatures, and personal addresses in your output.
 
     '
 - id: '023'
@@ -1239,10 +1241,11 @@ prompts:
   category: documents
   difficulty: Intermediate
   usage: Use this to compress a long report into decisions, evidence, and implications.
-  use_case: A manager or project lead can understand a lengthy evaluation, market, policy, or technical
-    report before a short briefing.
-  preview: Distil [REPORT_TITLE_OR_UPLOAD] into an executive summary for [AUDIENCE] deciding [DECISION].
-    The reader has [READING_TIME] minutes and cares most about [PRIORITIES]. Work only from the report...
+  use_case: A manager or project lead can understand a lengthy evaluation, market, policy, or 
+    technical report before a short briefing.
+  preview: Distil [REPORT_TITLE_OR_UPLOAD] into an executive summary for [AUDIENCE] deciding 
+    [DECISION]. The reader has about [READING_TIME] minutes and cares most about [PRIORITIES]. 
+    Organisational context...
   best_tools:
   - tool: Claude
     reason: Maintains coherence and detail across very long documents.
@@ -1255,13 +1258,15 @@ prompts:
   - reports
   - decisions
   - synthesis
-  next_id: null
+  next_id:
   prompt: 'Distil [REPORT_TITLE_OR_UPLOAD] into an executive summary for [AUDIENCE] deciding [DECISION].
 
 
-    The reader has [READING_TIME] minutes and cares most about [PRIORITIES]. Work only from the report.
-    Preserve the difference between reported evidence, author interpretation, and your synthesis. Every
-    material number must retain its unit, period, population, and page or section reference.
+    The reader has about [READING_TIME] minutes and cares most about [PRIORITIES]. Organisational context:
+    [ORGANISATION_OR_CONTEXT]. Work only from the report. Preserve the difference between reported evidence,
+    author interpretation, and your synthesis. Every material number must retain its unit, period, population,
+    and page or section reference. If the report is incomplete, say what sections are missing instead
+    of filling gaps from memory.
 
 
     Open with a decision signal: one sentence stating why this report matters now. Follow with:
@@ -1270,7 +1275,7 @@ prompts:
 
     - five findings ranked by decision relevance, not document order;
 
-    - implications for [ORGANISATION_OR_CONTEXT];
+    - implications for the stated organisational context;
 
     - risks, limitations, and excluded populations;
 
@@ -1296,11 +1301,11 @@ prompts:
   category: documents
   difficulty: Advanced
   usage: Use this to compare two documents on matching criteria with traceable evidence.
-  use_case: A learner or professional can compare policies, proposals, studies, specifications, or reports
-    without relying on vague overall impressions.
+  use_case: A learner or professional can compare policies, proposals, studies, specifications, or 
+    reports without relying on vague overall impressions.
   preview: 'Compare [PDF_A] and [PDF_B] as two separate evidence sources, never blending their claims.
-    My comparison purpose is [PURPOSE]. Use these criteria: [CRITERIA]. If no criteria are supplied, propose
-    a...'
+    My comparison purpose is [PURPOSE]. Use these criteria: [CRITERIA]. If criteria are blank or still
+    show...'
   best_tools:
   - tool: NotebookLM
     reason: Compares uploaded sources while grounding statements in their respective documents.
@@ -1313,18 +1318,20 @@ prompts:
   - documents
   - evidence
   - analysis
-  next_id: null
+  next_id:
   prompt: 'Compare [PDF_A] and [PDF_B] as two separate evidence sources, never blending their claims.
 
 
-    My comparison purpose is [PURPOSE]. Use these criteria: [CRITERIA]. If no criteria are supplied, propose
-    a set and ask for approval before proceeding. Identify each document’s title, author, date, version,
-    intended audience, and scope. Flag if editions or time periods make direct comparison unfair.
+    My comparison purpose is [PURPOSE]. Use these criteria: [CRITERIA]. If criteria are blank or still
+    show brackets, propose a criterion set and pause for approval before scoring. Identify each document’s
+    title, author, date, version, intended audience, and scope. Flag if editions or time periods make
+    direct comparison unfair.
 
 
     Create a comparison matrix. For every criterion provide Document A’s position with page reference,
     Document B’s position with page reference, the relationship—agreement, partial overlap, conflict,
-    or silence—and a concise interpretation. Use [NOT STATED] when a document does not address something.
+    or silence—and a concise interpretation. Use the plain label NOT STATED when a document does not address
+    something.
 
 
     Add separate sections for:
@@ -1340,9 +1347,9 @@ prompts:
     - unresolved contradictions.
 
 
-    Run a role-play critique: first argue which document better serves [PURPOSE], then act as a sceptical
-    reviewer and challenge that conclusion using the strongest counterevidence. Revise the conclusion
-    if the critique succeeds.
+    Run a role-play critique: first argue which document better serves the stated purpose, then act as
+    a sceptical reviewer and challenge that conclusion using the strongest counterevidence. Revise the
+    conclusion if the critique succeeds.
 
 
     Finish with a bounded recommendation and confidence level. Do not infer author intent or claim that
@@ -1356,10 +1363,11 @@ prompts:
   category: documents
   difficulty: Beginner
   usage: Use this to extract clear tasks, owners, deadlines, and dependencies from text.
-  use_case: A project team can convert minutes, emails, proposals, or reports into an accountable action
-    register.
-  preview: Extract an accountable action register from [DOCUMENT_OR_PASTED_TEXT] without inventing commitments.
-    The project is [PROJECT], today is [DATE], and our naming convention is [TEAM_ROLES_OR_NAMES]...
+  use_case: A project team can convert minutes, emails, proposals, or reports into an accountable 
+    action register.
+  preview: Extract an accountable action register from [DOCUMENT_OR_PASTED_TEXT] without inventing 
+    commitments. The project is [PROJECT], today is [DATE], and our naming convention is 
+    [TEAM_ROLES_OR_NAMES]...
   best_tools:
   - tool: ChatGPT
     reason: Extracts structured tasks from common document formats and rewrites them clearly.
@@ -1372,7 +1380,7 @@ prompts:
   - tasks
   - accountability
   - documents
-  next_id: null
+  next_id:
   prompt: 'Extract an accountable action register from [DOCUMENT_OR_PASTED_TEXT] without inventing commitments.
 
 
@@ -1383,7 +1391,7 @@ prompts:
 
     Build a register with: action stated as a verb, named owner, due date, priority, dependency, completion
     evidence, and source location. If the text says “we,” leaves the owner unclear, or gives a relative
-    date such as “next Friday,” mark [CONFIRM OWNER] or [CONFIRM DATE]; do not guess.
+    date such as “next Friday,” mark with the plain labels CONFIRM OWNER or CONFIRM DATE; do not guess.
 
 
     Separate the result into Confirmed Actions, Implied Actions Requiring Approval, and Open Questions.
@@ -1406,8 +1414,8 @@ prompts:
   category: documents
   difficulty: Advanced
   usage: Use this to take analytical notes on a thesis chapter without rewriting it.
-  use_case: A postgraduate student can understand argument structure, evidence, gaps, and revision priorities
-    while retaining authorship of the thesis.
+  use_case: A postgraduate student can understand argument structure, evidence, gaps, and revision 
+    priorities while retaining authorship of the thesis.
   preview: 'Act as a thesis reading companion for [CHAPTER_TITLE], helping me diagnose the draft while
     preserving my authorship. Degree and discipline: [PROGRAMME]. Research question: [QUESTION]. Chapter...'
   best_tools:
@@ -1422,15 +1430,16 @@ prompts:
   - academic-writing
   - chapter-review
   - integrity
-  next_id: null
+  next_id:
   prompt: 'Act as a thesis reading companion for [CHAPTER_TITLE], helping me diagnose the draft while
     preserving my authorship.
 
 
     Degree and discipline: [PROGRAMME]. Research question: [QUESTION]. Chapter purpose: [PURPOSE]. Institutional
     guidance: [GUIDANCE]. Read the uploaded chapter and refer to paragraph, heading, or page locations.
-    Do not write replacement passages unless I later request limited examples, and never generate fabricated
-    data or references.
+    If guidance is blank or still shows brackets, apply general academic integrity norms and label that
+    assumption. Do not write replacement passages unless I later request limited examples, and never generate
+    fabricated data or references.
 
 
     Produce four analytical layers:
@@ -1461,8 +1470,8 @@ prompts:
   category: documents
   difficulty: Intermediate
   usage: Use this to clean a meeting transcript while preserving meaning and accountability.
-  use_case: A team can turn a rough automated transcript into readable minutes without silently changing
-    decisions or speaker intent.
+  use_case: A team can turn a rough automated transcript into readable minutes without silently 
+    changing decisions or speaker intent.
   preview: 'Clean [MEETING_TRANSCRIPT] into a readable record without changing what participants meant.
     Meeting title and date: [MEETING_DETAILS]. Known speakers: [SPEAKER_LIST]. Desired output...'
   best_tools:
@@ -1477,23 +1486,27 @@ prompts:
   - meetings
   - editing
   - minutes
-  next_id: null
+  next_id:
   prompt: 'Clean [MEETING_TRANSCRIPT] into a readable record without changing what participants meant.
 
 
     Meeting title and date: [MEETING_DETAILS]. Known speakers: [SPEAKER_LIST]. Desired output: [CLEAN_TRANSCRIPT_OR_MINUTES].
+    Timestamp placement: [INTERVAL_OR_TOPIC_CHANGES]. Unclear-passage marking preference: [UNCLEAR].
+
+
     Treat the original as the authority. Do not invent names, fix factual disagreements, or turn tentative
-    suggestions into decisions.
+    suggestions into decisions. If the speaker list is incomplete, keep uncertain speakers labelled Unknown
+    and note them in the uncertainty log.
 
 
     For the cleaned transcript, standardise speaker labels, punctuation, and paragraph breaks. Remove
     filler only when meaning and tone remain intact. Retain meaningful hesitation, disagreement, conditions,
-    and uncertainty. Replace inaudible or doubtful segments with [UNCLEAR at TIMESTAMP] and include the
-    nearest safe context.
+    and uncertainty. Replace inaudible or doubtful segments using the preferred unclear marking style,
+    or with [UNCLEAR at TIMESTAMP] if that preference is blank, and include the nearest safe context.
 
 
-    Keep timestamps at [INTERVAL_OR_TOPIC_CHANGES]. Mark any proposed correction to a number, name, or
-    technical term in braces as {VERIFY: ...}; never silently substitute it.
+    Keep timestamps according to the stated interval or topic-change rule. Mark any proposed correction
+    to a number, name, or technical term in braces as {VERIFY: ...}; never silently substitute it.
 
 
     After the transcript, provide:
@@ -1506,7 +1519,7 @@ prompts:
 
     - unresolved questions;
 
-    - an uncertainty log for every [UNCLEAR] or {VERIFY} marker.
+    - an uncertainty log for every unclear or {VERIFY} marker.
 
 
     Finish with a five-sentence meeting summary that distinguishes discussion from commitment. If speakers
@@ -1514,14 +1527,14 @@ prompts:
     not infer emotion from voice or wording unless it was explicitly stated.
 
     '
-- id: 028
+- id: '028'
   slug: policy-plain-language-translator
   title: Policy Plain-Language Translator
   category: documents
   difficulty: Intermediate
   usage: Use this to explain a policy clearly without weakening its actual requirements.
-  use_case: A school, NGO, or workplace can make policies understandable to staff, students, volunteers,
-    or community members.
+  use_case: A school, NGO, or workplace can make policies understandable to staff, students, 
+    volunteers, or community members.
   preview: 'Translate [POLICY_DOCUMENT] into a plain-language guide for [AUDIENCE] while preserving its
     rules and exceptions. Target reading level: [READING_LEVEL]. Preferred language...'
   best_tools:
@@ -1530,20 +1543,22 @@ prompts:
   - tool: Claude
     reason: Preserves cross-references and exceptions across long policy documents.
   tip: Have the policy owner verify every obligation after simplification.
-  expected_output: A plain-language policy guide with duties, examples, exceptions, and traceability.
+  expected_output: A plain-language policy guide with duties, examples, exceptions, and 
+    traceability.
   tags:
   - policy
   - plain-language
   - accessibility
   - compliance
-  next_id: null
+  next_id:
   prompt: 'Translate [POLICY_DOCUMENT] into a plain-language guide for [AUDIENCE] while preserving its
     rules and exceptions.
 
 
     Target reading level: [READING_LEVEL]. Preferred language: [ENGLISH_URDU_OR_BILINGUAL]. Jurisdiction
     or organisation: [CONTEXT]. This is an explanation, not legal advice or a replacement for the official
-    policy.
+    policy. If context is blank or still shows brackets, keep explanations general and flag organisation-specific
+    gaps.
 
 
     Begin with “What this policy is for” and “Who it applies to.” Then explain duties as direct questions:
@@ -1556,8 +1571,8 @@ prompts:
     non-example for each high-risk rule. Clearly label exceptions and appeal or reporting routes.
 
 
-    Create a fidelity ledger listing any phrase that could not be simplified safely and why. Add [ORGANISATION
-    TO CONFIRM] wherever the document is ambiguous or internally inconsistent.
+    Create a fidelity ledger listing any phrase that could not be simplified safely and why. Add the plain
+    label ORGANISATION TO CONFIRM wherever the document is ambiguous or internally inconsistent.
 
 
     Close with a one-page quick guide and five comprehension questions. Do not introduce new requirements,
@@ -1565,14 +1580,14 @@ prompts:
     adviser before publication.
 
     '
-- id: 029
+- id: '029'
   slug: pasted-reference-normalizer
   title: Pasted Reference Normalizer
   category: documents
   difficulty: Beginner
   usage: Use this to clean a pasted reference list without inventing missing details.
-  use_case: A student or report writer can standardise inconsistent citations and identify records that
-    need manual verification.
+  use_case: A student or report writer can standardise inconsistent citations and identify records 
+    that need manual verification.
   preview: 'Normalize my pasted references into [CITATION_STYLE_AND_EDITION] without fabricating any bibliographic
     information. References: [PASTE_REFERENCES] Required ordering...'
   best_tools:
@@ -1581,13 +1596,14 @@ prompts:
   - tool: Claude
     reason: Maintains consistency across large, irregular reference lists.
   tip: Verify metadata against the source or DOI record before submitting the final list.
-  expected_output: A formatted reference list plus duplicate, missing-field, and verification reports.
+  expected_output: A formatted reference list plus duplicate, missing-field, and verification 
+    reports.
   tags:
   - citations
   - references
   - formatting
   - bibliography
-  next_id: null
+  next_id:
   prompt: 'Normalize my pasted references into [CITATION_STYLE_AND_EDITION] without fabricating any bibliographic
     information.
 
@@ -1604,9 +1620,9 @@ prompts:
     output can be traced back.
 
 
-    Format entries only from supplied fields. Insert visible markers such as [MISSING YEAR], [VERIFY AUTHOR
-    ORDER], or [INCOMPLETE URL] where necessary. Do not search for or infer missing metadata unless I
-    explicitly request a separate verification phase.
+    Format entries only from supplied fields. Insert visible plain markers such as MISSING YEAR, VERIFY
+    AUTHOR ORDER, or INCOMPLETE URL where necessary. Do not search for or infer missing metadata unless
+    I explicitly request a separate verification phase.
 
 
     Detect likely duplicates, including DOI matches and small title variations. Present them for confirmation
@@ -1626,11 +1642,11 @@ prompts:
   category: documents
   difficulty: Intermediate
   usage: Use this to ask and answer questions strictly from uploaded learning notes.
-  use_case: A student can revise from lecture notes or course packs while seeing where every answer came
-    from.
-  preview: Build a revision Q&A set grounded exclusively in [UPLOADED_NOTES] for [COURSE_AND_TOPIC]. The
-    assessment format is [EXAM_FORMAT], my level is [LEVEL], and I struggle most with [WEAK_AREAS]. Treat
-    the...
+  use_case: A student can revise from lecture notes or course packs while seeing where every answer 
+    came from.
+  preview: Build a revision Q&A set grounded exclusively in [UPLOADED_NOTES] for [COURSE_AND_TOPIC].
+    The assessment format is [EXAM_FORMAT], my level is [LEVEL], and I struggle most with 
+    [WEAK_AREAS]. Marking...
   best_tools:
   - tool: NotebookLM
     reason: Specializes in source-grounded questions and answers over uploaded notes.
@@ -1643,13 +1659,14 @@ prompts:
   - notes
   - revision
   - source-grounding
-  next_id: null
+  next_id:
   prompt: 'Build a revision Q&A set grounded exclusively in [UPLOADED_NOTES] for [COURSE_AND_TOPIC].
 
 
     The assessment format is [EXAM_FORMAT], my level is [LEVEL], and I struggle most with [WEAK_AREAS].
-    Treat the notes as a closed book of evidence: if an answer is absent, say “Not answerable from these
-    notes” and identify what information is missing.
+    Marking guidance: [MARK_SCHEME]. Treat the notes as a closed book of evidence: if an answer is absent,
+    say “Not answerable from these notes” and identify what information is missing. If marking guidance
+    is blank or still shows brackets, keep answers concise and label length assumptions.
 
 
     Create four rounds with different cognitive demands:
@@ -1663,9 +1680,10 @@ prompts:
     Round 4: three comparison or evaluation questions.
 
 
-    For every answer, include a page, heading, slide, or paragraph pointer and a confidence label based
-    on source clarity. Keep model answers proportional to likely marks under [MARK_SCHEME]. Add one plausible
-    wrong answer and correction for the three concepts most prone to confusion.
+    Weight Round 3 and Round 4 toward the stated weak areas when the notes support that. For every answer,
+    include a page, heading, slide, or paragraph pointer and a confidence label based on source clarity.
+    Keep model answers proportional to likely marks under the marking guidance. Add one plausible wrong
+    answer and correction for the three concepts most prone to confusion.
 
 
     Include two deliberately unanswerable questions that are relevant but outside the uploaded material;

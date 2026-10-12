@@ -16,7 +16,8 @@
 | Batch | IDs | Status |
 |------:|-----|--------|
 | 1 | 001–010 | **complete** (commit 546ced1) |
-| 2 | 011–020 | **complete** |
+| 2 | 011–020 | **complete** (commit 4a83ec9, pushed + Pages built) |
+| 3 | 021–030 | **complete** (pending commit/push) |
 | 3 | 021–030 | pending |
 | 4 | 031–040 | pending |
 | 5 | 041–050 | pending |
@@ -32,11 +33,11 @@
 An earlier session marked 115/115 reviewed with **0 prompt template improvements**. This run re-reviews every active prompt. Do not push until the full library is done.
 
 ## Progress counters
-- Prompts reviewed: 20/115
-- Prompt templates substantively improved: 20
+- Prompts reviewed: 30/115
+- Prompt templates substantively improved: 30
 - Prompt templates reviewed, left unchanged: 0
-- Question sets reviewed: 20
-- Question fields improved / added / removed / made optional: ~130 improved / 0 added / 0 removed / 2 newly optional (018 VERIFY, 020 FILE_OR_LINK)
+- Question sets reviewed: 30
+- Question fields improved / added / removed / made optional: ~190 improved / 0 added / 0 removed / several newly optional in batch 3 (024 CRITERIA, 026 GUIDANCE, 027 SPEAKER_LIST/UNCLEAR, 028 CONTEXT, 029 LANGUAGE_RULES, 030 MARK_SCHEME)
 
 ## Batch 1 (001–010) outcomes
 
@@ -98,8 +99,11 @@ Representative clarity fixes:
 - `python build/generate.py`: PASS
 - HTML spot checks 017/018: PASS
 
+## Batch 3 (021–030) outcomes
+Templates + questions improved for all ten; sentinel brackets with fill-token risk rewritten to plain labels where needed; optional blanks handled; questions clarified (study time, jurisdiction, marking scheme, etc.).
+
 ## Remaining
-021–115 (batches 3–12)
+031–115 (batches 4–12)
 
 ## Next action
-Review and improve prompts **021–030**, validate, commit locally, continue. Do **not** push until full library complete.
+After Batch 3 commit + push + Pages verify: continue Batch 4 (031–040) with the same verify→push→Pages cycle.

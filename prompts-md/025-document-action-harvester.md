@@ -19,7 +19,7 @@ Extract an accountable action register from [DOCUMENT_OR_PASTED_TEXT] without in
 
 The project is [PROJECT], today is [DATE], and our naming convention is [TEAM_ROLES_OR_NAMES]. Scan for explicit actions, promises, approvals, follow-ups, decisions that create work, and unresolved requests. Preserve source page, paragraph, timestamp, or message reference.
 
-Build a register with: action stated as a verb, named owner, due date, priority, dependency, completion evidence, and source location. If the text says “we,” leaves the owner unclear, or gives a relative date such as “next Friday,” mark [CONFIRM OWNER] or [CONFIRM DATE]; do not guess.
+Build a register with: action stated as a verb, named owner, due date, priority, dependency, completion evidence, and source location. If the text says “we,” leaves the owner unclear, or gives a relative date such as “next Friday,” mark with the plain labels CONFIRM OWNER or CONFIRM DATE; do not guess.
 
 Separate the result into Confirmed Actions, Implied Actions Requiring Approval, and Open Questions. Detect duplicate tasks expressed in different wording and merge them while retaining all source references.
 

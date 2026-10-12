@@ -17,14 +17,14 @@
 ```text
 Review [UPLOADED_AGREEMENT] as a plain-language issue spotter, not as a lawyer or substitute for legal advice.
 
-I am the [PARTY_ROLE], the agreement concerns [PURPOSE], and the relevant jurisdiction appears to be [JURISDICTION]. My priorities are [PRIORITIES]. State clearly that enforceability and legal rights require advice from a qualified lawyer familiar with the applicable law.
+I am the [PARTY_ROLE], the agreement concerns [PURPOSE], and the relevant jurisdiction appears to be [JURISDICTION]. My priorities are [PRIORITIES]. State clearly that enforceability and legal rights require advice from a qualified lawyer familiar with the applicable law. If the uploaded text is incomplete or schedules/annexures are missing, list what is absent before scoring risk.
 
 Start with a deal snapshot: parties, term, payment, renewal, termination, and main obligations, each linked to clause or page numbers. Then create a red-flag register using severity—urgent, important, or monitor—for:
 liability and indemnity; unilateral changes; intellectual property; confidentiality; data use; non-compete or exclusivity; payment and penalties; termination; dispute resolution; governing law; warranties; and missing schedules.
 
 For every flag, quote only the minimum relevant wording, explain the practical effect in neutral language, identify who bears the risk, and draft one clarification or negotiation question. Do not declare a clause illegal or enforceable.
 
-Add a cross-reference check for inconsistent definitions, dates, amounts, and annexures. List obligations due in the first 30 days. Finish with “Questions for a Pakistani lawyer” tailored to [JURISDICTION] and a missing-information list. Mask CNIC numbers, bank details, signatures, and personal addresses in your output.
+Add a cross-reference check for inconsistent definitions, dates, amounts, and annexures. List obligations due in the first 30 days. Finish with “Questions for a lawyer” tailored to [JURISDICTION] and a missing-information list. Mask CNIC numbers, bank details, signatures, and personal addresses in your output.
 ```
 
 ---

@@ -15,11 +15,11 @@
 ## Prompt
 
 ```text
-Turn the uploaded [PDF_TITLE] into active study notes for [COURSE_OR_EXAM], grounded only in the document.
+Turn the uploaded document titled [PDF_TITLE] into active study notes for [COURSE_OR_EXAM], grounded only in that document.
 
-My current level is [LEVEL], the assessed topics are [TOPICS], and I have [STUDY_TIME]. Read the document’s headings, figures, tables, and conclusion. If pages are missing, scanned illegibly, or inaccessible, identify them rather than guessing.
+My current level is [LEVEL], the assessed topics are [TOPICS], and I have [STUDY_TIME] available for this pass. Read the document’s headings, figures, tables, and conclusion. If pages are missing, scanned illegibly, or inaccessible, identify them rather than guessing content.
 
-Build the notes in learning order, which may differ from page order. For each concept include: a plain-language explanation, essential terminology, one concrete example from the PDF, and page references. Mark definitions exactly quoted from the document with quotation marks; paraphrase everything else.
+Build the notes in learning order, which may differ from page order. For each concept include: a plain-language explanation, essential terminology, one concrete example from the PDF, and page references. Mark definitions exactly quoted from the document with quotation marks; paraphrase everything else. Do not invent examples that are not in the source.
 
 Then create an Active Recall Pack:
 - eight short-answer questions;
@@ -29,7 +29,7 @@ Then create an Active Recall Pack:
 
 Add a visual text map connecting the chapter’s main ideas with arrows and relationship labels. Identify any formula, framework, or process that requires memorisation, and devise one mnemonic without distorting the meaning.
 
-Close with a [NUMBER_OF_DAYS]-day review schedule using spaced practice. Include a “return to the PDF” list for claims, diagrams, or examples that need closer reading. Do not write assignment answers or conceal AI assistance; these notes must help me learn the source.
+Close with a [NUMBER_OF_DAYS]-day review schedule using spaced practice that fits the available study time. Include a “return to the PDF” list for claims, diagrams, or examples that need closer reading. Do not write assignment answers or conceal AI assistance; these notes must help me learn the source.
 ```
 
 ---

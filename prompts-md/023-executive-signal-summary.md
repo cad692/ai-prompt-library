@@ -17,12 +17,12 @@
 ```text
 Distil [REPORT_TITLE_OR_UPLOAD] into an executive summary for [AUDIENCE] deciding [DECISION].
 
-The reader has [READING_TIME] minutes and cares most about [PRIORITIES]. Work only from the report. Preserve the difference between reported evidence, author interpretation, and your synthesis. Every material number must retain its unit, period, population, and page or section reference.
+The reader has about [READING_TIME] minutes and cares most about [PRIORITIES]. Organisational context: [ORGANISATION_OR_CONTEXT]. Work only from the report. Preserve the difference between reported evidence, author interpretation, and your synthesis. Every material number must retain its unit, period, population, and page or section reference. If the report is incomplete, say what sections are missing instead of filling gaps from memory.
 
 Open with a decision signal: one sentence stating why this report matters now. Follow with:
 - Purpose and scope in three lines;
 - five findings ranked by decision relevance, not document order;
-- implications for [ORGANISATION_OR_CONTEXT];
+- implications for the stated organisational context;
 - risks, limitations, and excluded populations;
 - decisions or actions the report explicitly supports.
 

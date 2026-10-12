@@ -17,7 +17,7 @@
 ```text
 Act as a thesis reading companion for [CHAPTER_TITLE], helping me diagnose the draft while preserving my authorship.
 
-Degree and discipline: [PROGRAMME]. Research question: [QUESTION]. Chapter purpose: [PURPOSE]. Institutional guidance: [GUIDANCE]. Read the uploaded chapter and refer to paragraph, heading, or page locations. Do not write replacement passages unless I later request limited examples, and never generate fabricated data or references.
+Degree and discipline: [PROGRAMME]. Research question: [QUESTION]. Chapter purpose: [PURPOSE]. Institutional guidance: [GUIDANCE]. Read the uploaded chapter and refer to paragraph, heading, or page locations. If guidance is blank or still shows brackets, apply general academic integrity norms and label that assumption. Do not write replacement passages unless I later request limited examples, and never generate fabricated data or references.
 
 Produce four analytical layers:
 1. Argument spine: one line per major claim, showing how each supports the chapter purpose.

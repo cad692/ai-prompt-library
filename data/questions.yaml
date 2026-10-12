@@ -433,167 +433,174 @@
     optional: true
 "021":
   PDF_TITLE:
-    q: "What is the document called?"
-    ex: "Economics Chapter 3"
+    q: What is the PDF or document title?
+    ex: Mankiw Ch. 3 — Interdependence and Trade
   COURSE_OR_EXAM:
-    q: "What course or exam is this for?"
-    ex: "Microeconomics"
+    q: Which course or exam are these notes for?
+    ex: Microeconomics midterm
   LEVEL:
-    q: "What level are you working at?"
-    ex: "First year undergraduate"
+    q: What study level should the notes match?
+    ex: First-year undergraduate
   TOPICS:
-    q: "Which topics need attention?"
-    ex: "Elasticity and consumer demand"
+    q: Which topics in the PDF need the most attention?
+    ex: Comparative advantage and opportunity cost
   STUDY_TIME:
-    q: "How much study time do you have?"
-    ex: "Two hours this week"
+    q: How much study time can you spend now?
+    ex: 90 minutes today, then short reviews
   NUMBER_OF_DAYS:
-    q: "How many days should the review cover?"
-    ex: "Seven days"
+    q: Over how many days should spaced review run?
+    ex: '7'
 "022":
   UPLOADED_AGREEMENT:
-    q: "What agreement are you reviewing?"
-    ex: "A freelance service contract"
+    q: Paste or name the agreement you are reviewing.
+    ex: Freelance web-development service agreement PDF
   PARTY_ROLE:
-    q: "What is your role?"
-    ex: "The freelancer or tenant"
+    q: Which party are you in this agreement?
+    ex: Service provider / freelancer
   PURPOSE:
-    q: "What is the agreement for?"
-    ex: "Website development work"
+    q: What work or arrangement does the agreement cover?
+    ex: Website build and three months of maintenance
   JURISDICTION:
-    q: "Which jurisdiction matters here?"
-    ex: "Pakistan or Punjab"
+    q: Which country or region’s law likely applies?
+    ex: Pakistan / Punjab
   PRIORITIES:
-    q: "What matters most to you?"
-    ex: "Payment security and fairness"
+    q: Which risks or outcomes matter most to you?
+    ex: Payment timing, IP ownership, and exit terms
 "023":
   REPORT_TITLE_OR_UPLOAD:
-    q: "What report are you summarising?"
-    ex: "A city transport review"
+    q: What report are you summarising?
+    ex: City transport evaluation, final PDF
   AUDIENCE:
-    q: "Who is the summary for?"
-    ex: "Senior managers"
+    q: Who will read this executive summary?
+    ex: Operations directors and the CFO
   DECISION:
-    q: "What decision is being made?"
-    ex: "Whether to expand the project"
+    q: What decision must this summary support?
+    ex: Whether to fund phase-two bus corridors
   READING_TIME:
-    q: "How much time does the reader have?"
-    ex: "Ten minutes"
+    q: How many minutes does the reader have?
+    ex: '10'
   PRIORITIES:
-    q: "What matters most to them?"
-    ex: "Costs, risks, and timeline"
+    q: What issues should the summary emphasise?
+    ex: Cost, delivery risk, and equity impacts
   ORGANISATION_OR_CONTEXT:
-    q: "What context should we use?"
-    ex: "A university operations office"
+    q: What organisation or setting is deciding?
+    ex: Municipal transport authority, FY2026 budget
 "024":
   PDF_A:
-    q: "What is the first document?"
-    ex: "Policy draft A"
+    q: What is the first document to compare?
+    ex: Policy draft A, March version
   PDF_B:
-    q: "What is the second document?"
-    ex: "Policy draft B"
+    q: What is the second document to compare?
+    ex: Policy draft B, June revision
   PURPOSE:
-    q: "Why are you comparing them?"
-    ex: "To choose the stronger version"
+    q: Why are you comparing these two documents?
+    ex: Choose which draft to send for legal review
   CRITERIA:
-    q: "What criteria should drive comparison?"
-    ex: "Cost, clarity, and fairness"
+    q: Which criteria should drive the comparison?
+    ex: Clarity, fairness, cost, and enforceability
+    optional: true
 "025":
   DOCUMENT_OR_PASTED_TEXT:
-    q: "What document or text is this from?"
-    ex: "A meeting summary and email thread"
+    q: Paste the minutes, email, or document text.
+    ex: Meeting notes plus follow-up email thread
   PROJECT:
-    q: "What project is this for?"
-    ex: "Campus event planning"
+    q: What project should the action register serve?
+    ex: Campus orientation week planning
   DATE:
-    q: "What date should we use today?"
-    ex: "12 October 2026"
+    q: What calendar date should count as today?
+    ex: 12 October 2026
   TEAM_ROLES_OR_NAMES:
-    q: "Who is on the team?"
-    ex: "Design lead, finance, and outreach"
+    q: Which names or roles should label owners?
+    ex: Ayesha (design), Bilal (finance), Sara (outreach)
 "026":
   CHAPTER_TITLE:
-    q: "What chapter are you reviewing?"
-    ex: "Methodology and findings"
+    q: Which thesis chapter are you reviewing?
+    ex: Chapter 4 — Findings and discussion
   PROGRAMME:
-    q: "What programme or discipline is this?"
-    ex: "MPhil in education"
+    q: What degree programme and field is this?
+    ex: MPhil Education
   QUESTION:
-    q: "What is the research question?"
-    ex: "How do learners adapt to online study?"
+    q: What is your research question?
+    ex: How do first-year students adapt to online tutorials?
   PURPOSE:
-    q: "What is the chapter trying to do?"
-    ex: "Explain the evidence and argument"
+    q: What is this chapter supposed to accomplish?
+    ex: Present findings and link them to the literature
   GUIDANCE:
-    q: "What institutional guidance applies?"
-    ex: "Faculty rubric and thesis policy"
+    q: What faculty rubric or thesis rules apply?
+    ex: Faculty handbook section on evidence and citation
+    optional: true
 "027":
   MEETING_TRANSCRIPT:
-    q: "Paste the meeting transcript"
-    ex: "Transcript text from the call"
+    q: Paste the raw meeting transcript text.
+    ex: Full auto-transcript, including timestamps if present
   MEETING_DETAILS:
-    q: "What are the meeting details?"
-    ex: "Team planning on 5 May"
+    q: What is the meeting title and date?
+    ex: Sprint planning — 5 May 2026, 3pm
   SPEAKER_LIST:
-    q: "Who spoke in the meeting?"
-    ex: "Amina, Usman, and Raza"
+    q: Which speakers should labels use, if known?
+    ex: Amina, Usman, Raza
+    optional: true
   CLEAN_TRANSCRIPT_OR_MINUTES:
-    q: "Do you want a transcript or minutes?"
-    ex: "A clean meeting summary"
+    q: Do you need a cleaned transcript or minutes?
+    ex: Cleaned transcript plus action minutes
   INTERVAL_OR_TOPIC_CHANGES:
-    q: "How often should timestamps appear?"
-    ex: "At topic changes"
+    q: When should timestamps appear in the output?
+    ex: At each topic change, or every 5 minutes
   UNCLEAR:
-    q: "How should unclear passages be marked?"
-    ex: "[UNCLEAR at TIMESTAMP]"
+    q: How should unclear speech be marked?
+    ex: '[UNCLEAR at 00:12:04]'
+    optional: true
 "028":
   POLICY_DOCUMENT:
-    q: "What policy are you translating?"
-    ex: "Attendance and leave policy"
+    q: Which policy document should be simplified?
+    ex: Hostel attendance and leave policy PDF
   AUDIENCE:
-    q: "Who is the audience?"
-    ex: "Student volunteers"
+    q: Who must understand the plain-language guide?
+    ex: First-year students and resident tutors
   READING_LEVEL:
-    q: "What reading level should it target?"
-    ex: "Secondary school level"
+    q: What reading level should the guide target?
+    ex: Secondary-school / clear everyday English
   ENGLISH_URDU_OR_BILINGUAL:
-    q: "What language version do you want?"
-    ex: "English and Urdu"
+    q: Should the guide be English, Urdu, or bilingual?
+    ex: Bilingual English with Urdu key terms
   CONTEXT:
-    q: "What organisation or jurisdiction is this?"
-    ex: "A university hostel policy"
+    q: Which organisation or jurisdiction owns this policy?
+    ex: Public university hostel, Lahore
+    optional: true
 "029":
-  PASTE_REFERENCES:
-    q: "Paste the references to normalize"
-    ex: "A messy bibliography list"
   CITATION_STYLE_AND_EDITION:
-    q: "Which citation style do you need?"
-    ex: "APA 7"
+    q: Which citation style and edition is required?
+    ex: APA 7th edition
+  PASTE_REFERENCES:
+    q: Paste the messy reference list to clean.
+    ex: Full bibliography block, one entry per line if possible
   ALPHABETICAL_NUMERICAL_OR_CUSTOM:
-    q: "How should entries be ordered?"
-    ex: "Alphabetical order"
+    q: How should the cleaned list be ordered?
+    ex: Alphabetical by author surname
   LANGUAGE_RULES:
-    q: "What language rules should apply?"
-    ex: "Use English titles only"
+    q: What language or title-script rules apply?
+    ex: Keep original titles; translate notes in English
+    optional: true
 "030":
   UPLOADED_NOTES:
-    q: "What notes are you using?"
-    ex: "Uploaded lecture notes"
+    q: Paste or name the notes that answers must use.
+    ex: Week 3–5 lecture notes PDF / pasted text
   COURSE_AND_TOPIC:
-    q: "What course and topic are these for?"
-    ex: "Sociology of education"
+    q: What course and topic is this revision for?
+    ex: Sociology of Education — tracking and inequality
   EXAM_FORMAT:
-    q: "What assessment format is this?"
-    ex: "Short-answer exam"
+    q: What exam or assessment format should we match?
+    ex: 90-minute short-answer paper
   LEVEL:
-    q: "What level are you studying at?"
-    ex: "Undergraduate second year"
+    q: What academic level should questions match?
+    ex: Undergraduate second year
   WEAK_AREAS:
-    q: "What topics are hardest for you?"
-    ex: "Theory and case examples"
+    q: Which topics are hardest for you right now?
+    ex: Theory application and comparing case studies
   MARK_SCHEME:
-    q: "What marking guide should we follow?"
-    ex: "Ten marks per question"
+    q: What marking guide or mark weights apply?
+    ex: 10 marks each; 2 for definition, 8 for explanation
+    optional: true
 "031":
   ROUGH_TASK:
     q: "What task do you want to structure?"
