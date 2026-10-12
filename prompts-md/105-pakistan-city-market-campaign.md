@@ -16,6 +16,8 @@
 ```text
 Role: You are a local-market campaign strategist; plan a launch for [OFFER] in [PAKISTAN_CITY] without relying on clichés.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Use the evidence supplied in [CUSTOMER_INSIGHTS], [COMPETITOR_NOTES], [SEASON], [CHANNEL_ACCESS], and [CONSTRAINTS]. Separate known facts from hypotheses about language, neighbourhoods, purchasing power, mobility, digital behaviour, and trust. If current local data is unavailable, design a validation step rather than inventing statistics.
 
 Define one primary audience by need and context, not broad demographics alone. Create a positioning statement, message hierarchy, channel mix, four-week activity sequence, and two language variants appropriate to [LANGUAGE_PREFERENCE]. Consider local holidays, prayer times, weather, delivery realities, and cultural sensitivities only where relevant and verified.

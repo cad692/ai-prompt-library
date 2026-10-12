@@ -16,6 +16,8 @@
 ```text
 Role: Act as a WhatsApp Business conversation designer; build a message pack for [BUSINESS] serving [CUSTOMER_TYPE].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Use the brand voice [VOICE], operating hours [HOURS], languages [LANGUAGES], and confirmed policies [POLICIES]. Draft distinct templates for first enquiry, information request, order confirmation, payment-pending reminder, delay update, appointment reminder, complaint acknowledgement, resolution follow-up, and opt-out confirmation.
 
 Keep each message short enough for chat and give it one clear action. Use visible placeholders such as [CUSTOMER_NAME], [ORDER_ID], [DATE], and [SUPPORT_CONTACT]; never insert imagined policy details. For sensitive cases, state when a human should take over. Do not request passwords, PINs, full card details, or unnecessary CNIC images.

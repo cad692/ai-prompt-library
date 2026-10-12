@@ -5751,11 +5751,12 @@ prompts:
   title: Scholarship SOP Argument Architect
   category: pakistan
   difficulty: Intermediate
-  usage: Build an authentic scholarship statement structure from the applicant's verified experiences
-    and goals.
-  use_case: Shape a persuasive narrative without inventing achievements or erasing the applicant's voice.
+  usage: Build an authentic scholarship statement structure from the applicant's verified 
+    experiences and goals.
+  use_case: Shape a persuasive narrative without inventing achievements or erasing the applicant's 
+    voice.
   preview: 'Role: You are my scholarship SOP architect; help me design the argument while keeping every
-    sentence truthful and recognisably mine. Analyse [SCHOLARSHIP_PROMPT], selection criteria [CRITERIA]...'
+    sentence truthful and recognisably mine. If any personalization field is blank or still shows brackets...'
   best_tools:
   - tool: ChatGPT
     reason: Can organise personal evidence into a coherent narrative and question weak claims.
@@ -5766,9 +5767,13 @@ prompts:
   - scholarship
   - sop
   - applications
-  next_id: null
+  next_id:
   prompt: 'Role: You are my scholarship SOP architect; help me design the argument while keeping every
     sentence truthful and recognisably mine.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Analyse [SCHOLARSHIP_PROMPT], selection criteria [CRITERIA], programme [PROGRAMME], word limit [LIMIT],
@@ -5796,24 +5801,30 @@ prompts:
   title: International CV Evidence Tailor
   category: pakistan
   difficulty: Intermediate
-  usage: Tailor a Pakistani candidate's CV to an international vacancy without fabricating credentials.
-  use_case: Translate genuine experience into market-appropriate language while retaining accurate dates,
-    scope, and results.
+  usage: Tailor a Pakistani candidate's CV to an international vacancy without fabricating 
+    credentials.
+  use_case: Translate genuine experience into market-appropriate language while retaining accurate 
+    dates, scope, and results.
   preview: 'Goal: Tailor my CV for [ROLE] in [COUNTRY_OR_MARKET] using only evidence contained in [MASTER_CV]
-    and [ACHIEVEMENT_NOTES]. Parse [JOB_DESCRIPTION] into essential outcomes, skills, tools, seniority...'
+    and [ACHIEVEMENT_NOTES]. If any personalization field is blank or still shows brackets, continue with...'
   best_tools:
   - tool: Microsoft Copilot
     reason: Can compare a job description with a CV and revise the document in place.
-  tip: Research destination-country conventions before including a photo, CNIC, age, or marital status.
+  tip: Research destination-country conventions before including a photo, CNIC, age, or marital 
+    status.
   expected_output: A tailored CV draft, evidence gaps, and a final accuracy checklist.
   tags:
   - pakistan
   - cv
   - international-jobs
   - careers
-  next_id: null
+  next_id:
   prompt: 'Goal: Tailor my CV for [ROLE] in [COUNTRY_OR_MARKET] using only evidence contained in [MASTER_CV]
     and [ACHIEVEMENT_NOTES].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Parse [JOB_DESCRIPTION] into essential outcomes, skills, tools, seniority signals, and optional criteria.
@@ -5842,9 +5853,10 @@ prompts:
   category: pakistan
   difficulty: Beginner
   usage: Prepare a consistent application kit for a genuine vacancy found on Rozee.pk or LinkedIn.
-  use_case: Create tailored materials and follow-up messages while screening for suspicious listings.
+  use_case: Create tailored materials and follow-up messages while screening for suspicious 
+    listings.
   preview: 'Role: Act as my Pakistan job-application desk; assemble an honest kit for [VACANCY_TEXT] found
-    on [ROZEE_OR_LINKEDIN]. Compare the vacancy with [MY_CV] and [CAREER_GOALS]. First produce a fit...'
+    on [ROZEE_OR_LINKEDIN]. If any personalization field is blank or still shows brackets, continue with...'
   best_tools:
   - tool: ChatGPT
     reason: Can compare vacancy details with candidate evidence and draft coordinated materials.
@@ -5855,9 +5867,13 @@ prompts:
   - rozee
   - linkedin
   - job-application
-  next_id: null
+  next_id:
   prompt: 'Role: Act as my Pakistan job-application desk; assemble an honest kit for [VACANCY_TEXT] found
     on [ROZEE_OR_LINKEDIN].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Compare the vacancy with [MY_CV] and [CAREER_GOALS]. First produce a fit verdict—apply, clarify, or
@@ -5884,15 +5900,17 @@ prompts:
   title: Upwork and Fiverr Proposal Proof Writer
   category: pakistan
   difficulty: Intermediate
-  usage: Draft a concise freelance proposal grounded in the client's brief and the seller's real proof.
-  use_case: Help Pakistani freelancers respond specifically without false portfolios, fake urgency, or
-    platform-rule violations.
+  usage: Draft a concise freelance proposal grounded in the client's brief and the seller's real 
+    proof.
+  use_case: Help Pakistani freelancers respond specifically without false portfolios, fake urgency, 
+    or platform-rule violations.
   preview: 'Goal: Write an evidence-based proposal for [PLATFORM] opportunity [CLIENT_BRIEF] using my
-    actual profile [FREELANCER_PROFILE]. Diagnose the client''s likely outcome, deliverables, constraints,
-    and...'
+    actual profile [FREELANCER_PROFILE]. If any personalization field is blank or still shows brackets,
+    continue...'
   best_tools:
   - tool: ChatGPT
-    reason: Can connect project requirements to supplied work samples and formulate clarifying questions.
+    reason: Can connect project requirements to supplied work samples and formulate clarifying 
+      questions.
   tip: Mention only samples you can actually share and outcomes you can substantiate.
   expected_output: A tailored proposal, milestones, clarifying questions, and risk flags.
   tags:
@@ -5900,9 +5918,13 @@ prompts:
   - upwork
   - fiverr
   - freelancing
-  next_id: null
+  next_id:
   prompt: 'Goal: Write an evidence-based proposal for [PLATFORM] opportunity [CLIENT_BRIEF] using my actual
     profile [FREELANCER_PROFILE].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Diagnose the client''s likely outcome, deliverables, constraints, and unanswered questions. Identify
@@ -5931,12 +5953,15 @@ prompts:
   category: pakistan
   difficulty: Advanced
   usage: Plan a locally grounded campaign for a specific Pakistani city using testable assumptions.
-  use_case: Adapt positioning, channels, language, and timing to a local market without stereotyping residents.
+  use_case: Adapt positioning, channels, language, and timing to a local market without stereotyping
+    residents.
   preview: 'Role: You are a local-market campaign strategist; plan a launch for [OFFER] in [PAKISTAN_CITY]
-    without relying on clichés. Use the evidence supplied in [CUSTOMER_INSIGHTS], [COMPETITOR_NOTES]...'
+    without relying on clichés. If any personalization field is blank or still shows brackets, continue
+    with...'
   best_tools:
   - tool: Gemini
-    reason: Supports research-led planning and multilingual content ideation from supplied local context.
+    reason: Supports research-led planning and multilingual content ideation from supplied local 
+      context.
   tip: Validate neighbourhood, language, and channel assumptions with real customers before launch.
   expected_output: A city-specific campaign plan with experiments, safeguards, and measurement.
   tags:
@@ -5944,9 +5969,13 @@ prompts:
   - local-marketing
   - campaign
   - city
-  next_id: null
+  next_id:
   prompt: 'Role: You are a local-market campaign strategist; plan a launch for [OFFER] in [PAKISTAN_CITY]
     without relying on clichés.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Use the evidence supplied in [CUSTOMER_INSIGHTS], [COMPETITOR_NOTES], [SEASON], [CHANNEL_ACCESS],
@@ -5975,11 +6004,13 @@ prompts:
   title: Urdu, English, and Roman Urdu Adapter
   category: pakistan
   difficulty: Intermediate
-  usage: Adapt one message across Urdu, English, and Roman Urdu while preserving intent and register.
-  use_case: Create culturally natural language variants instead of literal word-for-word translations.
+  usage: Adapt one message across Urdu, English, and Roman Urdu while preserving intent and 
+    register.
+  use_case: Create culturally natural language variants instead of literal word-for-word 
+    translations.
   preview: 'Goal: Adapt [SOURCE_MESSAGE] into natural Pakistani English, Urdu script, and Roman Urdu for
-    [AUDIENCE] and [CHANNEL]. Preserve the message''s intent, factual content, call to action, names,
-    dates...'
+    [AUDIENCE] and [CHANNEL]. If any personalization field is blank or still shows brackets, continue
+    with...'
   best_tools:
   - tool: ChatGPT
     reason: Can compare multilingual phrasing and explain register choices in context.
@@ -5990,9 +6021,13 @@ prompts:
   - urdu
   - roman-urdu
   - localization
-  next_id: null
+  next_id:
   prompt: 'Goal: Adapt [SOURCE_MESSAGE] into natural Pakistani English, Urdu script, and Roman Urdu for
     [AUDIENCE] and [CHANNEL].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Preserve the message''s intent, factual content, call to action, names, dates, amounts, and level
@@ -6022,11 +6057,10 @@ prompts:
   category: pakistan
   difficulty: Beginner
   usage: Create permission-aware WhatsApp Business messages for common customer moments.
-  use_case: Prepare consistent replies, updates, and follow-ups that remain human, concise, and easy to
-    opt out of.
+  use_case: Prepare consistent replies, updates, and follow-ups that remain human, concise, and easy
+    to opt out of.
   preview: 'Role: Act as a WhatsApp Business conversation designer; build a message pack for [BUSINESS]
-    serving [CUSTOMER_TYPE]. Use the brand voice [VOICE], operating hours [HOURS], languages [LANGUAGES],
-    and...'
+    serving [CUSTOMER_TYPE]. If any personalization field is blank or still shows brackets, continue with...'
   best_tools:
   - tool: ChatGPT
     reason: Can draft multiple short message types from one brand and service context.
@@ -6037,9 +6071,13 @@ prompts:
   - whatsapp-business
   - customer-service
   - messaging
-  next_id: null
+  next_id:
   prompt: 'Role: Act as a WhatsApp Business conversation designer; build a message pack for [BUSINESS]
     serving [CUSTOMER_TYPE].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Use the brand voice [VOICE], operating hours [HOURS], languages [LANGUAGES], and confirmed policies
@@ -6069,24 +6107,30 @@ prompts:
   category: pakistan
   difficulty: Advanced
   usage: Explain a Pakistan tax topic in plain language with official-source checks and boundaries.
-  use_case: Support general FBR awareness while directing case-specific decisions to current official
-    guidance or a qualified adviser.
+  use_case: Support general FBR awareness while directing case-specific decisions to current 
+    official guidance or a qualified adviser.
   preview: 'Goal: Explain [PAKISTAN_TAX_TOPIC] for general awareness in plain language, using the context
-    [TAXPAYER_SCENARIO]. Start with this exact boundary in substance: “This is general information, not
-    tax...'
+    [TAXPAYER_SCENARIO]. If any personalization field is blank or still shows brackets, continue with
+    clearly...'
   best_tools:
   - tool: Perplexity
     reason: Can locate current official pages for verification while showing source links.
-  tip: Confirm tax year, taxpayer type, and the current FBR notification before relying on any threshold.
-  expected_output: An informational overview, verification checklist, and questions for a professional.
+  tip: Confirm tax year, taxpayer type, and the current FBR notification before relying on any 
+    threshold.
+  expected_output: An informational overview, verification checklist, and questions for a 
+    professional.
   tags:
   - pakistan
   - fbr
   - tax-awareness
   - informational
-  next_id: null
+  next_id:
   prompt: 'Goal: Explain [PAKISTAN_TAX_TOPIC] for general awareness in plain language, using the context
     [TAXPAYER_SCENARIO].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Start with this exact boundary in substance: “This is general information, not tax, legal, or financial
@@ -6117,7 +6161,7 @@ prompts:
   usage: Define a precise research brief that can support the rest of a presentation workflow.
   use_case: Establish scope, audience, questions, and evidence standards before collecting sources.
   preview: 'Role: You are the research lead beginning a seven-step presentation chain; produce a decision-ready
-    brief for [TOPIC]. Review any earlier context in [PREVIOUS_OUTPUT]. Because this is step one, it...'
+    brief for [TOPIC]. If any personalization field is blank or still shows brackets, continue with...'
   best_tools:
   - tool: ChatGPT
     reason: Can turn an initial request into a structured and testable research brief.
@@ -6131,6 +6175,10 @@ prompts:
   next_id: '110'
   prompt: 'Role: You are the research lead beginning a seven-step presentation chain; produce a decision-ready
     brief for [TOPIC].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Review any earlier context in [PREVIOUS_OUTPUT]. Because this is step one, it may contain a rough
@@ -6162,7 +6210,8 @@ prompts:
   usage: Convert the approved research brief into traceable, source-level evidence notes.
   use_case: Collect relevant claims and limitations before interpretation begins.
   preview: 'Goal: Act as the evidence analyst for step two; complete evidence notes from the research
-    brief in [PREVIOUS_OUTPUT]. If that input lacks scope, audience, research questions, or source standards...'
+    brief in [PREVIOUS_OUTPUT]. If any personalization field is blank or still shows brackets, continue
+    with...'
   best_tools:
   - tool: Perplexity
     reason: Supports source discovery with links that can be checked against originals.
@@ -6176,6 +6225,10 @@ prompts:
   next_id: '111'
   prompt: 'Goal: Act as the evidence analyst for step two; complete evidence notes from the research brief
     in [PREVIOUS_OUTPUT].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     If that input lacks scope, audience, research questions, or source standards, state what is missing

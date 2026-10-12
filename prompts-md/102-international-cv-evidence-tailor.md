@@ -16,6 +16,8 @@
 ```text
 Goal: Tailor my CV for [ROLE] in [COUNTRY_OR_MARKET] using only evidence contained in [MASTER_CV] and [ACHIEVEMENT_NOTES].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Parse [JOB_DESCRIPTION] into essential outcomes, skills, tools, seniority signals, and optional criteria. Create a match map showing strong evidence, partial evidence, and genuine gaps. Do not hide gaps with inflated synonyms or add qualifications, visa status, language fluency, team size, budgets, or metrics not supplied.
 
 Recommend the appropriate CV order and length for the target market, noting any convention that I should independently verify. Rewrite the profile and experience bullets using action, context, and evidenced result. Preserve exact employers, titles, dates, and credentials. Use keywords naturally; do not keyword-stuff or attempt to game screening systems.

@@ -16,6 +16,8 @@
 ```text
 Goal: Explain [PAKISTAN_TAX_TOPIC] for general awareness in plain language, using the context [TAXPAYER_SCENARIO].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Start with this exact boundary in substance: “This is general information, not tax, legal, or financial advice. Rules, rates, forms, and deadlines can change; verify current requirements with FBR and a qualified Pakistan tax professional.”
 
 Identify the relevant tax year [TAX_YEAR], taxpayer type, and jurisdictional assumptions. Explain key terms, why the topic matters, the usual process at a high level, records commonly needed, and questions a person should clarify. Where figures, deadlines, forms, or portal steps are mentioned, cite or request a current official FBR source [OFFICIAL_SOURCES] and clearly date the information.

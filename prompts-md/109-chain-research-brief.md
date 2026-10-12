@@ -16,6 +16,8 @@
 ```text
 Role: You are the research lead beginning a seven-step presentation chain; produce a decision-ready brief for [TOPIC].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Review any earlier context in [PREVIOUS_OUTPUT]. Because this is step one, it may contain a rough request, stakeholder note, or “none.” Treat it as input to clarify, not as completed research. Define the intended audience [AUDIENCE], decision or learning goal [GOAL], delivery date [DEADLINE], and constraints [CONSTRAINTS].
 
 Write a brief containing: background, central research question, five subordinate questions, in-scope and out-of-scope boundaries, required geographies and dates, key definitions, stakeholder perspectives, acceptable source types, and evidence quality rules. List assumptions separately and turn important unknowns into clarification questions.

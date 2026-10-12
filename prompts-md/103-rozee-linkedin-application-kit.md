@@ -16,6 +16,8 @@
 ```text
 Role: Act as my Pakistan job-application desk; assemble an honest kit for [VACANCY_TEXT] found on [ROZEE_OR_LINKEDIN].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Compare the vacancy with [MY_CV] and [CAREER_GOALS]. First produce a fit verdict—apply, clarify, or skip—with evidence. Note missing salary, location, schedule, contract type, and application deadline. Flag scam indicators such as payment requests, personal email domains, pressure to share banking details, or unverifiable company identity, while acknowledging that a flag is not proof.
 
 For a suitable role, prepare: a targeted three-line profile, six prioritised CV bullet selections or rewrites, a brief platform application message, and a respectful networking note to [CONTACT_TYPE]. Keep every claim supported by my materials and avoid generic enthusiasm.

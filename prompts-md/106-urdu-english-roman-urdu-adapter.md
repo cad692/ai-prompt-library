@@ -16,6 +16,8 @@
 ```text
 Goal: Adapt [SOURCE_MESSAGE] into natural Pakistani English, Urdu script, and Roman Urdu for [AUDIENCE] and [CHANNEL].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Preserve the message's intent, factual content, call to action, names, dates, amounts, and level of formality. Before translating, identify ambiguous phrases and ask for clarification if they could materially change meaning. Use [REGION_OR_REGISTER] preferences where supplied; otherwise choose widely understandable wording and label the choice.
 
 Present the three versions in parallel sections. Do not transliterate the English mechanically: adapt idioms, greetings, honorifics, sentence length, and punctuation so each version sounds native to its medium. Keep protected terms [TERMS_TO_KEEP] unchanged and provide a short glossary for specialised vocabulary.

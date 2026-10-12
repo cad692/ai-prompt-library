@@ -1536,6 +1536,8 @@ Do not fabricate citations, results, participants, approvals, or quotations. Mar
 "
 101,scholarship-sop-argument-architect,Scholarship SOP Argument Architect,pakistan,Intermediate,Build an authentic scholarship statement structure from the applicant's verified experiences and goals.,"A tailored SOP blueprint, evidence map, and authenticity review.","Replace broad claims about impact with one verifiable action, result, and lesson.","pakistan, scholarship, sop, applications",ChatGPT: Can organise personal evidence into a coherent narrative and question weak claims.,,"Role: You are my scholarship SOP architect; help me design the argument while keeping every sentence truthful and recognisably mine.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Analyse [SCHOLARSHIP_PROMPT], selection criteria [CRITERIA], programme [PROGRAMME], word limit [LIMIT], and my verified experience bank [EXPERIENCES]. Identify what the reviewers actually need to learn and which of my examples can demonstrate it. Never create leadership roles, hardship, grades, awards, impact figures, or future partnerships.
 
 Develop a narrative spine linking formative context, relevant action, learning, programme fit, and a plausible contribution after study. For each paragraph, state its purpose, best evidence, reflection angle, and transition. Include alternatives when an example is weak or overused.
@@ -1545,6 +1547,8 @@ Ask me focused questions where specificity is missing. Then provide an opening s
 Finish with a reviewer test covering fit, evidence, humility, clarity, and whether the goals make sense in Pakistan and beyond. Keep the applicant—not the AI—as the author.
 "
 102,international-cv-evidence-tailor,International CV Evidence Tailor,pakistan,Intermediate,Tailor a Pakistani candidate's CV to an international vacancy without fabricating credentials.,"A tailored CV draft, evidence gaps, and a final accuracy checklist.","Research destination-country conventions before including a photo, CNIC, age, or marital status.","pakistan, cv, international-jobs, careers",Microsoft Copilot: Can compare a job description with a CV and revise the document in place.,,"Goal: Tailor my CV for [ROLE] in [COUNTRY_OR_MARKET] using only evidence contained in [MASTER_CV] and [ACHIEVEMENT_NOTES].
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Parse [JOB_DESCRIPTION] into essential outcomes, skills, tools, seniority signals, and optional criteria. Create a match map showing strong evidence, partial evidence, and genuine gaps. Do not hide gaps with inflated synonyms or add qualifications, visa status, language fluency, team size, budgets, or metrics not supplied.
 
@@ -1556,6 +1560,8 @@ Return the revised sections, a list of omitted low-relevance material, five inte
 "
 103,rozee-linkedin-application-kit,Rozee.pk and LinkedIn Application Kit,pakistan,Beginner,Prepare a consistent application kit for a genuine vacancy found on Rozee.pk or LinkedIn.,"A fit note, tailored profile, cover message, tracker entry, and safety flags.",Verify the employer domain and never pay or share sensitive documents merely to apply.,"pakistan, rozee, linkedin, job-application",ChatGPT: Can compare vacancy details with candidate evidence and draft coordinated materials.,,"Role: Act as my Pakistan job-application desk; assemble an honest kit for [VACANCY_TEXT] found on [ROZEE_OR_LINKEDIN].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Compare the vacancy with [MY_CV] and [CAREER_GOALS]. First produce a fit verdict—apply, clarify, or skip—with evidence. Note missing salary, location, schedule, contract type, and application deadline. Flag scam indicators such as payment requests, personal email domains, pressure to share banking details, or unverifiable company identity, while acknowledging that a flag is not proof.
 
 For a suitable role, prepare: a targeted three-line profile, six prioritised CV bullet selections or rewrites, a brief platform application message, and a respectful networking note to [CONTACT_TYPE]. Keep every claim supported by my materials and avoid generic enthusiasm.
@@ -1565,6 +1571,8 @@ Add a tracker row with job title, company, source URL, date found, deadline, doc
 Do not submit anything, contact anyone, or disclose CNIC, bank details, passwords, or references without my explicit decision.
 "
 104,freelance-proposal-proof-writer,Upwork and Fiverr Proposal Proof Writer,pakistan,Intermediate,Draft a concise freelance proposal grounded in the client's brief and the seller's real proof.,"A tailored proposal, milestones, clarifying questions, and risk flags.",Mention only samples you can actually share and outcomes you can substantiate.,"pakistan, upwork, fiverr, freelancing",ChatGPT: Can connect project requirements to supplied work samples and formulate clarifying questions.,,"Goal: Write an evidence-based proposal for [PLATFORM] opportunity [CLIENT_BRIEF] using my actual profile [FREELANCER_PROFILE].
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Diagnose the client's likely outcome, deliverables, constraints, and unanswered questions. Identify up to three genuine proof points from [WORK_SAMPLES] that are relevant; if none fit, say so rather than inventing a portfolio item. Open with a specific observation about the work, not a generic greeting or claim to be “the best.”
 
@@ -1576,6 +1584,8 @@ End with two alternative closing lines: one direct and one warm. Preserve my nat
 "
 105,pakistan-city-market-campaign,Pakistan City Market Campaign Planner,pakistan,Advanced,Plan a locally grounded campaign for a specific Pakistani city using testable assumptions.,"A city-specific campaign plan with experiments, safeguards, and measurement.","Validate neighbourhood, language, and channel assumptions with real customers before launch.","pakistan, local-marketing, campaign, city",Gemini: Supports research-led planning and multilingual content ideation from supplied local context.,,"Role: You are a local-market campaign strategist; plan a launch for [OFFER] in [PAKISTAN_CITY] without relying on clichés.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Use the evidence supplied in [CUSTOMER_INSIGHTS], [COMPETITOR_NOTES], [SEASON], [CHANNEL_ACCESS], and [CONSTRAINTS]. Separate known facts from hypotheses about language, neighbourhoods, purchasing power, mobility, digital behaviour, and trust. If current local data is unavailable, design a validation step rather than inventing statistics.
 
 Define one primary audience by need and context, not broad demographics alone. Create a positioning statement, message hierarchy, channel mix, four-week activity sequence, and two language variants appropriate to [LANGUAGE_PREFERENCE]. Consider local holidays, prayer times, weather, delivery realities, and cultural sensitivities only where relevant and verified.
@@ -1585,6 +1595,8 @@ Propose three small experiments with hypothesis, audience, creative, success mea
 Finish with an approval checklist and a measurement dashboard covering qualified enquiries, conversion, repeat interest, complaints, and learning—not reach alone.
 "
 106,urdu-english-roman-urdu-adapter,"Urdu, English, and Roman Urdu Adapter",pakistan,Intermediate,"Adapt one message across Urdu, English, and Roman Urdu while preserving intent and register.",Three aligned language versions plus notes on ambiguity and terminology.,Have a fluent human review public-facing Urdu and names written in Urdu script.,"pakistan, urdu, roman-urdu, localization",ChatGPT: Can compare multilingual phrasing and explain register choices in context.,,"Goal: Adapt [SOURCE_MESSAGE] into natural Pakistani English, Urdu script, and Roman Urdu for [AUDIENCE] and [CHANNEL].
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Preserve the message's intent, factual content, call to action, names, dates, amounts, and level of formality. Before translating, identify ambiguous phrases and ask for clarification if they could materially change meaning. Use [REGION_OR_REGISTER] preferences where supplied; otherwise choose widely understandable wording and label the choice.
 
@@ -1596,6 +1608,8 @@ Do not translate legal, medical, or safety-critical wording with false confidenc
 "
 107,whatsapp-business-message-suite,WhatsApp Business Message Suite,pakistan,Beginner,Create permission-aware WhatsApp Business messages for common customer moments.,A labelled pack of concise templates with placeholders and escalation rules.,Use approved customer lists and respect opt-outs immediately.,"pakistan, whatsapp-business, customer-service, messaging",ChatGPT: Can draft multiple short message types from one brand and service context.,,"Role: Act as a WhatsApp Business conversation designer; build a message pack for [BUSINESS] serving [CUSTOMER_TYPE].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Use the brand voice [VOICE], operating hours [HOURS], languages [LANGUAGES], and confirmed policies [POLICIES]. Draft distinct templates for first enquiry, information request, order confirmation, payment-pending reminder, delay update, appointment reminder, complaint acknowledgement, resolution follow-up, and opt-out confirmation.
 
 Keep each message short enough for chat and give it one clear action. Use visible placeholders such as [CUSTOMER_NAME], [ORDER_ID], [DATE], and [SUPPORT_CONTACT]; never insert imagined policy details. For sensitive cases, state when a human should take over. Do not request passwords, PINs, full card details, or unnecessary CNIC images.
@@ -1605,6 +1619,8 @@ Provide English and [SECOND_LANGUAGE] versions where requested, adapting rather 
 Finish with a mini style guide covering greetings, emoji restraint, response timing, escalation, and how staff should record customer consent or opt-out.
 "
 108,fbr-tax-awareness-explainer,FBR Tax Awareness Explainer,pakistan,Advanced,Explain a Pakistan tax topic in plain language with official-source checks and boundaries.,"An informational overview, verification checklist, and questions for a professional.","Confirm tax year, taxpayer type, and the current FBR notification before relying on any threshold.","pakistan, fbr, tax-awareness, informational",Perplexity: Can locate current official pages for verification while showing source links.,,"Goal: Explain [PAKISTAN_TAX_TOPIC] for general awareness in plain language, using the context [TAXPAYER_SCENARIO].
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Start with this exact boundary in substance: “This is general information, not tax, legal, or financial advice. Rules, rates, forms, and deadlines can change; verify current requirements with FBR and a qualified Pakistan tax professional.”
 
@@ -1616,6 +1632,8 @@ End with an official-source verification checklist and five questions to take to
 "
 109,chain-research-brief,Chain Step 1 - Research Brief,chains,Intermediate,Define a precise research brief that can support the rest of a presentation workflow.,"A signed-off research brief with questions, boundaries, and deliverables.",Resolve scope disputes now; later chain steps inherit them.,"chain, research, briefing, chain-step-1",ChatGPT: Can turn an initial request into a structured and testable research brief.,110,"Role: You are the research lead beginning a seven-step presentation chain; produce a decision-ready brief for [TOPIC].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Review any earlier context in [PREVIOUS_OUTPUT]. Because this is step one, it may contain a rough request, stakeholder note, or “none.” Treat it as input to clarify, not as completed research. Define the intended audience [AUDIENCE], decision or learning goal [GOAL], delivery date [DEADLINE], and constraints [CONSTRAINTS].
 
 Write a brief containing: background, central research question, five subordinate questions, in-scope and out-of-scope boundaries, required geographies and dates, key definitions, stakeholder perspectives, acceptable source types, and evidence quality rules. List assumptions separately and turn important unknowns into clarification questions.
@@ -1625,6 +1643,8 @@ Specify the downstream artifacts: evidence notes, synthesis, outline, slide draf
 Do not research the topic yet or fabricate sources. End with a clearly labelled “HANDOFF TO STEP 2” block containing the approved brief and a compact search plan that can be pasted as [PREVIOUS_OUTPUT].
 "
 110,chain-evidence-notes,Chain Step 2 - Evidence Notes,chains,Advanced,"Convert the approved research brief into traceable, source-level evidence notes.",An evidence ledger mapped to the brief's research questions.,Save quotations with page numbers or section locations at capture time.,"chain, evidence, sources, chain-step-2",Perplexity: Supports source discovery with links that can be checked against originals.,111,"Goal: Act as the evidence analyst for step two; complete evidence notes from the research brief in [PREVIOUS_OUTPUT].
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 If that input lacks scope, audience, research questions, or source standards, state what is missing and reconstruct a provisional brief from [TOPIC] before proceeding. For each supplied or discovered source [SOURCES], record author or organisation, title, date, URL or document identifier, source type, and access date.
 

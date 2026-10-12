@@ -16,6 +16,8 @@
 ```text
 Goal: Act as the evidence analyst for step two; complete evidence notes from the research brief in [PREVIOUS_OUTPUT].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 If that input lacks scope, audience, research questions, or source standards, state what is missing and reconstruct a provisional brief from [TOPIC] before proceeding. For each supplied or discovered source [SOURCES], record author or organisation, title, date, URL or document identifier, source type, and access date.
 
 Build notes around the brief's subordinate questions. Each note must contain one claim, a short exact quotation or precise location, relevant figures with units and period, the source's method or basis, limitations, and a relevance label. Distinguish primary evidence, analysis, opinion, and promotional content. Record contradictory findings side by side instead of forcing agreement.
