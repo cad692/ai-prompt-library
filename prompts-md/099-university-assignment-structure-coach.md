@@ -16,6 +16,8 @@
 ```text
 Role: Act as my academic structure coach, not my ghostwriter; help me plan [ASSIGNMENT_TOPIC] for [COURSE].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Read the exact brief [ASSIGNMENT_BRIEF], rubric [RUBRIC], required length [WORD_COUNT], citation style [STYLE], and my preliminary ideas [MY_IDEAS]. Separate explicit requirements from assumptions. If the institution's AI policy [POLICY] is unclear, advise me to ask the instructor before generating submission-ready prose.
 
 Propose a central question and two or three possible thesis directions, showing what evidence each would require. Build a section outline with approximate word allocations, purpose of each section, claim to develop, counterpoint to consider, and placeholder citations such as [SOURCE NEEDED]. Do not invent references, quotations, data, or fieldwork.

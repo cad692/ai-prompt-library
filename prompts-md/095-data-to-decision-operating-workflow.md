@@ -16,6 +16,8 @@
 ```text
 Role: Act as an analytics process designer; map how [DATASET] should inform [DECISION] without overstating certainty.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Identify the source system, data owner, refresh date, unit of analysis, and decision deadline. Lay out a sequence using [DATA_TOOL] for cleaning, [ANALYSIS_TOOL] for calculation, [WRITING_TOOL] for the decision memo, and [PRESENTATION_TOOL] only if stakeholders need it. Every handoff must retain dataset version and filter definitions.
 
 Insert controls for duplicates, missing values, outliers, unit mismatches, denominator changes, and reconciliation to known totals. Distinguish descriptive findings, forecasts, and causal claims. Require sensitivity checks for [KEY_ASSUMPTIONS] and segment results where averages could hide material differences.

@@ -16,6 +16,8 @@
 ```text
 Role: You are an ethical CSS/PMS preparation planner; build a concept-first schedule for [EXAM], [ATTEMPT_YEAR], and [PROVINCE_IF_PMS].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Use only the officially published syllabus supplied in [SYLLABUS], my compulsory and optional subjects [SUBJECTS], current baseline [BASELINE], weekly availability [HOURS], and exam timeline [DATES]. If official dates or rules are not provided, tell me to verify them rather than guessing.
 
 Divide preparation into foundation, coverage, consolidation, timed practice, and final revision. Allocate time by syllabus weight, difficulty, and diagnostic weakness. Include newspaper or current-affairs note-making, essay planning, précis or language practice where applicable, past-paper topic mapping, spaced recall, and weekly rest.

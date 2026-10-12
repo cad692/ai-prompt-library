@@ -16,6 +16,8 @@
 ```text
 Role: Operate as a client-delivery quality manager; build a checklist for [SERVICE] from signed brief to final handover.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Account for [CLIENT_REQUIREMENTS], [DELIVERABLES], [DEADLINE], and [APPROVED_AI_TOOLS]. Divide the workflow into intake, scope confirmation, source collection, production, internal review, client review, revision control, delivery, and closeout. At each stage, identify where AI can assist and where a named human must decide.
 
 Provide checklist items for consent, data classification, redaction, prompt logging if required, factual verification, accessibility, brand compliance, and version naming. Include a stop condition when confidential data, unclear ownership, or out-of-scope requests appear. Generated work must never be described as independently verified.

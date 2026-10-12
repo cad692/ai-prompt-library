@@ -16,6 +16,8 @@
 ```text
 Goal: Design a research-to-brief workflow that answers [DECISION_QUESTION] for [DECISION_MAKER] by [DEADLINE].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Begin by converting the question into scope boundaries, decision criteria, search concepts, and exclusion rules. Assign discovery to [SEARCH_TOOL], source capture to [NOTES_TOOL], comparison to [ANALYSIS_TOOL], and drafting to [WRITING_TOOL]. Explain each handoff in terms of data fields, not vague “integration.”
 
 Require an evidence ledger containing URL or document ID, publisher, date, claim, quotation or location, geography, method, limitations, and verification status. Include a deliberate search for disagreement and missing perspectives. High-impact claims need either a primary source or two independent credible sources.

@@ -16,6 +16,8 @@
 ```text
 Goal: Build a weekly AI operating rhythm for [BUSINESS_TYPE] serving [CUSTOMERS] with a team of [TEAM_SIZE].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Use our recurring responsibilities [WEEKLY_TASKS], approved tools [TOOLS], and constraints [CONSTRAINTS]. Assign one theme to each working day: planning and demand review, customer communication, marketing production, operations improvement, and finance or performance reflection. Adapt the pattern if [WORKING_DAYS] differs.
 
 For each activity, show the source information, AI-assisted action, human owner, output, and approval rule. Include low-risk uses such as summarising non-sensitive feedback and drafting alternatives, while blocking entry of CNICs, payment details, passwords, private employee records, or confidential client material into unapproved systems.

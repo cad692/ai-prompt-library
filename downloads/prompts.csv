@@ -1418,6 +1418,8 @@ End with five useful performance signals and a monthly learning loop showing how
 "
 091,ai-assisted-client-delivery-checklist,AI-Assisted Client Delivery Checklist,workflows,Advanced,Create a controlled client-delivery process with transparent and reviewable AI assistance.,A stage-gated checklist from intake through handover and retention.,Remove confidential identifiers before any tool not approved by the client.,"workflow, client-delivery, quality, privacy","Microsoft Copilot: Supports documents, spreadsheets, email, and presentations in a connected work environment.",,"Role: Operate as a client-delivery quality manager; build a checklist for [SERVICE] from signed brief to final handover.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Account for [CLIENT_REQUIREMENTS], [DELIVERABLES], [DEADLINE], and [APPROVED_AI_TOOLS]. Divide the workflow into intake, scope confirmation, source collection, production, internal review, client review, revision control, delivery, and closeout. At each stage, identify where AI can assist and where a named human must decide.
 
 Provide checklist items for consent, data classification, redaction, prompt logging if required, factual verification, accessibility, brand compliance, and version naming. Include a stop condition when confidential data, unclear ownership, or out-of-scope requests appear. Generated work must never be described as independently verified.
@@ -1427,6 +1429,8 @@ Define the handoff artifact between tools—such as a sanitised brief, draft doc
 Finish with a delivery manifest listing files, versions, approvals, unresolved limitations, and retention or deletion actions. Make the checklist usable in [PROJECT_PLATFORM].
 "
 092,source-to-decision-brief-workflow,Source-to-Decision Brief Workflow,workflows,Advanced,Plan a traceable path from research question to concise decision brief.,A research workflow with an evidence ledger and decision-ready brief.,Treat search summaries as leads and verify important claims in original sources.,"workflow, research, brief, evidence",Perplexity: Helps discover web sources and provides links that can be independently checked.,,"Goal: Design a research-to-brief workflow that answers [DECISION_QUESTION] for [DECISION_MAKER] by [DEADLINE].
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Begin by converting the question into scope boundaries, decision criteria, search concepts, and exclusion rules. Assign discovery to [SEARCH_TOOL], source capture to [NOTES_TOOL], comparison to [ANALYSIS_TOOL], and drafting to [WRITING_TOOL]. Explain each handoff in terms of data fields, not vague “integration.”
 
@@ -1438,6 +1442,8 @@ Specify the final brief sections and a one-page limit for its executive layer. C
 "
 093,focused-job-hunt-daily-system,Focused Job-Hunt Daily System,workflows,Beginner,"Organise a daily job search across discovery, tailoring, outreach, tracking, and follow-up.",A time-boxed daily workflow and an application tracking system.,"Never let AI add experience, credentials, or results that you cannot evidence.","workflow, careers, job-search, applications","ChatGPT: Can coordinate tailoring, rehearsal, planning, and reflection from supplied information.",,"Role: Be my job-search operations coach; create a daily workflow for [TARGET_ROLES] in [LOCATION_OR_REMOTE_PREFERENCE].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 I have [DAILY_TIME] available and use [JOB_BOARDS], [DOCUMENT_TOOL], [AI_ASSISTANT], and [TRACKER]. Divide the session into opportunity discovery, fit screening, CV tailoring, cover note preparation, networking, application submission, and follow-up. Give each block a realistic time limit and a definition of done.
 
 Build a fit score using essential skills, evidence from my background [CANDIDATE_PROFILE], location, work arrangement, and genuine interest. Reject roles with material mismatches instead of forcing keywords. Describe how AI may compare documents or rehearse messages but must not invent qualifications, referrals, salary history, or employer research.
@@ -1447,6 +1453,8 @@ Define tracker columns for source, deadline, tailored files, contact, status, ne
 End with a 10-minute review that captures one lesson, schedules follow-ups, and adjusts tomorrow's search terms without measuring success only by application count.
 "
 094,small-business-weekly-ai-rhythm,Small Business Weekly AI Rhythm,workflows,Intermediate,Plan a practical weekly AI routine for a small business with clear human controls.,"A weekday routine with inputs, owners, outputs, and safety checks.","Start with one repeated bottleneck and measure saved rework, not generated volume.","workflow, small-business, operations, weekly",Gemini: Can support planning and drafting across common Google Workspace workflows.,,"Goal: Build a weekly AI operating rhythm for [BUSINESS_TYPE] serving [CUSTOMERS] with a team of [TEAM_SIZE].
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Use our recurring responsibilities [WEEKLY_TASKS], approved tools [TOOLS], and constraints [CONSTRAINTS]. Assign one theme to each working day: planning and demand review, customer communication, marketing production, operations improvement, and finance or performance reflection. Adapt the pattern if [WORKING_DAYS] differs.
 
@@ -1458,6 +1466,8 @@ Conclude with three measures: turnaround time, error or rework rate, and custome
 "
 095,data-to-decision-operating-workflow,Data-to-Decision Operating Workflow,workflows,Advanced,Turn operational data into a documented recommendation with validation and accountability.,A controlled analytical workflow ending in a decision record.,Reconcile totals to the source system before discussing trends.,"workflow, data, decisions, analytics","Microsoft Copilot: Works across spreadsheet analysis, written summaries, and presentation preparation.",,"Role: Act as an analytics process designer; map how [DATASET] should inform [DECISION] without overstating certainty.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Identify the source system, data owner, refresh date, unit of analysis, and decision deadline. Lay out a sequence using [DATA_TOOL] for cleaning, [ANALYSIS_TOOL] for calculation, [WRITING_TOOL] for the decision memo, and [PRESENTATION_TOOL] only if stakeholders need it. Every handoff must retain dataset version and filter definitions.
 
 Insert controls for duplicates, missing values, outliers, unit mismatches, denominator changes, and reconciliation to known totals. Distinguish descriptive findings, forecasts, and causal claims. Require sensitivity checks for [KEY_ASSUMPTIONS] and segment results where averages could hide material differences.
@@ -1467,6 +1477,8 @@ The workflow should produce an analysis notebook or formula record, a chart pack
 Finish with a decision register capturing owner, date, evidence used, assumptions, chosen option, rejected alternatives, review trigger, and later outcome. Include a route to say “insufficient evidence” rather than manufacturing confidence.
 "
 096,teacher-preparation-workflow,Teacher Preparation Workflow,workflows,Intermediate,"Prepare an inclusive lesson through curriculum alignment, resource creation, review, and reflection.",A tool-by-tool lesson preparation process with teacher review gates.,"Test every generated example for age, culture, language, and curriculum fit.","workflow, teaching, lesson-planning, education","ChatGPT: Supports lesson ideation, differentiation, question design, and structured reflection.",,"Goal: Design a teaching-preparation workflow for [TOPIC], [GRADE_OR_LEVEL], and a [LESSON_DURATION] session.
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Begin from [CURRICULUM_OUTCOME] and available resources [MATERIALS], not from an AI-generated activity. Show how the teacher defines evidence of learning, uses an assistant to brainstorm misconceptions and examples, develops slides or handouts, creates formative questions, checks accessibility, and stores approved resources in [PLATFORM].
 
@@ -1478,6 +1490,8 @@ End with a pre-class readiness list, a minute-by-minute lesson spine, and a post
 "
 097,css-pms-study-plan-builder,CSS and PMS Study Plan Builder,pakistan,Intermediate,Build a realistic CSS or PMS preparation schedule centred on concepts and ethical practice.,"A phased weekly plan with milestones, revision cycles, and progress checks.",Verify the current syllabus and dates on the relevant official commission website.,"pakistan, css, pms, study-plan","ChatGPT: Can structure long-term schedules around supplied subjects, constraints, and progress.",,"Role: You are an ethical CSS/PMS preparation planner; build a concept-first schedule for [EXAM], [ATTEMPT_YEAR], and [PROVINCE_IF_PMS].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Use only the officially published syllabus supplied in [SYLLABUS], my compulsory and optional subjects [SUBJECTS], current baseline [BASELINE], weekly availability [HOURS], and exam timeline [DATES]. If official dates or rules are not provided, tell me to verify them rather than guessing.
 
 Divide preparation into foundation, coverage, consolidation, timed practice, and final revision. Allocate time by syllabus weight, difficulty, and diagnostic weakness. Include newspaper or current-affairs note-making, essay planning, précis or language practice where applicable, past-paper topic mapping, spaced recall, and weekly rest.
@@ -1488,6 +1502,8 @@ Do not provide leaked material, impersonation, live-exam answers, or methods to 
 "
 098,css-pms-concept-self-tutor,CSS and PMS Concept Self-Tutor,pakistan,Intermediate,"Learn a CSS or PMS concept through explanation, examples, recall, and self-testing.","A layered explanation followed by questions, feedback criteria, and revision cues.",Answer the self-test before revealing feedback or model explanations.,"pakistan, css, pms, self-test",Claude: Can explain nuanced concepts and generate structured self-tests from supplied sources.,,"Goal: Teach me [CONCEPT] from the [CSS_OR_PMS_SUBJECT] syllabus until I can explain and apply it independently.
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Start by asking for my current understanding in two or three sentences. Then give a layered explanation: a plain-language definition, the key mechanism or argument, its Pakistan relevance where genuinely applicable, one concrete example, and one common misconception. Base the lesson on [SOURCES_OR_NOTES]; label anything that requires current verification.
 
 Use a teach-back pause before testing me. Create six self-test items in mixed forms: recall, distinction, application, evidence evaluation, counterargument, and a short outline. Do not answer them immediately. Wait for [MY_ANSWERS], then assess each against explicit criteria, identify the misconception behind any error, and offer a targeted retry question.
@@ -1495,6 +1511,8 @@ Use a teach-back pause before testing me. Create six self-test items in mixed fo
 Finish with a compact revision card containing five key terms, three relationships, and two credible source types to consult. This is study support only: do not answer an active examination, reproduce restricted material, or imply guaranteed marks.
 "
 099,university-assignment-structure-coach,HEC University Assignment Structure Coach,pakistan,Beginner,Plan an original university assignment structure while preserving the student's authorship and citations.,"An assignment map with argument roles, evidence needs, and writing checkpoints.",Check your own university's policy because HEC affiliation does not create one universal AI rule.,"pakistan, university, assignment, academic-integrity",ChatGPT: Helps interpret assignment requirements and organise arguments into a coherent plan.,,"Role: Act as my academic structure coach, not my ghostwriter; help me plan [ASSIGNMENT_TOPIC] for [COURSE].
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Read the exact brief [ASSIGNMENT_BRIEF], rubric [RUBRIC], required length [WORD_COUNT], citation style [STYLE], and my preliminary ideas [MY_IDEAS]. Separate explicit requirements from assumptions. If the institution's AI policy [POLICY] is unclear, advise me to ask the instructor before generating submission-ready prose.
 
@@ -1505,6 +1523,8 @@ Add a writing sequence that begins with my notes, includes source verification a
 Keep the final output at planning level. Flag any request that would replace my own assessed learning or breach university rules.
 "
 100,thesis-chapter-architecture-planner,Thesis Chapter Architecture Planner,pakistan,Advanced,"Design a thesis chapter map aligned with the research question, method, and evidence.","A chapter blueprint with purposes, evidence, dependencies, and review questions.",Treat supervisor guidance and departmental format as authoritative over generic conventions.,"pakistan, thesis, research, postgraduate",Claude: Handles long research context and can compare argument structure across chapters.,,"Goal: Serve as a thesis architecture adviser and map chapters for [DEGREE_PROGRAMME] research on [TOPIC].
+
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
 
 Work from my research question [QUESTION], objectives [OBJECTIVES], methodology [METHOD], available evidence [EVIDENCE], theoretical frame [FRAMEWORK], and departmental requirements [GUIDELINES]. Do not assume every thesis needs the same chapter pattern.
 

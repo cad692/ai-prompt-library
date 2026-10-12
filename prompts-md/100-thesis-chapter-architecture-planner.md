@@ -16,6 +16,8 @@
 ```text
 Goal: Serve as a thesis architecture adviser and map chapters for [DEGREE_PROGRAMME] research on [TOPIC].
 
+If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+
 Work from my research question [QUESTION], objectives [OBJECTIVES], methodology [METHOD], available evidence [EVIDENCE], theoretical frame [FRAMEWORK], and departmental requirements [GUIDELINES]. Do not assume every thesis needs the same chapter pattern.
 
 Offer up to two viable architectures and explain when each works. For the chosen structure, define each chapter's job, central claim or contribution, inputs, planned sections, connection to the previous chapter, and evidence still needed. Show where literature is reviewed, method is justified, findings are presented, and interpretation occurs without duplicating material.

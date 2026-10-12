@@ -5255,7 +5255,7 @@ prompts:
     the next calendar without chasing vanity metrics.
 
     '
-- id: 091
+- id: '091'
   slug: ai-assisted-client-delivery-checklist
   title: AI-Assisted Client Delivery Checklist
   category: workflows
@@ -5263,10 +5263,11 @@ prompts:
   usage: Create a controlled client-delivery process with transparent and reviewable AI assistance.
   use_case: Protect quality, confidentiality, and scope while using AI across project delivery.
   preview: 'Role: Operate as a client-delivery quality manager; build a checklist for [SERVICE] from signed
-    brief to final handover. Account for [CLIENT_REQUIREMENTS], [DELIVERABLES], [DEADLINE], and...'
+    brief to final handover. If any personalization field is blank or still shows brackets, continue with...'
   best_tools:
   - tool: Microsoft Copilot
-    reason: Supports documents, spreadsheets, email, and presentations in a connected work environment.
+    reason: Supports documents, spreadsheets, email, and presentations in a connected work 
+      environment.
   tip: Remove confidential identifiers before any tool not approved by the client.
   expected_output: A stage-gated checklist from intake through handover and retention.
   tags:
@@ -5274,9 +5275,13 @@ prompts:
   - client-delivery
   - quality
   - privacy
-  next_id: null
+  next_id:
   prompt: 'Role: Operate as a client-delivery quality manager; build a checklist for [SERVICE] from signed
     brief to final handover.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Account for [CLIENT_REQUIREMENTS], [DELIVERABLES], [DEADLINE], and [APPROVED_AI_TOOLS]. Divide the
@@ -5299,16 +5304,16 @@ prompts:
     or deletion actions. Make the checklist usable in [PROJECT_PLATFORM].
 
     '
-- id: 092
+- id: '092'
   slug: source-to-decision-brief-workflow
   title: Source-to-Decision Brief Workflow
   category: workflows
   difficulty: Advanced
   usage: Plan a traceable path from research question to concise decision brief.
-  use_case: Coordinate search, evidence capture, synthesis, writing, and review while preserving source
-    provenance.
+  use_case: Coordinate search, evidence capture, synthesis, writing, and review while preserving 
+    source provenance.
   preview: 'Goal: Design a research-to-brief workflow that answers [DECISION_QUESTION] for [DECISION_MAKER]
-    by [DEADLINE]. Begin by converting the question into scope boundaries, decision criteria, search...'
+    by [DEADLINE]. If any personalization field is blank or still shows brackets, continue with clearly...'
   best_tools:
   - tool: Perplexity
     reason: Helps discover web sources and provides links that can be independently checked.
@@ -5319,9 +5324,13 @@ prompts:
   - research
   - brief
   - evidence
-  next_id: null
+  next_id:
   prompt: 'Goal: Design a research-to-brief workflow that answers [DECISION_QUESTION] for [DECISION_MAKER]
     by [DEADLINE].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Begin by converting the question into scope boundaries, decision criteria, search concepts, and exclusion
@@ -5345,15 +5354,16 @@ prompts:
     uncertainty.
 
     '
-- id: 093
+- id: '093'
   slug: focused-job-hunt-daily-system
   title: Focused Job-Hunt Daily System
   category: workflows
   difficulty: Beginner
   usage: Organise a daily job search across discovery, tailoring, outreach, tracking, and follow-up.
-  use_case: Create a sustainable routine that prioritises suitable applications over indiscriminate volume.
+  use_case: Create a sustainable routine that prioritises suitable applications over indiscriminate 
+    volume.
   preview: 'Role: Be my job-search operations coach; create a daily workflow for [TARGET_ROLES] in [LOCATION_OR_REMOTE_PREFERENCE].
-    I have [DAILY_TIME] available and use [JOB_BOARDS], [DOCUMENT_TOOL]...'
+    If any personalization field is blank or still shows brackets, continue with...'
   best_tools:
   - tool: ChatGPT
     reason: Can coordinate tailoring, rehearsal, planning, and reflection from supplied information.
@@ -5364,8 +5374,12 @@ prompts:
   - careers
   - job-search
   - applications
-  next_id: null
+  next_id:
   prompt: 'Role: Be my job-search operations coach; create a daily workflow for [TARGET_ROLES] in [LOCATION_OR_REMOTE_PREFERENCE].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     I have [DAILY_TIME] available and use [JOB_BOARDS], [DOCUMENT_TOOL], [AI_ASSISTANT], and [TRACKER].
@@ -5388,16 +5402,16 @@ prompts:
     search terms without measuring success only by application count.
 
     '
-- id: 094
+- id: '094'
   slug: small-business-weekly-ai-rhythm
   title: Small Business Weekly AI Rhythm
   category: workflows
   difficulty: Intermediate
   usage: Plan a practical weekly AI routine for a small business with clear human controls.
-  use_case: Use AI selectively across operations, marketing, customer service, and review without creating
-    tool overload.
+  use_case: Use AI selectively across operations, marketing, customer service, and review without 
+    creating tool overload.
   preview: 'Goal: Build a weekly AI operating rhythm for [BUSINESS_TYPE] serving [CUSTOMERS] with a team
-    of [TEAM_SIZE]. Use our recurring responsibilities [WEEKLY_TASKS], approved tools [TOOLS], and constraints...'
+    of [TEAM_SIZE]. If any personalization field is blank or still shows brackets, continue with clearly...'
   best_tools:
   - tool: Gemini
     reason: Can support planning and drafting across common Google Workspace workflows.
@@ -5408,9 +5422,13 @@ prompts:
   - small-business
   - operations
   - weekly
-  next_id: null
+  next_id:
   prompt: 'Goal: Build a weekly AI operating rhythm for [BUSINESS_TYPE] serving [CUSTOMERS] with a team
     of [TEAM_SIZE].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Use our recurring responsibilities [WEEKLY_TASKS], approved tools [TOOLS], and constraints [CONSTRAINTS].
@@ -5434,15 +5452,16 @@ prompts:
     only [MAX_EXPERIMENTS] experiments for the first month so the routine remains manageable.
 
     '
-- id: 095
+- id: '095'
   slug: data-to-decision-operating-workflow
   title: Data-to-Decision Operating Workflow
   category: workflows
   difficulty: Advanced
   usage: Turn operational data into a documented recommendation with validation and accountability.
-  use_case: Coordinate cleaning, analysis, interpretation, challenge, and decision logging across tools.
+  use_case: Coordinate cleaning, analysis, interpretation, challenge, and decision logging across 
+    tools.
   preview: 'Role: Act as an analytics process designer; map how [DATASET] should inform [DECISION] without
-    overstating certainty. Identify the source system, data owner, refresh date, unit of analysis, and...'
+    overstating certainty. If any personalization field is blank or still shows brackets, continue with...'
   best_tools:
   - tool: Microsoft Copilot
     reason: Works across spreadsheet analysis, written summaries, and presentation preparation.
@@ -5453,9 +5472,13 @@ prompts:
   - data
   - decisions
   - analytics
-  next_id: null
+  next_id:
   prompt: 'Role: Act as an analytics process designer; map how [DATASET] should inform [DECISION] without
     overstating certainty.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Identify the source system, data owner, refresh date, unit of analysis, and decision deadline. Lay
@@ -5478,15 +5501,17 @@ prompts:
     rather than manufacturing confidence.
 
     '
-- id: 096
+- id: '096'
   slug: teacher-preparation-workflow
   title: Teacher Preparation Workflow
   category: workflows
   difficulty: Intermediate
-  usage: Prepare an inclusive lesson through curriculum alignment, resource creation, review, and reflection.
-  use_case: Combine AI and teaching tools while keeping pedagogy and learner needs under educator control.
+  usage: Prepare an inclusive lesson through curriculum alignment, resource creation, review, and 
+    reflection.
+  use_case: Combine AI and teaching tools while keeping pedagogy and learner needs under educator 
+    control.
   preview: 'Goal: Design a teaching-preparation workflow for [TOPIC], [GRADE_OR_LEVEL], and a [LESSON_DURATION]
-    session. Begin from [CURRICULUM_OUTCOME] and available resources [MATERIALS], not from an...'
+    session. If any personalization field is blank or still shows brackets, continue with clearly...'
   best_tools:
   - tool: ChatGPT
     reason: Supports lesson ideation, differentiation, question design, and structured reflection.
@@ -5497,9 +5522,13 @@ prompts:
   - teaching
   - lesson-planning
   - education
-  next_id: null
+  next_id:
   prompt: 'Goal: Design a teaching-preparation workflow for [TOPIC], [GRADE_OR_LEVEL], and a [LESSON_DURATION]
     session.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Begin from [CURRICULUM_OUTCOME] and available resources [MATERIALS], not from an AI-generated activity.
@@ -5522,16 +5551,16 @@ prompts:
     loop that compares intended evidence with what learners actually demonstrated.
 
     '
-- id: 097
+- id: '097'
   slug: css-pms-study-plan-builder
   title: CSS and PMS Study Plan Builder
   category: pakistan
   difficulty: Intermediate
   usage: Build a realistic CSS or PMS preparation schedule centred on concepts and ethical practice.
-  use_case: Organise syllabus coverage, revision, and self-testing without seeking live-exam content or
-    leaked answers.
+  use_case: Organise syllabus coverage, revision, and self-testing without seeking live-exam content
+    or leaked answers.
   preview: 'Role: You are an ethical CSS/PMS preparation planner; build a concept-first schedule for [EXAM],
-    [ATTEMPT_YEAR], and [PROVINCE_IF_PMS]. Use only the officially published syllabus supplied in...'
+    [ATTEMPT_YEAR], and [PROVINCE_IF_PMS]. If any personalization field is blank or still shows brackets...'
   best_tools:
   - tool: ChatGPT
     reason: Can structure long-term schedules around supplied subjects, constraints, and progress.
@@ -5542,9 +5571,13 @@ prompts:
   - css
   - pms
   - study-plan
-  next_id: null
+  next_id:
   prompt: 'Role: You are an ethical CSS/PMS preparation planner; build a concept-first schedule for [EXAM],
     [ATTEMPT_YEAR], and [PROVINCE_IF_PMS].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Use only the officially published syllabus supplied in [SYLLABUS], my compulsory and optional subjects
@@ -5567,7 +5600,7 @@ prompts:
     papers may be used only for legitimate practice and pattern analysis.
 
     '
-- id: 098
+- id: '098'
   slug: css-pms-concept-self-tutor
   title: CSS and PMS Concept Self-Tutor
   category: pakistan
@@ -5575,21 +5608,25 @@ prompts:
   usage: Learn a CSS or PMS concept through explanation, examples, recall, and self-testing.
   use_case: Build durable understanding of a syllabus topic without outsourcing assessed work.
   preview: 'Goal: Teach me [CONCEPT] from the [CSS_OR_PMS_SUBJECT] syllabus until I can explain and apply
-    it independently. Start by asking for my current understanding in two or three sentences. Then give
-    a...'
+    it independently. If any personalization field is blank or still shows brackets, continue with clearly...'
   best_tools:
   - tool: Claude
     reason: Can explain nuanced concepts and generate structured self-tests from supplied sources.
   tip: Answer the self-test before revealing feedback or model explanations.
-  expected_output: A layered explanation followed by questions, feedback criteria, and revision cues.
+  expected_output: A layered explanation followed by questions, feedback criteria, and revision 
+    cues.
   tags:
   - pakistan
   - css
   - pms
   - self-test
-  next_id: null
+  next_id:
   prompt: 'Goal: Teach me [CONCEPT] from the [CSS_OR_PMS_SUBJECT] syllabus until I can explain and apply
     it independently.
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Start by asking for my current understanding in two or three sentences. Then give a layered explanation:
@@ -5609,29 +5646,35 @@ prompts:
     restricted material, or imply guaranteed marks.
 
     '
-- id: 099
+- id: '099'
   slug: university-assignment-structure-coach
   title: HEC University Assignment Structure Coach
   category: pakistan
   difficulty: Beginner
-  usage: Plan an original university assignment structure while preserving the student's authorship and
-    citations.
-  use_case: Turn a brief and early ideas into a defensible outline rather than a ghostwritten submission.
+  usage: Plan an original university assignment structure while preserving the student's authorship 
+    and citations.
+  use_case: Turn a brief and early ideas into a defensible outline rather than a ghostwritten 
+    submission.
   preview: 'Role: Act as my academic structure coach, not my ghostwriter; help me plan [ASSIGNMENT_TOPIC]
-    for [COURSE]. Read the exact brief [ASSIGNMENT_BRIEF], rubric [RUBRIC], required length [WORD_COUNT]...'
+    for [COURSE]. If any personalization field is blank or still shows brackets, continue with clearly...'
   best_tools:
   - tool: ChatGPT
     reason: Helps interpret assignment requirements and organise arguments into a coherent plan.
-  tip: Check your own university's policy because HEC affiliation does not create one universal AI rule.
+  tip: Check your own university's policy because HEC affiliation does not create one universal AI 
+    rule.
   expected_output: An assignment map with argument roles, evidence needs, and writing checkpoints.
   tags:
   - pakistan
   - university
   - assignment
   - academic-integrity
-  next_id: null
+  next_id:
   prompt: 'Role: Act as my academic structure coach, not my ghostwriter; help me plan [ASSIGNMENT_TOPIC]
     for [COURSE].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Read the exact brief [ASSIGNMENT_BRIEF], rubric [RUBRIC], required length [WORD_COUNT], citation style
@@ -5663,7 +5706,7 @@ prompts:
   usage: Design a thesis chapter map aligned with the research question, method, and evidence.
   use_case: Help a postgraduate researcher organise chapters and argument flow before drafting.
   preview: 'Goal: Serve as a thesis architecture adviser and map chapters for [DEGREE_PROGRAMME] research
-    on [TOPIC]. Work from my research question [QUESTION], objectives [OBJECTIVES], methodology [METHOD]...'
+    on [TOPIC]. If any personalization field is blank or still shows brackets, continue with clearly labelled...'
   best_tools:
   - tool: Claude
     reason: Handles long research context and can compare argument structure across chapters.
@@ -5674,9 +5717,13 @@ prompts:
   - thesis
   - research
   - postgraduate
-  next_id: null
+  next_id:
   prompt: 'Goal: Serve as a thesis architecture adviser and map chapters for [DEGREE_PROGRAMME] research
     on [TOPIC].
+
+
+    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
+    — do not invent facts, numbers, sources, or private details to fill gaps.
 
 
     Work from my research question [QUESTION], objectives [OBJECTIVES], methodology [METHOD], available
