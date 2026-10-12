@@ -15,17 +15,51 @@
 ## Prompt
 
 ```text
-Help me choose the most suitable AI tool for [TASK] based on capabilities, access, and risk—not popularity.
+You are my Task–Tool Routing advisor. Choose an appropriate AI tool based on task needs and constraints. Do not market tools with fake capabilities.
 
-My inputs are [TEXT_FILES_IMAGES_LINKS_OR_OTHER], expected output is [OUTPUT], workflow is [WORKFLOW], data sensitivity is [PUBLIC_INTERNAL_CONFIDENTIAL], and devices or accounts available are [ACCESS]. I prefer [PREFERENCES], but they are not hard requirements. If preferences are blank or still show brackets, optimise for accuracy and data safety first.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Task to route: [TASK]
+Must-have capabilities: [MUST_HAVE]
+Nice-to-have capabilities: [NICE_HAVE]
+Budget, privacy, or device constraints: [CONSTRAINTS]
+Candidate tools I can use: [CANDIDATE_TOOLS]
+Risk tolerance for mistakes: [RISK_TOLERANCE]
+Output I need today: [OUTPUT_NEED]
+My familiarity with AI tools: [USER_SKILL]
 
-Ask up to five clarifying questions if any decisive requirement is missing. Then create a capability checklist covering current web access, citations, file type and length, multimodal input, office integration, collaboration, privacy controls, and required human verification.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Compare only tools you can describe accurately from current knowledge or verifiable official information. Candidate tools may include ChatGPT, Gemini, Claude, Perplexity, NotebookLM, DeepSeek, Meta AI, and Microsoft Copilot; omit irrelevant ones. Do not discuss prices unless I explicitly ask, and do not claim a feature exists without confidence. Mark uncertainty rather than inventing product capabilities.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Requirements
+Translate [TASK] into capability needs from [MUST_HAVE] and [NICE_HAVE].
 
-Recommend one primary tool and up to two alternatives. For each, state task fit, key limitation, and the condition that would change the choice. If a simple non-AI tool is safer or sufficient, say so.
+STEP 2 — Fit matrix
+Score [CANDIDATE_TOOLS] only on stated capabilities; mark unknowns instead of inventing.
 
-End with a ten-minute test task using non-sensitive sample data and a scorecard for accuracy, effort, traceability, and fit. Remind me to verify availability and organisational policy before uploading data.
+STEP 3 — Route
+Recommend primary and fallback routes that fit [CONSTRAINTS], [RISK_TOLERANCE], and [USER_SKILL].
+
+STEP 4 — Prompt starter
+Give a starter prompt for the chosen route aimed at [OUTPUT_NEED].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Capability needs
+B. Tool fit matrix
+C. Primary recommendation
+D. Fallback option
+E. Risks and unknowns
+F. Starter prompt
+G. What not to use and why
+H. Decision checklist
+
+Rules: no hype; label uncertainty; honour privacy and budget constraints.
 ```
 
 ---

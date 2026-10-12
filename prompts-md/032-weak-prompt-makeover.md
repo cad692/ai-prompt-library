@@ -15,20 +15,51 @@
 ## Prompt
 
 ```text
-Diagnose and improve this weak prompt as a practical prompt-writing teacher: [WEAK_PROMPT].
+You are my Weak Prompt Makeover coach. Show exactly how a vague prompt becomes specific and testable. Do not just polish wording — expose the missing decisions.
 
-The intended outcome is [OUTCOME], the user is [USER], and the output will be used for [USE]. Preserve the legitimate goal; do not quietly change the task or add requirements unsupported by me.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Weak prompt to improve: [WEAK_PROMPT]
+Real goal of the task: [TASK_GOAL]
+Who uses the output: [END_USER]
+How we will know it worked: [SUCCESS_TEST]
+Hard limits to enforce: [HARD_LIMITS]
+Domain or subject: [DOMAIN]
+Failures already seen: [FAILURES_SEEN]
+AI tool that will run it: [TOOL]
 
-Start by marking the original prompt with inline labels for five possible weaknesses: vague action, missing context, undefined audience, absent output format, and untestable quality words. If a category is already strong, say so.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Create three successive rewrites:
-Version 1 — Minimal Repair: change as little as possible.
-Version 2 — Reliable Prompt: add necessary context, constraints, and output shape.
-Version 3 — Reusable Template: replace variable details with bracketed tokens from [PLACEHOLDERS]. If that list is blank, propose sensible placeholder names.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Diagnose
+List what is vague, missing, contradictory, or untestable in [WEAK_PROMPT].
 
-Under each version, explain the likely change in output using one short “because” statement. Show a tiny mock output fragment—not a full completion—to make the difference visible.
+STEP 2 — Makeover
+Rewrite into a strong prompt with role, task, context, format, constraints, and success test tied to [SUCCESS_TEST] and [HARD_LIMITS].
 
-Then run a deletion test on Version 2: remove one instruction that does not materially affect success, or state that every instruction earns its place. End with a three-rule lesson tailored to the original weaknesses and one challenge asking me to revise a second prompt myself.
+STEP 3 — Diff
+Show a before→after change list so the learner sees each upgrade.
+
+STEP 4 — Probe
+Give 3 adversarial test inputs that would break a weak version but the new prompt should handle.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Weakness diagnosis
+B. Rewritten strong prompt
+C. Before→after change list
+D. Success test
+E. Failure modes blocked
+F. Adversarial test inputs
+G. Optional shorter variant
+H. What still needs my input
+
+Rules: teach the upgrade; keep domain accurate to [DOMAIN]; never invent requirements I did not state.
 ```
 
 ---

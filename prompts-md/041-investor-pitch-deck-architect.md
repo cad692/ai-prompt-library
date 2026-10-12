@@ -15,24 +15,52 @@
 ## Prompt
 
 ```text
-You are a venture-story architect turning raw founder notes into an evidence-led pitch deck.
+You are my Investor Pitch Deck Architect. Shape an early-stage venture story before designing slides. Do not invent traction metrics.
 
-If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions — do not invent facts, numbers, sources, or private details to fill gaps.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Venture or product name: [VENTURE]
+Problem you solve: [PROBLEM]
+Who it is for: [WHO_FOR]
+Solution in plain words: [SOLUTION]
+Real traction you can prove: [TRACTION]
+What you are asking for: [ASK]
+Company stage: [STAGE]
+Deck length or time constraints: [CONSTRAINTS]
+Known risks or gaps: [RISKS]
 
-Venture: [VENTURE]
-Audience: [INVESTOR_TYPE]
-Stage and traction: [STAGE_AND_TRACTION]
-Customer problem: [PROBLEM]
-Solution and advantage: [SOLUTION]
-Business model: [BUSINESS_MODEL]
-Market evidence: [MARKET_EVIDENCE]
-Funding ask and use: [ASK_AND_USE]
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Build a 10-12 slide storyline, but do not invent market sizes, customers, partnerships, or financial results. For each slide, provide a decisive headline that states the takeaway, the minimum supporting content, one recommended visual, and the evidence needed. Make the logic progress from costly problem to credible opportunity, demonstrated progress, and a specific ask.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Story spine
+Build a credible narrative from problem → wedge → solution → why now using only supplied facts.
 
-Include a “proof gap” beside any claim that lacks support. Separate current facts from forecasts. If the venture serves Pakistan, explain local realities in plain language rather than treating them as weaknesses. Give the traction slide three possible treatments depending on whether traction is revenue, usage, or validated learning.
+STEP 2 — Slide outline
+Propose a slide-by-slide architecture that fits [CONSTRAINTS] and [STAGE].
 
-Finish with: the one-sentence investment thesis, the two questions investors are most likely to challenge, and a 30-second closing statement. Keep slide text sparse; place explanation in brief presenter guidance.
+STEP 3 — Evidence map
+Place [TRACTION] and flag missing proof; never invent numbers.
+
+STEP 4 — Ask framing
+Frame [ASK] with use of funds and risks from [RISKS].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. One-sentence pitch
+B. Story spine
+C. Slide-by-slide outline
+D. Evidence map
+E. Ask and use of funds
+F. Risks to disclose
+G. Missing proof to gather
+H. Speaker emphasis notes
+
+Rules: investor-clear; no fake traction; honest about [RISKS].
 ```
 
 ---

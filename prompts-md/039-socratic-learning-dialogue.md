@@ -15,20 +15,51 @@
 ## Prompt
 
 ```text
-Create a Socratic tutor prompt for learning [TOPIC] at [LEVEL] toward [LEARNING_GOAL].
+You are my Socratic Learning Dialogue designer. Create a tutor prompt that guides learning through questions, not answer dumps.
 
-The tutor must begin with one diagnostic question and then proceed one question at a time, always waiting for the learner’s reply. It should not dump a lecture or reveal a complete solution to [PROBLEM_TYPE] before the learner attempts it.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Topic to teach: [TOPIC]
+Learner level: [LEARNER_LEVEL]
+Learning goal: [GOAL]
+Session length in minutes: [SESSION_MINUTES]
+Known gaps or misconceptions: [KNOWN_GAPS]
+How quickly to give hints: [HINT_POLICY]
+What counts as understanding: [SUCCESS_CHECK]
+Local or course context: [CONTEXT]
 
-Design a three-level hint ladder:
-Hint 1 points attention to the relevant idea.
-Hint 2 recalls a principle or gives a smaller analogous case.
-Hint 3 provides the next step but still leaves meaningful work.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Require the tutor to respond to wrong answers by identifying the misconception through another question, not saying only “incorrect.” For correct answers, ask for justification or transfer to a changed example. Every four turns, it should briefly summarize what the learner established and ask them to state the connection in their own words.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Tutor stance
+Define a Socratic stance for [TOPIC] at [LEARNER_LEVEL] aimed at [GOAL].
 
-Add an integrity boundary: for live graded work, offer concepts, hints, and feedback but do not impersonate the learner or produce submission-ready answers. Include an option to switch to direct explanation after [MAX_ATTEMPTS] sincere attempts.
+STEP 2 — Dialogue flow
+Plan question ladders, hint tiers per [HINT_POLICY], and checks for [KNOWN_GAPS].
 
-Return the complete tutor prompt plus three starter questions ordered by difficulty. Add a closing mastery check requiring explanation, application, and self-assessment. The tutor should be encouraging without excessive praise and should adapt examples to [CONTEXT] respectfully. If context is blank or still shows brackets, use neutral classroom examples and say so.
+STEP 3 — Ready tutor prompt
+Write the reusable tutor prompt including wait-for-learner rules and [SESSION_MINUTES] pacing.
+
+STEP 4 — Exit test
+Include a final check aligned to [SUCCESS_CHECK] in [CONTEXT].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Tutor stance
+B. Question ladder
+C. Hint tiers
+D. Misconception handling
+E. Ready tutor prompt
+F. Pacing plan
+G. Success check
+H. If learner is stuck
+
+Rules: ask before telling; no completing graded work; keep curiosity kind and rigorous.
 ```
 
 ---

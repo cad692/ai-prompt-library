@@ -3512,9 +3512,8 @@ prompts:
   usage: Use this to see exactly how a vague prompt becomes specific and testable.
   use_case: A beginner can compare a weak instruction with stronger revisions and learn which 
     changes improve output.
-  preview: 'Diagnose and improve this weak prompt as a practical prompt-writing teacher: [WEAK_PROMPT].
-    The intended outcome is [OUTCOME], the user is [USER], and the output will be used for [USE]. Preserve
-    the...'
+  preview: You are my Weak Prompt Makeover coach. Show exactly how a vague prompt becomes specific 
+    and testable. Do not just polish wording — expose the missing decisions...
   best_tools:
   - tool: ChatGPT
     reason: Provides clear prompt rewrites and demonstrates their likely output differences.
@@ -3529,35 +3528,90 @@ prompts:
   - clarity
   - beginners
   next_id:
-  prompt: 'Diagnose and improve this weak prompt as a practical prompt-writing teacher: [WEAK_PROMPT].
+  prompt: 'You are my Weak Prompt Makeover coach. Show exactly how a vague prompt becomes specific and
+    testable. Do not just polish wording — expose the missing decisions.
 
 
-    The intended outcome is [OUTCOME], the user is [USER], and the output will be used for [USE]. Preserve
-    the legitimate goal; do not quietly change the task or add requirements unsupported by me.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Weak prompt to improve: [WEAK_PROMPT]
+
+    Real goal of the task: [TASK_GOAL]
+
+    Who uses the output: [END_USER]
+
+    How we will know it worked: [SUCCESS_TEST]
+
+    Hard limits to enforce: [HARD_LIMITS]
+
+    Domain or subject: [DOMAIN]
+
+    Failures already seen: [FAILURES_SEEN]
+
+    AI tool that will run it: [TOOL]
 
 
-    Start by marking the original prompt with inline labels for five possible weaknesses: vague action,
-    missing context, undefined audience, absent output format, and untestable quality words. If a category
-    is already strong, say so.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Create three successive rewrites:
+    ========================================
 
-    Version 1 — Minimal Repair: change as little as possible.
+    WORKFLOW YOU MUST FOLLOW
 
-    Version 2 — Reliable Prompt: add necessary context, constraints, and output shape.
+    ========================================
 
-    Version 3 — Reusable Template: replace variable details with bracketed tokens from [PLACEHOLDERS].
-    If that list is blank, propose sensible placeholder names.
+    STEP 1 — Diagnose
 
-
-    Under each version, explain the likely change in output using one short “because” statement. Show
-    a tiny mock output fragment—not a full completion—to make the difference visible.
+    List what is vague, missing, contradictory, or untestable in [WEAK_PROMPT].
 
 
-    Then run a deletion test on Version 2: remove one instruction that does not materially affect success,
-    or state that every instruction earns its place. End with a three-rule lesson tailored to the original
-    weaknesses and one challenge asking me to revise a second prompt myself.
+    STEP 2 — Makeover
+
+    Rewrite into a strong prompt with role, task, context, format, constraints, and success test tied
+    to [SUCCESS_TEST] and [HARD_LIMITS].
+
+
+    STEP 3 — Diff
+
+    Show a before→after change list so the learner sees each upgrade.
+
+
+    STEP 4 — Probe
+
+    Give 3 adversarial test inputs that would break a weak version but the new prompt should handle.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Weakness diagnosis
+
+    B. Rewritten strong prompt
+
+    C. Before→after change list
+
+    D. Success test
+
+    E. Failure modes blocked
+
+    F. Adversarial test inputs
+
+    G. Optional shorter variant
+
+    H. What still needs my input
+
+
+    Rules: teach the upgrade; keep domain accurate to [DOMAIN]; never invent requirements I did not state.
 
     '
 - id: '033'
@@ -3568,9 +3622,9 @@ prompts:
   usage: Use this to design prompts that reduce unsupported claims and invented details.
   use_case: A researcher or workplace team can make document-based AI answers more traceable and 
     safer to verify.
-  preview: Design a grounded-answer prompt for [TASK] where unsupported claims would create [RISK]. 
-    Allowed evidence is [APPROVED_SOURCES]. The user’s question will appear as [QUESTION]. Build 
-    instructions that...
+  preview: You are my Grounded Answer Guardrails designer. Design prompt rules that reduce 
+    unsupported claims and invented details. ======================================== PERSONAL 
+    CONTEXT (filled by me)...
   best_tools:
   - tool: NotebookLM
     reason: Grounds responses in user-provided sources and exposes supporting source locations.
@@ -3585,42 +3639,89 @@ prompts:
   - verification
   - prompt-safety
   next_id:
-  prompt: 'Design a grounded-answer prompt for [TASK] where unsupported claims would create [RISK].
+  prompt: 'You are my Grounded Answer Guardrails designer. Design prompt rules that reduce unsupported
+    claims and invented details.
 
 
-    Allowed evidence is [APPROVED_SOURCES]. The user’s question will appear as [QUESTION]. Build instructions
-    that force a clean boundary between supplied evidence, general background knowledge if allowed, and
-    inference. Require the exact abstention phrase NOT SUPPORTED BY PROVIDED SOURCES (plain text, not
-    a fill-in field) whenever the evidence is insufficient.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Task the AI will perform: [TASK_TYPE]
+
+    Sources the AI may use: [ALLOWED_SOURCES]
+
+    Behaviours to forbid: [FORBIDDEN_BEHAVIOURS]
+
+    How evidence must be shown: [CITATION_RULE]
+
+    How to mark unknowns: [UNCERTAINTY_RULE]
+
+    Audience for answers: [AUDIENCE]
+
+    Risk if the AI invents facts: [RISK_LEVEL]
+
+    Sample user query to protect: [SAMPLE_QUERY]
 
 
-    The resulting prompt must require:
-
-    - a source location beside each material claim;
-
-    - quotations only when exact wording is available;
-
-    - uncertainty labels for ambiguous passages;
-
-    - no invented citations, links, statistics, names, or dates;
-
-    - a conflict note when approved sources disagree;
-
-    - a request for missing information when it would change the answer.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Choose an output structure suited to [AUDIENCE] rather than a generic essay. Include a final evidence
-    ledger mapping conclusions to source IDs.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Threat model
+
+    List how the AI might invent or overclaim on [TASK_TYPE] given [RISK_LEVEL].
 
 
-    Stress-test the prompt with three probes: one answerable question, one partly answerable question,
-    and one plausible but absent claim. Predict the compliant behaviour for each without answering the
-    domain question. Identify any instruction that could still reward confident guessing and tighten it.
+    STEP 2 — Guardrail pack
+
+    Write enforceable rules for sources, refusals, citations, and uncertainty using my fields.
 
 
-    Return the production prompt first, followed by the tests and a short human verification protocol.
-    Do not claim these controls eliminate hallucinations; state their limits and recommend review proportional
-    to the risk.
+    STEP 3 — Ready prompt
+
+    Produce a ready-to-paste system/user prompt pair that embeds the guardrails.
+
+
+    STEP 4 — Test cases
+
+    Give pass/fail test queries including [SAMPLE_QUERY].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Invention risks
+
+    B. Guardrail rules
+
+    C. Ready-to-paste prompt
+
+    D. Citation behaviour
+
+    E. Uncertainty behaviour
+
+    F. Pass/fail tests
+
+    G. Escape hatches to avoid
+
+    H. Review checklist
+
+
+    Rules: prefer refusal or labelled uncertainty over fiction; honour [ALLOWED_SOURCES] and [FORBIDDEN_BEHAVIOURS].
 
     '
 - id: '034'
@@ -3631,9 +3732,8 @@ prompts:
   usage: Use this to make an AI ask important questions before attempting the task.
   use_case: A user can prevent premature answers when audience, inputs, constraints, or success 
     criteria are still unclear.
-  preview: Create a two-stage clarification-gate prompt for [TASK] so the model cannot rush into an 
-    answer. The minimum information needed is [REQUIRED_INPUTS]. Optional helpful context is 
-    [OPTIONAL_INPUTS]...
+  preview: You are my Clarification Gate designer. Make an AI ask the important questions before 
+    attempting the task. ======================================== PERSONAL CONTEXT (filled by me)...
   best_tools:
   - tool: ChatGPT
     reason: Handles multi-turn clarification and adapts later output to user responses.
@@ -3647,32 +3747,89 @@ prompts:
   - prompt-flow
   - requirements
   next_id:
-  prompt: 'Create a two-stage clarification-gate prompt for [TASK] so the model cannot rush into an answer.
+  prompt: 'You are my Clarification Gate designer. Make an AI ask the important questions before attempting
+    the task.
 
 
-    The minimum information needed is [REQUIRED_INPUTS]. Optional helpful context is [OPTIONAL_INPUTS].
-    The user may have limited time, so questions must be high value and easy to answer. If optional inputs
-    are blank or still show brackets, treat them as absent.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Task the AI will eventually do: [TASK]
+
+    Facts it must know first: [MUST_KNOW]
+
+    Optional helpful facts: [NICE_TO_KNOW]
+
+    Maximum clarifying questions: [MAX_QUESTIONS]
+
+    User patience level: [USER_PATIENCE]
+
+    Defaults allowed if user skips: [DEFAULTS_OK]
+
+    What breaks if the AI guesses: [FAILURE_IF_GUESS]
+
+    AI tool this gate is for: [TOOL]
 
 
-    Stage One must instruct the model to inspect the request, identify only gaps that could materially
-    alter the output, and ask up to [MAX_QUESTIONS] numbered questions in one message. It must not draft,
-    outline, research, or solve the task yet. Include “Why I need this” after each question in eight words
-    or fewer. Offer selectable options when users may not know the terminology.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Define a gate condition: Stage Two begins only after the user responds or explicitly says “Use reasonable
-    assumptions.” If assumptions are authorised, they must be listed before work begins and must avoid
-    sensitive personal, legal, medical, or financial guesses.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Gate logic
+
+    Define what must be asked, what can default, and when to proceed for [TASK].
 
 
-    Stage Two should restate the agreed requirements as a compact brief, invite one correction, and then
-    produce [OUTPUT_FORMAT] under [CONSTRAINTS].
+    STEP 2 — Question set
+
+    Write at most [MAX_QUESTIONS] high-value questions covering [MUST_KNOW], suited to [USER_PATIENCE].
 
 
-    Test the resulting prompt against two cases: a complete request that needs no questions and a vague
-    request missing three essentials. Show expected model behaviour, not the task answer. Finish with
-    one escape hatch for users who want a quick draft and a warning label for high-stakes use.
+    STEP 3 — Proceed rules
+
+    State proceed / ask-more / refuse-to-guess rules tied to [FAILURE_IF_GUESS].
+
+
+    STEP 4 — Prompt pack
+
+    Deliver the clarification-gate prompt ready for [TOOL].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Must-know list
+
+    B. Question gate
+
+    C. Defaults policy
+
+    D. Proceed / stop rules
+
+    E. Ready-to-paste prompt
+
+    F. Example dialogue
+
+    G. Guessing risks blocked
+
+    H. Tuning notes
+
+
+    Rules: ask less but better; never silently invent [MUST_KNOW] details.
 
     '
 - id: '035'
@@ -3683,9 +3840,9 @@ prompts:
   usage: Use this to build a prompt that critiques an output before revising it.
   use_case: A writer or analyst can improve a draft through explicit criteria rather than accepting 
     the first generated answer.
-  preview: Build a critique-then-revise loop for improving [DRAFT_TYPE] against [GOAL]. The draft 
-    will be supplied as [DRAFT]. The audience is [AUDIENCE], constraints are [CONSTRAINTS], and 
-    non-negotiable...
+  preview: You are my Critique→Revision Engine builder. Build a prompt that critiques an output 
+    against criteria before revising it. ======================================== PERSONAL CONTEXT 
+    (filled by me)...
   best_tools:
   - tool: Claude
     reason: Performs nuanced long-form critique and revision while preserving intent.
@@ -3699,36 +3856,89 @@ prompts:
   - self-review
   - iteration
   next_id:
-  prompt: 'Build a critique-then-revise loop for improving [DRAFT_TYPE] against [GOAL].
+  prompt: 'You are my Critique→Revision Engine builder. Build a prompt that critiques an output against
+    criteria before revising it.
 
 
-    The draft will be supplied as [DRAFT]. The audience is [AUDIENCE], constraints are [CONSTRAINTS],
-    and non-negotiable content is [MUST_PRESERVE]. Create a rubric with four to six criteria tailored
-    to this task, each having a concrete pass condition. Avoid vague labels such as “good” without observable
-    evidence.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Type of output to improve: [OUTPUT_TYPE]
+
+    Rubric or quality criteria: [RUBRIC]
+
+    Sample output to critique: [SAMPLE_OUTPUT]
+
+    What must stay unchanged: [MUST_PRESERVE]
+
+    Goal of the revision: [REVISION_GOAL]
+
+    Audience for the revised output: [AUDIENCE]
+
+    How strict the critique should be: [STRICTNESS]
+
+    Critique-revise rounds needed: [ROUNDS]
 
 
-    The loop must run in distinct passes:
-
-    Pass A — Diagnose: quote or locate each issue and score the rubric.
-
-    Pass B — Plan: rank no more than five changes by impact.
-
-    Pass C — Revise: edit only what the plan justifies.
-
-    Pass D — Verify: rescore and check facts, constraints, and preserved meaning.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Instruct the model to show concise rationale and checkable evidence, not private hidden chain-of-thought.
-    Require a change log that maps every major edit to one diagnosed issue. If revision would need missing
-    facts, insert the plain label NEEDS INPUT instead of inventing them.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Critique
+
+    Score [SAMPLE_OUTPUT] against [RUBRIC] at [STRICTNESS]; cite concrete issues.
 
 
-    Set a stop rule: finish when all critical criteria pass or after [MAX_ROUNDS] rounds, whichever comes
-    first. If the score does not improve, preserve the strongest version and explain the blockage. Return
-    the complete reusable prompt, followed by one miniature demonstration using [SHORT_SAMPLE] when supplied;
-    if that sample is blank or still shows brackets, skip the demo and note that. Add a note on when human
-    review remains essential.
+    STEP 2 — Preserve
+
+    List what must not change from [MUST_PRESERVE].
+
+
+    STEP 3 — Revise
+
+    Produce a revised version aimed at [REVISION_GOAL] for [AUDIENCE].
+
+
+    STEP 4 — Engine prompt
+
+    Package the critique-then-revise workflow into a reusable prompt for [ROUNDS] rounds.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Critique scorecard
+
+    B. Issue list with evidence
+
+    C. Preservation constraints
+
+    D. Revised output
+
+    E. Change log
+
+    F. Reusable engine prompt
+
+    G. Stop conditions
+
+    H. Residual risks
+
+
+    Rules: critique before rewrite; no silent meaning changes; honour [MUST_PRESERVE].
 
     '
 - id: '036'
@@ -3739,9 +3949,8 @@ prompts:
   usage: Use this to organise multiple prompt constraints without creating contradictions.
   use_case: A communications, teaching, or operations team can create reliable instructions 
     involving length, tone, content, and compliance limits.
-  preview: 'Act as a constraint engineer for the task [TASK], turning my requirements into a coherent
-    prompt. Raw requirements: [REQUIREMENTS]. Intended audience: [AUDIENCE]. Required output: [OUTPUT].
-    First...'
+  preview: You are my Constraint Stack Builder. Organise many prompt constraints without creating 
+    contradictions. ======================================== PERSONAL CONTEXT (filled by me)...
   best_tools:
   - tool: ChatGPT
     reason: Organises detailed constraints and detects conflicts through interactive refinement.
@@ -3755,34 +3964,88 @@ prompts:
   - priorities
   - compliance
   next_id:
-  prompt: 'Act as a constraint engineer for the task [TASK], turning my requirements into a coherent prompt.
+  prompt: 'You are my Constraint Stack Builder. Organise many prompt constraints without creating contradictions.
 
 
-    Raw requirements: [REQUIREMENTS]. Intended audience: [AUDIENCE]. Required output: [OUTPUT]. First
-    sort every requirement into four layers: safety and truthfulness, task essentials, format limits,
-    and style preferences. Assign each item Hard, Strong Preference, or Optional.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Task the constraints apply to: [TASK]
+
+    Raw constraints to organise: [CONSTRAINT_LIST]
+
+    Priority order if conflicts arise: [PRIORITIES]
+
+    Non-negotiable constraints: [NON_NEGOTIABLES]
+
+    Flexible preferences: [FLEXIBLE_ITEMS]
+
+    Required output form: [OUTPUT_FORM]
+
+    Conflicts already noticed: [CONFLICT_EXAMPLES]
+
+    Target AI tool: [TOOL]
 
 
-    Search for collisions such as “comprehensive but 100 words,” “friendly but legally exact,” incompatible
-    formats, or missing data required by a hard rule. For each collision, show the competing instructions
-    and offer two resolutions. Ask me to decide whenever the choice changes the goal; do not silently
-    pick.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Build the final prompt with the constraints placed near the action they govern. Add a precedence rule
-    stating what wins if requirements conflict. Translate fuzzy terms—professional, concise, engaging,
-    detailed—into observable boundaries using [EXAMPLES_OR_METRICS]. If that field is blank or still shows
-    brackets, propose measurable defaults and label them as assumptions.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Cluster
+
+    Group [CONSTRAINT_LIST] into safety, format, style, scope, and domain stacks.
 
 
-    Include a compact compliance checklist the model can complete after drafting. It should report pass,
-    fail, or not applicable, then revise once only for failed hard constraints. Ensure the check does
-    not invite fabricated facts merely to satisfy format.
+    STEP 2 — Resolve
+
+    Detect contradictions using [PRIORITIES], [NON_NEGOTIABLES], and [FLEXIBLE_ITEMS]; resolve or flag.
 
 
-    Return: the sorted stack, unresolved choices, final prompt, and one edge-case test. End by identifying
-    the first constraint to relax if the requested output proves impossible, with a reason tied to the
-    stated priorities.
+    STEP 3 — Stack prompt
+
+    Write a clean constraint block for [TASK] and [OUTPUT_FORM] usable in [TOOL].
+
+
+    STEP 4 — Stress test
+
+    Show how the stack handles [CONFLICT_EXAMPLES].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Constraint clusters
+
+    B. Conflicts found
+
+    C. Resolutions
+
+    D. Final constraint stack
+
+    E. Ready prompt snippet
+
+    F. Override order
+
+    G. Test cases
+
+    H. Open conflicts still needing me
+
+
+    Rules: non-negotiables win; no hidden contradictions; keep language enforceable.
 
     '
 - id: '037'
@@ -3793,8 +4056,9 @@ prompts:
   usage: Use this to build examples that teach a model the desired output pattern.
   use_case: A team can improve consistency for classification, rewriting, extraction, or formatting 
     tasks through carefully varied examples.
-  preview: 'Design a few-shot example set that teaches an AI to perform [TASK] consistently. Desired input
-    form: [INPUT_SCHEMA]. Desired output form: [OUTPUT_SCHEMA]. Rules: [RULES]. Realistic domain: [DOMAIN]...'
+  preview: You are my Few-Shot Pattern Crafter. Build examples that teach a model the desired output
+    pattern without leaking private data. ======================================== PERSONAL CONTEXT 
+    (filled by...
   best_tools:
   - tool: Claude
     reason: Follows complex patterns demonstrated across several long examples.
@@ -3808,40 +4072,89 @@ prompts:
   - prompting
   - consistency
   next_id:
-  prompt: 'Design a few-shot example set that teaches an AI to perform [TASK] consistently.
+  prompt: 'You are my Few-Shot Pattern Crafter. Build examples that teach a model the desired output pattern
+    without leaking private data.
 
 
-    Desired input form: [INPUT_SCHEMA]. Desired output form: [OUTPUT_SCHEMA]. Rules: [RULES]. Realistic
-    domain: [DOMAIN]. Sensitive or prohibited content: [EXCLUSIONS].
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Task the examples should teach: [TASK]
+
+    Pattern rules to demonstrate: [PATTERN_RULES]
+
+    Seeds for good examples: [GOOD_EXAMPLE_SEEDS]
+
+    Seeds for bad counterexamples: [BAD_EXAMPLE_SEEDS]
+
+    Number of examples needed: [COUNT]
+
+    Privacy rules for examples: [PRIVACY_RULES]
+
+    Exact output format to mirror: [FORMAT]
+
+    Domain for the examples: [DOMAIN]
 
 
-    Begin by expressing the underlying pattern in plain language. Then identify the dimensions that examples
-    must vary: length, wording, class, ambiguity, missing data, and edge conditions. Create [NUMBER] examples
-    that cover those dimensions without copying private or copyrighted material. If exclusions are blank,
-    still avoid inventing personal data.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Each example must use:
+    ========================================
 
-    Input: a realistic synthetic case.
+    WORKFLOW YOU MUST FOLLOW
 
-    Output: the exact target response.
+    ========================================
 
-    Teaching point: a note for me that will be removed from the production prompt.
+    STEP 1 — Pattern spec
 
-
-    Include at least one typical case, one boundary case, one case requiring abstention or the label [UNKNOWN],
-    and one tempting near-miss. Keep labels balanced when the task is classification. Avoid accidental
-    clues such as one class always having longer inputs.
+    State the pattern behind [PATTERN_RULES] and [FORMAT] for [TASK].
 
 
-    Next, perform a leakage and consistency audit: check whether outputs reveal hidden answers, examples
-    contradict a rule, or superficial wording predicts the label. Repair issues you find.
+    STEP 2 — Craft set
+
+    Create [COUNT] good few-shot examples from [GOOD_EXAMPLE_SEEDS], anonymised per [PRIVACY_RULES].
 
 
-    Assemble a production prompt containing instructions, clean examples without teaching notes, and a
-    final [[NEW_INPUT]] slot that uses the placeholder name I supplied. Finish with two challenge inputs
-    and expected grading criteria, but keep their answers separate so they can test the prompt honestly.
+    STEP 3 — Counterexamples
+
+    Add concise bad examples from [BAD_EXAMPLE_SEEDS] labelled as anti-patterns.
+
+
+    STEP 4 — Packaging
+
+    Assemble a paste-ready few-shot block for [DOMAIN].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Pattern specification
+
+    B. Good examples
+
+    C. Bad counterexamples
+
+    D. Privacy scrub notes
+
+    E. Paste-ready few-shot block
+
+    F. What the model should copy
+
+    G. What it should not copy
+
+    H. Validation checks
+
+
+    Rules: examples must be realistic but scrubbed; never include real private data.
 
     '
 - id: '038'
@@ -3852,9 +4165,9 @@ prompts:
   usage: Use this to choose an appropriate AI tool based on task capabilities.
   use_case: A workshop participant can compare available tools for research, documents, writing, 
     studying, or office workflows without relying on hype.
-  preview: Help me choose the most suitable AI tool for [TASK] based on capabilities, access, and 
-    risk—not popularity. My inputs are [TEXT_FILES_IMAGES_LINKS_OR_OTHER], expected output is 
-    [OUTPUT], workflow is...
+  preview: You are my Task–Tool Routing advisor. Choose an appropriate AI tool based on task needs 
+    and constraints. Do not market tools with fake capabilities. 
+    ======================================== PERSONAL...
   best_tools:
   - tool: ChatGPT
     reason: Can elicit requirements and compare tools across common general-purpose capabilities.
@@ -3869,34 +4182,89 @@ prompts:
   - workflow
   - prompting
   next_id:
-  prompt: 'Help me choose the most suitable AI tool for [TASK] based on capabilities, access, and risk—not
-    popularity.
+  prompt: 'You are my Task–Tool Routing advisor. Choose an appropriate AI tool based on task needs and
+    constraints. Do not market tools with fake capabilities.
 
 
-    My inputs are [TEXT_FILES_IMAGES_LINKS_OR_OTHER], expected output is [OUTPUT], workflow is [WORKFLOW],
-    data sensitivity is [PUBLIC_INTERNAL_CONFIDENTIAL], and devices or accounts available are [ACCESS].
-    I prefer [PREFERENCES], but they are not hard requirements. If preferences are blank or still show
-    brackets, optimise for accuracy and data safety first.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Task to route: [TASK]
+
+    Must-have capabilities: [MUST_HAVE]
+
+    Nice-to-have capabilities: [NICE_HAVE]
+
+    Budget, privacy, or device constraints: [CONSTRAINTS]
+
+    Candidate tools I can use: [CANDIDATE_TOOLS]
+
+    Risk tolerance for mistakes: [RISK_TOLERANCE]
+
+    Output I need today: [OUTPUT_NEED]
+
+    My familiarity with AI tools: [USER_SKILL]
 
 
-    Ask up to five clarifying questions if any decisive requirement is missing. Then create a capability
-    checklist covering current web access, citations, file type and length, multimodal input, office integration,
-    collaboration, privacy controls, and required human verification.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Compare only tools you can describe accurately from current knowledge or verifiable official information.
-    Candidate tools may include ChatGPT, Gemini, Claude, Perplexity, NotebookLM, DeepSeek, Meta AI, and
-    Microsoft Copilot; omit irrelevant ones. Do not discuss prices unless I explicitly ask, and do not
-    claim a feature exists without confidence. Mark uncertainty rather than inventing product capabilities.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Requirements
+
+    Translate [TASK] into capability needs from [MUST_HAVE] and [NICE_HAVE].
 
 
-    Recommend one primary tool and up to two alternatives. For each, state task fit, key limitation, and
-    the condition that would change the choice. If a simple non-AI tool is safer or sufficient, say so.
+    STEP 2 — Fit matrix
+
+    Score [CANDIDATE_TOOLS] only on stated capabilities; mark unknowns instead of inventing.
 
 
-    End with a ten-minute test task using non-sensitive sample data and a scorecard for accuracy, effort,
-    traceability, and fit. Remind me to verify availability and organisational policy before uploading
-    data.
+    STEP 3 — Route
+
+    Recommend primary and fallback routes that fit [CONSTRAINTS], [RISK_TOLERANCE], and [USER_SKILL].
+
+
+    STEP 4 — Prompt starter
+
+    Give a starter prompt for the chosen route aimed at [OUTPUT_NEED].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Capability needs
+
+    B. Tool fit matrix
+
+    C. Primary recommendation
+
+    D. Fallback option
+
+    E. Risks and unknowns
+
+    F. Starter prompt
+
+    G. What not to use and why
+
+    H. Decision checklist
+
+
+    Rules: no hype; label uncertainty; honour privacy and budget constraints.
 
     '
 - id: '039'
@@ -3907,9 +4275,9 @@ prompts:
   usage: Use this to create a tutor prompt that guides learning through questions.
   use_case: A learner can develop reasoning in mathematics, science, business, or humanities without
     receiving immediate answers.
-  preview: Create a Socratic tutor prompt for learning [TOPIC] at [LEVEL] toward [LEARNING_GOAL]. 
-    The tutor must begin with one diagnostic question and then proceed one question at a time, 
-    always waiting for...
+  preview: You are my Socratic Learning Dialogue designer. Create a tutor prompt that guides 
+    learning through questions, not answer dumps. ======================================== PERSONAL 
+    CONTEXT (filled by...
   best_tools:
   - tool: ChatGPT
     reason: Maintains responsive multi-turn tutoring and adjusts hints to learner answers.
@@ -3923,38 +4291,89 @@ prompts:
   - learning
   - questions
   next_id:
-  prompt: 'Create a Socratic tutor prompt for learning [TOPIC] at [LEVEL] toward [LEARNING_GOAL].
+  prompt: 'You are my Socratic Learning Dialogue designer. Create a tutor prompt that guides learning
+    through questions, not answer dumps.
 
 
-    The tutor must begin with one diagnostic question and then proceed one question at a time, always
-    waiting for the learner’s reply. It should not dump a lecture or reveal a complete solution to [PROBLEM_TYPE]
-    before the learner attempts it.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Topic to teach: [TOPIC]
+
+    Learner level: [LEARNER_LEVEL]
+
+    Learning goal: [GOAL]
+
+    Session length in minutes: [SESSION_MINUTES]
+
+    Known gaps or misconceptions: [KNOWN_GAPS]
+
+    How quickly to give hints: [HINT_POLICY]
+
+    What counts as understanding: [SUCCESS_CHECK]
+
+    Local or course context: [CONTEXT]
 
 
-    Design a three-level hint ladder:
-
-    Hint 1 points attention to the relevant idea.
-
-    Hint 2 recalls a principle or gives a smaller analogous case.
-
-    Hint 3 provides the next step but still leaves meaningful work.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Require the tutor to respond to wrong answers by identifying the misconception through another question,
-    not saying only “incorrect.” For correct answers, ask for justification or transfer to a changed example.
-    Every four turns, it should briefly summarize what the learner established and ask them to state the
-    connection in their own words.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Tutor stance
+
+    Define a Socratic stance for [TOPIC] at [LEARNER_LEVEL] aimed at [GOAL].
 
 
-    Add an integrity boundary: for live graded work, offer concepts, hints, and feedback but do not impersonate
-    the learner or produce submission-ready answers. Include an option to switch to direct explanation
-    after [MAX_ATTEMPTS] sincere attempts.
+    STEP 2 — Dialogue flow
+
+    Plan question ladders, hint tiers per [HINT_POLICY], and checks for [KNOWN_GAPS].
 
 
-    Return the complete tutor prompt plus three starter questions ordered by difficulty. Add a closing
-    mastery check requiring explanation, application, and self-assessment. The tutor should be encouraging
-    without excessive praise and should adapt examples to [CONTEXT] respectfully. If context is blank
-    or still shows brackets, use neutral classroom examples and say so.
+    STEP 3 — Ready tutor prompt
+
+    Write the reusable tutor prompt including wait-for-learner rules and [SESSION_MINUTES] pacing.
+
+
+    STEP 4 — Exit test
+
+    Include a final check aligned to [SUCCESS_CHECK] in [CONTEXT].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Tutor stance
+
+    B. Question ladder
+
+    C. Hint tiers
+
+    D. Misconception handling
+
+    E. Ready tutor prompt
+
+    F. Pacing plan
+
+    G. Success check
+
+    H. If learner is stuck
+
+
+    Rules: ask before telling; no completing graded work; keep curiosity kind and rigorous.
 
     '
 - id: '040'
@@ -3965,9 +4384,9 @@ prompts:
   usage: Use this to define measurable criteria for evaluating an AI-generated output.
   use_case: A trainer, team, or individual can judge drafts consistently and compare prompt versions
     using the same standard.
-  preview: Design an evaluation rubric for AI-generated [OUTPUT_TYPE] used by [AUDIENCE] for 
-    [PURPOSE]. Success requirements are [REQUIREMENTS], likely risks are [RISKS], and any overview 
-    of available samples...
+  preview: You are my Output Rubric Designer. Define measurable criteria for evaluating an 
+    AI-generated deliverable. ======================================== PERSONAL CONTEXT (filled by 
+    me)...
   best_tools:
   - tool: ChatGPT
     reason: Builds task-specific rubrics and applies them iteratively to sample outputs.
@@ -3981,34 +4400,89 @@ prompts:
   - quality
   - prompt-testing
   next_id:
-  prompt: 'Design an evaluation rubric for AI-generated [OUTPUT_TYPE] used by [AUDIENCE] for [PURPOSE].
+  prompt: 'You are my Output Rubric Designer. Define measurable criteria for evaluating an AI-generated
+    deliverable.
 
 
-    Success requirements are [REQUIREMENTS], likely risks are [RISKS], and any overview of available samples
-    is [SAMPLES]. Begin by separating threshold requirements from quality dimensions. A threshold is pass/fail—such
-    as no invented citations—while a quality dimension can improve by degree.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Deliverable to evaluate: [DELIVERABLE]
+
+    Audience judging quality: [AUDIENCE]
+
+    Must-pass criteria: [MUST_PASS]
+
+    Nice-to-have criteria: [NICE_TO_HAVE]
+
+    Scoring scale to use: [SCALE]
+
+    Examples of failure: [FAILURE_EXAMPLES]
+
+    Weighting preferences: [WEIGHTS_HINT]
+
+    How the rubric will be used: [USE_CASE]
 
 
-    Propose five to eight non-overlapping criteria. For each provide: definition, weight, evidence the
-    evaluator should inspect, and anchors for scores 1, 3, and 5. Ensure weights total 100. Include accuracy,
-    source grounding, or safety where relevant; do not allow fluency to compensate for dangerous or materially
-    false content.
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Add automatic failure gates for [CRITICAL_FAILURES]. Define how “not applicable” changes the denominator.
-    Write instructions for two evaluators to resolve disagreements by pointing to output evidence rather
-    than personal taste.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Criteria
+
+    Turn [MUST_PASS] and [NICE_TO_HAVE] into observable rubric rows for [DELIVERABLE].
 
 
-    Calibrate the rubric on [SAMPLE_A] and [SAMPLE_B], if supplied. If either sample is blank or still
-    shows brackets, create two tiny synthetic fragments solely for calibration and label them as synthetic.
-    Show criterion scores with short justifications, identify any criterion that both samples expose as
-    ambiguous, and revise its wording once.
+    STEP 2 — Scale
+
+    Define [SCALE] descriptors with concrete anchors, including [FAILURE_EXAMPLES].
 
 
-    Finish with a compact evaluator form and interpretation bands—unusable, needs revision, usable with
-    checks, strong—tied to both score and failure gates. State what the rubric cannot measure and when
-    a subject-matter expert must override the numeric result.
+    STEP 3 — Weights
+
+    Propose weights from [WEIGHTS_HINT] that total 100.
+
+
+    STEP 4 — Usage
+
+    Explain how to apply the rubric in [USE_CASE] for [AUDIENCE], including AI-assisted pre-score caveats.
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. Rubric table
+
+    B. Scale descriptors
+
+    C. Weights
+
+    D. Fail-fast gates
+
+    E. Worked scoring example
+
+    F. Common scoring mistakes
+
+    G. AI pre-score caution
+
+    H. Revision priorities
+
+
+    Rules: measurable over vague; no personality scoring; keep criteria observable.
 
     '
 - id: '041'
@@ -4019,9 +4493,9 @@ prompts:
   usage: Use to shape an early-stage venture story before designing the slides.
   use_case: Turn scattered venture facts into a credible pitch sequence for Pakistani or 
     international investors. Missing evidence remains clearly labelled.
-  preview: You are a venture-story architect turning raw founder notes into an evidence-led pitch 
-    deck. If any personalization field is blank or still shows brackets, continue with clearly 
-    labelled assumptions...
+  preview: You are my Investor Pitch Deck Architect. Shape an early-stage venture story before 
+    designing slides. Do not invent traction metrics. ======================================== 
+    PERSONAL CONTEXT (filled...
   best_tools:
   - tool: Gamma
     reason: Builds a polished first-pass deck from a structured narrative.
@@ -4034,44 +4508,91 @@ prompts:
   - startup
   - fundraising
   next_id:
-  prompt: 'You are a venture-story architect turning raw founder notes into an evidence-led pitch deck.
+  prompt: 'You are my Investor Pitch Deck Architect. Shape an early-stage venture story before designing
+    slides. Do not invent traction metrics.
 
 
-    If any personalization field is blank or still shows brackets, continue with clearly labelled assumptions
-    — do not invent facts, numbers, sources, or private details to fill gaps.
+    ========================================
+
+    PERSONAL CONTEXT (filled by me)
+
+    ========================================
+
+    Venture or product name: [VENTURE]
+
+    Problem you solve: [PROBLEM]
+
+    Who it is for: [WHO_FOR]
+
+    Solution in plain words: [SOLUTION]
+
+    Real traction you can prove: [TRACTION]
+
+    What you are asking for: [ASK]
+
+    Company stage: [STAGE]
+
+    Deck length or time constraints: [CONSTRAINTS]
+
+    Known risks or gaps: [RISKS]
 
 
-    Venture: [VENTURE]
-
-    Audience: [INVESTOR_TYPE]
-
-    Stage and traction: [STAGE_AND_TRACTION]
-
-    Customer problem: [PROBLEM]
-
-    Solution and advantage: [SOLUTION]
-
-    Business model: [BUSINESS_MODEL]
-
-    Market evidence: [MARKET_EVIDENCE]
-
-    Funding ask and use: [ASK_AND_USE]
+    If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and
+    never invent unverified facts, numbers, citations, or quotes.
 
 
-    Build a 10-12 slide storyline, but do not invent market sizes, customers, partnerships, or financial
-    results. For each slide, provide a decisive headline that states the takeaway, the minimum supporting
-    content, one recommended visual, and the evidence needed. Make the logic progress from costly problem
-    to credible opportunity, demonstrated progress, and a specific ask.
+    ========================================
+
+    WORKFLOW YOU MUST FOLLOW
+
+    ========================================
+
+    STEP 1 — Story spine
+
+    Build a credible narrative from problem → wedge → solution → why now using only supplied facts.
 
 
-    Include a “proof gap” beside any claim that lacks support. Separate current facts from forecasts.
-    If the venture serves Pakistan, explain local realities in plain language rather than treating them
-    as weaknesses. Give the traction slide three possible treatments depending on whether traction is
-    revenue, usage, or validated learning.
+    STEP 2 — Slide outline
+
+    Propose a slide-by-slide architecture that fits [CONSTRAINTS] and [STAGE].
 
 
-    Finish with: the one-sentence investment thesis, the two questions investors are most likely to challenge,
-    and a 30-second closing statement. Keep slide text sparse; place explanation in brief presenter guidance.
+    STEP 3 — Evidence map
+
+    Place [TRACTION] and flag missing proof; never invent numbers.
+
+
+    STEP 4 — Ask framing
+
+    Frame [ASK] with use of funds and risks from [RISKS].
+
+
+    ========================================
+
+    OUTPUT FORMAT
+
+    ========================================
+
+    Use these exact headings:
+
+    A. One-sentence pitch
+
+    B. Story spine
+
+    C. Slide-by-slide outline
+
+    D. Evidence map
+
+    E. Ask and use of funds
+
+    F. Risks to disclose
+
+    G. Missing proof to gather
+
+    H. Speaker emphasis notes
+
+
+    Rules: investor-clear; no fake traction; honest about [RISKS].
 
     '
 - id: '042'

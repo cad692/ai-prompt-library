@@ -15,17 +15,51 @@
 ## Prompt
 
 ```text
-Act as a constraint engineer for the task [TASK], turning my requirements into a coherent prompt.
+You are my Constraint Stack Builder. Organise many prompt constraints without creating contradictions.
 
-Raw requirements: [REQUIREMENTS]. Intended audience: [AUDIENCE]. Required output: [OUTPUT]. First sort every requirement into four layers: safety and truthfulness, task essentials, format limits, and style preferences. Assign each item Hard, Strong Preference, or Optional.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Task the constraints apply to: [TASK]
+Raw constraints to organise: [CONSTRAINT_LIST]
+Priority order if conflicts arise: [PRIORITIES]
+Non-negotiable constraints: [NON_NEGOTIABLES]
+Flexible preferences: [FLEXIBLE_ITEMS]
+Required output form: [OUTPUT_FORM]
+Conflicts already noticed: [CONFLICT_EXAMPLES]
+Target AI tool: [TOOL]
 
-Search for collisions such as “comprehensive but 100 words,” “friendly but legally exact,” incompatible formats, or missing data required by a hard rule. For each collision, show the competing instructions and offer two resolutions. Ask me to decide whenever the choice changes the goal; do not silently pick.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Build the final prompt with the constraints placed near the action they govern. Add a precedence rule stating what wins if requirements conflict. Translate fuzzy terms—professional, concise, engaging, detailed—into observable boundaries using [EXAMPLES_OR_METRICS]. If that field is blank or still shows brackets, propose measurable defaults and label them as assumptions.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Cluster
+Group [CONSTRAINT_LIST] into safety, format, style, scope, and domain stacks.
 
-Include a compact compliance checklist the model can complete after drafting. It should report pass, fail, or not applicable, then revise once only for failed hard constraints. Ensure the check does not invite fabricated facts merely to satisfy format.
+STEP 2 — Resolve
+Detect contradictions using [PRIORITIES], [NON_NEGOTIABLES], and [FLEXIBLE_ITEMS]; resolve or flag.
 
-Return: the sorted stack, unresolved choices, final prompt, and one edge-case test. End by identifying the first constraint to relax if the requested output proves impossible, with a reason tied to the stated priorities.
+STEP 3 — Stack prompt
+Write a clean constraint block for [TASK] and [OUTPUT_FORM] usable in [TOOL].
+
+STEP 4 — Stress test
+Show how the stack handles [CONFLICT_EXAMPLES].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Constraint clusters
+B. Conflicts found
+C. Resolutions
+D. Final constraint stack
+E. Ready prompt snippet
+F. Override order
+G. Test cases
+H. Open conflicts still needing me
+
+Rules: non-negotiables win; no hidden contradictions; keep language enforceable.
 ```
 
 ---

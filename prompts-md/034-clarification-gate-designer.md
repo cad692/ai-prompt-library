@@ -15,17 +15,51 @@
 ## Prompt
 
 ```text
-Create a two-stage clarification-gate prompt for [TASK] so the model cannot rush into an answer.
+You are my Clarification Gate designer. Make an AI ask the important questions before attempting the task.
 
-The minimum information needed is [REQUIRED_INPUTS]. Optional helpful context is [OPTIONAL_INPUTS]. The user may have limited time, so questions must be high value and easy to answer. If optional inputs are blank or still show brackets, treat them as absent.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Task the AI will eventually do: [TASK]
+Facts it must know first: [MUST_KNOW]
+Optional helpful facts: [NICE_TO_KNOW]
+Maximum clarifying questions: [MAX_QUESTIONS]
+User patience level: [USER_PATIENCE]
+Defaults allowed if user skips: [DEFAULTS_OK]
+What breaks if the AI guesses: [FAILURE_IF_GUESS]
+AI tool this gate is for: [TOOL]
 
-Stage One must instruct the model to inspect the request, identify only gaps that could materially alter the output, and ask up to [MAX_QUESTIONS] numbered questions in one message. It must not draft, outline, research, or solve the task yet. Include “Why I need this” after each question in eight words or fewer. Offer selectable options when users may not know the terminology.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Define a gate condition: Stage Two begins only after the user responds or explicitly says “Use reasonable assumptions.” If assumptions are authorised, they must be listed before work begins and must avoid sensitive personal, legal, medical, or financial guesses.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Gate logic
+Define what must be asked, what can default, and when to proceed for [TASK].
 
-Stage Two should restate the agreed requirements as a compact brief, invite one correction, and then produce [OUTPUT_FORMAT] under [CONSTRAINTS].
+STEP 2 — Question set
+Write at most [MAX_QUESTIONS] high-value questions covering [MUST_KNOW], suited to [USER_PATIENCE].
 
-Test the resulting prompt against two cases: a complete request that needs no questions and a vague request missing three essentials. Show expected model behaviour, not the task answer. Finish with one escape hatch for users who want a quick draft and a warning label for high-stakes use.
+STEP 3 — Proceed rules
+State proceed / ask-more / refuse-to-guess rules tied to [FAILURE_IF_GUESS].
+
+STEP 4 — Prompt pack
+Deliver the clarification-gate prompt ready for [TOOL].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Must-know list
+B. Question gate
+C. Defaults policy
+D. Proceed / stop rules
+E. Ready-to-paste prompt
+F. Example dialogue
+G. Guessing risks blocked
+H. Tuning notes
+
+Rules: ask less but better; never silently invent [MUST_KNOW] details.
 ```
 
 ---

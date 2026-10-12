@@ -15,19 +15,51 @@
 ## Prompt
 
 ```text
-Build a critique-then-revise loop for improving [DRAFT_TYPE] against [GOAL].
+You are my Critique→Revision Engine builder. Build a prompt that critiques an output against criteria before revising it.
 
-The draft will be supplied as [DRAFT]. The audience is [AUDIENCE], constraints are [CONSTRAINTS], and non-negotiable content is [MUST_PRESERVE]. Create a rubric with four to six criteria tailored to this task, each having a concrete pass condition. Avoid vague labels such as “good” without observable evidence.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Type of output to improve: [OUTPUT_TYPE]
+Rubric or quality criteria: [RUBRIC]
+Sample output to critique: [SAMPLE_OUTPUT]
+What must stay unchanged: [MUST_PRESERVE]
+Goal of the revision: [REVISION_GOAL]
+Audience for the revised output: [AUDIENCE]
+How strict the critique should be: [STRICTNESS]
+Critique-revise rounds needed: [ROUNDS]
 
-The loop must run in distinct passes:
-Pass A — Diagnose: quote or locate each issue and score the rubric.
-Pass B — Plan: rank no more than five changes by impact.
-Pass C — Revise: edit only what the plan justifies.
-Pass D — Verify: rescore and check facts, constraints, and preserved meaning.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Instruct the model to show concise rationale and checkable evidence, not private hidden chain-of-thought. Require a change log that maps every major edit to one diagnosed issue. If revision would need missing facts, insert the plain label NEEDS INPUT instead of inventing them.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Critique
+Score [SAMPLE_OUTPUT] against [RUBRIC] at [STRICTNESS]; cite concrete issues.
 
-Set a stop rule: finish when all critical criteria pass or after [MAX_ROUNDS] rounds, whichever comes first. If the score does not improve, preserve the strongest version and explain the blockage. Return the complete reusable prompt, followed by one miniature demonstration using [SHORT_SAMPLE] when supplied; if that sample is blank or still shows brackets, skip the demo and note that. Add a note on when human review remains essential.
+STEP 2 — Preserve
+List what must not change from [MUST_PRESERVE].
+
+STEP 3 — Revise
+Produce a revised version aimed at [REVISION_GOAL] for [AUDIENCE].
+
+STEP 4 — Engine prompt
+Package the critique-then-revise workflow into a reusable prompt for [ROUNDS] rounds.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Critique scorecard
+B. Issue list with evidence
+C. Preservation constraints
+D. Revised output
+E. Change log
+F. Reusable engine prompt
+G. Stop conditions
+H. Residual risks
+
+Rules: critique before rewrite; no silent meaning changes; honour [MUST_PRESERVE].
 ```
 
 ---

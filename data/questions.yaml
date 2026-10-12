@@ -871,227 +871,269 @@
 "032":
   WEAK_PROMPT:
     q: Paste the weak prompt you want improved.
-    ex: Summarise this article in simple words
-  OUTCOME:
-    q: What should a successful rewritten prompt achieve?
-    ex: A clear summary a first-year can present
-  USER:
-    q: Who will use the improved prompt?
-    ex: A new undergraduate student
-  USE:
-    q: How will the model output be used afterward?
-    ex: As speaker notes for a 3-minute class talk
-  PLACEHOLDERS:
-    q: Which placeholder names should Version 3 keep?
-    ex: ARTICLE, AUDIENCE, PURPOSE
+    ex: Write something about climate change
+  TASK_GOAL:
+    q: What is the real goal of this task?
+    ex: A 1-page briefing for city staff
+  END_USER:
+    q: Who will use the AI output?
+    ex: Municipal programme officer
+  SUCCESS_TEST:
+    q: How will you know the output worked?
+    ex: Staff can act without asking for missing numbers
+  HARD_LIMITS:
+    q: Which hard limits must the prompt enforce?
+    ex: No invented statistics; under 400 words
+  DOMAIN:
+    q: What domain or subject is this for?
+    ex: Urban climate adaptation
+  FAILURES_SEEN:
+    q: What failures have you already seen?
+    ex: Generic advice; fake citations
     optional: true
+  TOOL:
+    q: Which AI tool will run the improved prompt?
+    ex: ChatGPT
 "033":
-  TASK:
-    q: What grounded-answer task must the prompt support?
-    ex: Answer committee questions from one uploaded report
-  RISK:
-    q: What harm could unsupported claims cause?
-    ex: Incorrect policy recommendation to leadership
-  APPROVED_SOURCES:
-    q: Which sources is the model allowed to use?
-    ex: Only the uploaded evaluation PDF
-  QUESTION:
-    q: What sample user question should the prompt expect?
-    ex: What caused the change in reported rates?
+  TASK_TYPE:
+    q: What task will the AI perform?
+    ex: Answer FAQs from a policy PDF
+  ALLOWED_SOURCES:
+    q: Which sources may the AI use?
+    ex: Only the uploaded policy PDF
+  FORBIDDEN_BEHAVIOURS:
+    q: Which behaviours must be forbidden?
+    ex: No invented clauses or phone numbers
+  CITATION_RULE:
+    q: How must evidence be shown?
+    ex: Quote short spans with section headings
+  UNCERTAINTY_RULE:
+    q: How should unknowns be marked?
+    ex: Say ‘not in source’ and stop
   AUDIENCE:
-    q: Who will read the grounded final answer?
-    ex: Project steering committee
+    q: Who will read these answers?
+    ex: Students and parents
+  RISK_LEVEL:
+    q: How risky is invented information here?
+    ex: High — people may rely on it
+  SAMPLE_QUERY:
+    q: What sample user query should we protect?
+    ex: What is the refund deadline?
 "034":
   TASK:
-    q: What task should wait behind the clarification gate?
-    ex: Write a one-page donor briefing
-  REQUIRED_INPUTS:
-    q: Which details are essential before answering?
-    ex: Audience, goal, deadline, and tone
-  OPTIONAL_INPUTS:
-    q: Which optional details may improve the answer?
-    ex: Past brief and preferred examples
+    q: What task will the AI eventually perform?
+    ex: Draft a client proposal email
+  MUST_KNOW:
+    q: What must the AI know before starting?
+    ex: Offer, price, deadline, recipient role
+  NICE_TO_KNOW:
+    q: What optional facts would help?
+    ex: Prior relationship and tone preference
     optional: true
   MAX_QUESTIONS:
-    q: What is the maximum clarification questions allowed?
-    ex: '3'
-  OUTPUT_FORMAT:
-    q: What output format should Stage Two produce?
-    ex: One-page brief with three bullets
-  CONSTRAINTS:
-    q: What hard constraints must Stage Two respect?
-    ex: No invented statistics; under 400 words
-"035":
-  DRAFT_TYPE:
-    q: What kind of draft will be critiqued?
-    ex: Literature-review paragraph
-  GOAL:
-    q: What improvement goal should the loop pursue?
-    ex: Clearer claims and stronger evidence links
-  DRAFT:
-    q: Paste the draft text to critique and revise.
-    ex: Full draft section or paragraph
-  AUDIENCE:
-    q: Who is the intended reader of this draft?
-    ex: Thesis supervisor
-  CONSTRAINTS:
-    q: What revision constraints must be respected?
-    ex: No new facts; keep citations unchanged
-  MUST_PRESERVE:
-    q: What content must remain unchanged?
-    ex: Core thesis claim and cited sources
-  MAX_ROUNDS:
-    q: How many critique-revise rounds are allowed?
-    ex: '3'
-  SHORT_SAMPLE:
-    q: Optional short sample for a miniature demo?
-    ex: Two sentences showing the same weakness
+    q: What is the maximum clarifying questions allowed?
+    ex: '4'
+  USER_PATIENCE:
+    q: How patient is the user with questions?
+    ex: Low — keep questions short
+  DEFAULTS_OK:
+    q: Which defaults are allowed if the user skips?
+    ex: Formal tone; English
     optional: true
+  FAILURE_IF_GUESS:
+    q: What breaks if the AI guesses instead?
+    ex: Wrong price damages trust
+  TOOL:
+    q: Which AI tool is this clarification gate for?
+    ex: ChatGPT
+"035":
+  OUTPUT_TYPE:
+    q: What type of output are you improving?
+    ex: Essay introduction paragraph
+  RUBRIC:
+    q: Which rubric or quality criteria apply?
+    ex: Clarity, evidence, thesis fit, tone
+  SAMPLE_OUTPUT:
+    q: Paste the sample output to critique.
+    ex: Paste the current draft text
+  MUST_PRESERVE:
+    q: What must stay unchanged in revision?
+    ex: Core thesis and cited facts
+  REVISION_GOAL:
+    q: What is the goal of the revision?
+    ex: Sharper thesis and less fluff
+  AUDIENCE:
+    q: Who is the audience for the revised output?
+    ex: Course instructor
+  STRICTNESS:
+    q: How strict should the critique be?
+    ex: Strict on evidence; kind on tone
+  ROUNDS:
+    q: How many critique-revise rounds do you want?
+    ex: '2'
 "036":
   TASK:
-    q: What task needs a coherent constraint stack?
-    ex: Draft an internal policy memo
-  REQUIREMENTS:
-    q: List the requirements and limits to organise.
-    ex: Under 500 words; formal; cite only supplied policy
-  AUDIENCE:
-    q: Who will read the constrained output?
-    ex: Student society executive committee
-  OUTPUT:
-    q: What final deliverable should the prompt produce?
-    ex: One-page memo with decision options
-  EXAMPLES_OR_METRICS:
-    q: What examples or metrics define quality here?
-    ex: Each claim has a source; no jargon without definition
+    q: What task do these constraints apply to?
+    ex: Generate social captions for a clinic
+  CONSTRAINT_LIST:
+    q: Paste the raw constraints to organise.
+    ex: Short; Urdu-English mix; no medical claims; ...
+  PRIORITIES:
+    q: What priority order should resolve conflicts?
+    ex: Safety > accuracy > brand > wit
+  NON_NEGOTIABLES:
+    q: Which constraints are non-negotiable?
+    ex: No medical claims; no patient data
+  FLEXIBLE_ITEMS:
+    q: Which items are flexible preferences?
+    ex: Emoji use and hashtag count
     optional: true
+  OUTPUT_FORM:
+    q: What output form is required?
+    ex: 5 captions with CTA lines
+  CONFLICT_EXAMPLES:
+    q: What conflicts have you already noticed?
+    ex: Wants humour but also formal tone
+    optional: true
+  TOOL:
+    q: Which AI tool will use this stack?
+    ex: Claude
 "037":
   TASK:
-    q: What task should the few-shot examples teach?
-    ex: Classify campus support tickets by urgency
-  INPUT_SCHEMA:
-    q: What fields or shape does each input have?
-    ex: Subject line + message body
-  OUTPUT_SCHEMA:
-    q: What exact output format should examples show?
-    ex: 'Label: HIGH/MED/LOW; one-sentence reason'
-  RULES:
-    q: Which rules must every example obey?
-    ex: No guessing missing details; mark UNKNOWN if unclear
-  DOMAIN:
-    q: What realistic domain should examples use?
-    ex: University IT helpdesk
-  EXCLUSIONS:
-    q: What content must examples never include?
-    ex: Real names, CNIC, passwords, medical details
+    q: What task should the examples teach?
+    ex: Rewrite angry emails into calm requests
+  PATTERN_RULES:
+    q: Which pattern rules must examples show?
+    ex: Fact → impact → clear ask
+  GOOD_EXAMPLE_SEEDS:
+    q: What seeds can guide good examples?
+    ex: Late deliverable; missing file; tone issues
+  BAD_EXAMPLE_SEEDS:
+    q: What seeds can guide bad counterexamples?
+    ex: Blame-heavy and vague asks
     optional: true
-  NUMBER:
-    q: How many teaching examples should be created?
-    ex: '5'
-  UNKNOWN:
-    q: What abstention label should unclear cases use?
-    ex: UNKNOWN
-  NEW_INPUT:
-    q: What placeholder name should hold new cases?
-    ex: NEW_CASE
+  COUNT:
+    q: How many good examples do you need?
+    ex: '3'
+  PRIVACY_RULES:
+    q: What privacy rules must examples follow?
+    ex: No real names, phones, or company secrets
+  FORMAT:
+    q: What exact output format should examples mirror?
+    ex: Subject + 3-sentence body
+  DOMAIN:
+    q: What domain should the examples use?
+    ex: University project teamwork
 "038":
   TASK:
-    q: What task are you choosing an AI tool for?
-    ex: Analyse a 40-page evaluation report
-  TEXT_FILES_IMAGES_LINKS_OR_OTHER:
-    q: What inputs will you give the tool?
-    ex: PDF report plus two spreadsheet tabs
-  OUTPUT:
-    q: What final output do you need from the tool?
-    ex: One-page brief with page-cited findings
-  WORKFLOW:
-    q: What workflow steps surround this task?
-    ex: Read → extract → draft → human verify
-  PUBLIC_INTERNAL_CONFIDENTIAL:
-    q: How sensitive is the data involved?
-    ex: Internal; no personal student records
-  ACCESS:
-    q: Which tools or accounts can you actually use?
-    ex: ChatGPT Plus and Microsoft Copilot at work
-  PREFERENCES:
-    q: Which preferences matter if tools are otherwise equal?
-    ex: Strong citations and easy PDF upload
+    q: What task do you need to route to a tool?
+    ex: Summarise a 40-page PDF with citations
+  MUST_HAVE:
+    q: Which capabilities are must-have?
+    ex: File upload and quote grounding
+  NICE_HAVE:
+    q: Which capabilities are nice-to-have?
+    ex: Table extraction
     optional: true
+  CONSTRAINTS:
+    q: What budget, privacy, or device limits apply?
+    ex: Free tier; no client data off laptop
+  CANDIDATE_TOOLS:
+    q: Which tools can you already use?
+    ex: ChatGPT, Claude, Gemini, Copilot
+  RISK_TOLERANCE:
+    q: How much mistake risk can you accept?
+    ex: Low — citations must be checkable
+  OUTPUT_NEED:
+    q: What output do you need today?
+    ex: 1-page brief with page anchors
+  USER_SKILL:
+    q: How familiar are you with AI tools?
+    ex: Comfortable beginner
 "039":
   TOPIC:
-    q: What topic should the Socratic tutor teach?
-    ex: Hypothesis testing basics
-  LEVEL:
-    q: What learner level should the dialogue match?
-    ex: First-year undergraduate statistics
-  LEARNING_GOAL:
-    q: What should the learner be able to do afterward?
-    ex: Explain p-values without confusing them with effect size
-  PROBLEM_TYPE:
-    q: What kind of problems will the tutor use?
-    ex: Short conceptual and calculation word problems
-  MAX_ATTEMPTS:
-    q: After how many attempts may direct explanation start?
-    ex: '3'
+    q: What topic should the Socratic tutor cover?
+    ex: Photosynthesis energy flow
+  LEARNER_LEVEL:
+    q: What is the learner’s level?
+    ex: Grade 10 / first-year bio
+  GOAL:
+    q: What learning goal should the dialogue reach?
+    ex: Explain why plants need light in own words
+  SESSION_MINUTES:
+    q: How many minutes is the session?
+    ex: '20'
+  KNOWN_GAPS:
+    q: What gaps or misconceptions are known?
+    ex: Thinks plants eat soil for food
+    optional: true
+  HINT_POLICY:
+    q: How quickly should hints appear?
+    ex: Two attempts before a hint
+  SUCCESS_CHECK:
+    q: What counts as understanding here?
+    ex: Correct cause chain without jargon soup
   CONTEXT:
-    q: What setting should examples reflect?
-    ex: Pakistani university coursework examples
+    q: What course or local context applies?
+    ex: Pakistani secondary board syllabus
     optional: true
 "040":
-  OUTPUT_TYPE:
-    q: What type of AI output will the rubric judge?
-    ex: Decision brief with citations
+  DELIVERABLE:
+    q: What deliverable will this rubric evaluate?
+    ex: AI-written lab report section
   AUDIENCE:
-    q: Who will use the judged output?
-    ex: Programme managers
-  PURPOSE:
-    q: What decision or use is the output for?
-    ex: Choose whether to scale a pilot
-  REQUIREMENTS:
-    q: What success requirements must the output meet?
-    ex: Accurate, sourced, under two pages
-  RISKS:
-    q: What failure risks should the rubric detect?
-    ex: Invented numbers or missing caveats
-  SAMPLES:
-    q: Briefly describe any sample outputs you have.
-    ex: Two drafts from last week's prompt test
+    q: Who judges quality with this rubric?
+    ex: Teaching assistant
+  MUST_PASS:
+    q: Which criteria are must-pass?
+    ex: Method clarity; no invented data; citations
+  NICE_TO_HAVE:
+    q: Which criteria are nice-to-have?
+    ex: Elegant style and figures
     optional: true
-  CRITICAL_FAILURES:
-    q: Which failures should auto-fail the output?
-    ex: False citations or unsafe medical advice
-  SAMPLE_A:
-    q: Paste the weaker sample output, if available.
-    ex: Low-quality draft text
+  SCALE:
+    q: What scoring scale should we use?
+    ex: 1–4 with descriptors
+  FAILURE_EXAMPLES:
+    q: What does failure look like?
+    ex: Fake results; missing units; copied abstract
+  WEIGHTS_HINT:
+    q: Any weighting preferences?
+    ex: Evidence 40; clarity 30; structure 30
     optional: true
-  SAMPLE_B:
-    q: Paste the stronger sample output, if available.
-    ex: Stronger draft text
-    optional: true
+  USE_CASE:
+    q: How will you use this rubric?
+    ex: Grade drafts and guide revisions
 "041":
   VENTURE:
-    q: What venture should shape this investor pitch deck architect?
-    ex: A local logistics startup
-  INVESTOR_TYPE:
-    q: What investor type should shape this investor pitch deck architect?
-    ex: Angels or seed-stage funds
-  STAGE_AND_TRACTION:
-    q: What stage and traction do you have?
-    ex: Pilot users and early revenue
+    q: What is the venture or product called?
+    ex: FreshRoute — campus meal surplus app
   PROBLEM:
-    q: What problem should shape this investor pitch deck architect?
-    ex: Late deliveries across the city
+    q: What problem do you solve?
+    ex: Hostel students waste money on unpredictable meals
+  WHO_FOR:
+    q: Who is the product for?
+    ex: University students in large hostels
   SOLUTION:
-    q: What solution should shape this investor pitch deck architect?
-    ex: A smarter route-planning app
-  BUSINESS_MODEL:
-    q: What business model should shape this investor pitch deck architect?
-    ex: A subscription fee for drivers
-  MARKET_EVIDENCE:
-    q: What market evidence do you have?
-    ex: A growing demand for faster delivery
-  ASK_AND_USE:
-    q: What are you asking for and how will it be used?
-    ex: Rs. 6 lakh for product growth
+    q: What is the solution in plain words?
+    ex: Timed surplus meal claims from campus kitchens
+  TRACTION:
+    q: What real traction can you prove?
+    ex: 120 waitlist signups; 1 pilot kitchen
+  ASK:
+    q: What are you asking investors for?
+    ex: Rs. 2.5M pre-seed for ops and app
+  STAGE:
+    q: What stage is the company at?
+    ex: Pre-seed / pilot
+  CONSTRAINTS:
+    q: What deck length or time limits apply?
+    ex: 10 slides; 5-minute pitch
+    optional: true
+  RISKS:
+    q: What risks or gaps should stay honest?
+    ex: Kitchen partnerships not contracted yet
+    optional: true
 "042":
   CONCEPT:
     q: What concept should shape this concept to teaching slides?

@@ -15,23 +15,51 @@
 ## Prompt
 
 ```text
-Design a grounded-answer prompt for [TASK] where unsupported claims would create [RISK].
+You are my Grounded Answer Guardrails designer. Design prompt rules that reduce unsupported claims and invented details.
 
-Allowed evidence is [APPROVED_SOURCES]. The user’s question will appear as [QUESTION]. Build instructions that force a clean boundary between supplied evidence, general background knowledge if allowed, and inference. Require the exact abstention phrase NOT SUPPORTED BY PROVIDED SOURCES (plain text, not a fill-in field) whenever the evidence is insufficient.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Task the AI will perform: [TASK_TYPE]
+Sources the AI may use: [ALLOWED_SOURCES]
+Behaviours to forbid: [FORBIDDEN_BEHAVIOURS]
+How evidence must be shown: [CITATION_RULE]
+How to mark unknowns: [UNCERTAINTY_RULE]
+Audience for answers: [AUDIENCE]
+Risk if the AI invents facts: [RISK_LEVEL]
+Sample user query to protect: [SAMPLE_QUERY]
 
-The resulting prompt must require:
-- a source location beside each material claim;
-- quotations only when exact wording is available;
-- uncertainty labels for ambiguous passages;
-- no invented citations, links, statistics, names, or dates;
-- a conflict note when approved sources disagree;
-- a request for missing information when it would change the answer.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Choose an output structure suited to [AUDIENCE] rather than a generic essay. Include a final evidence ledger mapping conclusions to source IDs.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Threat model
+List how the AI might invent or overclaim on [TASK_TYPE] given [RISK_LEVEL].
 
-Stress-test the prompt with three probes: one answerable question, one partly answerable question, and one plausible but absent claim. Predict the compliant behaviour for each without answering the domain question. Identify any instruction that could still reward confident guessing and tighten it.
+STEP 2 — Guardrail pack
+Write enforceable rules for sources, refusals, citations, and uncertainty using my fields.
 
-Return the production prompt first, followed by the tests and a short human verification protocol. Do not claim these controls eliminate hallucinations; state their limits and recommend review proportional to the risk.
+STEP 3 — Ready prompt
+Produce a ready-to-paste system/user prompt pair that embeds the guardrails.
+
+STEP 4 — Test cases
+Give pass/fail test queries including [SAMPLE_QUERY].
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Invention risks
+B. Guardrail rules
+C. Ready-to-paste prompt
+D. Citation behaviour
+E. Uncertainty behaviour
+F. Pass/fail tests
+G. Escape hatches to avoid
+H. Review checklist
+
+Rules: prefer refusal or labelled uncertainty over fiction; honour [ALLOWED_SOURCES] and [FORBIDDEN_BEHAVIOURS].
 ```
 
 ---

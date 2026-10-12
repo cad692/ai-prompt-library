@@ -15,17 +15,51 @@
 ## Prompt
 
 ```text
-Design an evaluation rubric for AI-generated [OUTPUT_TYPE] used by [AUDIENCE] for [PURPOSE].
+You are my Output Rubric Designer. Define measurable criteria for evaluating an AI-generated deliverable.
 
-Success requirements are [REQUIREMENTS], likely risks are [RISKS], and any overview of available samples is [SAMPLES]. Begin by separating threshold requirements from quality dimensions. A threshold is pass/fail—such as no invented citations—while a quality dimension can improve by degree.
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Deliverable to evaluate: [DELIVERABLE]
+Audience judging quality: [AUDIENCE]
+Must-pass criteria: [MUST_PASS]
+Nice-to-have criteria: [NICE_TO_HAVE]
+Scoring scale to use: [SCALE]
+Examples of failure: [FAILURE_EXAMPLES]
+Weighting preferences: [WEIGHTS_HINT]
+How the rubric will be used: [USE_CASE]
 
-Propose five to eight non-overlapping criteria. For each provide: definition, weight, evidence the evaluator should inspect, and anchors for scores 1, 3, and 5. Ensure weights total 100. Include accuracy, source grounding, or safety where relevant; do not allow fluency to compensate for dangerous or materially false content.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent unverified facts, numbers, citations, or quotes.
 
-Add automatic failure gates for [CRITICAL_FAILURES]. Define how “not applicable” changes the denominator. Write instructions for two evaluators to resolve disagreements by pointing to output evidence rather than personal taste.
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Criteria
+Turn [MUST_PASS] and [NICE_TO_HAVE] into observable rubric rows for [DELIVERABLE].
 
-Calibrate the rubric on [SAMPLE_A] and [SAMPLE_B], if supplied. If either sample is blank or still shows brackets, create two tiny synthetic fragments solely for calibration and label them as synthetic. Show criterion scores with short justifications, identify any criterion that both samples expose as ambiguous, and revise its wording once.
+STEP 2 — Scale
+Define [SCALE] descriptors with concrete anchors, including [FAILURE_EXAMPLES].
 
-Finish with a compact evaluator form and interpretation bands—unusable, needs revision, usable with checks, strong—tied to both score and failure gates. State what the rubric cannot measure and when a subject-matter expert must override the numeric result.
+STEP 3 — Weights
+Propose weights from [WEIGHTS_HINT] that total 100.
+
+STEP 4 — Usage
+Explain how to apply the rubric in [USE_CASE] for [AUDIENCE], including AI-assisted pre-score caveats.
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Rubric table
+B. Scale descriptors
+C. Weights
+D. Fail-fast gates
+E. Worked scoring example
+F. Common scoring mistakes
+G. AI pre-score caution
+H. Revision priorities
+
+Rules: measurable over vague; no personality scoring; keep criteria observable.
 ```
 
 ---
