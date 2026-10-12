@@ -63,7 +63,7 @@
     ex: "Three clear points in a talk"
 "004":
   PASTE_EMAIL:
-    q: "Paste the email you want rewritten?"
+    q: "Paste the email draft you want rewritten"
     ex: "Hi sir, I would like to request..."
   RECIPIENT_CONTEXT:
     q: "Who is the email for?"
@@ -72,10 +72,10 @@
     q: "What do you want from the reply?"
     ex: "A meeting time or permission"
   WARM_DIRECT_FORMAL_DIPLOMATIC:
-    q: "What tone should it have?"
+    q: "What tone should the email have? (e.g., warm, direct, formal, diplomatic)"
     ex: "Warm and professional"
   CONSIDERATIONS:
-    q: "Any cultural or workplace details?"
+    q: "Any cultural or workplace details to consider?"
     ex: "Need to sound respectful"
     optional: true
   WORD_LIMIT:
@@ -98,7 +98,7 @@
     q: "What outcome would be ideal?"
     ex: "A clear action plan"
   MINIMUM_OUTCOME:
-    q: "What is the minimum success?"
+    q: "What is the minimum acceptable outcome?"
     ex: "Approval of the next step"
   SENSITIVE_POINTS:
     q: "What topics need care?"
@@ -109,7 +109,7 @@
     ex: "Slides and cost sheet"
     optional: true
   MINUTES:
-    q: "How much time is available?"
+    q: "How many minutes is the meeting scheduled for?"
     ex: "30 minutes"
 "006":
   GOAL:
@@ -122,29 +122,29 @@
     q: "What budget do you have?"
     ex: "Rs. 15,000"
   TIME:
-    q: "How much time is available?"
+    q: "How much time is available for the project?"
     ex: "Three weeks"
   TEAM_SIZE:
     q: "How many people are involved?"
     ex: "Four teammates"
   RESOURCES:
-    q: "What resources can you use?"
+    q: "What resources (tools, spaces, equipment) can you use?"
     ex: "A lab and a small laptop"
   NON_NEGOTIABLES:
-    q: "What must stay fixed?"
+    q: "What constraints must stay fixed (non-negotiables)?"
     ex: "Low cost and safe design"
   EXCLUSIONS:
-    q: "What should be avoided?"
+    q: "What should be explicitly avoided?"
     ex: "Unsafe materials or over-spending"
   LOCAL_CONTEXT:
     q: "What local situation matters?"
     ex: "Lahore power cuts and campus rules"
     optional: true
   MEASURE_OF_SUCCESS:
-    q: "How will you judge success?"
+    q: "How will you measure or judge success?"
     ex: "More student engagement"
   OTHER_FIELD:
-    q: "What field should we borrow from?"
+    q: "What other field or discipline should we borrow ideas from?"
     ex: "Design thinking"
     optional: true
   DAYS:
@@ -161,7 +161,7 @@
     q: "What type of organisation is it?"
     ex: "A tech startup"
   JOB_DESCRIPTION:
-    q: "Paste the job description?"
+    q: "Paste the job description"
     ex: "We need strong Excel and SQL skills"
   BACKGROUND:
     q: "What is your background?"
@@ -170,14 +170,14 @@
     q: "What area do you want to improve?"
     ex: "Technical interviews"
   SELECTION_CRITERIA:
-    q: "What matters most to them?"
+    q: "What selection criteria matter most to them?"
     ex: "Problem-solving and teamwork"
 "008":
   CONCEPT:
     q: "What concept do you want explained?"
     ex: "Machine learning basics"
   WHAT_I_ALREADY_KNOW:
-    q: "What do you already know?"
+    q: "What do you already know about this topic?"
     ex: "Basic statistics only"
   PURPOSE:
     q: "Why do you need the explanation?"
@@ -197,7 +197,7 @@
     q: "What habit are you testing?"
     ex: "Daily revision"
   ROUTINE:
-    q: "What is your current routine?"
+    q: "What is your current daily routine?"
     ex: "Study after dinner"
   PERSONAL_REASON:
     q: "Why do you want this habit?"
@@ -206,7 +206,7 @@
     q: "What gets in the way?"
     ex: "Phone distraction and tiredness"
   TIME_OR_MONEY:
-    q: "What cost or time issue matters?"
+    q: "What time or cost constraint matters?"
     ex: "Only 15 minutes a day"
     optional: true
   PAST_ATTEMPTS:
@@ -226,7 +226,7 @@
     q: "What do you want to ask for?"
     ex: "A clearer timeline and boundary"
   WHATSAPP_EMAIL_SMS_OR_OTHER:
-    q: "Which channel should we use?"
+    q: "Which communication channel should we use?"
     ex: "WhatsApp or email"
   CONCERNS:
     q: "What worries you most?"
