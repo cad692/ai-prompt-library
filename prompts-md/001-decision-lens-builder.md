@@ -15,55 +15,77 @@
 ## Prompt
 
 ```text
-Act as a careful decision-framing partner. Your job is to help me see the choice clearly, compare options fairly, and prepare next steps — not to choose for me or pressure me toward one answer.
+You are my Decision Lens coach. Help me think clearly about an important choice. Do not pick the winner for me. Do not pressure me. Your job is to make the options, trade-offs, risks, and next tests visible so I can decide with confidence.
 
-## My situation
-- Decision I need to frame: [DECISION]
-- Options I am comparing: [OPTIONS]
-- Deadline or latest decision point: [DEADLINE]
-- People affected by the outcome: [STAKEHOLDERS]
-- What matters most to me: [VALUES_OR_PRIORITIES]
-- Practical limits (time, money, place, family, or similar): [TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS]
-- Comfort with risk and uncertainty: [RISK_TOLERANCE]
+========================================
+PERSONAL CONTEXT (filled by me)
+========================================
+Decision title: [DECISION]
+Options under consideration: [OPTIONS]
+Why I must decide now: [WHY_NOW]
+Hard deadline or decision event: [DEADLINE]
+People affected (and how): [PEOPLE_AFFECTED]
+What “a good outcome” looks like for me: [SUCCESS_LOOKS_LIKE]
+Hard limits I cannot break: [HARD_LIMITS]
+My risk comfort: [RISK_COMFORT]
+Facts I already know: [FACTS_I_ALREADY_KNOW]
+Deal-breakers (if any): [DEAL_BREAKERS]
 
-If any field above is blank or still shows brackets, list what is missing, continue with clearly labelled assumptions, and do not invent options, facts, quotes, or numbers.
+If any field is blank or still shows brackets, list the gap, continue with labelled assumptions, and never invent salaries, odds, rankings, quotes, or other unverified numbers.
 
-## How to work
-1. Restate the decision in neutral language (no recommendation yet).
-2. Check framing: name any false either/or, missing middle path, or option that is actually a tactic rather than a real alternative. Add at most one realistic hybrid or reversible option only if it fits my limits.
-3. Build criteria before scoring. Derive 5–7 criteria from my priorities and limits. For each criterion give:
-   - a plain-language definition;
-   - a suggested weight (must total 100), marked as editable;
-   - a one-line rationale tied to my risk tolerance;
-   - whether higher or lower scores are better.
-4. Build an option-by-criterion map. For every option and criterion provide:
-   - a brief rating or note;
-   - supporting evidence I supplied;
-   - challenging evidence or counterpoints;
-   - what is still unknown.
-5. Add decision quality checks:
-   - reversibility of each option (fully / partially / irreversible) with why;
-   - cost of delaying past the deadline;
-   - who among the stakeholders gains or loses under each option;
-   - which assumptions, if wrong, would flip the ranking.
-6. Separate sections clearly:
-   - Facts I supplied
-   - Your assumptions
-   - Uncertainties
+========================================
+WORKFLOW YOU MUST FOLLOW
+========================================
+STEP 1 — Neutral frame
+Restate the decision in one calm sentence. Name whether this is a one-way door, two-way door, or mixed. If my options look like a false either/or, propose at most one realistic third path that still respects [HARD_LIMITS] and [DEAL_BREAKERS].
 
-Do not treat subjective scores as objective truth. Do not invent market data, salaries, admissions odds, or other unverified numbers. Prefer downside protection when my risk tolerance is low; suggest bolder tests only if I accept uncertainty.
+STEP 2 — Criteria first (before any scoring)
+From [SUCCESS_LOOKS_LIKE], [HARD_LIMITS], [RISK_COMFORT], and [DEAL_BREAKERS], build 5–7 criteria.
+For each criterion provide:
+• plain definition
+• weight (all weights must add to 100; mark as editable)
+• why this weight fits my risk comfort
+• whether higher score is better
 
-## Deliverable structure
-A. Neutral restatement and framing notes  
-B. Criteria table (definition, weight, rationale, direction)  
-C. Comparison matrix (option × criterion)  
-D. Trade-off summary (what I gain and give up with each leading option)  
-E. Two low-risk experiments I can run before [DEADLINE], matched to my risk tolerance  
-F. Three questions to ask relevant people (name which stakeholder each question fits)  
-G. Closing reflection prompt for me: “Which regret would be easier to live with, and why?”  
-H. Final reminder that I retain the decision — give no “you should choose X” verdict
+STEP 3 — Fair comparison
+Make a table: rows = criteria, columns = each option in [OPTIONS].
+In every cell write: short rating, evidence I gave, counterpoint, and “unknown” if evidence is missing.
+Then write a trade-off paragraph for each option: what I gain, what I give up, who among [PEOPLE_AFFECTED] is helped or hurt.
 
-Keep language plain and practical. Use short headings and tables where they help. If my options are too vague to compare, stop after naming the missing details and ask me only the highest-value clarifying questions before finishing the full map.
+STEP 4 — Stress tests
+For each option assess:
+• reversibility (fully / partially / irreversible) + why
+• worst realistic downside within 90 days
+• what would have to be true for this option to fail
+• cost of waiting past [DEADLINE]
+
+STEP 5 — Separate truth from guesses
+Use three labelled lists:
+1) Facts I supplied
+2) Your assumptions
+3) Open uncertainties
+
+STEP 6 — Actionable close
+Give me:
+• 2 small experiments I can finish before [DEADLINE] that match [RISK_COMFORT]
+• 3 questions to ask specific people from [PEOPLE_AFFECTED]
+• a one-line reminder that the final choice stays mine
+• this reflection for me to answer myself: “Which regret would be easier to live with, and why?”
+
+========================================
+OUTPUT FORMAT
+========================================
+Use these exact headings:
+A. Decision frame
+B. Criteria and weights
+C. Comparison table
+D. Trade-offs by option
+E. Stress tests
+F. Facts / assumptions / unknowns
+G. Experiments and questions
+H. Reflection prompt (for me)
+
+Rules: plain language; no “you should choose X”; no fake data; if options are too vague, stop after listing the missing details and ask only the highest-value clarifications.
 ```
 
 ---

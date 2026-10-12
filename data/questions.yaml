@@ -1,25 +1,36 @@
 "001":
   DECISION:
-    q: What exact decision are you trying to frame?
-    ex: Which university offer to accept for Fall 2026
+    q: What decision do you need help framing?
+    ex: Accept Job A in Karachi or Job B in Dubai
   OPTIONS:
-    q: List each option you are seriously comparing.
-    ex: 1) LUMS CS in Lahore 2) Offer abroad 3) Gap year + work
+    q: What are the real options on your shortlist?
+    ex: 1) Job A  2) Job B  3) Stay and renegotiate
+  WHY_NOW:
+    q: Why does this decision need to happen now?
+    ex: Offer expires Friday; lease renews next month
   DEADLINE:
-    q: By what date or event must you decide?
-    ex: Accept offer by 30 April / before visa filing
-  STAKEHOLDERS:
-    q: Who will be affected, and how are they involved?
-    ex: Parents funding tuition; sibling sharing housing
-  VALUES_OR_PRIORITIES:
-    q: What outcomes matter most in this decision?
-    ex: Career growth, family nearness, manageable debt
-  TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS:
-    q: What hard limits of time, money, place, or family apply?
-    ex: Max Rs. 80,000/month; must stay in Pakistan this year
-  RISK_TOLERANCE:
-    q: How much uncertainty are you willing to accept?
-    ex: Low — prefer safer path with reversible steps
+    q: What is the latest date you can decide?
+    ex: 18 October 2026, 5pm PKT
+  PEOPLE_AFFECTED:
+    q: Who is affected, and what is each person’s stake?
+    ex: Spouse (move), parents (status), teammate (workload)
+  SUCCESS_LOOKS_LIKE:
+    q: What would a successful outcome look like?
+    ex: Stable income, growth, and ability to visit family
+  HARD_LIMITS:
+    q: Which limits of money, time, place, or duty are fixed?
+    ex: Need ≥ Rs. 180k/month; cannot leave Pakistan for 1 year
+  RISK_COMFORT:
+    q: How much uncertainty can you live with?
+    ex: Low — I want reversible steps and a backup plan
+  FACTS_I_ALREADY_KNOW:
+    q: What confirmed facts do you already have?
+    ex: Both offers in writing; Dubai includes housing allowance
+    optional: true
+  DEAL_BREAKERS:
+    q: What would make you reject an option immediately?
+    ex: No written contract, or unpaid overtime culture
+    optional: true
 "002":
   DATES:
     q: Which calendar week should be planned?
