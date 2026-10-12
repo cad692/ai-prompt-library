@@ -524,7 +524,7 @@
     ex: "Faculty rubric and thesis policy"
 "027":
   MEETING_TRANSCRIPT:
-    q: "Paste the meeting transcript?"
+    q: "Paste the meeting transcript"
     ex: "Transcript text from the call"
   MEETING_DETAILS:
     q: "What are the meeting details?"
@@ -559,7 +559,7 @@
     ex: "A university hostel policy"
 "029":
   PASTE_REFERENCES:
-    q: "Paste the references to normalize?"
+    q: "Paste the references to normalize"
     ex: "A messy bibliography list"
   CITATION_STYLE_AND_EDITION:
     q: "Which citation style do you need?"
@@ -598,7 +598,7 @@
     ex: "TASK, AUDIENCE, CONTEXT"
 "032":
   WEAK_PROMPT:
-    q: "Paste the weak prompt to improve?"
+    q: "Paste the weak prompt to improve"
     ex: "Summarise this article in simple words"
   OUTCOME:
     q: "What should the better prompt achieve?"
