@@ -834,7 +834,7 @@
     ex: "A recent fuel-price increase"
 "043":
   PASTE_SLIDES:
-    q: "Paste the current slide content?"
+    q: "Paste the current slide content"
     ex: "A draft slide deck"
   AUDIENCE:
     q: "Who is the audience?"
@@ -891,7 +891,7 @@
     ex: "A short heading and key point"
 "046":
   SLIDE:
-    q: "Paste the slide content?"
+    q: "Paste the slide content"
     ex: "A weak slide draft"
   AUDIENCE:
     q: "Who is the audience?"
