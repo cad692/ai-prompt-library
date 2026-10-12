@@ -1,21 +1,21 @@
 "001":
   DECISION:
-    q: "What decision are you trying to make?"
+    q: "What decision are you choosing between?"
     ex: "Which university to join"
   OPTIONS:
     q: "What options are you comparing?"
     ex: "Job offers or postgraduate study"
   DEADLINE:
-    q: "When do you need to decide?"
+    q: "When do you need to decide by?"
     ex: "In three weeks"
   STAKEHOLDERS:
-    q: "Who will be affected?"
+    q: "Who will be affected by this decision?"
     ex: "Family, friends, or team members"
   VALUES_OR_PRIORITIES:
     q: "What matters most to you?"
     ex: "Career growth and stability"
   TIME_MONEY_LOCATION_OR_FAMILY_CONSTRAINTS:
-    q: "Any limits you must work within?"
+    q: "What practical limits matter here?"
     ex: "Budget, travel, or family duties"
 "002":
   DATES:
@@ -785,3 +785,431 @@
   SAMPLE_B:
     q: "What is the second sample?"
     ex: "A stronger draft"
+"041":
+  VENTURE:
+    q: "What venture are you describing?"
+    ex: "A local logistics startup"
+  INVESTOR_TYPE:
+    q: "Who are the investors?"
+    ex: "Angels or seed-stage funds"
+  STAGE_AND_TRACTION:
+    q: "What stage and traction do you have?"
+    ex: "Pilot users and early revenue"
+  PROBLEM:
+    q: "What problem are you solving?"
+    ex: "Late deliveries across the city"
+  SOLUTION:
+    q: "What is your solution?"
+    ex: "A smarter route-planning app"
+  BUSINESS_MODEL:
+    q: "How do you make money?"
+    ex: "A subscription fee for drivers"
+  MARKET_EVIDENCE:
+    q: "What market evidence do you have?"
+    ex: "A growing demand for faster delivery"
+  ASK_AND_USE:
+    q: "What are you asking for and how will it be used?"
+    ex: "Rs. 6 lakh for product growth"
+"042":
+  CONCEPT:
+    q: "What concept are you teaching?"
+    ex: "Supply and demand"
+  LEARNER_LEVEL:
+    q: "Who are the learners?"
+    ex: "First-year business students"
+  TIME_AVAILABLE:
+    q: "How much teaching time do you have?"
+    ex: "Twenty minutes"
+  PRIOR_KNOWLEDGE:
+    q: "What do learners already know?"
+    ex: "Basic graph reading"
+  CONTEXT:
+    q: "What setting should we use?"
+    ex: "A local market in Lahore"
+  LEARNERS_WILL_BE_ABLE_TO:
+    q: "What should learners be able to do?"
+    ex: "Explain the curve shift"
+  LOCAL_CONTEXT:
+    q: "Any local context to include?"
+    ex: "A recent fuel-price increase"
+"043":
+  PASTE_SLIDES:
+    q: "Paste the current slide content?"
+    ex: "A draft slide deck"
+  AUDIENCE:
+    q: "Who is the audience?"
+    ex: "Senior team members"
+  GOAL:
+    q: "What is the decision or objective?"
+    ex: "Choose the next campaign direction"
+  TONE:
+    q: "What tone should the rewrite use?"
+    ex: "Clear and confident"
+"044":
+  SLIDES:
+    q: "What slides or outline should be used?"
+    ex: "A draft deck outline"
+  AUDIENCE_RELATIONSHIP:
+    q: "What is your relationship to the audience?"
+    ex: "A team lead speaking to peers"
+  TOTAL_TIME:
+    q: "How much speaking time do you have?"
+    ex: "Eight minutes"
+  TONE:
+    q: "What tone should the delivery have?"
+    ex: "Warm and confident"
+  MUST_SAY_FACTS:
+    q: "What facts must be included?"
+    ex: "Current numbers and dates"
+  LIKELY_QUESTIONS:
+    q: "What questions are likely to come up?"
+    ex: "Budget and timeline concerns"
+  PAUSE:
+    q: "How should pauses be marked?"
+    ex: "Short pause for emphasis"
+  EMPHASISE:
+    q: "How should emphasis be marked?"
+    ex: "Bold emphasis in notes"
+"045":
+  CORE_MESSAGE:
+    q: "What is the main message?"
+    ex: "A simple idea is becoming clear"
+  AUDIENCE:
+    q: "Who is the audience?"
+    ex: "Students and early-career staff"
+  CONTEXT:
+    q: "What context or industry is this?"
+    ex: "Education and training"
+  BRAND_MOOD:
+    q: "What mood should the brand feel like?"
+    ex: "Professional and calm"
+  AVOID:
+    q: "What visuals should be avoided?"
+    ex: "Clichéd stock office photos"
+  SLIDE_TEXT:
+    q: "What text will appear on the slide?"
+    ex: "A short heading and key point"
+"046":
+  SLIDE:
+    q: "Paste the slide content?"
+    ex: "A weak slide draft"
+  AUDIENCE:
+    q: "Who is the audience?"
+    ex: "A project committee"
+  INTENDED_RESPONSE:
+    q: "What should the audience do or think?"
+    ex: "Approve the idea"
+  BRAND_CONSTRAINTS:
+    q: "What brand rules apply?"
+    ex: "Simple, formal, and minimal"
+  ROOM_OR_SCREEN:
+    q: "Where will it be shown?"
+    ex: "On a meeting screen"
+"047":
+  TOPIC:
+    q: "What topic is the carousel about?"
+    ex: "Three ways to study smarter"
+  AUDIENCE:
+    q: "Who is the audience?"
+    ex: "Young professionals"
+  LINKEDIN_OR_INSTAGRAM:
+    q: "Where will it be posted?"
+    ex: "LinkedIn"
+  BRAND:
+    q: "What brand voice and colors should it use?"
+    ex: "Clean and professional"
+  CALL_TO_ACTION:
+    q: "What action should the post encourage?"
+    ex: "Save this post"
+  SOURCE_MATERIAL:
+    q: "What source material do you have?"
+    ex: "Notes from a workshop"
+  LANGUAGE_CHOICE:
+    q: "What language should it use?"
+    ex: "English with Urdu terms"
+  VERIFY:
+    q: "What claims need checking?"
+    ex: "Stats and quotations"
+"048":
+  PROJECT:
+    q: "What project is this update about?"
+    ex: "Website redesign"
+  PERIOD:
+    q: "What time period is being reported?"
+    ex: "This month"
+  STAKEHOLDERS:
+    q: "Who are the stakeholders?"
+    ex: "Leadership and client team"
+  OUTCOMES:
+    q: "What outcomes have been achieved?"
+    ex: "Two pages launched"
+  METRICS:
+    q: "What metrics matter?"
+    ex: "Traffic and uptake"
+  RISKS:
+    q: "What risks or blockers exist?"
+    ex: "Delayed approvals"
+  DECISIONS:
+    q: "What decisions are needed?"
+    ex: "Whether to keep scope"
+  COMMITMENTS:
+    q: "What commitments are next?"
+    ex: "A launch review next week"
+"049":
+  GOAL:
+    q: "What is the workshop goal?"
+    ex: "Build a team strategy"
+  PARTICIPANTS:
+    q: "Who is attending?"
+    ex: "A ten-person student team"
+  DURATION:
+    q: "How long is the workshop?"
+    ex: "Ninety minutes"
+  ACTIVITIES:
+    q: "What activities are planned?"
+    ex: "Brainstorming and voting"
+  SETUP:
+    q: "What setup is needed?"
+    ex: "In-person classroom"
+  ACCESS_NEEDS:
+    q: "What accessibility or language needs apply?"
+    ex: "English plus Urdu support"
+  GROUP_SIZE:
+    q: "How large is the group?"
+    ex: "Twenty participants"
+"050":
+  DATA:
+    q: "What chart or data are you using?"
+    ex: "A table of monthly sales"
+  AUDIENCE:
+    q: "Who is the decision audience?"
+    ex: "A product team"
+  DECISION:
+    q: "What decision is at stake?"
+    ex: "Whether to scale the feature"
+  TIME_AND_UNITS:
+    q: "What period and units matter?"
+    ex: "Monthly revenue in PKR"
+  CAVEATS:
+    q: "What caveats should we note?"
+    ex: "A short sample and missing data"
+"051":
+  PRODUCT:
+    q: "What product are you shooting?"
+    ex: "A reusable water bottle"
+  YES_OR_NO:
+    q: "Do you have a reference image?"
+    ex: "Yes"
+  AUDIENCE_AND_USE:
+    q: "Who is it for and how is it used?"
+    ex: "Students on campus"
+  BRAND_CHARACTER:
+    q: "What brand character should it have?"
+    ex: "Simple and premium"
+  ASPECT_RATIO:
+    q: "What aspect ratio do you need?"
+    ex: "Square"
+  LOCKED_FEATURES:
+    q: "What product features must not change?"
+    ex: "Color, shape, and size"
+  COPY_POSITION:
+    q: "Where should any text go?"
+    ex: "Bottom left"
+"052":
+  CONCEPT:
+    q: "What concept are you explaining?"
+    ex: "The water cycle"
+  LEVEL:
+    q: "What learner level is this?"
+    ex: "Middle school"
+  PARTS:
+    q: "What parts or stages matter?"
+    ex: "Evaporation, rain, and collection"
+  MISCONCEPTION:
+    q: "What misconception should be avoided?"
+    ex: "Clouds make rain from nothing"
+  FORMAT:
+    q: "What format do you need?"
+    ex: "A single classroom poster"
+  STYLE_PREFERENCE:
+    q: "What style do you want?"
+    ex: "Clean and simple"
+"053":
+  ROLE_OR_FIELD:
+    q: "What is your role or field?"
+    ex: "Product designer"
+  AUDIENCE:
+    q: "Who are you trying to reach?"
+    ex: "Recruiters in tech"
+  VALUE:
+    q: "What value do you bring?"
+    ex: "User-centered design systems"
+  FOCUS_AREAS:
+    q: "What should the banner emphasize?"
+    ex: "Research, prototyping, and delivery"
+  BRAND_CUES:
+    q: "What brand cues matter?"
+    ex: "Minimal and modern"
+  TAGLINE:
+    q: "Do you have a short tagline?"
+    ex: "Designing clarity into decisions"
+"054":
+  URDU_TEXT:
+    q: "What Urdu text must be used?"
+    ex: "A short event slogan"
+  MEANING:
+    q: "What does it mean in English?"
+    ex: "Together we learn"
+  OCCASION:
+    q: "What is the occasion?"
+    ex: "A student event"
+  MOOD:
+    q: "What feeling should the poster have?"
+    ex: "Hopeful and calm"
+  OUTPUT_SIZE:
+    q: "What poster size do you need?"
+    ex: "A4 or Instagram post"
+  LOGOS:
+    q: "What logos or sponsor marks are included?"
+    ex: "University and event logos"
+  ART_STYLE:
+    q: "What art style should the background use?"
+    ex: "Minimal geometric"
+"055":
+  SUBJECT:
+    q: "Who or what is the subject?"
+    ex: "A young professional woman"
+  PURPOSE:
+    q: "What is the portrait for?"
+    ex: "A magazine cover"
+  MOOD:
+    q: "What emotional tone should it have?"
+    ex: "Confident and calm"
+  WARDROBE:
+    q: "What should they wear?"
+    ex: "Smart casual officewear"
+  SETTING:
+    q: "Where is the backdrop?"
+    ex: "An urban studio"
+  CROP:
+    q: "What crop do you want?"
+    ex: "Medium close-up"
+  ASPECT_RATIO:
+    q: "What aspect ratio should it use?"
+    ex: "Portrait"
+  MODEL_VERSION:
+    q: "Which model version should we target?"
+    ex: "Latest Midjourney default"
+  STYLIZE:
+    q: "How stylized should the result be?"
+    ex: "Moderately stylized"
+"056":
+  STARTING_FRAME:
+    q: "What is the starting image or scene?"
+    ex: "A close-up of a tea cup"
+  ONE_ACTION:
+    q: "What single action should happen?"
+    ex: "A hand picks up the cup"
+  EMOTION:
+    q: "What feeling should the shot have?"
+    ex: "Calm and reflective"
+  PLATFORM:
+    q: "Where will the clip be published?"
+    ex: "Instagram Reels"
+  ASPECT_RATIO:
+    q: "What aspect ratio should it use?"
+    ex: "9:16"
+  BRAND_LOOK:
+    q: "What brand look do you want?"
+    ex: "Soft and premium"
+"057":
+  TOPIC_AND_TAKEAWAY:
+    q: "What topic and takeaway should the reel have?"
+    ex: "Three study tips"
+  FOOTAGE:
+    q: "What footage or speaker is available?"
+    ex: "Phone footage and voiceover"
+  AUDIENCE:
+    q: "Who is this for?"
+    ex: "University students"
+  20_TO_45_SECONDS:
+    q: "How long should the reel be?"
+    ex: "Thirty seconds"
+  TONE:
+    q: "What tone should it have?"
+    ex: "Helpful and energetic"
+  CTA:
+    q: "What should viewers do next?"
+    ex: "Save this for later"
+"058":
+  PURPOSE:
+    q: "What is the video for?"
+    ex: "An explainer for students"
+  AUDIENCE:
+    q: "Who is the audience?"
+    ex: "First-year undergraduates"
+  DURATION:
+    q: "How long should the narration be?"
+    ex: "Sixty seconds"
+  LANGUAGE_ACCENT:
+    q: "What language or accent should it use?"
+    ex: "English with a neutral accent"
+  VOICE_CHARACTER:
+    q: "What voice character fits the video?"
+    ex: "Warm and clear"
+  TERMS:
+    q: "What names or terms need careful pronunciation?"
+    ex: "Acronyms and Urdu words"
+  VISUAL_SEQUENCE:
+    q: "What visual sequence should the narration match?"
+    ex: "Slide transitions and key moments"
+  VISUAL_DIRECTION:
+    q: "How should the visuals feel?"
+    ex: "Clean and modern"
+  WORDS_PER_MINUTE:
+    q: "What speaking pace should we target?"
+    ex: "150 words per minute"
+"059":
+  STORY_OR_MESSAGE:
+    q: "What story or message is being told?"
+    ex: "A short product reveal"
+  AUDIENCE_PLATFORM:
+    q: "Who is it for and where will it play?"
+    ex: "Instagram audience"
+  DURATION:
+    q: "How long should the sequence be?"
+    ex: "Ten seconds"
+  SUBJECT:
+    q: "Who or what is the main subject?"
+    ex: "A reusable bottle"
+  LOCATION:
+    q: "Where is the story set?"
+    ex: "A home kitchen"
+  STYLE:
+    q: "What visual style do you want?"
+    ex: "Clean and modern"
+  ENDING:
+    q: "What should the ending feel like?"
+    ex: "Clear and satisfying"
+  SOURCE_OR_BRIEF:
+    q: "What source or brief should we follow?"
+    ex: "The campaign brief"
+"060":
+  BRAND_PROMISE:
+    q: "What is the brand promise?"
+    ex: "Better learning with less stress"
+  AUDIENCE:
+    q: "Who is the campaign for?"
+    ex: "University students"
+  USES:
+    q: "How will the images be used?"
+    ex: "Website and social posts"
+  SCENES:
+    q: "What scenes or subjects are required?"
+    ex: "Study space and group work"
+  ASSETS:
+    q: "What brand assets already exist?"
+    ex: "Logo and brand colours"
+  EXCLUSIONS:
+    q: "What should be avoided?"
+    ex: "Stock clichés and clutter"
