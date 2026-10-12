@@ -2033,3 +2033,264 @@
   GUIDELINES:
     q: "What departmental or supervisor guidelines matter?"
     ex: "Formatting, ethics, and chapter requirements"
+"101":
+  SCHOLARSHIP_PROMPT:
+    q: "What scholarship prompt or criteria are you using?"
+    ex: "The programme application prompt"
+  CRITERIA:
+    q: "What selection criteria matter most?"
+    ex: "Academic merit, leadership, and motivation"
+  PROGRAMME:
+    q: "What programme are you applying for?"
+    ex: "A master's in public policy"
+  LIMIT:
+    q: "What word or length limit applies?"
+    ex: "750 words"
+  EXPERIENCES:
+    q: "What verified experiences should the statement reflect?"
+    ex: "Academic work, service, and leadership"
+"102":
+  ROLE:
+    q: "What role are you applying for?"
+    ex: "A research and operations role"
+  COUNTRY_OR_MARKET:
+    q: "What country or market are you targeting?"
+    ex: "Pakistan or a regional market"
+  JOB_DESCRIPTION:
+    q: "What does the job description say?"
+    ex: "Responsibilities and required skills"
+  MASTER_CV:
+    q: "What is your master CV or background document?"
+    ex: "Your full CV or experience summary"
+  ACHIEVEMENT_NOTES:
+    q: "What key achievements or results should be highlighted?"
+    ex: "Project outcomes and measurable wins"
+"103":
+  ROZEE_OR_LINKEDIN:
+    q: "Which platform or source are you applying through?"
+    ex: "Rozee or LinkedIn"
+  VACANCY_TEXT:
+    q: "What vacancy text or job post should be used?"
+    ex: "The posted role and requirements"
+  MY_CV:
+    q: "What CV or résumé should be tailored?"
+    ex: "Your current CV"
+  CAREER_GOALS:
+    q: "What are your short-term career goals?"
+    ex: "Grow into a strategic operations role"
+  CONTACT_TYPE:
+    q: "What type of contact are you trying to make?"
+    ex: "A recruiter or hiring manager"
+"104":
+  CLIENT_BRIEF:
+    q: "What is the client brief or project brief?"
+    ex: "A scope note and expected deliverables"
+  FREELANCER_PROFILE:
+    q: "What is your freelancer profile or background?"
+    ex: "Your profile, skills, and past work"
+  WORK_SAMPLES:
+    q: "What work samples or examples can you show?"
+    ex: "Previous projects and portfolio pieces"
+  PLATFORM:
+    q: "What platform or channel is this proposal for?"
+    ex: "Upwork or a direct proposal"
+  VOICE_SAMPLE:
+    q: "What voice or writing sample should match the tone?"
+    ex: "A sample that shows clarity and professionalism"
+  LENGTH:
+    q: "What length should the proposal aim for?"
+    ex: "A concise proposal under 500 words"
+"105":
+  PAKISTAN_CITY:
+    q: "What city or market are you targeting in Pakistan?"
+    ex: "Lahore or Karachi"
+  OFFER:
+    q: "What product, service, or offer are you promoting?"
+    ex: "A local tutoring package"
+  SEASON:
+    q: "What season or timing matters most?"
+    ex: "The exam season"
+  CUSTOMER_INSIGHTS:
+    q: "What customer insights do you already know?"
+    ex: "Price sensitivity and local trust"
+  COMPETITOR_NOTES:
+    q: "What competitor information is relevant?"
+    ex: "Nearby providers and pricing"
+  CHANNEL_ACCESS:
+    q: "What channels are available for promotion?"
+    ex: "Instagram, WhatsApp, and local posters"
+  LANGUAGE_PREFERENCE:
+    q: "What language or tone should the campaign use?"
+    ex: "Urdu and English for a local audience"
+  CONSTRAINTS:
+    q: "What constraints or limits matter?"
+    ex: "Small budget and a short campaign window"
+"106":
+  SOURCE_MESSAGE:
+    q: "What message or source text needs adaptation?"
+    ex: "A draft announcement or ad"
+  AUDIENCE:
+    q: "Who is the audience for this content?"
+    ex: "A local customer base"
+  CHANNEL:
+    q: "What channel or format is it for?"
+    ex: "WhatsApp or Instagram caption"
+  REGION_OR_REGISTER:
+    q: "What regional or register variation should be used?"
+    ex: "Pakistani English with natural Urdu phrasing"
+  TERMS_TO_KEEP:
+    q: "What terms or phrases must remain unchanged?"
+    ex: "Legal or brand terms"
+  CHARACTER_LIMIT:
+    q: "What character or length limit applies?"
+    ex: "160 characters"
+"107":
+  BUSINESS:
+    q: "What business is this message about?"
+    ex: "A local home services business"
+  CUSTOMER_NAME:
+    q: "What is the customer or recipient name?"
+    ex: "Aisha"
+  CUSTOMER_TYPE:
+    q: "What type of customer is this?"
+    ex: "A new customer or returning client"
+  DATE:
+    q: "What date should be mentioned in the message?"
+    ex: "Today or the next working day"
+  HOURS:
+    q: "What are the business hours or availability?"
+    ex: "9 AM to 6 PM"
+  LANGUAGES:
+    q: "What languages should the message use?"
+    ex: "Urdu and English"
+  ORDER_ID:
+    q: "What order or reference number applies?"
+    ex: "Order #1047"
+  POLICIES:
+    q: "What policies or terms need to be reflected?"
+    ex: "Refund, delivery, and support policies"
+  SECOND_LANGUAGE:
+    q: "Which second language should we support?"
+    ex: "English for bilingual customers"
+  SUPPORT_CONTACT:
+    q: "How can customers contact support?"
+    ex: "By phone or WhatsApp"
+  VOICE:
+    q: "What voice or tone should the message use?"
+    ex: "Friendly and professional"
+"108":
+  PAKISTAN_TAX_TOPIC:
+    q: "What tax topic are you explaining?"
+    ex: "Sales tax or withholding tax"
+  TAXPAYER_SCENARIO:
+    q: "What taxpayer scenario is relevant?"
+    ex: "A small business owner"
+  TAX_YEAR:
+    q: "What tax year or period should be covered?"
+    ex: "2026 tax year"
+  OFFICIAL_SOURCES:
+    q: "What official sources are available?"
+    ex: "FBR guidance and official notifications"
+"109":
+  TOPIC:
+    q: "What topic is the chain brief about?"
+    ex: "A public health issue"
+  GOAL:
+    q: "What is the main goal of the brief?"
+    ex: "Explain the issue clearly to a decision-maker"
+  AUDIENCE:
+    q: "Who is the audience?"
+    ex: "A committee or client team"
+  CONSTRAINTS:
+    q: "What constraints or limits matter?"
+    ex: "Short length and a tight deadline"
+  DEADLINE:
+    q: "When is the final output needed?"
+    ex: "By Friday"
+  PREVIOUS_OUTPUT:
+    q: "What previous output or draft should this build from?"
+    ex: "A research summary or notes"
+"110":
+  TOPIC:
+    q: "What topic is being researched?"
+    ex: "Local climate adaptation"
+  SOURCES:
+    q: "What sources or references are available?"
+    ex: "Reports, articles, and notes"
+  PREVIOUS_OUTPUT:
+    q: "What earlier output should this follow up on?"
+    ex: "A research brief or outline"
+"111":
+  PREVIOUS_OUTPUT:
+    q: "What earlier output or notes should be synthesized?"
+    ex: "The research brief and evidence cards"
+  AUDIENCE:
+    q: "Who is the synthesis for?"
+    ex: "A project lead"
+  WORD_LIMIT:
+    q: "What length limit should the output stay within?"
+    ex: "500 words"
+"112":
+  PREVIOUS_OUTPUT:
+    q: "What previous material should the outline build from?"
+    ex: "The synthesis and key findings"
+  AUDIENCE:
+    q: "Who is the presentation for?"
+    ex: "A stakeholder meeting"
+  OUTCOME:
+    q: "What is the presentation trying to achieve?"
+    ex: "Inform and get approval"
+  DURATION:
+    q: "How long is the presentation?"
+    ex: "Ten minutes"
+  SETTING:
+    q: "Where will it be delivered?"
+    ex: "In a meeting room or online"
+  SLIDE_COUNT:
+    q: "How many slides should the outline include?"
+    ex: "Five slides"
+"113":
+  PREVIOUS_OUTPUT:
+    q: "What research or outline should be turned into a slide draft?"
+    ex: "The presentation outline"
+  AUDIENCE:
+    q: "Who is the audience for the slide draft?"
+    ex: "Senior stakeholders"
+  BRAND_GUIDANCE:
+    q: "What brand or visual guidance should we respect?"
+    ex: "A formal, minimal style"
+"114":
+  PREVIOUS_OUTPUT:
+    q: "What earlier material should the speaker notes build from?"
+    ex: "The slide draft"
+  AUDIENCE_LEVEL:
+    q: "What level of audience familiarity should we assume?"
+    ex: "Mostly familiar with the topic"
+  DURATION:
+    q: "How long should the note set run?"
+    ex: "Five minutes"
+  SETTING:
+    q: "Where will the notes be used?"
+    ex: "At a live presentation or briefing"
+  VERIFY:
+    q: "What point needs verification?"
+    ex: "Any fact or statistic that must be checked"
+  VOICE:
+    q: "What delivery voice should the notes support?"
+    ex: "Confident and calm"
+"115":
+  PREVIOUS_OUTPUT:
+    q: "What earlier draft should be reviewed for quality?"
+    ex: "The final slide deck and notes"
+  AUDIENCE:
+    q: "Who will review the final output?"
+    ex: "A client or committee"
+  GOAL:
+    q: "What quality goal should the review focus on?"
+    ex: "Clarity and credibility"
+  DURATION:
+    q: "How much time is available for the review?"
+    ex: "Ten minutes"
+  SOURCE_STANDARD:
+    q: "What quality standard should source material meet?"
+    ex: "Verified and traceable evidence"
