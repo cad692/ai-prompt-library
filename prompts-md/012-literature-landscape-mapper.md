@@ -17,7 +17,7 @@
 ```text
 Map the research landscape around [TOPIC] so I can plan an ethical, focused literature review.
 
-Boundaries: [DISCIPLINE], [GEOGRAPHY], [YEARS], [POPULATION], and [LANGUAGES]. My purpose is [COURSE_DISSERTATION_POLICY_OR_WORK_PROJECT]. Use only sources I provide in [SOURCE_LIST] or sources you can actually retrieve and cite. Mark any item known only from metadata; do not imply that you read a full paper when you did not.
+Boundaries: [DISCIPLINE], [GEOGRAPHY], [YEARS], [POPULATION], and [LANGUAGES]. My purpose is [COURSE_DISSERTATION_POLICY_OR_WORK_PROJECT]. Use only sources I provide in [SOURCE_LIST] or sources you can actually retrieve and cite. If the source list is thin, map from what is supplied, mark coverage as incomplete, and propose what to collect next. Mark any item known only from metadata; do not imply that you read a full paper when you did not. Never invent titles, DOIs, or findings.
 
 Organise the field as a map, not a chronological essay:
 - major conceptual clusters and how they connect;

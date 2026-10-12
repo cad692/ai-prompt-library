@@ -587,36 +587,40 @@ prompts:
   category: research
   difficulty: Advanced
   usage: Use this to compare independent sources before trusting a consequential claim.
-  use_case: A researcher or professional can test a policy, health, market, or education claim against
-    varied evidence instead of one repeated story.
-  preview: Act as an evidence triangulator investigating the claim [CLAIM] for [DECISION_OR_PROJECT].
-    Scope the claim by geography [LOCATION], period [DATE_RANGE], population [POPULATION], and key terms...
+  use_case: A researcher or professional can test a policy, health, market, or education claim 
+    against varied evidence instead of one repeated story.
+  preview: Act as an evidence triangulator investigating the claim [CLAIM] for 
+    [DECISION_OR_PROJECT]. Scope the claim by geography [LOCATION], period [DATE_RANGE], population 
+    [POPULATION], and key terms...
   best_tools:
   - tool: Perplexity
     reason: Finds current web sources and exposes citations for direct inspection.
   - tool: Gemini
     reason: Can compare web-grounded material and organise disagreements across sources.
-  tip: Independence matters more than quantity; three articles repeating one press release count as one
-    source.
+  tip: Independence matters more than quantity; three articles repeating one press release count as 
+    one source.
   expected_output: A triangulation matrix showing agreement, conflict, provenance, and confidence.
   tags:
   - research
   - triangulation
   - sources
   - verification
-  next_id: null
+  next_id:
   prompt: 'Act as an evidence triangulator investigating the claim [CLAIM] for [DECISION_OR_PROJECT].
 
 
     Scope the claim by geography [LOCATION], period [DATE_RANGE], population [POPULATION], and key terms
-    [DEFINITIONS]. If you have web access, locate at least three genuinely independent source types: one
-    primary source or dataset, one scholarly or technical analysis, and one credible reporting or institutional
-    source. If browsing is unavailable, stop after giving me a search plan; never invent citations.
+    [DEFINITIONS]. If any scope field is blank or still shows brackets, state the missing boundary and
+    continue with labelled assumptions rather than inventing scope. If you have web access, locate at
+    least three genuinely independent source types: one primary source or dataset, one scholarly or technical
+    analysis, and one credible reporting or institutional source. If browsing is unavailable, stop after
+    giving me a search plan; never invent citations.
 
 
     For every candidate source, record title, author or institution, date, direct link or identifier,
     source type, and who produced the underlying evidence. Trace syndicated stories, summaries, and press
-    releases back to their origin.
+    releases back to their origin. Treat multiple articles that repeat one press release as a single source
+    family.
 
 
     Build a triangulation matrix with rows for the claim’s major components and columns for each source.
@@ -636,29 +640,33 @@ prompts:
   category: research
   difficulty: Advanced
   usage: Use this to map a field's themes, methods, debates, and landmark studies.
-  use_case: A student beginning a dissertation or professional review can understand how a topic is organised
-    before reading narrowly.
+  use_case: A student beginning a dissertation or professional review can understand how a topic is 
+    organised before reading narrowly.
   preview: 'Map the research landscape around [TOPIC] so I can plan an ethical, focused literature review.
     Boundaries: [DISCIPLINE], [GEOGRAPHY], [YEARS], [POPULATION], and [LANGUAGES]. My purpose is...'
   best_tools:
   - tool: Perplexity
     reason: Supports discovery of scholarly and institutional sources with inspectable links.
   - tool: NotebookLM
-    reason: Synthesizes themes across a user-provided collection while grounding answers in those sources.
+    reason: Synthesizes themes across a user-provided collection while grounding answers in those 
+      sources.
   tip: Build the map from abstracts and metadata first, then read pivotal papers in full.
-  expected_output: A thematic literature map with clusters, debates, methods, and reading priorities.
+  expected_output: A thematic literature map with clusters, debates, methods, and reading 
+    priorities.
   tags:
   - literature-review
   - themes
   - scholarship
   - mapping
-  next_id: null
+  next_id:
   prompt: 'Map the research landscape around [TOPIC] so I can plan an ethical, focused literature review.
 
 
     Boundaries: [DISCIPLINE], [GEOGRAPHY], [YEARS], [POPULATION], and [LANGUAGES]. My purpose is [COURSE_DISSERTATION_POLICY_OR_WORK_PROJECT].
-    Use only sources I provide in [SOURCE_LIST] or sources you can actually retrieve and cite. Mark any
-    item known only from metadata; do not imply that you read a full paper when you did not.
+    Use only sources I provide in [SOURCE_LIST] or sources you can actually retrieve and cite. If the
+    source list is thin, map from what is supplied, mark coverage as incomplete, and propose what to collect
+    next. Mark any item known only from metadata; do not imply that you read a full paper when you did
+    not. Never invent titles, DOIs, or findings.
 
 
     Organise the field as a map, not a chronological essay:
@@ -691,10 +699,10 @@ prompts:
   category: research
   difficulty: Intermediate
   usage: Use this to separate claims, evidence, assumptions, and overstatement in a text.
-  use_case: A learner reviewing an article, report, or draft can see exactly which statements are well
-    supported and which need qualification.
-  preview: Audit [PASTED_TEXT_OR_DOCUMENT] as a critical reader, separating what is asserted from what
-    is demonstrated. The intended audience is [AUDIENCE], and the standard of evidence is...
+  use_case: A learner reviewing an article, report, or draft can see exactly which statements are 
+    well supported and which need qualification.
+  preview: Audit [PASTED_TEXT_OR_DOCUMENT] as a critical reader, separating what is asserted from 
+    what is demonstrated. The intended audience is [AUDIENCE], and the standard of evidence is...
   best_tools:
   - tool: Claude
     reason: Handles long passages and nuanced distinctions between claims and support.
@@ -707,14 +715,14 @@ prompts:
   - evidence
   - critical-reading
   - audit
-  next_id: null
+  next_id:
   prompt: 'Audit [PASTED_TEXT_OR_DOCUMENT] as a critical reader, separating what is asserted from what
     is demonstrated.
 
 
     The intended audience is [AUDIENCE], and the standard of evidence is [ACADEMIC_POLICY_BUSINESS_OR_OTHER].
     Work only from the supplied text and references unless I explicitly enable research. Do not fill evidence
-    gaps from memory.
+    gaps from memory or invent citations.
 
 
     Create a table with these columns: exact or shortened claim, claim type, cited evidence, evidence-to-claim
@@ -729,8 +737,8 @@ prompts:
 
     After the table, select the three highest-risk claims. For each, give a constraint-based rewrite that
     is accurate without becoming evasive: retain the core meaning, add only justified qualifiers, and
-    stay within [MAX_WORDS] words. Finish with a short evidence shopping list naming the source type—not
-    a fabricated citation—needed to strengthen each unresolved claim.
+    keep each rewrite within [MAX_WORDS] words. Finish with a short evidence shopping list naming the
+    source type—not a fabricated citation—needed to strengthen each unresolved claim.
 
     '
 - id: '014'
@@ -739,8 +747,8 @@ prompts:
   category: research
   difficulty: Intermediate
   usage: Use this to create a current web brief whose citations can be checked.
-  use_case: A professional can rapidly understand an emerging issue before a meeting while retaining a
-    clear route back to original sources.
+  use_case: A professional can rapidly understand an emerging issue before a meeting while retaining
+    a clear route back to original sources.
   preview: 'Produce a decision-ready cited brief on [TOPIC] for [AUDIENCE] as of [CUT_OFF_DATE]. Answer
     this central question: [QUESTION]. Prioritise primary documents, official statistics, peer-reviewed...'
   best_tools:
@@ -755,14 +763,15 @@ prompts:
   - citations
   - briefing
   - current-events
-  next_id: null
+  next_id:
   prompt: 'Produce a decision-ready cited brief on [TOPIC] for [AUDIENCE] as of [CUT_OFF_DATE].
 
 
     Answer this central question: [QUESTION]. Prioritise primary documents, official statistics, peer-reviewed
     research, and reputable reporting. Search across viewpoints and include Pakistan-specific evidence
     where relevant. Do not cite search-result snippets, AI summaries, or inaccessible references as if
-    checked.
+    checked. If browsing is unavailable, provide a source-seeking plan and clearly labelled provisional
+    notes instead of invented citations.
 
 
     Structure the brief in this order:
@@ -795,8 +804,8 @@ prompts:
   category: research
   difficulty: Advanced
   usage: Use this to test multiple explanations for an observation without anchoring early.
-  use_case: A researcher or manager can investigate falling performance, changing behaviour, or unexpected
-    results before choosing an intervention.
+  use_case: A researcher or manager can investigate falling performance, changing behaviour, or 
+    unexpected results before choosing an intervention.
   preview: 'Act as a hypothesis challenger examining why [OBSERVATION_OR_OUTCOME] occurred. Known context:
     [CONTEXT]. Available data: [DATA]. Current favoured explanation: [CURRENT_BELIEF]. Constraints on...'
   best_tools:
@@ -811,7 +820,7 @@ prompts:
   - causality
   - reasoning
   - experiments
-  next_id: null
+  next_id:
   prompt: 'Act as a hypothesis challenger examining why [OBSERVATION_OR_OUTCOME] occurred.
 
 
@@ -835,9 +844,9 @@ prompts:
 
 
     Identify confounders and reverse-causality risks. Recommend an investigation sequence that maximises
-    information before cost. Close with a pre-commitment: “If [RESULT] appears, reduce confidence in [HYPOTHESIS];
-    if [OTHER_RESULT] appears, increase it.” Keep intervention advice separate until evidence meaningfully
-    narrows the field.
+    information before cost. Close with a pre-commitment tied to my favoured explanation [HYPOTHESIS]:
+    “If [RESULT] appears, reduce confidence in that hypothesis; if [OTHER_RESULT] appears, increase it.”
+    Keep intervention advice separate until evidence meaningfully narrows the field.
 
     '
 - id: '016'
@@ -846,10 +855,11 @@ prompts:
   category: research
   difficulty: Intermediate
   usage: Use this to compare news coverage with the study or data it describes.
-  use_case: A reader can check whether a viral headline accurately represents research findings, limitations,
-    and relevance to their own context.
-  preview: Compare the news story [NEWS_URL_OR_TEXT] with the original study or dataset [STUDY_URL_OR_FILE]
-    as a media-literacy analyst. First confirm that the story actually refers to this study. Record the...
+  use_case: A reader can check whether a viral headline accurately represents research findings, 
+    limitations, and relevance to their own context.
+  preview: Compare the news story [NEWS_URL_OR_TEXT] with the original study or dataset 
+    [STUDY_URL_OR_FILE] as a media-literacy analyst. First confirm that the story actually refers to
+    this study. Record the...
   best_tools:
   - tool: Perplexity
     reason: Can locate both current coverage and the linked original research.
@@ -862,14 +872,14 @@ prompts:
   - studies
   - media-literacy
   - verification
-  next_id: null
+  next_id:
   prompt: 'Compare the news story [NEWS_URL_OR_TEXT] with the original study or dataset [STUDY_URL_OR_FILE]
     as a media-literacy analyst.
 
 
     First confirm that the story actually refers to this study. Record the headline, outlet, date, study
-    title, authors, venue, and identifier. If the original cannot be accessed, state that limitation and
-    avoid a definitive verdict.
+    title, authors, venue, and identifier. If either the news text or the original study cannot be accessed,
+    state that limitation and avoid a definitive verdict; never invent quotations or statistics.
 
 
     Use a side-by-side format covering: population and sample size, research design, measured outcome,
@@ -895,29 +905,35 @@ prompts:
   category: research
   difficulty: Beginner
   usage: Use this to turn a broad topic into a feasible and ethical research question.
-  use_case: A student can narrow an initial interest into a question suited to available time, access,
-    and academic level.
+  use_case: A student can narrow an initial interest into a question suited to available time, 
+    access, and academic level.
   preview: 'Guide me from the broad topic [TOPIC] to a researchable question appropriate for [LEVEL_OR_PROGRAMME].
-    Ask me questions first and wait for my response. Ask no more than six, covering: what puzzles...'
+    Project constraints: available calendar time [TIME_AVAILABLE], expected write-up length...'
   best_tools:
   - tool: ChatGPT
     reason: Supports iterative questioning and refinement across research designs.
   - tool: Gemini
     reason: Generates alternative framings and identifies variables or scope boundaries.
   tip: A narrower question answered well is stronger than a broad question answered vaguely.
-  expected_output: Several refined questions with feasibility checks and a recommended final version.
+  expected_output: Several refined questions with feasibility checks and a recommended final 
+    version.
   tags:
   - research-question
   - scope
   - methods
   - feasibility
-  next_id: null
+  next_id:
   prompt: 'Guide me from the broad topic [TOPIC] to a researchable question appropriate for [LEVEL_OR_PROGRAMME].
 
 
-    Ask me questions first and wait for my response. Ask no more than six, covering: what puzzles me,
-    intended population, setting, timeframe, data access, and ethical or practical limits. Do not propose
-    final questions until I answer.
+    Project constraints: available calendar time [TIME_AVAILABLE], expected write-up length [WORD_LIMIT],
+    and source or participant access [ACCESS].
+
+
+    Ask me clarifying questions first and wait for my response. Ask no more than six, covering: what puzzles
+    me, intended population, setting, timeframe, data access, and ethical or practical limits. Do not
+    propose final questions until I answer. Do not re-ask constraints already provided above unless they
+    are contradictory.
 
 
     After my reply, extract the key phenomenon, relationship or experience, unit of analysis, and boundary
@@ -930,25 +946,26 @@ prompts:
     is already fixed. Flag questions that imply causation when the available design can show only association.
 
 
-    Recommend one question and explain why it best fits [TIME_AVAILABLE], [WORD_LIMIT], and [ACCESS].
+    Recommend one question and explain why it best fits the stated time, length, and access constraints.
     Provide a tighter version and a broader backup version. Then list three key terms with synonyms for
     an initial literature search. Finish by naming one tempting but unmanageable direction to exclude,
     and one supervisor question I should ask before committing.
 
     '
-- id: 018
+- id: '018'
   slug: annotated-source-cards
   title: Annotated Source Cards
   category: research
   difficulty: Intermediate
   usage: Use this to create evaluative annotations from sources you have actually read.
-  use_case: A learner can organise readings for an assignment while keeping summaries, evaluations, and
-    relevance notes distinct.
+  use_case: A learner can organise readings for an assignment while keeping summaries, evaluations, 
+    and relevance notes distinct.
   preview: 'Create rigorous annotated source cards for [RESEARCH_TOPIC] using only [UPLOADED_SOURCES_OR_PASTED_TEXT].
-    Citation style: [APA_MLA_CHICAGO_OR_OTHER]. Target annotation length: [WORDS] words. My...'
+    Citation style: [APA_MLA_CHICAGO_OR_OTHER]. Target annotation length per source: about...'
   best_tools:
   - tool: NotebookLM
-    reason: Creates source-grounded notes from an uploaded collection and links responses to evidence.
+    reason: Creates source-grounded notes from an uploaded collection and links responses to 
+      evidence.
   - tool: Claude
     reason: Processes long papers and produces nuanced structured annotations.
   tip: Add page numbers while reading; locating evidence later is harder than recording it now.
@@ -958,13 +975,14 @@ prompts:
   - annotations
   - sources
   - academic-writing
-  next_id: null
+  next_id:
   prompt: 'Create rigorous annotated source cards for [RESEARCH_TOPIC] using only [UPLOADED_SOURCES_OR_PASTED_TEXT].
 
 
-    Citation style: [APA_MLA_CHICAGO_OR_OTHER]. Target annotation length: [WORDS] words. My research question
-    is [QUESTION], and my intended argument or inquiry is [DIRECTION]. Never fabricate missing bibliographic
-    fields, page numbers, quotations, DOIs, or findings; mark missing data as [VERIFY].
+    Citation style: [APA_MLA_CHICAGO_OR_OTHER]. Target annotation length per source: about [WORDS] words.
+    My research question is [QUESTION], and my intended argument or inquiry direction is [DIRECTION].
+    Never fabricate missing bibliographic fields, page numbers, quotations, DOIs, or findings. Mark any
+    missing data with the plain label VERIFY. Also prioritise checking: [VERIFY].
 
 
     For each source, produce a card containing:
@@ -986,6 +1004,7 @@ prompts:
 
     Keep summary and evaluation in separate labelled paragraphs. If the source is commentary rather than
     research, adapt the method field honestly. Add three keywords not already obvious from the title.
+    If prioritised checks are blank or still show brackets, still mark every incomplete field with VERIFY.
 
 
     After all cards, group sources into conversation clusters: agreement, tension, extension, and context.
@@ -994,16 +1013,17 @@ prompts:
     my own reading and writing, not replace them.
 
     '
-- id: 019
+- id: '019'
   slug: evidence-gap-radar
   title: Evidence Gap Radar
   category: research
   difficulty: Advanced
   usage: Use this to identify defensible research gaps without claiming that nothing exists.
-  use_case: A thesis writer or programme team can find neglected populations, methods, contexts, or contradictions
-    worth investigating.
-  preview: Act as an evidence-gap analyst for the literature collection [CORPUS_OR_SOURCE_LIST] on [TOPIC].
-    My scope is [YEARS], [GEOGRAPHY], [POPULATION], and [DISCIPLINE]. Begin by defining what would count...
+  use_case: A thesis writer or programme team can find neglected populations, methods, contexts, or 
+    contradictions worth investigating.
+  preview: Act as an evidence-gap analyst for the literature collection [CORPUS_OR_SOURCE_LIST] on 
+    [TOPIC]. My scope is [YEARS], [GEOGRAPHY], [POPULATION], and [DISCIPLINE]. Begin by defining 
+    what would count...
   best_tools:
   - tool: NotebookLM
     reason: Compares patterns and omissions across a supplied body of literature.
@@ -1016,14 +1036,15 @@ prompts:
   - literature
   - thesis
   - evidence
-  next_id: null
+  next_id:
   prompt: 'Act as an evidence-gap analyst for the literature collection [CORPUS_OR_SOURCE_LIST] on [TOPIC].
 
 
     My scope is [YEARS], [GEOGRAPHY], [POPULATION], and [DISCIPLINE]. Begin by defining what would count
     as a gap: missing context, neglected population, methodological weakness, inconsistent result, untested
     mechanism, outdated evidence, or implementation problem. Do not equate “few papers I saw” with “no
-    research exists.”
+    research exists.” Work only from the supplied corpus plus any sources you can actually retrieve; never
+    invent coverage.
 
 
     Build a coverage grid crossing major themes with populations, locations, methods, and time periods.
@@ -1048,11 +1069,11 @@ prompts:
   category: research
   difficulty: Beginner
   usage: Use this to verify a claim systematically before sharing or acting on it.
-  use_case: A student or professional can check a social post, forwarded message, statistic, quote, image
-    caption, or workplace claim.
-  preview: Act as a fact-checking guide and help me verify [CLAIM_OR_CONTENT] before I share or use it.
-    The content came from [SOURCE_OR_PLATFORM] on [DATE_SEEN], and the relevant location is [LOCATION].
-    The...
+  use_case: A student or professional can check a social post, forwarded message, statistic, quote, 
+    image caption, or workplace claim.
+  preview: Act as a fact-checking guide and help me verify [CLAIM_OR_CONTENT] before I share or use 
+    it. The content came from [SOURCE_OR_PLATFORM] on [DATE_SEEN], and the relevant location is 
+    [LOCATION]. The...
   best_tools:
   - tool: Perplexity
     reason: Locates current sources and provides links that users can inspect directly.
@@ -1065,16 +1086,17 @@ prompts:
   - misinformation
   - verification
   - media-literacy
-  next_id: null
+  next_id:
   prompt: 'Act as a fact-checking guide and help me verify [CLAIM_OR_CONTENT] before I share or use it.
 
 
     The content came from [SOURCE_OR_PLATFORM] on [DATE_SEEN], and the relevant location is [LOCATION].
-    The decision or risk attached to it is [WHY_IT_MATTERS]. If an image or video is involved, I will
-    provide [FILE_OR_LINK].
+    The decision or risk attached to it is [WHY_IT_MATTERS]. Related file or link: [FILE_OR_LINK].
 
 
-    Walk through this checklist and show concise visible reasoning at each step:
+    If the file or link is blank or still shows brackets, proceed with the claim text alone and note what
+    media evidence is missing. Walk through this checklist and show concise visible reasoning at each
+    step:
 
     1. Rewrite the claim into independently testable parts.
 

@@ -17,7 +17,7 @@
 ```text
 Act as an evidence-gap analyst for the literature collection [CORPUS_OR_SOURCE_LIST] on [TOPIC].
 
-My scope is [YEARS], [GEOGRAPHY], [POPULATION], and [DISCIPLINE]. Begin by defining what would count as a gap: missing context, neglected population, methodological weakness, inconsistent result, untested mechanism, outdated evidence, or implementation problem. Do not equate “few papers I saw” with “no research exists.”
+My scope is [YEARS], [GEOGRAPHY], [POPULATION], and [DISCIPLINE]. Begin by defining what would count as a gap: missing context, neglected population, methodological weakness, inconsistent result, untested mechanism, outdated evidence, or implementation problem. Do not equate “few papers I saw” with “no research exists.” Work only from the supplied corpus plus any sources you can actually retrieve; never invent coverage.
 
 Build a coverage grid crossing major themes with populations, locations, methods, and time periods. Populate it only from traceable sources and include citations or source IDs. Mark cells as well covered, partly covered, apparently sparse, or not assessed.
 

@@ -159,9 +159,9 @@ Role-play two plausible replies from the recipient: one defensive and one constr
 "
 011,three-source-triangulator,Three-Source Triangulator,research,Advanced,Use this to compare independent sources before trusting a consequential claim.,"A triangulation matrix showing agreement, conflict, provenance, and confidence.",Independence matters more than quantity; three articles repeating one press release count as one source.,"research, triangulation, sources, verification",Perplexity: Finds current web sources and exposes citations for direct inspection.; Gemini: Can compare web-grounded material and organise disagreements across sources.,,"Act as an evidence triangulator investigating the claim [CLAIM] for [DECISION_OR_PROJECT].
 
-Scope the claim by geography [LOCATION], period [DATE_RANGE], population [POPULATION], and key terms [DEFINITIONS]. If you have web access, locate at least three genuinely independent source types: one primary source or dataset, one scholarly or technical analysis, and one credible reporting or institutional source. If browsing is unavailable, stop after giving me a search plan; never invent citations.
+Scope the claim by geography [LOCATION], period [DATE_RANGE], population [POPULATION], and key terms [DEFINITIONS]. If any scope field is blank or still shows brackets, state the missing boundary and continue with labelled assumptions rather than inventing scope. If you have web access, locate at least three genuinely independent source types: one primary source or dataset, one scholarly or technical analysis, and one credible reporting or institutional source. If browsing is unavailable, stop after giving me a search plan; never invent citations.
 
-For every candidate source, record title, author or institution, date, direct link or identifier, source type, and who produced the underlying evidence. Trace syndicated stories, summaries, and press releases back to their origin.
+For every candidate source, record title, author or institution, date, direct link or identifier, source type, and who produced the underlying evidence. Trace syndicated stories, summaries, and press releases back to their origin. Treat multiple articles that repeat one press release as a single source family.
 
 Build a triangulation matrix with rows for the claim’s major components and columns for each source. Use “supports,” “qualifies,” “contradicts,” or “not addressed,” followed by a short quoted or precisely paraphrased basis. Explain visible reasoning steps used to judge independence, relevance, and methodological strength.
 
@@ -169,7 +169,7 @@ Highlight conflicts caused by different definitions, samples, dates, or incentiv
 "
 012,literature-landscape-mapper,Literature Landscape Mapper,research,Advanced,"Use this to map a field's themes, methods, debates, and landmark studies.","A thematic literature map with clusters, debates, methods, and reading priorities.","Build the map from abstracts and metadata first, then read pivotal papers in full.","literature-review, themes, scholarship, mapping",Perplexity: Supports discovery of scholarly and institutional sources with inspectable links.; NotebookLM: Synthesizes themes across a user-provided collection while grounding answers in those sources.,,"Map the research landscape around [TOPIC] so I can plan an ethical, focused literature review.
 
-Boundaries: [DISCIPLINE], [GEOGRAPHY], [YEARS], [POPULATION], and [LANGUAGES]. My purpose is [COURSE_DISSERTATION_POLICY_OR_WORK_PROJECT]. Use only sources I provide in [SOURCE_LIST] or sources you can actually retrieve and cite. Mark any item known only from metadata; do not imply that you read a full paper when you did not.
+Boundaries: [DISCIPLINE], [GEOGRAPHY], [YEARS], [POPULATION], and [LANGUAGES]. My purpose is [COURSE_DISSERTATION_POLICY_OR_WORK_PROJECT]. Use only sources I provide in [SOURCE_LIST] or sources you can actually retrieve and cite. If the source list is thin, map from what is supplied, mark coverage as incomplete, and propose what to collect next. Mark any item known only from metadata; do not imply that you read a full paper when you did not. Never invent titles, DOIs, or findings.
 
 Organise the field as a map, not a chronological essay:
 - major conceptual clusters and how they connect;
@@ -184,17 +184,17 @@ Then draw a text-based pathway for reading: five foundation items, three contras
 "
 013,claim-evidence-auditor,Claim Evidence Auditor,research,Intermediate,"Use this to separate claims, evidence, assumptions, and overstatement in a text.",A claim-versus-evidence table with support ratings and revision advice.,Audit one section at a time so evidence links remain precise and traceable.,"claims, evidence, critical-reading, audit",Claude: Handles long passages and nuanced distinctions between claims and support.; ChatGPT: Extracts structured claim-evidence relationships from pasted material.,,"Audit [PASTED_TEXT_OR_DOCUMENT] as a critical reader, separating what is asserted from what is demonstrated.
 
-The intended audience is [AUDIENCE], and the standard of evidence is [ACADEMIC_POLICY_BUSINESS_OR_OTHER]. Work only from the supplied text and references unless I explicitly enable research. Do not fill evidence gaps from memory.
+The intended audience is [AUDIENCE], and the standard of evidence is [ACADEMIC_POLICY_BUSINESS_OR_OTHER]. Work only from the supplied text and references unless I explicitly enable research. Do not fill evidence gaps from memory or invent citations.
 
 Create a table with these columns: exact or shortened claim, claim type, cited evidence, evidence-to-claim fit, hidden assumption, severity, and recommended repair. Classify claim type as factual, causal, predictive, normative, or interpretive. Rate fit as direct, partial, indirect, absent, or cannot verify.
 
 Pay special attention to absolute language, causal conclusions from correlation, tiny or unrepresentative samples, old data presented as current, and references that support a nearby but different point. Preserve paragraph or page locations so I can find each issue.
 
-After the table, select the three highest-risk claims. For each, give a constraint-based rewrite that is accurate without becoming evasive: retain the core meaning, add only justified qualifiers, and stay within [MAX_WORDS] words. Finish with a short evidence shopping list naming the source type—not a fabricated citation—needed to strengthen each unresolved claim.
+After the table, select the three highest-risk claims. For each, give a constraint-based rewrite that is accurate without becoming evasive: retain the core meaning, add only justified qualifiers, and keep each rewrite within [MAX_WORDS] words. Finish with a short evidence shopping list naming the source type—not a fabricated citation—needed to strengthen each unresolved claim.
 "
 014,cited-brief-producer,Cited Brief Producer,research,Intermediate,Use this to create a current web brief whose citations can be checked.,"A concise, citation-rich brief with verified links and uncertainty labels.",Open every citation and confirm that it supports the exact sentence attached to it.,"web-research, citations, briefing, current-events",Perplexity: Specializes in current web research with inline source links.; Microsoft Copilot: Can produce web-grounded summaries with linked sources for verification.,,"Produce a decision-ready cited brief on [TOPIC] for [AUDIENCE] as of [CUT_OFF_DATE].
 
-Answer this central question: [QUESTION]. Prioritise primary documents, official statistics, peer-reviewed research, and reputable reporting. Search across viewpoints and include Pakistan-specific evidence where relevant. Do not cite search-result snippets, AI summaries, or inaccessible references as if checked.
+Answer this central question: [QUESTION]. Prioritise primary documents, official statistics, peer-reviewed research, and reputable reporting. Search across viewpoints and include Pakistan-specific evidence where relevant. Do not cite search-result snippets, AI summaries, or inaccessible references as if checked. If browsing is unavailable, provide a source-seeking plan and clearly labelled provisional notes instead of invented citations.
 
 Structure the brief in this order:
 1. Bottom line in 80 words or fewer.
@@ -217,11 +217,11 @@ For each explanation provide: causal mechanism, expected pattern if true, eviden
 
 Use Bayesian-style updating in plain language: state a provisional prior confidence as low, medium, or high and explain the basis openly. Do not invent numerical probabilities from thin evidence.
 
-Identify confounders and reverse-causality risks. Recommend an investigation sequence that maximises information before cost. Close with a pre-commitment: “If [RESULT] appears, reduce confidence in [HYPOTHESIS]; if [OTHER_RESULT] appears, increase it.” Keep intervention advice separate until evidence meaningfully narrows the field.
+Identify confounders and reverse-causality risks. Recommend an investigation sequence that maximises information before cost. Close with a pre-commitment tied to my favoured explanation [HYPOTHESIS]: “If [RESULT] appears, reduce confidence in that hypothesis; if [OTHER_RESULT] appears, increase it.” Keep intervention advice separate until evidence meaningfully narrows the field.
 "
 016,headline-study-crosscheck,Headline Study Crosscheck,research,Intermediate,Use this to compare news coverage with the study or data it describes.,"A side-by-side verdict on headline accuracy, study quality, and applicability.",Read the study's methods and limitations before deciding whether the headline is fair.,"news, studies, media-literacy, verification",Perplexity: Can locate both current coverage and the linked original research.; NotebookLM: Grounds comparison in uploaded news and study documents with source references.,,"Compare the news story [NEWS_URL_OR_TEXT] with the original study or dataset [STUDY_URL_OR_FILE] as a media-literacy analyst.
 
-First confirm that the story actually refers to this study. Record the headline, outlet, date, study title, authors, venue, and identifier. If the original cannot be accessed, state that limitation and avoid a definitive verdict.
+First confirm that the story actually refers to this study. Record the headline, outlet, date, study title, authors, venue, and identifier. If either the news text or the original study cannot be accessed, state that limitation and avoid a definitive verdict; never invent quotations or statistics.
 
 Use a side-by-side format covering: population and sample size, research design, measured outcome, timeframe, effect size, uncertainty, funding or conflicts, and limitations. Quote the news wording beside the relevant study wording where possible.
 
@@ -231,17 +231,19 @@ Give the headline one verdict: accurate, mostly accurate, overstated, misleading
 "
 017,research-question-sharpener,Research Question Sharpener,research,Beginner,Use this to turn a broad topic into a feasible and ethical research question.,Several refined questions with feasibility checks and a recommended final version.,A narrower question answered well is stronger than a broad question answered vaguely.,"research-question, scope, methods, feasibility",ChatGPT: Supports iterative questioning and refinement across research designs.; Gemini: Generates alternative framings and identifies variables or scope boundaries.,,"Guide me from the broad topic [TOPIC] to a researchable question appropriate for [LEVEL_OR_PROGRAMME].
 
-Ask me questions first and wait for my response. Ask no more than six, covering: what puzzles me, intended population, setting, timeframe, data access, and ethical or practical limits. Do not propose final questions until I answer.
+Project constraints: available calendar time [TIME_AVAILABLE], expected write-up length [WORD_LIMIT], and source or participant access [ACCESS].
+
+Ask me clarifying questions first and wait for my response. Ask no more than six, covering: what puzzles me, intended population, setting, timeframe, data access, and ethical or practical limits. Do not propose final questions until I answer. Do not re-ask constraints already provided above unless they are contradictory.
 
 After my reply, extract the key phenomenon, relationship or experience, unit of analysis, and boundary conditions. Offer four distinct question forms: descriptive, comparative, explanatory, and exploratory. Each must be answerable rather than merely discussing a theme.
 
 Evaluate each candidate using FINER-style criteria: feasible, interesting, novel enough for the context, ethical, and relevant. Also identify the likely evidence and method—without pretending the method is already fixed. Flag questions that imply causation when the available design can show only association.
 
-Recommend one question and explain why it best fits [TIME_AVAILABLE], [WORD_LIMIT], and [ACCESS]. Provide a tighter version and a broader backup version. Then list three key terms with synonyms for an initial literature search. Finish by naming one tempting but unmanageable direction to exclude, and one supervisor question I should ask before committing.
+Recommend one question and explain why it best fits the stated time, length, and access constraints. Provide a tighter version and a broader backup version. Then list three key terms with synonyms for an initial literature search. Finish by naming one tempting but unmanageable direction to exclude, and one supervisor question I should ask before committing.
 "
 018,annotated-source-cards,Annotated Source Cards,research,Intermediate,Use this to create evaluative annotations from sources you have actually read.,"Consistent annotated bibliography cards with summary, evaluation, and relevance.",Add page numbers while reading; locating evidence later is harder than recording it now.,"bibliography, annotations, sources, academic-writing",NotebookLM: Creates source-grounded notes from an uploaded collection and links responses to evidence.; Claude: Processes long papers and produces nuanced structured annotations.,,"Create rigorous annotated source cards for [RESEARCH_TOPIC] using only [UPLOADED_SOURCES_OR_PASTED_TEXT].
 
-Citation style: [APA_MLA_CHICAGO_OR_OTHER]. Target annotation length: [WORDS] words. My research question is [QUESTION], and my intended argument or inquiry is [DIRECTION]. Never fabricate missing bibliographic fields, page numbers, quotations, DOIs, or findings; mark missing data as [VERIFY].
+Citation style: [APA_MLA_CHICAGO_OR_OTHER]. Target annotation length per source: about [WORDS] words. My research question is [QUESTION], and my intended argument or inquiry direction is [DIRECTION]. Never fabricate missing bibliographic fields, page numbers, quotations, DOIs, or findings. Mark any missing data with the plain label VERIFY. Also prioritise checking: [VERIFY].
 
 For each source, produce a card containing:
 - a formatted citation;
@@ -252,13 +254,13 @@ For each source, produce a card containing:
 - relevance to my question;
 - relationship to another source in the set.
 
-Keep summary and evaluation in separate labelled paragraphs. If the source is commentary rather than research, adapt the method field honestly. Add three keywords not already obvious from the title.
+Keep summary and evaluation in separate labelled paragraphs. If the source is commentary rather than research, adapt the method field honestly. Add three keywords not already obvious from the title. If prioritised checks are blank or still show brackets, still mark every incomplete field with VERIFY.
 
 After all cards, group sources into conversation clusters: agreement, tension, extension, and context. Identify duplicated evidence where several sources rely on the same dataset. Finish with a verification queue of incomplete citations and claims I must inspect in the originals. The annotations must support my own reading and writing, not replace them.
 "
 019,evidence-gap-radar,Evidence Gap Radar,research,Advanced,Use this to identify defensible research gaps without claiming that nothing exists.,"A ranked gap map with evidence, search checks, and viable study directions.","Describe a bounded gap in a searched corpus, never an absolute absence across all research.","research-gaps, literature, thesis, evidence",NotebookLM: Compares patterns and omissions across a supplied body of literature.; Perplexity: Helps test whether an apparent gap persists in recent discoverable research.,,"Act as an evidence-gap analyst for the literature collection [CORPUS_OR_SOURCE_LIST] on [TOPIC].
 
-My scope is [YEARS], [GEOGRAPHY], [POPULATION], and [DISCIPLINE]. Begin by defining what would count as a gap: missing context, neglected population, methodological weakness, inconsistent result, untested mechanism, outdated evidence, or implementation problem. Do not equate “few papers I saw” with “no research exists.”
+My scope is [YEARS], [GEOGRAPHY], [POPULATION], and [DISCIPLINE]. Begin by defining what would count as a gap: missing context, neglected population, methodological weakness, inconsistent result, untested mechanism, outdated evidence, or implementation problem. Do not equate “few papers I saw” with “no research exists.” Work only from the supplied corpus plus any sources you can actually retrieve; never invent coverage.
 
 Build a coverage grid crossing major themes with populations, locations, methods, and time periods. Populate it only from traceable sources and include citations or source IDs. Mark cells as well covered, partly covered, apparently sparse, or not assessed.
 
@@ -268,9 +270,9 @@ Rank the surviving gaps by significance, originality within scope, feasibility, 
 "
 020,portable-fact-check-plan,Portable Fact-Check Plan,research,Beginner,Use this to verify a claim systematically before sharing or acting on it.,A reusable verification checklist and a transparent verdict for one claim.,Search the exact claim and also search for the strongest plausible contradiction.,"fact-checking, misinformation, verification, media-literacy",Perplexity: Locates current sources and provides links that users can inspect directly.; Gemini: Supports web-grounded checking and can analyse supplied images or text.,,"Act as a fact-checking guide and help me verify [CLAIM_OR_CONTENT] before I share or use it.
 
-The content came from [SOURCE_OR_PLATFORM] on [DATE_SEEN], and the relevant location is [LOCATION]. The decision or risk attached to it is [WHY_IT_MATTERS]. If an image or video is involved, I will provide [FILE_OR_LINK].
+The content came from [SOURCE_OR_PLATFORM] on [DATE_SEEN], and the relevant location is [LOCATION]. The decision or risk attached to it is [WHY_IT_MATTERS]. Related file or link: [FILE_OR_LINK].
 
-Walk through this checklist and show concise visible reasoning at each step:
+If the file or link is blank or still shows brackets, proceed with the claim text alone and note what media evidence is missing. Walk through this checklist and show concise visible reasoning at each step:
 1. Rewrite the claim into independently testable parts.
 2. Identify the earliest traceable source, not merely the latest repost.
 3. Check date, location, creator, and original context.

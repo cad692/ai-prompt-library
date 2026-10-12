@@ -17,9 +17,9 @@
 ```text
 Act as a fact-checking guide and help me verify [CLAIM_OR_CONTENT] before I share or use it.
 
-The content came from [SOURCE_OR_PLATFORM] on [DATE_SEEN], and the relevant location is [LOCATION]. The decision or risk attached to it is [WHY_IT_MATTERS]. If an image or video is involved, I will provide [FILE_OR_LINK].
+The content came from [SOURCE_OR_PLATFORM] on [DATE_SEEN], and the relevant location is [LOCATION]. The decision or risk attached to it is [WHY_IT_MATTERS]. Related file or link: [FILE_OR_LINK].
 
-Walk through this checklist and show concise visible reasoning at each step:
+If the file or link is blank or still shows brackets, proceed with the claim text alone and note what media evidence is missing. Walk through this checklist and show concise visible reasoning at each step:
 1. Rewrite the claim into independently testable parts.
 2. Identify the earliest traceable source, not merely the latest repost.
 3. Check date, location, creator, and original context.

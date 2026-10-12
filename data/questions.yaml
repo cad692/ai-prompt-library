@@ -247,188 +247,190 @@
     optional: true
 "011":
   CLAIM:
-    q: "What claim are you checking?"
-    ex: "A social media claim about study habits"
+    q: What exact claim are you checking?
+    ex: Online courses raise university pass rates by 20%
   DECISION_OR_PROJECT:
-    q: "What decision or project is this for?"
-    ex: "Choosing a product to buy"
+    q: What decision or project depends on this claim?
+    ex: Whether to recommend a paid course platform
   LOCATION:
-    q: "Where is this claim or situation happening?"
-    ex: "Islamabad or Karachi"
+    q: Which country or region should bound the claim?
+    ex: Pakistan, Punjab, or Islamabad
   DATE_RANGE:
-    q: "What time period should we cover?"
-    ex: "Last six months"
+    q: Which time period should the evidence cover?
+    ex: January 2023 to March 2026
   POPULATION:
-    q: "Who is the population being studied?"
-    ex: "College students in Pakistan"
+    q: Which people or groups does the claim concern?
+    ex: First-year public university students
   DEFINITIONS:
-    q: "What terms need clear meaning?"
-    ex: "What counts as a healthy habit"
+    q: Which key terms need a clear definition?
+    ex: Pass rate means end-of-semester exam pass
 "012":
   TOPIC:
-    q: "What topic are you mapping?"
-    ex: "AI in education"
+    q: What research topic are you mapping?
+    ex: AI tutoring tools in secondary schools
   DISCIPLINE:
-    q: "What field is this in?"
-    ex: "Education and technology"
+    q: Which academic field bounds this review?
+    ex: Education technology / learning sciences
   GEOGRAPHY:
-    q: "What geographic region matters?"
-    ex: "South Asia"
+    q: Which geographic region should the map cover?
+    ex: South Asia, with Pakistan examples if available
   YEARS:
-    q: "What years should we include?"
-    ex: "2019 to 2025"
+    q: Which publication years should be included?
+    ex: 2019 to 2025
   POPULATION:
-    q: "Who are you studying?"
-    ex: "University students"
+    q: Which population should the literature focus on?
+    ex: Undergraduate students aged 18–24
   LANGUAGES:
-    q: "Which languages are relevant?"
-    ex: "English and Urdu"
+    q: Which languages may sources be written in?
+    ex: English and Urdu
   COURSE_DISSERTATION_POLICY_OR_WORK_PROJECT:
-    q: "What project is this for?"
-    ex: "A final-year dissertation"
+    q: What assignment or project is this map for?
+    ex: Final-year BS dissertation proposal
   SOURCE_LIST:
-    q: "What source list do you have?"
-    ex: "Ten journal articles and two reports"
+    q: Paste your current list of sources or notes.
+    ex: Titles, DOIs, or links for 8–12 items you already have
 "013":
   PASTED_TEXT_OR_DOCUMENT:
-    q: "Paste the text or document you want to check"
-    ex: "A pasted paragraph from a report"
+    q: Paste the text or excerpt you want audited.
+    ex: Include claims and any cited references shown
   AUDIENCE:
-    q: "Who is this for?"
-    ex: "A teacher or manager"
+    q: Who will read the audited or revised text?
+    ex: Course instructor or department review panel
   ACADEMIC_POLICY_BUSINESS_OR_OTHER:
-    q: "What setting is this in?"
-    ex: "Academic policy"
+    q: What evidence standard should we apply?
+    ex: Undergraduate academic writing / policy brief
   MAX_WORDS:
-    q: "How long should the response be?"
-    ex: "500 words"
+    q: What max words for each rewritten claim?
+    ex: '40'
 "014":
   TOPIC:
-    q: "What topic are you summarising?"
-    ex: "Renewable energy in cities"
+    q: What topic should the cited brief cover?
+    ex: Urban renewable energy incentives
   AUDIENCE:
-    q: "Who is the audience?"
-    ex: "A group of students"
+    q: Who will use this brief, and for what?
+    ex: Student society preparing a policy meeting
   CUT_OFF_DATE:
-    q: "What date should we cover up to?"
-    ex: "31 March 2025"
+    q: What is the latest date evidence may include?
+    ex: 12 October 2026
   QUESTION:
-    q: "What question are you answering?"
-    ex: "What is the main finding?"
+    q: What central question must the brief answer?
+    ex: Which incentives actually increased rooftop solar uptake?
   STAKEHOLDERS:
-    q: "Who is affected?"
-    ex: "Students, staff, and local residents"
+    q: Which stakeholders' implications should we cover?
+    ex: Households, utilities, and city administrators
 "015":
   OBSERVATION_OR_OUTCOME:
-    q: "What outcome are you explaining?"
-    ex: "Lower exam scores this term"
+    q: What observation or outcome needs explaining?
+    ex: Average midterm scores fell 12% this term
   CONTEXT:
-    q: "What context matters here?"
-    ex: "A campus change and timetable shift"
+    q: What surrounding context should we assume?
+    ex: Timetable change and new online quiz system
   DATA:
-    q: "What data do you have?"
-    ex: "Attendance and assignment marks"
+    q: What data or evidence do you already have?
+    ex: Attendance logs, quiz scores, and two student surveys
   CURRENT_BELIEF:
-    q: "What explanation do you favour now?"
-    ex: "Students were less prepared"
+    q: Which explanation do you currently favour?
+    ex: Students were less prepared before class
   TIME_ACCESS_ETHICS_OR_BUDGET:
-    q: "What limits matter in your investigation?"
-    ex: "Budget, ethics, and time"
+    q: What investigation limits must we respect?
+    ex: Two weeks, no new surveys without ethics approval
   RESULT:
-    q: "What result would change your mind?"
-    ex: "Attendance stays low"
+    q: Which result would weaken your favoured explanation?
+    ex: Attendance stays high while scores stay low
   HYPOTHESIS:
-    q: "What is your main hypothesis?"
-    ex: "The timing of classes is the problem"
+    q: Name the favoured hypothesis for the pre-commitment.
+    ex: Preparation quality, not attendance, drove the drop
   OTHER_RESULT:
-    q: "What other result matters?"
-    ex: "Assignments improve but attendance falls"
+    q: Which result would strengthen that hypothesis?
+    ex: Homework completion falls and scores fall with it
 "016":
   NEWS_URL_OR_TEXT:
-    q: "Paste the news item or link"
-    ex: "A headline and article link"
+    q: Paste the news headline and article text or URL.
+    ex: Include headline, outlet, and key paragraphs if no link
   STUDY_URL_OR_FILE:
-    q: "Where is the study or file located?"
-    ex: "A downloadable PDF or link"
+    q: Paste the study link, DOI, or key excerpts.
+    ex: DOI/PDF link, or methods and results excerpts
 "017":
   TOPIC:
-    q: "What topic are you refining?"
-    ex: "Student motivation in online learning"
+    q: What broad topic do you want to narrow?
+    ex: Student motivation in online learning
   LEVEL_OR_PROGRAMME:
-    q: "What level or programme is this?"
-    ex: "Undergraduate business studies"
+    q: What level or programme is the work for?
+    ex: Undergraduate business studies thesis
   TIME_AVAILABLE:
-    q: "How much time do you have for this task?"
-    ex: "One hour"
+    q: How much calendar time do you have overall?
+    ex: 8 weeks until the proposal deadline
   WORD_LIMIT:
-    q: "What is the word limit?"
-    ex: "300 words"
+    q: What word limit applies to the final write-up?
+    ex: 3,000 words for the literature chapter
   ACCESS:
-    q: "What access to sources do you have?"
-    ex: "Campus library and online articles"
+    q: What sources or participants can you actually reach?
+    ex: Campus library databases; one university class for survey
 "018":
   RESEARCH_TOPIC:
-    q: "What topic are you reviewing?"
-    ex: "Remote work stress"
+    q: What research topic are the annotations for?
+    ex: Remote work and stress among knowledge workers
   UPLOADED_SOURCES_OR_PASTED_TEXT:
-    q: "What sources or text do you have available?"
-    ex: "Uploaded notes and paper excerpts"
+    q: Paste the sources or excerpts you have read.
+    ex: Full citations plus notes or quoted passages with pages
   APA_MLA_CHICAGO_OR_OTHER:
-    q: "Which citation style do you need?"
-    ex: "APA 7"
+    q: Which citation style should each card use?
+    ex: APA 7
   WORDS:
-    q: "How long should the summary be in words?"
-    ex: "800 words"
+    q: About how many words per source annotation?
+    ex: 150–200
   QUESTION:
-    q: "What question are you answering?"
-    ex: "What causes the trend?"
+    q: What research question should relevance answer?
+    ex: What workplace factors increase remote-work stress?
   DIRECTION:
-    q: "What direction should the review take (e.g., supportive, critical, balanced)?"
-    ex: "Supportive but critical"
+    q: What stance or direction should the review take?
+    ex: Balanced, with attention to measurement limits
   VERIFY:
-    q: "What needs checking before you use it?"
-    ex: "Dates, page numbers, and quotes"
+    q: Which details should we prioritise verifying?
+    ex: Page numbers, DOIs, and quoted statistics
+    optional: true
 "019":
   CORPUS_OR_SOURCE_LIST:
-    q: "What sources are you reviewing?"
-    ex: "A list of news reports and studies"
+    q: Paste the corpus or source list to analyse.
+    ex: Bibliography, Zotero export, or titled notes set
   TOPIC:
-    q: "What topic are you mapping?"
-    ex: "Energy price changes"
+    q: What topic are you searching for gaps in?
+    ex: Household responses to energy price shocks
   YEARS:
-    q: "What years should we include?"
-    ex: "2020 to 2024"
+    q: Which years bound the reviewed literature?
+    ex: 2020 to 2025
   GEOGRAPHY:
-    q: "What geographic region matters?"
-    ex: "Punjab and Sindh"
+    q: Which geographic scope should the gap map use?
+    ex: Punjab and Sindh urban districts
   POPULATION:
-    q: "Who is the focus?"
-    ex: "Urban households"
+    q: Which population should the gap analysis focus on?
+    ex: Urban middle-income households
   DISCIPLINE:
-    q: "What subject area is this?"
-    ex: "Public policy"
+    q: Which subject or discipline frames the review?
+    ex: Public policy / energy economics
   TARGET_CONTEXT:
-    q: "What context should we use?"
-    ex: "A local government decision"
+    q: What local context should gap priority favour?
+    ex: Karachi load-shedding and tariff changes
 "020":
   CLAIM_OR_CONTENT:
-    q: "What claim or content are you checking?"
-    ex: "A social media post about taxes"
+    q: What claim or content are you verifying?
+    ex: A forwarded post saying tax rates doubled overnight
   SOURCE_OR_PLATFORM:
-    q: "Where did it appear?"
-    ex: "Instagram or a news channel"
+    q: Where did you first see this claim?
+    ex: WhatsApp group / Instagram reel / news site
   DATE_SEEN:
-    q: "When did you see it?"
-    ex: "Last Friday"
+    q: On what date did you encounter it?
+    ex: 10 October 2026
   LOCATION:
-    q: "Where was it shared?"
-    ex: "Karachi or a public group"
+    q: Which place does the claim refer to or come from?
+    ex: Pakistan nationwide, or a Karachi Facebook group
   WHY_IT_MATTERS:
-    q: "Why does it matter?"
-    ex: "It affects public trust"
+    q: What decision or risk makes verification important?
+    ex: I may share it with clients / it affects a purchase
   FILE_OR_LINK:
-    q: "Share the link or file"
-    ex: "A screenshot or article link"
+    q: Share the link, screenshot, or file if you have one.
+    ex: URL or describe the image/video contents
+    optional: true
 "021":
   PDF_TITLE:
     q: "What is the document called?"

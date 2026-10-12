@@ -17,7 +17,7 @@
 ```text
 Create rigorous annotated source cards for [RESEARCH_TOPIC] using only [UPLOADED_SOURCES_OR_PASTED_TEXT].
 
-Citation style: [APA_MLA_CHICAGO_OR_OTHER]. Target annotation length: [WORDS] words. My research question is [QUESTION], and my intended argument or inquiry is [DIRECTION]. Never fabricate missing bibliographic fields, page numbers, quotations, DOIs, or findings; mark missing data as [VERIFY].
+Citation style: [APA_MLA_CHICAGO_OR_OTHER]. Target annotation length per source: about [WORDS] words. My research question is [QUESTION], and my intended argument or inquiry direction is [DIRECTION]. Never fabricate missing bibliographic fields, page numbers, quotations, DOIs, or findings. Mark any missing data with the plain label VERIFY. Also prioritise checking: [VERIFY].
 
 For each source, produce a card containing:
 - a formatted citation;
@@ -28,7 +28,7 @@ For each source, produce a card containing:
 - relevance to my question;
 - relationship to another source in the set.
 
-Keep summary and evaluation in separate labelled paragraphs. If the source is commentary rather than research, adapt the method field honestly. Add three keywords not already obvious from the title.
+Keep summary and evaluation in separate labelled paragraphs. If the source is commentary rather than research, adapt the method field honestly. Add three keywords not already obvious from the title. If prioritised checks are blank or still show brackets, still mark every incomplete field with VERIFY.
 
 After all cards, group sources into conversation clusters: agreement, tension, extension, and context. Identify duplicated evidence where several sources rely on the same dataset. Finish with a verification queue of incomplete citations and claims I must inspect in the originals. The annotations must support my own reading and writing, not replace them.
 ```

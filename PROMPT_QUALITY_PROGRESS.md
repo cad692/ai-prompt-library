@@ -15,8 +15,8 @@
 ## Batch plan
 | Batch | IDs | Status |
 |------:|-----|--------|
-| 1 | 001–010 | **complete** |
-| 2 | 011–020 | pending |
+| 1 | 001–010 | **complete** (commit 546ced1) |
+| 2 | 011–020 | **complete** |
 | 3 | 021–030 | pending |
 | 4 | 031–040 | pending |
 | 5 | 041–050 | pending |
@@ -32,11 +32,11 @@
 An earlier session marked 115/115 reviewed with **0 prompt template improvements**. This run re-reviews every active prompt. Do not push until the full library is done.
 
 ## Progress counters
-- Prompts reviewed: 10/115
-- Prompt templates substantively improved: 10
+- Prompts reviewed: 20/115
+- Prompt templates substantively improved: 20
 - Prompt templates reviewed, left unchanged: 0
-- Question sets reviewed: 10
-- Question fields improved / added / removed / made optional: ~70 improved / 0 added / 0 removed / 0 newly optional (existing optionality preserved)
+- Question sets reviewed: 20
+- Question fields improved / added / removed / made optional: ~130 improved / 0 added / 0 removed / 2 newly optional (018 VERIFY, 020 FILE_OR_LINK)
 
 ## Batch 1 (001–010) outcomes
 
@@ -69,10 +69,37 @@ Representative clarity fixes:
 - `scripts/check_questions.py HEAD`: blocked on Windows `git show` encoding (not a data defect)
 
 ### Commits
-- Local only — **do not push until full library complete**
+- `546ced1` — fix: improve prompt quality and personalization for 001-010 (local only)
+
+## Batch 2 (011–020) outcomes
+
+### Templates improved
+| ID | Reason |
+|----|--------|
+| 011 | Missing scope handling; press-release family warning |
+| 012 | Thin source-list path; no invented titles/DOIs |
+| 013 | Clarified MAX_WORDS applies to each rewrite; no memory-filled gaps |
+| 014 | Offline/no-browse fallback without invented citations |
+| 015 | Pre-commitment wording aligned with hypothesis fields |
+| 016 | Explicit inaccessible-source handling |
+| 017 | Constraints applied as project calendar/word/access limits; no re-asking known fields |
+| 018 | Fixed `[VERIFY]` sentinel collision; user verify priorities now separate/optional |
+| 019 | Corpus-only coverage; no invented gap claims |
+| 020 | Optional file/link; blank media handled |
+
+### Notable question fixes
+- 013 MAX_WORDS: response length → per-rewrite word cap
+- 017 TIME_AVAILABLE: session-like “one hour” → project calendar time
+- 018 VERIFY: optional priority checks; sentinel no longer overwritten by answers
+- 020 LOCATION: claim geography vs share place clarified
+
+### Validation
+- Placeholder/`q`≤12 coverage: PASS
+- `python build/generate.py`: PASS
+- HTML spot checks 017/018: PASS
 
 ## Remaining
-011–115 (batches 2–12)
+021–115 (batches 3–12)
 
 ## Next action
-Review and improve prompts **011–020** (templates first, then questions), validate, commit locally, continue.
+Review and improve prompts **021–030**, validate, commit locally, continue. Do **not** push until full library complete.

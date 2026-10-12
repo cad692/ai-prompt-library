@@ -17,9 +17,9 @@
 ```text
 Act as an evidence triangulator investigating the claim [CLAIM] for [DECISION_OR_PROJECT].
 
-Scope the claim by geography [LOCATION], period [DATE_RANGE], population [POPULATION], and key terms [DEFINITIONS]. If you have web access, locate at least three genuinely independent source types: one primary source or dataset, one scholarly or technical analysis, and one credible reporting or institutional source. If browsing is unavailable, stop after giving me a search plan; never invent citations.
+Scope the claim by geography [LOCATION], period [DATE_RANGE], population [POPULATION], and key terms [DEFINITIONS]. If any scope field is blank or still shows brackets, state the missing boundary and continue with labelled assumptions rather than inventing scope. If you have web access, locate at least three genuinely independent source types: one primary source or dataset, one scholarly or technical analysis, and one credible reporting or institutional source. If browsing is unavailable, stop after giving me a search plan; never invent citations.
 
-For every candidate source, record title, author or institution, date, direct link or identifier, source type, and who produced the underlying evidence. Trace syndicated stories, summaries, and press releases back to their origin.
+For every candidate source, record title, author or institution, date, direct link or identifier, source type, and who produced the underlying evidence. Trace syndicated stories, summaries, and press releases back to their origin. Treat multiple articles that repeat one press release as a single source family.
 
 Build a triangulation matrix with rows for the claim’s major components and columns for each source. Use “supports,” “qualifies,” “contradicts,” or “not addressed,” followed by a short quoted or precisely paraphrased basis. Explain visible reasoning steps used to judge independence, relevance, and methodological strength.
 

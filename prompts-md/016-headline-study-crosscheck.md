@@ -17,7 +17,7 @@
 ```text
 Compare the news story [NEWS_URL_OR_TEXT] with the original study or dataset [STUDY_URL_OR_FILE] as a media-literacy analyst.
 
-First confirm that the story actually refers to this study. Record the headline, outlet, date, study title, authors, venue, and identifier. If the original cannot be accessed, state that limitation and avoid a definitive verdict.
+First confirm that the story actually refers to this study. Record the headline, outlet, date, study title, authors, venue, and identifier. If either the news text or the original study cannot be accessed, state that limitation and avoid a definitive verdict; never invent quotations or statistics.
 
 Use a side-by-side format covering: population and sample size, research design, measured outcome, timeframe, effect size, uncertainty, funding or conflicts, and limitations. Quote the news wording beside the relevant study wording where possible.
 

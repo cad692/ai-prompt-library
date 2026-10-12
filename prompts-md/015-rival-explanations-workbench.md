@@ -25,7 +25,7 @@ For each explanation provide: causal mechanism, expected pattern if true, eviden
 
 Use Bayesian-style updating in plain language: state a provisional prior confidence as low, medium, or high and explain the basis openly. Do not invent numerical probabilities from thin evidence.
 
-Identify confounders and reverse-causality risks. Recommend an investigation sequence that maximises information before cost. Close with a pre-commitment: “If [RESULT] appears, reduce confidence in [HYPOTHESIS]; if [OTHER_RESULT] appears, increase it.” Keep intervention advice separate until evidence meaningfully narrows the field.
+Identify confounders and reverse-causality risks. Recommend an investigation sequence that maximises information before cost. Close with a pre-commitment tied to my favoured explanation [HYPOTHESIS]: “If [RESULT] appears, reduce confidence in that hypothesis; if [OTHER_RESULT] appears, increase it.” Keep intervention advice separate until evidence meaningfully narrows the field.
 ```
 
 ---

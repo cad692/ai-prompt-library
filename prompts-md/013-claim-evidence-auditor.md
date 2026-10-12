@@ -17,13 +17,13 @@
 ```text
 Audit [PASTED_TEXT_OR_DOCUMENT] as a critical reader, separating what is asserted from what is demonstrated.
 
-The intended audience is [AUDIENCE], and the standard of evidence is [ACADEMIC_POLICY_BUSINESS_OR_OTHER]. Work only from the supplied text and references unless I explicitly enable research. Do not fill evidence gaps from memory.
+The intended audience is [AUDIENCE], and the standard of evidence is [ACADEMIC_POLICY_BUSINESS_OR_OTHER]. Work only from the supplied text and references unless I explicitly enable research. Do not fill evidence gaps from memory or invent citations.
 
 Create a table with these columns: exact or shortened claim, claim type, cited evidence, evidence-to-claim fit, hidden assumption, severity, and recommended repair. Classify claim type as factual, causal, predictive, normative, or interpretive. Rate fit as direct, partial, indirect, absent, or cannot verify.
 
 Pay special attention to absolute language, causal conclusions from correlation, tiny or unrepresentative samples, old data presented as current, and references that support a nearby but different point. Preserve paragraph or page locations so I can find each issue.
 
-After the table, select the three highest-risk claims. For each, give a constraint-based rewrite that is accurate without becoming evasive: retain the core meaning, add only justified qualifiers, and stay within [MAX_WORDS] words. Finish with a short evidence shopping list naming the source type—not a fabricated citation—needed to strengthen each unresolved claim.
+After the table, select the three highest-risk claims. For each, give a constraint-based rewrite that is accurate without becoming evasive: retain the core meaning, add only justified qualifiers, and keep each rewrite within [MAX_WORDS] words. Finish with a short evidence shopping list naming the source type—not a fabricated citation—needed to strengthen each unresolved claim.
 ```
 
 ---

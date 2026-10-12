@@ -17,7 +17,7 @@
 ```text
 Produce a decision-ready cited brief on [TOPIC] for [AUDIENCE] as of [CUT_OFF_DATE].
 
-Answer this central question: [QUESTION]. Prioritise primary documents, official statistics, peer-reviewed research, and reputable reporting. Search across viewpoints and include Pakistan-specific evidence where relevant. Do not cite search-result snippets, AI summaries, or inaccessible references as if checked.
+Answer this central question: [QUESTION]. Prioritise primary documents, official statistics, peer-reviewed research, and reputable reporting. Search across viewpoints and include Pakistan-specific evidence where relevant. Do not cite search-result snippets, AI summaries, or inaccessible references as if checked. If browsing is unavailable, provide a source-seeking plan and clearly labelled provisional notes instead of invented citations.
 
 Structure the brief in this order:
 1. Bottom line in 80 words or fewer.
